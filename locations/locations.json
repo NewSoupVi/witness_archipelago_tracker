@@ -1,9 +1,9 @@
 [
 	{
-        "name": "Tutorial Gate Open",
+        "name": "Tutorial Gate",
         "sections": [
             {
-                "name": "Tutorial Gate Open",
+                "name": "Gate Open",
                 "item_count": 1
             }
         ],
@@ -22,7 +22,7 @@
 		"access_rules": ["Triangles,Dots"],
         "sections": [
             {
-                "name": "Tutorial Patio Floor",
+                "name": "Patio Floor",
                 "item_count": 1
             }
         ],
@@ -74,11 +74,11 @@
     },
 	
 	{
-        "name": "Outside Tutorial Dots Introduction 5",
+        "name": "Outside Tutorial Dots Introduction",
 		"access_rules": ["Dots"],
         "sections": [
             {
-                "name": "Outside Tutorial Dots Introduction 5",
+                "name": "Dots Introduction",
                 "item_count": 1
             }
         ],
@@ -92,11 +92,11 @@
     },
 	
 	{
-        "name": "Outside Tutorial Squares Introduction 9",
+        "name": "Outside Tutorial Squares Introduction",
 		"access_rules": ["BWSquare"],
         "sections": [
             {
-                "name": "Outside Tutorial Squares Introduction 9",
+                "name": "Squares Introduction",
                 "item_count": 1
             }
         ],
@@ -257,6 +257,7 @@
 	
 	{
         "name": "Quarry Mill",
+		"access_rules": ["Unrandomized", "Shapers,BWSquare"],
         "sections": [
             {
                 "name": "Discard (Rooftop)",
@@ -275,13 +276,13 @@
                 "item_count": 1
             },
 			{
-                "name": "Small Squares & Dots & and Eraser Puzzle",
+                "name": "Small Squares & Dots & Eraser Puzzle",
 				"access_rules": ["Eraser,Dots,ColoredSquares,[BWSquare]"],
                 "item_count": 1
             },
 			{
-                "name": "Big Squares & Dots & and Eraser Puzzle",
-				"access_rules": ["Eraser,Dots,ColoredSquares","BWSquare"],
+                "name": "Big Squares & Dots & Eraser Puzzle",
+				"access_rules": ["Eraser,Dots,ColoredSquares,BWSquare"],
 				"visibility_rules": ["Hard"],
                 "item_count": 1
             },
@@ -297,6 +298,7 @@
 	
 	{
         "name": "Quarry Boathouse",
+		"access_rules": ["Unrandomized", "Shapers,BWSquare"],
         "sections": [
 			{
                 "name": "Intro Shapers & Stars",
@@ -325,6 +327,7 @@
 	
 	{
         "name": "Quarry Laser",
+		"access_rules": ["Unrandomized", "Shapers,BWSquare"],
         "sections": [
             {
                 "name": "Laser",
@@ -526,7 +529,7 @@
                 "item_count": 1
             },
 			{
-                "name": "Branch Follow Puzzles",
+                "name": "Branch Puzzles",
                 "item_count": 1
             },
 			{
@@ -790,6 +793,24 @@
         ]
     },
 	{
+		"name": "Jungle Discard",
+        "sections": [
+            {
+                "name": "Discard",
+				"access_rules": ["Triangles"],
+				"visibility_rules": ["Discarded"],
+                "item_count": 1
+            }
+        ],
+		"map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1100,
+                "y": 1040,
+            },
+        ]
+	},
+	{
         "name": "Jungle Laser",
         "sections": [
             {
@@ -1002,7 +1023,7 @@
         ]
     },
 	{
-        "name": "Treehouse Yellow Bridge",
+        "name": "Treehouse First Bridge",
         "sections": [
             {
                 "name": "Yellow Bridge",
@@ -1203,6 +1224,11 @@
 			{
                 "name": "Same Solution Set",
 				"access_rules": ["ColoredSquares,ColoredDots"],
+                "item_count": 1
+            },
+			{
+                "name": "Elevator Discard",
+				"access_rules": ["ColoredSquares,ColoredDots,Triangles"],
                 "item_count": 1
             }
         ],

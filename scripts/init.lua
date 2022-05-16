@@ -1,4 +1,5 @@
 ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/archipelago.lua")
 
 Tracker:AddItems("items/items.json")
 
