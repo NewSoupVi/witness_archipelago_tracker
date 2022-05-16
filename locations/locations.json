@@ -1180,7 +1180,7 @@
 	
 	{
         "name": "Inside Mountain Layer 1",
-		"access_rules": ["[$laser_count|7|0],$laser_count|7|1,BWSquare,Stars,StarSameColor"],
+		"access_rules": ["[$laser_count|7|0],$laser_count|7|1,BWSquare,Stars,StarSameColor,Eraser"],
         "sections": [
             {
                 "name": "Angled Inside Trash",
