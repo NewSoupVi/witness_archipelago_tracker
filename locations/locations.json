@@ -444,7 +444,7 @@
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Triangles"],
+				"access_rules": ["Unrandomized,[Dots],[Stars],[StarSameColor],[BWSquare],[Shapers],[ColoredSquares],Triangles","Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
