@@ -705,38 +705,38 @@
             },
 			{
                 "name": "Tutorial Video",
-				"visibility_rules": ["Uncommon"],
+				"visibility_rules": ["Uncommon,Vaults"],
 				"access_rules": ["@Outside Tutorial Vault/Vault Box"],
                 "item_count": 1
             },
 			{
                 "name": "Desert Video",
-				"visibility_rules": ["Uncommon"],
+				"visibility_rules": ["Uncommon,Vaults"],
 				"access_rules": ["@Desert Vault/Vault Box"],
                 "item_count": 1
             },
 			{
                 "name": "Jungle Video",
-				"visibility_rules": ["Uncommon"],
+				"visibility_rules": ["Uncommon,Vaults"],
 				"access_rules": ["@River Vault/Vault Box"],
                 "item_count": 1
             },
 			{
                 "name": "Challenge Video",
-				"visibility_rules": ["Hard"],
+				"visibility_rules": ["Hard,Vaults"],
 				"access_rules": ["@Inside Mountain Secret Area/Challenge Vault Box"],
                 "item_count": 1
             },
 			{
                 "name": "Shipwreck Video",
-				"visibility_rules": ["Uncommon"],
+				"visibility_rules": ["Uncommon,Vaults"],
 				"access_rules": ["@Shipwreck Vault/Vault Box"],
                 "item_count": 1
             },
 			{
                 "name": "Mountain Video",
 				"access_rules": ["@Mountainside Vault/Vault Box"],
-				"visibility_rules": ["Uncommon"],
+				"visibility_rules": ["Uncommon,Vaults"],
                 "item_count": 1
             },
 			{
