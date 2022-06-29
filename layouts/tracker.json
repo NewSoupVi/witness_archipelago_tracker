@@ -32,7 +32,7 @@
             "rows": [
 				[ "Unrandomized", "Uncommon" ],
 				[ "Vaults", "Hard" ],
-				[ "Discarded" ],
+				[ "Discarded", "UTM" ],
             ]
           },
         ]},

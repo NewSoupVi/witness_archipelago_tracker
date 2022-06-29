@@ -126,4 +126,11 @@
     "img": "images/Discarded.png",
     "codes": "Discarded"
   },
+  {
+    "name": "Early UTM",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/UTM.png",
+    "codes": "UTM"
+  },
 ]

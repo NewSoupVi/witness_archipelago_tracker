@@ -20,4 +20,5 @@ SETTINGS_MAPPING = {
 	["shuffle_uncommon"] = "Uncommon",
 	["shuffle_hard"] = "Hard",
 	["shuffle_discarded_panels"] = "Discarded",
+	["early_secret_area"]="UTM",
 }
