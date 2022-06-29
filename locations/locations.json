@@ -257,7 +257,6 @@
 	
 	{
         "name": "Quarry Mill",
-		"access_rules": ["Unrandomized", "Shapers,BWSquare"],
         "sections": [
             {
                 "name": "Discard (Rooftop)",
@@ -298,21 +297,26 @@
 	
 	{
         "name": "Quarry Boathouse",
-		"access_rules": ["Unrandomized", "Shapers,BWSquare"],
+		"access_rules": ["[Shapers],[BWSquare]"],
         "sections": [
 			{
-                "name": "Intro Shapers & Stars",
-				"access_rules": ["Shapers,Stars"],
+                "name": "Intro Shapers",
+				"access_rules": ["Shapers"],
+                "item_count": 1
+            },
+			{
+                "name": "Intro Stars",
+				"access_rules": ["Stars"],
                 "item_count": 1
             },
 			{
                 "name": "Eraser and Shapers Row",
-				"access_rules": ["Shapers,[Stars],Eraser"],
+				"access_rules": ["Shapers,[Stars],[RotatedShapers],Eraser"],
                 "item_count": 1
             },
 			{
                 "name": "Stars & Eraser & Shapers Row",
-				"access_rules": ["Shapers,Stars,StarSameColor,BWSquare,Eraser"],
+				"access_rules": ["Shapers,Stars,StarSameColor,BWSquare,Eraser,RotatedShapers"],
                 "item_count": 2
             },
         ],
@@ -439,12 +443,12 @@
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry"],
+				"access_rules": ["Dots,[Stars],[StarSameColor],BWSquare,Shapers,ColoredSquares,Symmetry"],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Unrandomized,[Dots],[Stars],[StarSameColor],[BWSquare],[Shapers],[ColoredSquares],Triangles","Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Triangles"],
+				"access_rules": ["Unrandomized,[Dots],[Stars],[StarSameColor],[BWSquare],[Shapers],[ColoredSquares],Triangles","Dots,[Stars],[StarSameColor],BWSquare,Shapers,ColoredSquares,Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
@@ -468,7 +472,7 @@
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry"],
+				"access_rules": ["Dots,[Stars],[StarSameColor],BWSquare,Shapers,ColoredSquares,Symmetry"],
                 "item_count": 1
             },
         ],
@@ -626,10 +630,16 @@
         "name": "Town Wooden Rooftop",
         "sections": [
             {
-                "name": "Full Dot Grid Puzzles",
+                "name": "Full Dot Grid Shapers 5",
+				"access_rules": ["Dots,Shapers,RotatedShapers"],
+                "item_count": 1
+            },
+			{
+                "name": "Shapers & Dots & Eraser",
 				"access_rules": ["Dots,Shapers,RotatedShapers,Eraser"],
                 "item_count": 1
-            }
+            },
+			
         ],
         "map_locations": [
             {
@@ -683,7 +693,7 @@
     },
 	{
         "name": "Theater",
-		"access_rules": ["Dots,BWSquare"],
+		"access_rules": ["Dots,BWSquare","Triangles,Stars,StarSameColor,Shapers,BWSquare,UTM"],
         "sections": [
             {
                 "name": "Discard",
@@ -693,42 +703,42 @@
             },
 			{
                 "name": "Tutorial Video",
-				"visibility_rules": ["Uncommon,Vaults"],
-				"access_rules": ["@Outside Tutorial Vault/Vault Box"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+				"access_rules": ["[@Outside Tutorial Vault/Vault Box]"],
                 "item_count": 1
             },
 			{
                 "name": "Desert Video",
-				"visibility_rules": ["Uncommon,Vaults"],
-				"access_rules": ["@Desert Vault/Vault Box"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+				"access_rules": ["[@Desert Vault/Vault Box]"],
                 "item_count": 1
             },
 			{
                 "name": "Jungle Video",
-				"visibility_rules": ["Uncommon,Vaults"],
-				"access_rules": ["@River Vault/Vault Box"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+				"access_rules": ["[@River Vault/Vault Box]"],
                 "item_count": 1
             },
 			{
                 "name": "Challenge Video",
-				"visibility_rules": ["Hard,Vaults"],
-				"access_rules": ["@Inside Mountain Secret Area/Challenge Vault Box"],
+				"visibility_rules": ["Unrandomized,Uncommon,Hard,Vaults"],
+				"access_rules": ["[@Inside Mountain Secret Area/Challenge Vault Box]"],
                 "item_count": 1
             },
 			{
                 "name": "Shipwreck Video",
-				"visibility_rules": ["Uncommon,Vaults"],
-				"access_rules": ["@Shipwreck Vault/Vault Box"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+				"access_rules": ["[@Shipwreck Vault/Vault Box]"],
                 "item_count": 1
             },
 			{
                 "name": "Mountain Video",
-				"access_rules": ["@Mountainside Vault/Vault Box"],
-				"visibility_rules": ["Uncommon,Vaults"],
+				"access_rules": ["[@Mountainside Vault/Vault Box]"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
                 "item_count": 1
             },
 			{
-                "name": "Vault Box",
+                "name": "Vault Box (From UTM)",
 				"visibility_rules": ["Hard,Vaults"],
                 "item_count": 1
             }
@@ -821,7 +831,7 @@
             {
                 "name": "Vault Box",
 				"access_rules": ["Dots,BWSquare"],
-				"visibility_rules": ["Vaults"],
+				"visibility_rules": ["Vaults,Unrandomized"],
                 "item_count": 1
             },
         ],
@@ -1355,7 +1365,7 @@
             },
 			{
                 "name": "Squares and Shapers",
-				"access_rules": ["BWSquare, RotatedShapers"],
+				"access_rules": ["BWSquare, Shapers, RotatedShapers"],
                 "item_count": 1
             },
 			{
@@ -1441,7 +1451,7 @@
         "sections": [
 			{
                 "name": "Challenge Vault",
-				"access_rules": ["Triangles,Stars,StarSameColor"],
+				"access_rules": ["Triangles,Stars,StarSameColor,Shapers"],
                 "item_count": 1
             }
         ],
