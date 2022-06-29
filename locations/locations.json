@@ -316,7 +316,7 @@
             },
 			{
                 "name": "Stars & Eraser & Shapers Row",
-				"access_rules": ["Shapers,Stars,StarSameColor,BWSquare,Eraser,RotatedShapers"],
+				"access_rules": ["Shapers,Stars,StarSameColor,Eraser,RotatedShapers"],
                 "item_count": 2
             },
         ],
