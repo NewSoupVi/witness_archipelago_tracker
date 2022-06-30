@@ -301,7 +301,7 @@
         "sections": [
 			{
                 "name": "Intro Shapers",
-				"access_rules": ["Shapers"],
+				"access_rules": ["RotatedShapers"],
                 "item_count": 1
             },
 			{
@@ -472,7 +472,7 @@
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["Dots,[Stars],[StarSameColor],BWSquare,Shapers,ColoredSquares,Symmetry"],
+				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry"],
                 "item_count": 1
             },
         ],
@@ -722,7 +722,7 @@
 			{
                 "name": "Challenge Video",
 				"visibility_rules": ["Unrandomized,Uncommon,Hard,Vaults"],
-				"access_rules": ["[@Inside Mountain Secret Area/Challenge Vault Box]"],
+				"access_rules": ["[@Mountain Secret Area Vault Box/Challenge Vault]"],
                 "item_count": 1
             },
 			{
@@ -740,6 +740,7 @@
 			{
                 "name": "Vault Box (From UTM)",
 				"visibility_rules": ["Hard,Vaults"],
+				"access_rules": ["@Mountain Secret Area Vault Box/Challenge Vault"],
                 "item_count": 1
             }
         ],
