@@ -16,7 +16,7 @@
             "rows": [
 				[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles" ],
 				[ "Dots", "ColoredDots", "SoundDots", "Symmetry" ],
-				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser"]
+				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "Skip"]
             ]
           },
         ]},

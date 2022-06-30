@@ -133,4 +133,16 @@
     "img": "images/UTM.png",
     "codes": "UTM"
   },
+  {
+    "name": "Puzzle Skips",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/PuzzleSkip.png",
+    "codes": "Skip",
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 1,
+    "overlay_background": "#000000",
+    "overlay_font_size": 14
+  },
 ]

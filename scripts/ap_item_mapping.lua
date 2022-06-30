@@ -12,6 +12,7 @@ ITEM_MAPPING = {
 	[158061] = {"StarSameColor", "toggle"},
 	[158071] = {"BWSquare", "toggle"},
 	[158072] = {"ColoredSquares", "toggle"},
+	[158510] = {"Skip", "consumable"},
 }
 
 SETTINGS_MAPPING = {

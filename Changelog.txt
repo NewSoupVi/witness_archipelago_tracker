@@ -1,3 +1,6 @@
+0.3.3.3a
+	Added puzzle skips to the tracker
+
 0.3.3.3
 	Fixed Theater Vault Box (added requirement - access to mountain challenge area)
 	Fixed Town Red Rooftop Discard not tracking
