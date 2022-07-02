@@ -1,3 +1,8 @@
+0.3.3.3b
+	Fixed mountain layer 1 (needs colored squres)
+	Fixed UTM stars &  (needs colored squres)
+	Fixed theater vault box not tracking
+
 0.3.3.3a
 	Added puzzle skips to the tracker
 
