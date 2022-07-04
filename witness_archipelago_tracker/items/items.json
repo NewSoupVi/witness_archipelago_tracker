@@ -1,0 +1,148 @@
+[
+  {
+    "name": "Black/White Squares",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/BWSquare.png",
+    "codes": "BWSquare"
+  },
+  {
+    "name": "Colored Squares",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/ColoredSquares.png",
+    "codes": "ColoredSquares"
+  },
+  {
+    "name": "Dots",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Dots.png",
+    "codes": "Dots"
+  },
+  {
+    "name": "Colored Dots",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/ColoredDots.png",
+    "codes": "ColoredDots"
+  },
+  {
+    "name": "SoundDots",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/SoundDots.png",
+    "codes": "SoundDots"
+  },
+    {
+    "name": "Shapers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Shapers.png",
+    "codes": "Shapers"
+  },
+    {
+    "name": "Rotated Shapers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/RotatedShapers.png",
+    "codes": "RotatedShapers"
+  },
+  {
+    "name": "Negative Shapers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/NegativeShapers.png",
+	"disabled_img": "images/NegativeGreyed.PNG",
+    "codes": "NegativeShapers"
+  },
+  {
+    "name": "Stars",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Stars.png",
+    "codes": "Stars"
+  },
+  {
+    "name": "Stars & Same Colored Symbol",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/StarSameColor.png",
+    "codes": "StarSameColor"
+  },
+  {
+    "name": "Eraser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Eraser.png",
+    "codes": "Eraser"
+  },
+  {
+    "name": "Triangles",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Triangles.png",
+    "codes": "Triangles"
+  },
+  {
+    "name": "Symmetry",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Symmetry.png",
+    "codes": "Symmetry"
+  },
+  {
+    "name": "Shuffle Uncommon",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/M.png",
+    "codes": "Uncommon"
+  },
+  {
+    "name": "Shuffle Hard",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/H.png",
+    "codes": "Hard"
+  },
+  {
+    "name": "Shuffle Unrandomized",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Unrandomized.png",
+    "codes": "Unrandomized"
+  },
+  {
+    "name": "Shuffle Vaults",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Vault.PNG",
+    "codes": "Vaults"
+  },
+    {
+    "name": "Shuffle Discarded",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Discarded.png",
+    "codes": "Discarded"
+  },
+  {
+    "name": "Early UTM",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/UTM.png",
+    "codes": "UTM"
+  },
+  {
+    "name": "Puzzle Skips",
+    "type": "consumable",
+    "loop": "true",
+    "img": "images/PuzzleSkip.png",
+    "codes": "Skip",
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 1,
+    "overlay_background": "#000000",
+    "overlay_font_size": 14
+  },
+]
