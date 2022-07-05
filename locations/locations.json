@@ -661,7 +661,7 @@
             },
 			{
                 "name": "RGB Stars",
-				"access_rules": ["SoundDots,Stars,ColoredSquares"],
+				"access_rules": ["SoundDots,Stars,[BWSquare],[ColoredSquares]"],
 				"visibility_rules": ["Uncommon"],
                 "item_count": 1
             }
