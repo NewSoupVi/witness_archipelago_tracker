@@ -1,6 +1,3 @@
-0.3.3.3e
-	Fixed RGB house stars (the control panel needs both black and white and colored squares)
-
 0.3.3.3d
 	Monastary can be done out of logic with dots
 	Fixed quarry intro shapers (needs shapers)
