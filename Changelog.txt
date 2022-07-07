@@ -1,3 +1,9 @@
+0.3.3.4
+	Added items only tracking
+
+0.3.3.3e
+	Updated item and settings images
+
 0.3.3.3d
 	Monastary can be done out of logic with dots
 	Fixed quarry intro shapers (needs shapers)
