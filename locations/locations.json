@@ -526,7 +526,7 @@
 	{
         "name": "Monastery",
 		"visibility_rules": ["Unrandomized"],
-		"access_rules": ["Dots"],
+		"access_rules": ["[Dots]"],
         "sections": [
             {
                 "name": "Rhombic Avoid Puzzles",
@@ -1228,6 +1228,7 @@
 			{
                 "name": "Elevator Discard",
 				"access_rules": ["ColoredSquares,ColoredDots,Triangles"],
+				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
         ],
@@ -1250,7 +1251,7 @@
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Triangles,[$laser_count|11|0],$laser_count|11|1"],
+				"access_rules": ["Triangles"],
 				"visibility_rules": ["Discarded,Hard"],
                 "item_count": 1
             },
