@@ -16,6 +16,12 @@
      "flags": [
        "ap"
      ]
+    },
+    "var_doorshuffle": {
+     "display_name": "Door shuffle",
+     "flags": [
+       "ap"
+     ]
     }
   }
 }
