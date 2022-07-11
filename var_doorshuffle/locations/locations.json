@@ -1493,12 +1493,7 @@
         "sections": [
 			{
                 "name": "door 1",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 2",
-				"access_rules": [],
+				"access_rules": ["@Overworld, Outside Tutorial Optional Door 1, Outside Tutorial Door to Outpost"],
                 "item_count": 1
             }
         ],
@@ -1518,7 +1513,7 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
+				"access_rules": ["@Overworld, Outside Tutorial Exit Door from Outpost"],
                 "item_count": 1
             }
         ],
@@ -1538,7 +1533,7 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
+				"access_rules": ["@Overworld, Glass Factory Entry Door"],
                 "item_count": 1
             }
         ],
@@ -1558,7 +1553,7 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
+				"access_rules": ["@Overworld, Glass Factory Back Wall, Boat"],
                 "item_count": 1
             }
         ],
@@ -1578,7 +1573,7 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
+				"access_rules": ["@Overworld, Symmetry Island Door to Symmetry Island Lower"],
                 "item_count": 1
             }
         ],
@@ -1598,7 +1593,7 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
+				"access_rules": ["@Symmetry outer, Symmetry Island Door to Symmetry Island Upper"],
                 "item_count": 1
             }
         ],
@@ -1613,7 +1608,7 @@
 	
 	{
         "name": "Desert outside door",
-		"access_rules": [],
+		"access_rules": ["@Overworld, Desert Door to Desert Flood Light Room"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1633,7 +1628,7 @@
 	
 	{
         "name": "Desert floodlight door",
-		"access_rules": [],
+		"access_rules": ["@Desert floodlight, Desert Door to Pond Room"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1653,7 +1648,7 @@
 	
 	{
         "name": "Desert ponds door",
-		"access_rules": [],
+		"access_rules": ["@Desert ponds, Desert Door to Water Levels Room"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1673,7 +1668,7 @@
 	
 	{
         "name": "Desert flood door",
-		"access_rules": [],
+		"access_rules": ["@Desert flood, Desert Door to Elevator Room"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1693,7 +1688,7 @@
 	
 	{
         "name": "Desert door to challenge",
-		"access_rules": [],
+		"access_rules": ["@Desert laser, Theater Walkway Door to Desert Elevator Room"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1718,7 +1713,7 @@
 	
 	{
         "name": "Quarry elevator",
-		"access_rules": [],
+		"access_rules": ["@Quarry Mill/Small Squares & Dots & Eraser Puzzle"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1738,7 +1733,7 @@
 
 	{
         "name": "Quarry mill outside stairs",
-		"access_rules": [],
+		"access_rules": ["Quarry Mill Door to Outside Quarry Stairs"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1758,16 +1753,11 @@
 
 	{
         "name": "Quarry main entrance",
-		"access_rules": [],
+		"access_rules": ["Quarry Door to Quarry 1, Quarry Door to Quarry 2"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "door 1",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 2",
+                "name": "doors",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -1783,7 +1773,7 @@
 	
 	{
         "name": "Quarry mill small door",
-		"access_rules": [],
+		"access_rules": ["@Quarry, Quarry Mill Ground Floor Shortcut Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1803,7 +1793,7 @@
 	
 	{
         "name": "Quarry mill upstairs",
-		"access_rules": [],
+		"access_rules": ["@Quarry mill access, Dots, Eraser", "@Quarry mill access, Quarry Mill Stairs"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1828,7 +1818,7 @@
 	
 	{
         "name": "Quarry mill big door",
-		"access_rules": [],
+		"access_rules": ["@Quarry, Quarry Door to Mill"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1848,7 +1838,7 @@
 	
 	{
         "name": "Quarry boathouse dock",
-		"access_rules": [],
+		"access_rules": ["@Quarry"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1868,29 +1858,14 @@
 
 	{
         "name": "Boathouse upstairs",
-		"access_rules": [],
+		"access_rules": ["@Quarry, @Intro Shapers, @Intro Stars"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "ramp",
+                "name": "Access",
 				"access_rules": [],
                 "item_count": 1
-            },
-			{
-                "name": "door 1",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 2",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "ramp movement",
-				"access_rules": [],
-                "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
@@ -1903,7 +1878,7 @@
 	
 	{
         "name": "Quarry door from shady trees",
-		"access_rules": [],
+		"access_rules": ["@Quarry, Shadows Barrier to Quarry", "@Trees 1st set, Shadows Barrier to Quarry"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1923,7 +1898,7 @@
 	
 	{
         "name": "Shady trees door to 1st set",
-		"access_rules": [],
+		"access_rules": ["Shadows Timed Door", "Shadows Barrier to Shadows"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1948,12 +1923,12 @@
         "sections": [
 			{
                 "name": "left door",
-				"access_rules": [],
+				"access_rules": ["Shadows Laser Room Left Door"],
                 "item_count": 1
             },
 			{
                 "name": "right door",
-				"access_rules": [],
+				"access_rules": ["Shadows Laser Room Right Door"],
                 "item_count": 1
             },			
         ],
@@ -1968,7 +1943,7 @@
 	
 	{
         "name": "Shady trees door to keep",
-		"access_rules": [],
+		"access_rules": ["Keep Shortcut to Shadows"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1988,7 +1963,7 @@
 	
 	{
         "name": "Pressure plates 1 door",
-		"access_rules": [],
+		"access_rules": ["Keep Pressure Plates 1 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2008,7 +1983,7 @@
 	
 	{
         "name": "Pressure plates 2 door",
-		"access_rules": [],
+		"access_rules": ["@Plates 2, Keep Pressure Plates 2 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2028,7 +2003,7 @@
 	
 	{
         "name": "Pressure plates 3 door",
-		"access_rules": [],
+		"access_rules": ["@Plates 3, Keep Pressure Plates 3 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2048,7 +2023,7 @@
 	
 	{
         "name": "Pressure plates 4 door",
-		"access_rules": [],
+		"access_rules": ["@Plates 4, Keep Pressure Plates 4 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2067,8 +2042,28 @@
     },
 	
 	{
+        "name": "Keep laser shortcut door",
+		"access_rules": ["Keep Tower Shortcut to Keep"],
+		"visibility_rules": [],
+        "sections": [
+			{
+                "name": "door",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "doors",
+                "x": 1247,
+                "y": 176,
+            },
+        ]
+    },
+	
+	{
         "name": "Maze 1 door",
-		"access_rules": [],
+		"access_rules": ["Keep Hedge Maze 1 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2088,7 +2083,7 @@
 	
 	{
         "name": "Maze 2 door",
-		"access_rules": [],
+		"access_rules": ["@Maze 2/canAccess, Keep Hedge Maze 2 Exit Door", "@Maze 3, Keep Hedge Maze 2 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2108,7 +2103,7 @@
 	
 	{
         "name": "Maze 3 door",
-		"access_rules": [],
+		"access_rules": ["@Maze 3/canAccess, Keep Hedge Maze 3 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2128,7 +2123,7 @@
 	
 	{
         "name": "Maze 4 door",
-		"access_rules": [],
+		"access_rules": ["@Maze 4/canAccess, Keep Hedge Maze 4 Exit Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2148,7 +2143,7 @@
 	
 	{
         "name": "Maze 2 shortcut",
-		"access_rules": [],
+		"access_rules": ["Keep Hedge Maze 2 Shortcut"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2168,7 +2163,7 @@
 	
 	{
         "name": "Maze 3 shortcut",
-		"access_rules": [],
+		"access_rules": ["Keep Hedge Maze 3 Shortcut"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2188,7 +2183,7 @@
 	
 	{
         "name": "Maze 4 shortcut",
-		"access_rules": [],
+		"access_rules": ["Keep Hedge Maze 4 Shortcut"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2208,16 +2203,11 @@
 	
 	{
         "name": "Treehouse entry doors",
-		"access_rules": [],
+		"access_rules": ["Boat, Treehouse First Door, Treehouse Second Door"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "door 1",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 2",
+                "name": "doors",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2233,7 +2223,7 @@
 	
 	{
         "name": "Treehouse after bridge 1 door",
-		"access_rules": [],
+		"access_rules": ["@Treehouse/canAccess, Treehouse Beyond Yellow Bridge Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2253,7 +2243,7 @@
 	
 	{
         "name": "Treehouse laser timed door",
-		"access_rules": [],
+		"access_rules": ["@Treehouse/canAccess, Treehouse Beyond Yellow Bridge Door, Treehouse Door to Laser House"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2273,7 +2263,7 @@
 	
 	{
         "name": "Treehouse exit door",
-		"access_rules": [],
+		"access_rules": ["@Treehouse/canAccess, Treehouse Beyond Yellow Bridge Door, Treehouse Drawbridge"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2293,7 +2283,7 @@
 	
 	{
         "name": "Swamp main entrance",
-		"access_rules": [],
+		"access_rules": ["Swamp Entry Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2313,7 +2303,7 @@
 	
 	{
         "name": "Swamp moving bridge",
-		"access_rules": [],
+		"access_rules": ["@Swamp Entry/canAccess, Shapers", "@Swamp Platform/canAccess, Shapers"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2333,7 +2323,7 @@
 
 	{
         "name": "Drain cyan water",
-		"access_rules": [],
+		"access_rules": ["@Swamp Platform/canAccess, Swamp Cyan Water Pump"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2353,7 +2343,7 @@
 	
 	{
         "name": "Drain red water",
-		"access_rules": [],
+		"access_rules": ["@Swamp Red/canAccess, Swamp Red Water Pump"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2373,7 +2363,7 @@
 	
 	{
         "name": "Drain blue water",
-		"access_rules": [],
+		"access_rules": ["@Swamp Back/canAccess, Swamp Blue Water Pump"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2392,8 +2382,8 @@
     },
 
 	{
-        "name": "Drain yellow water",
-		"access_rules": [],
+        "name": "Drain 'purple' water",
+		"access_rules": ["@Swamp Back/canAccess, Swamp Purple Water Pump"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2413,7 +2403,7 @@
 
 	{
         "name": "Swamp door to broken shapers",
-		"access_rules": [],
+		"access_rules": ["@Swamp Broken/canAccess, Swamp Door to Broken Shapers"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2433,7 +2423,7 @@
 	
 	{
         "name": "Swamp door to rotated shapers",
-		"access_rules": [],
+		"access_rules": ["@Swamp Rotated/canAccess, Swamp Door to Rotated Shapers"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2452,8 +2442,8 @@
     },
 	
 	{
-        "name": "Swamp front rotating bridge",
-		"access_rules": [],
+        "name": "Swamp colored rotating bridge",
+		"access_rules": ["@Swamp Back/canAccess, Shapers, RotatedShapers"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2473,7 +2463,7 @@
 	
 	{
         "name": "Swamp shortcut to back",
-		"access_rules": [],
+		"access_rules": ["@Swamp Platform/canAccess, Swamp Platform Shortcut Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2493,7 +2483,7 @@
 	
 	{
         "name": "Swamp shortcut to laser",
-		"access_rules": [],
+		"access_rules": ["Swamp Near Laser Shortcut"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2505,15 +2495,35 @@
         "map_locations": [
             {
                 "map": "doors",
-                "x": 1040,
+                "x": 992,
                 "y": 750,
             },
         ]
     },
 	
 	{
+        "name": "Swamp red underwater door",
+		"access_rules": ["@Swamp Red/canAccess, Swamp Red Underwater Exit"],
+		"visibility_rules": [],
+        "sections": [
+			{
+                "name": "door",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "doors",
+                "x": 1100,
+                "y": 742,
+            },
+        ]
+    },
+	
+	{
         "name": "Swamp back rotating bridge",
-		"access_rules": [],
+		"access_rules": ["@Swamp Back/canAccess, Shapers, RotatedShapers"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2533,7 +2543,7 @@
 	
 	{
         "name": "Early UTM door",
-		"access_rules": [],
+		"access_rules": ["Inside Mountain Caves Shortcut to Mountain Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2553,7 +2563,7 @@
 	
 	{
         "name": "UTM door to swamp",
-		"access_rules": [],
+		"access_rules": ["Inside Mountain Caves Shortcut to Swamp Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2574,7 +2584,7 @@
 	{
         "name": "Mountain entrance",
 		"access_rules": [],
-		"visibility_rules": [],
+		"visibility_rules": ["hide"],
         "sections": [
 			{
                 "name": "door",
@@ -2593,21 +2603,11 @@
 
 	{
         "name": "Mountain layer 1 door",
-		"access_rules": [],
+		"access_rules": ["@Mountain/canAccess, @Inside Mountain Layer 1, Inside Mountain Door to Second Layer"],
 		"visibility_rules": [],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "Layer 2 front stairs",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "Layer 2 back stairs",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2622,12 +2622,12 @@
     },
 
 	{
-        "name": "Mountain layer 2 elevator",
-		"access_rules": [],
+        "name": "Mountain layer 2 door",
+		"access_rules": ["@Mountain layer 1 door/door, Inside Mountain Staircase Near, Inside Mountain Light Bridge Controller 2, Inside Mountain Light Bridge Controller 3, Inside Mountain Door to Elevator"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "elevator",
+                "name": "door",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2643,11 +2643,11 @@
 	
 	{
         "name": "Mountain meta exit",
-		"access_rules": [],
+		"access_rules": ["@Mountain layer 2 door, Inside Mountain Glass Door"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "elevator",
+                "name": "door",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2663,7 +2663,7 @@
 	
 	{
         "name": "Mountain final door",
-		"access_rules": [],
+		"access_rules": ["@Mountain meta exit, Inside Mountain Door to Final Room", "@UTM access/canAccess, Inside Mountain Bottom Layer Rock Open, Inside Mountain Door to Secret Area, Inside Mountain Door to Final Room"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2683,16 +2683,11 @@
 	
 	{
         "name": "Doors to mountain secret area",
-		"access_rules": [],
+		"access_rules": ["@UTM access/canAccess, Inside Mountain Bottom Layer Rock Open, Inside Mountain Door to Secret Area"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "door 1",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 2",
+                "name": "doors",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2708,7 +2703,7 @@
 	
 	{
         "name": "UTM challenge entrance",
-		"access_rules": [],
+		"access_rules": ["@Challenge access/canAccess, Inside Mountain Caves Challenge Entry Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2728,7 +2723,7 @@
 	
 	{
         "name": "Challenge back door",
-		"access_rules": [],
+		"access_rules": ["@Challenge access/canAccess, Challenge Door to Theater Walkway"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2748,7 +2743,7 @@
 	
 	{
         "name": "Challenge exit to town",
-		"access_rules": [],
+		"access_rules": ["Theater Walkway Door to Town"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2768,7 +2763,7 @@
 	
 	{
         "name": "Challenge exit to theater",
-		"access_rules": [],
+		"access_rules": ["@Theater walkway/canAccess, Theater Walkway Door to Back of Theater"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2787,8 +2782,28 @@
     },
 	
 	{
+        "name": "Windmill",
+		"access_rules": ["Windmill Door to Front of Theater"],
+		"visibility_rules": [],
+        "sections": [
+			{
+                "name": "door",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "doors",
+                "x": 560,
+                "y": 953,
+            },
+        ]
+    },
+	
+	{
         "name": "Theater entrance",
-		"access_rules": [],
+		"access_rules": ["@Theater access/canAccess, Windmill Door to Front of Theater"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2807,12 +2822,12 @@
     },
 	
 	{
-        "name": "Theater back door",
-		"access_rules": [],
+        "name": "Theater back doors",
+		"access_rules": ["Theater Door to Cargo Box Left", "Theater Door to Cargo Box Right"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "door",
+                "name": "doors",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2828,16 +2843,11 @@
 
 	{
         "name": "Red rooftop",
-		"access_rules": [],
+		"access_rules": ["Town Maze Staircase"],
 		"visibility_rules": [],
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "bridge",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2853,7 +2863,7 @@
 	
 	{
         "name": "Full dot grid stairs",
-		"access_rules": [],
+		"access_rules": ["Town Wooden Roof Staircase"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2873,26 +2883,11 @@
 	
 	{
         "name": "Laser tower",
-		"access_rules": [],
+		"access_rules": ["Town Tower Blue Panels Door, Town Tower Lattice Door, Town Tower Environmental Set Door, Town Tower Eraser Set Door"],
 		"visibility_rules": [],
         "sections": [
 			{
-                "name": "door 1",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 2",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 3",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "door 4",
+                "name": "doors",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -2908,7 +2903,7 @@
 	
 	{
         "name": "Yellow stained glass door",
-		"access_rules": [],
+		"access_rules": ["Town Tinted Door to RGB House"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2928,7 +2923,7 @@
 	
 	{
         "name": "Church door",
-		"access_rules": [],
+		"access_rules": ["[@Yellow stained glass door], Town Door to Church"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2947,28 +2942,8 @@
     },
 	
 	{
-        "name": "Yellow stained glass door",
-		"access_rules": [],
-		"visibility_rules": [],
-        "sections": [
-			{
-                "name": "door",
-				"access_rules": [],
-                "item_count": 1
-            }
-        ],
-        "map_locations": [
-            {
-                "map": "doors",
-                "x": 381,
-                "y": 1182,
-            },
-        ]
-    },
-	
-	{
         "name": "Stairs into RGB house",
-		"access_rules": [],
+		"access_rules": ["@Yellow stained glass door, Town RGB House Staircase"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -2988,7 +2963,7 @@
 	
 	{
         "name": "Monestary entrance",
-		"access_rules": [],
+		"access_rules": ["Monastery Left Door, Monastery Right Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3007,8 +2982,8 @@
     },
 	
 	{
-        "name": "Monestary shortcut to jungle",
-		"access_rules": [],
+        "name": "Monastery shortcut to jungle",
+		"access_rules": ["Monastery Door to Garden, River Shortcut to Monastery Garden"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3028,7 +3003,7 @@
 	
 	{
         "name": "Popup wall",
-		"access_rules": [],
+		"access_rules": ["Jungle Popup Wall"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3048,7 +3023,7 @@
 
 	{
         "name": "Color bunker entrance",
-		"access_rules": [],
+		"access_rules": ["Bunker Bunker Entry Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3068,7 +3043,7 @@
 	
 	{
         "name": "Blue stained glass door",
-		"access_rules": [],
+		"access_rules": ["@Color bunker entrance, Bunker Door to Bunker Proper"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3088,16 +3063,11 @@
 	
 	{
         "name": "Cargo container doors",
-		"access_rules": [],
+		"access_rules": ["@Blue stained glass door, Bunker Door to Ultraviolet Room"],
 		"visibility_rules": [],
         "sections": [
 			{
                 "name": "entrance",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "Cargo container control",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -3113,16 +3083,11 @@
 	
 	{
         "name": "Elevator",
-		"access_rules": [],
+		"access_rules": ["@Cargo container doors, Bunker Door to Elevator"],
 		"visibility_rules": [],
         "sections": [
 			{
                 "name": "Cargo container exit",
-				"access_rules": [],
-                "item_count": 1
-            },
-			{
-                "name": "elevator control",
 				"access_rules": [],
                 "item_count": 1
             }
@@ -3143,12 +3108,12 @@
         "sections": [
 			{
                 "name": "Monestary exit to overworld",
-				"access_rules": [],
+				"access_rules": ["Monastery Shortcut"],
                 "item_count": 1
             },
 			{
                 "name": "Jungle laser exit",
-				"access_rules": [],
+				"access_rules": ["Jungle Shortcut to River"],
                 "item_count": 1
             }
         ],
@@ -3161,7 +3126,397 @@
         ]
     },
 	
+	{
+        "name": "Overworld",
+		"access_rules": [],
+		"visibility_rules": [],
+        "sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	
+	{
+        "name": "Symmetry outer",
+		"access_rules": ["@Symmetry outer door/door"],
+		"visibility_rules": [],
+		"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
 
+	{
+        "name": "Desert floodlight",
+		"access_rules": ["Desert Door to Desert Flood Light Room"],
+		"visibility_rules": [],
+		"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+	
+	{
+        "name": "Desert ponds",
+		"access_rules": ["@Desert floodlight, Desert Door to Pond Room"],
+		"visibility_rules": [],
+		"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+	
+	{
+        "name": "Desert flood",
+		"access_rules": ["@Desert ponds, Desert Door to Water Levels Room"],
+		"visibility_rules": [],
+		"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+	
+	{
+        "name": "Desert laser",
+		"access_rules": ["@Desert flood, Desert Door to Elevator Room"],
+		"visibility_rules": [],
+		"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+	
+	{
+        "name": "Quarry",
+		"access_rules": ["@Quarry main entrance", "@Trees 1st set, Shadows Barrier to Quarry", "Boat, Quarry Boathouse Boat Staircase", "@Quarry mill access, Quarry mill small door", "@Quarry mill access, @Quarry mill big door", "@Quarry elevator"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
 
+	{
+        "name": "Quarry mill access",
+		"access_rules": ["@Quarry, @Quarry mill small door", "@Quarry, Quarry mill big door", "@Quarry mill outside stairs"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
 
+	{
+        "name": "Quarry mill upstairs",
+		"access_rules": ["@Quarry mill access, Quarry Mill Stairs", "@Quarry mill access"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Boathouse upstairs",
+		"access_rules": ["@Quarry"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Trees 1st set",
+		"access_rules": ["@Quarry, Shadows Barrier to Quarry", "Shadows Timed Door", "Shadows Barrier to Shadows"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Maze 2",
+		"access_rules": ["Keep Hedge Maze 1 Exit Door", "Keep Hedge Maze 2 Shortcut", "@Maze 3/canAccess, Keep Hedge Maze 2 Exit Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Maze 3",
+		"access_rules": ["@Maze 4/canAccess, Keep Hedge Maze 3 Exit Door", "@Maze 2, Keep Hedge Maze 2 Exit Door", "Keep Hedge Maze 3 Shortcut"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Maze 4",
+		"access_rules": ["@Maze 3, Keep Hedge Maze 3 Exit Door", "Keep Hedge Maze 4 Shortcut", "@Keep laser, Keep Hedge Maze 4 Exit Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Plates 2",
+		"access_rules": ["Keep Pressure Plates 1 Exit Door", "@Plates 3"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Plates 3",
+		"access_rules": ["@Plates 2", "@Plates 4, Keep Pressure Plates 3 Exit Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Plates 4",
+		"access_rules": ["@Plates 3, Keep Pressure Plates 3 Exit Door", "@Keep laser, Keep Pressure Plates 4 Exit Door", "Keep Shortcut to Shadows"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Keep laser",
+		"access_rules": ["Keep Tower Shortcut to Keep", "@Plates 4, Keep Pressure Plates 4 Exit Door", "@Maze 4, Keep Hedge Maze 4 Exit Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Treehouse",
+		"access_rules": ["Boat, Treehouse First Door, Treehouse Second Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+
+	{
+        "name": "Swamp Entry",
+		"access_rules": ["Swamp Entry Door", "@Swamp Platform/canAccess, Shapers"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },		
+	{
+        "name": "Swamp Platform",
+		"access_rules": ["@Swamp Entry/canAccess, Shapers", "@Swamp Broken/canAccess, Swamp Door to Broken Shapers", "@Swamp Back/canAccess, Swamp Platform Shortcut Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	
+	{
+        "name": "Swamp Broken",
+		"access_rules": ["@Swamp Platform/canAccess, Swamp Door to Broken Shapers", "@Swamp Rotated/canAccess, Swamp Door to Rotated Shapers"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },		
+	{
+        "name": "Swamp Rotated",
+		"access_rules": ["@Swamp Broken/canAccess, Swamp Door to Rotated Shapers", "@Swamp Back/canAccess, Shapers, RotatedShapers", "@Swamp Red/canAccess, Swamp Red Water Pump"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },		
+	{
+        "name": "Swamp Red",
+		"access_rules": ["@Swamp Rotated/canAccess, Swamp Red Water Pump"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },		
+	{
+        "name": "Swamp Back",
+		"access_rules": ["Boat", "@Swamp Rotated/canAccess, Shapers, RotatedShapers", "@Swamp Platform/canAccess, Swamp Platform Shortcut Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },	
+	{
+        "name": "Swamp Laser",
+		"access_rules": ["@Swamp Red, Swamp Red Underwater Exit, Shapers, NegativeShapers, RotatedShapers", "Swamp Near Laser Shortcut"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },		
+	{
+        "name": "Mountain",
+		"access_rules": ["Squares, Stars, StarSameColor"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	{
+        "name": "UTM access",
+		"access_rules": ["@Mountain meta exit, Inside Mountain Bottom Layer Rock Open, Inside Mountain Door to Secret Area", "@Challenge access/canAccess, Inside Mountain Caves Secret Black Door to Challenge", "Inside Mountain Caves Shortcut to Swamp Door", "Inside Mountain Caves Shortcut to Mountain Door"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	{
+        "name": "Challenge access",
+		"access_rules": ["@UTM access/canAccess, Inside Mountain Caves Secret Black Door to Challenge", "@Theater walkway/canAccess, Challenge Door to Theater Walkway"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	{
+        "name": "Theater access",
+		"access_rules": ["Town Windmill Door, Windmill Door to Front of Theater", "Theater Door to Cargo Box Left", "Theater Door to Cargo Box Right", "@Theater walkway/canAccess, Windmill Door to Front of Theater, Theater Walkway Door to Back of Theater"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	{
+        "name": "Theater walkway",
+		"access_rules": ["@Theater access/canAccess, Windmill Door to Front of Theater, Theater Walkway Door to Back of Theater", "Theater Walkway Door to Town", "Desert laser/canAccess, Theater Walkway Door to Desert Elevator Room", "Challenge access/canAccess, Challenge Door to Theater Walkway"],
+		"visibility_rules": [],
+			"sections": [
+			{
+                "name": "canAccess",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+	
 ]
