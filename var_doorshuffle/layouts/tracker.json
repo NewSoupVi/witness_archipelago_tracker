@@ -21,37 +21,6 @@
           },
         ]},
 		
-		{"type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "6,1",
-            "h_alignment": "left",
-			"item_size": "20",
-            "rows": [
-				["Outside Tutorial Optional Door 1"	,"Glass Factory Entry Door"	,"Desert Door to Desert Flood Light Room"	,"Quarry Door to Quarry 1"	,"Shadows Timed Door"	,"Keep Hedge Maze 1 Exit Door"	,"Monastery Shortcut"	,"Town Wooden Roof Staircase"	,"Swamp Entry Door"	,"Treehouse First Door"	,"Inside Mountain Door to Second Layer"],
-				["Outside Tutorial Door to Outpost"	,"Glass Factory Back Wall"	,"Desert Door to Pond Room"	,"Quarry Door to Quarry 2"	,"Shadows Laser Room Right Door"	,"Keep Pressure Plates 1 Exit Door"	,"Monastery Left Door"	,"Town Tinted Door to RGB House"	,"Swamp Door to Broken Shapers"	,"Treehouse Second Door"	,"Inside Mountain Staircase Near"],
-				["Outside Tutorial Exit Door from Outpost"	,"Symmetry Island Door to Symmetry Island Lower"	,"Desert Door to Water Levels Room"	,"Quarry Door to Mill"	,"Shadows Laser Room Left Door"	,"Keep Hedge Maze 2 Shortcut"	,"Monastery Right Door"	,"Town Door to Church"	,"Swamp Platform Shortcut Door"	,"Treehouse Beyond Yellow Bridge Door"	,"Inside Mountain Light Bridge Controller 2"],
-				[""	,"Symmetry Island Door to Symmetry Island Upper"	,"Desert Door to Elevator Room"	,"Quarry Mill Ground Floor Shortcut Door"	,"Shadows Barrier to Quarry"	,"Keep Hedge Maze 2 Exit Door"	,"Monastery Door to Garden"	,"Town Maze Staircase"	,"Swamp Cyan Water Pump"	,"Treehouse Drawbridge"	,"Inside Mountain Light Bridge Controller 3"],
-				[""	,""	,""	,"Quarry Mill Door to Outside Quarry Stairs"	,"Shadows Barrier to Shadows"	,"Keep Hedge Maze 3 Shortcut"	,"River Shortcut to Monastery Garden"	,"Town Windmill Door"	,"Swamp Door to Rotated Shapers"	,"Treehouse Door to Laser House"	,"Inside Mountain Door to Elevator"],
-				[""	,""	,""	,"Quarry Mill Stairs"	,""	,"Keep Hedge Maze 3 Exit Door"	,"Jungle Shortcut to River"	,"Town RGB House Staircase"	,"Swamp Red Water Pump"	,""	,"Inside Mountain Staircase Far"],
-				[""	,""	,""	,"Quarry Boathouse Boat Staircase"	,""	,"Keep Hedge Maze 4 Shortcut"	,"Jungle Popup Wall"	,"Town Tower Blue Panels Door"	,"Swamp Red Underwater Exit"	,""	,"Inside Mountain Glass Door"],
-				[""	,""	,""	,"Quarry Boathouse Barrier 1"	,""	,"Keep Hedge Maze 4 Exit Door"	,"Bunker Bunker Entry Door"	,"Town Tower Lattice Door"	,"Swamp Blue Water Pump"	,""	,"Inside Mountain Door to Final Room"],
-				[""	,""	,""	,"Quarry Boathouse Shortcut Door"	,""	,"Keep Pressure Plates 2 Exit Door"	,"Bunker Door to Bunker Proper"	,"Town Tower Environmental Set Door"	,"Swamp Purple Water Pump"	,""	,"Inside Mountain Bottom Layer Rock Open"],
-				[""	,""	,""	,""	,""	,"Keep Pressure Plates 3 Exit Door"	,"Bunker Door to Ultraviolet Room"	,"Town Tower Eraser Set Door"	,"Swamp Near Laser Shortcut"	,""	,"Inside Mountain Door to Secret Area"],
-				[""	,""	,""	,""	,""	,"Keep Pressure Plates 4 Exit Door"	,"Bunker Door to Elevator"	,"Windmill Door to Front of Theater"	,""	,""	,"Inside Mountain Caves Secret Black Door to Challenge"],
-				[""	,""	,""	,""	,""	,"Keep Shortcut to Shadows"	,""	,"Theater Door to Cargo Box Left"	,""	,""	,"Inside Mountain Caves Shortcut to Mountain Door"],
-				[""	,""	,""	,""	,""	,"Keep Tower Shortcut to Keep"	,""	,"Theater Door to Cargo Box Right"	,""	,""	,"Inside Mountain Caves Shortcut to Swamp Door"],
-				[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Inside Mountain Caves Challenge Entry Door"],
-				[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Challenge Door to Theater Walkway"],
-				[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Theater Walkway Door to Back of Theater"],
-				[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Theater Walkway Door to Desert Elevator Room"],
-				[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Theater Walkway Door to Town"]
-            ]
-          },
-        ]},
 
 		{"type": "array",
         "orientation": "horizontal",
@@ -65,7 +34,7 @@
             "rows": [
 				[ "Unrandomized", "Uncommon" ],
 				[ "Vaults", "Hard" ],
-				[ "Discarded", "UTM" ],
+				[ "Discarded", "UTM", "DoorsComplex" ],
             ]
           },
         ]},

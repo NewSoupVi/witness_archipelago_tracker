@@ -141,6 +141,13 @@
     "codes": "UTM"
   },
   {
+    "name": "Doors complex",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/door.png",
+    "codes": "DoorsComplex"
+  },
+  {
     "name": "Puzzle Skips",
     "type": "consumable",
     "loop": "true",
@@ -200,6 +207,20 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Symmetry Island Door to Symmetry Island Upper"
+  },
+ {
+    "name": "Orchard Middle Gate",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Orchard Middle Gate"
+  }, 
+ {
+    "name": "Orchard Final Gate",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Orchard Final Gate"
   },
 {
     "name": "Desert Door to Desert Flood Light Room",
@@ -522,6 +543,13 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Windmill Door to Front of Theater"
+  },
+  {
+    "name": "Town Cargo Box Door",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Town Cargo Box Door"
   },
 {
     "name": "Theater Door to Cargo Box Left",
