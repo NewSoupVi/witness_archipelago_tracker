@@ -292,12 +292,6 @@
                 "name": "Pond Room Puzzles",
 				"access_rules": ["@Desert ponds"],
                 "item_count": 1
-            },			
-			{
-                "name": "Door to Flood Light Room Panel",
-				"visibility_rules": ["DoorsComplex"],
-				"access_rules": ["@Desert ponds"],
-                "item_count": 1
             },
 			{
                 "name": "Flood Room Puzzles",
