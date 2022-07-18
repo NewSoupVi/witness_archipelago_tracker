@@ -902,7 +902,7 @@
             },
             {
                 "name": "Door Panel",
-				"access_rules": ["[Town Tinted Door to RGB House]"],
+				"access_rules": ["[Town Tinted Door to RGB House], Stars"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             }
