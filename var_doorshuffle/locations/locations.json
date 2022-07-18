@@ -217,7 +217,13 @@
         "name": "Orchard",
         "sections": [
             {
-                "name": "Apple Trees",
+                "name": "Apple Trees Outside Gate",
+				"visibility_rules": ["Unrandomized"],
+				"access_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Apple Trees Inside Gate",
 				"visibility_rules": ["Unrandomized"],
 				"access_rules": ["Orchard Middle Gate"],
                 "item_count": 1
@@ -278,7 +284,7 @@
                 "item_count": 1
             },
 			{
-                "name": "Door to Flood Light Room Panel",
+                "name": "Door to Floodlight Room Panel",
 				"visibility_rules": ["DoorsComplex"],
 				"access_rules": [],
                 "item_count": 1
@@ -334,16 +340,16 @@
 	
 	{
         "name": "Quarry Mill",
-		"access_rules": ["@Quarry mill access"],
+		"access_rules": [],
         "sections": [
 			{
                 "name": "Eraser and Dots Row",
-				"access_rules": ["Eraser,Dots,[BWSquare]"],
+				"access_rules": ["Eraser,Dots,[BWSquare],@Quarry mill access"],
                 "item_count": 1
             },
 			{
                 "name": "Eraser and Squares Row",
-				"access_rules": ["Eraser,ColoredSquares, [@Quarry mill upstairs]"], 
+				"access_rules": ["Eraser,ColoredSquares, [@Quarry mill upstairs],@Quarry mill access"], 
                 "item_count": 1
             },
 			{
@@ -359,19 +365,19 @@
             },            
 			{
                 "name": "Exit to Quarry Door Panel",
-				"access_rules": [],
+				"access_rules": ["[@Quarry mill access]"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
 			{
                 "name": "Door to Outside Stairs Panel",
-				"access_rules": [],
+				"access_rules": ["@Quarry mill access"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
 			{
                 "name": "Inside Stairs Control Panel",
-				"access_rules": ["BWSquare, ColoredSquares, Eraser, @Quarry mill upstairs"],
+				"access_rules": ["BWSquare, ColoredSquares, Eraser, [@Quarry mill upstairs],@Quarry mill access"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
@@ -638,7 +644,7 @@
     },	
 	{
         "name": "Hedge Maze 4",
-		"visibility_rules": ["DoorsComplex"],
+		"visibility_rules": [],
         "sections": [
             {
                 "name": "Door Panel",
@@ -715,13 +721,19 @@
             {
                 "name": "Pressure Plates",
 				"access_rules": ["Shapers, Symmetry, Dots, @Plates 4"],
-				"visibility_rules": ["DoorsComplex"],
+				"visibility_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
 				"access_rules": ["Triangles, @Plates 4", "Triangles, @Keep laser, [@Plates 4]"],
 				"visibility_rules": ["Discarded"],
+                "item_count": 1
+            },
+			{
+                "name": "Shortcut to Shady Trees Panel",
+				"access_rules": ["@Plates 4"],
+				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
         ],
@@ -736,16 +748,22 @@
 	
 	{
         "name": "Keep Tower",
+		"access_rules": ["@Keep laser"],
         "sections": [
             {
                 "name": "Laser Hedges",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["@Maze 2, @Maze 3, @Maze 4"],
+				"access_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Laser Pressure Plates",
 				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry, @Keep laser, @Plates 2, @Plates 3, @Plates 4"],
+                "item_count": 1
+            },
+			{
+                "name": "Shortcut Door Panel",
+				"access_rules": [],
                 "item_count": 1
             },
         ],
@@ -943,7 +961,7 @@
         "sections": [
             {
                 "name": "Full Dot Grid Shapers 5",
-				"access_rules": ["Dots,Shapers,RotatedShapers,Town Wooden Roof Staircase"],
+				"access_rules": ["Dots,Shapers,RotatedShapers"],
                 "item_count": 1
             },
 			{
@@ -1025,8 +1043,14 @@
         "name": "Windmill",
         "sections": [
             {
-                "name": "Door Panel",
+                "name": "Entrance Door Panel",
 				"access_rules": ["Dots"],
+				"visibility_rules": ["DoorsComplex"],
+                "item_count": 1
+            },
+            {
+                "name": "Theater Entrance Door Panel",
+				"access_rules": ["@Windmill access, BWSquare"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
@@ -1082,6 +1106,18 @@
 			{
                 "name": "Mountain Video",
 				"access_rules": ["[@Mountainside Vault/Vault Box]"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+                "item_count": 1
+            },
+			{
+                "name": "Exit Door Left",
+				"access_rules": ["BWSquare, Eraser"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+                "item_count": 1
+            },
+			{
+                "name": "Exit Door Right",
+				"access_rules": ["BWSquare, Shapers"],
 				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
                 "item_count": 1
             },
@@ -1163,7 +1199,7 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["SoundDots"],
+				"access_rules": ["SoundDots, @Jungle Popup Wall/Sound Dots Puzzles"],
                 "item_count": 1
             },
             {
@@ -1280,8 +1316,8 @@
         "name": "Swamp Platform Area",
         "sections": [
             {
-                "name": "Platform Set, @Swamp Platform",
-				"access_rules": ["Shapers"],
+                "name": "Platform Set",
+				"access_rules": ["Shapers, @Swamp Platform"],
                 "item_count": 1
             },
 			{
@@ -1397,15 +1433,16 @@
     },
 	{
         "name": "Swamp Laser",
+		"access_rules": ["@Swamp Laser Access"],
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["@Swamp Laser"],
+				"access_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Shortcut Door Panels",
-				"access_rules": ["Shapers, RotatedShapers, NegativeShapers, @Swamp Laser"],
+				"access_rules": ["Shapers, RotatedShapers, NegativeShapers"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
@@ -1505,7 +1542,7 @@
             },
 			{
                 "name": "Drawbridge Panel",
-				"access_rules": ["@Treehouse Right Side/Right Orange Bridge, @Treehouse Entrance/Third Door Panel"],
+				"access_rules": ["@Treehouse Right Side/Right Orange Bridge, @Treehouse Entrance/Third Door Panel","Treehouse Drawbridge"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
@@ -1687,8 +1724,20 @@
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Triangles"],
-				"visibility_rules": ["Discarded,Hard, @Mountain meta exit"],
+				"access_rules": ["Discarded,Hard, @Mountain meta exit"],
+				"visibility_rules": ["Triangles, DoorsComplex"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Final Room Left Panel",
+				"access_rules": ["@Mountain meta exit"],
+				"visibility_rules": ["DoorsComplex"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Final Room Right Panel",
+				"access_rules": ["@Mountain meta exit"],
+				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
 			{
@@ -1697,8 +1746,14 @@
                 "item_count": 1
             },
 			{
-                "name": "Secret Area Entrance Door Panel",
-				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Mountain meta exit","@UTM access, Inside Mountain Door to Secret Area"],
+                "name": "Final Room Pillars Left",
+				"access_rules": ["@Mountain final door, Stars, BWSquare, Shapers, Dots, Symmetry"],
+				"visibility_rules": ["DoorsComplex"],
+                "item_count": 1
+            },
+			{
+                "name": "Final Room Pillars Right",
+				"access_rules": ["@Mountain final door, Dots, Stars, Symmetry"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             }
@@ -1753,23 +1808,18 @@
                 "item_count": 1
             },
 			{
-                "name": "Symmetry Shapers",
-				"access_rules": ["Shapers,Symmetry"],
+                "name": "Secret Area Entrance Door Panel",
+				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Mountain meta exit, Inside Mountain Bottom Layer Rock Open","@UTM access, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
 			{
-                "name": "Symmetry Shapers",
-				"access_rules": ["Shapers,Symmetry"],
-				"visibility_rules": ["DoorsComplex"],
-                "item_count": 1
-            },
-			{
-                "name": "Symmetry Shapers",
-				"access_rules": ["Shapers,Symmetry"],
+                "name": "Secret Area Rock Timer Panel",
+				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Mountain meta exit, Inside Mountain Bottom Layer Rock Open","@UTM access, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             }
+			
         ],
         "map_locations": [
             {
@@ -1914,7 +1964,7 @@
             },
             {
                 "name": "Challenge Entry Panel",
-				"access_rules": ["Stars, Shapers, StarSameColor"],
+				"access_rules": ["Stars, Shapers, StarSameColor,Inside Mountain Caves Secret Black Door to Challenge"],
 				"visibility_rules": ["DoorsComplex"],
                 "item_count": 1
             },
@@ -1932,7 +1982,7 @@
 	
 	{
         "name": "Mountain Challenge Area",
-		"access_rules": ["@Challenge Access"],
+		"access_rules": ["@Challenge access"],
         "sections": [
 			{
                 "name": "Challenge Vault",
@@ -3067,7 +3117,7 @@
 	
 	{
         "name": "Early UTM door",
-		"access_rules": ["Inside Mountain Caves Shortcut to Mountain Door"],
+		"access_rules": ["Inside Mountain Caves Shortcut to Mountain Door","UTM"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3087,7 +3137,7 @@
 	
 	{
         "name": "UTM door to swamp",
-		"access_rules": ["Inside Mountain Caves Shortcut to Swamp Door"],
+		"access_rules": ["Inside Mountain Caves Shortcut to Swamp Door", "DoorsComplex, UTM"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3127,7 +3177,7 @@
 
 	{
         "name": "Mountain layer 1 door",
-		"access_rules": ["@Mountain/canAccess, @Inside Mountain Layer 1, Inside Mountain Door to Second Layer"],
+		"access_rules": ["@Inside Mountain Layer 1, Inside Mountain Door to Second Layer"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3147,7 +3197,7 @@
 
 	{
         "name": "Mountain layer 2 door",
-		"access_rules": ["@Mountain layer 1 door/door, Inside Mountain Staircase Near, Inside Mountain Light Bridge Controller 2, Inside Mountain Light Bridge Controller 3, Inside Mountain Door to Elevator"],
+		"access_rules": ["@Inside Mountain Layer 2, Inside Mountain Staircase Near, Inside Mountain Door to Elevator"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3227,7 +3277,7 @@
 	
 	{
         "name": "UTM challenge entrance",
-		"access_rules": ["@Challenge access/canAccess, Inside Mountain Caves Challenge Entry Door"],
+		"access_rules": ["@Challenge access/canAccess, Inside Mountain Caves Challenge Entry Door, Inside Mountain Caves Secret Black Door to Challenge"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3306,8 +3356,8 @@
     },
 	
 	{
-        "name": "Windmill",
-		"access_rules": ["Windmill Door to Front of Theater"],
+        "name": "Windmill access",
+		"access_rules": ["Town Windmill Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -3971,7 +4021,7 @@
         ]
     },	
 	{
-        "name": "Swamp Laser",
+        "name": "Swamp Laser Access",
 		"access_rules": ["@Swamp Red, Swamp Red Underwater Exit, Shapers, NegativeShapers, RotatedShapers", "Swamp Near Laser Shortcut"],
 		"visibility_rules": [],
 			"sections": [
@@ -3996,7 +4046,10 @@
     },
 	{
         "name": "UTM access",
-		"access_rules": ["@Mountain meta exit, Inside Mountain Bottom Layer Rock Open, Inside Mountain Door to Secret Area", "@Challenge access/canAccess, Inside Mountain Caves Secret Black Door to Challenge", "Inside Mountain Caves Shortcut to Swamp Door", "Inside Mountain Caves Shortcut to Mountain Door"],
+		"access_rules": ["@Mountain meta exit, Inside Mountain Bottom Layer Rock Open, Inside Mountain Door to Secret Area", 
+		"@Challenge access/canAccess, Inside Mountain Caves Secret Black Door to Challenge", "Inside Mountain Caves Shortcut to Swamp Door", 
+		"@Early UTM door",
+		"UTM door to swamp"],
 		"visibility_rules": [],
 			"sections": [
 			{
@@ -4032,7 +4085,10 @@
     },
 	{
         "name": "Theater walkway",
-		"access_rules": ["@Theater access/canAccess, Windmill Door to Front of Theater, Theater Walkway Door to Back of Theater", "Theater Walkway Door to Town", "Desert laser/canAccess, Theater Walkway Door to Desert Elevator Room", "Challenge access/canAccess, Challenge Door to Theater Walkway"],
+		"access_rules": ["@Theater access/canAccess, Windmill Door to Front of Theater, Theater Walkway Door to Back of Theater",
+		"Theater Walkway Door to Town",
+		"Desert laser/canAccess, Theater Walkway Door to Desert Elevator Room", "Challenge access/canAccess, Challenge Door to Theater Walkway",
+		"Town Windmill Door, Theater Walkway Door to Back of Theater"],
 		"visibility_rules": [],
 			"sections": [
 			{
