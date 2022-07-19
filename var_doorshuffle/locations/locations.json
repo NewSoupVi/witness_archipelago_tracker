@@ -430,7 +430,7 @@
             },
 			{
                 "name": "Eraser and Shapers Row",
-				"access_rules": ["Shapers,Eraser,[@boathouse upstairs access]"],
+			"access_rules": ["Shapers,Eraser,[RotatedShapers],[Stars]"],
                 "item_count": 1
             },
 			{
@@ -3819,7 +3819,7 @@
 
 	{
         "name": "Boathouse upstairs access",
-		"access_rules": [],
+		"access_rules": ["@Quarry, Quarry Boathouse Barrier 1, Shapers, Stars, RotatedShapers"],
 		"visibility_rules": [],
 			"sections": [
 			{
