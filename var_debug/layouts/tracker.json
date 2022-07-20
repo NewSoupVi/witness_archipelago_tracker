@@ -1,0 +1,217 @@
+﻿{
+  "shared_item_grid": {
+	"type": "array",
+	"orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+		{"type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "6,1",
+            "h_alignment": "left",
+			"item_size": "50",
+            "rows": [
+				[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles" ],
+				[ "Dots", "ColoredDots", "SoundDots", "Symmetry" , "Boat" ],
+				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "Skip"]
+            ]
+          },
+        ]},
+		
+
+		{"type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "6,1",
+            "h_alignment": "left",
+			"item_size": "50",
+            "rows": [
+				[ "Unrandomized", "Uncommon", "", "doorsNo"],
+				[ "Vaults", "Hard", "doorsPanel", "doorsSimple" ],
+				[ "Discarded", "Caves","doorsComplex", "doorsMax" ],
+            ]
+          },
+        ]},
+		
+		{"type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "6,1",
+            "h_alignment": "left",
+			"item_size": "20",
+            "rows": [
+["Outside Tutorial Optional Door"	,"Glass Factory Entry Door"	,"Desert Door to Flood Light Room"	,"Quarry Main Entry 1"	,"Shadows Timed Door"	,"Keep Hedge Maze 1 Exit Door"	,"Monastery Shortcut"	,"Town Cargo Box Door"	,"Swamp Entry Door"	,"Treehouse First Door"	,"Inside Mountain First Layer Exit Door"],
+["Outside Tutorial Outpost Entry Door"	,"Glass Factory Back Wall"	,"Desert Door to Pond Room"	,"Quarry Main Entry 2"	,"Shadows Laser Room Right Door"	,"Keep Pressure Plates 1 Exit Door"	,"Monastery Inner Door"	,"Town Wooden Roof Staircase"	,"Swamp Door to Broken Shapers"	,"Treehouse Second Door"	,"Inside Mountain Second Layer Staircase Near"],
+["Outside Tutorial Outpost Exit Door"	,"Symmetry Island Lower Door"	,"Desert Door to Water Levels Room"	,"Quarry Door to Mill"	,"Shadows Laser Room Left Door"	,"Keep Hedge Maze 2 Shortcut"	,"Monastery Outer Door"	,"Town Tinted Door to RGB House"	,"Swamp Platform Shortcut Door"	,"Treehouse Beyond Yellow Bridge Door"	,"Inside Mountain Second Layer Exit Door"],
+["Orchard Middle Gate"	,"Symmetry Island Upper Door"	,"Desert Door to Elevator Room"	,"Quarry Mill Side Door"	,"Shadows Barrier to Quarry"	,"Keep Hedge Maze 2 Exit Door"	,"Monastery Door to Garden"	,"Town Door to Church"	,"Swamp Cyan Water Pump"	,"Treehouse Drawbridge"	,"Inside Mountain Second Layer Staircase Far"],
+["Orchard Final Gate"	,""	,,"Theater Walkway Door to Desert Elevator Room"	,"Quarry Mill Rooftop Shortcut"	,"Shadows Barrier to Ledge"	,"Keep Hedge Maze 3 Shortcut"	,,"River Shortcut to Monastery Garden"	,"Town Maze Staircase"	,"Swamp Door to Rotated Shapers"	,"Treehouse Timed Door to Laser House"	,"Inside Mountain Giant Puzzle Exit Door"],
+[""	,""	,""	,"Quarry Mill Stairs"	,""	,"Keep Hedge Maze 3 Exit Door"	,"Jungle Bamboo Shortcut to River"	,"Town Windmill Door"	,"Swamp Red Water Pump"	,""	,"Inside Mountain Door to Final Room"],
+[""	,""	,""	,"Quarry Boathouse Boat Staircase"	,""	,"Keep Hedge Maze 4 Shortcut"	,"Jungle Popup Wall"	,"Town RGB House Staircase"	,"Swamp Red Underwater Exit"	,""	,"Inside Mountain Bottom Layer Rock"],
+[""	,""	,""	,"Quarry Boathouse First Barrier"	,""	,"Keep Hedge Maze 4 Exit Door"	,"River Shortcut to Monastery Garden"	,"Town Tower Blue Panels Door"	,"Swamp Blue Water Pump"	,""	,"Inside Mountain Door to Secret Area"],
+[""	,""	,""	,"Quarry Boathouse Shortcut"	,""	,"Keep Pressure Plates 2 Exit Door"	,"Bunker Bunker Entry Door"	,"Town Tower Lattice Door"	,"Swamp Purple Water Pump"	,""	,"Caves Pillar Door"],
+[""	,""	,""	,""	,""	,"Keep Pressure Plates 3 Exit Door"	,"Bunker Tinted Glass Door"	,"Town Tower Environmental Set Door"	,"Swamp Near Laser Shortcut"	,""	,"Caves Swamp Shortcut"],
+[""	,""	,""	,""	,""	,"Keep Pressure Plates 4 Exit Door"	,"Bunker Door to Ultraviolet Room"	,"Town Tower Wooden Roof Set Door"	,""	,""	,"Challenge Entry Door"],
+[""	,""	,""	,""	,""	,"Keep Shortcut to Shadows"	,"Bunker Door to Elevator"	,"Theater Entry Door"	,""	,""	,"Challenge Door to Theater Walkway"],
+[""	,""	,""	,""	,""	,"Keep Tower Shortcut"	,""	,"Theater Exit Door Left"	,""	,""	,"Theater Walkway Door to Back of Theater"],
+[""	,""	,""	,""	,""	,""	,""	,"Theater Exit Door Right"	,""	,""	,"Theater Walkway Door to Desert Elevator Room"],
+[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Theater Walkway Door to Town"],
+[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,""],
+[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,""],
+[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,""],
+            ]
+          },
+        ]},
+	]
+  },
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "vertical",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+			"type": "tabbed",
+				"tabs": [
+				{
+					"title": "Both",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap", "doors"
+						]
+					}
+				},
+				{
+					"title": "Map",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap"
+						]
+					}
+				},
+				{
+					"title": "Metro",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "doors"
+						]
+					}
+				}
+			]
+		},
+      ]
+    }
+  },
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+			"type": "tabbed",
+				"tabs": [
+				{
+					"title": "Both",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap", "doors"
+						]
+					}
+				},
+				{
+					"title": "Map",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap"
+						]
+					}
+				},
+				{
+					"title": "Metro",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "doors"
+						]
+					}
+				}
+			]
+		},
+      ]
+    }
+  }
+}

@@ -17,8 +17,8 @@
        "ap"
      ]
     },
-    "var_doorshuffle": {
-     "display_name": "Door shuffle",
+    "var_debug": {
+     "display_name": "Debug",
      "flags": [
        "ap"
      ]
