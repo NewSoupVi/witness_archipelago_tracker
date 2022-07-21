@@ -18,11 +18,11 @@
 	
 		{
         "name": "Test",
-		"access_rules": ["@Gates/tutorialDiscardBackGate"],
+		"access_rules": ["@Gates/orchardGate"],
         "sections": [
             {
-                "name": "Gate Open",
-                "item_count": 1
+                "name": "Test green",
+                "item_count": 1,
             }
         ],
         "map_locations": [
@@ -2808,7 +2808,7 @@
         "map_locations": [
             {
                 "map": "doors",
-                "x": 1182,
+                "x": 1313,
                 "y": 491,
             },
         ]
@@ -2828,7 +2828,7 @@
         "map_locations": [
             {
                 "map": "doors",
-                "x": 1057,
+                "x": 1178,
                 "y": 491,
             },
         ]
