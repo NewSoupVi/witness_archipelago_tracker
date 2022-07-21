@@ -3,14 +3,173 @@
     "name": "Places",
     "sections": [
       {
-        "name": "overworldAccess",
+        "name": "overworld",
+        "access_rules": [],
+        "item_count": 1
+      },
+      {
+        "name": "tutorial",
+        "access_rules": [],
+        "item_count": 1
+      },
+      {
+        "name": "ocean",
+        "access_rules": [],
+        "item_count": 1
+      },
+      {
+        "name": "tutorialOutpost",
         "access_rules": [
-		
-		
-		
-		
-		
-        ],
+			"@Places/overworld, @Gates/tutorialDiscardBackGate",
+			"@Places/tutorial, @Gates/tutorialDiscardFrontGate"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "orchardInner",
+        "access_rules": [
+			"@Places/overworld, @Gates/orchardGate"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "glassFactory",
+        "access_rules": [
+			"@Places/overworld, @Gates/glassFactoryFrontDoor",
+			"@Placse/ocean, @Gates/glassFactoryDock"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "symmetryOuter",
+        "access_rules": [
+			"@Places/overworld, @Gates/symmetryOuterGate"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "symmetryInner",
+        "access_rules": [
+			"@Places/symmetryOuter, @Gates/symmetryInnerGate"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "desertFloodLight",
+        "access_rules": [
+			"@Places/overworld, @Gates/desertToFloodLight",
+			"@Places/desertPond, @Gates/desertToPond"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "desertPond",
+        "access_rules": [
+			"@Places/desertFloodLight, @Gates/desertToPond",
+			"@Places/desertFlood, @Gates/desertToFlood"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "desertFlood",
+        "access_rules": [
+			"@Places/desertPond, @Gates/desertToFlood",
+			"@Places/desertLaser, @Gates/desertToLaser"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "desertLaser",
+        "access_rules": [
+			"@Places/desertFlood, @Gates/desertToLaser",
+			"@Places/tunnels, @Gates/tunnelsDesertExit"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "quarry",
+        "access_rules": [
+			"@Places/overworld, @Gates/quarryMainEntrance",
+			"@Places/ocean, @Gates/quarryBoathouseDock",
+			"@Places/shadowsFirstSet, @Gates/shadowsToQuarry",
+			"@Places/overworld, @Gates/quarryElevator",
+			"@Places/quarryMill, @Gates/quarryMillBigDoor",
+			"@Places/quarryMill, @Gates/quarryMillSmallDoor"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "quarryMill",
+        "access_rules": [
+			"@Places/overworld, @Gates/quarryMillOutsideStairs",
+			"@Places/quarry, @Gates/quarryMillBigDoor",
+			"@Places/quarry, @Gates/quarryMillSmallDoor"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "quarryMillUpstairs",
+        "access_rules": [
+			"@Places/quarryMill, @Gates/quarryMillUpstairs"
+			
+		],
+        "item_count": 1
+      },
+      {
+        "name": "quarryBoathouseUpstairs",
+        "access_rules": [
+			"@Places/quarry, @Gates/quarryBoathouseUpstairs"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "shadowsFirstSet",
+        "access_rules": [
+			"@Places/overworld, @Gates/shadowsTimerDoor",
+			"@Places/quarry, @Gates/shadowsToQuarry"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "shadowsLaser",
+        "access_rules": [
+			"@Places/overworld, shadowsLaserGate"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "",
+        "access_rules": [
+			
+		],
+        "item_count": 1
+      },
+      {
+        "name": "",
+        "access_rules": [
+			
+		],
+        "item_count": 1
+      },
+      {
+        "name": "",
+        "access_rules": [
+			
+		],
+        "item_count": 1
+      },
+      {
+        "name": "",
+        "access_rules": [
+			
+		],
+        "item_count": 1
+      },
+      {
+        "name": "",
+        "access_rules": [
+			
+		],
         "item_count": 1
       },
       
@@ -22,9 +181,7 @@
     "sections": [
       {
         "name": "tutorialOverworldGate",
-        "access_rules": [
-		
-        ],
+        "access_rules": [],
         "item_count": 1
       },
 	  {
@@ -39,7 +196,7 @@
         "item_count": 1
       },
 	  {
-        "name": "tutorialDiscardBackGate",
+        "name": "tutorialDiscardFrontGate",
         "access_rules": [
 			"DoorsNo, Dots",
 			"DoorsPanel, Dots",
@@ -204,7 +361,7 @@
         "item_count": 1
       },
 	  {
-        "name": "quarryMillUpstairsGate",
+        "name": "quarryMillUpstairs",
         "access_rules": [
 			"DoorsNo, Dots, Eraser",
 			"DoorsPanel, Dots, Eraser, Quarry Mill Ramp Controls (Panel), Quarry Mill Elevator Controls (Panel)",
@@ -773,226 +930,139 @@
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "mountain1Exit",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, BWSquare, ColoredSquares, Eraser, @Inside Mountain Layer 1/Angled Inside Trash, @Inside Mountain Layer 1/Moving Background, @Inside Mountain Layer 1/Obscured Vision, @Inside Mountain Layer 1/Physically Obstructed",
+			"DoorsPanel, BWSquare, ColoredSquares, Eraser, @Inside Mountain Layer 1/Angled Inside Trash, @Inside Mountain Layer 1/Moving Background, @Inside Mountain Layer 1/Obscured Vision, @Inside Mountain Layer 1/Physically Obstructed",
+			"DoorsSimple, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door",
+			"DoorsComplex, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door",
+			"DoorsMax, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "mountain2Exit",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, Stars, StarSameColor, RotatedShapers, Eraser, @Inside Mountain Layer 2/Broken Color Puzzles, @Inside Mountain Layer 2/Same Solution Set",
+			"DoorsPanel, Stars, StarSameColor, RotatedShapers, Eraser, @Inside Mountain Layer 2/Broken Color Puzzles, @Inside Mountain Layer 2/Same Solution Set",
+			"DoorsSimple, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door",
+			"DoorsComplex, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Stairs & Doors",
+			"DoorsMax, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door""
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "mountainMetaExit",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, @Inside Mountain Bottom Layer/Giant Puzzle",
+			"DoorsPanel, @Inside Mountain Bottom Layer/Giant Puzzle",
+			"DoorsSimple, Inside Mountain Giant Puzzle Exit Door",
+			"DoorsComplex, Inside Mountain Giant Puzzle Exit Door",
+			"DoorsMax, Inside Mountain Giant Puzzle Exit Door"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "mountainFinalDoor",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, Shapers, Stars, BWSquare, ColoredSquares, Dots",
+			"DoorsPanel, Shapers, Stars, BWSquare, ColoredSquares, Dots",
+			"DoorsSimple, Inside Mountain Door to Final Room",
+			"DoorsComplex, Inside Mountain Door to Final Room",
+			"DoorsMax, Inside Mountain Door to Final Room"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "mountainToCaves",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, Triangles, BWSquare",
+			"DoorsPanel, Triangles, BWSquare",
+			"DoorsSimple, Inside Mountain Bottom Layer Doors to Caves",
+			"DoorsComplex, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area",
+			"DoorsMax, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "swampToCaves",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"Caves",
+			"DoorsNo, Triangles, @Places/caves",
+			"DoorsPanel, Triangles, @Places/caves",
+			"DoorsSimple, Caves Exits to Main Island",
+			"DoorsComplex, Caves Swamp Shortcut",
+			"DoorsMax, Caves Swamp Shortcut"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "mountainCavesShortcut",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"Caves",
+			"DoorsNo, Triangles, @Places/caves",
+			"DoorsPanel, Triangles, @Places/caves",
+			"DoorsSimple, Caves Exits to Main Island",
+			"DoorsComplex, Caves Mountain Shortcut",
+			"DoorsMax, Caves Mountain Shortcut"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "cavesToChallenge",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, Stars, Shapers, StarSameColor, Triangles, @Places/caves",
+			"DoorsPanel, Stars, Shapers, StarSameColor, Triangles, @Places/caves",
+			"DoorsSimple, Caves Doors to Challenge",
+			"DoorsComplex, Challenge Entry Door",
+			"DoorsMax, Challenge Entry Door"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "challengeToTunnels",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, Triangles, @Places/challenge",
+			"DoorsPanel, Triangles, @Places/challenge",
+			"DoorsSimple, Challenge Door to Theater Walkway",
+			"DoorsComplex, Challenge Door to Theater Walkway",
+			"DoorsMax, Challenge Door to Theater Walkway"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "tunnelsTownExit",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, Triangles, @Places/tunnels",
+			"DoorsPanel, Triangles, @Places/tunnels",
+			"DoorsSimple, Theater Walkway Doors",
+			"DoorsComplex, Theater Walkway Door to Town",
+			"DoorsMax, Theater Walkway Door to Town"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "tunnelsTheaterExit",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, @Places/tunnels",
+			"DoorsPanel, @Places/tunnels",
+			"DoorsSimple, Theater Walkway Doors",
+			"DoorsComplex, Theater Walkway Door to Back of Theater",
+			"DoorsMax, Theater Walkway Door to Back of Theater"
         ],
         "item_count": 1
       },
 	  {
-        "name": "",
+        "name": "tunnelsDesertExit",
         "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsNo, @Desert/Laser, @Places/tunnels","DoorsNo, Desert Laser, @Places/tunnels",
+			"DoorsPanel, @Desert/Laser, @Places/tunnels","DoorsPanel, Desert Laser, @Places/tunnels",
+			"DoorsSimple, @Desert/Laser, Theater Walkway Doors","DoorsSimple, Desert Laser, Theater Walkway Doors",
+			"DoorsComplex, @Desert/Laser, Theater Walkway Door to Desert Elevator Room","DoorsComplex, Desert Laser, Theater Walkway Door to Desert Elevator Room",
+			"DoorsMax, @Desert/Laser, Theater Walkway Door to Desert Elevator Room","DoorsMax, Desert Laser, Theater Walkway Door to Desert Elevator Room"
         ],
         "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
-        ],
-        "item_count": 1
-      },
-      
+      },      
     ]
   }
 ]
