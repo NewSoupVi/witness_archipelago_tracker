@@ -138,40 +138,356 @@
         "item_count": 1
       },
       {
-        "name": "",
+        "name": "maze2",
         "access_rules": [
-			
+			"@Places/overworld, @Gates/maze1Exit",
+			"@Places/overworld, @Gates/maze2Shortcut",
+			"@Places/maze3, @Gates/maze2Exit"
 		],
         "item_count": 1
       },
       {
-        "name": "",
+        "name": "maze3",
         "access_rules": [
-			
+			"@Places/maze2, @Gates/maze2Exit",
+			"@Places/overworld, @Gates/maze3Shortcut",
+			"@Places/maze4, @Gates/maze3Exit"
 		],
         "item_count": 1
       },
       {
-        "name": "",
+        "name": "maze4",
         "access_rules": [
-			
+			"@Places/maze3, @Gates/maze3Exit",
+			"@Places/overworld, @Gates/maze4Shortcut",
+			"@Places/keepTower, @Gates/maze4Exit"
 		],
         "item_count": 1
       },
       {
-        "name": "",
+        "name": "plates2",
         "access_rules": [
-			
+			"@Places/overworld, @Gates/plates1Exit",
+			"@Places/plates3, @Gates/plates2Exit"
 		],
         "item_count": 1
       },
       {
-        "name": "",
+        "name": "plates3",
         "access_rules": [
-			
+			"@Places/plates2, @Gates/plates2Exit",
+			"@Places/plates4, @Gates/plates3Exit"
 		],
         "item_count": 1
       },
+      {
+        "name": "plates4",
+        "access_rules": [
+			"@Places/plates3, @Gates/plates3Exit",
+			"@Places/keepTower, @Gates/plates4Exit",
+			"@Places/overworld, @Gates/shadowsToKeep"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "keepTower",
+        "access_rules": [
+			"@Places/overworld, @Gates/keepTowerShortcut",
+			"@Places/plates4, @Gates/plates4Exit",
+			"@Places/maze4, @Gates/maze4Exit"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseStart",
+        "access_rules": [
+			"@Places/ocean, @Gates/treehouseFirstDoors"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseMain",
+        "access_rules": [
+			"@Places/treehouseStart, @Gates/treehouseThirdDoor"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseLaser",
+        "access_rules": [
+			"@Places/treehouseMain, @Gates/treehouseLaserGate"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampEntry",
+        "access_rules": [
+			"@Places/overworld, @Gates/swampEntrance",
+			"@Places/swampPlatform, @Gates/swampSlidingBridge"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampPlatform",
+        "access_rules": [
+			"@Places/swampEntry, @Gates/swampSlidingBridge",
+			"@Places/swampBroken, @Gates/swampDoorToBroken",
+			"@Places/swampBack, @Gates/swampPlatformShortcut"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampBroken",
+        "access_rules": [
+			"@Places/swampPlatform, @Gates/swampDoorToBroken",
+			"@Places/swampRotated, @Gates/swampDoorToRotated"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampRotated",
+        "access_rules": [
+			"@Places/swampBroken, @Gates/swampDoorToRotated",
+			"@Places/swampBack, @Gates/swampRotatingBridge",
+			"@Places/swampRed, @Gates/swampRed"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampBack",
+        "access_rules": [
+			"@Places/overworld, @Gates/swampRotatingBridgeBack",
+			"@Places/ocean, Boat",
+			"@Places/swampRotated, @Gates/swampRotatingBridge",
+			"@Places/swampPlatform, @Gates/swampPlatformShortcut"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampPurple",
+        "access_rules": [
+			"@Places/swampBack, @Gates/swampRotatingBridge, @Gates/swampPurple"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampBlue",
+        "access_rules": [
+			"@Places/swampBack, @Gates/swampBlue"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampCyan",
+        "access_rules": [
+			"@Places/swampPlatform, @Gates/swampCyan"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampRed",
+        "access_rules": [
+			"@Places/swampPlatform, @Gates/swampRed",
+			"@Places/swampLaser, @Gates/swampRedExit"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "swampLaser",
+        "access_rules": [
+			"@Places/swampRed, @Gates/swampRedExit",
+			"@Places/overworld, @Gates/swampLaserShortcut"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "windmill",
+        "access_rules": [
+			"@Places/overworld, @Gates/windmillDoor",
+			"@Places/theater, @Gates/theaterEntry",
+			"@Places/tunnels, @Gates/tunnelsTheaterExit"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "theater",
+        "access_rules": [
+			"@Places/overworld, @Gates/theaterExit",
+			"@Places/windmill, @Gates/theaterEntry"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "redRoof",
+        "access_rules": [
+			"@Places/overworld, @Gates/redRoofStairs"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "woodenRoof",
+        "access_rules": [
+			"@Places/overworld, @Gates/fullDotStairs"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "townLaser",
+        "access_rules": [
+			"@Places/overworld, @Gates/townLaserTower"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "RGBHouse",
+        "access_rules": [
+			"@Places/overworld, @Gates/RGBHouseEntry"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "RGBHouseUpstairs",
+        "access_rules": [
+			"@Places/overworld, @Gates/RGBHouseStairs"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "church",
+        "access_rules": [
+			"@Places/overworld, @Gates/church"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "monastery",
+        "access_rules": [
+			"@Places/overworld, @Gates/monastery"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "junglePopup",
+        "access_rules": [
+			"@Places/overworld, @Gates/junglePopup"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "bunkerAntechamber",
+        "access_rules": [
+			"@Places/overworld, @Gates/bunkerEntry"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "bunkerTintedRoom",
+        "access_rules": [
+			"@Places/bunkerAntechamber, @Gates/bunkerTintedGlass"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "bunkerUV",
+        "access_rules": [
+			"@Places/bunkerTintedRoom, @Gates/bunkerUV"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "bunkerLaser",
+        "access_rules": [
+			"@Places/bunkerUV, @Gates/bunkerLaser"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountainLayer1",
+        "access_rules": [
+			"@Places/overworld, Stars, StarSameColor, BWSquare"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountainLayer2",
+        "access_rules": [
+			"@Places/mountainLayer1, @Gates/mountain1Exit"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountainMeta",
+        "access_rules": [
+			"@Places/mountainLayer2, @Gates/mountain2Exit",
+			"@Places/mountainPenultimateRoom, @Gates/mountainMetaExit"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountainPenultimateRoom",
+        "access_rules": [
+			"@Places/mountainMeta, @Gates/mountainMetaExit",
+			"@Places/caves, @Gates/mountainToCaves"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountainFinalRoom",
+        "access_rules": [
+			"@Places/mountainPenultimateRoom, @Gates/mountainFinalDoor"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "caves",
+        "access_rules": [
+			"@Places/overworld, @Gates/swampToCaves",
+			"@Places/overworld, @Gates/mountainCavesShortcut",
+			"@Places/mountainPenultimateRoom, @Gates/mountainToCaves",
+			"@Places/challenge, @Gates/cavesToChallenge"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "challenge",
+        "access_rules": [
+			"@Places/caves, @Gates/cavesToChallenge",
+			"@Places/tunnels, @Gates/challengeToTunnels"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "tunnels",
+        "access_rules": [
+			"@Places/caves, @Gates/challengeToTunnels",
+			"@Places/overworld, @Gates/tunnelsTownExit",
+			"@Places/windmill, @Gates/tunnelsTheaterExit",
+			"@Places/desertLaser, @Gates/tunnelsDesertExit"
+		],
+        "item_count": 1
+      },      
+	  {
+        "name": "mountain2FrontStairs",
+        "access_rules": [			
+			"doorsNo, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots",
+			"doorsPanel, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots",
+			"doorsSimple, Inside Mountain Second Layer Stairs & Doors",
+			"doorsComplex, Inside Mountain Second Layer Staircase Near",
+			"doorsMax, Inside Mountain Second Layer Staircase Near"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountain2BackStairs",
+        "access_rules": [			
+			"doorsNo, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers",
+			"doorsPanel, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers",
+			"doorsSimple, Inside Mountain Second Layer Stairs & Doors",
+			"doorsComplex, Inside Mountain Second Layer Staircase Far",
+			"doorsMax, Inside Mountain Second Layer Staircase Far"
+		],
+        "item_count": 1
+      }
       
     ]
   },
@@ -187,8 +503,8 @@
 	  {
         "name": "tutorialDiscardBackGate",
         "access_rules": [
-			"doorsNo",
-			"doorsPanel",
+			"doorsNo, Dots",
+			"doorsPanel, Dots",
 			"doorsSimple,Outside Tutorial Outpost Doors",
 			"doorsComplex,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door",
 			"doorsMax,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door"
@@ -366,6 +682,7 @@
 			"DoorsNo, Dots, Eraser",
 			"DoorsPanel, Dots, Eraser, Quarry Mill Ramp Controls (Panel), Quarry Mill Elevator Controls (Panel)",
 			"DoorsSimple, Dots, Eraser",
+			"DoorsSimple, Quarry Mill Shortcuts",
 			"DoorsComplex, Dots, Eraser",
 			"DoorsComplex, Quarry Mill Stairs",
 			"DoorsMax, Dots, Eraser, Quarry Mill Ramp Controls (Panel), Quarry Mill Elevator Controls (Panel)",
@@ -437,14 +754,14 @@
         "access_rules": [
 			"DoorsNo, @Places/plates4",
 			"DoorsPanel, @Places/plates4",
-			"DoorsSimple",
-			"DoorsComplex",
-			"DoorsMax"
+			"DoorsSimple, Keep Shortcut to Shadows",
+			"DoorsComplex, Keep Shortcut to Shadows",
+			"DoorsMax, Keep Shortcut to Shadows"
         ],
         "item_count": 1
       },
 	  {
-        "name": "keepPlates1Exit",
+        "name": "plates1Exit",
         "access_rules": [
 			"DoorsNo, Dots",
 			"DoorsPanel, Dots",
@@ -455,7 +772,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepPlates2Exit",
+        "name": "plates2Exit",
         "access_rules": [
 			"DoorsNo, BWSquare, ColoredSquares, Stars, StarSameColor",
 			"DoorsPanel, BWSquare, ColoredSquares, Stars, StarSameColor",
@@ -466,7 +783,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepPlates3Exit",
+        "name": "plates3Exit",
         "access_rules": [
 			"DoorsNo, Shapers, BWSquare, ColoredSquares",
 			"DoorsPanel, Shapers, BWSquare, ColoredSquares",
@@ -477,7 +794,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepPlates4Exit",
+        "name": "plates4Exit",
         "access_rules": [
 			"DoorsNo, Shapers, Dots, Symmetry",
 			"DoorsPanel, Shapers, Dots, Symmetry",
@@ -488,7 +805,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze1Exit",
+        "name": "maze1Exit",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
@@ -499,7 +816,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze2Exit",
+        "name": "maze2Exit",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
@@ -510,7 +827,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze3Exit",
+        "name": "maze3Exit",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
@@ -521,7 +838,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze4Exit",
+        "name": "maze4Exit",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
@@ -532,7 +849,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze2Shortcut",
+        "name": "maze2Shortcut",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
@@ -543,7 +860,7 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze3Shortcut",
+        "name": "maze3Shortcut",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
@@ -554,13 +871,13 @@
         "item_count": 1
       },
 	  {
-        "name": "keepMaze3Shortcut",
+        "name": "maze4Shortcut",
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
 			"DoorsSimple, Keep Shortcuts",
-			"DoorsComplex, Keep Hedge Maze 3 Shortcut",
-			"DoorsMax, Keep Hedge Maze 3 Shortcut"
+			"DoorsComplex, Keep Hedge Maze 4 Shortcut",
+			"DoorsMax, Keep Hedge Maze 4 Shortcut"
         ],
         "item_count": 1
       },
@@ -612,7 +929,7 @@
         "name": "treehouseExit",
         "access_rules": [
 			"DoorsNo, @Treehouse Right Side/Right Orange Bridge",
-			"DoorsPanel, @Treehouse Right Side/Right Orange Bridge, Treehouse Shortcut Drop",
+			"DoorsPanel, @Treehouse Right Side/Right Orange Bridge, Treehouse Shortcut Drop-Down Bridge (Panel)",
 			"DoorsSimple, @Treehouse Right Side/Right Orange Bridge, Treehouse Drawbridge",
 			"DoorsComplex, @Treehouse Right Side/Right Orange Bridge, Treehouse Drawbridge",
 			"DoorsMax, @Treehouse Right Side/Right Orange Bridge, Treehouse Drawbridge"
@@ -688,11 +1005,11 @@
 	  {
         "name": "swampRotatingBridgeBack",
         "access_rules": [
-			"DoorsNo, RotatedShapers, Shapers, [@Places/swampBack]",
-			"DoorsPanel, RotatedShapers, Shapers, [@Places/swampBack]",
-			"DoorsSimple, RotatedShapers, Shapers, [@Places/swampBack]",
-			"DoorsComplex, RotatedShapers, Shapers, [@Places/swampBack]",
-			"DoorsMax, RotatedShapers, Shapers, [@Places/swampBack]"
+			"DoorsNo, RotatedShapers, Shapers, @Places/swampBack",
+			"DoorsPanel, RotatedShapers, Shapers, @Places/swampBack",
+			"DoorsSimple, RotatedShapers, Shapers, @Places/swampBack",
+			"DoorsComplex, RotatedShapers, Shapers, @Places/swampBack",
+			"DoorsMax, RotatedShapers, Shapers, @Places/swampBack"
         ],
         "item_count": 1
       },
@@ -745,9 +1062,12 @@
         "access_rules": [
 			"DoorsNo, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, @Swamp Red Underwater Room/Even More Negative Shapers",
 			"DoorsPanel, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, @Swamp Red Underwater Room/Even More Negative Shapers, Swamp Maze Control (Panel)",
-			"DoorsSimple, [@Places/swampRed], Shapers, RotatedShapers, NegativeShapers, Swamp Doors",
-			"DoorsComplex, [@Places/swampRed], Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit",
-			"DoorsMax, [@Places/swampRed], Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit, Swamp Maze Control (Panel)"
+			"DoorsSimple, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, Swamp Doors",
+			"DoorsSimple, [@Places/swampRed], @Places/swampLaser, Shapers, RotatedShapers, NegativeShapers, Swamp Doors",
+			"DoorsComplex, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit",
+			"DoorsComplex, [@Places/swampRed], @Places/swampLaser, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit",
+			"DoorsMax, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit, Swamp Maze Control (Panel)",
+			"DoorsMax, [@Places/swampRed], @Places/swampLaser, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit, Swamp Maze Control (Panel)"
         ],
         "item_count": 1
       },
@@ -791,7 +1111,7 @@
 			"DoorsPanel, @Places/theater, BWSquare, [Eraser]","DoorsPanel, @Places/theater, BWSquare, [Shapers]",
 			"DoorsSimple, Theater Exit Door",
 			"DoorsComplex, Theater Exit Door Left", "DoorsComplex, Theater Exit Door Right",
-			"DoorsMax, Theater Exit Door Left", "DoorsComplex, Theater Exit Door Right",
+			"DoorsMax, Theater Exit Door Left", "DoorsComplex, Theater Exit Door Right"
         ],
         "item_count": 1
       },
@@ -818,7 +1138,7 @@
         "item_count": 1
       },
 	  {
-        "name": "laserTower",
+        "name": "townLaserTower",
         "access_rules": [
 			"DoorsNo, Unrandomized, @Town Environmental Set/Hexagonal Reflection Puzzle, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
 			"DoorsNo, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
@@ -945,9 +1265,9 @@
         "access_rules": [
 			"DoorsNo, Stars, StarSameColor, RotatedShapers, Eraser, @Inside Mountain Layer 2/Broken Color Puzzles, @Inside Mountain Layer 2/Same Solution Set",
 			"DoorsPanel, Stars, StarSameColor, RotatedShapers, Eraser, @Inside Mountain Layer 2/Broken Color Puzzles, @Inside Mountain Layer 2/Same Solution Set",
-			"DoorsSimple, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door",
-			"DoorsComplex, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Stairs & Doors",
-			"DoorsMax, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door""
+			"DoorsSimple, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Stairs & Doors",
+			"DoorsComplex, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs",
+			"DoorsMax, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs"
         ],
         "item_count": 1
       },
@@ -1063,6 +1383,35 @@
         ],
         "item_count": 1
       },      
-    ]
+    ],
+  },
+  {
+    "name": "Logic",
+    "sections": [
+      {
+        "name": "canWaterLevel",
+        "access_rules": [			
+			"doorsNo",
+			"doorsPanel, Desert Flood Room Flood Controls (Panel)",
+			"doorsSimple",
+			"doorsComplex",
+			"doorsMax, Desert Flood Room Flood Controls (Panel)"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "townCargo",
+        "access_rules": [			
+			"doorsNo, Shapers,BWSquare",
+			"doorsPanel, Shapers,BWSquare",
+			"doorsSimple, Town Doors",
+			"doorsComplex, Town Cargo Box Door",
+			"doorsMax, Town Cargo Box Door"
+		],
+        "item_count": 1
+      }
+	  ]
   }
+  
+  
 ]
