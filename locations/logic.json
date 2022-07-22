@@ -718,7 +718,7 @@
         "name": "shadowsToQuarry",
         "access_rules": [
 			"DoorsNo, [Unrandomized]",
-			"DoorsPanel",
+			"DoorsPanel, [Unrandomized]",
 			"DoorsSimple, Shadows Barriers",
 			"DoorsComplex, Shadows Barrier to Quarry",
 			"DoorsMax, Shadows Barrier to Quarry"

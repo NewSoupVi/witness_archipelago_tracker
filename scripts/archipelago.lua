@@ -83,6 +83,15 @@ function onClear(slot_data)
 			value = not value
 		end
 		
+		if k == "shuffle_doors" then
+			if value == 0 then obj = Tracker:FindObjectForCode("doorsNo")
+			elseif value == 1 then obj = Tracker:FindObjectForCode("doorsPanel")
+			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsSimple")
+			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsComplex")
+			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsMax")
+			end
+		end
+		
 		obj.Active = value
 	end
 end
