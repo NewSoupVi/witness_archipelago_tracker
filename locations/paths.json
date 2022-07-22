@@ -309,17 +309,29 @@
 
 	{
         "name": "Quarry main entrance",
-		"access_rules": [""],
+		"access_rules": ["@Gates/quarryMainEntrance"],
 		"visibility_rules": [],
         "sections": [
 			{
                 "name": "Door 1",
-				"access_rules": ["Quarry Door to Quarry 1"],
+				"access_rules": [
+					"DoorsNo, BWSquare",
+					"DoorsPanel, BWSquare",
+					"DoorsSimple, Quarry Main Entry",
+					"DoorsComplex, Quarry Main Entry 1",
+					"DoorsMax, Quarry Main Entry 1"
+				],
                 "item_count": 1
             },
 			{
                 "name": "Door 2",
-				"access_rules": ["Quarry Door to Quarry 2"],
+				"access_rules": [
+					"DoorsNo, BWSquare, Shapers",
+					"DoorsPanel, BWSquare, Shapers",
+					"DoorsSimple, Quarry Main Entry",
+					"DoorsComplex, Quarry Main Entry 2",
+					"DoorsMax, Quarry Main Entry 2"
+				],
                 "item_count": 1
             }
         ],
@@ -773,7 +785,7 @@
     },
 	
 	{
-        "name": "Treehouse entry doors",
+        "name": "Treehouse Entry Doors",
 		"access_rules": [],
 		"visibility_rules": [],
         "sections": [
@@ -783,7 +795,7 @@
 					"DoorsNo, Stars",
 					"DoorsPanel, Treehouse First & Second Doors (Panel), Stars",
 					"DoorsSimple, Treehouse Entry Doors",
-					"DoorsComplex, Treehouse First Doorr",
+					"DoorsComplex, Treehouse First Door",
 					"DoorsMax, Treehouse First Door"],
                 "item_count": 1
             },
@@ -793,7 +805,7 @@
 					"DoorsNo, Stars",
 					"DoorsPanel, Treehouse First & Second Doors (Panel), Stars",
 					"DoorsSimple, Treehouse Entry Doors",
-					"DoorsComplex, Treehouse Second Doorr",
+					"DoorsComplex, Treehouse Second Door",
 					"DoorsMax, Treehouse Second Door"],
                 "item_count": 1
             }
@@ -1230,7 +1242,7 @@
 
 	{
         "name": "Mountain Layer 2",
-		"access_rules": ["@Inside Mountain Layer 2, Inside Mountain Staircase Near, Inside Mountain Door to Elevator"],
+		"access_rules": [],
 		"visibility_rules": [],
         "sections": [
 			{

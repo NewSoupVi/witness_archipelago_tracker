@@ -583,8 +583,8 @@
 			"DoorsNo",
 			"DoorsPanel, Door to Desert Flood Light Room (Panel)",
 			"DoorsSimple, Desert Doors",
-			"DoorsComplex, Door to Desert Flood Light Room",
-			"DoorsMax, Door to Desert Flood Light Room"
+			"DoorsComplex, Desert Door to Flood Light Room",
+			"DoorsMax, Desert Door to Flood Light Room"
         ],
         "item_count": 1
       },
@@ -1041,7 +1041,7 @@
 			"DoorsNo, @Swamp Blue Underwater Room/Negative Shapers",
 			"DoorsPanel, @Swamp Blue Underwater Room/Negative Shapers",
 			"DoorsSimple, Swamp Water Pumps",
-			"DoorsComplex, Swamp Cayn Water Pump",
+			"DoorsComplex, Swamp Cyan Water Pump",
 			"DoorsMax, Swamp Cyan Water Pump"
         ],
         "item_count": 1
@@ -1145,8 +1145,8 @@
 			"DoorsPanel, Unrandomized, @Town Environmental Set/Hexagonal Reflection Puzzle, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
 			"DoorsPanel, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
 			"DoorsSimple, Town Tower Doors",
-			"DoorsComplex, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Eraser Set Door",
-			"DoorsMax, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Eraser Set Door"
+			"DoorsComplex, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Wooden Roof Set Door",
+			"DoorsMax, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Wooden Roof Set Door"
         ],
         "item_count": 1
       },
