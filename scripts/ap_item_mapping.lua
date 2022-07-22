@@ -192,4 +192,5 @@ SETTINGS_MAPPING = {
 	["shuffle_discarded_panels"] = "Discarded",
 	["early_secret_area"]="Caves",
 	["shuffle_doors"]="doorsComplex",
+	["shuffle_postgame"]="postGame",
 }

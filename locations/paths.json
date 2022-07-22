@@ -245,11 +245,11 @@
 	{
         "name": "Desert door to challenge",
 		"access_rules": [],
-		"visibility_rules": [],
+		"visibility_rules": ["@Logic/postGame"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": ["@Places/tunnelsDesertExit"],
+				"access_rules": ["@Gates/tunnelsDesertExit"],
                 "item_count": 1
             },
 			{
@@ -346,7 +346,12 @@
 	
 	{
         "name": "Quarry mill small door",
-		"access_rules": ["@Gates/quarryMillSmallDoor"],
+		"access_rules": [
+			"DoorsNo, [@Places/quarryMill], [Dots], [BWSquare]",
+			"DoorsPanel, [@Places/quarryMill], [Dots], [BWSquare]",
+			"DoorsSimple, Quarry Mill Shortcuts",
+			"DoorsComplex, Quarry Mill Side Door",
+			"DoorsMax, Quarry Mill Side Door"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -366,12 +371,14 @@
 	
 	{
         "name": "Quarry mill upstairs",
-		"access_rules": ["@Gates/quarryMillUpstairs"],
+		"access_rules": ["@Places/quarryMill"],
 		"visibility_rules": [],
         "sections": [
 			{
                 "name": "Stairs",
 				"access_rules": [
+					"DoorsNo, [@Quarry mill upstairs/Ramp], ColoredSquares, Eraser",
+					"DoorsPanel, [@Quarry mill upstairs/Ramp], ColoredSquares, Eraser",
 					"DoorsSimple, Quarry Mill Shortcuts",
 					"DoorsComplex, Quarry Mill Stairs",
 					"DoorsMax, Dots, Eraser, Quarry Mill Stairs"
@@ -506,12 +513,22 @@
         "sections": [
 			{
                 "name": "Left Door",
-				"access_rules": ["Shadows Laser Room Left Door"],
+				"access_rules": [
+					"DoorsNo, Unrandomized, @Places/shadowsFirstSet",
+					"DoorsPanel, @Places/shadowsFirstSet",
+					"DoorsSimple, Shadows Laser Room Door",
+					"DoorsComplex, Shadows Laser Room Left Door",
+					"DoorsMax, Shadows Laser Room Left Door"],
                 "item_count": 1
             },
 			{
                 "name": "Right Door",
-				"access_rules": ["Shadows Laser Room Right Door"],
+				"access_rules": [
+					"DoorsNo, Unrandomized, @Places/shadowsFirstSet",
+					"DoorsPanel, @Places/shadowsFirstSet",
+					"DoorsSimple, Shadows Laser Room Door",
+					"DoorsComplex, Shadows Laser Room Right Door",
+					"DoorsMax, Shadows Laser Room Right Door"],
                 "item_count": 1
             }
         ],
@@ -746,7 +763,7 @@
 	
 	{
         "name": "@Gates/maze3Shortcut",
-		"access_rules": ["Keep Hedge Maze 3 Shortcut"],
+		"access_rules": ["@Gates/maze3Shortcut"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -821,7 +838,12 @@
 	
 	{
         "name": "Treehouse Third Door",
-		"access_rules": ["@Gates/treehouseThirdDoor"],
+		"access_rules": [
+			"DoorsNo, @Treehouse Entrance/Yellow Bridge, Stars",
+			"DoorsPanel, @Treehouse Entrance/Yellow Bridge, Treehouse Third Door (Panel), Stars",
+			"DoorsSimple, @Treehouse Entrance/Yellow Bridge, Stars",
+			"DoorsComplex, @Treehouse Entrance/Yellow Bridge, Treehouse Beyond Yellow Bridge Door, Stars",
+			"DoorsMax, @Treehouse Entrance/Yellow Bridge, Treehouse Beyond Yellow Bridge Door, Stars"],
 		"visibility_rules": [],
         "sections": [
 			{
@@ -1142,7 +1164,7 @@
 	
 	{
         "name": "Swamp back rotating bridge",
-		"access_rules": ["@Gates/swampRotatingBridgeBack"],
+		"access_rules": ["@Places/swampBack, Shapers, RotatedShapers"],
 		"visibility_rules": [],
         "sections": [
 			{

@@ -1471,7 +1471,7 @@
         "sections": [
             {
                 "name": "Yellow Bridge",
-				"access_rules": ["Treehouse First Door, Treehouse Second Door, Stars"],
+				"access_rules": ["@Places/treehouseFirstDoors, Stars"],
                 "item_count": 1
             },
 			{
@@ -1488,7 +1488,7 @@
             },
 			{
                 "name": "Third Door Panel",
-				"access_rules": ["@Treehouse Entrance/Yellow Bridge, Stars"],
+				"access_rules": ["@Places/treehouseThirdDoor, Stars"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
@@ -1532,33 +1532,34 @@
 	
 	{
         "name": "Treehouse Right Side",
-		"access_rules": ["@Places/treehouseMain, Stars"],
+		"access_rules": [],
         "sections": [
 			{
                 "name": "Right Orange Bridge",
-				"access_rules": [],
+				"access_rules": ["@Places/treehouseMain"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge",
-				"access_rules": ["Shapers,RotatedShapers,NegativeShapers,StarSameColor"],
+				"access_rules": ["@Places/treehouseMain, Stars, Shapers,RotatedShapers,NegativeShapers,StarSameColor"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge Discard",
-				"access_rules": ["Triangles, @Treehouse Right Side/Green Bridge"],
+				"access_rules": ["@Places/treehouseMain, Stars, Triangles, @Treehouse Right Side/Green Bridge"],
                 "visibility_rules": ["Discarded"],
                 "item_count": 1
             },
 			{
                 "name": "Drawbridge Panel",
-				"access_rules": ["@Treehouse Right Side/Right Orange Bridge","Treehouse Drawbridge"],
+				"access_rules": ["@Treehouse Right Side/Right Orange Bridge, Stars",
+								 "Treehouse Drawbridge, Stars"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Laser House Door Outside Timer",
-				"access_rules": ["@Treehouse Right Side/Right Orange Bridge"],
+				"access_rules": ["@Places/treehouseMain, @Treehouse Right Side/Right Orange Bridge"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },

@@ -20,24 +20,7 @@
             ]
           },
         ]},
-		
 
-		{"type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "6,1",
-            "h_alignment": "left",
-			"item_size": "50",
-            "rows": [
-				[ "Unrandomized", "Uncommon", "", "doorsNo"],
-				[ "Vaults", "Hard", "doorsPanel", "doorsSimple" ],
-				[ "Discarded", "Caves","doorsComplex", "doorsMax" ],
-            ]
-          },
-        ]},
 	]
   },
   "tracker_default": {

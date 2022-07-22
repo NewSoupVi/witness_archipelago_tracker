@@ -972,8 +972,8 @@
 	  {
         "name": "swampDoorToRotated",
         "access_rules": [
-			"DoorsNo, Shapers, @Places/swampRotated",
-			"DoorsPanel, Shapers, @Places/swampRotated",
+			"DoorsNo, Shapers, @Places/swampBroken",
+			"DoorsPanel, Shapers, @Places/swampBroken",
 			"DoorsSimple, Swamp Doors",
 			"DoorsComplex, Swamp Door to Rotated Shapers",
 			"DoorsMax, Swamp Door to Rotated Shapers"

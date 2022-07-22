@@ -102,75 +102,75 @@
     "name": "Shuffle Uncommon",
     "type": "toggle",
     "loop": "true",
-    "img": "images/M.png",
+    "img": "images/UncommonText.png",
     "codes": "Uncommon"
-  },
-  {
-    "name": "Shuffle Postgame",
-    "type": "toggle",
-    "loop": "true",
-    "img": "images/H.png",
-    "codes": "Postgame"
   },
   {
     "name": "Shuffle Unrandomized",
     "type": "toggle",
     "loop": "true",
-    "img": "images/Unrandomized.png",
+    "img": "images/UnrandomizedText.png",
     "codes": "Unrandomized"
   },
   {
     "name": "Shuffle Vaults",
     "type": "toggle",
     "loop": "true",
-    "img": "images/Vault.PNG",
+    "img": "images/VaultsText.PNG",
     "codes": "Vaults"
   },
     {
     "name": "Shuffle Discarded",
     "type": "toggle",
     "loop": "true",
-    "img": "images/Discarded.png",
+    "img": "images/DiscardedText.png",
     "codes": "Discarded"
   },
   {
     "name": "Early Caves",
     "type": "toggle",
     "loop": "true",
-    "img": "images/Caves.png",
+    "img": "images/CavesText.png",
     "codes": "Caves"
   },
     {
+	"name": "Shuffle Postgame",
+	"img": "images/Postgame.png",
+	"codes": "postGame",
+    "type": "toggle",
+    "loop": "true"
+  },
+    {
 	"name": "Doors Unshuffled",
-	"img": "images/doorsNo.png",
+	"img": "images/doorsNoText.png",
 	"codes": "doorsNo",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Door Panel Power Shuffled",
-	"img": "images/doorsPanel.png",
+	"img": "images/doorsPanelText.png",
 	"codes": "doorsPanel",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Doors Simple",
-	"img": "images/doorsSimple.png",
+	"img": "images/doorsSimpleText.png",
 	"codes": "doorsSimple",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Doors Complex",
-	"img": "images/doorsComplex.png",
+	"img": "images/doorsComplexText.png",
 	"codes": "doorsComplex",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Doors Max",
-	"img": "images/doorsMax.png",
+	"img": "images/doorsMaxText.png",
 	"codes": "doorsMax",
     "type": "toggle",
     "loop": "true"
