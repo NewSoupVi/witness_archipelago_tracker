@@ -598,7 +598,7 @@
 	
 	{
         "name": "Hedge Maze 1",
-		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
         "sections": [
             {
                 "name": "Door Panel",
@@ -616,7 +616,7 @@
     },	
 	{
         "name": "Hedge Maze 2",
-		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
         "sections": [
             {
                 "name": "Door Panel",
@@ -634,7 +634,7 @@
     },	
 	{
         "name": "Hedge Maze 3",
-		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
         "sections": [
             {
                 "name": "Door Panel",
@@ -652,7 +652,7 @@
     },	
 	{
         "name": "Hedge Maze 4",
-		"visibility_rules": [],
+		"visibility_rules": ["Unrandomized"],
         "sections": [
             {
                 "name": "Door Panel",
@@ -848,17 +848,17 @@
             },
 			{
                 "name": "Door Panel Left",
-				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Door Panel Right",
-				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Monastery Shortcut to River",
-				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
                 "item_count": 1
             },
         ],
@@ -1239,7 +1239,7 @@
             {
                 "name": "Rhombic Avoid to Monastery Garden Panel",
 				"access_rules": ["@Places/overworld"],
-				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
                 "item_count": 1
             },
         ],
@@ -1467,11 +1467,11 @@
     },
 	{
         "name": "Treehouse Entrance",
-		"access_rules": ["@Places/treehouseStart"],
+		"access_rules": [],
         "sections": [
             {
                 "name": "Yellow Bridge",
-				"access_rules": ["@Places/treehouseFirstDoors, Stars"],
+				"access_rules": ["@Places/treehouseStart, Stars"],
                 "item_count": 1
             },
 			{
@@ -1483,12 +1483,12 @@
 			{
                 "name": "Second Door Panel",
 				"access_rules": ["Treehouse First Door, Stars"],
-				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"visibility_rules": ["@Places/treehouseStart, DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Third Door Panel",
-				"access_rules": ["@Places/treehouseThirdDoor, Stars"],
+				"access_rules": ["@Places/treehouseStart, Stars"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
@@ -1578,13 +1578,12 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["@Treehouse Left Side/Left Orange Bridge,@Treehouse Right Side/Right Orange Bridge",
-								 "@Treehouse Left Side/Left Orange Bridge,@Places/treehouseLaser"],
+				"access_rules": ["@Places/treehouseLaser"],
                 "item_count": 1
             },
 			{
                 "name": "Laser House Door Inside Timer",
-				"access_rules": ["@Treehouse Left Side/Left Orange Bridge,@Places/treehouseLaser"],
+				"access_rules": ["@Places/treehouseLaser"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
@@ -2055,7 +2054,7 @@
             },
             {
                 "name": "Town Shortcut Panel",
-				"access_rules": [],
+				"access_rules": ["Triangles"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },

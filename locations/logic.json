@@ -125,7 +125,7 @@
       {
         "name": "shadowsFirstSet",
         "access_rules": [
-			"@Places/overworld, @Gates/shadowsTimerDoor",
+			"@Gates/shadowsTimerDoor",
 			"@Places/quarry, @Gates/shadowsToQuarry"
 		],
         "item_count": 1
@@ -133,7 +133,7 @@
       {
         "name": "shadowsLaser",
         "access_rules": [
-			"@Places/overworld, shadowsLaserGate"
+			"@Places/overworld, @Gates/shadowsLaserGate"
 		],
         "item_count": 1
       },
@@ -730,7 +730,7 @@
         "access_rules": [
 			"DoorsNo",
 			"DoorsPanel, Shadows Door Timer (Panel)",
-			"DoorsSimple",
+			"DoorsSimple, Shadows Timed Door",
 			"DoorsComplex, Shadows Timed Door",
 			"DoorsMax, Shadows Timed Door"
         ],
