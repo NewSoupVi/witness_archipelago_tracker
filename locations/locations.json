@@ -495,7 +495,7 @@
             },            
 			{
                 "name": "Door 2",
-				"access_rules": ["@Places/overworld, Quarry Door to Quarry 1, Shapers", "@Places/quarry, Quarry Door to Quarry 2, Shapers"],
+				"access_rules": ["@Places/overworld, Quarry Main Entry 1, Shapers","@Places/overworld, Quarry Main Entry, Shapers", "@Places/quarry, Quarry Main Entry 2, Shapers"],
                 "item_count": 1
             },
         ],
@@ -513,7 +513,7 @@
         "sections": [
             {
                 "name": "Avoid Puzzles",
-				"access_rules": ["@Places/shadowsFirstSet"],
+				"access_rules": ["@Places/shadowsFirstSet, [@Gates/shadowsTimerDoor]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
@@ -542,10 +542,10 @@
 	{
         "name": "Shadows Northern Set",
 		"visibility_rules": ["Unrandomized"],
-		"access_rules": ["@Places/shadowsFirstSet"],
         "sections": [
             {
                 "name": "Environmental Avoid Puzzles",
+				"access_rules": ["@Shadows First Set/Avoid Puzzles, [@Gates/shadowsTimerDoor]"],
                 "item_count": 1
             },
         ],
@@ -561,10 +561,10 @@
 	{
         "name": "Shadows Southern Set",
 		"visibility_rules": ["Unrandomized"],
-		"access_rules": ["@Places/shadowsFirstSet"],
         "sections": [
             {
                 "name": "Follow Puzzles",
+				"access_rules": ["@Shadows First Set/Avoid Puzzles, [@Gates/shadowsTimerDoor]"],
                 "item_count": 1
             },
         ],
@@ -900,7 +900,7 @@
         "sections": [
             {
                 "name": "Hexagonal Reflection Puzzle",
-				"access_rules": ["@Places/overworld, Symmetry,Shapers"],
+				"access_rules": ["@Places/overworld, Symmetry, [@Places/redRoof]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             }
@@ -1268,25 +1268,25 @@
             },
             {
                 "name": "Drawn Squares Puzzles",
-				"access_rules": ["@Places/bunkerAntechamber, BWSquare,ColoredSquares"],
+				"access_rules": ["@Places/bunkerAntechamber, ColoredSquares"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 2
             },
 			{
                 "name": "Tinted Glass Puzzles",
-				"access_rules": ["@Places/bunkerTintedRoom, BWSquare,ColoredSquares,@Color Bunker/Drawn Squares Puzzles"],
+				"access_rules": ["@Places/bunkerTintedRoom, BWSquare, ColoredSquares,@Color Bunker/Drawn Squares Puzzles"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Ultraviolet Room",
-				"access_rules": ["@Places/bunkerUV, BWSquare,ColoredSquares,@Color Bunker/Tinted Glass Puzzles"],
+				"access_rules": ["@Places/bunkerUV, ColoredSquares,@Color Bunker/Tinted Glass Puzzles"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
-				"access_rules": ["@Places/bunkerLaser, BWSquare,ColoredSquares, @Color Bunker/Ultraviolet Room"],
+				"access_rules": ["@Places/bunkerLaser, ColoredSquares, @Color Bunker/Ultraviolet Room"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
@@ -1702,27 +1702,27 @@
 	
 	{
         "name": "Inside Mountain Layer 2",
-		"access_rules": ["@Places/mountainLayer2"],
+		"access_rules": [],
         "sections": [
             {
                 "name": "Broken Color Puzzles",
-				"access_rules": ["Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots"],
+				"access_rules": ["@Places/mountainLayer2, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots"],
                 "item_count": 1
             },
 			{
                 "name": "Same Solution Set",
-				"access_rules": ["ColoredSquares,ColoredDots, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers"],
+				"access_rules": ["@Places/mountainLayer2, ColoredSquares,ColoredDots, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers"],
                 "item_count": 1
             },
 			{
                 "name": "Blue Light Bridge",
-				"access_rules": ["@Places/mountain2FrontStairs, Stars, StarSameColor, RotatedShapers, Eraser"],
+				"access_rules": ["@Places/mountainLayer2, @Places/mountain2FrontStairs, Stars, StarSameColor, RotatedShapers, Eraser"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Orange Light Bridge",
-				"access_rules": ["@Places/mountain2BackStairs, Stars, StarSameColor, RotatedShapers, Eraser"],
+				"access_rules": ["@Places/mountainLayer2, @Places/mountain2BackStairs, Stars, StarSameColor, RotatedShapers, Eraser"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },

@@ -424,7 +424,7 @@
         "name": "mountainMeta",
         "access_rules": [
 			"@Places/mountainLayer2, @Gates/mountain2Exit",
-			"@Places/mountainPenultimateRoom, @Gates/mountainMetaExit"
+			"@Places/caves, @Gates/mountainToCaves, @Gates/mountainMetaExit"
 		],
         "item_count": 1
       },
@@ -543,7 +543,7 @@
         "access_rules": [
 			"DoorsNo, Symmetry",
 			"DoorsPanel, Glass Factory Entry Door (Panel), Symmetry",
-			"DoorsSimple, Symmetry",
+			"DoorsSimple, Symmetry, Glass Factory Entry Door",
 			"DoorsComplex, Glass Factory Entry Door",
 			"DoorsMax, Glass Factory Entry Door"
         ],
@@ -653,7 +653,7 @@
         "access_rules": [
 			"DoorsNo, [@Places/quarryMill]",
 			"DoorsPanel, [@Places/quarryMill]",
-			"DoorsSimple, Quarry Mill Shortcuts",
+			"DoorsSimple, [@Places/quarryMill]",
 			"DoorsComplex, Quarry Mill Side Door",
 			"DoorsMax, Quarry Mill Side Door"
         ],
@@ -759,7 +759,7 @@
         "access_rules": [
 			"DoorsNo, @Places/plates4",
 			"DoorsPanel, @Places/plates4",
-			"DoorsSimple, Keep Shortcut to Shadows",
+			"DoorsSimple, Keep Shortcuts",
 			"DoorsComplex, Keep Shortcut to Shadows",
 			"DoorsMax, Keep Shortcut to Shadows"
         ],
@@ -858,7 +858,7 @@
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Shortcuts",
+			"DoorsSimple, Keep Hedge Maze Doors ",
 			"DoorsComplex, Keep Hedge Maze 2 Shortcut",
 			"DoorsMax, Keep Hedge Maze 2 Shortcut"
         ],
@@ -869,7 +869,7 @@
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Shortcuts",
+			"DoorsSimple, Keep Hedge Maze Doors ",
 			"DoorsComplex, Keep Hedge Maze 3 Shortcut",
 			"DoorsMax, Keep Hedge Maze 3 Shortcut"
         ],
@@ -880,7 +880,7 @@
         "access_rules": [
 			"DoorsNo, Unrandomized",
 			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Shortcuts",
+			"DoorsSimple, Keep Hedge Maze Doors ",
 			"DoorsComplex, Keep Hedge Maze 4 Shortcut",
 			"DoorsMax, Keep Hedge Maze 4 Shortcut"
         ],
@@ -1171,7 +1171,7 @@
         "access_rules": [
 			"DoorsNo, SoundDots",
 			"DoorsPanel, SoundDots",
-			"DoorsSimple, soundDots",
+			"DoorsSimple, Town Doors",
 			"DoorsComplex, Town RGB House Staircase",
 			"DoorsMax, Town RGB House Staircase"
         ],
