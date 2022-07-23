@@ -1262,7 +1262,7 @@
             },
             {
                 "name": "Tinted Glass Door Panel",
-				"access_rules": ["@Places/bunkerAntechamber"],
+				"access_rules": ["@Color Bunker/Drawn Squares Puzzles, @Places/bunkerAntechamber"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
@@ -1327,7 +1327,7 @@
         "sections": [
             {
                 "name": "Platform Set",
-				"access_rules": ["@Places/swampPlatform, Shapers"],
+				"access_rules": ["@Places/swampPlatform, Shapers, @Swamp Entry Area/Introduction Sets"],
                 "item_count": 1
             },
 			{
@@ -1338,12 +1338,12 @@
             },
 			{
                 "name": "Broken Shapers Introduction",
-				"access_rules": ["@Places/swampBroken, Shapers"],
+				"access_rules": ["@Places/swampBroken, Shapers, @Swamp Platform Area/Platform Set"],
                 "item_count": 1
             },
 			{
                 "name": "Rotated Shapers Introduction",
-				"access_rules": ["@Places/swampRotated, Shapers,RotatedShapers"],
+				"access_rules": ["@Places/swampRotated, Shapers, RotatedShapers, @Swamp Platform Area/Broken Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -1360,7 +1360,7 @@
         "sections": [
             {
                 "name": "More Rotated Shapers",
-				"access_rules": ["@Places/swampBack, Shapers,RotatedShapers,"],
+				"access_rules": ["@Places/swampBack, Shapers,RotatedShapers,@Swamp Platform Area/Rotated Shapers Introduction"],
                 "item_count": 1
             }
         ],

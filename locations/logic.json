@@ -14,7 +14,12 @@
       },
       {
         "name": "ocean",
-        "access_rules": [],
+        "access_rules": [
+			"doorsNo",
+			"doorsPanel, Boat",
+			"doorsSimple",
+			"doorsComplex",
+			"doorsMax, Boat"],
         "item_count": 1
       },
       {
@@ -248,7 +253,8 @@
         "name": "swampRotated",
         "access_rules": [
 			"@Places/swampBroken, @Gates/swampDoorToRotated",
-			"@Places/swampBack, @Gates/swampRotatingBridge",
+			"@Places/swampPlatform, @Gates/swampPlatformShortcut, @Gates/swampRotatingBridge",
+			"@Places/ocean, @Gates/swampRotatingBridge",
 			"@Places/swampRed, @Gates/swampRed"
 		],
         "item_count": 1
@@ -257,7 +263,7 @@
         "name": "swampBack",
         "access_rules": [
 			"@Places/overworld, @Gates/swampRotatingBridgeBack",
-			"@Places/ocean, Boat",
+			"@Places/ocean",
 			"@Places/swampRotated, @Gates/swampRotatingBridge",
 			"@Places/swampPlatform, @Gates/swampPlatformShortcut"
 		],
@@ -287,8 +293,7 @@
       {
         "name": "swampRed",
         "access_rules": [
-			"@Places/swampPlatform, @Gates/swampRed",
-			"@Places/swampLaser, @Gates/swampRedExit"
+			"@Places/swampRotated, @Gates/swampRed"
 		],
         "item_count": 1
       },
@@ -983,10 +988,10 @@
 	  {
         "name": "swampRotatingBridge",
         "access_rules": [
-			"DoorsNo, RotatedShapers",
+			"DoorsNo, Shapers, RotatedShapers",
 			"DoorsPanel, Swamp Rotating Bridge (Panel), RotatedShapers",
-			"DoorsSimple, RotatedShapers",
-			"DoorsComplex, RotatedShapers",
+			"DoorsSimple, Shapers, RotatedShapers",
+			"DoorsComplex, Shapers, RotatedShapers",
 			"DoorsMax, Swamp Rotating Bridge (Panel), RotatedShapers"
         ],
         "item_count": 1

@@ -65,8 +65,8 @@
 [""	,""	,""	,""	,""	,""	,""	,"Theater Exit Door Right"	,""	,""	,"Theater Walkway Door to Desert Elevator Room"],
 [""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,"Theater Walkway Door to Town"],
 [""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,""],
-[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,""],
-[""	,""	,""	,""	,""	,""	,""	,""	,""	,""	,""],
+[""	,""	,""	,""	,"Swamp Sliding Bridge (Panel)"	,""	,""	,""	,""	,""	,""],
+[""	,""	,""	,""	,"Swamp Rotating Bridge (Panel)"	,""	,""	,""	,""	,""	,""],
             ]
           },
         ]},
