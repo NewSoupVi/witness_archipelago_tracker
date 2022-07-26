@@ -353,7 +353,7 @@
       {
         "name": "RGBHouseUpstairs",
         "access_rules": [
-			"@Places/overworld, @Gates/RGBHouseStairs"
+			"@Places/overworld, @Gates/RGBHouseEntry, @Gates/RGBHouseStairs"
 		],
         "item_count": 1
       },
@@ -714,7 +714,7 @@
 			"DoorsSimple, Shapers, Stars, RotatedShapers, Quarry Boathouse Barriers",
 			"DoorsComplex, Shapers, Stars, RotatedShapers, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
 			"DoorsComplex, Shapers, Stars, RotatedShapers, Eraser, Quarry Boathouse First Barrier",
-			"DoorsMax, Shapers, Stars, RotatedShapers, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
+			"DoorsMax, Shapers, Stars, RotatedShapers, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, Quarry Boathouse Ramp Height Control (Panel)",
 			"DoorsMax, Shapers, Stars, RotatedShapers, Eraser, Quarry Boathouse First Barrier, Quarry Boathouse Ramp Height Control (Panel), Quarry Boathouse Ramp Horizontal Control (Panel)"
         ],
         "item_count": 1
@@ -1025,7 +1025,7 @@
 			"DoorsPanel, @Swamp Near Boat/More Rotated Shapers",
 			"DoorsSimple, Swamp Water Pumps",
 			"DoorsComplex, Swamp Purple Water Pump",
-			"DoorsMax, Swamp Purple Water Pump"
+			"DoorsMax, Swamp Rotating Bridge (Panel),Swamp Purple Water Pump"
         ],
         "item_count": 1
       },

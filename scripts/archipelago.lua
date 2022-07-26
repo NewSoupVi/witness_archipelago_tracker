@@ -87,8 +87,8 @@ function onClear(slot_data)
 			if value == 0 then obj = Tracker:FindObjectForCode("doorsNo")
 			elseif value == 1 then obj = Tracker:FindObjectForCode("doorsPanel")
 			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsSimple")
-			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsComplex")
-			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsMax")
+			elseif value == 3 then obj = Tracker:FindObjectForCode("doorsComplex")
+			elseif value == 4 then obj = Tracker:FindObjectForCode("doorsMax")
 			end
 		end
 		
