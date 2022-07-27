@@ -369,7 +369,7 @@
 			{
                 "name": "Big Squares & Dots & Eraser Puzzle",
 				"access_rules": ["@Places/quarryMillUpstairs, Eraser,Dots,ColoredSquares,BWSquare"],
-				"visibility_rules": [],
+				"visibility_rules": ["Uncommon"],
                 "item_count": 1
             },            
 			{
@@ -1259,6 +1259,7 @@
     },
 	{
         "name": "Color Bunker",
+		"visibility_rules": ["Unrandomized"],
         "sections": [
             {
                 "name": "Entry Panel",
@@ -1989,17 +1990,20 @@
 
 	{
         "name": "Caves Lone Pillar",
-		"access_rules": ["@Places/caves"],
+		"access_rules": [],
         "sections": [
 			{
                 "name": "Pillar",
-				"access_rules": ["triangles"],
+				"access_rules": ["@Places/caves, triangles"],
 				"visibility_rules": [],
                 "item_count": 1
             },
             {
                 "name": "Challenge Entry Panel",
-				"access_rules": ["Stars, Shapers, StarSameColor"],
+				"access_rules": [
+			"@Places/caves, Caves Doors to Challenge, Stars, Shapers, StarSameColor",
+			"@Places/caves, Caves Pillar Door, Stars, Shapers, StarSameColor",
+			"@Places/challenge, Challenge Entry Door, Stars, Shapers, StarSameColor",],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
