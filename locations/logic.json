@@ -1339,8 +1339,8 @@
 			"DoorsNo, Stars, Shapers, StarSameColor, Triangles, @Places/caves",
 			"DoorsPanel, Stars, Shapers, StarSameColor, Triangles, @Places/caves",
 			"DoorsSimple, Caves Doors to Challenge",
-			"DoorsComplex, Challenge Entry Door",
-			"DoorsMax, Challenge Entry Door"
+			"DoorsComplex, Challenge Entry Door, Caves Pillar Door",
+			"DoorsMax, Challenge Entry Door, Caves Pillar Door"
         ],
         "item_count": 1
       },
