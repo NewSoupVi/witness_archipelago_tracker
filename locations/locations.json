@@ -178,7 +178,7 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["@Places/overworld, Dots,Symmetry"],
+				"access_rules": ["@Inside Glass Factory/Symmetry Panels, @Places/overworld, Dots,Symmetry"],
                 "name": "Lower Door Panel",
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1

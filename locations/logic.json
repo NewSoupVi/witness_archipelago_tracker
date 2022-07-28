@@ -653,7 +653,7 @@
         "access_rules": [
 			"DoorsNo, [@Places/quarryMill]",
 			"DoorsPanel, [@Places/quarryMill]",
-			"DoorsSimple, [@Places/quarryMill]",
+			"DoorsSimple, Quarry Mill Shortcuts",
 			"DoorsComplex, Quarry Mill Side Door",
 			"DoorsMax, Quarry Mill Side Door"
         ],

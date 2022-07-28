@@ -280,7 +280,7 @@
 		"access_rules": [
 			"Desert Flood Room Flood Controls (Panel)"
 		],
-		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"visibility_rules": ["DoorsPanel", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
@@ -2198,7 +2198,7 @@
         "name": "Elevator Control Panel",
 		"access_rules": [
 			"Bunker Elevator Control (Panel)"],
-		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"visibility_rules": ["DoorsPanel", "DoorsMax"],
         "sections": [
 			{
                 "name": "Control Panel",
