@@ -97,7 +97,7 @@
 			"@Places/overworld, @Gates/quarryMainEntrance",
 			"@Places/ocean, @Gates/quarryBoathouseDock",
 			"@Places/shadowsFirstSet, @Gates/shadowsToQuarry",
-			"@Places/overworld, @Gates/quarryElevator",
+			"@Places/overworld, @Gates/quarryElevator, [@Gates/quarryMainEntrance]",
 			"@Places/quarryMill, @Gates/quarryMillBigDoor",
 			"@Places/quarryMill, @Gates/quarryMillSmallDoor"
 		],
@@ -131,6 +131,7 @@
         "name": "shadowsFirstSet",
         "access_rules": [
 			"@Gates/shadowsTimerDoor",
+			"@Gates/shadowsBarrier",
 			"@Places/quarry, @Gates/shadowsToQuarry"
 		],
         "item_count": 1
@@ -738,6 +739,16 @@
 			"DoorsSimple, Shadows Timed Door",
 			"DoorsComplex, Shadows Timed Door",
 			"DoorsMax, Shadows Timed Door"
+        ],
+        "item_count": 1
+      },
+	  {
+        "name": "shadowsBarrier",
+        "access_rules": [
+			"DoorsNo",
+			"DoorsSimple, Shadows Barriers",
+			"DoorsComplex, Shadows Barrier to Ledge",
+			"DoorsMax, Shadows Barrier to Ledge"
         ],
         "item_count": 1
       },

@@ -30,6 +30,14 @@ function onClear(slot_data)
 
     SLOT_DATA = slot_data
     CUR_INDEX = -1
+	
+	
+	Tracker:FindObjectForCode("doorsNo").Active = false
+	Tracker:FindObjectForCode("doorsPanel").Active = false
+	Tracker:FindObjectForCode("doorsSimple").Active = false
+	Tracker:FindObjectForCode("doorsComplex").Active = false
+	Tracker:FindObjectForCode("doorsMax").Active = false
+	
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -74,6 +82,7 @@ function onClear(slot_data)
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
 	
+	
 	for k, v in pairs(SETTINGS_MAPPING) do
 		obj = Tracker:FindObjectForCode(v)
 		
@@ -82,6 +91,8 @@ function onClear(slot_data)
 		if k == "disable_non_randomized_puzzles" then
 			value = not value
 		end
+		
+
 		
 		if k == "shuffle_doors" then
 			if value == 0 then obj = Tracker:FindObjectForCode("doorsNo")
@@ -94,6 +105,11 @@ function onClear(slot_data)
 		
 		obj.Active = value
 	end
+	
+	if (Tracker:FindObjectForCode("doorsNo") or Tracker:FindObjectForCode("doorsSimple") or Tracker:FindObjectForCode("doorsComplex")) then
+		Tracker:FindObjectForCode("Boat").Active = true
+	end
+	
 end
 
 -- called when an item gets collected

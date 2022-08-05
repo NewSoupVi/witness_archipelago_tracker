@@ -1766,24 +1766,24 @@
             },
 			{
                 "name": "Door to Final Room Left Panel",
-				"access_rules": ["@Places/mountainPenultimateRoom, Shapers, Stars"],
+				"access_rules": ["@Places/mountainPenultimateRoom"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Door to Final Room Right Panel",
-				"access_rules": ["@Places/mountainPenultimateRoom, ColoredSquares, Dots"],
-				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
-                "item_count": 1
-            },
-			{
-                "name": "Final Room Pillars Left",
-				"access_rules": ["@Places/mountainFinalRoom, Stars, BWSquare, Shapers, Dots, Symmetry"],
+				"access_rules": ["@Places/mountainPenultimateRoom"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Final Room Pillars Right",
+				"access_rules": ["@Places/mountainFinalRoom, Stars, BWSquare, Shapers, Dots, Symmetry"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Final Room Pillars Left",
 				"access_rules": ["@Places/mountainFinalRoom, Dots, Stars, Symmetry"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1

@@ -659,7 +659,29 @@
             {
                 "map": "doors",
                 "x": 832,
-                "y": 230,
+                "y": 240,
+            },
+        ]
+    },
+	
+	{
+        "name": "Shady trees barrier from 1st set",
+		"access_rules": [
+			"Shadows Barrier to Ledge",
+			"Shadows Barriers"],
+		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+        "sections": [
+			{
+                "name": "dock",
+				"access_rules": [],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "doors",
+                "x": 832,
+                "y": 220,
             },
         ]
     },
