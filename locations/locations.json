@@ -1,6 +1,7 @@
 [
 	{
         "name": "Tutorial Gate",
+		"access_rules": ["@Places/overworld"],
         "sections": [
             {
                 "name": "Gate Open",
@@ -14,11 +15,10 @@
                 "y": 1326,
             },
         ]
-    },
-	
+    },	
 	{
         "name": "Tutorial Patio Floor",
-		"visibility_rules": ["Uncommon,Unrandomized"],
+		"visibility_rules": ["@Places/tutorial, Uncommon,Unrandomized"],
 		"access_rules": ["Triangles,Dots"],
         "sections": [
             {
@@ -38,7 +38,7 @@
 	{
         "name": "Outside Tutorial Vault",
 		"visibility_rules": ["Vaults"],
-		"access_rules": ["BWSquare,Dots"],
+		"access_rules": ["@Places/overworld,BWSquare,Dots"],
         "sections": [
             {
                 "name": "Vault Box",
@@ -55,13 +55,29 @@
     },
 	
 	{
-        "name": "Outside Tutorial Discard",
-		"visibility_rules": ["Discarded"],
-		"access_rules": ["Triangles,Dots"],
+        "name": "Tutorial Outpost",
+		"visibility_rules": [""],
+		"access_rules": [""],
         "sections": [
             {
                 "name": "Discard",
-                "item_count": 1
+                "item_count": 1,
+				"visibility_rules": ["Discarded"],
+				"access_rules": ["Triangles, @Places/tutorialOutpost"],
+            },
+            {
+                "name": "Entry Door Panel",
+                "item_count": 1,
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"access_rules": ["Dots, @Places/tutorialOutpost, Outside Tutorial Outpost Entry Door",
+								 "Dots, @Places/overworld, Outside Tutorial Optional Door",
+								 "Dots, @Places/overworld, Outside Tutorial Outpost Doors"],
+            },
+            {
+                "name": "Exit Door Panel",
+                "item_count": 1,
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"access_rules": ["@Places/tutorialOutpost, Dots, BWSquare"],
             }
         ],
         "map_locations": [
@@ -75,7 +91,7 @@
 	
 	{
         "name": "Outside Tutorial Dots Introduction",
-		"access_rules": ["Dots"],
+		"access_rules": ["@Places/overworld, Dots"],
         "sections": [
             {
                 "name": "Dots Introduction",
@@ -93,7 +109,7 @@
 	
 	{
         "name": "Outside Tutorial Squares Introduction",
-		"access_rules": ["BWSquare"],
+		"access_rules": ["@Places/overworld, BWSquare"],
         "sections": [
             {
                 "name": "Squares Introduction",
@@ -109,25 +125,46 @@
         ]
     },	
 	{
-        "name": "Glass Factory",
+        "name": "Inside Glass Factory",
+		"access_rules": ["@Places/glassFactory, Symmetry"],
         "sections": [
-            {
-                "name": "Discard",
-				"visibility_rules": ["Discarded"],
-				"access_rules": ["Triangles"],
-                "item_count": 1
-            },
 			{
                 "name": "Symmetry Panels",
-				"access_rules": ["Symmetry"],
+				"access_rules": [],
                 "item_count": 3
             }
+			
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 220,
-                "y": 922,
+                "y": 910,
+            },
+        ]
+    },
+	{
+        "name": "Outside Glass Factory",
+        "sections": [
+			{
+                "name": "Rooftop Discard",
+				"visibility_rules": ["Discarded"],
+				"access_rules": ["@Places/overworld, Triangles"],
+                "item_count": 1
+            },
+			{
+                "name": "Entry Door Panel",
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"access_rules": ["@Places/overworld, Symmetry"],
+                "item_count": 1
+            }
+			
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 220,
+                "y": 950,
             },
         ]
     },
@@ -136,23 +173,35 @@
         "name": "Symmetry Island",
         "sections": [
 			{
-				"access_rules": ["Dots,Symmetry"],
+				"access_rules": ["@Places/symmetryOuter, Dots,Symmetry"],
                 "name": "Dots Row",
                 "item_count": 1
             },
 			{
-				"access_rules": ["Dots,ColoredDots,Symmetry"],
+				"access_rules": ["@Inside Glass Factory/Symmetry Panels, @Places/overworld, Dots,Symmetry"],
+                "name": "Lower Door Panel",
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+				"access_rules": ["@Places/symmetryOuter, Dots,Symmetry,ColoredDots"],
+                "name": "Upper Door Panel",
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+				"access_rules": ["@Places/symmetryOuter, Dots,ColoredDots,Symmetry"],
                 "name": "Colored Dots Rows",
                 "item_count": 2
             },
 			{
-				"access_rules": ["Dots,Symmetry"],
+				"access_rules": ["@Places/symmetryOuter, Symmetry"],
                 "name": "Environmental Set",
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
-				"access_rules": ["Dots,ColoredDots,Symmetry"],
+				"access_rules": ["@Places/symmetryInner, ColoredDots"],
                 "name": "Laser",
                 "item_count": 1
             },
@@ -170,8 +219,15 @@
         "name": "Orchard",
         "sections": [
             {
-                "name": "Apple Trees",
+                "name": "Apple Trees Outside Gate",
 				"visibility_rules": ["Unrandomized"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Apple Trees Inside Gate",
+				"visibility_rules": ["Unrandomized"],
+				"access_rules": ["@Places/orchardInner"],
                 "item_count": 1
             }
         ],
@@ -189,7 +245,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["Dots,Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/overworld,Dots,Shapers,RotatedShapers,NegativeShapers"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             }
@@ -209,7 +265,7 @@
             {
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["Triangles"],
+				"access_rules": ["@Places/overworld,Triangles"],
                 "item_count": 1
             }
         ],
@@ -227,22 +283,39 @@
         "sections": [
 			{
                 "name": "Outside Puzzles",
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Floodlight Room Panel",
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"access_rules": ["@Places/overworld"],
                 "item_count": 1
             },
 			{
                 "name": "Floodlight Room Puzzles",
+				"access_rules": ["@Places/desertFloodLight"],
                 "item_count": 1
             },
 			{
                 "name": "Pond Room Puzzles",
+				"access_rules": ["@Places/desertPond"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Water Levels Room Panel",
+				"access_rules": ["@Places/desertPond"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Flood Room Puzzles",
+				"access_rules": ["@Places/desertFlood, @Logic/canWaterLevel"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
+				"access_rules": ["@Places/desertLaser"],
                 "item_count": 1
             },
         ],
@@ -256,33 +329,65 @@
     },
 	
 	{
-        "name": "Quarry Mill",
+        "name": "Quarry Mill Rooftop",
         "sections": [
             {
-                "name": "Discard (Rooftop)",
-				"access_rules": ["Triangles"],
+                "name": "Discard",
+				"access_rules": ["@Places/overworld, Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 599,
+                "y": 345,
+            },
+        ]
+    },
+	
+	{
+        "name": "Quarry Mill",
+		"access_rules": [],
+        "sections": [
 			{
                 "name": "Eraser and Dots Row",
-				"access_rules": ["Eraser,Dots,[BWSquare]"],
+				"access_rules": ["@Places/quarryMill, Eraser,Dots"],
                 "item_count": 1
             },
 			{
                 "name": "Eraser and Squares Row",
-				"access_rules": ["Eraser,Dots,ColoredSquares,[BWSquare]"], 
+				"access_rules": ["@Places/quarryMill, [@Places/quarryMillUpstairs], Eraser,ColoredSquares"], 
                 "item_count": 1
             },
 			{
                 "name": "Small Squares & Dots & Eraser Puzzle",
-				"access_rules": ["Eraser,Dots,ColoredSquares,[BWSquare]"],
+				"access_rules": ["@Places/quarryMillUpstairs, Eraser,Dots,ColoredSquares"],
                 "item_count": 1
             },
 			{
                 "name": "Big Squares & Dots & Eraser Puzzle",
-				"access_rules": ["Eraser,Dots,ColoredSquares,BWSquare"],
-				"visibility_rules": ["Hard"],
+				"access_rules": ["@Places/quarryMillUpstairs, Eraser,Dots,ColoredSquares,BWSquare"],
+				"visibility_rules": ["Uncommon"],
+                "item_count": 1
+            },            
+			{
+                "name": "Exit to Quarry Door Panel",
+				"access_rules": ["[@Places/quarryMill]"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Outside Stairs Panel",
+				"access_rules": ["@Places/quarryMill"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Inside Stairs Control Panel",
+				"access_rules": ["@Places/quarryMill, [@Places/quarryMillUpstairs], BWSquare, ColoredSquares, Eraser"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
@@ -290,18 +395,41 @@
             {
                 "map": "fullmap",
                 "x": 639,
-                "y": 365,
+                "y": 385,
             },
         ]
     },
-	
+	{
+        "name": "Outside Quarry Mill",
+		"access_rules": ["@Places/quarry"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+        "sections": [
+            {
+                "name": "Door to Mill Left",
+				"access_rules": ["BWSquare"],
+                "item_count": 1
+            },            
+			{
+                "name": "Door to Mill Right",
+				"access_rules": ["Dots"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 639,
+                "y": 345,
+            },
+        ]
+    },	
 	{
         "name": "Quarry Boathouse",
-		"access_rules": ["[Shapers],[BWSquare]"],
+		"access_rules": ["@Places/quarry"],
         "sections": [
 			{
                 "name": "Intro Shapers",
-				"access_rules": ["RotatedShapers"],
+				"access_rules": ["Shapers, RotatedShapers"],
                 "item_count": 1
             },
 			{
@@ -311,14 +439,27 @@
             },
 			{
                 "name": "Eraser and Shapers Row",
-				"access_rules": ["Shapers,[Stars],[RotatedShapers],Eraser"],
+				"access_rules": [
+					"DoorsNo, Shapers, [Stars], [RotatedShapers], Eraser",
+					"DoorsPanel, Shapers, [Stars], [RotatedShapers], Eraser, [Quarry Boathouse Ramp Height Control (Panel)]",
+					"DoorsSimple, Shapers, [Stars], [RotatedShapers], Eraser",
+					"DoorsComplex, Shapers, [Stars], [RotatedShapers], Eraser",
+					"DoorsMax, Shapers, [Stars], [RotatedShapers], Eraser, [Quarry Boathouse Ramp Height Control (Panel)]",
+				],
                 "item_count": 1
             },
 			{
                 "name": "Stars & Eraser & Shapers Row",
-				"access_rules": ["Shapers,Stars,StarSameColor,Eraser,RotatedShapers"],
+				"access_rules": ["@Places/quarryBoathouseUpstairs, Shapers,Stars,StarSameColor,Eraser,RotatedShapers"],
                 "item_count": 2
+            },			
+			{
+                "name": "Shortcut Door Panel",
+				"access_rules": ["@Places/quarryBoathouseUpstairs"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
             },
+			
         ],
         "map_locations": [
             {
@@ -331,29 +472,67 @@
 	
 	{
         "name": "Quarry Laser",
-		"access_rules": ["Unrandomized", "Shapers,BWSquare"],
+		"access_rules": ["Shapers, Eraser"],
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["Shapers,Stars,StarSameColor,[BWSquare],Eraser,ColoredSquares,Dots"],
+				"access_rules": ["@Quarry Boathouse/Stars & Eraser & Shapers Row, @Quarry Mill/Small Squares & Dots & Eraser Puzzle"],
                 "item_count": 1
             },
         ],
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 690,
-                "y": 595,
+                "x": 625,
+                "y": 523,
+            },
+        ]
+    },
+	
+	{
+        "name": "Quarry Entrance",
+		"access_rules": [],
+		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+        "sections": [
+            {
+                "name": "Door 1",
+				"access_rules": ["@Places/overworld, BWSquare"],
+                "item_count": 1
+            },            
+			{
+                "name": "Door 2",
+				"access_rules": ["@Places/overworld, Quarry Main Entry 1, Shapers","@Places/overworld, Quarry Main Entry, Shapers", "@Places/quarry, Quarry Main Entry 2, Shapers"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 665,
+                "y": 543,
             },
         ]
     },
 	
 	{
         "name": "Shadows First Set",
-		"visibility_rules": ["Unrandomized"],
         "sections": [
             {
                 "name": "Avoid Puzzles",
+				"access_rules": ["@Places/shadowsFirstSet, [@Gates/shadowsTimerDoor]"],
+				"visibility_rules": ["Unrandomized"],
+                "item_count": 1
+            },
+            {
+                "name": "Entry Door Timer Panel",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Door to Quarry Timer Panel",
+				"access_rules": ["[@Places/shadowsFirstSet]"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
@@ -372,6 +551,7 @@
         "sections": [
             {
                 "name": "Environmental Avoid Puzzles",
+				"access_rules": ["@Shadows First Set/Avoid Puzzles, [@Gates/shadowsTimerDoor]"],
                 "item_count": 1
             },
         ],
@@ -390,6 +570,7 @@
         "sections": [
             {
                 "name": "Follow Puzzles",
+				"access_rules": ["@Shadows First Set/Avoid Puzzles, [@Gates/shadowsTimerDoor]"],
                 "item_count": 1
             },
         ],
@@ -405,6 +586,7 @@
 	{
         "name": "Shadows Laser",
 		"visibility_rules": ["Unrandomized"],
+		"access_rules": ["@Places/shadowsLaser"],
         "sections": [
             {
                 "name": "Laser",
@@ -421,35 +603,151 @@
     },
 	
 	{
-        "name": "Keep Hedges",
-		"visibility_rules": ["Unrandomized"],
+        "name": "Hedge Maze 1",
+		"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
         "sections": [
             {
-                "name": "Hedge Mazes",
+                "name": "Door Panel",
+				"access_rules": ["@Places/overworld"],
                 "item_count": 1
             },
         ],
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 964,
-                "y": 443,
+                "x": 1036,
+                "y": 457,
+            },
+        ]
+    },	
+	{
+        "name": "Hedge Maze 2",
+		"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
+        "sections": [
+            {
+                "name": "Door Panel",
+				"access_rules": ["@Places/maze2"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1019,
+                "y": 524,
+            },
+        ]
+    },	
+	{
+        "name": "Hedge Maze 3",
+		"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
+        "sections": [
+            {
+                "name": "Door Panel",
+				"access_rules": ["@Places/maze3"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 945,
+                "y": 514,
+            },
+        ]
+    },	
+	{
+        "name": "Hedge Maze 4",
+		"visibility_rules": ["Unrandomized"],
+        "sections": [
+            {
+                "name": "Door Panel",
+				"access_rules": ["[@Places/maze4]"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 963,
+                "y": 445,
             },
         ]
     },
 	
 	{
-        "name": "Keep Pressure Plates",
+        "name": "Pressure Plates 1",
+		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["Dots,[Stars],[StarSameColor],BWSquare,Shapers,ColoredSquares,Symmetry"],
+				"access_rules": ["@Places/overworld, Dots"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1061,
+                "y": 336,
+            },
+        ]
+    },		
+	{
+        "name": "Pressure Plates 2",
+		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+        "sections": [
+            {
+                "name": "Pressure Plates",
+				"access_rules": ["@Places/plates2, BWSquare, Stars, StarSameColor"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1076,
+                "y": 264,
+            },
+        ]
+    },		
+	{
+        "name": "Pressure Plates 3",
+		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+        "sections": [
+            {
+                "name": "Pressure Plates",
+				"access_rules": ["@Places/plates3, BWSquare, ColoredSquares, Shapers"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1008,
+                "y": 248,
+            },
+        ]
+    },	
+	{
+        "name": "Pressure Plates 4",
+        "sections": [
+            {
+                "name": "Pressure Plates",
+				"access_rules": ["Shapers, Symmetry, Dots, @Places/plates4"],
+				"visibility_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Unrandomized,[Dots],[Stars],[StarSameColor],[BWSquare],[Shapers],[ColoredSquares],Triangles","Dots,[Stars],[StarSameColor],BWSquare,Shapers,ColoredSquares,Triangles"],
+				"access_rules": ["@Places/plates4, Triangles", "[@Places/plates4], Triangles, @Places/keepTower"],
 				"visibility_rules": ["Discarded"],
+                "item_count": 1
+            },
+			{
+                "name": "Shortcut to Shady Trees Panel",
+				"access_rules": ["@Places/plates4"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
@@ -464,15 +762,23 @@
 	
 	{
         "name": "Keep Tower",
+		"access_rules": ["@Places/keepTower"],
         "sections": [
             {
                 "name": "Laser Hedges",
 				"visibility_rules": ["Unrandomized"],
+				"access_rules": ["[@Hedge Maze 1/Door Panel],[@Hedge Maze 2/Door Panel],[@Hedge Maze 3/Door Panel],[@Hedge Maze 4/Door Panel]"],
                 "item_count": 1
             },
 			{
                 "name": "Laser Pressure Plates",
 				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry"],
+                "item_count": 1
+            },
+			{
+                "name": "Shortcut Door Panel",
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"access_rules": [],
                 "item_count": 1
             },
         ],
@@ -490,7 +796,7 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["Dots,Triangles"],
+				"access_rules": ["@Places/plates3,Triangles"],
                 "visibility_rules": ["Discarded"],
                 "item_count": 1
             },
@@ -509,7 +815,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["Dots,Symmetry,SoundDots,ColoredDots"],
+				"access_rules": ["@Places/plates3, Dots,Symmetry,SoundDots,ColoredDots"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             },
@@ -525,19 +831,40 @@
 	
 	{
         "name": "Monastery",
-		"visibility_rules": ["Unrandomized"],
-		"access_rules": ["[Dots]"],
+		"visibility_rules": [],
+		"access_rules": [],
         "sections": [
             {
                 "name": "Rhombic Avoid Puzzles",
+				"visibility_rules": ["Unrandomized"],
+				"access_rules": ["[@Places/monastery], [Dots]"],
                 "item_count": 1
             },
 			{
                 "name": "Branch Puzzles",
+				"visibility_rules": ["Unrandomized"],
+				"access_rules": ["@Places/monastery, [Dots]"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
+				"visibility_rules": ["Unrandomized"],
+				"access_rules": ["@Places/monastery, [Dots]"],
+                "item_count": 1
+            },
+			{
+                "name": "Door Panel Left",
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
+                "item_count": 1
+            },
+			{
+                "name": "Door Panel Right",
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
+                "item_count": 1
+            },
+			{
+                "name": "Monastery Shortcut to River",
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
                 "item_count": 1
             },
         ],
@@ -555,10 +882,16 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["Shapers,BWSquare,Triangles"],
+				"access_rules": ["Triangles, @Logic/townCargo"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
-            }
+            },
+            {
+                "name": "Door Panel",
+				"access_rules": ["Shapers,BWSquare"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
         ],
         "map_locations": [
             {
@@ -573,7 +906,7 @@
         "sections": [
             {
                 "name": "Hexagonal Reflection Puzzle",
-				"access_rules": ["Symmetry,Shapers"],
+				"access_rules": ["@Places/overworld, Symmetry, [@Places/redRoof]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             }
@@ -591,7 +924,13 @@
         "sections": [
             {
                 "name": "Square Avoid Puzzle",
-				"access_rules": ["Stars,[RotatedShapers]"],
+				"access_rules": ["@Places/church"],
+                "item_count": 1
+            },
+            {
+                "name": "Door Panel",
+				"access_rules": ["@Places/overworld, [@Places/church], Stars"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             }
         ],
@@ -608,13 +947,19 @@
         "sections": [
             {
                 "name": "Symmetry Squares",
-				"access_rules": ["Shapers,BWSquare,Symmetry,Dots"],
+				"access_rules": ["@Places/redRoof, BWSquare,Symmetry,Dots"],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Shapers,Triangles"],
+				"access_rules": ["@Places/redRoof, Triangles"],
 				"visibility_rules": ["Discarded"],
+                "item_count": 1
+            },
+            {
+                "name": "Maze Stair Control",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             }
         ],
@@ -631,12 +976,12 @@
         "sections": [
             {
                 "name": "Full Dot Grid Shapers 5",
-				"access_rules": ["Dots,Shapers,RotatedShapers"],
+				"access_rules": ["@Places/overworld, Dots,Shapers,RotatedShapers"],
                 "item_count": 1
             },
 			{
                 "name": "Shapers & Dots & Eraser",
-				"access_rules": ["Dots,Shapers,RotatedShapers,Eraser"],
+				"access_rules": ["@Places/woodenRoof, Dots,Shapers,RotatedShapers,Eraser"],
                 "item_count": 1
             },
 			
@@ -651,20 +996,38 @@
     },
 	{
         "name": "RGB House",
-		"access_rules": ["Stars,RotatedShapers"],
+		"access_rules": [],
         "sections": [
             {
                 "name": "RGB Squares",
 				"visibility_rules": ["Uncommon"],
-				"access_rules": ["SoundDots,BWSquare,ColoredSquares"],
+				"access_rules": ["@Places/RGBHouseUpstairs, BWSquare,ColoredSquares,[RotatedShapers]"],
                 "item_count": 1
             },
 			{
                 "name": "RGB Stars",
-				"access_rules": ["SoundDots,Stars,[BWSquare],[ColoredSquares]"],
+				"access_rules": ["@Places/RGBHouseUpstairs, Stars,[BWSquare],[ColoredSquares], [RotatedShapers]"],
 				"visibility_rules": ["Uncommon"],
                 "item_count": 1
-            }
+            },
+			{
+                "name": "Tinted Door Panel",
+				"access_rules": ["Stars, RotatedShapers"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Sound Room Left",
+				"access_rules": ["@Places/RGBHouse, SoundDots"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Sound Room Right",
+				"access_rules": ["@Places/RGBHouse, SoundDots"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
         ],
         "map_locations": [
             {
@@ -676,7 +1039,7 @@
     },
 	{
         "name": "Town Laser",
-		"access_rules": ["BWSquare,Stars,Dots,Symmetry,Shapers,RotatedShapers,Eraser"],
+		"access_rules": ["@Places/townLaser"],
         "sections": [
             {
                 "name": "Laser",
@@ -690,10 +1053,34 @@
                 "y": 859,
             },
         ]
+    },	
+	{
+        "name": "Windmill",
+        "sections": [
+            {
+                "name": "Entrance Door Panel",
+				"access_rules": ["@Places/overworld,Dots"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Theater Entrance Door Panel",
+				"access_rules": ["@Places/windmill, BWSquare"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 597,
+                "y": 735,
+            },
+        ]
     },
 	{
         "name": "Theater",
-		"access_rules": ["Dots,BWSquare","Triangles,Stars,StarSameColor,Shapers,BWSquare,UTM"],
+		"access_rules": ["@Places/theater"],
         "sections": [
             {
                 "name": "Discard",
@@ -721,7 +1108,7 @@
             },
 			{
                 "name": "Challenge Video",
-				"visibility_rules": ["Unrandomized,Uncommon,Hard,Vaults"],
+				"visibility_rules": ["Unrandomized,Uncommon,Vaults"],
 				"access_rules": ["[@Mountain Secret Area Vault Box/Challenge Vault]"],
                 "item_count": 1
             },
@@ -738,11 +1125,18 @@
                 "item_count": 1
             },
 			{
-                "name": "Vault Box (From UTM)",
-				"visibility_rules": ["Hard,Vaults"],
-				"access_rules": ["@Mountain Secret Area Vault Box/Challenge Vault"],
+                "name": "Exit Door Left",
+				"access_rules": ["BWSquare, Eraser"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
                 "item_count": 1
-            }
+            },
+			{
+                "name": "Exit Door Right",
+				"access_rules": ["BWSquare, Shapers"],
+				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+                "item_count": 1
+            },
+
         ],
         "map_locations": [
             {
@@ -754,6 +1148,7 @@
     },
 	{
         "name": "Jungle Sound Waves Puzzles",
+		"access_rules": ["@Places/overworld"],
         "sections": [
             {
                 "name": "Set 1",
@@ -779,15 +1174,21 @@
         "sections": [
             {
                 "name": "Sound Dots Puzzles",
-				"access_rules": ["SoundDots"],
+				"access_rules": ["@Places/junglePopup, SoundDots"],
+                "item_count": 1
+            },
+            {
+                "name": "Popup Wall Control",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1110,
-                "y": 910,
+                "x": 1072,
+                "y": 976,
             },
         ]
     },
@@ -796,7 +1197,7 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["Triangles"],
+				"access_rules": ["@Places/overworld,Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
@@ -804,8 +1205,8 @@
 		"map_locations": [
             {
                 "map": "fullmap",
-                "x": 1065,
-                "y": 976,
+                "x": 1009,
+                "y": 1115,
             },
         ]
 	},
@@ -814,7 +1215,13 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["SoundDots"],
+				"access_rules": ["@Places/overworld, SoundDots, @Jungle Popup Wall/Sound Dots Puzzles"],
+                "item_count": 1
+            },
+            {
+                "name": "Shortcut to River Panel",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
@@ -827,12 +1234,18 @@
         ]
     },
 	{
-        "name": "River Vault",
+        "name": "Between Jungle and Monastery",
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["Dots,BWSquare"],
+				"access_rules": ["@Places/overworld,Dots,BWSquare"],
 				"visibility_rules": ["Vaults,Unrandomized"],
+                "item_count": 1
+            },
+            {
+                "name": "Rhombic Avoid to Monastery Garden Panel",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
                 "item_count": 1
             },
         ],
@@ -846,23 +1259,42 @@
     },
 	{
         "name": "Color Bunker",
-		"access_rules": ["BWSquare,ColoredSquares"],
 		"visibility_rules": ["Unrandomized"],
         "sections": [
             {
+                "name": "Entry Panel",
+				"access_rules": ["BWSquare, ColoredSquares"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Tinted Glass Door Panel",
+				"access_rules": ["@Color Bunker/Drawn Squares Puzzles, @Places/bunkerAntechamber"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
                 "name": "Drawn Squares Puzzles",
+				"access_rules": ["@Places/bunkerAntechamber, ColoredSquares"],
+				"visibility_rules": ["Unrandomized"],
                 "item_count": 2
             },
 			{
                 "name": "Tinted Glass Puzzles",
+				"access_rules": ["@Places/bunkerTintedRoom, BWSquare, ColoredSquares,@Color Bunker/Drawn Squares Puzzles"],
+				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
-                "name": "Drop-Down Door",
+                "name": "Ultraviolet Room",
+				"access_rules": ["@Places/bunkerUV, ColoredSquares,@Color Bunker/Tinted Glass Puzzles"],
+				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
+				"access_rules": ["@Places/bunkerLaser, ColoredSquares, @Color Bunker/Ultraviolet Room"],
+				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
         ],
@@ -879,8 +1311,14 @@
         "sections": [
             {
                 "name": "Introduction Sets",
-				"access_rules": ["Shapers"],
+				"access_rules": ["@Places/swampEntry, Shapers"],
                 "item_count": 2
+            },
+            {
+                "name": "Door Panel",
+				"access_rules": ["@Places/overworld, Shapers"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
             }
         ],
         "map_locations": [
@@ -896,17 +1334,23 @@
         "sections": [
             {
                 "name": "Platform Set",
-				"access_rules": ["Shapers"],
+				"access_rules": ["@Places/swampPlatform, Shapers, @Swamp Entry Area/Introduction Sets"],
+                "item_count": 1
+            },
+			{
+                "name": "Shortcut Door Panels",
+				"access_rules": ["@Places/swampPlatform, Shapers"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Broken Shapers Introduction",
-				"access_rules": ["Shapers"],
+				"access_rules": ["@Places/swampBroken, Shapers, @Swamp Platform Area/Platform Set"],
                 "item_count": 1
             },
 			{
                 "name": "Rotated Shapers Introduction",
-				"access_rules": ["Shapers,RotatedShapers"],
+				"access_rules": ["@Places/swampRotated, Shapers, RotatedShapers, @Swamp Platform Area/Broken Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -923,7 +1367,7 @@
         "sections": [
             {
                 "name": "More Rotated Shapers",
-				"access_rules": ["Shapers,RotatedShapers"],
+				"access_rules": ["@Places/swampBack, Shapers,RotatedShapers,@Swamp Platform Area/Rotated Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -940,7 +1384,7 @@
         "sections": [
             {
                 "name": "Tetris!!!",
-				"access_rules": ["Shapers,RotatedShapers"],
+				"access_rules": ["@Places/swampPurple, Shapers,RotatedShapers"],
 				"visibility_rules": ["Uncommon"],
                 "item_count": 1
             }
@@ -958,7 +1402,7 @@
         "sections": [
             {
                 "name": "Negative Shapers",
-				"access_rules": ["Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampBlue, Shapers,RotatedShapers,NegativeShapers"],
                 "item_count": 1
             }
         ],
@@ -975,7 +1419,7 @@
         "sections": [
             {
                 "name": "More Negative Shapers",
-				"access_rules": ["Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampCyan, Shapers,RotatedShapers,NegativeShapers"],
                 "item_count": 1
             }
         ],
@@ -992,7 +1436,7 @@
         "sections": [
             {
                 "name": "Even More Negative Shapers",
-				"access_rules": ["Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampRed, Shapers,RotatedShapers,NegativeShapers"],
                 "item_count": 1
             },
         ],
@@ -1006,10 +1450,17 @@
     },
 	{
         "name": "Swamp Laser",
+		"access_rules": ["@Places/swampLaser"],
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": [],
+                "item_count": 1
+            },
+			{
+                "name": "Shortcut Door Panels",
+				"access_rules": ["Shapers, RotatedShapers, NegativeShapers"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
@@ -1022,11 +1473,30 @@
         ]
     },
 	{
-        "name": "Treehouse First Bridge",
+        "name": "Treehouse Entrance",
+		"access_rules": [],
         "sections": [
             {
                 "name": "Yellow Bridge",
+				"access_rules": ["@Places/treehouseStart, Stars"],
+                "item_count": 1
+            },
+			{
+                "name": "First Door Panel",
 				"access_rules": ["Stars"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Second Door Panel",
+				"access_rules": ["Treehouse First Door, Stars"],
+				"visibility_rules": ["@Places/treehouseStart, DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Third Door Panel",
+				"access_rules": ["@Places/treehouseStart, Stars"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
@@ -1040,7 +1510,7 @@
     },
 	{
         "name": "Treehouse Left Side",
-		"access_rules": ["Stars"],
+		"access_rules": ["@Places/treehouseMain, Stars"],
         "sections": [
             {
                 "name": "Purple Bridge 1",
@@ -1069,23 +1539,37 @@
 	
 	{
         "name": "Treehouse Right Side",
-		"access_rules": ["Stars"],
+		"access_rules": [],
         "sections": [
 			{
                 "name": "Right Orange Bridge",
+				"access_rules": ["@Places/treehouseMain"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge",
-				"access_rules": ["Shapers,RotatedShapers,NegativeShapers,StarSameColor"],
+				"access_rules": ["@Places/treehouseMain, Stars, Shapers,RotatedShapers,NegativeShapers,StarSameColor"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge Discard",
-				"access_rules": ["Triangles,Shapers,RotatedShapers,NegativeShapers,StarSameColor"],
+				"access_rules": ["@Places/treehouseMain, Stars, Triangles, @Treehouse Right Side/Green Bridge"],
                 "visibility_rules": ["Discarded"],
                 "item_count": 1
-            }
+            },
+			{
+                "name": "Drawbridge Panel",
+				"access_rules": ["@Treehouse Right Side/Right Orange Bridge, Stars",
+								 "Treehouse Drawbridge, Stars"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Laser House Door Outside Timer",
+				"access_rules": ["@Places/treehouseMain, @Treehouse Right Side/Right Orange Bridge"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
         ],
         "map_locations": [
             {
@@ -1101,7 +1585,13 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["@Treehouse Left Side/Left Orange Bridge,@Treehouse Right Side/Right Orange Bridge"],
+				"access_rules": ["@Places/treehouseLaser"],
+                "item_count": 1
+            },
+			{
+                "name": "Laser House Door Inside Timer",
+				"access_rules": ["@Places/treehouseLaser"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
@@ -1126,7 +1616,7 @@
             {
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["Triangles"],
+				"access_rules": ["@Places/overworld,Triangles"],
                 "item_count": 1
             }
         ],
@@ -1144,7 +1634,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["Symmetry,ColoredDots,BWSquare,Dots"],
+				"access_rules": ["@Places/overworld,Symmetry,ColoredDots,BWSquare,Dots"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             }
@@ -1166,6 +1656,12 @@
                 "name": "River Shape",
 				"visibility_rules": ["Unrandomized,Uncommon"],
                 "item_count": 1
+            },
+            {
+                "name": "Mountain Entry",
+				"access_rules": ["BWSquare, Stars, StarSameColor"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
             }
         ],
         "map_locations": [
@@ -1179,7 +1675,7 @@
 	
 	{
         "name": "Inside Mountain Layer 1",
-		"access_rules": ["[$laser_count|7|0],$laser_count|7|1,BWSquare,Stars,StarSameColor,Eraser,ColoredSquares"],
+		"access_rules": ["@Places/mountainLayer1, BWSquare,Eraser,ColoredSquares"],
         "sections": [
             {
                 "name": "Angled Inside Trash",
@@ -1213,21 +1709,33 @@
 	
 	{
         "name": "Inside Mountain Layer 2",
-		"access_rules": ["@Inside Mountain Layer 1,Shapers,RotatedShapers,Dots,Symmetry"],
+		"access_rules": [],
         "sections": [
             {
                 "name": "Broken Color Puzzles",
-				"access_rules": ["ColoredSquares,ColoredDots"],
+				"access_rules": ["@Places/mountainLayer2, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots"],
                 "item_count": 1
             },
 			{
                 "name": "Same Solution Set",
-				"access_rules": ["ColoredSquares,ColoredDots"],
+				"access_rules": ["@Places/mountainLayer2, @Places/mountain2FrontStairs, ColoredSquares,ColoredDots, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers"],
+                "item_count": 1
+            },
+			{
+                "name": "Blue Light Bridge",
+				"access_rules": ["@Places/mountainLayer2, @Places/mountain2FrontStairs, Stars, StarSameColor, RotatedShapers, Eraser"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Orange Light Bridge",
+				"access_rules": ["@Places/mountainLayer2, @Places/mountain2BackStairs, Stars, StarSameColor, RotatedShapers, Eraser"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Elevator Discard",
-				"access_rules": ["ColoredSquares,ColoredDots,Triangles"],
+				"access_rules": ["@Places/mountainMeta, Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
@@ -1243,20 +1751,46 @@
 	
 	{
         "name": "Inside Mountain Bottom Layer",
-		"access_rules": ["@Inside Mountain Layer 2/Same Solution Set"],
+		"access_rules": [],
         "sections": [
             {
                 "name": "Giant Puzzle",
+				"access_rules": ["@Places/mountainMeta, Shapers, Eraser, RotatedShapers"],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
-				"access_rules": ["Triangles"],
-				"visibility_rules": ["Discarded,Hard"],
+				"access_rules": ["@Places/mountainPenultimateRoom, Discarded"],
+				"visibility_rules": ["Triangles, DoorsSimple, DoorsComplex, DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Final Room Left Panel",
+				"access_rules": ["@Places/mountainPenultimateRoom"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Door to Final Room Right Panel",
+				"access_rules": ["@Places/mountainPenultimateRoom"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Final Room Pillars Right",
+				"access_rules": ["@Places/mountainFinalRoom, Stars, BWSquare, Shapers, Dots, Symmetry"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Final Room Pillars Left",
+				"access_rules": ["@Places/mountainFinalRoom, Dots, Stars, Symmetry"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Final Elevator: Victory!",
+				"access_rules": ["@Places/mountainFinalRoom, @Inside Mountain Bottom Layer/Final Room Pillars Left, @Inside Mountain Bottom Layer/Final Room Pillars Right"],
                 "item_count": 1
             }
         ],
@@ -1270,9 +1804,9 @@
     },
 
 	{
-        "name": "Mountain Secret Area Lower Puzzles",
-		"access_rules": ["@Inside Mountain Bottom Layer/Discard", "UTM"],
-		"visibility_rules": ["Hard"],
+        "name": "Caves Lower Puzzles",
+		"access_rules": ["@Places/caves"],
+		"visibility_rules": [],
         "sections": [
             {
                 "name": "Symmetry Triangles",
@@ -1308,7 +1842,20 @@
                 "name": "Symmetry Shapers",
 				"access_rules": ["Shapers,Symmetry"],
                 "item_count": 1
+            },
+			{
+                "name": "Secret Area Entrance Door Panel",
+				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Mountain meta exit, Inside Mountain Bottom Layer Rock Open","@UTM access, Inside Mountain Door to Secret Area"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Secret Area Rock Timer Panel",
+				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Mountain meta exit, Inside Mountain Bottom Layer Rock Open","@UTM access, Inside Mountain Door to Secret Area"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
             }
+			
         ],
         "map_locations": [
             {
@@ -1320,28 +1867,43 @@
     },
 	
 	{
-        "name": "Mountain Secret Area First Floor",
-		"access_rules": ["@Inside Mountain Bottom Layer/Discard", "UTM"],
-		"visibility_rules": ["Hard"],
+        "name": "Caves First Floor",
+		"access_rules": ["@Places/caves"],
         "sections": [
             {
                 "name": "Rotated Broken Shapers",
 				"access_rules": ["RotatedShapers"],
+				"visibility_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Stars and Squares",
 				"access_rules": ["BWSquare, Stars, StarSameColor, ColoredSquares"],
+				"visibility_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Rainbow Squares",
 				"access_rules": ["ColoredSquares"],
+				"visibility_rules": [],
                 "item_count": 1
             },
 			{
                 "name": "Squares & Stars and Colored Eraser",
 				"access_rules": ["BWSquare, ColoredSquares, Stars, StarSameColor, Eraser"],
+				"visibility_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Shortcut to Mountain Panel",
+				"access_rules": ["Triangles, Stars, StarSameColor"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Shortcut to Swamp Panel",
+				"access_rules": ["Triangles"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 
@@ -1356,9 +1918,9 @@
     },
 	
 	{
-        "name": "Mountain Secret Area Wooden Beams",
-		"access_rules": ["@Inside Mountain Bottom Layer/Discard", "UTM"],
-		"visibility_rules": ["Hard"],
+        "name": "Caves Wooden Beams",
+		"access_rules": ["@Places/caves"],
+		"visibility_rules": [],
         "sections": [
             {
                 "name": "Wooden Beam Shapers",
@@ -1392,9 +1954,9 @@
     },
 	
 	{
-        "name": "Mountain Secret Area Upstairs Dots Puzzles",
-		"access_rules": ["@Inside Mountain Bottom Layer/Discard", "UTM"],
-		"visibility_rules": ["Hard"],
+        "name": "Caves Upstairs Dots Puzzles",
+		"access_rules": ["@Places/caves"],
+		"visibility_rules": [],
         "sections": [
             {
                 "name": "Dot Grid Rotated Shapers",
@@ -1427,15 +1989,24 @@
     },
 
 	{
-        "name": "Mountain Secret Area Lone Pillar",
-		"access_rules": ["@Inside Mountain Bottom Layer/Discard", "UTM"],
-		"visibility_rules": ["Hard"],
+        "name": "Caves Lone Pillar",
+		"access_rules": [],
         "sections": [
 			{
                 "name": "Pillar",
-				"access_rules": ["triangles"],
+				"access_rules": ["@Places/caves, triangles"],
+				"visibility_rules": [],
                 "item_count": 1
-            }
+            },
+            {
+                "name": "Challenge Entry Panel",
+				"access_rules": [
+			"@Places/caves, Caves Doors to Challenge, Stars, Shapers, StarSameColor",
+			"@Places/caves, Caves Pillar Door, Stars, Shapers, StarSameColor",
+			"@Places/challenge, Challenge Entry Door, Stars, Shapers, StarSameColor",],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
         ],
         "map_locations": [
             {
@@ -1446,14 +2017,22 @@
         ]
     },
 	
+	
+	
 	{
-        "name": "Mountain Secret Area Vault Box",
-		"access_rules": ["@Inside Mountain Bottom Layer/Discard", "UTM"],
-		"visibility_rules": ["Hard"],
+        "name": "Mountain Challenge Area",
+		"access_rules": ["@Places/challenge"],
         "sections": [
+            {
+                "name": "Door to Theater Walkway Panel",
+				"access_rules": ["Triangles"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
 			{
                 "name": "Challenge Vault",
-				"access_rules": ["Triangles,Stars,StarSameColor,Shapers"],
+				"access_rules": [],
+				"visibility_rules": [],
                 "item_count": 1
             }
         ],
@@ -1465,5 +2044,46 @@
             },
         ]
     },
+	
+	{
+        "name": "Underground Tunnels",
+		"access_rules": ["@Places/tunnels"],
+		"visibility_rules": [],
+        "sections": [
+			{
+                "name": "Theater Vault Box",
+				"visibility_rules": ["Vaults"],
+				"access_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Theater Shortcut Panel",
+				"access_rules": [],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Town Shortcut Panel",
+				"access_rules": ["Triangles"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Desert Shortcut Panel",
+				"access_rules": [],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1502,
+                "y": 1324,
+            },
+        ]
+    }
+	
 
+	
 ]

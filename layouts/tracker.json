@@ -15,27 +15,12 @@
 			"item_size": "50",
             "rows": [
 				[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles" ],
-				[ "Dots", "ColoredDots", "SoundDots", "Symmetry" ],
+				[ "Dots", "ColoredDots", "SoundDots", "Symmetry" , "Boat" ],
 				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "Skip"]
             ]
           },
         ]},
-		{"type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "6,1",
-            "h_alignment": "left",
-			"item_size": "50",
-            "rows": [
-				[ "Unrandomized", "Uncommon" ],
-				[ "Vaults", "Hard" ],
-				[ "Discarded", "UTM" ],
-            ]
-          },
-        ]},
+
 	]
   },
   "tracker_default": {
@@ -74,10 +59,36 @@
           ]
         },
         {
-			"type": "map",
-                "maps": [
-                  "fullmap"
-                ]
+			"type": "tabbed",
+				"tabs": [
+				{
+					"title": "Both",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap", "doors"
+						]
+					}
+				},
+				{
+					"title": "Map",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap"
+						]
+					}
+				},
+				{
+					"title": "Metro",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "doors"
+						]
+					}
+				}
+			]
 		},
       ]
     }
@@ -120,11 +131,37 @@
           ]
         },
         {
-                "type": "map",
-                "maps": [
-                  "fullmap"
-                ]
-        }
+			"type": "tabbed",
+				"tabs": [
+				{
+					"title": "Both",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap", "doors"
+						]
+					}
+				},
+				{
+					"title": "Map",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "fullmap"
+						]
+					}
+				},
+				{
+					"title": "Metro",
+					"content": {
+						"type": "map",
+						"maps": [
+						  "doors"
+						]
+					}
+				}
+			]
+		},
       ]
     }
   }
