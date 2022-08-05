@@ -16,12 +16,6 @@
      "flags": [
        "ap"
      ]
-    },
-    "var_debug": {
-     "display_name": "Debug",
-     "flags": [
-       "ap"
-     ]
     }
   }
 }
