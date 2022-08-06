@@ -772,7 +772,7 @@
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry"],
+				"access_rules": ["Dots,Stars,StarSameColor,BWSquare,Shapers,ColoredSquares,Symmetry, @Pressure Plates 4/Pressure Plates"],
                 "item_count": 1
             },
 			{
@@ -1483,19 +1483,27 @@
             },
 			{
                 "name": "First Door Panel",
-				"access_rules": ["Stars"],
+				"access_rules": ["@Places/ocean, Stars"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Second Door Panel",
-				"access_rules": ["Treehouse First Door, Stars"],
-				"visibility_rules": ["@Places/treehouseStart, DoorsSimple", "DoorsComplex", "DoorsMax"],
+				"access_rules": [
+					"DoorsSimple, [Treehouse Entry Doors], Stars",
+					"DoorsComplex, [Treehouse First Door], Stars",
+					"DoorsMax, Boat, [Treehouse First Door], Stars"
+				],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Third Door Panel",
-				"access_rules": ["@Places/treehouseStart, Stars"],
+				"access_rules": [
+					"DoorsSimple, [Treehouse Entry Doors], Stars",
+					"DoorsComplex, [Treehouse First Door], [Treehouse Second Door], Stars",
+					"DoorsMax, Boat, [Treehouse First Door], [Treehouse Second Door], Stars"
+				],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },

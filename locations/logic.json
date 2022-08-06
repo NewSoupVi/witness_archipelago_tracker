@@ -97,7 +97,6 @@
 			"@Places/overworld, @Gates/quarryMainEntrance",
 			"@Places/ocean, @Gates/quarryBoathouseDock",
 			"@Places/shadowsFirstSet, @Gates/shadowsToQuarry",
-			"@Places/overworld, @Gates/quarryElevator, [@Gates/quarryMainEntrance]",
 			"@Places/quarryMill, @Gates/quarryMillBigDoor",
 			"@Places/quarryMill, @Gates/quarryMillSmallDoor"
 		],
@@ -1127,7 +1126,7 @@
 			"DoorsPanel, @Places/theater, BWSquare, [Eraser]","DoorsPanel, @Places/theater, BWSquare, [Shapers]",
 			"DoorsSimple, Theater Exit Door",
 			"DoorsComplex, Theater Exit Door Left", "DoorsComplex, Theater Exit Door Right",
-			"DoorsMax, Theater Exit Door Left", "DoorsComplex, Theater Exit Door Right"
+			"DoorsMax, Theater Exit Door Left", "DoorsMax, Theater Exit Door Right"
         ],
         "item_count": 1
       },
