@@ -141,6 +141,13 @@
     "loop": "true"
   },
     {
+	"name": "Shuffle Symbols",
+	"img": "images/SymbolsText.png",
+	"codes": "Symbols",
+    "type": "toggle",
+    "loop": "true"
+  },
+    {
 	"name": "Doors Unshuffled",
 	"img": "images/doorsNoText.png",
 	"codes": "doorsNo",

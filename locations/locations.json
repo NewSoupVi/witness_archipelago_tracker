@@ -130,7 +130,7 @@
         "sections": [
 			{
                 "name": "Symmetry Panels",
-				"access_rules": [],
+				"access_rules": ["Symmetry"],
                 "item_count": 3
             }
 			

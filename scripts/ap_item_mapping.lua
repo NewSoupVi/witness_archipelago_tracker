@@ -193,4 +193,5 @@ SETTINGS_MAPPING = {
 	["early_secret_area"]="Caves",
 	["shuffle_doors"]="shuffleDoorsSetting",
 	["shuffle_postgame"]="postGame",
+	["shuffle_symbols"]="Symbols"
 }

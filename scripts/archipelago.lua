@@ -91,8 +91,23 @@ function onClear(slot_data)
 		if k == "disable_non_randomized_puzzles" then
 			value = not value
 		end
-		
 
+		if k == "shuffle_symbols" and Tracker:FindObjectForCode(v).Active == false then
+			Tracker:FindObjectForCode("Dots").Active = true
+			Tracker:FindObjectForCode("ColoredDots").Active = true
+			Tracker:FindObjectForCode("SoundDots").Active = true
+			Tracker:FindObjectForCode("Symmetry").Active = true
+			Tracker:FindObjectForCode("Triangles").Active = true
+			Tracker:FindObjectForCode("Eraser").Active = true
+			Tracker:FindObjectForCode("Shapers").Active = true
+			Tracker:FindObjectForCode("RotatedShapers").Active = true
+			Tracker:FindObjectForCode("NegativeShapers").Active = true
+			Tracker:FindObjectForCode("Stars").Active = true
+			Tracker:FindObjectForCode("StarSameColor").Active = true
+			Tracker:FindObjectForCode("BWSquare").Active = true
+			Tracker:FindObjectForCode("ColoredSquares").Active = true
+		end
+		
 		
 		if k == "shuffle_doors" then
 			if value == 0 then obj = Tracker:FindObjectForCode("doorsNo")
@@ -106,7 +121,7 @@ function onClear(slot_data)
 		obj.Active = value
 	end
 	
-	if (Tracker:FindObjectForCode("doorsNo") or Tracker:FindObjectForCode("doorsSimple") or Tracker:FindObjectForCode("doorsComplex")) then
+	if (Tracker:FindObjectForCode("doorsNo").Active or Tracker:FindObjectForCode("doorsSimple").Active or Tracker:FindObjectForCode("doorsComplex").Active) then
 		Tracker:FindObjectForCode("Boat").Active = true
 	end
 	
