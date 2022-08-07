@@ -464,7 +464,7 @@
       {
         "name": "tunnels",
         "access_rules": [
-			"@Places/caves, @Gates/challengeToTunnels",
+			"@Places/challenge, @Gates/challengeToTunnels",
 			"@Places/overworld, @Gates/tunnelsTownExit",
 			"@Places/windmill, @Gates/tunnelsTheaterExit",
 			"@Places/desertLaser, @Gates/tunnelsDesertExit"
