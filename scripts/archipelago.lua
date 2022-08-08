@@ -92,7 +92,7 @@ function onClear(slot_data)
 			value = not value
 		end
 
-		if k == "shuffle_symbols" and Tracker:FindObjectForCode(v).Active == false then
+		if k == "shuffle_symbols" and value == false then
 			Tracker:FindObjectForCode("Dots").Active = true
 			Tracker:FindObjectForCode("ColoredDots").Active = true
 			Tracker:FindObjectForCode("SoundDots").Active = true
@@ -110,15 +110,18 @@ function onClear(slot_data)
 		
 		
 		if k == "shuffle_doors" then
-			if value == 0 then obj = Tracker:FindObjectForCode("doorsNo")
-			elseif value == 1 then obj = Tracker:FindObjectForCode("doorsPanel")
-			elseif value == 2 then obj = Tracker:FindObjectForCode("doorsSimple")
-			elseif value == 3 then obj = Tracker:FindObjectForCode("doorsComplex")
-			elseif value == 4 then obj = Tracker:FindObjectForCode("doorsMax")
+			if value == 0 then Tracker:FindObjectForCode("doorsNo").Active = true
+			elseif value == 1 then Tracker:FindObjectForCode("doorsPanel").Active = true
+			elseif value == 2 then Tracker:FindObjectForCode("doorsSimple").Active = true
+			elseif value == 3 then Tracker:FindObjectForCode("doorsComplex").Active = true
+			elseif value == 4 then Tracker:FindObjectForCode("doorsMax").Active = true
 			end
+		else
+			obj.Active = value
 		end
 		
-		obj.Active = value
+		
+		
 	end
 	
 	if (Tracker:FindObjectForCode("doorsNo").Active or Tracker:FindObjectForCode("doorsSimple").Active or Tracker:FindObjectForCode("doorsComplex").Active) then
