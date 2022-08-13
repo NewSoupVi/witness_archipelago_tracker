@@ -98,6 +98,13 @@
     "img": "images/Boat.png",
     "codes": "Boat"
   },
+  {
+    "name": "Functioning Brain",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Brain.png",
+    "codes": "Brain"
+  },
 {
     "name": "Shuffle Uncommon",
     "type": "toggle",

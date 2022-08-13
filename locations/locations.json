@@ -220,7 +220,7 @@
         "sections": [
             {
                 "name": "Apple Trees Outside Gate",
-				"visibility_rules": ["Unrandomized"],
+				"visibility_rules": ["Unrandomized, DoorsSimple", "Unrandomized, DoorsComplex", "Unrandomized, DoorsMax"],
 				"access_rules": ["@Places/overworld"],
                 "item_count": 1
             },

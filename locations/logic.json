@@ -173,14 +173,14 @@
         "name": "plates2",
         "access_rules": [
 			"@Places/overworld, @Gates/plates1Exit",
-			"@Places/plates3, @Gates/plates2Exit"
+			"@Places/plates3, [@Gates/plates2Exit]"
 		],
         "item_count": 1
       },
       {
         "name": "plates3",
         "access_rules": [
-			"@Places/plates2, @Gates/plates2Exit",
+			"@Places/plates2, [@Gates/plates2Exit]",
 			"@Places/plates4, @Gates/plates3Exit"
 		],
         "item_count": 1
@@ -722,8 +722,8 @@
 	  {
         "name": "shadowsToQuarry",
         "access_rules": [
-			"DoorsNo, [Unrandomized]",
-			"DoorsPanel, [Unrandomized]",
+			"DoorsNo, @Places/shadowsFirstSet, [Unrandomized]",
+			"DoorsPanel, @Places/shadowsFirstSet, [Unrandomized]",
 			"DoorsSimple, Shadows Barriers",
 			"DoorsComplex, Shadows Barrier to Quarry",
 			"DoorsMax, Shadows Barrier to Quarry"
@@ -811,8 +811,8 @@
 	  {
         "name": "plates4Exit",
         "access_rules": [
-			"DoorsNo, Shapers, Dots, Symmetry",
-			"DoorsPanel, Shapers, Dots, Symmetry",
+			"DoorsNo, @Places/plates4, Shapers, Dots, Symmetry",
+			"DoorsPanel, @Places/plates4, Shapers, Dots, Symmetry",
 			"DoorsSimple, Keep Pressure Plates Doors",
 			"DoorsComplex, Keep Pressure Plates 4 Exit Door",
 			"DoorsMax, Keep Pressure Plates 4 Exit Door"

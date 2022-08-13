@@ -15,8 +15,8 @@
             "h_alignment": "left",
             "item_size": 50,
             "rows": [
-				[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles" ],
-				[ "Dots", "ColoredDots", "SoundDots", "Symmetry", "line" ],
+				[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles", "Brain" ],
+				[ "Dots", "ColoredDots", "SoundDots", "Symmetry", "Boat" ],
 				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "Skip"]
             ]
           }

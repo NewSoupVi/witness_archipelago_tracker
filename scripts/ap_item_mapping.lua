@@ -12,6 +12,7 @@ ITEM_MAPPING = {
 	[158061] = {"StarSameColor", "toggle"},
 	[158071] = {"BWSquare", "toggle"},
 	[158072] = {"ColoredSquares", "toggle"},
+	[158101] = {"Brain", "toggle"},
 	[158510] = {"Skip", "consumable"},
 	
 	[159100] = {"Glass Factory Entry Door (Panel)", "toggle"},
