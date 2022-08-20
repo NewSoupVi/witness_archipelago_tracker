@@ -1,5 +1,22 @@
 [
 	{
+        "name": "Not an item, please ignore",
+		"access_rules": ["@Places/mountainPenultimateRoom"],
+        "sections": [
+            {
+                "name": "",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": -10000,
+                "y": 10000,
+            },
+        ]
+    },
+	{
         "name": "Tutorial Gate",
 		"access_rules": ["@Places/overworld"],
         "sections": [
@@ -15,7 +32,7 @@
                 "y": 1326,
             },
         ]
-    },	
+    },		
 	{
         "name": "Tutorial Patio Floor",
 		"visibility_rules": ["@Places/tutorial, Uncommon,Unrandomized"],
@@ -864,7 +881,7 @@
             },
 			{
                 "name": "Monastery Shortcut to River",
-				"visibility_rules": ["DoorsSimple, Unrandomized", "DoorsComplex, Unrandomized", "DoorsMax, Unrandomized"],
+				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },
         ],
