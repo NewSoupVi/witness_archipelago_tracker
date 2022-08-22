@@ -1035,7 +1035,7 @@
             },
 			{
                 "name": "Sound Room Left",
-				"access_rules": ["@Places/RGBHouse, SoundDots"],
+				"access_rules": ["@Places/RGBHouse"],
 				"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
                 "item_count": 1
             },

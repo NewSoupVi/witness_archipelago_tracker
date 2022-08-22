@@ -1977,8 +1977,8 @@
 	
 	{
         "name": "Church door",
-		"access_rules": ["Town Doors", "Town Door to Church"],
-		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"access_rules": ["Town Door to Church (Panel)", "Town Doors", "Town Door to Church"],
+		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",

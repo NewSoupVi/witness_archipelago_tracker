@@ -1195,7 +1195,7 @@
         "name": "church",
         "access_rules": [
 			"DoorsNo, [@Gates/RGBHouseEntry], Stars",
-			"DoorsPanel, [@Gates/RGBHouseEntry], Stars",
+			"DoorsPanel, Town Door to Church (Panel), [@Gates/RGBHouseEntry], Stars",
 			"DoorsSimple, Town Doors",
 			"DoorsComplex, Town Door to Church",
 			"DoorsMax, Town Door to Church"

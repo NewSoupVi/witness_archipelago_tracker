@@ -308,11 +308,11 @@
     "codes": "Town Door to Church (Panel)"
   },
 {
-    "name": "Town Maze Panel (Drop",
+    "name": "Town Maze Panel (Drop-Down Staircase) (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Town Maze Panel (Drop"
+    "codes": "Town Maze Panel (Drop-Down Staircase) (Panel)"
   },
 {
     "name": "Windmill Door (Panel)",
