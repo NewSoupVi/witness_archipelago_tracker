@@ -218,7 +218,7 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["@Places/symmetryInner, ColoredDots"],
+				"access_rules": ["@Places/symmetryInner,ColoredDots,Symmetry"],
                 "name": "Laser",
                 "item_count": 1
             },
