@@ -30,7 +30,7 @@ ITEM_MAPPING = {
 	[159151] = {"Monastery Entry Door Right (Panel)", "toggle"},
 	[159162] = {"Town Door to RGB House (Panel)", "toggle"},
 	[159163] = {"Town Door to Church (Panel)", "toggle"},
-	[159166] = {"Town Maze Panel (Drop", "toggle"},
+	[159166] = {"Town Maze Panel (Drop-Down Staircase) (Panel)", "toggle"},
 	[159169] = {"Windmill Door (Panel)", "toggle"},
 	[159200] = {"Treehouse First & Second Doors (Panel)", "toggle"},
 	[159202] = {"Treehouse Third Door (Panel)", "toggle"},
@@ -156,33 +156,156 @@ ITEM_MAPPING = {
 	[159867] = {"Theater Walkway Door to Desert Elevator Room", "toggle"},
 	[159870] = {"Theater Walkway Door to Town", "toggle"},
 
+
 	[159903] = {"Outside Tutorial Outpost Doors", "toggle"},
+	[159903] = {"Outside Tutorial Optional Door", "toggle"},
+	[159903] = {"Outside Tutorial Outpost Entry Door", "toggle"},
+	[159903] = {"Outside Tutorial Outpost Exit Door", "toggle"},
+	
 	[159906] = {"Symmetry Island Doors", "toggle"},
+	[159906] = {"Symmetry Island Lower Door", "toggle"},
+	[159906] = {"Symmetry Island Upper Door", "toggle"},
+	
 	[159909] = {"Orchard Gates", "toggle"},
+	[159909] = {"Orchard Middle Gate", "toggle"},
+	[159909] = {"Orchard Final Gate", "toggle"},
+	
 	[159912] = {"Desert Doors", "toggle"},
+	[159912] = {"Desert Door to Flood Light Room", "toggle"},
+	[159912] = {"Desert Door to Pond Room", "toggle"},
+	[159912] = {"Desert Door to Water Levels Room", "toggle"},
+	[159912] = {"Desert Door to Elevator Room", "toggle"},
+	
 	[159915] = {"Quarry Main Entry", "toggle"},
+	[159915] = {"Quarry Main Entry 1", "toggle"},
+	[159915] = {"Quarry Main Entry 2", "toggle"},
+	
 	[159918] = {"Quarry Mill Shortcuts", "toggle"},
+	[159918] = {"Quarry Mill Side Door", "toggle"},
+	[159918] = {"Quarry Mill Rooftop Shortcut", "toggle"},
+	[159918] = {"Quarry Mill Stairs", "toggle"},
+	
 	[159921] = {"Quarry Boathouse Barriers", "toggle"},
+	[159921] = {"Quarry Boathouse First Barrier", "toggle"},
+	[159921] = {"Quarry Boathouse Shortcut", "toggle"},
+	
 	[159924] = {"Shadows Laser Room Door", "toggle"},
+	[159924] = {"Shadows Laser Room Right Door", "toggle"},
+	[159924] = {"Shadows Laser Room Left Door", "toggle"},
+	
 	[159927] = {"Shadows Barriers", "toggle"},
+	[159927] = {"Shadows Barrier to Quarry", "toggle"},
+	[159927] = {"Shadows Barrier to Ledge", "toggle"},
+	
 	[159930] = {"Keep Hedge Maze Doors", "toggle"},
+	[159930] = {"Keep Hedge Maze 1 Exit Door", "toggle"},
+	[159930] = {"Keep Hedge Maze 2 Shortcut", "toggle"},
+	[159930] = {"Keep Hedge Maze 2 Exit Door", "toggle"},
+	[159930] = {"Keep Hedge Maze 3 Shortcut", "toggle"},
+	[159930] = {"Keep Hedge Maze 3 Exit Door", "toggle"},
+	[159930] = {"Keep Hedge Maze 4 Shortcut", "toggle"},
+	[159930] = {"Keep Hedge Maze 4 Exit Door", "toggle"},
+	
 	[159933] = {"Keep Pressure Plates Doors", "toggle"},
+	[159933] = {"Keep Pressure Plates 1 Exit Door", "toggle"},
+	[159933] = {"Keep Pressure Plates 2 Exit Door", "toggle"},
+	[159933] = {"Keep Pressure Plates 3 Exit Door", "toggle"},
+	[159933] = {"Keep Pressure Plates 4 Exit Door", "toggle"},
+	
 	[159936] = {"Keep Shortcuts", "toggle"},
+	[159936] = {"Keep Shortcut to Shadows", "toggle"},
+	[159936] = {"Keep Tower Shortcut", "toggle"},
+	
 	[159939] = {"Monastery Entry Door", "toggle"},
+	[159939] = {"Monastery Inner Door", "toggle"},
+	[159939] = {"Monastery Outer Door", "toggle"},
+	
 	[159942] = {"Monastery Shortcuts", "toggle"},
+	[159942] = {"Monastery Shortcut", "toggle"},
+	[159942] = {"Monastery Door to Garden", "toggle"},
+	
 	[159945] = {"Town Doors", "toggle"},
+	[159945] = {"Town Cargo Box Door", "toggle"},
+	[159945] = {"Town Wooden Roof Staircase", "toggle"},
+	[159945] = {"Town Tinted Door to RGB House", "toggle"},
+	[159945] = {"Town Door to Church", "toggle"},
+	[159945] = {"Town Maze Staircase", "toggle"},
+	[159945] = {"Town Windmill Door", "toggle"},
+	[159945] = {"Town RGB House Staircase", "toggle"},
+	
 	[159948] = {"Town Tower Doors", "toggle"},
+	[159948] = {"Town Tower Blue Panels Door", "toggle"},
+	[159948] = {"Town Tower Lattice Door", "toggle"},
+	[159948] = {"Town Tower Environmental Set Door", "toggle"},
+	[159948] = {"Town Tower Wooden Roof Set Door", "toggle"},
+	
 	[159951] = {"Theater Exit Door", "toggle"},
+	[159951] = {"Theater Exit Door Left", "toggle"},
+	[159951] = {"Theater Exit Door Right", "toggle"},
+	
 	[159954] = {"Jungle & River Shortcuts", "toggle"},
+	[159954] = {"Jungle Bamboo Shortcut to River", "toggle"},
+	[159954] = {"River Shortcut to Monastery Garden", "toggle"},
+	
 	[159957] = {"Bunker Doors", "toggle"},
+	[159957] = {"Bunker Bunker Entry Door", "toggle"},
+	[159957] = {"Bunker Tinted Glass Door", "toggle"},
+	[159957] = {"Bunker Door to Ultraviolet Room", "toggle"},
+	[159957] = {"Bunker Door to Elevator", "toggle"},
+	
 	[159960] = {"Swamp Doors", "toggle"},
+	[159960] = {"Swamp Entry Door", "toggle"},
+	[159960] = {"Swamp Door to Broken Shapers", "toggle"},
+	[159960] = {"Swamp Platform Shortcut Door", "toggle"},
+	[159960] = {"Swamp Door to Rotated Shapers", "toggle"},
+	[159960] = {"Swamp Red Underwater Exit", "toggle"},
+	
 	[159963] = {"Swamp Water Pumps", "toggle"},
+	[159963] = {"Swamp Cyan Water Pump", "toggle"},
+	[159963] = {"Swamp Red Water Pump", "toggle"},
+	[159963] = {"Swamp Blue Water Pump", "toggle"},
+	[159963] = {"Swamp Purple Water Pump", "toggle"},
+	
 	[159966] = {"Treehouse Entry Doors", "toggle"},
+	[159966] = {"Treehouse First Door", "toggle"},
+	[159966] = {"Treehouse Second Door", "toggle"},
+	[159966] = {"Treehouse Beyond Yellow Bridge Door", "toggle"},
+	
 	[159975] = {"Inside Mountain Second Layer Stairs & Doors", "toggle"},
+	[159975] = {"Inside Mountain Second Layer Staircase Near", "toggle"},
+	[159975] = {"Inside Mountain Second Layer Exit Door", "toggle"},
+	[159975] = {"Inside Mountain Second Layer Staircase Far", "toggle"},
+	
 	[159978] = {"Inside Mountain Bottom Layer Doors to Caves", "toggle"},
+	[159978] = {"Inside Mountain Bottom Layer Rock", "toggle"},
+	[159978] = {"Inside Mountain Door to Secret Area", "toggle"},
+	
 	[159981] = {"Caves Doors to Challenge", "toggle"},
+	[159981] = {"Caves Pillar Door", "toggle"},
+	[159981] = {"Challenge Entry Door", "toggle"},
+	
 	[159984] = {"Caves Exits to Main Island", "toggle"},
+	[159984] = {"Caves Swamp Shortcut", "toggle"},
+	[159984] = {"Caves Mountain Shortcut", "toggle"},
+	
 	[159987] = {"Theater Walkway Doors", "toggle"},
+	[159987] = {"Challenge Door to Theater Walkway", "toggle"},
+	[159987] = {"Theater Walkway Door to Back of Theater", "toggle"},
+	[159987] = {"Theater Walkway Door to Desert Elevator Room", "toggle"},
+	[159987] = {"Theater Walkway Door to Town", "toggle"},
+	
+	
+	[159500] = {"Symmetry Laser", "toggle"},
+	[159501] = {"Desert Laser", "toggle"},
+	[159502] = {"Quarry Laser", "toggle"},
+	[159503] = {"Shadows Laser", "toggle"},
+	[159504] = {"Keep Laser", "toggle"},
+	[159505] = {"Monastery Laser", "toggle"},
+	[159506] = {"Town Laser", "toggle"},
+	[159507] = {"Jungle Laser", "toggle"},
+	[159508] = {"Bunker Laser", "toggle"},
+	[159509] = {"Swamp Laser", "toggle"},
+	[159510] = {"Treehouse Laser", "toggle"},
 }
 
 SETTINGS_MAPPING = {
@@ -194,5 +317,9 @@ SETTINGS_MAPPING = {
 	["early_secret_area"]="Caves",
 	["shuffle_doors"]="shuffleDoorsSetting",
 	["shuffle_postgame"]="postGame",
-	["shuffle_symbols"]="Symbols"
+	["shuffle_symbols"]="Symbols",
+	["victory_condition"]="Goal",
+	["mountain_lasers"]="Short",
+	["challenge_lasers"]="Long",
+	
 }

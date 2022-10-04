@@ -1,12 +1,10 @@
 [
 	{
         "name": "Tutorial gate",
-		"access_rules": [],
 		"visibility_rules": ["never"],
         "sections": [
 			{
                 "name": "gate",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -29,7 +27,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -52,7 +49,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -67,7 +63,6 @@
 	
 	{
         "name": "Tutorial Back Door to Outpost 2",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -98,7 +93,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -121,7 +115,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -143,7 +136,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -167,7 +159,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -191,7 +182,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -215,7 +205,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -238,7 +227,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -262,7 +250,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -284,7 +271,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -307,7 +293,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -330,7 +315,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -350,7 +334,6 @@
         "sections": [
 			{
                 "name": "elevator",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -372,7 +355,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -394,7 +376,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             },
         ],
@@ -416,7 +397,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             },
         ],
@@ -438,7 +418,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -453,7 +432,6 @@
 	
 	{
         "name": "Quarry mill inside stairs",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -476,7 +454,6 @@
 	
 	{
         "name": "Quarry mill inside controls",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsMax"],
         "sections": [
 			{
@@ -510,7 +487,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -530,7 +506,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -550,7 +525,6 @@
         "sections": [
 			{
                 "name": "Control Panel",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -569,7 +543,6 @@
         "sections": [
 			{
                 "name": "Control Panel",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -588,7 +561,6 @@
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -607,7 +579,6 @@
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -629,7 +600,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -651,7 +621,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -673,7 +642,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -688,7 +656,6 @@
 	
 	{
         "name": "Shady trees laser doors",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -724,7 +691,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -746,7 +712,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -768,7 +733,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -790,7 +754,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -812,7 +775,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -834,7 +796,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -856,7 +817,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -878,7 +838,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -900,7 +859,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -922,7 +880,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -944,7 +901,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -966,7 +922,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -988,7 +943,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1003,7 +957,6 @@
 	
 	{
         "name": "Treehouse First Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1027,7 +980,6 @@
 	
 	{
         "name": "Treehouse Second Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1051,7 +1003,6 @@
 	
 	{
         "name": "Treehouse Third Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1082,7 +1033,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1105,7 +1055,6 @@
         "sections": [
 			{
                 "name": "Drawbridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1128,7 +1077,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1148,7 +1096,6 @@
         "sections": [
 			{
                 "name": "bridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1170,7 +1117,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1192,7 +1138,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1214,7 +1159,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1236,7 +1180,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1258,7 +1201,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1280,7 +1222,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1300,7 +1241,6 @@
         "sections": [
 			{
                 "name": "bridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1322,7 +1262,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1342,7 +1281,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1392,12 +1330,10 @@
 	
 	{
         "name": "Swamp back rotating bridge",
-		"access_rules": [],
 		"visibility_rules": ["never"],
         "sections": [
 			{
                 "name": "bridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1420,7 +1356,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1443,7 +1378,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1458,12 +1392,10 @@
 
 	{
         "name": "Mountain entrance",
-		"access_rules": [],
 		"visibility_rules": ["never"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1483,7 +1415,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1498,7 +1429,6 @@
 
 	{
         "name": "Mountain Layer 2",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1520,7 +1450,6 @@
     },
 	{
         "name": "Mountain Layer 2 Front Stairs",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1542,7 +1471,6 @@
     },
 	{
         "name": "Mountain Layer 2 Back Stairs",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1570,7 +1498,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1590,7 +1517,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1605,7 +1531,6 @@
 	
 	{
         "name": "Mountain Bottom Layer Rock to Caves",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1627,7 +1552,6 @@
     },
 	{
         "name": "Mountain Bottom Layer Door to Caves",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1655,7 +1579,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1674,7 +1597,6 @@
         "sections": [
 			{
                 "name": "Clear the Darkness",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1694,7 +1616,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1714,7 +1635,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1734,7 +1654,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1754,7 +1673,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1774,7 +1692,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1789,7 +1706,6 @@
 	
 	{
         "name": "Theater Back Door Left",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1811,7 +1727,6 @@
     },
 	{
         "name": "Theater Back Door Right",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1843,7 +1758,6 @@
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1865,7 +1779,6 @@
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1885,7 +1798,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1904,7 +1816,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1923,7 +1834,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1942,7 +1852,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1962,7 +1871,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1982,7 +1890,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2002,7 +1909,6 @@
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2017,7 +1923,6 @@
 	
 	{
         "name": "Monestary Entry Outer Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2040,7 +1945,6 @@
     },
 	{
         "name": "Monestary Entry Inner Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2064,7 +1968,6 @@
 	
 	{
         "name": "Monastery shortcut to garden",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2086,7 +1989,6 @@
     },
 	{
         "name": "Monastery garden shortcut to river",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2114,7 +2016,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2137,7 +2038,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2160,7 +2060,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2182,7 +2081,6 @@
         "sections": [
 			{
                 "name": "entrance",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2204,7 +2102,6 @@
         "sections": [
 			{
                 "name": "Cargo container exit",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2224,7 +2121,6 @@
         "sections": [
 			{
                 "name": "Control Panel",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2239,7 +2135,6 @@
 	
 	{
         "name": "Monestary exit shortcut to overworld",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2263,7 +2158,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             },
         ],

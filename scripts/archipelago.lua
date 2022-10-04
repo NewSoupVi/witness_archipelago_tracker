@@ -121,11 +121,68 @@ function onClear(slot_data)
 		end
 		
 		
-		
 	end
 	
 	if (Tracker:FindObjectForCode("doorsNo").Active or Tracker:FindObjectForCode("doorsSimple").Active or Tracker:FindObjectForCode("doorsComplex").Active) then
 		Tracker:FindObjectForCode("Boat").Active = true
+		Tracker:FindObjectForCode("Glass Factory Entry Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Symmetry Island Lower (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Symmetry Island Upper (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Desert Flood Light Room (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Flood Room Flood Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Door to Mill (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Mill Ramp Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Mill Elevator Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Boathouse Ramp Height Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Boathouse Ramp Horizontal Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Shadows Door Timer (Panel)").Active = true
+		Tracker:FindObjectForCode("Monastery Entry Door Left (Panel)").Active = true
+		Tracker:FindObjectForCode("Monastery Entry Door Right (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Door to RGB House (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Door to Church (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Maze Panel (Drop").Active = true
+		Tracker:FindObjectForCode("Windmill Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse First & Second Doors (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Third Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Laser House Door Timer (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Shortcut Drop").Active = true
+		Tracker:FindObjectForCode("Jungle Popup Wall (Panel)").Active = true
+		Tracker:FindObjectForCode("Bunker Entry Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Inside Bunker Door to Bunker Proper (Panel)").Active = true
+		Tracker:FindObjectForCode("Bunker Elevator Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Entry Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Sliding Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Rotating Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Maze Control (Panel)").Active = true
+	end
+	
+	if (Tracker:FindObjectForCode("doorsMax").Active) then
+		Tracker:FindObjectForCode("Boat").Active = true
+		Tracker:FindObjectForCode("Glass Factory Entry Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Symmetry Island Lower (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Symmetry Island Upper (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Desert Flood Light Room (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Door to Mill (Panel)").Active = true
+		Tracker:FindObjectForCode("Shadows Door Timer (Panel)").Active = true
+		Tracker:FindObjectForCode("Monastery Entry Door Left (Panel)").Active = true
+		Tracker:FindObjectForCode("Monastery Entry Door Right (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Door to RGB House (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Door to Church (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Maze Panel (Drop").Active = true
+		Tracker:FindObjectForCode("Windmill Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse First & Second Doors (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Third Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Laser House Door Timer (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Shortcut Drop").Active = true
+		Tracker:FindObjectForCode("Jungle Popup Wall (Panel)").Active = true
+		Tracker:FindObjectForCode("Bunker Entry Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Inside Bunker Door to Bunker Proper (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Entry Door (Panel)").Active = true
+	end
+	
+	if (Tracker:FindObjectForCode("Caves").Active) then
+		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
+		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	end
 	
 end

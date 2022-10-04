@@ -46,11 +46,18 @@
                     },                    
 					{
                         "type": "item",
-                        "margin": "0, 0, 1, 10",
+                        "margin": "0, 1",
                         "item": "Symbols",                        
                         "h_alignment": "center",
                         "v_alignment": "strech"
                     },                    
+					{
+                        "type": "item",
+                        "margin": "0, 0, 1, 10",
+                        "item": "shuffleLasers",                        
+                        "h_alignment": "center",
+                        "v_alignment": "strech"
+                    },        
 					{
                         "type": "item",
                         "margin": "0, 1",

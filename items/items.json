@@ -155,6 +155,47 @@
     "loop": "true"
   },
     {
+    "name": "Victory Condition",
+	"codes": "goal",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/wonkavator.png",
+        "codes": "wonkavator",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/challengeBox.png",
+        "codes": "challengeBox",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/mountainShort.png",
+        "codes": "Short",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/mountainLong.png",
+        "codes": "Long",
+        "inherit_codes": false
+      },
+    ]
+  },  
+  {
+    "name": "Lasers Activated",
+    "type": "consumable",
+    "img": "images/laser.png",
+    "max_quantity": 11,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 16,
+    "codes": "lasers"
+  },
+    {
 	"name": "Doors Unshuffled",
 	"img": "images/doorsNoText.png",
 	"codes": "doorsNo",
@@ -186,6 +227,13 @@
 	"name": "Doors Max",
 	"img": "images/doorsMaxText.png",
 	"codes": "doorsMax",
+    "type": "toggle",
+    "loop": "true"
+  },
+    {
+	"name": "Shuffle Lasers",
+	"img": "images/lasersText.png",
+	"codes": "shuffleLasers",
     "type": "toggle",
     "loop": "true"
   },
@@ -1353,5 +1401,82 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Theater Walkway Doors"
+  },
+{
+    "name": "Symmetry Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Symmetry Laser"
+  },
+{
+    "name": "Desert Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Desert Laser"
+  },
+{
+    "name": "Quarry Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Quarry Laser"
+  },
+{
+    "name": "Shadows Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Shadows Laser"
+  },
+{
+    "name": "Keep Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Keep Laser"
+  },
+{
+    "name": "Monastery Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Monastery Laser"
+  },
+{
+    "name": "Town Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Town Laser"
+  },
+{
+    "name": "Jungle Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Jungle Laser"
+  },
+{
+    "name": "Bunker Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Bunker Laser"
+  },
+{
+    "name": "Swamp Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Swamp Laser"
+  },
+{
+    "name": "Treehouse Laser",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Treehouse Laser"
   },
 ]
