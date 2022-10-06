@@ -218,7 +218,7 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["@Places/symmetryInner, ColoredDots"],
+				"access_rules": ["@Places/symmetryInner, ColoredDots, Symmetry"],
                 "name": "Laser",
                 "item_count": 1
             },
@@ -456,22 +456,18 @@
 			{
                 "name": "Eraser and Shapers Row",
 				"access_rules": [
-					"DoorsNo, Shapers, [Stars], [RotatedShapers], Eraser",
-					"DoorsPanel, Shapers, [Stars], [RotatedShapers], Eraser, [Quarry Boathouse Ramp Height Control (Panel)]",
-					"doorsSimple, Shapers, [Stars], [RotatedShapers], Eraser",
-					"doorsComplex, Shapers, [Stars], [RotatedShapers], Eraser",
-					"doorsMax, Shapers, [Stars], [RotatedShapers], Eraser, [Quarry Boathouse Ramp Height Control (Panel)]",
+					"Shapers, Eraser, @Places/quarryBoathouseUpstairsFront",
 				],
                 "item_count": 1
             },
 			{
                 "name": "Stars & Eraser & Shapers Row",
-				"access_rules": ["@Places/quarryBoathouseUpstairs, Shapers,Stars,StarSameColor,Eraser,RotatedShapers"],
+				"access_rules": ["@Places/quarryBoathouseUpstairsBack, Shapers,Stars,StarSameColor,Eraser,RotatedShapers"],
                 "item_count": 2
             },			
 			{
                 "name": "Shortcut Door Panel",
-				"access_rules": ["@Places/quarryBoathouseUpstairs"],
+				"access_rules": ["@Places/quarryBoathouseUpstairsBack"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -1344,7 +1340,7 @@
         "sections": [
             {
                 "name": "Platform Set",
-				"access_rules": ["@Places/swampPlatform, Shapers, @Swamp Entry Area/Introduction Sets"],
+				"access_rules": ["@Places/swampPlatform, Shapers"],
                 "item_count": 1
             },
 			{
@@ -1394,7 +1390,7 @@
         "sections": [
             {
                 "name": "Tetris!!!",
-				"access_rules": ["@Places/swampPurple, Shapers,RotatedShapers"],
+				"access_rules": ["@Places/swampPurple, Shapers"],
 				"visibility_rules": ["Uncommon"],
                 "item_count": 1
             }
@@ -1498,7 +1494,7 @@
 			{
                 "name": "Second Door Panel",
 				"access_rules": [
-					"[@Places/treehouseSecond], @Places/treehouseDock",
+					"[@Places/treehouseSecond], @Places/treehouseDock, Stars",
 				],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -1506,7 +1502,7 @@
 			{
                 "name": "Third Door Panel",
 				"access_rules": [
-					"[@Places/treehouseThird], @Places/treehouseDock"
+					"[@Places/treehouseThird], @Places/treehouseDock, Stars"
 				],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -1670,7 +1666,7 @@
             },
             {
                 "name": "Mountain Entry",
-				"access_rules": ["BWSquare, Stars, StarSameColor"],
+				"access_rules": ["$laserBox|short, BWSquare, Stars, StarSameColor"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }

@@ -45,7 +45,7 @@ function laserBox(box)
 end
 
 function hasPanel(panel)
-	if Tracker:ProviderCountForCode("doorsNo") or Tracker:ProviderCountForCode("doorsSimple") or Tracker:ProviderCountForCode("doorsComplex") then return false
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") > 0 then return true
 	else return Tracker:ProviderCountForCode(panel)
 	end
 end
