@@ -182,6 +182,83 @@
         "inherit_codes": false
       },
     ]
+  },
+  {
+    "name": "Laser Box Short Requirement",
+    "type": "consumable",
+    "img": "images/mountainShort.png",
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 16,
+    "codes": "boxShort"
+  },
+  {
+    "name": "Laser Box Long Requirement",
+    "type": "consumable",
+    "img": "images/mountainLong.png",
+    "max_quantity": 11,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 16,
+    "codes": "boxLong"
+  },
+    {
+    "name": "Hiiden Victory Condition",
+	"codes": "hiddenGoal",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/wonkavator.png",
+        "codes": "wonkavator",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/challengeBox.png",
+        "codes": "challengeBox",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/mountainShort.png",
+        "codes": "Short",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/mountainLong.png",
+        "codes": "Long",
+        "inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Hidden Box Short Requirement",
+    "type": "consumable",
+    "img": "images/laser.png",
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 16,
+    "codes": "hiddenShort"
+  },
+  {
+    "name": "Hidden Box Long Requirement",
+    "type": "consumable",
+    "img": "images/laser.png",
+    "max_quantity": 11,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 16,
+    "codes": "hiddenLong"
   },  
   {
     "name": "Lasers Activated",

@@ -29,6 +29,23 @@ function laserCount(amount)
 		result = 11 - (Tracker:FindObjectForCode("@Symmetry Island/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Desert/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Quarry Laser/Laser").AvailableChestCount + tower + Tracker:FindObjectForCode("@Treehouse Laser House/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Swamp Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Town Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Monastery/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Shadows Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Jungle Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Color Bunker/Laser").AvailableChestCount)
 	end
 	Tracker:FindObjectForCode("lasers").AcquiredCount = result
-	return(result >= tonumber(amount))
+	if tonumber(amount) > 0 then
+		return(result >= tonumber(amount))
+	else
+		return false
+	end
 end
 	
+function laserBox(box)
+	if box == "short" then
+		return laserCount(tostring(Tracker:ProviderCountForCode("boxShort")))
+	else
+		return laserCount(tostring(Tracker:ProviderCountForCode("boxLong")))
+	end
+end
+
+function hasPanel(panel)
+	if Tracker:ProviderCountForCode("doorsNo") or Tracker:ProviderCountForCode("doorsSimple") or Tracker:ProviderCountForCode("doorsComplex") then return false
+	else return Tracker:ProviderCountForCode(panel)
+	end
+end

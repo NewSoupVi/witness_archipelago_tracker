@@ -38,7 +38,7 @@
       {
         "name": "glassFactory",
         "access_rules": [
-			"$isDoors|off, Glass Factory Entry Door (Panel), Symmetry",
+			"$isDoors|off, $hasPanel|Glass Factory Entry Door (Panel), Symmetry",
 			"$isDoors|on, Glass Factory Entry Door",
 			"isDoors|on, @Places/ocean, Glass Factory Back Wall"
 		],
@@ -55,7 +55,7 @@
       {
         "name": "symmetryInner",
         "access_rules": [
-			"isDoors|off, Door to Symmetry Island Upper (Panel), Symmetry, Dots",
+			"isDoors|off, $hasPanel|Door to Symmetry Island Upper (Panel), Symmetry, Dots",
 			"isDoors|on, Symmetry Island Upper Door"
 		],
         "item_count": 1
@@ -63,7 +63,7 @@
       {
         "name": "desertFloodLight",
         "access_rules": [
-			"isDoors|off, Door to Desert Flood Light Room (Panel)",
+			"isDoors|off, $hasPanel|Door to Desert Flood Light Room (Panel)",
 			"isDoors|on, Desert Door to Flood Light Room",
 			"isDoors|on, @Places/desertPond, Desert Door to Pond Room"
 		],
@@ -90,7 +90,7 @@
       {
         "name": "desertLaser",
         "access_rules": [
-			"isDoors|off, @Places/desertFlood, [Desert Flood Room Flood Controls (Panel)]",
+			"isDoors|off, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
 			"isDoors|on, @Places/desertFlood, Desert Door to Elevator Room",
 			"isDoors|on, @Places/tunnels, Desert Laser, Theater Walkway Door to Desert Elevator Room"
 		],
@@ -129,7 +129,7 @@
       {
         "name": "quarryMillUpstairs",
         "access_rules": [
-			"@Places/quarryMill, Dots, Eraser, Quarry Mill Ramp Controls (Panel), Quarry Mill Elevator Controls (Panel)",
+			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), $hasPanel|Quarry Mill Elevator Controls (Panel)",
 			"isDoors|on, @Places/quarryMill, Quarry Mill Stairs"
 			
 		],
@@ -138,23 +138,23 @@
       {
         "name": "quarryBoathouseUpstairsFront",
         "access_rules": [
-			"@Places/quarry, Shapers, Stars, RotatedShapers, Quarry Boathouse Ramp Height Control (Panel)"
+			"@Places/quarry, Shapers, Stars, RotatedShapers, $hasPanel|Quarry Boathouse Ramp Height Control (Panel)"
 		],
         "item_count": 1
       },
       {
         "name": "quarryBoathouseUpstairsBack",
         "access_rules": [
-			"$@Places/quarryBoathouseUpstairsFront, Shapers, Eraser, Quarry Boathouse Ramp Horizontal Control (Panel)",
+			"$@Places/quarryBoathouseUpstairsFront, Shapers, Eraser, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
-			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, Quarry Boathouse First Barrier, Quarry Boathouse Ramp Horizontal Control (Panel)"
+			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
         "item_count": 1
       },
       {
         "name": "shadowsFirstSet",
         "access_rules": [
-			"isDoors|off, [Shadows Door Timer (Panel)]",
+			"isDoors|off, [$hasPanel|Shadows Door Timer (Panel)]",
 			"isDoors|on, Shadows Timed Door",
 			"isDoors|on, Shadows Barrier to Ledge",
 			"isDoors|on, Shadows Barrier to Quarry, @Places/quarry"
@@ -249,7 +249,7 @@
       {
         "name": "treehouseSecond",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseDock, Treehouse First & Second Doors (Panel), Stars",
+			"$isDoors|off, @Places/treehouseDock, $hasPanel|Treehouse First & Second Doors (Panel), Stars",
 			"$isDoors|on, @Places/treehouseDock, Treehouse First Door"
 		],
         "item_count": 1
@@ -257,7 +257,7 @@
       {
         "name": "treehouseThird",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseSecond, Treehouse First & Second Doors (Panel), Stars",
+			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), Stars",
 			"$isDoors|on, @Places/treehouseDock, Treehouse Second Door"
 		],
         "item_count": 1
@@ -265,7 +265,7 @@
       {
         "name": "treehouseMain",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseThird, Treehouse Third Door (Panel), Stars",
+			"$isDoors|off, @Places/treehouseThird, $hasPanel|Treehouse Third Door (Panel), Stars",
 			"$isDoors|on, @Places/treehouseThird, Treehouse Beyond Yellow Bridge Door, Stars"
 		],
         "item_count": 1
@@ -294,7 +294,7 @@
       {
         "name": "treehouseLaser",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, Stars, Treehouse Laser House Door Timer (Panel)",
+			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, Stars, $hasPanel|Treehouse Laser House Door Timer (Panel)",
 			"$isDoors|off, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
 		],
         "item_count": 1
@@ -302,16 +302,16 @@
       {
         "name": "swampEntry",
         "access_rules": [
-			"$isDoors|off, Shapers, Swamp Entry Door (Panel)",
+			"$isDoors|off, Shapers, $hasPanel|Swamp Entry Door (Panel)",
 			"$isDoors|on, Swamp Entry Door",
-			"$isDoors|on, Shapers, Swamp Sliding Bridge (Panel), @Places/swampPlatform"
+			"$isDoors|on, Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
 		],
         "item_count": 1
       },
       {
         "name": "swampPlatform",
         "access_rules": [
-			"Shapers, Swamp Sliding Bridge (Panel), @Places/swampEntry",
+			"Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampBroken",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampBack"
 		],
@@ -331,14 +331,14 @@
         "access_rules": [
 			"$isDoors|off, Shapers, @Places/swampBroken",
 			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampBroken",
-			"$isDoors|on, Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack"
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack"
 		],
         "item_count": 1
       },
       {
         "name": "swampBack",
         "access_rules": [
-			"Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampRotated",
+			"$hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampRotated",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampPlatform",
 			"@Places/ocean"
 		],
@@ -347,7 +347,7 @@
       {
         "name": "swampPurple",
         "access_rules": [
-			"Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack"
+			"$hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack"
 		],
         "item_count": 1
       },
@@ -378,7 +378,7 @@
       {
         "name": "swampLaser",
         "access_rules": [
-			"Shapers, NegativeShapers, Swamp Maze Control (Panel), @Places/swampRed",
+			"Shapers, NegativeShapers, $hasPanel|Swamp Maze Control (Panel), @Places/swampRed",
 			"$isDoors|on, Swamp Near Laser Shortcut"
 		],
         "item_count": 1
@@ -386,7 +386,7 @@
       {
         "name": "windmill",
         "access_rules": [
-			"$isDoors|off, Dots, Windmill Door (Panel)",
+			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
 			"$isDoors|on, Town Windmill Door",
 			"$isDoors|on, Theater Entry Door, @Places/theater",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/tunnels"
@@ -396,7 +396,7 @@
       {
         "name": "theater",
         "access_rules": [
-			"$isDoors|off, Dots, Windmill Door (Panel)",
+			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
 			"$isDoors|on, Town Windmill Door",
 			"$isDoors|on, Theater Entry Door, @Places/theater",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/tunnels"
@@ -406,7 +406,7 @@
       {
         "name": "redRoof",
         "access_rules": [
-			"$isDoors|off, Town Maze Panel (Drop-Down Staircase) (Panel)",
+			"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel)",
 			"$isDoors|on, Town Maze Staircase"
 		],
         "item_count": 1
@@ -430,7 +430,7 @@
       {
         "name": "RGBHouse",
         "access_rules": [
-			"$isDoors|off, Stars, RotatedShapers, Town Door to RGB House (Panel)",
+			"$isDoors|off, Stars, RotatedShapers, $hasPanel|Town Door to RGB House (Panel)",
 			"$isDoors|on, Town Tinted Door to RGB House"
 		],
         "item_count": 1
@@ -446,7 +446,7 @@
       {
         "name": "church",
         "access_rules": [
-			"$isDoors|off, [@Places/RGBHouse], Stars, Town Door to Church (Panel)",
+			"$isDoors|off, [@Places/RGBHouse], Stars, $hasPanel|Town Door to Church (Panel)",
 			"$isDoors|on, Town Door to Church"
 		],
         "item_count": 1
@@ -454,7 +454,7 @@
       {
         "name": "monastery",
         "access_rules": [
-			"$isDoors|off, Monastery Entry Door Left (Panel), Monastery Entry Door Right (Panel)",
+			"$isDoors|off, $hasPanel|Monastery Entry Door Left (Panel), $hasPanel|Monastery Entry Door Right (Panel)",
 			"$isDoors|on, Monastery Inner Door, Monastery Outer Door"
 		],
         "item_count": 1
@@ -462,7 +462,7 @@
       {
         "name": "junglePopup",
         "access_rules": [
-			"$isDoors|off, Jungle Popup Wall (Panel)",
+			"$isDoors|off, $hasPanel|Jungle Popup Wall (Panel)",
 			"$isDoors|on, Jungle Popup Wall"
 		],
         "item_count": 1
@@ -470,7 +470,7 @@
       {
         "name": "bunkerAntechamber",
         "access_rules": [
-			"$isDoors|off, Bunker Entry Door (Panel), BWSquare, ColoredSquares",
+			"$isDoors|off, $hasPanel|Bunker Entry Door (Panel), BWSquare, ColoredSquares",
 			"$isDoors|on, Bunker Bunker Entry Door"
 		],
         "item_count": 1
@@ -478,7 +478,7 @@
       {
         "name": "bunkerTintedRoom",
         "access_rules": [
-			"$isDoors|off, @Places/bunkerAntechamber, Inside Bunker Door to Bunker Proper (Panel)",
+			"$isDoors|off, @Places/bunkerAntechamber, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
 			"$isDoors|on, @Places/bunkerAntechamber, Bunker Tinted Glass Door"
 		],
         "item_count": 1
@@ -494,15 +494,15 @@
       {
         "name": "bunkerLaser",
         "access_rules": [
-			"$isDoors|off, @Places/bunkerUV, Bunker Elevator Control (Panel)",
-			"$isDoors|on, @Places/bunkerUV, Bunker Door to Elevator, Bunker Elevator Control (Panel)"
+			"$isDoors|off, @Places/bunkerUV, $hasPanel|Bunker Elevator Control (Panel)",
+			"$isDoors|on, @Places/bunkerUV, Bunker Door to Elevator, $hasPanel|Bunker Elevator Control (Panel)"
 		],
         "item_count": 1
       },
       {
         "name": "mountainLayer1",
         "access_rules": [
-			"$laserCount|7, Stars, StarSameColor, BWSquare"
+			"$laserBox|short, Stars, StarSameColor, BWSquare"
 		],
         "item_count": 1
       },
@@ -596,10 +596,10 @@
         "name": "canWaterLevel",
         "access_rules": [			
 			"doorsNo",
-			"doorsPanel, Desert Flood Room Flood Controls (Panel)",
+			"doorsPanel, $hasPanel|Desert Flood Room Flood Controls (Panel)",
 			"doorsSimple",
 			"doorsComplex",
-			"doorsMax, Desert Flood Room Flood Controls (Panel)"
+			"doorsMax, $hasPanel|Desert Flood Room Flood Controls (Panel)"
 		],
         "item_count": 1
       },
@@ -607,7 +607,7 @@
         "name": "SymmetryLowerPanel",
         "access_rules": [
 			"DoorsNo, Symmetry",
-			"DoorsPanel, Door to Symmetry Island Lower (Panel)"
+			"DoorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel)"
 		],
         "item_count": 1
       },

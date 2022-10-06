@@ -318,8 +318,8 @@ SETTINGS_MAPPING = {
 	["shuffle_doors"]="shuffleDoorsSetting",
 	["shuffle_postgame"]="postGame",
 	["shuffle_symbols"]="Symbols",
-	["victory_condition"]="Goal",
-	["mountain_lasers"]="Short",
-	["challenge_lasers"]="Long",
+	["victory_condition"]="hiddenGoal",
+	["mountain_lasers"]="hiddenShort",
+	["challenge_lasers"]="hiddenLong",
 	
 }
