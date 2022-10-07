@@ -1,12 +1,10 @@
 [
 	{
         "name": "Tutorial gate",
-		"access_rules": [],
 		"visibility_rules": ["never"],
         "sections": [
 			{
                 "name": "gate",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -29,7 +27,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -43,16 +40,14 @@
     },
 	
 	{
-        "name": "Tutorial Back Door to Outpost 1",
+        "name": "Tutorial Outpost Exit",
 		"access_rules": [
-				"Outside Tutorial Outpost Doors",
-				"Outside Tutorial Optional Door"
+				"Outside Tutorial Outpost Exit Door"
 		],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -66,15 +61,13 @@
     },
 	
 	{
-        "name": "Tutorial Back Door to Outpost 2",
-		"access_rules": [],
+        "name": "Tutorial Back Door to Outpost 1",
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
 				"access_rules": [
-					"Outside Tutorial Outpost Doors",
-					"Outside Tutorial Outpost Entry Door"
+					"Outside Tutorial Optional Door"
 					],
                 "item_count": 1
             }
@@ -89,16 +82,14 @@
     },
 
 	{
-        "name": "Tutorial Outpost Exit",
+        "name": "Tutorial Back Door to Outpost 2",
 		"access_rules": [
-			"Outside Tutorial Outpost Doors",
-			"Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door"
+			"Outside Tutorial Outpost Entry Door"
 		],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -121,7 +112,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -143,7 +133,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -167,7 +156,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -191,7 +179,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -215,7 +202,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -238,7 +224,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -262,7 +247,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -284,7 +268,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -307,7 +290,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -330,7 +312,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -350,7 +331,6 @@
         "sections": [
 			{
                 "name": "elevator",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -372,7 +352,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -394,7 +373,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             },
         ],
@@ -416,7 +394,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             },
         ],
@@ -438,7 +415,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -453,7 +429,6 @@
 	
 	{
         "name": "Quarry mill inside stairs",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -476,7 +451,6 @@
 	
 	{
         "name": "Quarry mill inside controls",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsMax"],
         "sections": [
 			{
@@ -510,7 +484,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -530,7 +503,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -550,7 +522,6 @@
         "sections": [
 			{
                 "name": "Control Panel",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -569,7 +540,6 @@
         "sections": [
 			{
                 "name": "Control Panel",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -588,7 +558,6 @@
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -607,7 +576,6 @@
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -629,7 +597,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -651,7 +618,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -673,7 +639,6 @@
         "sections": [
 			{
                 "name": "dock",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -688,7 +653,6 @@
 	
 	{
         "name": "Shady trees laser doors",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -724,7 +688,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -746,7 +709,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -768,7 +730,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -790,7 +751,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -812,7 +772,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -834,7 +793,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -856,7 +814,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -878,7 +835,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -900,7 +856,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -922,7 +877,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -944,7 +898,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -966,7 +919,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -988,7 +940,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1003,7 +954,6 @@
 	
 	{
         "name": "Treehouse First Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1027,7 +977,6 @@
 	
 	{
         "name": "Treehouse Second Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1051,7 +1000,6 @@
 	
 	{
         "name": "Treehouse Third Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1082,7 +1030,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1105,7 +1052,6 @@
         "sections": [
 			{
                 "name": "Drawbridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1128,7 +1074,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1148,7 +1093,6 @@
         "sections": [
 			{
                 "name": "bridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1170,7 +1114,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1192,7 +1135,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1214,7 +1156,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1236,7 +1177,6 @@
         "sections": [
 			{
                 "name": "Drain water",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1258,7 +1198,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1280,7 +1219,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1300,7 +1238,6 @@
         "sections": [
 			{
                 "name": "bridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1322,7 +1259,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1342,7 +1278,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1392,12 +1327,10 @@
 	
 	{
         "name": "Swamp back rotating bridge",
-		"access_rules": [],
 		"visibility_rules": ["never"],
         "sections": [
 			{
                 "name": "bridge",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1420,7 +1353,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1443,7 +1375,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1458,12 +1389,10 @@
 
 	{
         "name": "Mountain entrance",
-		"access_rules": [],
 		"visibility_rules": ["never"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1483,7 +1412,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1498,7 +1426,6 @@
 
 	{
         "name": "Mountain Layer 2",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1520,7 +1447,6 @@
     },
 	{
         "name": "Mountain Layer 2 Front Stairs",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1542,7 +1468,6 @@
     },
 	{
         "name": "Mountain Layer 2 Back Stairs",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1570,7 +1495,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1590,7 +1514,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1605,7 +1528,6 @@
 	
 	{
         "name": "Mountain Bottom Layer Rock to Caves",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1627,7 +1549,6 @@
     },
 	{
         "name": "Mountain Bottom Layer Door to Caves",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1655,7 +1576,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1674,7 +1594,6 @@
         "sections": [
 			{
                 "name": "Clear the Darkness",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1694,7 +1613,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1714,7 +1632,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1734,7 +1651,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1754,7 +1670,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1774,7 +1689,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1789,7 +1703,6 @@
 	
 	{
         "name": "Theater Back Door Left",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1811,7 +1724,6 @@
     },
 	{
         "name": "Theater Back Door Right",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1843,7 +1755,6 @@
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1865,7 +1776,6 @@
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1885,7 +1795,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1904,7 +1813,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1923,7 +1831,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1942,7 +1849,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1962,7 +1868,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -1977,12 +1882,11 @@
 	
 	{
         "name": "Church door",
-		"access_rules": ["Town Doors", "Town Door to Church"],
-		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
+		"access_rules": ["Town Door to Church (Panel)", "Town Doors", "Town Door to Church"],
+		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2002,7 +1906,6 @@
         "sections": [
 			{
                 "name": "stairs",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2017,7 +1920,6 @@
 	
 	{
         "name": "Monestary Entry Outer Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2040,7 +1942,6 @@
     },
 	{
         "name": "Monestary Entry Inner Door",
-		"access_rules": [],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2064,7 +1965,6 @@
 	
 	{
         "name": "Monastery shortcut to garden",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2086,7 +1986,6 @@
     },
 	{
         "name": "Monastery garden shortcut to river",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2114,7 +2013,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2131,13 +2029,11 @@
         "name": "Color bunker entrance",
 		"access_rules": [
 			"Bunker Entry Door (Panel)",
-			"Bunker Doors",
 			"Bunker Bunker Entry Door"],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2154,13 +2050,11 @@
         "name": "Blue stained glass door",
 		"access_rules": [
 			"Inside Bunker Door to Bunker Proper (Panel)",
-			"Bunker Doors",
 			"Bunker Tinted Glass Door"],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2176,13 +2070,11 @@
 	{
         "name": "Untraviolet Room Entry Door",
 		"access_rules": [
-			"Bunker Doors",
 			"Bunker Door to Ultraviolet Room",],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "entrance",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2198,13 +2090,11 @@
 	{
         "name": "Elevator Entry Door",
 		"access_rules": [
-			"Bunker Doors",
 			"Bunker Door to Elevator"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "Cargo container exit",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2224,7 +2114,6 @@
         "sections": [
 			{
                 "name": "Control Panel",
-				"access_rules": [],
                 "item_count": 1
             }
         ],
@@ -2239,7 +2128,6 @@
 	
 	{
         "name": "Monestary exit shortcut to overworld",
-		"access_rules": [],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -2263,7 +2151,6 @@
         "sections": [
 			{
                 "name": "door",
-				"access_rules": [],
                 "item_count": 1
             },
         ],

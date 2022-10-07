@@ -4,1405 +4,591 @@
     "sections": [
       {
         "name": "overworld",
-        "access_rules": [],
         "item_count": 1
       },
       {
         "name": "tutorial",
-        "access_rules": [],
         "item_count": 1
       },
       {
         "name": "ocean",
         "access_rules": [
-			"doorsNo",
-			"doorsPanel, Boat",
-			"doorsSimple",
-			"doorsComplex",
-			"doorsMax, Boat"],
+			"Boat"
+			],
         "item_count": 1
       },
       {
         "name": "tutorialOutpost",
         "access_rules": [
-			"@Places/overworld, @Gates/tutorialDiscardBackGate",
-			"@Places/tutorial, @Gates/tutorialDiscardFrontGate"
+			"$isDoors|off,Dots",
+			"$isDoors|on,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door",
+			"$isDoors|on,Outside Tutorial Outpost Exit Door"
+			
 		],
         "item_count": 1
       },
       {
         "name": "orchardInner",
         "access_rules": [
-			"@Places/overworld, @Gates/orchardGate"
+			"$isDoors|off",
+			"$isDoors|on, Orchard Middle Gate"
 		],
         "item_count": 1
       },
       {
         "name": "glassFactory",
         "access_rules": [
-			"@Places/overworld, @Gates/glassFactoryFrontDoor",
-			"@Placse/ocean, @Gates/glassFactoryDock"
+			"$isDoors|off, $hasPanel|Glass Factory Entry Door (Panel), Symmetry",
+			"$isDoors|on, Glass Factory Entry Door",
+			"$isDoors|on, @Places/ocean, Glass Factory Back Wall"
 		],
         "item_count": 1
       },
       {
         "name": "symmetryOuter",
         "access_rules": [
-			"@Places/overworld, @Gates/symmetryOuterGate"
+			"$isDoors|off, @Logic/SymmetryLowerPanel, Dots",
+			"$isDoors|on, Symmetry Island Lower Door"
 		],
         "item_count": 1
       },
       {
         "name": "symmetryInner",
         "access_rules": [
-			"@Places/symmetryOuter, @Gates/symmetryInnerGate"
+			"$isDoors|off, $hasPanel|Door to Symmetry Island Upper (Panel), Symmetry, Dots",
+			"$isDoors|on, Symmetry Island Upper Door, Symmetry Island Lower Door"
 		],
         "item_count": 1
       },
       {
         "name": "desertFloodLight",
         "access_rules": [
-			"@Places/overworld, @Gates/desertToFloodLight",
-			"@Places/desertPond, @Gates/desertToPond"
+			"$isDoors|off, $hasPanel|Door to Desert Flood Light Room (Panel)",
+			"$isDoors|on, Desert Door to Flood Light Room",
+			"$isDoors|on, Desert Door to Pond Room, @Places/desertPond"
 		],
         "item_count": 1
       },
       {
         "name": "desertPond",
         "access_rules": [
-			"@Places/desertFloodLight, @Gates/desertToPond",
-			"@Places/desertFlood, @Gates/desertToFlood"
+			"$isDoors|off, @Places/desertFloodLight",
+			"$isDoors|on, Desert Door to Pond Room, @Places/desertFloodLight",
+			"$isDoors|on, Desert Door to Water Levels Room, @Places/desertFlood"
 		],
         "item_count": 1
       },
       {
         "name": "desertFlood",
         "access_rules": [
-			"@Places/desertPond, @Gates/desertToFlood",
-			"@Places/desertLaser, @Gates/desertToLaser"
+			"$isDoors|off, @Places/desertPond",
+			"$isDoors|on, Desert Door to Water Levels Room, @Places/desertPond",
+			"$isDoors|on, Desert Door to Elevator Room, @Places/desertLaser"
 		],
         "item_count": 1
       },
       {
         "name": "desertLaser",
         "access_rules": [
-			"@Places/desertFlood, @Gates/desertToLaser",
-			"@Places/tunnels, @Gates/tunnelsDesertExit"
+			"$isDoors|off, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
+			"$isDoors|on, Desert Door to Elevator Room, @Places/desertFlood",
+			"$isDoors|on, Desert Laser, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "quarryMain1",
+        "access_rules": [
+			"$isDoors|off, BWSquare",
+			"$isDoors|on, Quarry Main Entry 1"
 		],
         "item_count": 1
       },
       {
         "name": "quarry",
         "access_rules": [
-			"@Places/overworld, @Gates/quarryMainEntrance",
-			"@Places/ocean, @Gates/quarryBoathouseDock",
-			"@Places/shadowsFirstSet, @Gates/shadowsToQuarry",
-			"@Places/quarryMill, @Gates/quarryMillBigDoor",
-			"@Places/quarryMill, @Gates/quarryMillSmallDoor"
+			"$isDoors|off, Shapers, @Places/quarryMain1",
+			"$isDoors|on, Quarry Main Entry 2, @Places/quarryMain1",
+			"$isDoors|on, Quarry Boathouse Boat Staircase, @Places/ocean",
+			"$isDoors|on, Quarry Mill Side Door, @Places/quarryMill",
+			"$isDoors|on, Quarry Door to Mill, @Places/quarryMill",
+			"$isDoors|on, Shadows Barrier to Quarry, @Places/shadowsFirstSet"
 		],
         "item_count": 1
       },
       {
         "name": "quarryMill",
         "access_rules": [
-			"@Places/overworld, @Gates/quarryMillOutsideStairs",
-			"@Places/quarry, @Gates/quarryMillBigDoor",
-			"@Places/quarry, @Gates/quarryMillSmallDoor"
+			"$isDoors|off, [BWSquare], [Dots], @Places/quarry",
+			"$isDoors|on, Quarry Mill Rooftop Shortcut",
+			"$isDoors|on, Quarry Mill Side Door, @Places/quarry",
+			"$isDoors|on, Quarry Door to Mill, @Places/quarry"
 		],
         "item_count": 1
       },
       {
         "name": "quarryMillUpstairs",
         "access_rules": [
-			"@Places/quarryMill, @Gates/quarryMillUpstairs"
+			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), $hasPanel|Quarry Mill Elevator Controls (Panel)",
+			"$isDoors|on, Quarry Mill Stairs, @Places/quarryMill"
 			
 		],
         "item_count": 1
       },
       {
-        "name": "quarryBoathouseUpstairs",
+        "name": "quarryBoathouseUpstairsFront",
         "access_rules": [
-			"@Places/quarry, @Gates/quarryBoathouseUpstairs"
+			"@Places/quarry, [@Logic/boathouseRamp], RotatedShapers"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "quarryBoathouseUpstairsBack",
+        "access_rules": [
+			"@Places/quarryBoathouseUpstairsFront, Shapers, Eraser, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
+			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
+			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
         "item_count": 1
       },
       {
         "name": "shadowsFirstSet",
         "access_rules": [
-			"@Gates/shadowsTimerDoor",
-			"@Gates/shadowsBarrier",
-			"@Places/quarry, @Gates/shadowsToQuarry"
+			"$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)]",
+			"$isDoors|on, Shadows Timed Door",
+			"$isDoors|on, Shadows Barrier to Ledge",
+			"$isDoors|on, Shadows Barrier to Quarry, @Places/quarry"
 		],
         "item_count": 1
       },
       {
         "name": "shadowsLaser",
         "access_rules": [
-			"@Places/overworld, @Gates/shadowsLaserGate"
+			"$isDoors|off, @Places/shadowsFirstSet",
+			"$isDoors|on, Shadows Laser Room Right Door, [Shadows Laser Room Left Door]",
+			"$isDoors|on, [Shadows Laser Room Right Door], Shadows Laser Room Left Door"
 		],
         "item_count": 1
       },
       {
         "name": "maze2",
         "access_rules": [
-			"@Places/overworld, @Gates/maze1Exit",
-			"@Places/overworld, @Gates/maze2Shortcut",
-			"@Places/maze3, @Gates/maze2Exit"
+			"$isDoors|off, Unrandomized",
+			"$isDoors|on, Keep Hedge Maze 1 Exit Door",
+			"$isDoors|on, Keep Hedge Maze 2 Exit Door, @Places/maze3",
+			"$isDoors|on, Keep Hedge Maze 2 Shortcut"
 		],
         "item_count": 1
       },
       {
         "name": "maze3",
         "access_rules": [
-			"@Places/maze2, @Gates/maze2Exit",
-			"@Places/overworld, @Gates/maze3Shortcut",
-			"@Places/maze4, @Gates/maze3Exit"
+			"$isDoors|off, Unrandomized",
+			"$isDoors|on, Keep Hedge Maze 2 Exit Door, @Places/maze2",
+			"$isDoors|on, Keep Hedge Maze 3 Exit Door, @Places/maze4",
+			"$isDoors|on, Keep Hedge Maze 3 Shortcut"
 		],
         "item_count": 1
       },
       {
         "name": "maze4",
         "access_rules": [
-			"@Places/maze3, @Gates/maze3Exit",
-			"@Places/overworld, @Gates/maze4Shortcut",
-			"@Places/keepTower, @Gates/maze4Exit"
+			"$isDoors|off, Unrandomized",
+			"$isDoors|on, Keep Hedge Maze 3 Exit Door, @Places/maze3",
+			"$isDoors|on, Keep Hedge Maze 4 Exit Door, @Places/keepTower",
+			"$isDoors|on, Keep Hedge Maze 4 Shortcut"
 		],
         "item_count": 1
       },
       {
         "name": "plates2",
         "access_rules": [
-			"@Places/overworld, @Gates/plates1Exit",
-			"@Places/plates3, [@Gates/plates2Exit]"
+			"$isDoors|off, Dots",
+			"$isDoors|on, Keep Pressure Plates 1 Exit Door",
+			"$isDoors|on, [Keep Pressure Plates 2 Exit Door], @Places/plates3"
 		],
         "item_count": 1
       },
       {
         "name": "plates3",
         "access_rules": [
-			"@Places/plates2, [@Gates/plates2Exit]",
-			"@Places/plates4, @Gates/plates3Exit"
+			"$isDoors|off, [Shapers], [BWSquare], [ColoredSquares], @Places/plates2",
+			"$isDoors|on, [Keep Pressure Plates 2 Exit Door], Keep Pressure Plates 1 Exit Door",
+			"$isDoors|on, Keep Pressure Plates 3 Exit Door, @Places/plates4"
 		],
         "item_count": 1
       },
       {
         "name": "plates4",
         "access_rules": [
-			"@Places/plates3, @Gates/plates3Exit",
-			"@Places/keepTower, @Gates/plates4Exit",
-			"@Places/overworld, @Gates/shadowsToKeep"
+			"$isDoors|off, Shapers, BWSquare, ColoredSquares, @Places/plates3",
+			"$isDoors|on, Keep Pressure Plates 3 Exit Door, @Places/plates3",
+			"$isDoors|on, Keep Pressure Plates 4 Exit Door, @Places/keepTower",
+			"$isDoors|on, Keep Shortcut to Shadows"
 		],
         "item_count": 1
       },
       {
         "name": "keepTower",
         "access_rules": [
-			"@Places/overworld, @Gates/keepTowerShortcut",
-			"@Places/plates4, @Gates/plates4Exit",
-			"@Places/maze4, @Gates/maze4Exit"
+			"$isDoors|off, Shapers, Dots, Symmetry, @Places/plates4",
+			"$isDoors|off, Unrandomized, @Places/maze4",
+			"$isDoors|on, Keep Pressure Plates 4 Exit Door, @Places/plates4",
+			"$isDoors|on, Keep Tower Shortcut",
+			"$isDoors|on,, Keep Hedge Maze 4 Exit Door @Places/maze4"
 		],
         "item_count": 1
       },
       {
-        "name": "treehouseStart",
+        "name": "treehouseDock",
         "access_rules": [
-			"@Places/ocean, @Gates/treehouseFirstDoors"
+			"@Places/ocean"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseSecond",
+        "access_rules": [
+			"$isDoors|off, @Places/treehouseDock, $hasPanel|Treehouse First & Second Doors (Panel), Stars",
+			"$isDoors|on, @Places/treehouseDock, Treehouse First Door"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseThird",
+        "access_rules": [
+			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), Stars",
+			"$isDoors|on, @Places/treehouseSecond, Treehouse Second Door"
 		],
         "item_count": 1
       },
       {
         "name": "treehouseMain",
         "access_rules": [
-			"@Places/treehouseStart, @Gates/treehouseThirdDoor"
+			"$isDoors|off, @Places/treehouseThird, $hasPanel|Treehouse Third Door (Panel), Stars",
+			"$isDoors|on, @Places/treehouseThird, Treehouse Beyond Yellow Bridge Door, Stars"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseLeft1",
+        "access_rules": [
+			"@Places/treehouseMain, Dots, Stars"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseLeft2",
+        "access_rules": [
+			"@Places/treehouseLeft1, BWSquare,ColoredSquares"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "treehouseOutsideLaser",
+        "access_rules": [
+			"@Places/treehouseLeft2, BWSquare,ColoredSquares,StarSameColor"
 		],
         "item_count": 1
       },
       {
         "name": "treehouseLaser",
         "access_rules": [
-			"@Places/treehouseMain, @Gates/treehouseLaserGate"
+			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, Stars, $hasPanel|Treehouse Laser House Door Timer (Panel)",
+			"$isDoors|off, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
 		],
         "item_count": 1
       },
       {
         "name": "swampEntry",
         "access_rules": [
-			"@Places/overworld, @Gates/swampEntrance",
-			"@Places/swampPlatform, @Gates/swampSlidingBridge"
+			"$isDoors|off, Shapers, $hasPanel|Swamp Entry Door (Panel)",
+			"$isDoors|on, Swamp Entry Door",
+			"$isDoors|on, Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
 		],
         "item_count": 1
       },
       {
         "name": "swampPlatform",
         "access_rules": [
-			"@Places/swampEntry, @Gates/swampSlidingBridge",
-			"@Places/swampBroken, @Gates/swampDoorToBroken",
-			"@Places/swampBack, @Gates/swampPlatformShortcut"
+			"Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
+			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampBroken",
+			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampBack"
 		],
         "item_count": 1
       },
       {
         "name": "swampBroken",
         "access_rules": [
-			"@Places/swampPlatform, @Gates/swampDoorToBroken",
-			"@Places/swampRotated, @Gates/swampDoorToRotated"
+			"$isDoors|off, Shapers, @Places/swampPlatform",
+			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampPlatform",
+			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampRotated"
 		],
         "item_count": 1
       },
       {
         "name": "swampRotated",
         "access_rules": [
-			"@Places/swampBroken, @Gates/swampDoorToRotated",
-			"@Places/swampPlatform, @Gates/swampPlatformShortcut, @Gates/swampRotatingBridge",
-			"@Places/ocean, @Gates/swampRotatingBridge",
-			"@Places/swampRed, @Gates/swampRed"
+			"$isDoors|off, Shapers, @Places/swampBroken",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack",
+			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform"
 		],
         "item_count": 1
       },
       {
         "name": "swampBack",
         "access_rules": [
-			"@Places/overworld, @Gates/swampRotatingBridgeBack",
 			"@Places/ocean",
-			"@Places/swampRotated, @Gates/swampRotatingBridge",
-			"@Places/swampPlatform, @Gates/swampPlatformShortcut"
+			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampPlatform",
+			"$hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampRotated"
 		],
         "item_count": 1
       },
       {
         "name": "swampPurple",
         "access_rules": [
-			"@Places/swampBack, @Gates/swampRotatingBridge, @Gates/swampPurple"
+			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Swamp Purple Water Pump, @Places/swampBack"
 		],
         "item_count": 1
       },
       {
         "name": "swampBlue",
         "access_rules": [
-			"@Places/swampBack, @Gates/swampBlue"
+			"$isDoors|off, @Places/swampBack, Shapers, RotatedShapers",
+			"$isDoors|on, @Places/swampBack, Swamp Blue Water Pump"
 		],
         "item_count": 1
       },
       {
         "name": "swampCyan",
         "access_rules": [
-			"@Places/swampPlatform, @Gates/swampCyan"
+			"$isDoors|off, @Places/swampPlatform, @Places/swampBlue, Shapers, RotatedShapers, NegativeShapers",
+			"$isDoors|on, @Places/swampPlatform, Swamp cYAN Water Pump"
 		],
         "item_count": 1
       },
       {
         "name": "swampRed",
         "access_rules": [
-			"@Places/swampRotated, @Gates/swampRed"
+			"$isDoors|off, @Places/swampRotated, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers",
+			"$isDoors|on, @Places/swampRotated, Swamp Red Water Pump"
 		],
         "item_count": 1
       },
       {
         "name": "swampLaser",
         "access_rules": [
-			"@Places/swampRed, @Gates/swampRedExit",
-			"@Places/overworld, @Gates/swampLaserShortcut"
+			"Shapers, NegativeShapers, $hasPanel|Swamp Maze Control (Panel), @Places/swampRed",
+			"$isDoors|on, Swamp Near Laser Shortcut"
 		],
         "item_count": 1
       },
       {
         "name": "windmill",
         "access_rules": [
-			"@Places/overworld, @Gates/windmillDoor",
-			"@Places/theater, @Gates/theaterEntry",
-			"@Places/tunnels, @Gates/tunnelsTheaterExit"
+			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|on, Town Windmill Door",
+			"$isDoors|on, Theater Entry Door, @Places/theater",
+			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/tunnels"
 		],
         "item_count": 1
       },
       {
         "name": "theater",
         "access_rules": [
-			"@Places/overworld, @Gates/theaterExit",
-			"@Places/windmill, @Gates/theaterEntry"
+			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|on, Theater Exit Door Left",
+			"$isDoors|on, Theater Exit Door Right",
+			"$isDoors|on, Theater Entry Door, @Places/windmill"
 		],
         "item_count": 1
       },
       {
         "name": "redRoof",
         "access_rules": [
-			"@Places/overworld, @Gates/redRoofStairs"
+			"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel)",
+			"$isDoors|on, Town Maze Staircase"
 		],
         "item_count": 1
       },
       {
         "name": "woodenRoof",
         "access_rules": [
-			"@Places/overworld, @Gates/fullDotStairs"
+			"$isDoors|off, Dots, Shapers, RotatedShapers",
+			"$isDoors|on, Town Wooden Roof Staircase"
 		],
         "item_count": 1
       },
       {
         "name": "townLaser",
         "access_rules": [
-			"@Places/overworld, @Gates/townLaserTower"
+			"$isDoors|off, Symmetry, BWSquare, Dots, Shapers, RotatedShapers, Eraser, Stars",
+			"$isDoors|on, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Wooden Roof Set Door"
 		],
         "item_count": 1
       },
       {
         "name": "RGBHouse",
         "access_rules": [
-			"@Places/overworld, @Gates/RGBHouseEntry"
+			"$isDoors|off, Stars, RotatedShapers, $hasPanel|Town Door to RGB House (Panel)",
+			"$isDoors|on, Town Tinted Door to RGB House"
 		],
         "item_count": 1
       },
       {
         "name": "RGBHouseUpstairs",
         "access_rules": [
-			"@Places/overworld, @Gates/RGBHouseEntry, @Gates/RGBHouseStairs"
+			"$isDoors|off, @Places/RGBHouse, SoundDots",
+			"$isDoors|on, @Places/RGBHouse, Town RGB House Staircase"
 		],
         "item_count": 1
       },
       {
         "name": "church",
         "access_rules": [
-			"@Places/overworld, @Gates/church"
+			"$isDoors|off, [@Places/RGBHouse], Stars, $hasPanel|Town Door to Church (Panel)",
+			"$isDoors|on, Town Door to Church"
 		],
         "item_count": 1
       },
       {
         "name": "monastery",
         "access_rules": [
-			"@Places/overworld, @Gates/monastery"
+			"$isDoors|off, $hasPanel|Monastery Entry Door Left (Panel), $hasPanel|Monastery Entry Door Right (Panel)",
+			"$isDoors|on, Monastery Inner Door, Monastery Outer Door"
 		],
         "item_count": 1
       },
       {
         "name": "junglePopup",
         "access_rules": [
-			"@Places/overworld, @Gates/junglePopup"
+			"$isDoors|off, $hasPanel|Jungle Popup Wall (Panel)",
+			"$isDoors|on, Jungle Popup Wall"
 		],
         "item_count": 1
       },
       {
         "name": "bunkerAntechamber",
         "access_rules": [
-			"@Places/overworld, @Gates/bunkerEntry"
+			"$isDoors|off, $hasPanel|Bunker Entry Door (Panel), BWSquare, ColoredSquares",
+			"$isDoors|on, Bunker Bunker Entry Door"
 		],
         "item_count": 1
       },
       {
         "name": "bunkerTintedRoom",
         "access_rules": [
-			"@Places/bunkerAntechamber, @Gates/bunkerTintedGlass"
+			"$isDoors|off, @Places/bunkerAntechamber, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
+			"$isDoors|on, @Places/bunkerAntechamber, Bunker Tinted Glass Door"
 		],
         "item_count": 1
       },
       {
         "name": "bunkerUV",
         "access_rules": [
-			"@Places/bunkerTintedRoom, @Gates/bunkerUV"
+			"$isDoors|off, @Places/bunkerTintedRoom",
+			"$isDoors|on, @Places/bunkerTintedRoom, Bunker Door to Ultraviolet Room"
 		],
         "item_count": 1
       },
       {
         "name": "bunkerLaser",
         "access_rules": [
-			"@Places/bunkerUV, @Gates/bunkerLaser"
+			"$isDoors|off, @Places/bunkerUV, $hasPanel|Bunker Elevator Control (Panel)",
+			"$isDoors|on, @Places/bunkerUV, Bunker Door to Elevator, $hasPanel|Bunker Elevator Control (Panel)"
 		],
         "item_count": 1
       },
       {
         "name": "mountainLayer1",
         "access_rules": [
-			"@Places/overworld, Stars, StarSameColor, BWSquare"
+			"$laserBox|short, Stars, StarSameColor, BWSquare"
 		],
         "item_count": 1
       },
       {
         "name": "mountainLayer2",
         "access_rules": [
-			"@Places/mountainLayer1, @Gates/mountain1Exit"
+			"$isDoors|off, BWSquare, ColoredSquares, Eraser, Shapers, RotatedShapers, Symmetry, Dots, @Places/mountainLayer1",
+			"$isDoors|on, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountain2FrontStairs",
+        "access_rules": [
+			"$isDoors|off, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots, @Places/mountainLayer2",
+			"$isDoors|on, Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "mountain2BackStairs",
+        "access_rules": [
+			"$isDoors|off, ColoredSquares,ColoredDots, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers, Eraser, @Places/mountain2FrontStairs",
+			"$isDoors|on, Stars, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs"
 		],
         "item_count": 1
       },
       {
         "name": "mountainMeta",
         "access_rules": [
-			"@Places/mountainLayer2, @Gates/mountain2Exit",
-			"@Places/caves, @Gates/mountainToCaves, @Gates/mountainMetaExit"
+			"$isDoors|off, Stars, StarSameColor, RotatedShapers, Eraser, @Places/mountain2BackStairs",
+			"$isDoors|on, Stars, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs",
+			"$isDoors|on, Inside Mountain Giant Puzzle Exit Door, @Places/mountainPenultimateRoom"
 		],
         "item_count": 1
       },
       {
         "name": "mountainPenultimateRoom",
         "access_rules": [
-			"@Places/mountainMeta, @Gates/mountainMetaExit",
-			"@Places/caves, @Gates/mountainToCaves"
+			"$isDoors|off, Shapers, RotatedShapers, Eraser, @Places/mountainMeta",
+			"$isDoors|on, Inside Mountain Giant Puzzle Exit Door, @Places/mountainMeta",
+			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/caves"
 		],
         "item_count": 1
       },
       {
         "name": "mountainFinalRoom",
         "access_rules": [
-			"@Places/mountainPenultimateRoom, @Gates/mountainFinalDoor"
+			"$isDoors|off, @Places/mountainPenultimateRoom",
+			"$isDoors|on, Inside Mountain Door to Final Room, @Places/mountainPenultimateRoom"
 		],
         "item_count": 1
       },
       {
         "name": "caves",
         "access_rules": [
-			"@Places/overworld, @Gates/swampToCaves",
-			"@Places/overworld, @Gates/mountainCavesShortcut",
-			"@Places/mountainPenultimateRoom, @Gates/mountainToCaves",
-			"@Places/overworld, @Gates/tunnelsTownExit, @Gates/challengeToTunnels, @Gates/cavesToChallenge",
-			"@Places/windmill, @Gates/tunnelsTheaterExit, @Gates/challengeToTunnels, @Gates/cavesToChallenge",
-			"@Places/desertLaser, @Gates/tunnelsDesertExit, @Gates/challengeToTunnels, @Gates/cavesToChallenge"
+			
+			"Caves Mountain Shortcut",
+			"Caves Swamp Shortcut",
+			"$isDoors|off,$laserCount|11, BWSquare, Triangles, @Places/mountainPenultimateRoom",
+			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
+			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/challenge"
 		],
         "item_count": 1
       },
       {
         "name": "challenge",
         "access_rules": [
-			"@Places/caves, @Gates/cavesToChallenge",
-			"@Places/overworld, @Gates/tunnelsTownExit, @Gates/challengeToTunnels",
-			"@Places/windmill, @Gates/tunnelsTheaterExit, @Gates/challengeToTunnels",
-			"@Places/desertLaser, @Gates/tunnelsDesertExit, @Gates/challengeToTunnels"
+			"$isDoors|off, Triangles, Stars, StarSameColor, Shapers, @Places/caves",
+			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/caves",
+			"$isDoors|on, Challenge Door to Theater Walkway, @Places/tunnels"
 		],
         "item_count": 1
       },
       {
         "name": "tunnels",
         "access_rules": [
-			"@Places/challenge, @Gates/challengeToTunnels",
-			"@Places/overworld, @Gates/tunnelsTownExit",
-			"@Places/windmill, @Gates/tunnelsTheaterExit",
-			"@Places/desertLaser, @Gates/tunnelsDesertExit"
+			"$isDoors|off, Triangles, @Places/challenge",
+			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge",
+			"$isDoors|on, Theater Walkway Door to Town",
+			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill"
 		],
         "item_count": 1
-      },      
-	  {
-        "name": "mountain2FrontStairs",
-        "access_rules": [			
-			"doorsNo, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots",
-			"doorsPanel, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots",
-			"doorsSimple, Inside Mountain Second Layer Stairs & Doors",
-			"doorsComplex, Inside Mountain Second Layer Staircase Near",
-			"doorsMax, Inside Mountain Second Layer Staircase Near"
-		],
-        "item_count": 1
-      },
-      {
-        "name": "mountain2BackStairs",
-        "access_rules": [			
-			"doorsNo, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers",
-			"doorsPanel, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers",
-			"doorsSimple, Inside Mountain Second Layer Stairs & Doors",
-			"doorsComplex, Inside Mountain Second Layer Staircase Far",
-			"doorsMax, Inside Mountain Second Layer Staircase Far"
-		],
-        "item_count": 1
-      }
-      
+      }      
     ]
-  },
-  
-  {
-    "name": "Gates",
-    "sections": [
-      {
-        "name": "tutorialOverworldGate",
-        "access_rules": [],
-        "item_count": 1
-      },
-	  {
-        "name": "tutorialDiscardBackGate",
-        "access_rules": [
-			"doorsNo, Dots",
-			"doorsPanel, Dots",
-			"doorsSimple,Outside Tutorial Outpost Doors",
-			"doorsComplex,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door",
-			"doorsMax,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "tutorialDiscardFrontGate",
-        "access_rules": [
-			"DoorsNo, Dots",
-			"DoorsPanel, Dots",
-			"DoorsSimple,Outside Tutorial Outpost Doors",
-			"DoorsComplex,Outside Tutorial Outpost Exit Door",
-			"DoorsMax,Outside Tutorial Outpost Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "orchardGate",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Orchard Gates",
-			"DoorsComplex, Orchard Middle Gate",
-			"DoorsMax, Orchard Middle Gate"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "glassFactoryFrontDoor",
-        "access_rules": [
-			"DoorsNo, Symmetry",
-			"DoorsPanel, Glass Factory Entry Door (Panel), Symmetry",
-			"DoorsSimple, Symmetry, Glass Factory Entry Door",
-			"DoorsComplex, Glass Factory Entry Door",
-			"DoorsMax, Glass Factory Entry Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "glassFactoryDock",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Boat",
-			"DoorsSimple, Glass Factory Back Wall",
-			"DoorsComplex, Glass Factory Back Wall",
-			"DoorsMax, Glass Factory Back Wall, Boat"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "symmetryOuterGate",
-        "access_rules": [
-			"DoorsNo, Dots, Symmetry",
-			"DoorsPanel, Door to Symmetry Island Lower (Panel), Dots",
-			"DoorsSimple, Symmetry Island Doors",
-			"DoorsComplex, Symmetry Island Lower Door",
-			"DoorsMax, Symmetry Island Lower Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "symmetryInnerGate",
-        "access_rules": [
-			"DoorsNo, Symmetry, Dots",
-			"DoorsPanel, Door to Symmetry Island Upper (Panel), Symmetry, Dots",
-			"DoorsSimple, Symmetry Island Doors",
-			"DoorsComplex, Symmetry Island Upper Door",
-			"DoorsMax, Symmetry Island Upper Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "desertToFloodLight",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Door to Desert Flood Light Room (Panel)",
-			"DoorsSimple, Desert Doors",
-			"DoorsComplex, Desert Door to Flood Light Room",
-			"DoorsMax, Desert Door to Flood Light Room"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "desertToPond",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple, Desert Doors",
-			"DoorsComplex, Desert Door to Pond Room",
-			"DoorsMax, Desert Door to Pond Room"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "desertToFlood",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Door to Desert Flood Light Room (Panel)",
-			"DoorsSimple, Desert Doors",
-			"DoorsComplex, Desert Door to Water Levels Room",
-			"DoorsMax, Desert Door to Water Levels Room"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "desertToLaser",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Desert Flood Room Flood Controls (Panel)",
-			"DoorsSimple, Desert Doors",
-			"DoorsComplex, Desert Door to Elevator Room",
-			"DoorsMax, Desert Door to Elevator Room"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryMainEntrance",
-        "access_rules": [
-			"DoorsNo, BWSquare, Shapers",
-			"DoorsPanel, BWSquare, Shapers",
-			"DoorsSimple, Quarry Main Entry",
-			"DoorsComplex, Quarry Main Entry 1, Quarry Main Entry 2",
-			"DoorsMax, Quarry Main Entry 1, Quarry Main Entry 2"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryMillOutsideStairs",
-        "access_rules": [
-			"DoorsNo, @Places/quarryMill",
-			"DoorsPanel, @Places/quarryMill",
-			"DoorsSimple, Quarry Mill Shortcuts",
-			"DoorsComplex, Quarry Mill Rooftop Shortcut",
-			"DoorsMax, Quarry Mill Rooftop Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryMillSmallDoor",
-        "access_rules": [
-			"DoorsNo, [@Places/quarryMill]",
-			"DoorsPanel, [@Places/quarryMill]",
-			"DoorsSimple, Quarry Mill Shortcuts",
-			"DoorsComplex, Quarry Mill Side Door",
-			"DoorsMax, Quarry Mill Side Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryMillBigDoor",
-        "access_rules": [
-			"DoorsNo, BWSquare, Dots, @Places/quarry",
-			"DoorsPanel, Quarry Door to Mill (Panel), BWSquare, Dots, @Places/quarry",
-			"DoorsSimple, Quarry Door to Mill",
-			"DoorsComplex, Quarry Door to Mill",
-			"DoorsMax, Quarry Door to Mill"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryElevator",
-        "access_rules": [
-			"DoorsNo, @Places/quarry, Dots, Eraser",
-			"DoorsPanel, Quarry Mill Elevator Controls (Panel), Dots, Eraser",
-			"DoorsSimple, @Places/quarry, Dots, Eraser",
-			"DoorsComplex, @Places/quarry, Dots, Eraser",
-			"DoorsMax, Quarry Mill Elevator Controls (Panel), Dots, Eraser"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryMillUpstairs",
-        "access_rules": [
-			"DoorsNo, Dots, Eraser",
-			"DoorsPanel, Dots, Eraser, Quarry Mill Ramp Controls (Panel), Quarry Mill Elevator Controls (Panel)",
-			"DoorsSimple, Dots, Eraser",
-			"DoorsSimple, Quarry Mill Shortcuts",
-			"DoorsComplex, Dots, Eraser",
-			"DoorsComplex, Quarry Mill Stairs",
-			"DoorsMax, Dots, Eraser, Quarry Mill Ramp Controls (Panel), Quarry Mill Elevator Controls (Panel)",
-			"DoorsMax, Dots, Eraser, Quarry Mill Stairs"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryBoathouseDock",
-        "access_rules": [
-			"DoorsNo, @Places/quarry",
-			"DoorsPanel, @Places/quarry, Boat",
-			"DoorsSimple, Quarry Boathouse Boat Staircase",
-			"DoorsComplex, Quarry Boathouse Boat Staircase",
-			"DoorsMax, Quarry Boathouse Boat Staircase, Boat"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "quarryBoathouseUpstairs",
-        "access_rules": [
-			"DoorsNo, Shapers, Stars, RotatedShapers, Eraser",
-			"DoorsPanel, Shapers, Stars, RotatedShapers, Eraser, Quarry Boathouse Ramp Height Control (Panel), Quarry Boathouse Ramp Horizontal Control (Panel)",
-			"DoorsSimple, Shapers, Stars, RotatedShapers, Quarry Boathouse Barriers",
-			"DoorsComplex, Shapers, Stars, RotatedShapers, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
-			"DoorsComplex, Shapers, Stars, RotatedShapers, Eraser, Quarry Boathouse First Barrier",
-			"DoorsMax, Shapers, Stars, RotatedShapers, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, Quarry Boathouse Ramp Height Control (Panel)",
-			"DoorsMax, Shapers, Stars, RotatedShapers, Eraser, Quarry Boathouse First Barrier, Quarry Boathouse Ramp Height Control (Panel), Quarry Boathouse Ramp Horizontal Control (Panel)"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "shadowsToQuarry",
-        "access_rules": [
-			"DoorsNo, @Places/shadowsFirstSet, [Unrandomized]",
-			"DoorsPanel, @Places/shadowsFirstSet, [Unrandomized]",
-			"DoorsSimple, Shadows Barriers",
-			"DoorsComplex, Shadows Barrier to Quarry",
-			"DoorsMax, Shadows Barrier to Quarry"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "shadowsTimerDoor",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Shadows Door Timer (Panel)",
-			"DoorsSimple, Shadows Timed Door",
-			"DoorsComplex, Shadows Timed Door",
-			"DoorsMax, Shadows Timed Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "shadowsBarrier",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsSimple, Shadows Barriers",
-			"DoorsComplex, Shadows Barrier to Ledge",
-			"DoorsMax, Shadows Barrier to Ledge"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "shadowsLaserGate",
-        "access_rules": [
-			"DoorsNo, Unrandomized, @Places/shadowsFirstSet",
-			"DoorsPanel, @Places/shadowsFirstSet",
-			"DoorsSimple, Shadows Laser Room Door",
-			"DoorsComplex, Shadows Laser Room Right Door, [Shadows Laser Room Left Door]",
-			"DoorsComplex, Shadows Laser Room Left Door, [Shadows Laser Room Right Door]",
-			"DoorsMax, Shadows Laser Room Right Door, [Shadows Laser Room Left Door]",
-			"DoorsMax, Shadows Laser Room Left Door, [Shadows Laser Room Right Door]"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "shadowsToKeep",
-        "access_rules": [
-			"DoorsNo, @Places/plates4",
-			"DoorsPanel, @Places/plates4",
-			"DoorsSimple, Keep Shortcuts",
-			"DoorsComplex, Keep Shortcut to Shadows",
-			"DoorsMax, Keep Shortcut to Shadows"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "plates1Exit",
-        "access_rules": [
-			"DoorsNo, Dots",
-			"DoorsPanel, Dots",
-			"DoorsSimple, Keep Pressure Plates Doors",
-			"DoorsComplex, Keep Pressure Plates 1 Exit Door",
-			"DoorsMax, Keep Pressure Plates 1 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "plates2Exit",
-        "access_rules": [
-			"DoorsNo, BWSquare, ColoredSquares, Stars, StarSameColor",
-			"DoorsPanel, BWSquare, ColoredSquares, Stars, StarSameColor",
-			"DoorsSimple, Keep Pressure Plates Doors",
-			"DoorsComplex, Keep Pressure Plates 2 Exit Door",
-			"DoorsMax, Keep Pressure Plates 2 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "plates3Exit",
-        "access_rules": [
-			"DoorsNo, Shapers, BWSquare, ColoredSquares",
-			"DoorsPanel, Shapers, BWSquare, ColoredSquares",
-			"DoorsSimple, Keep Pressure Plates Doors",
-			"DoorsComplex, Keep Pressure Plates 3 Exit Door",
-			"DoorsMax, Keep Pressure Plates 3 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "plates4Exit",
-        "access_rules": [
-			"DoorsNo, @Places/plates4, Shapers, Dots, Symmetry",
-			"DoorsPanel, @Places/plates4, Shapers, Dots, Symmetry",
-			"DoorsSimple, Keep Pressure Plates Doors",
-			"DoorsComplex, Keep Pressure Plates 4 Exit Door",
-			"DoorsMax, Keep Pressure Plates 4 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze1Exit",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors",
-			"DoorsComplex, Keep Hedge Maze 1 Exit Door",
-			"DoorsMax, Keep Hedge Maze 1 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze2Exit",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors",
-			"DoorsComplex, Keep Hedge Maze 2 Exit Door",
-			"DoorsMax, Keep Hedge Maze 2 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze3Exit",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors",
-			"DoorsComplex, Keep Hedge Maze 3 Exit Door",
-			"DoorsMax, Keep Hedge Maze 3 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze4Exit",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors",
-			"DoorsComplex, Keep Hedge Maze 4 Exit Door",
-			"DoorsMax, Keep Hedge Maze 4 Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze2Shortcut",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors ",
-			"DoorsComplex, Keep Hedge Maze 2 Shortcut",
-			"DoorsMax, Keep Hedge Maze 2 Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze3Shortcut",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors ",
-			"DoorsComplex, Keep Hedge Maze 3 Shortcut",
-			"DoorsMax, Keep Hedge Maze 3 Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "maze4Shortcut",
-        "access_rules": [
-			"DoorsNo, Unrandomized",
-			"DoorsPanel, Unrandomized",
-			"DoorsSimple, Keep Hedge Maze Doors ",
-			"DoorsComplex, Keep Hedge Maze 4 Shortcut",
-			"DoorsMax, Keep Hedge Maze 4 Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "keepTowerShortcut",
-        "access_rules": [
-			"DoorsNo, @Places/keepTower",
-			"DoorsPanel, @Places/keepTower",
-			"DoorsSimple, Keep Shortcuts",
-			"DoorsComplex, Keep Tower Shortcut",
-			"DoorsMax, Keep Tower Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "treehouseFirstDoors",
-        "access_rules": [
-			"DoorsNo, Stars",
-			"DoorsPanel, Boat, Treehouse First & Second Doors (Panel), Stars",
-			"DoorsSimple, Treehouse Entry Doors",
-			"DoorsComplex, Treehouse First Door, Treehouse Second Door",
-			"DoorsMax, Boat, Treehouse First Door, Treehouse Second Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "treehouseThirdDoor",
-        "access_rules": [
-			"DoorsNo, @Treehouse Entrance/Yellow Bridge, Stars",
-			"DoorsPanel, @Treehouse Entrance/Yellow Bridge, Treehouse Third Door (Panel), Stars",
-			"DoorsSimple, @Treehouse Entrance/Yellow Bridge, Stars",
-			"DoorsComplex, @Treehouse Entrance/Yellow Bridge, Treehouse Beyond Yellow Bridge Door, Stars",
-			"DoorsMax, @Treehouse Entrance/Yellow Bridge, Treehouse Beyond Yellow Bridge Door, Stars"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "treehouseLaserGate",
-        "access_rules": [
-			"DoorsNo, @Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge",
-			"DoorsPanel, @Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge, Treehouse Laser House Door Timer (Panel)",
-			"DoorsSimple, @Treehouse Left Side/Left Orange Bridge, Treehouse Timed Door to Laser House",
-			"DoorsComplex, @Treehouse Left Side/Left Orange Bridge, Treehouse Timed Door to Laser House",
-			"DoorsMax, @Treehouse Left Side/Left Orange Bridge, Treehouse Timed Door to Laser House"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "treehouseExit",
-        "access_rules": [
-			"DoorsNo, @Treehouse Right Side/Right Orange Bridge",
-			"DoorsPanel, @Treehouse Right Side/Right Orange Bridge, Treehouse Shortcut Drop-Down Bridge (Panel)",
-			"DoorsSimple, @Treehouse Right Side/Right Orange Bridge, Treehouse Drawbridge",
-			"DoorsComplex, @Treehouse Right Side/Right Orange Bridge, Treehouse Drawbridge",
-			"DoorsMax, @Treehouse Right Side/Right Orange Bridge, Treehouse Drawbridge"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampEntrance",
-        "access_rules": [
-			"DoorsNo, Shapers",
-			"DoorsPanel, Shapers, Swamp Entry Door (Panel)",
-			"DoorsSimple, Swamp Doors",
-			"DoorsComplex, Swamp Entry Door",
-			"DoorsMax, Swamp Entry Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampSlidingBridge",
-        "access_rules": [
-			"DoorsNo, Shapers",
-			"DoorsPanel, Shapers, Swamp Sliding Bridge (Panel)",
-			"DoorsSimple, Shapers",
-			"DoorsComplex, Shapers",
-			"DoorsMax, Shapers, Swamp Sliding Bridge (Panel)"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampDoorToBroken",
-        "access_rules": [
-			"DoorsNo, Shapers, @Places/swampPlatform",
-			"DoorsPanel, Shapers, @Places/swampPlatform",
-			"DoorsSimple, Swamp Doors",
-			"DoorsComplex, Swamp Door to Broken Shapers",
-			"DoorsMax, Swamp Door to Broken Shapers"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampDoorToRotated",
-        "access_rules": [
-			"DoorsNo, Shapers, @Places/swampBroken",
-			"DoorsPanel, Shapers, @Places/swampBroken",
-			"DoorsSimple, Swamp Doors",
-			"DoorsComplex, Swamp Door to Rotated Shapers",
-			"DoorsMax, Swamp Door to Rotated Shapers"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampRotatingBridge",
-        "access_rules": [
-			"DoorsNo, Shapers, RotatedShapers",
-			"DoorsPanel, Swamp Rotating Bridge (Panel), RotatedShapers",
-			"DoorsSimple, Shapers, RotatedShapers",
-			"DoorsComplex, Shapers, RotatedShapers",
-			"DoorsMax, Swamp Rotating Bridge (Panel), RotatedShapers"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampPlatformShortcut",
-        "access_rules": [
-			"DoorsNo, @Places/swampPlatform, Shapers",
-			"DoorsPanel, @Places/swampPlatform, Shapers",
-			"DoorsSimple, Swamp Doors",
-			"DoorsComplex, Swamp Platform Shortcut Door",
-			"DoorsMax, Swamp Platform Shortcut Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampRotatingBridgeBack",
-        "access_rules": [
-			"DoorsNo, RotatedShapers, Shapers, @Places/swampBack",
-			"DoorsPanel, RotatedShapers, Shapers, @Places/swampBack",
-			"DoorsSimple, RotatedShapers, Shapers, @Places/swampBack",
-			"DoorsComplex, RotatedShapers, Shapers, @Places/swampBack",
-			"DoorsMax, RotatedShapers, Shapers, @Places/swampBack"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampPurple",
-        "access_rules": [
-			"DoorsNo, @Swamp Near Boat/More Rotated Shapers",
-			"DoorsPanel, @Swamp Near Boat/More Rotated Shapers",
-			"DoorsSimple, Swamp Water Pumps",
-			"DoorsComplex, Swamp Purple Water Pump",
-			"DoorsMax, Swamp Rotating Bridge (Panel),Swamp Purple Water Pump"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampBlue",
-        "access_rules": [
-			"DoorsNo, @Swamp Near Boat/More Rotated Shapers",
-			"DoorsPanel, @Swamp Near Boat/More Rotated Shapers",
-			"DoorsSimple, Swamp Water Pumps",
-			"DoorsComplex, Swamp Blue Water Pump",
-			"DoorsMax, Swamp Blue Water Pump"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampCyan",
-        "access_rules": [
-			"DoorsNo, @Swamp Blue Underwater Room/Negative Shapers",
-			"DoorsPanel, @Swamp Blue Underwater Room/Negative Shapers",
-			"DoorsSimple, Swamp Water Pumps",
-			"DoorsComplex, Swamp Cyan Water Pump",
-			"DoorsMax, Swamp Cyan Water Pump"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampRed",
-        "access_rules": [
-			"DoorsNo, @Swamp Cyan Underwater Room/More Negative Shapers",
-			"DoorsPanel, @Swamp Cyan Underwater Room/More Negative Shapers",
-			"DoorsSimple, Swamp Water Pumps",
-			"DoorsComplex, Swamp Red Water Pump",
-			"DoorsMax, Swamp Red Water Pump"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampRedExit",
-        "access_rules": [
-			"DoorsNo, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, @Swamp Red Underwater Room/Even More Negative Shapers",
-			"DoorsPanel, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, @Swamp Red Underwater Room/Even More Negative Shapers, Swamp Maze Control (Panel)",
-			"DoorsSimple, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, Swamp Doors",
-			"DoorsSimple, [@Places/swampRed], @Places/swampLaser, Shapers, RotatedShapers, NegativeShapers, Swamp Doors",
-			"DoorsComplex, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit",
-			"DoorsComplex, [@Places/swampRed], @Places/swampLaser, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit",
-			"DoorsMax, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit, Swamp Maze Control (Panel)",
-			"DoorsMax, [@Places/swampRed], @Places/swampLaser, Shapers, RotatedShapers, NegativeShapers, Swamp Red Underwater Exit, Swamp Maze Control (Panel)"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampLaserShortcut",
-        "access_rules": [
-			"DoorsNo, Shapers, RotatedShapers, NegativeShapers, @Places/swampLaser",
-			"DoorsPanel, Shapers, RotatedShapers, NegativeShapers, @Places/swampLaser",
-			"DoorsSimple, Swamp Near Laser Shortcut",
-			"DoorsComplex, Swamp Near Laser Shortcut",
-			"DoorsMax, Swamp Near Laser Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "windmillDoor",
-        "access_rules": [
-			"DoorsNo, Dots",
-			"DoorsPanel, Dots, Windmill Door (Panel)",
-			"DoorsSimple, Dots",
-			"DoorsComplex, Town Windmill Door",
-			"DoorsMax, Town Windmill Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "theaterEntry",
-        "access_rules": [
-			"DoorsNo, BWSquare, @Places/theaterAntechamber",
-			"DoorsPanel, BWSquare, @Places/theaterAntechamber",
-			"DoorsSimple, Theater Entry Door",
-			"DoorsComplex, Theater Entry Door",
-			"DoorsMax, Theater Entry Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "theaterExit",
-        "access_rules": [
-			"DoorsNo, @Places/theater, BWSquare, [Eraser]","DoorsNo, @Places/theater, BWSquare, [Shapers]",
-			"DoorsPanel, @Places/theater, BWSquare, [Eraser]","DoorsPanel, @Places/theater, BWSquare, [Shapers]",
-			"DoorsSimple, Theater Exit Door",
-			"DoorsComplex, Theater Exit Door Left", "DoorsComplex, Theater Exit Door Right",
-			"DoorsMax, Theater Exit Door Left", "DoorsMax, Theater Exit Door Right"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "redRoofStairs",
-        "access_rules": [
-			"DoorsNo, Shapers",
-			"DoorsPanel, Shapers, Town Maze Panel (Drop-Down Staircase) (Panel)",
-			"DoorsSimple, Shapers, Town Doors",
-			"DoorsComplex, Shapers, Town Maze Staircase",
-			"DoorsMax, Shapers, Town Maze Staircase"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "fullDotStairs",
-        "access_rules": [
-			"DoorsNo, dots, Shapers, RotatedShapers",
-			"DoorsPanel, dots, Shapers, RotatedShapers",
-			"DoorsSimple, Town Doors",
-			"DoorsComplex, Town Wooden Roof Staircase",
-			"DoorsMax, Town Wooden Roof Staircase"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "townLaserTower",
-        "access_rules": [
-			"DoorsNo, Unrandomized, @Town Environmental Set/Hexagonal Reflection Puzzle, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
-			"DoorsNo, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
-			"DoorsPanel, Unrandomized, @Town Environmental Set/Hexagonal Reflection Puzzle, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
-			"DoorsPanel, @Town Wooden Rooftop/Shapers & Dots & Eraser, @Town Church/Square Avoid Puzzle, @Town Red Rooftop/Symmetry Squares",
-			"DoorsSimple, Town Tower Doors",
-			"DoorsComplex, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Wooden Roof Set Door",
-			"DoorsMax, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Wooden Roof Set Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "RGBHouseEntry",
-        "access_rules": [
-			"DoorsNo, Stars, RotatedShapers",
-			"DoorsPanel, Stars, RotatedShapers, Town Door to RGB House (Panel)",
-			"DoorsSimple, Town Doors",
-			"DoorsComplex, Town Tinted Door to RGB House",
-			"DoorsMax, Town Tinted Door to RGB House"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "RGBHouseStairs",
-        "access_rules": [
-			"DoorsNo, SoundDots",
-			"DoorsPanel, SoundDots",
-			"DoorsSimple, Town Doors",
-			"DoorsComplex, Town RGB House Staircase",
-			"DoorsMax, Town RGB House Staircase"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "church",
-        "access_rules": [
-			"DoorsNo, [@Gates/RGBHouseEntry], Stars",
-			"DoorsPanel, [@Gates/RGBHouseEntry], Stars",
-			"DoorsSimple, Town Doors",
-			"DoorsComplex, Town Door to Church",
-			"DoorsMax, Town Door to Church"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "monastery",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Monastery Entry Door Left (Panel), Monastery Entry Door Right (Panel)",
-			"DoorsSimple, Monastery Entry Door",
-			"DoorsComplex, Monastery Inner Door, Monastery Outer Door",
-			"DoorsMax, Monastery Inner Door, Monastery Outer Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "junglePopup",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Jungle Popup Wall (Panel)",
-			"DoorsSimple, Jungle Popup Wall",
-			"DoorsComplex, Jungle Popup Wall",
-			"DoorsMax, Jungle Popup Wall"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "bunkerEntry",
-        "access_rules": [
-			"DoorsNo, BWSquare, ColoredSquares",
-			"DoorsPanel, Bunker Entry Door (Panel)",
-			"DoorsSimple, Bunker Doors",
-			"DoorsComplex, Bunker Bunker Entry Door",
-			"DoorsMax, Bunker Bunker Entry Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "bunkerTintedGlass",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Inside Bunker Door to Bunker Proper (Panel)",
-			"DoorsSimple, Bunker Doors",
-			"DoorsComplex, Bunker Tinted Glass Door",
-			"DoorsMax, Bunker Tinted Glass Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "bunkerUV",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel",
-			"DoorsSimple, Bunker Doors",
-			"DoorsComplex, Bunker Door to Ultraviolet Room",
-			"DoorsMax, Bunker Door to Ultraviolet Room"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "bunkerLaser",
-        "access_rules": [
-			"DoorsNo",
-			"DoorsPanel, Bunker Elevator Control (Panel)",
-			"DoorsSimple, Bunker Doors",
-			"DoorsComplex, Bunker Door to Elevator",
-			"DoorsMax, Bunker Door to Elevator, Bunker Elevator Control (Panel)"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "mountain1Exit",
-        "access_rules": [
-			"DoorsNo, BWSquare, ColoredSquares, Eraser, @Inside Mountain Layer 1/Angled Inside Trash, @Inside Mountain Layer 1/Moving Background, @Inside Mountain Layer 1/Obscured Vision, @Inside Mountain Layer 1/Physically Obstructed",
-			"DoorsPanel, BWSquare, ColoredSquares, Eraser, @Inside Mountain Layer 1/Angled Inside Trash, @Inside Mountain Layer 1/Moving Background, @Inside Mountain Layer 1/Obscured Vision, @Inside Mountain Layer 1/Physically Obstructed",
-			"DoorsSimple, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door",
-			"DoorsComplex, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door",
-			"DoorsMax, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "mountain2Exit",
-        "access_rules": [
-			"DoorsNo, Stars, StarSameColor, RotatedShapers, Eraser, @Inside Mountain Layer 2/Broken Color Puzzles, @Inside Mountain Layer 2/Same Solution Set",
-			"DoorsPanel, Stars, StarSameColor, RotatedShapers, Eraser, @Inside Mountain Layer 2/Broken Color Puzzles, @Inside Mountain Layer 2/Same Solution Set",
-			"DoorsSimple, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Stairs & Doors",
-			"DoorsComplex, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs",
-			"DoorsMax, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "mountainMetaExit",
-        "access_rules": [
-			"DoorsNo, @Inside Mountain Bottom Layer/Giant Puzzle",
-			"DoorsPanel, @Inside Mountain Bottom Layer/Giant Puzzle",
-			"DoorsSimple, Inside Mountain Giant Puzzle Exit Door",
-			"DoorsComplex, Inside Mountain Giant Puzzle Exit Door",
-			"DoorsMax, Inside Mountain Giant Puzzle Exit Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "mountainFinalDoor",
-        "access_rules": [
-			"DoorsNo, Shapers, Stars, BWSquare, ColoredSquares, Dots",
-			"DoorsPanel, Shapers, Stars, BWSquare, ColoredSquares, Dots",
-			"DoorsSimple, Inside Mountain Door to Final Room",
-			"DoorsComplex, Inside Mountain Door to Final Room",
-			"DoorsMax, Inside Mountain Door to Final Room"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "mountainToCaves",
-        "access_rules": [
-			"DoorsNo, Triangles, BWSquare",
-			"DoorsPanel, Triangles, BWSquare",
-			"DoorsSimple, Inside Mountain Bottom Layer Doors to Caves",
-			"DoorsComplex, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area",
-			"DoorsMax, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "swampToCaves",
-        "access_rules": [
-			"Caves",
-			"DoorsNo, Triangles, @Places/caves",
-			"DoorsPanel, Triangles, @Places/caves",
-			"DoorsSimple, Caves Exits to Main Island",
-			"DoorsComplex, Caves Swamp Shortcut",
-			"DoorsMax, Caves Swamp Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "mountainCavesShortcut",
-        "access_rules": [
-			"Caves",
-			"DoorsNo, Triangles, @Places/caves",
-			"DoorsPanel, Triangles, @Places/caves",
-			"DoorsSimple, Caves Exits to Main Island",
-			"DoorsComplex, Caves Mountain Shortcut",
-			"DoorsMax, Caves Mountain Shortcut"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "cavesToChallenge",
-        "access_rules": [
-			"DoorsNo, Stars, Shapers, StarSameColor, Triangles, @Places/caves",
-			"DoorsPanel, Stars, Shapers, StarSameColor, Triangles, @Places/caves",
-			"DoorsSimple, Caves Doors to Challenge",
-			"DoorsComplex, Challenge Entry Door, Caves Pillar Door",
-			"DoorsMax, Challenge Entry Door, Caves Pillar Door"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "challengeToTunnels",
-        "access_rules": [
-			"DoorsNo, Triangles, @Places/challenge",
-			"DoorsPanel, Triangles, @Places/challenge",
-			"DoorsSimple, Challenge Door to Theater Walkway",
-			"DoorsComplex, Challenge Door to Theater Walkway",
-			"DoorsMax, Challenge Door to Theater Walkway"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "tunnelsTownExit",
-        "access_rules": [
-			"DoorsNo, Triangles, @Places/tunnels",
-			"DoorsPanel, Triangles, @Places/tunnels",
-			"DoorsSimple, Theater Walkway Doors",
-			"DoorsComplex, Theater Walkway Door to Town",
-			"DoorsMax, Theater Walkway Door to Town"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "tunnelsTheaterExit",
-        "access_rules": [
-			"DoorsNo, @Places/tunnels",
-			"DoorsPanel, @Places/tunnels",
-			"DoorsSimple, Theater Walkway Doors",
-			"DoorsComplex, Theater Walkway Door to Back of Theater",
-			"DoorsMax, Theater Walkway Door to Back of Theater"
-        ],
-        "item_count": 1
-      },
-	  {
-        "name": "tunnelsDesertExit",
-        "access_rules": [
-			"DoorsNo, @Desert/Laser, @Places/tunnels","DoorsNo, Desert Laser, @Places/tunnels",
-			"DoorsPanel, @Desert/Laser, @Places/tunnels","DoorsPanel, Desert Laser, @Places/tunnels",
-			"DoorsSimple, @Desert/Laser, Theater Walkway Doors","DoorsSimple, Desert Laser, Theater Walkway Doors",
-			"DoorsComplex, @Desert/Laser, Theater Walkway Door to Desert Elevator Room","DoorsComplex, Desert Laser, Theater Walkway Door to Desert Elevator Room",
-			"DoorsMax, @Desert/Laser, Theater Walkway Door to Desert Elevator Room","DoorsMax, Desert Laser, Theater Walkway Door to Desert Elevator Room"
-        ],
-        "item_count": 1
-      },      
-    ],
   },
   {
     "name": "Logic",
@@ -1411,10 +597,18 @@
         "name": "canWaterLevel",
         "access_rules": [			
 			"doorsNo",
-			"doorsPanel, Desert Flood Room Flood Controls (Panel)",
+			"doorsPanel, $hasPanel|Desert Flood Room Flood Controls (Panel)",
 			"doorsSimple",
 			"doorsComplex",
-			"doorsMax, Desert Flood Room Flood Controls (Panel)"
+			"doorsMax, $hasPanel|Desert Flood Room Flood Controls (Panel)"
+		],
+        "item_count": 1
+      },
+      {
+        "name": "SymmetryLowerPanel",
+        "access_rules": [
+			"DoorsNo, Symmetry",
+			"DoorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel)"
 		],
         "item_count": 1
       },
@@ -1428,9 +622,19 @@
 			"doorsMax, Town Cargo Box Door"
 		],
         "item_count": 1
+      },
+      {
+        "name": "boathouseRamp",
+        "access_rules": [			
+			"doorsNo, Stars, Shapers, RotatedShapers",
+			"doorsPanel, Quarry Boathouse Ramp Height Control (Panel)",
+			"doorsSimple, Stars, Shapers, RotatedShapers",
+			"doorsComplex, Stars, Shapers, RotatedShapers",
+			"doorsMax, Quarry Boathouse Ramp Height Control (Panel)"
+		],
+        "item_count": 1
       }
 	  ]
   }
-  
   
 ]

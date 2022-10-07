@@ -2,53 +2,50 @@ function unrandomized_off()
 	return 1 - Tracker:ProviderCountForCode("Unrandomized")
 end
 
-function laser_count(amount, trick)
-	bwSquares = Tracker:ProviderCountForCode("BWSquare")
-	coloredSquares = Tracker:ProviderCountForCode("ColoredSquares")
-	dots = Tracker:ProviderCountForCode("Dots")
-	coloredDots = Tracker:ProviderCountForCode("ColoredDots")
-	soundDots = Tracker:ProviderCountForCode("SoundDots")
-	eraser = Tracker:ProviderCountForCode("Eraser")
-	triangles = Tracker:ProviderCountForCode("Triangles")
-	stars = Tracker:ProviderCountForCode("Stars")
-	starsSameColor = Tracker:ProviderCountForCode("StarSameColor")
-	symmetry = Tracker:ProviderCountForCode("Symmetry")
-	shapers = Tracker:ProviderCountForCode("Shapers")
-	rotatedShapers = Tracker:ProviderCountForCode("RotatedShapers")
-	negativeShapers = Tracker:ProviderCountForCode("NegativeShapers")
-	unrandomizedOff = unrandomized_off()
-	
-	symmetryLaser = symmetry * coloredDots * dots
-	desertLaser = 1
-	shadowsLaser = (1 - unrandomizedOff) + unrandomizedOff * (bwSquares + triangles*dots + triangles*shapers)
-	if shadowsLaser > 1 then
-		shadowsLaser = 1
+function isDoors(check)
+	if check == "on" then
+		result = (Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax"))
+	else
+		result = (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel")) 
+	end 
+	return result
+end
+
+function isLaserShuffle(check)
+	if check == "on" then
+		result = Tracker:ProviderCountForCode("shuffleLasers")
+	else
+		result = 1 - Tracker:ProviderCountForCode("shuffleLasers")
+	end 
+	return result
+end
+
+function laserCount(amount)
+	if Tracker:ProviderCountForCode("shuffleLasers") == 1 then
+		result = Tracker:ProviderCountForCode("Symmetry Laser") + Tracker:ProviderCountForCode("Desert Laser") + Tracker:ProviderCountForCode("Quarry Laser") + Tracker:ProviderCountForCode("Shadows Laser") + Tracker:ProviderCountForCode("Keep Laser") + Tracker:ProviderCountForCode("Monastery Laser") + Tracker:ProviderCountForCode("Town Laser") + Tracker:ProviderCountForCode("Jungle Laser") + Tracker:ProviderCountForCode("Bunker Laser") + Tracker:ProviderCountForCode("Swamp Laser") + Tracker:ProviderCountForCode("Treehouse Laser")
+	else
+		tower = Tracker:FindObjectForCode("@Keep Tower/Laser Pressure Plates").AvailableChestCount + Tracker:FindObjectForCode("@Keep Tower/Laser Hedges").AvailableChestCount - 1
+		if tower < 0 then tower = 0 end
+		result = 11 - (Tracker:FindObjectForCode("@Symmetry Island/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Desert/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Quarry Laser/Laser").AvailableChestCount + tower + Tracker:FindObjectForCode("@Treehouse Laser House/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Swamp Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Town Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Monastery/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Shadows Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Jungle Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Color Bunker/Laser").AvailableChestCount)
 	end
-	keepLaser = dots*bwSquares*coloredSquares*starsSameColor*stars*shapers*symmetry
-	monasteryLaser = 1
-	bunkerLaser = unrandomizedOff * (dots + triangles) + (1 - unrandomizedOff) * (bwSquares*coloredSquares)
-	if bunkerLaser > 1 then
-		bunkerLaser = 1
+	Tracker:FindObjectForCode("lasers").AcquiredCount = result
+	if tonumber(amount) > 0 then
+		return(result >= tonumber(amount))
+	else
+		return false
 	end
-	swampLaser = shapers*rotatedShapers*negativeShapers
-	quarryLaser = dots*(bwSquares + trick)*coloredSquares*eraser*shapers*stars*starsSameColor
-	if quarryLaser > 1 then
-		quarryLaser = 1
-	end
-	treehouseLaser = stars*starsSameColor*bwSquares*dots*coloredSquares
-	
-	townLaser = dots*stars*rotatedShapers*shapers*eraser*symmetry*bwSquares
-	if townLaser > 1 then
-		townLaser = 1
-	end
-	
-	jungleLaser = soundDots
-	
-	amountGotten = symmetryLaser + desertLaser + shadowsLaser + keepLaser + monasteryLaser + bunkerLaser + swampLaser + quarryLaser + treehouseLaser + townLaser + jungleLaser
-	
-	if amountGotten >= amount + 0 then
-		return 1
-	end
-	return shadowsLaser
 end
 	
+function laserBox(box)
+	if box == "short" then
+		return laserCount(tostring(Tracker:ProviderCountForCode("boxShort")))
+	else
+		return laserCount(tostring(Tracker:ProviderCountForCode("boxLong")))
+	end
+end
+
+function hasPanel(panel)
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") > 0 then return true
+	else return Tracker:ProviderCountForCode(panel)
+	end
+end

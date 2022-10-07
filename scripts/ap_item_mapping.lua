@@ -30,7 +30,7 @@ ITEM_MAPPING = {
 	[159151] = {"Monastery Entry Door Right (Panel)", "toggle"},
 	[159162] = {"Town Door to RGB House (Panel)", "toggle"},
 	[159163] = {"Town Door to Church (Panel)", "toggle"},
-	[159166] = {"Town Maze Panel (Drop", "toggle"},
+	[159166] = {"Town Maze Panel (Drop-Down Staircase) (Panel)", "toggle"},
 	[159169] = {"Windmill Door (Panel)", "toggle"},
 	[159200] = {"Treehouse First & Second Doors (Panel)", "toggle"},
 	[159202] = {"Treehouse Third Door (Panel)", "toggle"},
@@ -156,12 +156,13 @@ ITEM_MAPPING = {
 	[159867] = {"Theater Walkway Door to Desert Elevator Room", "toggle"},
 	[159870] = {"Theater Walkway Door to Town", "toggle"},
 
+
 	[159903] = {"Outside Tutorial Outpost Doors", "toggle"},
 	[159906] = {"Symmetry Island Doors", "toggle"},
 	[159909] = {"Orchard Gates", "toggle"},
-	[159912] = {"Desert Doors", "toggle"},
+	[159912] = {"Desert Doors", "toggle"},	
 	[159915] = {"Quarry Main Entry", "toggle"},
-	[159918] = {"Quarry Mill Shortcuts", "toggle"},
+	[159918] = {"Quarry Mill Shortcuts", "toggle"},	
 	[159921] = {"Quarry Boathouse Barriers", "toggle"},
 	[159924] = {"Shadows Laser Room Door", "toggle"},
 	[159927] = {"Shadows Barriers", "toggle"},
@@ -183,6 +184,19 @@ ITEM_MAPPING = {
 	[159981] = {"Caves Doors to Challenge", "toggle"},
 	[159984] = {"Caves Exits to Main Island", "toggle"},
 	[159987] = {"Theater Walkway Doors", "toggle"},
+	
+	
+	[159500] = {"Symmetry Laser", "toggle"},
+	[159501] = {"Desert Laser", "toggle"},
+	[159502] = {"Quarry Laser", "toggle"},
+	[159503] = {"Shadows Laser", "toggle"},
+	[159504] = {"Keep Laser", "toggle"},
+	[159505] = {"Monastery Laser", "toggle"},
+	[159506] = {"Town Laser", "toggle"},
+	[159507] = {"Jungle Laser", "toggle"},
+	[159508] = {"Bunker Laser", "toggle"},
+	[159509] = {"Swamp Laser", "toggle"},
+	[159510] = {"Treehouse Laser", "toggle"},
 }
 
 SETTINGS_MAPPING = {
@@ -194,5 +208,9 @@ SETTINGS_MAPPING = {
 	["early_secret_area"]="Caves",
 	["shuffle_doors"]="shuffleDoorsSetting",
 	["shuffle_postgame"]="postGame",
-	["shuffle_symbols"]="Symbols"
+	["shuffle_symbols"]="Symbols",
+	["victory_condition"]="hiddenGoal",
+	["mountain_lasers"]="hiddenShort",
+	["challenge_lasers"]="hiddenLong",
+	
 }
