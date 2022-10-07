@@ -40,10 +40,9 @@
     },
 	
 	{
-        "name": "Tutorial Back Door to Outpost 1",
+        "name": "Tutorial Outpost Exit",
 		"access_rules": [
-				"Outside Tutorial Outpost Doors",
-				"Outside Tutorial Optional Door"
+				"Outside Tutorial Outpost Exit Door"
 		],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -62,14 +61,13 @@
     },
 	
 	{
-        "name": "Tutorial Back Door to Outpost 2",
+        "name": "Tutorial Back Door to Outpost 1",
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "door",
 				"access_rules": [
-					"Outside Tutorial Outpost Doors",
-					"Outside Tutorial Outpost Entry Door"
+					"Outside Tutorial Optional Door"
 					],
                 "item_count": 1
             }
@@ -84,10 +82,9 @@
     },
 
 	{
-        "name": "Tutorial Outpost Exit",
+        "name": "Tutorial Back Door to Outpost 2",
 		"access_rules": [
-			"Outside Tutorial Outpost Doors",
-			"Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door"
+			"Outside Tutorial Outpost Entry Door"
 		],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -2032,7 +2029,6 @@
         "name": "Color bunker entrance",
 		"access_rules": [
 			"Bunker Entry Door (Panel)",
-			"Bunker Doors",
 			"Bunker Bunker Entry Door"],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -2054,7 +2050,6 @@
         "name": "Blue stained glass door",
 		"access_rules": [
 			"Inside Bunker Door to Bunker Proper (Panel)",
-			"Bunker Doors",
 			"Bunker Tinted Glass Door"],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -2075,7 +2070,6 @@
 	{
         "name": "Untraviolet Room Entry Door",
 		"access_rules": [
-			"Bunker Doors",
 			"Bunker Door to Ultraviolet Room",],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -2096,7 +2090,6 @@
 	{
         "name": "Elevator Entry Door",
 		"access_rules": [
-			"Bunker Doors",
 			"Bunker Door to Elevator"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [

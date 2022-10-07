@@ -216,22 +216,22 @@
     "stages": [
       {
         "img": "images/wonkavator.png",
-        "codes": "wonkavator",
+        "codes": "hiddenWonkavator",
         "inherit_codes": false
       },
       {
         "img": "images/challengeBox.png",
-        "codes": "challengeBox",
+        "codes": "hiddenChallengeBox",
         "inherit_codes": false
       },
       {
         "img": "images/mountainShort.png",
-        "codes": "Short",
+        "codes": "hiddenShortGoal",
         "inherit_codes": false
       },
       {
         "img": "images/mountainLong.png",
-        "codes": "Long",
+        "codes": "hiddenLongGoal",
         "inherit_codes": false
       },
     ]

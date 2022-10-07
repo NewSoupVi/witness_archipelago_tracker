@@ -1,22 +1,5 @@
 [
 	{
-        "name": "Test",
-		"access_rules": ["$laserCount|5"],
-        "sections": [
-            {
-                "name": "",
-                "item_count": 1
-            }
-        ],
-        "map_locations": [
-            {
-                "map": "fullmap",
-                "x": 200,
-                "y": 200,
-            },
-        ]
-    },
-	{
         "name": "Tutorial Gate",
 		"access_rules": ["@Places/overworld"],
         "sections": [
@@ -530,7 +513,8 @@
         "sections": [
             {
                 "name": "Avoid Puzzles",
-				"access_rules": ["@Places/shadowsFirstSet, [@Gates/shadowsTimerDoor]"],
+				"access_rules": ["$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], @Places/shadowsFirstSet",
+								 "$isDoors|on, [Shadows Timed Door], @Places/shadowsFirstSet"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
@@ -562,7 +546,7 @@
         "sections": [
             {
                 "name": "Environmental Avoid Puzzles",
-				"access_rules": ["@Shadows First Set/Avoid Puzzles, [@Gates/shadowsTimerDoor]"],
+				"access_rules": ["@Shadows First Set/Avoid Puzzles"],
                 "item_count": 1
             },
         ],
@@ -581,7 +565,7 @@
         "sections": [
             {
                 "name": "Follow Puzzles",
-				"access_rules": ["@Shadows First Set/Avoid Puzzles, [@Gates/shadowsTimerDoor]"],
+				"access_rules": ["@Shadows First Set/Avoid Puzzles"],
                 "item_count": 1
             },
         ],
@@ -1109,13 +1093,13 @@
 			{
                 "name": "Jungle Video",
 				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
-				"access_rules": ["[@River Vault/Vault Box]"],
+				"access_rules": ["[@Between Jungle and Monastery/Vault Box]"],
                 "item_count": 1
             },
 			{
                 "name": "Challenge Video",
 				"visibility_rules": ["Unrandomized,Uncommon,Vaults"],
-				"access_rules": ["[@Mountain Secret Area Vault Box/Challenge Vault]"],
+				"access_rules": ["[@Mountain Challenge Area/Challenge Vault Victory!]"],
                 "item_count": 1
             },
 			{
@@ -1661,7 +1645,19 @@
         "sections": [
             {
                 "name": "River Shape",
-				"visibility_rules": ["Unrandomized,Uncommon"],
+				"visibility_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Laser Box Short Victory!",
+				"access_rules": ["$laserBox|short"],
+				"visibility_rules": ["Short"],
+                "item_count": 1
+            },
+            {
+                "name": "Laser Box Long Victory!",
+				"access_rules": ["$laserBox|long"],
+				"visibility_rules": ["Long"],
                 "item_count": 1
             },
             {
@@ -1796,6 +1792,7 @@
 			{
                 "name": "Final Elevator: Victory!",
 				"access_rules": ["@Places/mountainFinalRoom, @Inside Mountain Bottom Layer/Final Room Pillars Left, @Inside Mountain Bottom Layer/Final Room Pillars Right"],
+				"visibility_rules": ["wonkavator"],
                 "item_count": 1
             }
         ],
@@ -1849,13 +1846,13 @@
             },
 			{
                 "name": "Secret Area Entrance Door Panel",
-				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Mountain meta exit, Inside Mountain Bottom Layer Rock Open","@UTM access, Inside Mountain Door to Secret Area"],
+				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Secret Area Rock Timer Panel",
-				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Mountain meta exit, Inside Mountain Bottom Layer Rock Open","@UTM access, Inside Mountain Door to Secret Area"],
+				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -2026,7 +2023,9 @@
                 "item_count": 1
             },
 			{
-                "name": "Challenge Vault",
+                "name": "Challenge Vault Victory!",
+				"access_rules": ["laserBox|long, BWSquare, ColoredSquares, Dots, Stars, Shapers, Triangles, Symmetry, ColoredDots"],
+				"visibility_rules": ["challengeBox"],
                 "item_count": 1
             }
         ],
