@@ -36,7 +36,10 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("doorsPanel").Active = false
 	Tracker:FindObjectForCode("doorsSimple").Active = false
 	Tracker:FindObjectForCode("doorsComplex").Active = false
-	Tracker:FindObjectForCode("doorsMax").Active = false
+	Tracker:FindObjectForCode("goal").Active = false
+	Tracker:FindObjectForCode("boxShort").Active = false
+	Tracker:FindObjectForCode("boxLong").Active = false
+	
 	
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
@@ -81,6 +84,9 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+	Tracker:FindObjectForCode("goal").CurrentStage = 0
+	Tracker:FindObjectForCode("boxShort").AcquiredCount = 0
+	Tracker:FindObjectForCode("boxLong").AcquiredCount = 0
 	
 	
 	for k, v in pairs(SETTINGS_MAPPING) do

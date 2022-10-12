@@ -106,7 +106,7 @@
         "name": "Glass Factory Door",
 		"access_rules": [
 			"Glass Factory Entry Door (Panel)",
-			"Symmetry, Glass Factory Entry Door"
+			"Glass Factory Entry Door"
 			],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
