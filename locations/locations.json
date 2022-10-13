@@ -1117,13 +1117,13 @@
 			{
                 "name": "Exit Door Left",
 				"access_rules": ["BWSquare, Eraser"],
-				"visibility_rules": ["$isDoors|on, Uncommon,Vaults,Unrandomized"],
+				"visibility_rules": ["$isDoors|on"],
                 "item_count": 1
             },
 			{
                 "name": "Exit Door Right",
 				"access_rules": ["BWSquare, Shapers"],
-				"visibility_rules": ["$isDoors|on, Uncommon,Vaults,Unrandomized"],
+				"visibility_rules": ["$isDoors|on"],
                 "item_count": 1
             },
 
@@ -1645,7 +1645,7 @@
         "sections": [
             {
                 "name": "River Shape",
-				"visibility_rules": [],
+				"visibility_rules": ["Uncommon"],
                 "item_count": 1
             },
             {
@@ -2024,7 +2024,7 @@
             },
 			{
                 "name": "Challenge Vault Victory!",
-				"access_rules": ["laserBox|long, BWSquare, ColoredSquares, Dots, Stars, Shapers, Triangles, Symmetry, ColoredDots"],
+				"access_rules": ["$laserBox|long, BWSquare, ColoredSquares, Dots, Stars, Shapers, Triangles, Symmetry, ColoredDots"],
 				"visibility_rules": ["challengeBox"],
                 "item_count": 1
             }

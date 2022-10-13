@@ -152,7 +152,7 @@
       {
         "name": "quarryBoathouseUpstairsBack",
         "access_rules": [
-			"@Places/quarryBoathouseUpstairsFront, Shapers, Eraser, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
+			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
@@ -581,7 +581,7 @@
         "name": "challenge",
         "access_rules": [
 			"$isDoors|off, Triangles, Stars, StarSameColor, Shapers, @Places/caves",
-			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
+			"$isDoors|on, Challenge Entry Door, Caves Pillar Door,  @Places/caves",
 			"$isDoors|on, Challenge Door to Theater Walkway, @Places/tunnels"
 		],
         "item_count": 1
@@ -591,6 +591,7 @@
         "access_rules": [
 			"$isDoors|off, Triangles, @Places/challenge",
 			"$isDoors|on, Theater Walkway Door to Town",
+			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill",
 			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge"
 		],
