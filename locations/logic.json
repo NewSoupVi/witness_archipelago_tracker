@@ -242,7 +242,7 @@
 			"$isDoors|off, Unrandomized, @Places/maze4",
 			"$isDoors|on, Keep Pressure Plates 4 Exit Door, @Places/plates4",
 			"$isDoors|on, Keep Tower Shortcut",
-			"$isDoors|on,, Keep Hedge Maze 4 Exit Door @Places/maze4"
+			"$isDoors|on, Keep Hedge Maze 4 Exit Door, @Places/maze4"
 		],
         "item_count": 1
       },
