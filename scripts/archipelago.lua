@@ -84,10 +84,10 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+	
 	Tracker:FindObjectForCode("goal").CurrentStage = 0
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = 0
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = 0
-	
 	
 	for k, v in pairs(SETTINGS_MAPPING) do
 		obj = Tracker:FindObjectForCode(v)
@@ -144,7 +144,7 @@ function onClear(slot_data)
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	end
 	
-	if not Tracker:FindObjectForCode("Uncommon").Active then showGoal() end
+	if (not Tracker:FindObjectForCode("Uncommon").Active) or (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
 	
 	
 end

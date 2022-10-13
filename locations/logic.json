@@ -396,6 +396,7 @@
         "name": "windmill",
         "access_rules": [
 			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|off, @Places/tunnels",
 			"$isDoors|on, Town Windmill Door",
 			"$isDoors|on, Theater Entry Door, @Places/theater",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/tunnels"
@@ -405,7 +406,7 @@
       {
         "name": "theater",
         "access_rules": [
-			"$isDoors|off, BWSquare, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|off, BWSquare, @Places/windmill",
 			"$isDoors|on, Theater Exit Door Left",
 			"$isDoors|on, Theater Exit Door Right",
 			"$isDoors|on, Theater Entry Door, @Places/windmill"
@@ -568,10 +569,9 @@
       {
         "name": "caves",
         "access_rules": [
-			
 			"Caves Mountain Shortcut",
 			"Caves Swamp Shortcut",
-			"$isDoors|off,$laserCount|11, BWSquare, Triangles, @Places/mountainPenultimateRoom",
+			"$isDoors|off,$laserBox|long, BWSquare, Triangles, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/challenge"
 		],

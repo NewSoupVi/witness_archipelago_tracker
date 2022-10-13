@@ -212,5 +212,6 @@ SETTINGS_MAPPING = {
 	["victory_condition"]="hiddenGoal",
 	["mountain_lasers"]="hiddenShort",
 	["challenge_lasers"]="hiddenLong",
+	["shuffle_lasers"]="shuffleLasers",
 	
 }
