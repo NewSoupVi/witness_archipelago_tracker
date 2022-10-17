@@ -1846,7 +1846,7 @@
             },
 			{
                 "name": "Secret Area Entrance Door Panel",
-				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
+				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","BWSquare, Triangles, @Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },

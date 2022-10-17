@@ -416,8 +416,8 @@
       {
         "name": "redRoof",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel)",
-			"$isDoors|on, Town Maze Staircase"
+			"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), Shapers",
+			"$isDoors|on, Town Maze Staircase, Shapers"
 		],
         "item_count": 1
       },
