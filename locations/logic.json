@@ -108,6 +108,7 @@
         "name": "quarry",
         "access_rules": [
 			"$isDoors|off, Shapers, @Places/quarryMain1",
+			"$isDoors|off, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
 			"$isDoors|on, Quarry Main Entry 2, @Places/quarryMain1",
 			"$isDoors|on, Quarry Boathouse Boat Staircase, @Places/ocean",
 			"$isDoors|on, Quarry Mill Side Door, @Places/quarryMill",

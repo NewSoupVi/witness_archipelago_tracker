@@ -1466,7 +1466,7 @@
         "sections": [
             {
                 "name": "Yellow Bridge",
-				"access_rules": ["@Places/treehouseSecond, Stars"],
+				"access_rules": ["@Places/treehouseThird, Stars"],
                 "item_count": 1
             },
 			{
@@ -1737,7 +1737,9 @@
             },
 			{
                 "name": "Elevator Discard",
-				"access_rules": ["@Places/mountainMeta, Triangles"],
+				"access_rules": ["@Places/mountainMeta, Triangles, Dots",
+								 "$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge, Triangles",
+								 "$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door, Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
