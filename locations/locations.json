@@ -1392,7 +1392,7 @@
         "sections": [
             {
                 "name": "Negative Shapers",
-				"access_rules": ["@Places/swampBlue, Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampBlue, Shapers,NegativeShapers"],
                 "item_count": 1
             }
         ],
@@ -1409,7 +1409,7 @@
         "sections": [
             {
                 "name": "More Negative Shapers",
-				"access_rules": ["@Places/swampCyan, Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampCyan, Shapers,NegativeShapers"],
                 "item_count": 1
             }
         ],
@@ -1426,7 +1426,7 @@
         "sections": [
             {
                 "name": "Even More Negative Shapers",
-				"access_rules": ["@Places/swampRed, Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampRed, Shapers,NegativeShapers"],
                 "item_count": 1
             },
         ],
