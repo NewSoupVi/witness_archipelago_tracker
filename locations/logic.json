@@ -303,7 +303,7 @@
         "name": "treehouseLaser",
         "access_rules": [
 			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, Stars, $hasPanel|Treehouse Laser House Door Timer (Panel)",
-			"$isDoors|off, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
+			"$isDoors|on, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
 		],
         "item_count": 1
       },
