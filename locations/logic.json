@@ -137,7 +137,7 @@
       {
         "name": "quarryMillUpstairs",
         "access_rules": [
-			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), $hasPanel|Quarry Mill Elevator Controls (Panel)",
+			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Elevator Controls (Panel)",
 			"$isDoors|on, Quarry Mill Stairs, @Places/quarryMill"
 			
 		],
@@ -410,7 +410,7 @@
 			"$isDoors|off, BWSquare, @Places/windmill",
 			"$isDoors|on, Theater Exit Door Left",
 			"$isDoors|on, Theater Exit Door Right",
-			"$isDoors|on, Theater Entry Door, @Places/windmill"
+			"$isDoors|on, Theater Entry Door, Theater Walkway Door to Back of Theater, @Places/tunnels"
 		],
         "item_count": 1
       },
