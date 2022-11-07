@@ -20,6 +20,15 @@ function isLaserShuffle(check)
 	return result
 end
 
+function isExpert(check)
+	if check == "on" then
+		result = Tracker:ProviderCountForCode("Expert")
+	else
+		result = 1 - Tracker:ProviderCountForCode("Expert")
+	end 
+	return result
+end
+
 function laserCount(amount)
 	if Tracker:ProviderCountForCode("shuffleLasers") == 1 then
 		result = Tracker:ProviderCountForCode("Symmetry Laser") + Tracker:ProviderCountForCode("Desert Laser") + Tracker:ProviderCountForCode("Quarry Laser") + Tracker:ProviderCountForCode("Shadows Laser") + Tracker:ProviderCountForCode("Keep Laser") + Tracker:ProviderCountForCode("Monastery Laser") + Tracker:ProviderCountForCode("Town Laser") + Tracker:ProviderCountForCode("Jungle Laser") + Tracker:ProviderCountForCode("Bunker Laser") + Tracker:ProviderCountForCode("Swamp Laser") + Tracker:ProviderCountForCode("Treehouse Laser")
@@ -49,3 +58,16 @@ function hasPanel(panel)
 	else return Tracker:ProviderCountForCode(panel)
 	end
 end
+
+function dots(level)
+	return Tracker:FindObjectForCode("ProgressiveDots").CurrentStage >= tonumber(level)
+end
+
+function stars(level)
+	return Tracker:FindObjectForCode("ProgressiveStars").CurrentStage >= tonumber(level)
+end
+
+function pp2()
+	return true
+end
+	

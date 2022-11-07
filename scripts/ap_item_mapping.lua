@@ -14,6 +14,8 @@ ITEM_MAPPING = {
 	[158072] = {"ColoredSquares", "toggle"},
 	[158101] = {"Brain", "toggle"},
 	[158510] = {"Skip", "consumable"},
+    [158200] = {"ProgressiveDots", "progressive"},
+    [158260] = {"ProgressiveStars", "progressive"},
 	
 	[159100] = {"Glass Factory Entry Door (Panel)", "toggle"},
 	[159105] = {"Door to Symmetry Island Lower (Panel)", "toggle"},

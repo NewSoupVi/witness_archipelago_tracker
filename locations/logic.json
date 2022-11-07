@@ -20,7 +20,7 @@
       {
         "name": "tutorialOutpost",
         "access_rules": [
-			"$isDoors|off,Dots",
+			"$isDoors|off,$dots|1",
 			"$isDoors|on,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door",
 			"$isDoors|on,Outside Tutorial Outpost Exit Door"
 			
@@ -47,7 +47,7 @@
       {
         "name": "symmetryOuter",
         "access_rules": [
-			"$isDoors|off, @Logic/SymmetryLowerPanel, Dots",
+			"$isDoors|off, @Logic/SymmetryLowerPanel, $dots|1",
 			"$isDoors|on, Symmetry Island Lower Door"
 		],
         "item_count": 1
@@ -55,7 +55,7 @@
       {
         "name": "symmetryInner",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Door to Symmetry Island Upper (Panel), Symmetry, Dots",
+			"$isDoors|off, $hasPanel|Door to Symmetry Island Upper (Panel), Symmetry, $dots|1",
 			"$isDoors|on, Symmetry Island Upper Door, Symmetry Island Lower Door"
 		],
         "item_count": 1
@@ -120,7 +120,7 @@
       {
         "name": "quarryMill",
         "access_rules": [
-			"$isDoors|off, [BWSquare], [Dots], @Places/quarry",
+			"$isDoors|off, [BWSquare], [$dots|1], @Places/quarry",
 			"$isDoors|on, Quarry Mill Rooftop Shortcut",
 			"$isDoors|on, Quarry Mill Side Door, @Places/quarry",
 			"$isDoors|on, Quarry Door to Mill, @Places/quarry"
@@ -130,14 +130,14 @@
       {
         "name": "quarryMillMid",
         "access_rules": [
-			"Dots, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), @Places/quarryMill"
+			"$dots|1, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), @Places/quarryMill"
 		],
         "item_count": 1
       },
       {
         "name": "quarryMillUpstairs",
         "access_rules": [
-			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Elevator Controls (Panel)",
+			"@Places/quarryMill, $dots|1, Eraser, $hasPanel|Quarry Mill Elevator Controls (Panel)",
 			"$isDoors|on, Quarry Mill Stairs, @Places/quarryMill"
 			
 		],
@@ -211,7 +211,7 @@
       {
         "name": "plates2",
         "access_rules": [
-			"$isDoors|off, Dots",
+			"$isDoors|off, $dots|1",
 			"$isDoors|on, Keep Pressure Plates 1 Exit Door",
 			"$isDoors|on, [Keep Pressure Plates 2 Exit Door], @Places/plates3"
 		],
@@ -239,7 +239,7 @@
       {
         "name": "keepTower",
         "access_rules": [
-			"$isDoors|off, Shapers, Dots, Symmetry, @Places/plates4",
+			"$isDoors|off, Shapers, $dots|1, Symmetry, @Places/plates4",
 			"$isDoors|off, Unrandomized, @Places/maze4",
 			"$isDoors|on, Keep Pressure Plates 4 Exit Door, @Places/plates4",
 			"$isDoors|on, Keep Tower Shortcut",
@@ -257,7 +257,7 @@
       {
         "name": "treehouseSecond",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseDock, $hasPanel|Treehouse First & Second Doors (Panel), Stars",
+			"$isDoors|off, @Places/treehouseDock, $hasPanel|Treehouse First & Second Doors (Panel), $stars|1",
 			"$isDoors|on, @Places/treehouseDock, Treehouse First Door"
 		],
         "item_count": 1
@@ -265,7 +265,7 @@
       {
         "name": "treehouseThird",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), Stars",
+			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), $stars|1",
 			"$isDoors|on, @Places/treehouseSecond, Treehouse Second Door"
 		],
         "item_count": 1
@@ -273,15 +273,15 @@
       {
         "name": "treehouseMain",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseThird, $hasPanel|Treehouse Third Door (Panel), Stars",
-			"$isDoors|on, @Places/treehouseThird, Treehouse Beyond Yellow Bridge Door, Stars"
+			"$isDoors|off, @Places/treehouseThird, $hasPanel|Treehouse Third Door (Panel), $stars|1",
+			"$isDoors|on, @Places/treehouseThird, Treehouse Beyond Yellow Bridge Door, $stars|1"
 		],
         "item_count": 1
       },
       {
         "name": "treehouseLeft1",
         "access_rules": [
-			"@Places/treehouseMain, Dots, Stars"
+			"@Places/treehouseMain, $dots|1, $stars|1"
 		],
         "item_count": 1
       },
@@ -295,14 +295,14 @@
       {
         "name": "treehouseOutsideLaser",
         "access_rules": [
-			"@Places/treehouseLeft2, BWSquare,ColoredSquares,StarSameColor"
+			"@Places/treehouseLeft2, BWSquare,ColoredSquares,$stars|2"
 		],
         "item_count": 1
       },
       {
         "name": "treehouseLaser",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, Stars, $hasPanel|Treehouse Laser House Door Timer (Panel)",
+			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, $stars|1, $hasPanel|Treehouse Laser House Door Timer (Panel)",
 			"$isDoors|on, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
 		],
         "item_count": 1
@@ -396,7 +396,7 @@
       {
         "name": "windmill",
         "access_rules": [
-			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|off, $dots|1, $hasPanel|Windmill Door (Panel)",
 			"$isDoors|off, @Places/tunnels",
 			"$isDoors|on, Town Windmill Door",
 			"$isDoors|on, Theater Entry Door, @Places/theater",
@@ -425,7 +425,7 @@
       {
         "name": "woodenRoof",
         "access_rules": [
-			"$isDoors|off, Dots, Shapers, RotatedShapers",
+			"$isDoors|off, $dots|2, Shapers, RotatedShapers",
 			"$isDoors|on, Town Wooden Roof Staircase"
 		],
         "item_count": 1
@@ -433,7 +433,7 @@
       {
         "name": "townLaser",
         "access_rules": [
-			"$isDoors|off, Symmetry, BWSquare, Dots, Shapers, RotatedShapers, Eraser, Stars",
+			"$isDoors|off, Symmetry, BWSquare, $dots|2, Shapers, RotatedShapers, Eraser, $stars|1",
 			"$isDoors|on, Town Tower Blue Panels Door,Town Tower Lattice Door,Town Tower Environmental Set Door,Town Tower Wooden Roof Set Door"
 		],
         "item_count": 1
@@ -441,7 +441,7 @@
       {
         "name": "RGBHouse",
         "access_rules": [
-			"$isDoors|off, Stars, RotatedShapers, $hasPanel|Town Door to RGB House (Panel)",
+			"$isDoors|off, $stars|1, RotatedShapers, $hasPanel|Town Door to RGB House (Panel)",
 			"$isDoors|on, Town Tinted Door to RGB House"
 		],
         "item_count": 1
@@ -457,7 +457,7 @@
       {
         "name": "church",
         "access_rules": [
-			"$isDoors|off, [@Places/RGBHouse], Stars, $hasPanel|Town Door to Church (Panel)",
+			"$isDoors|off, [@Places/RGBHouse], $stars|1, $hasPanel|Town Door to Church (Panel)",
 			"$isDoors|on, Town Door to Church"
 		],
         "item_count": 1
@@ -513,14 +513,14 @@
       {
         "name": "mountainLayer1",
         "access_rules": [
-			"$laserBox|short, Stars, StarSameColor, BWSquare"
+			"$laserBox|short, $stars|2, BWSquare"
 		],
         "item_count": 1
       },
       {
         "name": "mountainLayer2",
         "access_rules": [
-			"$isDoors|off, BWSquare, ColoredSquares, Eraser, Shapers, RotatedShapers, Symmetry, Dots, @Places/mountainLayer1",
+			"$isDoors|off, BWSquare, ColoredSquares, Eraser, Shapers, RotatedShapers, Symmetry, $dots|1, @Places/mountainLayer1",
 			"$isDoors|on, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
 		],
         "item_count": 1
@@ -528,7 +528,7 @@
       {
         "name": "mountain2FrontStairs",
         "access_rules": [
-			"$isDoors|off, Stars, ColoredSquares, StarSameColor, Shapers, Symmetry, ColoredDots, @Places/mountainLayer2",
+			"$isDoors|off, ColoredSquares, $stars|2, Shapers, Symmetry, ColoredDots, @Places/mountainLayer2",
 			"$isDoors|on, Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2"
 		],
         "item_count": 1
@@ -536,16 +536,16 @@
       {
         "name": "mountain2BackStairs",
         "access_rules": [
-			"$isDoors|off, ColoredSquares,ColoredDots, Dots, BWSquare, Stars, RotatedShapers, ColoredSquares, StarSameColor, Shapers, Eraser, @Places/mountain2FrontStairs",
-			"$isDoors|on, Stars, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs"
+			"$isDoors|off, ColoredSquares,ColoredDots, $dots|1, BWSquare, RotatedShapers, ColoredSquares, $stars|2, Shapers, Eraser, @Places/mountain2FrontStairs",
+			"$isDoors|on, $stars|2, RotatedShapers, Eraser, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs"
 		],
         "item_count": 1
       },
       {
         "name": "mountainMeta",
         "access_rules": [
-			"$isDoors|off, Stars, StarSameColor, RotatedShapers, Eraser, @Places/mountain2BackStairs",
-			"$isDoors|on, Stars, StarSameColor, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs",
+			"$isDoors|off, $stars|2, RotatedShapers, Eraser, @Places/mountain2BackStairs",
+			"$isDoors|on, $stars|2, RotatedShapers, Eraser, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs",
 			"$isDoors|on, Inside Mountain Giant Puzzle Exit Door, @Places/mountainPenultimateRoom"
 		],
         "item_count": 1
@@ -581,7 +581,7 @@
       {
         "name": "challenge",
         "access_rules": [
-			"$isDoors|off, Triangles, Stars, StarSameColor, Shapers, @Places/caves",
+			"$isDoors|off, Triangles, $stars|2, Shapers, @Places/caves",
 			"$isDoors|on, Challenge Entry Door, Caves Pillar Door,  @Places/caves",
 			"$isDoors|on, Challenge Door to Theater Walkway, @Places/tunnels"
 		],
@@ -636,10 +636,10 @@
       {
         "name": "boathouseRamp",
         "access_rules": [			
-			"doorsNo, Stars, Shapers, RotatedShapers",
+			"doorsNo, $stars|1, Shapers, RotatedShapers",
 			"doorsPanel, Quarry Boathouse Ramp Height Control (Panel)",
-			"doorsSimple, Stars, Shapers, RotatedShapers",
-			"doorsComplex, Stars, Shapers, RotatedShapers",
+			"doorsSimple, $stars|1, Shapers, RotatedShapers",
+			"doorsComplex, $stars|1, Shapers, RotatedShapers",
 			"doorsMax, Quarry Boathouse Ramp Height Control (Panel)"
 		],
         "item_count": 1
