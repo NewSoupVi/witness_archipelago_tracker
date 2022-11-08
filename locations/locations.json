@@ -1768,11 +1768,11 @@
         "sections": [
             {
                 "name": "Giant Puzzle",
-				"access_rules": ["@Places/mountainMeta, Shapers, Eraser, RotatedShapers"],
+				"access_rules": ["@Places/mountainMeta, Shapers, Eraser, RotatedShapers, Symmetry"],
                 "item_count": 1
             },
 			{
-                "name": "Discard",
+                "name": "Statue Discard",
 				"access_rules": ["@Places/mountainPenultimateRoom, Discarded"],
 				"visibility_rules": ["Triangles, doorsSimple, doorsComplex, doorsMax"],
                 "item_count": 1
@@ -1843,7 +1843,7 @@
             },
 			{
                 "name": "Dot Grid Triangles 4",
-				"access_rules": ["Triangles,$dots|1"],
+				"access_rules": ["Triangles,$dots|2"],
                 "item_count": 1
             },
 			{
@@ -1967,12 +1967,12 @@
         "sections": [
             {
                 "name": "Dot Grid Rotated Shapers",
-				"access_rules": ["$dots|1,BWSquare,$stars|2,Shapers,RotatedShapers"],
+				"access_rules": ["$dots|2,BWSquare,$stars|2,Shapers,RotatedShapers"],
                 "item_count": 1
             },
 			{
                 "name": "Dot Grid Negative Shapers",
-				"access_rules": ["$dots|1, Shapers, NegativeShapers"],
+				"access_rules": ["$dots|2, Shapers, NegativeShapers"],
                 "item_count": 1
             },
 			{
@@ -2000,15 +2000,15 @@
         "sections": [
 			{
                 "name": "Pillar",
-				"access_rules": ["@Places/caves, triangles"],
+				"access_rules": ["@Places/caves, Triangles"],
                 "item_count": 1
             },
             {
                 "name": "Challenge Entry Panel",
 				"access_rules": [
-			"@Places/caves, Caves Doors to Challenge, Shapers, $stars|2",
-			"@Places/caves, Caves Pillar Door, Shapers, $stars|2",
-			"@Places/challenge, Challenge Entry Door, Shapers, $stars|2",],
+					"@Places/caves, Caves Doors to Challenge, Shapers, $stars|2",
+					"@Places/caves, Caves Pillar Door, Shapers, $stars|2",
+					"@Places/challenge, Challenge Entry Door, Shapers, $stars|2",],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -2037,7 +2037,7 @@
 			{
                 "name": "Challenge Vault Victory!",
 				"access_rules": ["$laserBox|long, BWSquare, ColoredSquares, $dots|1, $stars|1, Shapers, Triangles, Symmetry, ColoredDots"],
-				"visibility_rules": ["challengeBox"],
+				"visibility_rules": [],
                 "item_count": 1
             }
         ],
