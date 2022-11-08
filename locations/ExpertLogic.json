@@ -256,7 +256,7 @@
       {
         "name": "treehouseSecond",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseDock, $hasPanel|Treehouse First & Second Doors (Panel), $stars|1",
+			"$isDoors|off, @Places/treehouseDock, $hasPanel|Treehouse First & Second Doors (Panel), $stars|1, Triangles",
 			"$isDoors|on, @Places/treehouseDock, Treehouse First Door"
 		],
         "item_count": 1
@@ -264,7 +264,7 @@
       {
         "name": "treehouseThird",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), $stars|1",
+			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), $stars|1, Triangles",
 			"$isDoors|on, @Places/treehouseSecond, Treehouse Second Door"
 		],
         "item_count": 1
@@ -272,8 +272,8 @@
       {
         "name": "treehouseMain",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseThird, $hasPanel|Treehouse Third Door (Panel), $stars|1",
-			"$isDoors|on, @Places/treehouseThird, Treehouse Beyond Yellow Bridge Door, $stars|1"
+			"$isDoors|off, @Places/treehouseThird, $hasPanel|Treehouse Third Door (Panel), $stars|2, Triangles, ColoredSquares",
+			"$isDoors|on, @Places/treehouseThird, Treehouse Beyond Yellow Bridge Door, $stars|2, Triangles"
 		],
         "item_count": 1
       },
@@ -294,14 +294,14 @@
       {
         "name": "treehouseOutsideLaser",
         "access_rules": [
-			"@Places/treehouseLeft2, BWSquare,ColoredSquares,$stars|2"
+			"@Treehouse Left Side/Purple Bridge 2, $stars|2, BWSquare, ColoredSquares, Shapers, RotatedShapers, Triangles"
 		],
         "item_count": 1
       },
       {
         "name": "treehouseLaser",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, $stars|1, $hasPanel|Treehouse Laser House Door Timer (Panel)",
+			"$isDoors|off, @Places/treehouseOutsideLaser, @Treehouse Right Side/Right Orange Bridge, $hasPanel|Treehouse Laser House Door Timer (Panel)",
 			"$isDoors|on, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
 		],
         "item_count": 1
@@ -311,14 +311,14 @@
         "access_rules": [
 			"$isDoors|off, RotatedShapers, BWSquare, Triangles, $hasPanel|Swamp Entry Door (Panel)",
 			"$isDoors|on, Swamp Entry Door",
-			"$isDoors|on, Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
+			"$isDoors|on, Shapers, BWSquare, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
 		],
         "item_count": 1
       },
       {
         "name": "swampPlatform",
         "access_rules": [
-			"Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
+			"Shapers, BWSquare, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampBroken",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/ocean"
 		],
@@ -337,8 +337,8 @@
         "name": "swampRotated",
         "access_rules": [
 			"$isDoors|off, Shapers, @Places/swampBroken",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Swamp Platform Shortcut Door, @Places/swampPlatform",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/ocean",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Triangles, ColoredSquares, $stars|2, Swamp Platform Shortcut Door, @Places/swampPlatform",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Triangles, ColoredSquares, $stars|2,, @Places/ocean",
 			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform"
 		],
         "item_count": 1
@@ -348,15 +348,15 @@
         "access_rules": [
 			"@Places/ocean",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampPlatform",
-			"$hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampRotated"
+			"$hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Triangles, ColoredSquares, $stars|2,, @Places/swampRotated"
 		],
         "item_count": 1
       },
       {
         "name": "swampPurple",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Swamp Purple Water Pump, @Places/swampBack"
+			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Triangles, ColoredSquares, $stars|2,, @Places/swampBack",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Triangles, ColoredSquares, $stars|2,, Swamp Purple Water Pump, @Places/swampBack"
 		],
         "item_count": 1
       },
@@ -512,7 +512,7 @@
       {
         "name": "mountainLayer1",
         "access_rules": [
-			"$laserBox|short, $stars|2, BWSquare"
+			"$laserBox|short, $stars|2, BWSquare, Triangles"
 		],
         "item_count": 1
       },
@@ -520,7 +520,7 @@
         "name": "mountainLayer2",
         "access_rules": [
 			"$isDoors|off, BWSquare, ColoredSquares, Eraser, Shapers, RotatedShapers, Symmetry, $dots|1, @Places/mountainLayer1",
-			"$isDoors|on, BWSquare, ColoredSquares, Eraser, Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
+			"$isDoors|on, Triangles, Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
 		],
         "item_count": 1
       },

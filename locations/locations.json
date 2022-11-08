@@ -1516,12 +1516,12 @@
         "sections": [
             {
                 "name": "Purple Bridge 1",
-				"access_rules": ["$dots|1"],
+				"access_rules": ["$dots|1, $stars|1"],
                 "item_count": 1
             },
 			{
                 "name": "Purple Bridge 2",
-				"access_rules": ["$dots|1,BWSquare,ColoredSquares"],
+				"access_rules": ["$dots|1,BWSquare,ColoredSquares,$stars|1"],
                 "item_count": 1
             },
 			{

@@ -1334,23 +1334,23 @@
         "sections": [
             {
                 "name": "Platform Set",
-				"access_rules": ["@Places/swampPlatform, Shapers"],
+				"access_rules": ["@Places/swampPlatform, RotatedShapers"],
                 "item_count": 1
             },
 			{
                 "name": "Shortcut Door Panels",
-				"access_rules": ["@Places/swampPlatform, Shapers"],
+				"access_rules": ["@Places/swampPlatform, RotatedShapers"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Broken Shapers Introduction",
-				"access_rules": ["@Places/swampBroken, Shapers, @Swamp Platform Area/Platform Set"],
+				"access_rules": ["@Places/swampBroken, RotatedShapers, @Swamp Platform Area/Platform Set"],
                 "item_count": 1
             },
 			{
                 "name": "Rotated Shapers Introduction",
-				"access_rules": ["@Places/swampRotated, Shapers, RotatedShapers, @Swamp Platform Area/Broken Shapers Introduction"],
+				"access_rules": ["@Places/swampRotated, Shapers, RotatedShapers, $dots|2, @Swamp Platform Area/Broken Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -1367,7 +1367,7 @@
         "sections": [
             {
                 "name": "More Rotated Shapers",
-				"access_rules": ["@Places/swampBack, Shapers,RotatedShapers,@Swamp Platform Area/Rotated Shapers Introduction"],
+				"access_rules": ["@Places/swampBack, Shapers,RotatedShapers, $dots|2, @Swamp Platform Area/Rotated Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -1384,7 +1384,7 @@
         "sections": [
             {
                 "name": "Tetris!!!",
-				"access_rules": ["@Places/swampPurple, Shapers"],
+				"access_rules": ["@Places/swampPurple, Shapers, RotatedShapers, $dots|2, Triangles, BWSquare"],
 				"visibility_rules": [""],
                 "item_count": 1
             }
@@ -1419,7 +1419,7 @@
         "sections": [
             {
                 "name": "More Negative Shapers",
-				"access_rules": ["@Places/swampCyan, Shapers,NegativeShapers"],
+				"access_rules": ["@Places/swampCyan, Shapers,NegativeShapers, BWSquare, Triangles"],
                 "item_count": 1
             }
         ],
@@ -1436,7 +1436,7 @@
         "sections": [
             {
                 "name": "Even More Negative Shapers",
-				"access_rules": ["@Places/swampRed, Shapers,NegativeShapers"],
+				"access_rules": ["@Places/swampRed, Shapers,NegativeShapers, $dots|2"],
                 "item_count": 1
             },
         ],
@@ -1458,7 +1458,7 @@
             },
 			{
                 "name": "Shortcut Door Panels",
-				"access_rules": ["Shapers, RotatedShapers, NegativeShapers"],
+				"access_rules": ["Shapers, NegativeShapers, $stars|2"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -1476,19 +1476,19 @@
         "sections": [
             {
                 "name": "Yellow Bridge",
-				"access_rules": ["@Places/treehouseThird, $stars|1"],
+				"access_rules": ["@Places/treehouseThird, $stars|2, Triangles"],
                 "item_count": 1
             },
 			{
                 "name": "First Door Panel",
-				"access_rules": ["@Places/treehouseDock, $stars|1"],
+				"access_rules": ["@Places/treehouseDock, $stars|2, Triangles"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Second Door Panel",
 				"access_rules": [
-					"[@Places/treehouseSecond], @Places/treehouseDock, $stars|1",
+					"[@Places/treehouseSecond], @Places/treehouseDock, $stars|2, Triangles",
 				],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -1496,7 +1496,7 @@
 			{
                 "name": "Third Door Panel",
 				"access_rules": [
-					"[@Places/treehouseThird], @Places/treehouseDock, $stars|1"
+					"[@Places/treehouseThird], @Places/treehouseDock, $stars|2, Triangles, ColoredSquares"
 				],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -1516,17 +1516,17 @@
         "sections": [
             {
                 "name": "Purple Bridge 1",
-				"access_rules": ["$dots|1"],
+				"access_rules": ["$dots|2, $stars|1"],
                 "item_count": 1
             },
 			{
                 "name": "Purple Bridge 2",
-				"access_rules": ["$dots|1,BWSquare,ColoredSquares"],
+				"access_rules": ["@Treehouse Left Side/Purple Bridge 1, $dots|1,BWSquare,ColoredSquares, $stars|2, Triangles"],
                 "item_count": 1
             },
 			{
                 "name": "Left Orange Bridge",
-				"access_rules": ["$dots|1,BWSquare,ColoredSquares,$stars|2"],
+				"access_rules": ["$stars|2, BWSquare, ColoredSquares, Shapers, RotatedShapers, Triangles, @Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"],
                 "item_count": 1
             },
         ],
@@ -1544,17 +1544,17 @@
         "sections": [
 			{
                 "name": "Right Orange Bridge",
-				"access_rules": ["@Places/treehouseMain"],
+				"access_rules": ["@Places/treehouseMain, $stars|2, Triangles"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge",
-				"access_rules": ["@Places/treehouseMain, Shapers,RotatedShapers,NegativeShapers,$stars|2"],
+				"access_rules": ["@Places/treehouseMain, Shapers,NegativeShapers,$stars|2, Triangles"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge Discard",
-				"access_rules": ["@Places/treehouseMain, $stars|1, Triangles, @Treehouse Right Side/Green Bridge"],
+				"access_rules": ["@Places/treehouseMain, Arrows, @Treehouse Right Side/Green Bridge"],
                 "visibility_rules": ["Discarded"],
                 "item_count": 1
             },
@@ -1598,7 +1598,7 @@
 			{
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["@Treehouse Left Side/Left Orange Bridge,Triangles"],
+				"access_rules": ["@Treehouse Left Side/Left Orange Bridge,Arrows"],
                 "item_count": 1
             },
         ],
@@ -1617,7 +1617,7 @@
             {
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["@Places/overworld,Triangles"],
+				"access_rules": ["@Places/overworld,Arrows"],
                 "item_count": 1
             }
         ],
@@ -1635,7 +1635,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["@Places/overworld,Symmetry,ColoredDots,BWSquare,$dots|1"],
+				"access_rules": ["@Places/overworld,ColoredSquares, Symmetry, $stars|2, Triangles"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             }
@@ -1672,7 +1672,7 @@
             },
             {
                 "name": "Mountain Entry",
-				"access_rules": ["$laserBox|short, BWSquare, $stars|2"],
+				"access_rules": ["$laserBox|short, BWSquare, $stars|2, Triangles"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1688,7 +1688,7 @@
 	
 	{
         "name": "Inside Mountain Layer 1",
-		"access_rules": ["@Places/mountainLayer1, BWSquare,Eraser,ColoredSquares"],
+		"access_rules": ["@Places/mountainLayer1, Triangles"],
         "sections": [
             {
                 "name": "Angled Inside Trash",
