@@ -1932,7 +1932,7 @@
         "sections": [
             {
                 "name": "Wooden Beam Shapers",
-				"access_rules": ["Stars"],
+				"access_rules": ["$stars|1"],
                 "item_count": 1
             },
 			{
