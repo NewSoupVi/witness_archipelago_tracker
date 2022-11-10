@@ -2035,7 +2035,7 @@
                 "item_count": 1
             },
 			{
-                "name": "Challenge Vault Victory!",
+                "name": "Challenge Vault",
 				"access_rules": ["$laserBox|long, BWSquare, ColoredSquares, $dots|1, $stars|1, Shapers, Triangles, Symmetry, ColoredDots"],
 				"visibility_rules": [],
                 "item_count": 1

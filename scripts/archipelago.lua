@@ -144,7 +144,7 @@ function onClear(slot_data)
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	end
 	
-	if (not Tracker:FindObjectForCode("Uncommon").Active) or (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
+	if (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
 	
 	
 end

@@ -205,7 +205,6 @@ ITEM_MAPPING = {
 SETTINGS_MAPPING = {
 	["disable_non_randomized_puzzles"] = "Unrandomized",
 	["shuffle_vault_boxes"] = "Vaults",
-	["shuffle_uncommon"] = "Uncommon",
 	["shuffle_postgame"] = "Postgame",
 	["shuffle_discarded_panels"] = "Discarded",
 	["early_secret_area"]="Caves",
