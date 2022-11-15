@@ -108,6 +108,7 @@
         "name": "quarry",
         "access_rules": [
 			"$isDoors|off, Shapers, @Places/quarryMain1",
+			"$isDoors|off, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
 			"$isDoors|on, Quarry Main Entry 2, @Places/quarryMain1",
 			"$isDoors|on, Quarry Boathouse Boat Staircase, @Places/ocean",
 			"$isDoors|on, Quarry Mill Side Door, @Places/quarryMill",
@@ -127,9 +128,16 @@
         "item_count": 1
       },
       {
+        "name": "quarryMillMid",
+        "access_rules": [
+			"Dots, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), @Places/quarryMill"
+		],
+        "item_count": 1
+      },
+      {
         "name": "quarryMillUpstairs",
         "access_rules": [
-			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Ramp Controls (Panel), $hasPanel|Quarry Mill Elevator Controls (Panel)",
+			"@Places/quarryMill, Dots, Eraser, $hasPanel|Quarry Mill Elevator Controls (Panel)",
 			"$isDoors|on, Quarry Mill Stairs, @Places/quarryMill"
 			
 		],
@@ -145,7 +153,7 @@
       {
         "name": "quarryBoathouseUpstairsBack",
         "access_rules": [
-			"@Places/quarryBoathouseUpstairsFront, Shapers, Eraser, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
+			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Shapers, Eraser, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
@@ -175,8 +183,8 @@
         "access_rules": [
 			"$isDoors|off, Unrandomized",
 			"$isDoors|on, Keep Hedge Maze 1 Exit Door",
-			"$isDoors|on, Keep Hedge Maze 2 Exit Door, @Places/maze3",
-			"$isDoors|on, Keep Hedge Maze 2 Shortcut"
+			"$isDoors|on, Keep Hedge Maze 2 Shortcut",
+			"$isDoors|on, Keep Hedge Maze 2 Exit Door, @Places/maze3"
 		],
         "item_count": 1
       },
@@ -184,9 +192,9 @@
         "name": "maze3",
         "access_rules": [
 			"$isDoors|off, Unrandomized",
+			"$isDoors|on, Keep Hedge Maze 3 Shortcut",
 			"$isDoors|on, Keep Hedge Maze 2 Exit Door, @Places/maze2",
-			"$isDoors|on, Keep Hedge Maze 3 Exit Door, @Places/maze4",
-			"$isDoors|on, Keep Hedge Maze 3 Shortcut"
+			"$isDoors|on, Keep Hedge Maze 3 Exit Door, @Places/maze4"
 		],
         "item_count": 1
       },
@@ -194,9 +202,9 @@
         "name": "maze4",
         "access_rules": [
 			"$isDoors|off, Unrandomized",
+			"$isDoors|on, Keep Hedge Maze 4 Shortcut",
 			"$isDoors|on, Keep Hedge Maze 3 Exit Door, @Places/maze3",
-			"$isDoors|on, Keep Hedge Maze 4 Exit Door, @Places/keepTower",
-			"$isDoors|on, Keep Hedge Maze 4 Shortcut"
+			"$isDoors|on, Keep Hedge Maze 4 Exit Door, @Places/keepTower"
 		],
         "item_count": 1
       },
@@ -222,9 +230,9 @@
         "name": "plates4",
         "access_rules": [
 			"$isDoors|off, Shapers, BWSquare, ColoredSquares, @Places/plates3",
-			"$isDoors|on, Keep Pressure Plates 3 Exit Door, @Places/plates3",
 			"$isDoors|on, Keep Pressure Plates 4 Exit Door, @Places/keepTower",
-			"$isDoors|on, Keep Shortcut to Shadows"
+			"$isDoors|on, Keep Shortcut to Shadows",
+			"$isDoors|on, Keep Pressure Plates 3 Exit Door, @Places/plates3"
 		],
         "item_count": 1
       },
@@ -235,7 +243,7 @@
 			"$isDoors|off, Unrandomized, @Places/maze4",
 			"$isDoors|on, Keep Pressure Plates 4 Exit Door, @Places/plates4",
 			"$isDoors|on, Keep Tower Shortcut",
-			"$isDoors|on,, Keep Hedge Maze 4 Exit Door @Places/maze4"
+			"$isDoors|on, Keep Hedge Maze 4 Exit Door, @Places/maze4"
 		],
         "item_count": 1
       },
@@ -295,7 +303,7 @@
         "name": "treehouseLaser",
         "access_rules": [
 			"$isDoors|off, @Places/treehouseOutsideLaser, @Places/treehouseMain, Stars, $hasPanel|Treehouse Laser House Door Timer (Panel)",
-			"$isDoors|off, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
+			"$isDoors|on, @Places/treehouseOutsideLaser, Treehouse Timed Door to Laser House"
 		],
         "item_count": 1
       },
@@ -313,7 +321,7 @@
         "access_rules": [
 			"Shapers, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampBroken",
-			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampBack"
+			"$isDoors|on, Swamp Platform Shortcut Door, @Places/ocean"
 		],
         "item_count": 1
       },
@@ -330,7 +338,8 @@
         "name": "swampRotated",
         "access_rules": [
 			"$isDoors|off, Shapers, @Places/swampBroken",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/swampBack",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, Swamp Platform Shortcut Door, @Places/swampPlatform",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), Shapers, RotatedShapers, @Places/ocean",
 			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform"
 		],
         "item_count": 1
@@ -355,7 +364,7 @@
       {
         "name": "swampBlue",
         "access_rules": [
-			"$isDoors|off, @Places/swampBack, Shapers, RotatedShapers",
+			"$isDoors|off, @Places/swampBack, Shapers, RotatedShapers, @Places/swampRotated, @Places/swampBroken, @Places/swampPlatform",
 			"$isDoors|on, @Places/swampBack, Swamp Blue Water Pump"
 		],
         "item_count": 1
@@ -371,7 +380,7 @@
       {
         "name": "swampRed",
         "access_rules": [
-			"$isDoors|off, @Places/swampRotated, @Places/swampRed, Shapers, RotatedShapers, NegativeShapers",
+			"$isDoors|off, @Places/swampRotated, @Places/swampCyan, Shapers, RotatedShapers, NegativeShapers",
 			"$isDoors|on, @Places/swampRotated, Swamp Red Water Pump"
 		],
         "item_count": 1
@@ -388,6 +397,7 @@
         "name": "windmill",
         "access_rules": [
 			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|off, @Places/tunnels",
 			"$isDoors|on, Town Windmill Door",
 			"$isDoors|on, Theater Entry Door, @Places/theater",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/tunnels"
@@ -397,18 +407,18 @@
       {
         "name": "theater",
         "access_rules": [
-			"$isDoors|off, Dots, $hasPanel|Windmill Door (Panel)",
+			"$isDoors|off, BWSquare, @Places/windmill",
 			"$isDoors|on, Theater Exit Door Left",
 			"$isDoors|on, Theater Exit Door Right",
-			"$isDoors|on, Theater Entry Door, @Places/windmill"
+			"$isDoors|on, Theater Entry Door, Theater Walkway Door to Back of Theater, @Places/tunnels"
 		],
         "item_count": 1
       },
       {
         "name": "redRoof",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel)",
-			"$isDoors|on, Town Maze Staircase"
+			"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), Shapers",
+			"$isDoors|on, Town Maze Staircase, Shapers"
 		],
         "item_count": 1
       },
@@ -560,10 +570,9 @@
       {
         "name": "caves",
         "access_rules": [
-			
 			"Caves Mountain Shortcut",
 			"Caves Swamp Shortcut",
-			"$isDoors|off,$laserCount|11, BWSquare, Triangles, @Places/mountainPenultimateRoom",
+			"$isDoors|off,$laserBox|long, BWSquare, Triangles, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/challenge"
 		],
@@ -573,7 +582,7 @@
         "name": "challenge",
         "access_rules": [
 			"$isDoors|off, Triangles, Stars, StarSameColor, Shapers, @Places/caves",
-			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/caves",
+			"$isDoors|on, Challenge Entry Door, Caves Pillar Door,  @Places/caves",
 			"$isDoors|on, Challenge Door to Theater Walkway, @Places/tunnels"
 		],
         "item_count": 1
@@ -582,9 +591,10 @@
         "name": "tunnels",
         "access_rules": [
 			"$isDoors|off, Triangles, @Places/challenge",
-			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge",
 			"$isDoors|on, Theater Walkway Door to Town",
-			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill"
+			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
+			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill",
+			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge"
 		],
         "item_count": 1
       }      

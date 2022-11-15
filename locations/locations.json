@@ -352,7 +352,7 @@
         "sections": [
 			{
                 "name": "Eraser and Dots Row",
-				"access_rules": ["@Places/quarryMill, Eraser,Dots"],
+				"access_rules": ["@Places/quarryMill, [@Places/quarryMillMid], Eraser,Dots"],
                 "item_count": 1
             },
 			{
@@ -920,7 +920,7 @@
             },
             {
                 "name": "Door Panel",
-				"access_rules": ["@Places/overworld, [@Places/church], Stars"],
+				"access_rules": ["@Places/overworld, [@Places/RGBHouse], Stars"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1117,13 +1117,13 @@
 			{
                 "name": "Exit Door Left",
 				"access_rules": ["BWSquare, Eraser"],
-				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+				"visibility_rules": ["$isDoors|on"],
                 "item_count": 1
             },
 			{
                 "name": "Exit Door Right",
 				"access_rules": ["BWSquare, Shapers"],
-				"visibility_rules": ["Uncommon,Vaults,Unrandomized"],
+				"visibility_rules": ["$isDoors|on"],
                 "item_count": 1
             },
 
@@ -1392,7 +1392,7 @@
         "sections": [
             {
                 "name": "Negative Shapers",
-				"access_rules": ["@Places/swampBlue, Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampBlue, Shapers,NegativeShapers"],
                 "item_count": 1
             }
         ],
@@ -1409,7 +1409,7 @@
         "sections": [
             {
                 "name": "More Negative Shapers",
-				"access_rules": ["@Places/swampCyan, Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampCyan, Shapers,NegativeShapers"],
                 "item_count": 1
             }
         ],
@@ -1426,7 +1426,7 @@
         "sections": [
             {
                 "name": "Even More Negative Shapers",
-				"access_rules": ["@Places/swampRed, Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["@Places/swampRed, Shapers,NegativeShapers"],
                 "item_count": 1
             },
         ],
@@ -1466,7 +1466,7 @@
         "sections": [
             {
                 "name": "Yellow Bridge",
-				"access_rules": ["@Places/treehouseSecond, Stars"],
+				"access_rules": ["@Places/treehouseThird, Stars"],
                 "item_count": 1
             },
 			{
@@ -1645,7 +1645,7 @@
         "sections": [
             {
                 "name": "River Shape",
-				"visibility_rules": [],
+				"visibility_rules": ["Uncommon"],
                 "item_count": 1
             },
             {
@@ -1737,7 +1737,9 @@
             },
 			{
                 "name": "Elevator Discard",
-				"access_rules": ["@Places/mountainMeta, Triangles"],
+				"access_rules": ["@Places/mountainMeta, Triangles, Dots",
+								 "$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge, Triangles",
+								 "$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door, Triangles"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
@@ -1846,7 +1848,7 @@
             },
 			{
                 "name": "Secret Area Entrance Door Panel",
-				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
+				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","BWSquare, Triangles, @Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -2024,7 +2026,7 @@
             },
 			{
                 "name": "Challenge Vault Victory!",
-				"access_rules": ["laserBox|long, BWSquare, ColoredSquares, Dots, Stars, Shapers, Triangles, Symmetry, ColoredDots"],
+				"access_rules": ["$laserBox|long, BWSquare, ColoredSquares, Dots, Stars, Shapers, Triangles, Symmetry, ColoredDots"],
 				"visibility_rules": ["challengeBox"],
                 "item_count": 1
             }
