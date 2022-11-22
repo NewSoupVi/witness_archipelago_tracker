@@ -70,4 +70,61 @@ end
 function pp2()
 	return true
 end
+
+function hasSymbol(symbol)
+	if symbol == "Dots" then
+		return dots(1)
+	elseif symbol == "Full Dots" then
+		return dots(2)
+	elseif symbol == "Stars" then
+		return stars(1)
+	elseif symbol == "Stars + Same Colored Symbol" then
+		return stars(2)
+	elseif symbol == "Black/White Squares" then
+		return Tracker:ProviderCountForCode("BWSquare")
+	elseif symbol == "Colored Squares" then
+		return Tracker:ProviderCountForCode("ColoredSquares")
+	elseif symbol == "Symmetry" then
+		return Tracker:ProviderCountForCode("Symmetry")
+	elseif symbol == "Colored Dots" then
+		return Tracker:ProviderCountForCode("ColoredDots")
+	elseif symbol == "Sound Dots" then
+		return Tracker:ProviderCountForCode("SoundDots")
+	elseif symbol == "Shapers" then
+		return Tracker:ProviderCountForCode("Shapers")
+	elseif symbol == "Rotated Shapers" then
+		return Tracker:ProviderCountForCode("RotatedShapers")
+	elseif symbol == "Negative Shapers" then
+		return Tracker:ProviderCountForCode("NegativeShapers")
+	elseif symbol == "Eraser" then
+		return Tracker:ProviderCountForCode("Eraser")
+	elseif symbol == "Triangles" then
+		return Tracker:ProviderCountForCode("Triangles")
+	elseif symbol == "Arrows" then
+		return Tracker:ProviderCountForCode("Arrows")
+	else
+		return true
+	end
+end
+
+function getLogicFile()
+	if Tracker:ProviderCountForCode("Expert") == 1 then
+		return "WitnessLogicExpert"
+	else
+		return "WitnessLogic"
+	end
+end
+
+function canSolve(ids)
+	require(getLogicFile())
+	for id in string.gmatch(ids, '([^,]+)') do
+		requiredSymbols = getLogic()[tonumber(id)]
+		for k, v in pairs(requiredSymbols) do
+			if(not hasSymbol(v)) then
+				return false
+			end
+		end
+	end
+	return true
+end
 	

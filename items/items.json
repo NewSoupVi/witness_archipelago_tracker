@@ -224,7 +224,7 @@
         "img": "images/mountainLong.png",
         "codes": "Long",
         "inherit_codes": false
-      },
+      }
     ]
   },
   {
@@ -277,7 +277,7 @@
         "img": "images/mountainLong.png",
         "codes": "hiddenLongGoal",
         "inherit_codes": false
-      },
+      }
     ]
   },
   {
@@ -1599,5 +1599,5 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Treehouse Laser"
-  },
+  }
 ]

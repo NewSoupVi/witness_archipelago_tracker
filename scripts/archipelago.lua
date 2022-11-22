@@ -146,7 +146,6 @@ function onClear(slot_data)
 	
 	if (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
 	
-	
 end
 
 -- called when an item gets collected

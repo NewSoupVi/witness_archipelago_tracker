@@ -188,18 +188,7 @@ ITEM_MAPPING = {
 	[159984] = {"Caves Exits to Main Island", "toggle"},
 	[159987] = {"Theater Walkway Doors", "toggle"},
 	
-	
-	[159500] = {"Symmetry Laser", "toggle"},
-	[159501] = {"Desert Laser", "toggle"},
-	[159502] = {"Quarry Laser", "toggle"},
-	[159503] = {"Shadows Laser", "toggle"},
-	[159504] = {"Keep Laser", "toggle"},
-	[159505] = {"Monastery Laser", "toggle"},
-	[159506] = {"Town Laser", "toggle"},
-	[159507] = {"Jungle Laser", "toggle"},
-	[159508] = {"Bunker Laser", "toggle"},
-	[159509] = {"Swamp Laser", "toggle"},
-	[159510] = {"Treehouse Laser", "toggle"},
+
 }
 
 SETTINGS_MAPPING = {
@@ -209,11 +198,11 @@ SETTINGS_MAPPING = {
 	["shuffle_discarded_panels"] = "Discarded",
 	["early_secret_area"]="Caves",
 	["shuffle_doors"]="shuffleDoorsSetting",
-	["shuffle_postgame"]="postGame",
 	["shuffle_symbols"]="Symbols",
 	["victory_condition"]="hiddenGoal",
 	["mountain_lasers"]="hiddenShort",
 	["challenge_lasers"]="hiddenLong",
 	["shuffle_lasers"]="shuffleLasers",
+	["puzzle_randomization"] = "puzzleRandomization"
 	
 }
