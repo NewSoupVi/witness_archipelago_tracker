@@ -131,7 +131,6 @@ end
 
 function canSolve(ids)
 	ids = parseIds(ids)
-	print(ids)
 	require(getLogicFile())
 	for id in ids:gmatch("%S+") do
 		requiredSymbols = getLogic()[tonumber(id)]

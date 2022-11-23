@@ -204,7 +204,7 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Symmetry Panels, @Places/overworld"],
+				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld"],
                 "name": "Lower Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -304,7 +304,7 @@
 			{
                 "name": "Light Room Entry Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["@Desert/Outside Puzzles, $canSolve|158086,@Places/overworld"],
+				"access_rules": ["@Desert/Surface Puzzles, $canSolve|158086,@Places/overworld"],
                 "item_count": 1
             },
 			{
@@ -564,7 +564,7 @@
         "sections": [
             {
                 "name": "Shadows Far",
-				"access_rules": ["$canSolve|158174-158181,@Shadows First Set/Avoid Puzzles"],
+				"access_rules": ["$canSolve|158174-158181,@Shadows First Set/Shadows Intro"],
                 "item_count": 1
             }
         ],
@@ -583,7 +583,7 @@
         "sections": [
             {
                 "name": "Shadows Near",
-				"access_rules": ["$canSolve|158188-158192,@Shadows First Set/Avoid Puzzles"],
+				"access_rules": ["$canSolve|158188-158192,@Shadows First Set/Shadows Intro"],
                 "item_count": 1
             }
         ],
@@ -893,7 +893,8 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["$canSolve|158606, @Logic/townCargo"],
+				"access_rules": ["$canSolve|158606, $canSolve|158219",
+                                 "$canSolve|158606, Town Cargo Box Door"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
@@ -1113,7 +1114,7 @@
 			{
                 "name": "Challenge Video",
 				"visibility_rules": ["Unrandomized,Vaults"],
-				"access_rules": ["[@Mountain Challenge Area/Challenge Vault Victory]"],
+				"access_rules": ["[@Mountain Challenge Area/Challenge Vault]"],
                 "item_count": 1
             },
 			{
@@ -1322,7 +1323,7 @@
             },
             {
                 "name": "Intro Back",
-				"access_rules": ["$canSolve|158294-158301@Places/swampEntry"],
+				"access_rules": ["$canSolve|158294-158301,@Places/swampEntry"],
                 "item_count": 1
             },
             {
@@ -1361,7 +1362,7 @@
             },
 			{
                 "name": "Between Bridges Far Row",
-				"access_rules": ["$canSolve|158319-158322,@Places/swampRotated, @Swamp Platform Area/Broken Shapers Introduction"],
+				"access_rules": ["$canSolve|158319-158322,@Places/swampRotated, @Swamp Platform Area/Between Bridges Near Row"],
                 "item_count": 1
             }
         ],
@@ -1378,7 +1379,7 @@
         "sections": [
             {
                 "name": "Beyond Rotating Bridge",
-				"access_rules": ["$canSolve|158329-158332,@Places/swampBack,@Swamp Platform Area/Rotated Shapers Introduction"],
+				"access_rules": ["$canSolve|158329-158332,@Places/swampBack,@Swamp Platform Area/Between Bridges Far Row"],
                 "item_count": 1
             }
         ],

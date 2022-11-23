@@ -20,7 +20,7 @@
       {
         "name": "tutorialOutpost",
         "access_rules": [
-			"$isDoors|off,@Tutorial Outpost/Entry Door Panel",
+			"$isDoors|off,$canSolve|158011",
 			"$isDoors|on,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door",
 			"$isDoors|on,Outside Tutorial Outpost Exit Door"
 			
@@ -99,7 +99,7 @@
       {
         "name": "quarryMain1",
         "access_rules": [
-			"$isDoors|off, @Quarry Entrance/Door 1",
+			"$isDoors|off, $canSolve|158118",
 			"$isDoors|on, Quarry Main Entry 1"
 		],
         "item_count": 1
@@ -107,7 +107,7 @@
       {
         "name": "quarry",
         "access_rules": [
-			"$isDoors|off, @Places/quarryMain1, @Quarry Entrance/Door 2",
+			"$isDoors|off, @Places/quarryMain1, $canSolve|158119",
 			"$isDoors|off, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
 			"$isDoors|on, Quarry Main Entry 2, @Places/quarryMain1",
 			"$isDoors|on, Quarry Boathouse Boat Staircase, @Places/ocean",
@@ -130,14 +130,14 @@
       {
         "name": "quarryMillMid",
         "access_rules": [
-			"$canSolve|159120, $hasPanel|Quarry Mill Ramp Controls (Panel), @Places/quarryMill"
+			"$canSolve|158124, $hasPanel|Quarry Mill Ramp Controls (Panel), @Places/quarryMill"
 		],
         "item_count": 1
       },
       {
         "name": "quarryMillUpstairs",
         "access_rules": [
-			"@Places/quarryMill, $canSolve|159122, $hasPanel|Quarry Mill Elevator Controls (Panel)",
+			"@Places/quarryMill, $canSolve|158131, $hasPanel|Quarry Mill Elevator Controls (Panel)",
 			"$isDoors|on, Quarry Mill Stairs, @Places/quarryMill"
 			
 		],
@@ -146,16 +146,16 @@
       {
         "name": "quarryBoathouseUpstairsFront",
         "access_rules": [
-			"@Places/quarry, [@Logic/boathouseRamp], $canSolve|159125"
+			"@Places/quarry, [@Logic/boathouseRamp], $canSolve|158148"
 		],
         "item_count": 1
       },
       {
         "name": "quarryBoathouseUpstairsBack",
         "access_rules": [
-			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, $canSolve|159127, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
+			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
-			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, $canSolve|159127, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
+			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
         "item_count": 1
       },
@@ -265,7 +265,7 @@
       {
         "name": "treehouseThird",
         "access_rules": [
-			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel, @Treehouse Entrance/Yellow Bridge",
+			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel",
 			"$isDoors|on, @Places/treehouseSecond, Treehouse Second Door, @Treehouse Entrance/Yellow Bridge"
 		],
         "item_count": 1
@@ -312,14 +312,14 @@
         "access_rules": [
 			"$isDoors|off, @Swamp Entry Area/Door Panel, $hasPanel|Swamp Entry Door (Panel)",
 			"$isDoors|on, Swamp Entry Door",
-			"$isDoors|on, $canSolve|159192, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
+			"$isDoors|on, $canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
 		],
         "item_count": 1
       },
       {
         "name": "swampPlatform",
         "access_rules": [
-			"$canSolve|159192, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
+			"$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampBroken",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/ocean"
 		],
@@ -337,9 +337,9 @@
       {
         "name": "swampRotated",
         "access_rules": [
-			"$isDoors|off, @Swamp Platform Area/Between Bridges Near, @Places/swampBroken",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|159195, Swamp Platform Shortcut Door, @Places/swampPlatform",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|159195, @Places/ocean",
+			"$isDoors|off, @Swamp Platform Area/Between Bridges Near Row, @Places/swampBroken",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, Swamp Platform Shortcut Door, @Places/swampPlatform",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/ocean",
 			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform"
 		],
         "item_count": 1
@@ -349,15 +349,15 @@
         "access_rules": [
 			"@Places/ocean",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/swampPlatform",
-			"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|159195, @Places/swampRotated"
+			"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated"
 		],
         "item_count": 1
       },
       {
         "name": "swampPurple",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|159195, @Places/swampBack",
-			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|159195, Swamp Purple Water Pump, @Places/swampBack"
+			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, Swamp Purple Water Pump, @Places/swampBack"
 		],
         "item_count": 1
       },
@@ -388,9 +388,9 @@
       {
         "name": "swampLaser",
         "access_rules": [
-			"$isDoors|off, $canSolve|159197, $hasPanel|Swamp Maze Control (Panel), @Swamp Red Underwater Room/Red Underwater",
+			"$isDoors|off, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), @Swamp Red Underwater Room/Red Underwater",
 			"$isDoors|on, Swamp Near Laser Shortcut",		
-      "$isDoors|on, $canSolve|159197, $hasPanel|Swamp Maze Control (Panel), @Places/swampRed, Swamp Red Underwater Exit"
+      "$isDoors|on, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), @Places/swampRed, Swamp Red Underwater Exit"
 		],
         "item_count": 1
       },
@@ -573,6 +573,7 @@
         "access_rules": [
 			"Caves Mountain Shortcut",
 			"Caves Swamp Shortcut",
+      "Caves",
 			"$isDoors|off,$laserBox|long, @Inside Mountain Bottom Layer/Statue Discard, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/challenge"
@@ -582,7 +583,7 @@
       {
         "name": "challenge",
         "access_rules": [
-			"$isDoors|off, @Caves Lone Pillar/Pillar, @Caves Lone Pillar/Challenge Entry Panel, @Places/caves",
+			"$isDoors|off, @Caves Lone Pillar/Pillar, $canSolve|158477, @Places/caves",
 			"$isDoors|on, Challenge Entry Door, Caves Pillar Door,  @Places/caves",
 			"$isDoors|on, Challenge Door to Theater Walkway, @Places/tunnels"
 		],
