@@ -39,6 +39,7 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
+	Tracker:FindObjectForCode("expert").Active = false
 	
 	
     -- reset locations
@@ -135,7 +136,11 @@ function onClear(slot_data)
 			obj.Active = value
 		end
 		
-		
+		if k == "puzzle_randomization" then
+			if value == 1 then
+				Tracker:FindObjectForCode("Expert").Active = true
+			end
+		end
 		
 	end
 	

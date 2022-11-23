@@ -135,12 +135,12 @@
             },
 			{
                 "name": "Front",
-				"access_rules": ["$canSolve|158033-158035"],
+				"access_rules": ["@Inside Glass Factory/Back Wall,$canSolve|158033-158035"],
                 "item_count": 1
             },
 			{
                 "name": "Melting",
-				"access_rules": ["$canSolve|158036-158038"],
+				"access_rules": ["@Inside Glass Factory/Front,$canSolve|158036-158038"],
                 "item_count": 1
             }
 			
@@ -489,7 +489,7 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["$canSolve|158703,@Quarry Boathouse/Back Second Row, @Quarry Mill/Control Room Right"],
+				"access_rules": ["$canSolve|158703,@Quarry Boathouse/Back Second Row,@Quarry Mill/Control Room Right"],
                 "item_count": 1
             }
         ],
@@ -530,31 +530,31 @@
         "name": "Shadows First Set",
         "sections": [
             {
-                "name": "Avoid Puzzles",
-				"access_rules": ["$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], @Places/shadowsFirstSet",
-								 "$isDoors|on, [Shadows Timed Door], @Places/shadowsFirstSet"],
+                "name": "Shadows Intro",
+				"access_rules": ["$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+								 "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
             {
                 "name": "Entry Door Timer Panel",
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["$canSolve|158170,@Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
                 "name": "Door to Quarry Timer Panel",
-				"access_rules": ["[@Places/shadowsFirstSet]"],
+				"access_rules": ["$canSolve|158187,[@Places/shadowsFirstSet]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 807,
-                "y": 409,
-            },
+                "y": 409
+            }
         ]
     },
 	
@@ -563,17 +563,17 @@
 		"visibility_rules": ["Unrandomized"],
         "sections": [
             {
-                "name": "Environmental Avoid Puzzles",
-				"access_rules": ["@Shadows First Set/Avoid Puzzles"],
+                "name": "Shadows Far",
+				"access_rules": ["$canSolve|158174-158181,@Shadows First Set/Avoid Puzzles"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 895,
-                "y": 225,
-            },
+                "y": 225
+            }
         ]
     },
 	
@@ -582,36 +582,36 @@
 		"visibility_rules": ["Unrandomized"],
         "sections": [
             {
-                "name": "Follow Puzzles",
-				"access_rules": ["@Shadows First Set/Avoid Puzzles"],
+                "name": "Shadows Near",
+				"access_rules": ["$canSolve|158188-158192,@Shadows First Set/Avoid Puzzles"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 894,
-                "y": 376,
-            },
+                "y": 376
+            }
         ]
     },
 	
 	{
         "name": "Shadows Laser",
 		"visibility_rules": ["Unrandomized"],
-		"access_rules": ["@Places/shadowsLaser"],
+		"access_rules": ["$canSolve|158703,@Places/shadowsLaser"],
         "sections": [
             {
                 "name": "Laser",
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 825,
-                "y": 541,
-            },
+                "y": 541
+            }
         ]
     },
 	
@@ -621,16 +621,16 @@
         "sections": [
             {
                 "name": "Door Panel",
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["$canSolve|158193,@Places/overworld"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1036,
-                "y": 457,
-            },
+                "y": 457
+            }
         ]
     },	
 	{
@@ -639,16 +639,16 @@
         "sections": [
             {
                 "name": "Door Panel",
-				"access_rules": ["@Places/maze2"],
+				"access_rules": ["$canSolve|158194,@Places/maze2"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1019,
-                "y": 524,
-            },
+                "y": 524
+            }
         ]
     },	
 	{
@@ -657,16 +657,16 @@
         "sections": [
             {
                 "name": "Door Panel",
-				"access_rules": ["@Places/maze3"],
+				"access_rules": ["$canSolve|158195,@Places/maze3"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 945,
-                "y": 514,
-            },
+                "y": 514
+            }
         ]
     },	
 	{
@@ -675,16 +675,16 @@
         "sections": [
             {
                 "name": "Door Panel",
-				"access_rules": ["[@Places/maze4]"],
+				"access_rules": ["$canSolve|158196,[@Places/maze4]"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 963,
-                "y": 445,
-            },
+                "y": 445
+            }
         ]
     },
 	
@@ -694,7 +694,7 @@
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["@Places/overworld, $dots|1"],
+				"access_rules": ["$canSolve|158198,@Places/overworld"],
                 "item_count": 1
             }
         ],
@@ -702,8 +702,8 @@
             {
                 "map": "fullmap",
                 "x": 1061,
-                "y": 336,
-            },
+                "y": 336
+            }
         ]
     },		
 	{
@@ -712,7 +712,7 @@
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["@Places/plates2, BWSquare, $stars|2"],
+				"access_rules": ["$canSolve|158200,@Places/plates2"],
                 "item_count": 1
             }
         ],
@@ -720,8 +720,8 @@
             {
                 "map": "fullmap",
                 "x": 1076,
-                "y": 264,
-            },
+                "y": 264
+            }
         ]
     },		
 	{
@@ -730,7 +730,7 @@
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["@Places/plates3, BWSquare, ColoredSquares, Shapers"],
+				"access_rules": ["$canSolve|158202,@Places/plates3"],
                 "item_count": 1
             }
         ],
@@ -738,8 +738,8 @@
             {
                 "map": "fullmap",
                 "x": 1008,
-                "y": 248,
-            },
+                "y": 248
+            }
         ]
     },	
 	{
@@ -747,28 +747,28 @@
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["Shapers, Symmetry, $dots|1, @Places/plates4"],
+				"access_rules": ["$canSolve|158204, @Places/plates4"],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
-				"access_rules": ["@Places/plates4, Triangles", "[@Places/plates4], Triangles, @Places/keepTower"],
+				"access_rules": ["$canSolve|158604,@Places/plates4", "$canSolve|158604,[@Places/plates4], @Places/keepTower"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
 			{
                 "name": "Shortcut to Shady Trees Panel",
-				"access_rules": ["@Places/plates4"],
+				"access_rules": ["$canSolve|158205,@Places/plates4"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 990,
-                "y": 323,
-            },
+                "y": 323
+            }
         ]
     },
 	
@@ -779,26 +779,26 @@
             {
                 "name": "Laser Hedges",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["[@Hedge Maze 1/Door Panel],[@Hedge Maze 2/Door Panel],[@Hedge Maze 3/Door Panel],[@Hedge Maze 4/Door Panel]"],
+				"access_rules": ["$canSolve|158704,[@Hedge Maze 1/Door Panel],[@Hedge Maze 2/Door Panel],[@Hedge Maze 3/Door Panel],[@Hedge Maze 4/Door Panel]"],
                 "item_count": 1
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["$dots|1,$stars|2,BWSquare,Shapers,ColoredSquares,Symmetry, @Pressure Plates 4/Pressure Plates"],
+				"access_rules": ["$canSolve|158705, @Pressure Plates 4/Pressure Plates"],
                 "item_count": 1
             },
 			{
                 "name": "Shortcut Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1014,
-                "y": 381,
-            },
+                "y": 381
+            }
         ]
     },
 	
@@ -807,17 +807,17 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["@Places/plates3,Triangles"],
+				"access_rules": ["$canSolve|158605,@Places/plates3"],
                 "visibility_rules": ["Discarded"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1300,
-                "y": 180,
-            },
+                "y": 180
+            }
         ]
     },
 	
@@ -826,17 +826,17 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["@Places/plates3, Symmetry,SoundDots,ColoredDots"],
+				"access_rules": ["$canSolve|158654,@Places/plates3"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1400,
-                "y": 140,
-            },
+                "y": 140
+            }
         ]
     },
 	
@@ -844,45 +844,47 @@
         "name": "Monastery",
         "sections": [
             {
-                "name": "Rhombic Avoid Puzzles",
+                "name": "Outside Puzzles",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["[@Places/monastery], [$dots|1]"],
+				"access_rules": ["$canSolve|158210-158213,[@Places/monastery],[$canSolve|158213]"],
                 "item_count": 1
             },
 			{
-                "name": "Branch Puzzles",
+                "name": "Inside Puzzles",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["@Places/monastery, [$dots|1]"],
+				"access_rules": ["$canSolve|158214-158217,@Monastery/Outside Puzzles,@Places/monastery"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["@Places/monastery, [$dots|1]"],
+				"access_rules": ["@Monastery/Inside Puzzles,@Places/monastery"],
                 "item_count": 1
             },
 			{
                 "name": "Door Panel Left",
 				"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
+				"access_rules": ["$canSolve|158208,@Places/overworld"],
                 "item_count": 1
             },
 			{
                 "name": "Door Panel Right",
 				"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
+				"access_rules": ["$canSolve|158209,@Places/overworld"],
                 "item_count": 1
             },
 			{
                 "name": "Monastery Shortcut to River",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 907,
-                "y": 929,
-            },
+                "y": 929
+            }
         ]
     },
 	
@@ -891,31 +893,31 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["Triangles, @Logic/townCargo"],
+				"access_rules": ["$canSolve|158606, @Logic/townCargo"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
             {
-                "name": "Door Panel",
-				"access_rules": ["Shapers,BWSquare"],
+                "name": "Entry Panel",
+				"access_rules": ["$canSolve|158219"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 705,
-                "y": 953,
-            },
+                "y": 953
+            }
         ]
     },
 	{
         "name": "Town Environmental Set",
         "sections": [
             {
-                "name": "Hexagonal Reflection Puzzle",
-				"access_rules": ["@Places/overworld, Symmetry, [@Places/redRoof]"],
+                "name": "Tall Hexagonal",
+				"access_rules": ["$canSolve|158220-158224,@Places/overworld, [@Places/redRoof]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             }
@@ -924,21 +926,21 @@
             {
                 "map": "fullmap",
                 "x": 724,
-                "y": 917,
-            },
+                "y": 917
+            }
         ]
     },
 	{
         "name": "Town Church",
         "sections": [
             {
-                "name": "Square Avoid Puzzle",
-				"access_rules": ["@Places/church"],
+                "name": "Lattice",
+				"access_rules": ["$canSolve|158227,@Places/church"],
                 "item_count": 1
             },
             {
-                "name": "Door Panel",
-				"access_rules": ["@Places/overworld, [@Places/RGBHouse], $stars|1"],
+                "name": "Entry Panel",
+				"access_rules": ["$canSolve|158226,@Places/overworld, [@Places/RGBHouse]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -947,27 +949,27 @@
             {
                 "map": "fullmap",
                 "x": 737,
-                "y": 783,
-            },
+                "y": 783
+            }
         ]
     },
 	{
         "name": "Town Red Rooftop",
         "sections": [
             {
-                "name": "Symmetry Squares",
-				"access_rules": ["@Places/redRoof, BWSquare,Symmetry,$dots|1"],
+                "name": "Rooftop Puzzles",
+				"access_rules": ["$canSolve|158230-158234,@Places/redRoof"],
                 "item_count": 1
             },
 			{
                 "name": "Discard",
-				"access_rules": ["@Places/redRoof, Triangles"],
+				"access_rules": ["$canSolve|158607,@Places/redRoof"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
             {
                 "name": "Maze Stair Control",
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["$canSolve|158228,@Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -976,73 +978,67 @@
             {
                 "map": "fullmap",
                 "x": 755,
-                "y": 877,
-            },
+                "y": 877
+            }
         ]
     },
 	{
         "name": "Town Wooden Rooftop",
         "sections": [
             {
-                "name": "Full Dot Grid Shapers 5",
-				"access_rules": ["@Places/overworld, $dots|2,Shapers,RotatedShapers"],
+                "name": "Lower Row",
+				"access_rules": ["$canSolve|158235-158239,@Places/overworld"],
                 "item_count": 1
             },
 			{
-                "name": "Shapers & Dots & Eraser",
-				"access_rules": ["@Places/woodenRoof, $dots|2,Shapers,RotatedShapers,Eraser"],
+                "name": "Rooftop Puzzle",
+				"access_rules": ["$canSolve|158240,@Places/woodenRoof"],
                 "item_count": 1
-            },
+            }
 			
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 680,
-                "y": 870,
-            },
+                "y": 870
+            }
         ]
     },
 	{
         "name": "RGB House",
         "sections": [
             {
-                "name": "RGB Squares",
+                "name": "RGB Room Left",
 				"visibility_rules": [""],
-				"access_rules": ["@Places/RGBHouseUpstairs, BWSquare,ColoredSquares,[RotatedShapers]"],
+				"access_rules": ["$canSolve|158245,[$canSolve|158244],@Places/RGBHouseUpstairs"],
                 "item_count": 1
             },
 			{
-                "name": "RGB Stars",
-				"access_rules": ["@Places/RGBHouseUpstairs, $stars|1,[BWSquare],[ColoredSquares], [RotatedShapers]"],
+                "name": "RGB Room Right",
+				"access_rules": ["$canSolve|158246,[$canSolve|158244],@Places/RGBHouseUpstairs"],
 				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
                 "name": "Tinted Door Panel",
-				"access_rules": ["$stars|1, RotatedShapers"],
+				"access_rules": ["$canSolve|158225"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
-                "name": "Sound Room Left",
-				"access_rules": ["@Places/RGBHouse"],
+                "name": "Sound Room",
+				"access_rules": ["$canSolve|158243,@Places/RGBHouse"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
-			{
-                "name": "Sound Room Right",
-				"access_rules": ["@Places/RGBHouse, SoundDots"],
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-                "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 773,
-                "y": 819,
-            },
+                "y": 819
+            }
         ]
     },
 	{
@@ -1058,8 +1054,8 @@
             {
                 "map": "fullmap",
                 "x": 718,
-                "y": 859,
-            },
+                "y": 859
+            }
         ]
     },	
 	{
@@ -1067,23 +1063,23 @@
         "sections": [
             {
                 "name": "Entrance Door Panel",
-				"access_rules": ["@Places/overworld,$dots|1"],
+				"access_rules": ["$canSolve|158241,@Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
                 "name": "Theater Entrance Door Panel",
-				"access_rules": ["@Places/windmill, BWSquare"],
+				"access_rules": ["$canSolve|158248,@Places/windmill"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 597,
-                "y": 735,
-            },
+                "y": 735
+            }
         ]
     },
 	{
@@ -1093,7 +1089,7 @@
             {
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["Triangles"],
+				"access_rules": ["$canSolve|158608"],
                 "item_count": 1
             },
 			{
@@ -1117,7 +1113,7 @@
 			{
                 "name": "Challenge Video",
 				"visibility_rules": ["Unrandomized,Vaults"],
-				"access_rules": ["[@Mountain Challenge Area/Challenge Vault Victory!]"],
+				"access_rules": ["[@Mountain Challenge Area/Challenge Vault Victory]"],
                 "item_count": 1
             },
 			{
@@ -1134,24 +1130,24 @@
             },
 			{
                 "name": "Exit Door Left",
-				"access_rules": ["BWSquare, Eraser"],
+				"access_rules": ["$canSolve|158249"],
 				"visibility_rules": ["$isDoors|on"],
                 "item_count": 1
             },
 			{
                 "name": "Exit Door Right",
-				"access_rules": ["BWSquare, Shapers"],
+				"access_rules": ["$canSolve|158250"],
 				"visibility_rules": ["$isDoors|on"],
                 "item_count": 1
-            },
+            }
 
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 557,
-                "y": 735,
-            },
+                "y": 735
+            }
         ]
     },
 	{
@@ -1161,11 +1157,13 @@
             {
                 "name": "Set 1",
 				"visibility_rules": ["Unrandomized"],
+                "access_rules": ["$canSolve|158252-158254"],
                 "item_count": 1
             },
 			{
                 "name": "Set 2",
 				"visibility_rules": ["Unrandomized"],
+                "access_rules": ["$canSolve|158255-158258"],
                 "item_count": 1
             }
         ],
@@ -1173,8 +1171,8 @@
             {
                 "map": "fullmap",
                 "x": 1097,
-                "y": 1105,
-            },
+                "y": 1105
+            }
         ]
     },
 	{
@@ -1182,7 +1180,7 @@
         "sections": [
             {
                 "name": "Sound Dots Puzzles",
-				"access_rules": ["@Places/junglePopup, SoundDots"],
+				"access_rules": ["$canSolve|158260-158265,@Places/junglePopup"],
                 "item_count": 1
             },
             {
@@ -1190,14 +1188,14 @@
 				"access_rules": ["@Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1072,
-                "y": 976,
-            },
+                "y": 976
+            }
         ]
     },
 	{
@@ -1205,7 +1203,7 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["@Places/overworld,Triangles"],
+				"access_rules": ["$canSolve|158609,@Places/overworld"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
@@ -1214,8 +1212,8 @@
             {
                 "map": "fullmap",
                 "x": 1009,
-                "y": 1115,
-            },
+                "y": 1115
+            }
         ]
 	},
 	{
@@ -1231,14 +1229,14 @@
 				"access_rules": ["@Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1126,
-                "y": 983,
-            },
+                "y": 983
+            }
         ]
     },
 	{
@@ -1246,23 +1244,23 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["@Places/overworld,$dots|1,BWSquare"],
+				"access_rules": ["$canSolve|158663,@Places/overworld"],
 				"visibility_rules": ["Vaults,Unrandomized"],
                 "item_count": 1
             },
             {
                 "name": "Rhombic Avoid to Monastery Garden Panel",
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["$canSolve|158267,@Places/overworld"],
 				"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 989,
-                "y": 978,
-            },
+                "y": 978
+            }
         ]
     },
 	{
@@ -1271,7 +1269,7 @@
         "sections": [
             {
                 "name": "Entry Panel",
-				"access_rules": ["BWSquare, ColoredSquares"],
+				"access_rules": ["$canSolve|158268"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -1283,53 +1281,53 @@
             },
             {
                 "name": "Drawn Squares Puzzles",
-				"access_rules": ["@Places/bunkerAntechamber, ColoredSquares, BWSquare"],
+				"access_rules": ["$canSolve|158269-158277,@Places/bunkerAntechamber"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 2
             },
 			{
                 "name": "Tinted Glass Puzzles",
-				"access_rules": ["@Places/bunkerTintedRoom, BWSquare, ColoredSquares,@Color Bunker/Drawn Squares Puzzles"],
+				"access_rules": ["$canSolve|158279-158281,@Places/bunkerTintedRoom,@Color Bunker/Drawn Squares Puzzles"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Ultraviolet Room",
-				"access_rules": ["@Places/bunkerUV, ColoredSquares,BWSquare, @Color Bunker/Tinted Glass Puzzles"],
+				"access_rules": ["$canSolve|158284-158285,@Places/bunkerUV, @Color Bunker/Tinted Glass Puzzles"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
-				"access_rules": ["@Places/bunkerLaser, ColoredSquares, BWSquare, @Color Bunker/Ultraviolet Room"],
+				"access_rules": ["$canSolve|158286,@Places/bunkerLaser, @Color Bunker/Ultraviolet Room"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1361,
-                "y": 1091,
-            },
+                "y": 1091
+            }
         ]
     },
 	{
         "name": "Swamp Entry Area",
         "sections": [
             {
-                "name": "Introduction Set 1",
-				"access_rules": ["@Places/swampEntry, Shapers"],
+                "name": "Intro Front",
+				"access_rules": ["$canSolve|158288-158293,@Places/swampEntry"],
                 "item_count": 1
             },
             {
-                "name": "Introduction Set 2",
-				"access_rules": ["@Places/swampEntry, Shapers"],
+                "name": "Intro Back",
+				"access_rules": ["$canSolve|158294-158301@Places/swampEntry"],
                 "item_count": 1
             },
             {
                 "name": "Door Panel",
-				"access_rules": ["@Places/overworld, Shapers"],
+				"access_rules": ["$canSolve|158287,@Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1338,8 +1336,8 @@
             {
                 "map": "fullmap",
                 "x": 1227,
-                "y": 723,
-            },
+                "y": 723
+            }
         ]
     },
 	{
@@ -1347,23 +1345,23 @@
         "sections": [
             {
                 "name": "Platform Set",
-				"access_rules": ["@Places/swampPlatform, Shapers"],
+				"access_rules": ["$canSolve|158313-158316,@Places/swampPlatform"],
                 "item_count": 1
             },
 			{
                 "name": "Shortcut Door Panels",
-				"access_rules": ["@Places/swampPlatform, Shapers"],
+				"access_rules": ["$canSolve|158317 158318,@Places/swampPlatform"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
-                "name": "Broken Shapers Introduction",
-				"access_rules": ["@Places/swampBroken, Shapers, @Swamp Platform Area/Platform Set"],
+                "name": "Between Bridges Near Row",
+				"access_rules": ["$canSolve|158303-158306,@Places/swampBroken, @Swamp Platform Area/Platform Set"],
                 "item_count": 1
             },
 			{
-                "name": "Rotated Shapers Introduction",
-				"access_rules": ["@Places/swampRotated, Shapers, RotatedShapers, @Swamp Platform Area/Broken Shapers Introduction"],
+                "name": "Between Bridges Far Row",
+				"access_rules": ["$canSolve|158319-158322,@Places/swampRotated, @Swamp Platform Area/Broken Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -1371,16 +1369,16 @@
             {
                 "map": "fullmap",
                 "x": 1316,
-                "y": 672,
-            },
+                "y": 672
+            }
         ]
     },
 	{
         "name": "Swamp Near Boat",
         "sections": [
             {
-                "name": "More Rotated Shapers",
-				"access_rules": ["@Places/swampBack, Shapers,RotatedShapers,@Swamp Platform Area/Rotated Shapers Introduction"],
+                "name": "Beyond Rotating Bridge",
+				"access_rules": ["$canSolve|158329-158332,@Places/swampBack,@Swamp Platform Area/Rotated Shapers Introduction"],
                 "item_count": 1
             }
         ],
@@ -1388,16 +1386,16 @@
             {
                 "map": "fullmap",
                 "x": 1424,
-                "y": 762,
-            },
+                "y": 762
+            }
         ]
     },
 	{
-        "name": "Swamp Underwater Back Optional",
+        "name": "Swamp Purple Underwater",
         "sections": [
             {
-                "name": "Tetris!!!",
-				"access_rules": ["@Places/swampPurple, Shapers"],
+                "name": "Purple Underwater",
+				"access_rules": ["$canSolve|158333,@Places/swampPurple"],
 				"visibility_rules": [""],
                 "item_count": 1
             }
@@ -1406,16 +1404,16 @@
             {
                 "map": "fullmap",
                 "x": 1369,
-                "y": 793,
-            },
+                "y": 793
+            }
         ]
     },
 	{
         "name": "Swamp Blue Underwater Room",
         "sections": [
             {
-                "name": "Negative Shapers",
-				"access_rules": ["@Places/swampBlue, Shapers,NegativeShapers"],
+                "name": "Blue Underwater",
+				"access_rules": ["$canSolve|158334-158338,@Places/swampBlue"],
                 "item_count": 1
             }
         ],
@@ -1423,16 +1421,16 @@
             {
                 "map": "fullmap",
                 "x": 1385,
-                "y": 732,
-            },
+                "y": 732
+            }
         ]
     },
 	{
         "name": "Swamp Cyan Underwater Room",
         "sections": [
             {
-                "name": "More Negative Shapers",
-				"access_rules": ["@Places/swampCyan, Shapers,NegativeShapers"],
+                "name": "Cyan Underwater",
+				"access_rules": ["$canSolve|158307-158311,@Places/swampCyan"],
                 "item_count": 1
             }
         ],
@@ -1440,25 +1438,25 @@
             {
                 "map": "fullmap",
                 "x": 1226,
-                "y": 654,
-            },
+                "y": 654
+            }
         ]
     },
 	{
         "name": "Swamp Red Underwater Room",
         "sections": [
             {
-                "name": "Even More Negative Shapers",
-				"access_rules": ["@Places/swampRed, Shapers,NegativeShapers"],
+                "name": "Red Underwater",
+				"access_rules": ["$canSolve|158323-158326,@Places/swampRed"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1316,
-                "y": 712,
-            },
+                "y": 712
+            }
         ]
     },
 	{
@@ -1471,17 +1469,17 @@
             },
 			{
                 "name": "Shortcut Door Panels",
-				"access_rules": ["Shapers, RotatedShapers, NegativeShapers"],
+				"access_rules": ["$canSolve|158341 158342"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1312,
-                "y": 816,
-            },
+                "y": 816
+            }
         ]
     },
 	{
@@ -1489,38 +1487,34 @@
         "sections": [
             {
                 "name": "Yellow Bridge",
-				"access_rules": ["@Places/treehouseThird, $stars|1"],
+				"access_rules": ["$canSolve|158346-158354,@Places/treehouseThird"],
                 "item_count": 1
             },
 			{
                 "name": "First Door Panel",
-				"access_rules": ["@Places/treehouseDock, $stars|1"],
+				"access_rules": ["$canSolve|158344,@Places/treehouseDock"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Second Door Panel",
-				"access_rules": [
-					"[@Places/treehouseSecond], @Places/treehouseDock, $stars|1",
-				],
+				"access_rules": ["$canSolve|158345,[@Places/treehouseSecond], @Places/treehouseDock"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Third Door Panel",
-				"access_rules": [
-					"[@Places/treehouseThird], @Places/treehouseDock, $stars|1"
-				],
+				"access_rules": ["$canSolve|158355,[@Places/treehouseThird], @Places/treehouseDock"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1311,
-                "y": 376,
-            },
+                "y": 376
+            }
         ]
     },
 	{
@@ -1529,26 +1523,26 @@
         "sections": [
             {
                 "name": "Purple Bridge 1",
-				"access_rules": ["$dots|1, $stars|1"],
+				"access_rules": ["$canSolve|158357-158361"],
                 "item_count": 1
             },
 			{
                 "name": "Purple Bridge 2",
-				"access_rules": ["$dots|1,BWSquare,ColoredSquares,$stars|1"],
+				"access_rules": ["@Treehouse Left Side/Purple Bridge 1, $canSolve|158362-158368"],
                 "item_count": 1
             },
 			{
                 "name": "Left Orange Bridge",
-				"access_rules": ["$dots|1,BWSquare,ColoredSquares,$stars|2"],
+				"access_rules": ["$canSolve|158376-158390,@Treehouse Left Side/Purple Bridge 2"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1213,
-                "y": 404,
-            },
+                "y": 404
+            }
         ]
     },
 	
@@ -1557,40 +1551,40 @@
         "sections": [
 			{
                 "name": "Right Orange Bridge",
-				"access_rules": ["@Places/treehouseMain"],
+				"access_rules": ["$canSolve|158391-158402,@Places/treehouseMain"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge",
-				"access_rules": ["@Places/treehouseMain, Shapers,RotatedShapers,NegativeShapers,$stars|2"],
+				"access_rules": ["$canSolve|158369-158375,@Treehouse Right Side/Right Orange Bridge,@Places/treehouseMain"],
                 "item_count": 1
             },
 			{
                 "name": "Green Bridge Discard",
-				"access_rules": ["@Places/treehouseMain, $stars|1, Triangles, @Treehouse Right Side/Green Bridge"],
+				"access_rules": ["$canSolve|158610,@Places/treehouseMain, @Treehouse Right Side/Green Bridge"],
                 "visibility_rules": ["Discarded"],
                 "item_count": 1
             },
 			{
                 "name": "Drawbridge Panel",
-				"access_rules": ["@Treehouse Right Side/Right Orange Bridge, $stars|1",
-								 "Treehouse Drawbridge, $stars|1"],
+				"access_rules": ["$canSolve|158404,@Treehouse Right Side/Right Orange Bridge",
+								 "$canSolve|158404,Treehouse Drawbridge"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Laser House Door Outside Timer",
-				"access_rules": ["@Places/treehouseMain, @Treehouse Right Side/Right Orange Bridge"],
+				"access_rules": ["@Places/treehouseMain"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1181,
-                "y": 340,
-            },
+                "y": 340
+            }
         ]
     },
 	
@@ -1611,16 +1605,16 @@
 			{
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["@Treehouse Left Side/Left Orange Bridge,Triangles"],
+				"access_rules": ["$canSolve|158611,@Treehouse Left Side/Left Orange Bridge"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1169,
-                "y": 408,
-            },
+                "y": 408
+            }
         ]
     },
 	
@@ -1630,7 +1624,7 @@
             {
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["@Places/overworld,Triangles"],
+				"access_rules": ["$canSolve|158612,@Places/overworld"],
                 "item_count": 1
             }
         ],
@@ -1638,8 +1632,8 @@
             {
                 "map": "fullmap",
                 "x": 1267,
-                "y": 1008,
-            },
+                "y": 1008
+            }
         ]
     },
 	
@@ -1648,7 +1642,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["@Places/overworld,Symmetry,ColoredDots,BWSquare,$dots|1"],
+				"access_rules": ["$canSolve|158665,@Places/overworld"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             }
@@ -1657,8 +1651,8 @@
             {
                 "map": "fullmap",
                 "x": 1388,
-                "y": 982,
-            },
+                "y": 982
+            }
         ]
     },
 
@@ -1685,7 +1679,7 @@
             },
             {
                 "name": "Mountain Entry",
-				"access_rules": ["$laserBox|short, BWSquare, $stars|2"],
+				"access_rules": ["$canSolve|158407,$laserBox|short"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1694,33 +1688,33 @@
             {
                 "map": "fullmap",
                 "x": 1340,
-                "y": 980,
-            },
+                "y": 980
+            }
         ]
     },
 	
 	{
         "name": "Inside Mountain Layer 1",
-		"access_rules": ["@Places/mountainLayer1, BWSquare,Eraser,ColoredSquares"],
+		"access_rules": ["@Places/mountainLayer1, $canSolve|158408"],
         "sections": [
             {
                 "name": "Angled Inside Trash",
-				"access_rules": ["Shapers"],
+				"access_rules": ["$canSolve|158424 158425"],
                 "item_count": 1
             },
 			{
-                "name": "Moving Background",
-				"access_rules": ["Shapers,RotatedShapers,$dots|1"],
+                "name": "Left Row",
+				"access_rules": ["$canSolve|158414-158420"],
                 "item_count": 1
             },
 			{
-                "name": "Obscured Vision",
-				"access_rules": ["$dots|1"],
+                "name": "Right Row",
+				"access_rules": ["$canSolve|158409-158413"],
                 "item_count": 1
             },
 			{
-                "name": "Physically Obstructed",
-				"access_rules": ["Symmetry,$stars|1,$dots|1"],
+                "name": "Back Row",
+				"access_rules": ["$canSolve|158421-158423"],
                 "item_count": 1
             }
         ],
@@ -1728,8 +1722,8 @@
             {
                 "map": "fullmap",
                 "x": 1303,
-                "y": 943,
-            },
+                "y": 943
+            }
         ]
     },
 	
@@ -1737,32 +1731,32 @@
         "name": "Inside Mountain Layer 2",
         "sections": [
             {
-                "name": "Broken Color Puzzles",
-				"access_rules": ["@Places/mountainLayer2, ColoredSquares, $stars|2, Shapers, Symmetry, ColoredDots"],
+                "name": "Near Row",
+				"access_rules": ["$canSolve|158426-158430,@Places/mountainLayer2"],
                 "item_count": 1
             },
 			{
-                "name": "Same Solution Set",
-				"access_rules": ["@Places/mountainLayer2, @Places/mountain2FrontStairs, ColoredSquares,ColoredDots, $dots|1, BWSquare, RotatedShapers, ColoredSquares, $stars|2, Shapers"],
+                "name": "Far Row",
+				"access_rules": ["$canSolve|158432-158437,@Places/mountainLayer2, @Places/mountain2FrontStairs"],
                 "item_count": 1
             },
 			{
                 "name": "Blue Light Bridge",
-				"access_rules": ["@Places/mountainLayer2, @Places/mountain2FrontStairs, $stars|2, RotatedShapers, Eraser"],
+				"access_rules": ["$canSolve|158431,@Places/mountainLayer2, @Places/mountain2FrontStairs"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Orange Light Bridge",
-				"access_rules": ["@Places/mountainLayer2, @Places/mountain2BackStairs, $stars|2, RotatedShapers, Eraser"],
+				"access_rules": ["$canSolve|158438,@Places/mountainLayer2, @Places/mountain2BackStairs"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Elevator Discard",
-				"access_rules": ["@Places/mountainMeta, Triangles, $dots|1",
-								 "$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge, Triangles",
-								 "$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door, Triangles"],
+				"access_rules": ["$canSolve|158439 158613,@Places/mountainMeta",
+								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge",
+								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             }
@@ -1771,8 +1765,8 @@
             {
                 "map": "fullmap",
                 "x": 1303,
-                "y": 980,
-            },
+                "y": 980
+            }
         ]
     },
 	
@@ -1781,13 +1775,13 @@
         "sections": [
             {
                 "name": "Giant Puzzle",
-				"access_rules": ["@Places/mountainMeta, Shapers, Eraser, RotatedShapers, Symmetry"],
+				"access_rules": ["$canSolve|158440-158444,@Places/mountainMeta"],
                 "item_count": 1
             },
 			{
                 "name": "Statue Discard",
-				"access_rules": ["@Places/mountainPenultimateRoom, Discarded"],
-				"visibility_rules": ["Triangles, doorsSimple, doorsComplex, doorsMax"],
+				"access_rules": ["$canSolve|158614,@Places/mountainPenultimateRoom"],
+				"visibility_rules": ["doorsSimple, doorsComplex, doorsMax, Discarded"],
                 "item_count": 1
             },
 			{
@@ -1804,14 +1798,14 @@
             },
 			{
                 "name": "Final Room Pillars Right",
-				"access_rules": ["@Places/mountainFinalRoom, $stars|1, BWSquare, Shapers, $dots|1, Symmetry"],
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+				"access_rules": ["$canSolve|158522-158525,@Places/mountainFinalRoom"],
+				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
                 "name": "Final Room Pillars Left",
-				"access_rules": ["@Places/mountainFinalRoom, $dots|1, $stars|1, Symmetry"],
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+				"access_rules": ["$canSolve|158526-158529,@Places/mountainFinalRoom"],
+				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
@@ -1825,8 +1819,8 @@
             {
                 "map": "fullmap",
                 "x": 1303,
-                "y": 1017,
-            },
+                "y": 1017
+            }
         ]
     },
 
@@ -1835,48 +1829,49 @@
 		"access_rules": ["@Places/caves"],
         "sections": [
             {
-                "name": "Symmetry Triangles",
-				"access_rules": ["Triangles,Symmetry"],
+                "name": "Right First 4",
+				"access_rules": ["$canSolve|158454-158457"],
                 "item_count": 1
             },
 			{
-                "name": "Stars & Squares and Triangles 2",
-				"access_rules": ["Triangles,BWSquare, $stars|2,ColoredSquares"],
+                "name": "Left First 1",
+				"access_rules": ["$canSolve|158458"],
                 "item_count": 1
             },
 			{
-                "name": "Broken Shapers",
-				"access_rules": ["Shapers"],
+                "name": "Left Second 5",
+				"access_rules": ["$canSolve|158459-158463"],
                 "item_count": 1
             },
 			{
-                "name": "Broken and Negative Shapers",
-				"access_rules": ["Shapers,NegativeShapers"],
+                "name": "Right Second 5",
+				"access_rules": ["$canSolve|158464-158468"],
                 "item_count": 1
             },
 			{
-                "name": "Dot Grid Triangles 4",
-				"access_rules": ["Triangles,$dots|2"],
+                "name": "Left Third 1",
+				"access_rules": ["$canSolve|158469"],
                 "item_count": 1
             },
 			{
-                "name": "Shapers and Triangles 2",
-				"access_rules": ["Triangles,Shapers,RotatedShapers"],
+                "name": "Right Third 1",
+				"access_rules": ["$canSolve|158470"],
                 "item_count": 1
             },
 			{
-                "name": "Symmetry Shapers",
-				"access_rules": ["Shapers,Symmetry"],
+                "name": "Left Fourth 1",
+				"access_rules": ["$canSolve|158471"],
                 "item_count": 1
             },
 			{
-                "name": "Secret Area Entrance Door Panel",
-				"access_rules": ["BWSquare, Triangles, Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","BWSquare, Triangles, @Places/caves, Inside Mountain Door to Secret Area"],
+                "name": "Caves Entrance Door Panel",
+				"access_rules": ["$canSolve|158447,Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom",
+                                 "$canSolve|158447,@Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
-                "name": "Secret Area Rock Timer Panel",
+                "name": "Caves Rock Timer Panel",
 				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -1887,8 +1882,8 @@
             {
                 "map": "fullmap",
                 "x": 1540,
-                "y": 1324,
-            },
+                "y": 1324
+            }
         ]
     },
 	
@@ -1897,45 +1892,44 @@
 		"access_rules": ["@Places/caves"],
         "sections": [
             {
-                "name": "Rotated Broken Shapers",
-				"access_rules": ["RotatedShapers"],
+                "name": "Left",
+				"access_rules": ["$canSolve|158472"],
                 "item_count": 1
             },
 			{
-                "name": "Stars and Squares",
-				"access_rules": ["BWSquare, $stars|2, ColoredSquares"],
+                "name": "Grounded",
+				"access_rules": ["$canSolve|158473"],
                 "item_count": 1
             },
 			{
-                "name": "Rainbow Squares",
-				"access_rules": ["ColoredSquares"],
+                "name": "Middle",
+				"access_rules": ["$canSolve|158474"],
                 "item_count": 1
             },
 			{
-                "name": "Squares & Stars and Colored Eraser",
-				"access_rules": ["BWSquare, ColoredSquares, $stars|2, Eraser"],
+                "name": "Right",
+				"access_rules": ["$canSolve|158475"],
                 "item_count": 1
             },
             {
                 "name": "Shortcut to Mountain Panel",
-				"access_rules": ["Triangles, $stars|2"],
+				"access_rules": ["$canSolve|158449"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
                 "name": "Shortcut to Swamp Panel",
-				"access_rules": ["Triangles"],
+				"access_rules": ["$canSolve|158450"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
-
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1540,
-                "y": 1286,
-            },
+                "y": 1286
+            }
         ]
     },
 	
@@ -1944,58 +1938,58 @@
 		"access_rules": ["@Places/caves"],
         "sections": [
             {
-                "name": "Wooden Beam Shapers",
-				"access_rules": ["Shapers"],
+                "name": "First",
+				"access_rules": ["$canSolve|158478"],
                 "item_count": 1
             },
 			{
-                "name": "Squares and Shapers",
-				"access_rules": ["BWSquare, Shapers, RotatedShapers"],
+                "name": "Second",
+				"access_rules": ["$canSolve|158479"],
                 "item_count": 1
             },
 			{
-                "name": "Stars and Squares",
-				"access_rules": ["BWsquare, $stars|1"],
+                "name": "Third",
+				"access_rules": ["$canSolve|158480"],
                 "item_count": 1
             },
 			{
-                "name": "Wooden Beam Shapers and Stars",
-				"access_rules": ["Shapers, $stars|1"],
+                "name": "Fourth",
+				"access_rules": ["$canSolve|158481"],
                 "item_count": 1
-            },
+            }
 
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1540,
-                "y": 1248,
-            },
+                "y": 1248
+            }
         ]
     },
 	
 	{
-        "name": "Caves Upstairs Dots Puzzles",
+        "name": "Caves Upstairs",
 		"access_rules": ["@Places/caves"],
         "sections": [
             {
-                "name": "Dot Grid Rotated Shapers",
-				"access_rules": ["$dots|2,BWSquare,$stars|2,Shapers,RotatedShapers"],
+                "name": "Single",
+				"access_rules": ["$canSolve|158482"],
                 "item_count": 1
             },
 			{
-                "name": "Dot Grid Negative Shapers",
-				"access_rules": ["$dots|2, Shapers, NegativeShapers"],
+                "name": "Left - Left Row 5",
+				"access_rules": ["$canSolve|158483-158487"],
                 "item_count": 1
             },
 			{
-                "name": "Invisible Dots 8",
-				"access_rules": ["$dots|1"],
+                "name": "Right - Left Row 8",
+				"access_rules": ["$canSolve|158488-158495"],
                 "item_count": 1
             },
 			{
-                "name": "Invisible Dot Symmetry 3",
-				"access_rules": ["$dots|1,symmetry"],
+                "name": "Right - Right Row 3",
+				"access_rules": ["$canSolve|158496-158498"],
                 "item_count": 1
             }
         ],
@@ -2003,8 +1997,8 @@
             {
                 "map": "fullmap",
                 "x": 1540,
-                "y": 1210,
-            },
+                "y": 1210
+            }
         ]
     },
 
@@ -2013,25 +2007,25 @@
         "sections": [
 			{
                 "name": "Pillar",
-				"access_rules": ["@Places/caves, Triangles"],
+				"access_rules": ["$canSolve|158476"],
                 "item_count": 1
             },
             {
                 "name": "Challenge Entry Panel",
 				"access_rules": [
-					"@Places/caves, Caves Doors to Challenge, Shapers, $stars|2",
-					"@Places/caves, Caves Pillar Door, Shapers, $stars|2",
-					"@Places/challenge, Challenge Entry Door, Shapers, $stars|2",],
+					"$canSolve|158477,@Places/caves, Caves Doors to Challenge",
+					"$canSolve|158477,@Places/caves, Caves Pillar Door",
+					"$canSolve|158477,@Places/challenge, Challenge Entry Door"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1502,
-                "y": 1248,
-            },
+                "y": 1248
+            }
         ]
     },
 	
@@ -2042,14 +2036,14 @@
 		"access_rules": ["@Places/challenge"],
         "sections": [
             {
-                "name": "Door to Theater Walkway Panel",
-				"access_rules": ["Triangles"],
+                "name": "Door to Tunnels Panel",
+				"access_rules": ["$canSolve|158518"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Challenge Vault",
-				"access_rules": ["$laserBox|long, BWSquare, ColoredSquares, $dots|1, $stars|1, Shapers, Triangles, Symmetry, ColoredDots"],
+				"access_rules": ["$canSolve|158499-158517,$laserBox|long"],
 				"visibility_rules": [],
                 "item_count": 1
             }
@@ -2058,8 +2052,8 @@
             {
                 "map": "fullmap",
                 "x": 1502,
-                "y": 1286,
-            },
+                "y": 1286
+            }
         ]
     },
 	
@@ -2079,7 +2073,7 @@
             },
             {
                 "name": "Town Shortcut Panel",
-				"access_rules": ["Triangles"],
+				"access_rules": ["$canSolve|158521"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -2087,14 +2081,14 @@
                 "name": "Desert Shortcut Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 1502,
-                "y": 1324,
-            },
+                "y": 1324
+            }
         ]
     }
 	
