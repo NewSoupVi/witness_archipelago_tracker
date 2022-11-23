@@ -81,27 +81,27 @@ function hasSymbol(symbol)
 	elseif symbol == "Stars + Same Colored Symbol" then
 		return stars(2)
 	elseif symbol == "Black/White Squares" then
-		return Tracker:ProviderCountForCode("BWSquare")
+		return Tracker:ProviderCountForCode("BWSquare") == 1
 	elseif symbol == "Colored Squares" then
-		return Tracker:ProviderCountForCode("ColoredSquares")
+		return Tracker:ProviderCountForCode("ColoredSquares") == 1
 	elseif symbol == "Symmetry" then
-		return Tracker:ProviderCountForCode("Symmetry")
+		return Tracker:ProviderCountForCode("Symmetry") == 1
 	elseif symbol == "Colored Dots" then
-		return Tracker:ProviderCountForCode("ColoredDots")
+		return Tracker:ProviderCountForCode("ColoredDots") == 1
 	elseif symbol == "Sound Dots" then
-		return Tracker:ProviderCountForCode("SoundDots")
+		return Tracker:ProviderCountForCode("SoundDots") == 1
 	elseif symbol == "Shapers" then
-		return Tracker:ProviderCountForCode("Shapers")
+		return Tracker:ProviderCountForCode("Shapers") == 1
 	elseif symbol == "Rotated Shapers" then
-		return Tracker:ProviderCountForCode("RotatedShapers")
+		return Tracker:ProviderCountForCode("RotatedShapers") == 1
 	elseif symbol == "Negative Shapers" then
-		return Tracker:ProviderCountForCode("NegativeShapers")
+		return Tracker:ProviderCountForCode("NegativeShapers") == 1
 	elseif symbol == "Eraser" then
-		return Tracker:ProviderCountForCode("Eraser")
+		return Tracker:ProviderCountForCode("Eraser") == 1
 	elseif symbol == "Triangles" then
-		return Tracker:ProviderCountForCode("Triangles")
+		return Tracker:ProviderCountForCode("Triangles") == 1
 	elseif symbol == "Arrows" then
-		return Tracker:ProviderCountForCode("Arrows")
+		return Tracker:ProviderCountForCode("Arrows") == 1
 	else
 		return true
 	end
@@ -115,9 +115,25 @@ function getLogicFile()
 	end
 end
 
+function parseIds(ids)
+	dash = string.find(ids, "-")
+	if not dash then
+		return ids
+	else
+		output = ""
+		for i = tonumber(string.sub(ids, 1, dash-1)), tonumber(string.sub(ids, dash+1, -1)), 1 do
+			output = output .. i .. " "
+		end
+		return string.sub(output, 1, -2)
+	end
+end
+
+
 function canSolve(ids)
+	ids = parseIds(ids)
+	print(ids)
 	require(getLogicFile())
-	for id in string.gmatch(ids, '([^,]+)') do
+	for id in ids:gmatch("%S+") do
 		requiredSymbols = getLogic()[tonumber(id)]
 		for k, v in pairs(requiredSymbols) do
 			if(not hasSymbol(v)) then
@@ -127,4 +143,3 @@ function canSolve(ids)
 	end
 	return true
 end
-	

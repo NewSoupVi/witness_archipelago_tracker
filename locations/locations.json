@@ -1,7 +1,7 @@
 [
 	{
         "name": "Tutorial Gate",
-		"access_rules": ["@Places/overworld"],
+		"access_rules": ["@Places/overworld, $canSolve|158002-158007"],
         "sections": [
             {
                 "name": "Gate Open",
@@ -12,14 +12,14 @@
             {
                 "map": "fullmap",
                 "x": 445,
-                "y": 1326,
-            },
+                "y": 1326
+            }
         ]
-    },		
+    },
 	{
         "name": "Tutorial Patio Floor",
 		"visibility_rules": ["@Places/tutorial, Unrandomized"],
-		"access_rules": ["Triangles,$dots|1"],
+		"access_rules": ["$canSolve|158009 158010"],
         "sections": [
             {
                 "name": "Patio Floor",
@@ -30,15 +30,15 @@
             {
                 "map": "fullmap",
                 "x": 354,
-                "y": 1315,
-            },
+                "y": 1315
+            }
         ]
     },
 	
 	{
         "name": "Outside Tutorial Vault",
 		"visibility_rules": ["Vaults"],
-		"access_rules": ["@Places/overworld,BWSquare,$dots|1"],
+		"access_rules": ["@Places/overworld,$canSolve|158650"],
         "sections": [
             {
                 "name": "Vault Box",
@@ -49,8 +49,8 @@
             {
                 "map": "fullmap",
                 "x": 436,
-                "y": 1199,
-            },
+                "y": 1199
+            }
         ]
     },
 	
@@ -63,38 +63,38 @@
                 "name": "Discard",
                 "item_count": 1,
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["Triangles, @Places/tutorialOutpost"],
+				"access_rules": ["$canSolve|158600, @Places/tutorialOutpost"]
             },
             {
                 "name": "Entry Door Panel",
                 "item_count": 1,
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["$dots|2, @Places/tutorialOutpost, Outside Tutorial Outpost Entry Door",
-								 "$dots|2, @Places/overworld, Outside Tutorial Optional Door",
-								 "$dots|2, @Places/overworld, Outside Tutorial Outpost Doors"],
+				"access_rules": ["$canSolve|158011, @Places/tutorialOutpost, Outside Tutorial Outpost Entry Door",
+								 "$canSolve|158011, @Places/overworld, Outside Tutorial Optional Door",
+								 "$canSolve|158011, @Places/overworld, Outside Tutorial Outpost Doors"]
             },
             {
                 "name": "Exit Door Panel",
                 "item_count": 1,
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["@Places/tutorialOutpost, $dots|2, BWSquare"],
+				"access_rules": ["$canSolve|158012, @Places/tutorialOutpost"]
             }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 414,
-                "y": 1357,
-            },
+                "y": 1357
+            }
         ]
     },
 	
 	{
-        "name": "Outside Tutorial Dots Introduction",
-		"access_rules": ["@Places/overworld, $dots|1"],
+        "name": "Outside Tutorial Shed Row",
+		"access_rules": ["$canSolve|158013-158017,@Places/overworld"],
         "sections": [
             {
-                "name": "Dots Introduction",
+                "name": "Shed Row",
                 "item_count": 1
             }
         ],
@@ -102,17 +102,17 @@
             {
                 "map": "fullmap",
                 "x": 412,
-                "y": 1029,
-            },
+                "y": 1029
+            }
         ]
     },
 	
 	{
-        "name": "Outside Tutorial Squares Introduction",
-		"access_rules": ["@Places/overworld, BWSquare"],
+        "name": "Outside Tutorial Tree Row",
+		"access_rules": ["$canSolve|158018-158026,@Places/overworld"],
         "sections": [
             {
-                "name": "Squares Introduction",
+                "name": "Tree Row",
                 "item_count": 1
             }
         ],
@@ -120,18 +120,28 @@
             {
                 "map": "fullmap",
                 "x": 323,
-                "y": 1025,
-            },
+                "y": 1025
+            }
         ]
     },	
 	{
         "name": "Inside Glass Factory",
-		"access_rules": ["@Places/glassFactory, Symmetry"],
+		"access_rules": ["@Places/glassFactory"],
         "sections": [
 			{
-                "name": "Symmetry Panels",
-				"access_rules": ["Symmetry"],
-                "item_count": 3
+                "name": "Back Wall",
+				"access_rules": ["$canSolve|158028-158032"],
+                "item_count": 1
+            },
+			{
+                "name": "Front",
+				"access_rules": ["$canSolve|158033-158035"],
+                "item_count": 1
+            },
+			{
+                "name": "Melting",
+				"access_rules": ["$canSolve|158036-158038"],
+                "item_count": 1
             }
 			
         ],
@@ -139,8 +149,8 @@
             {
                 "map": "fullmap",
                 "x": 220,
-                "y": 910,
-            },
+                "y": 910
+            }
         ]
     },
 	{
@@ -149,13 +159,13 @@
 			{
                 "name": "Rooftop Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["@Places/overworld, Triangles"],
+				"access_rules": ["$canSolve|158601, @Places/overworld"],
                 "item_count": 1
             },
 			{
                 "name": "Entry Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["@Places/overworld, Symmetry"],
+				"access_rules": ["$canSolve|158027, @Places/overworld"],
                 "item_count": 1
             }
 			
@@ -164,8 +174,8 @@
             {
                 "map": "fullmap",
                 "x": 220,
-                "y": 950,
-            },
+                "y": 950
+            }
         ]
     },
 
@@ -173,45 +183,50 @@
         "name": "Symmetry Island",
         "sections": [
 			{
-				"access_rules": ["@Places/symmetryOuter, $dots|1,Symmetry"],
-                "name": "Dots Row",
+				"access_rules": ["$canSolve|158041-158045, @Places/symmetryOuter"],
+                "name": "Right 5",
                 "item_count": 1
             },
 			{
-				"access_rules": ["@Inside Glass Factory/Symmetry Panels, @Places/overworld, $dots|1,Symmetry"],
-                "name": "Lower Door Panel",
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-                "item_count": 1
-            },
-			{
-				"access_rules": ["@Places/symmetryOuter, $dots|1,Symmetry,ColoredDots"],
-                "name": "Upper Door Panel",
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-                "item_count": 1
-            },
-			{
-				"access_rules": ["@Places/symmetryOuter, $dots|1,ColoredDots,Symmetry"],
-                "name": "Colored Dots Rows",
+				"access_rules": ["$canSolve|158046-158051, @Places/symmetryOuter"],
+                "name": "Back 6",
                 "item_count": 2
             },
 			{
-				"access_rules": ["@Places/symmetryOuter, Symmetry"],
+				"access_rules": ["$canSolve|158052-158058, @Places/symmetryOuter"],
+                "name": "Left 7",
+                "item_count": 2
+            },
+			{
+				"access_rules": ["$canSolve|158059-158063, @Places/symmetryOuter"],
                 "name": "Environmental Set",
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
 			{
-				"access_rules": ["@Places/symmetryInner, ColoredDots, Symmetry"],
-                "name": "Laser",
+				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Symmetry Panels, @Places/overworld"],
+                "name": "Lower Door Panel",
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
+			{
+				"access_rules": ["$canSolve|158064, @Symmetry Island/Left 7, @Places/symmetryOuter"],
+                "name": "Upper Door Panel",
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+                "item_count": 1
+            },
+			{
+				"access_rules": ["$canSolve|158065-158070, @Places/symmetryInner"],
+                "name": "Laser",
+                "item_count": 1
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 220,
-                "y": 715,
-            },
+                "y": 715
+            }
         ]
     },
 	
@@ -221,13 +236,13 @@
             {
                 "name": "Apple Trees Outside Gate",
 				"visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["$canSolve|158071-158073, @Places/overworld"],
                 "item_count": 1
             },
             {
                 "name": "Apple Trees Inside Gate",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["@Places/orchardInner"],
+				"access_rules": ["$canSolve|158074-158075, @Places/orchardInner"],
                 "item_count": 1
             }
         ],
@@ -235,8 +250,8 @@
             {
                 "map": "fullmap",
                 "x": 468,
-                "y": 800,
-            },
+                "y": 800
+            }
         ]
     },
 	
@@ -245,7 +260,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["@Places/overworld,$dots|2,Shapers,RotatedShapers,NegativeShapers"],
+				"access_rules": ["$canSolve|158653,@Places/overworld"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             }
@@ -254,8 +269,8 @@
             {
                 "map": "fullmap",
                 "x": 106,
-                "y": 176,
-            },
+                "y": 176
+            }
         ]
     },
 	
@@ -265,7 +280,7 @@
             {
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["@Places/overworld,Triangles"],
+				"access_rules": ["$canSolve|158602,@Places/overworld"],
                 "item_count": 1
             }
         ],
@@ -273,8 +288,8 @@
             {
                 "map": "fullmap",
                 "x": 62,
-                "y": 414,
-            },
+                "y": 414
+            }
         ]
     },
 	
@@ -282,49 +297,49 @@
         "name": "Desert",
         "sections": [
 			{
-                "name": "Outside Puzzles",
-				"access_rules": ["@Places/overworld"],
+                "name": "Surface Puzzles",
+				"access_rules": ["$canSolve|158076-158085,@Places/overworld"],
                 "item_count": 1
             },
 			{
-                "name": "Door to Floodlight Room Panel",
+                "name": "Light Room Entry Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["@Desert/Outside Puzzles, $canSolve|158086,@Places/overworld"],
                 "item_count": 1
             },
 			{
-                "name": "Floodlight Room Puzzles",
-				"access_rules": ["@Places/desertFloodLight"],
+                "name": "Light Room Puzzles",
+				"access_rules": ["$canSolve|158087-158090,@Places/desertFloodLight"],
                 "item_count": 1
             },
 			{
                 "name": "Pond Room Puzzles",
-				"access_rules": ["@Places/desertPond"],
+				"access_rules": ["$canSolve|158091-158095,@Places/desertPond"],
                 "item_count": 1
             },
 			{
-                "name": "Door to Water Levels Room Panel",
+                "name": "Flood Room Entry Panel",
 				"access_rules": ["@Places/desertPond"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Flood Room Puzzles",
-				"access_rules": ["@Places/desertFlood, @Logic/canWaterLevel"],
+				"access_rules": ["$canSolve|158105-158110,@Places/desertFlood, @Logic/canWaterLevel"],
                 "item_count": 1
             },
 			{
                 "name": "Laser",
-				"access_rules": ["@Places/desertLaser"],
+				"access_rules": ["$canSolve|158111 158113 158114 158115 158116 158117,@Places/desertLaser"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 296,
-                "y": 298,
-            },
+                "y": 298
+            }
         ]
     },
 	
@@ -333,17 +348,17 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["@Places/overworld, Triangles"],
+				"access_rules": ["$canSolve|158603,@Places/overworld"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 599,
-                "y": 345,
-            },
+                "y": 345
+            }
         ]
     },
 	
@@ -351,51 +366,51 @@
         "name": "Quarry Mill",
         "sections": [
 			{
-                "name": "Eraser and Dots Row",
-				"access_rules": ["@Places/quarryMill, [@Places/quarryMillMid], Eraser,$dots|1"],
+                "name": "Lower Row",
+				"access_rules": ["$canSolve|158125-158130,@Places/quarryMill, [@Places/quarryMillMid]"],
                 "item_count": 1
             },
 			{
-                "name": "Eraser and Squares Row",
-				"access_rules": ["@Places/quarryMill, [@Places/quarryMillUpstairs], Eraser,ColoredSquares"], 
+                "name": "Upper Row",
+				"access_rules": ["$canSolve|158134-158141,@Places/quarryMill, [@Places/quarryMillUpstairs]"], 
                 "item_count": 1
             },
 			{
-                "name": "Small Squares & Dots & Eraser Puzzle",
-				"access_rules": ["@Places/quarryMillUpstairs, Eraser,$dots|1,ColoredSquares"],
+                "name": "Control Room Right",
+				"access_rules": ["$canSolve|158144,@Places/quarryMillUpstairs"],
                 "item_count": 1
             },
 			{
-                "name": "Big Squares & Dots & Eraser Puzzle",
-				"access_rules": ["@Places/quarryMillUpstairs, Eraser,$dots|1,ColoredSquares,BWSquare"],
+                "name": "Control Room Left",
+				"access_rules": ["$canSolve|158143,@Places/quarryMillUpstairs"],
 				"visibility_rules": [""],
                 "item_count": 1
             },            
 			{
-                "name": "Exit to Quarry Door Panel",
-				"access_rules": ["[@Places/quarryMill]"],
+                "name": "Side Exit Panel",
+				"access_rules": ["$canSolve|158123,[@Places/quarryMill]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
-                "name": "Door to Outside Stairs Panel",
-				"access_rules": ["@Places/quarryMill"],
+                "name": "Roof Exit Panel",
+				"access_rules": ["$canSolve|158145,@Places/quarryMill"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
-                "name": "Inside Stairs Control Panel",
-				"access_rules": ["@Places/quarryMill, [@Places/quarryMillUpstairs], BWSquare, ColoredSquares, Eraser"],
+                "name": "Stairs Control Panel",
+				"access_rules": ["$canSolve|158142,@Places/quarryMill, [@Places/quarryMillUpstairs]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 639,
-                "y": 385,
-            },
+                "y": 385
+            }
         ]
     },
 	{
@@ -405,21 +420,21 @@
         "sections": [
             {
                 "name": "Door to Mill Left",
-				"access_rules": ["BWSquare"],
+				"access_rules": ["$canSolve|158121"],
                 "item_count": 1
             },            
 			{
                 "name": "Door to Mill Right",
-				"access_rules": ["$dots|1"],
+				"access_rules": ["$canSolve|158122"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 639,
-                "y": 345,
-            },
+                "y": 345
+            }
         ]
     },	
 	{
@@ -427,46 +442,44 @@
 		"access_rules": ["@Places/quarry"],
         "sections": [
 			{
-                "name": "Intro Shapers",
-				"access_rules": ["Shapers, RotatedShapers"],
+                "name": "Intro Right",
+				"access_rules": ["$canSolve|158147"],
                 "item_count": 1
             },
 			{
-                "name": "Intro Stars",
-				"access_rules": ["$stars|1"],
+                "name": "Intro Left",
+				"access_rules": ["$canSolve|158146"],
                 "item_count": 1
             },
 			{
-                "name": "Eraser and Shapers Row",
-				"access_rules": [
-					"Shapers, Eraser, @Places/quarryBoathouseUpstairsFront",
-				],
+                "name": "Front Row",
+				"access_rules": ["$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront"],
                 "item_count": 1
             },
 			{
-                "name": "Stars & Eraser & Shapers Row 1",
-				"access_rules": ["@Places/quarryBoathouseUpstairsBack, Shapers, $stars|2,Eraser,RotatedShapers"],
+                "name": "Back First Row",
+				"access_rules": ["$canSolve|158156-158164,@Places/quarryBoathouseUpstairsBack"],
                 "item_count": 1
             },			
 			{
-                "name": "Stars & Eraser & Shapers Row 2",
-				"access_rules": ["@Places/quarryBoathouseUpstairsBack, Shapers, $stars|2,Eraser,RotatedShapers"],
+                "name": "Back Second Row",
+				"access_rules": ["$canSolve|158167-158169,@Quarry Boathouse/Back First Row,@Places/quarryBoathouseUpstairsBack"],
                 "item_count": 1
             },			
 			{
-                "name": "Shortcut Door Panel",
+                "name": "Second Barrier Panel",
 				"access_rules": ["@Places/quarryBoathouseUpstairsBack"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
-            },
+            }
 			
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 795,
-                "y": 209,
-            },
+                "y": 209
+            }
         ]
     },
 	
@@ -476,16 +489,16 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["@Quarry Boathouse/Stars & Eraser & Shapers Row, @Quarry Mill/Small Squares & Dots & Eraser Puzzle"],
+				"access_rules": ["$canSolve|158703,@Quarry Boathouse/Back Second Row, @Quarry Mill/Control Room Right"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 625,
-                "y": 523,
-            },
+                "y": 523
+            }
         ]
     },
 	
@@ -495,21 +508,21 @@
         "sections": [
             {
                 "name": "Door 1",
-				"access_rules": ["@Places/overworld, BWSquare"],
+				"access_rules": ["$canSolve|158118,@Places/overworld"],
                 "item_count": 1
             },            
 			{
                 "name": "Door 2",
-				"access_rules": ["@Places/overworld, Quarry Main Entry 1, Shapers","@Places/overworld, Quarry Main Entry, Shapers", "@Places/quarry, Quarry Main Entry 2, Shapers"],
+				"access_rules": ["$canSolve|158119,@Places/overworld, [Quarry Main Entry 1]","$canSolve|158119,@Places/overworld, Quarry Main Entry", "$canSolve|158119,@Places/quarry, Quarry Main Entry 2"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
                 "x": 665,
-                "y": 543,
-            },
+                "y": 543
+            }
         ]
     },
 	

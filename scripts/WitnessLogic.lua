@@ -8,7 +8,7 @@ panel[158005] = {"True"}
 panel[158006] = {"True"}
 panel[158007] = {"True"}
 panel[158008] = {"True"}
-panel[158009] = {"True"}
+panel[158009] = {"Triangles"}
 panel[158010] = {"Dots"}
 panel[158650] = {"Dots","Black/White Squares"}
 panel[158651] = {"True"}
@@ -584,3 +584,7 @@ panel[158533] = {"True"}
 panel[158534] = {"True"}
 panel[158535] = {"True"}
 panel[158536] = {"True"}
+
+function getLogic()
+    return panel
+end
