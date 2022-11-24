@@ -266,7 +266,7 @@
         "name": "treehouseThird",
         "access_rules": [
 			"$isDoors|off, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel",
-			"$isDoors|on, @Places/treehouseSecond, Treehouse Second Door, @Treehouse Entrance/Yellow Bridge"
+			"$isDoors|on, @Places/treehouseSecond, Treehouse Second Door, $canSolve|158346-158354"
 		],
         "item_count": 1
       },
@@ -409,6 +409,7 @@
         "name": "theater",
         "access_rules": [
 			"$isDoors|off, @Windmill/Theater Entrance Door Panel, @Places/windmill",
+			"$isDoors|on, @Places/windmill, Theater Entry Door",
 			"$isDoors|on, Theater Exit Door Left",
 			"$isDoors|on, Theater Exit Door Right",
 			"$isDoors|on, Theater Entry Door, Theater Walkway Door to Back of Theater, @Places/tunnels"
@@ -467,7 +468,8 @@
         "name": "monastery",
         "access_rules": [
 			"$isDoors|off, $hasPanel|Monastery Entry Door Left (Panel), $hasPanel|Monastery Entry Door Right (Panel)",
-			"$isDoors|on, Monastery Inner Door, Monastery Outer Door"
+			"$isDoors|on, Monastery Inner Door, Monastery Outer Door",
+      "$isDoors|on, Monastery Entry Door"
 		],
         "item_count": 1
       },
@@ -596,7 +598,8 @@
 			"$isDoors|on, Theater Walkway Door to Town",
 			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill",
-			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge"
+			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge",
+      "$isDoors|on, Theater Walkway Doors"
 		],
         "item_count": 1
       }      

@@ -260,7 +260,7 @@
         "sections": [
             {
                 "name": "Vault Box",
-				"access_rules": ["$canSolve|158653,@Places/overworld"],
+				"access_rules": ["$canSolve|158652,@Places/overworld"],
 				"visibility_rules": ["Vaults"],
                 "item_count": 1
             }
@@ -530,10 +530,24 @@
         "name": "Shadows First Set",
         "sections": [
             {
-                "name": "Shadows Intro",
+                "name": "Shadows Intro 8",
 				"access_rules": ["$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 								 "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
 				"visibility_rules": ["Unrandomized"],
+                "item_count": 1
+            },
+            {
+                "name": "Shadows Intro 3",
+				"access_rules": ["$canSolve|158188 158189 158190,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+								 "$canSolve|158188 158189 158190,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+				"visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Shadows Intro 5",
+				"access_rules": ["$canSolve|158188 158189 158190 158191 158192,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+								 "$canSolve|158188 158189 158190 158191 158192,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+                "visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
                 "item_count": 1
             },
             {
@@ -564,7 +578,7 @@
         "sections": [
             {
                 "name": "Shadows Far",
-				"access_rules": ["$canSolve|158174-158181,@Shadows First Set/Shadows Intro"],
+				"access_rules": ["$canSolve|158174-158181,@Shadows First Set/Shadows Intro 8"],
                 "item_count": 1
             }
         ],
@@ -583,7 +597,7 @@
         "sections": [
             {
                 "name": "Shadows Near",
-				"access_rules": ["$canSolve|158188-158192,@Shadows First Set/Shadows Intro"],
+				"access_rules": ["$canSolve|158188-158192,@Shadows First Set/Shadows Intro 8"],
                 "item_count": 1
             }
         ],
@@ -2008,7 +2022,7 @@
         "sections": [
 			{
                 "name": "Pillar",
-				"access_rules": ["$canSolve|158476"],
+				"access_rules": ["$canSolve|158476, @Places/caves"],
                 "item_count": 1
             },
             {
