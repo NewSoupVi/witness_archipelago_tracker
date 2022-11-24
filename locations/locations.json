@@ -190,12 +190,12 @@
 			{
 				"access_rules": ["$canSolve|158046-158051, @Places/symmetryOuter"],
                 "name": "Back 6",
-                "item_count": 2
+                "item_count": 1
             },
 			{
 				"access_rules": ["$canSolve|158052-158058, @Places/symmetryOuter"],
                 "name": "Left 7",
-                "item_count": 2
+                "item_count": 1
             },
 			{
 				"access_rules": ["$canSolve|158059-158063, @Places/symmetryOuter"],
@@ -1295,10 +1295,16 @@
                 "item_count": 1
             },
             {
-                "name": "Drawn Squares Puzzles",
-				"access_rules": ["$canSolve|158269-158277,@Places/bunkerAntechamber"],
+                "name": "Intro Left",
+				"access_rules": ["$canSolve|158269-158273,@Places/bunkerAntechamber"],
 				"visibility_rules": ["Unrandomized"],
-                "item_count": 2
+                "item_count": 1
+            },
+            {
+                "name": "Intro Back",
+				"access_rules": ["$canSolve|158274-158277,@Places/bunkerAntechamber"],
+				"visibility_rules": ["Unrandomized"],
+                "item_count": 1
             },
 			{
                 "name": "Tinted Glass Puzzles",
@@ -1881,13 +1887,14 @@
 			{
                 "name": "Caves Entrance Door Panel",
 				"access_rules": ["$canSolve|158447,Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom",
-                                 "$canSolve|158447,@Places/caves, Inside Mountain Door to Secret Area"],
+                                 "$canSolve|158447,@Places/caves, Inside Mountain Door to Secret Area",
+                                 "$canSolve|158447,Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Caves Rock Timer Panel",
-				"access_rules": ["Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
+				"access_rules": ["Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom","Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
