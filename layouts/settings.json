@@ -33,7 +33,7 @@
 					{
                         "type": "item",
                         "margin": "0, 1",
-                        "item": "Uncommon",                        
+                        "item": "Expert",                        
                         "h_alignment": "center",
                         "v_alignment": "strech"
                     },                    

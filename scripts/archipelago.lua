@@ -39,6 +39,7 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
+	Tracker:FindObjectForCode("expert").Active = false
 	
 	
     -- reset locations
@@ -91,15 +92,19 @@ function onClear(slot_data)
 	
 	for k, v in pairs(SETTINGS_MAPPING) do
 		obj = Tracker:FindObjectForCode(v)
-		
+
 		local value = SLOT_DATA[k]
 		
+		print("-----------------------------------------------------------")
+		print(k, value)
+		print("-----------------------------------------------------------")
+
 		if k == "disable_non_randomized_puzzles" then
 			value = not value
 		end
 
 		if k == "shuffle_symbols" and value == false then
-			Tracker:FindObjectForCode("Dots").Active = true
+			Tracker:FindObjectForCode("ProgressiveDots").CurrentStage = 2
 			Tracker:FindObjectForCode("ColoredDots").Active = true
 			Tracker:FindObjectForCode("SoundDots").Active = true
 			Tracker:FindObjectForCode("Symmetry").Active = true
@@ -108,13 +113,10 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("Shapers").Active = true
 			Tracker:FindObjectForCode("RotatedShapers").Active = true
 			Tracker:FindObjectForCode("NegativeShapers").Active = true
-			Tracker:FindObjectForCode("Stars").Active = true
-			Tracker:FindObjectForCode("StarSameColor").Active = true
+			Tracker:FindObjectForCode("ProgressiveStars").CurrentStage = 2
 			Tracker:FindObjectForCode("BWSquare").Active = true
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
-		end
-		
-		if k == "shuffle_doors" then
+		elseif k == "shuffle_doors" then
 			if value == 0 then
 				Tracker:FindObjectForCode("doorsNo").Active = true
 				Tracker:FindObjectForCode("Boat").Active = true
@@ -131,11 +133,17 @@ function onClear(slot_data)
 			obj.AcquiredCount = value
 		elseif k == "victory_condition" then
 			obj.CurrentStage = value
+		elseif k == "puzzle_randomization" then
+			if value == 0 then
+				Tracker:FindObjectForCode("Expert").Active = false
+			elseif value == 1 then
+				Tracker:FindObjectForCode("Expert").Active = true
+			end
 		else
 			obj.Active = value
 		end
 		
-		
+
 		
 	end
 	
@@ -144,8 +152,7 @@ function onClear(slot_data)
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	end
 	
-	if (not Tracker:FindObjectForCode("Uncommon").Active) or (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
-	
+	if (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
 	
 end
 

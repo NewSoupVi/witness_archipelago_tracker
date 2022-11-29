@@ -20,6 +20,43 @@
     "img": "images/Dots.png",
     "codes": "Dots"
   },
+    {
+    "name": "Progressive Dots",
+	"codes": "ProgressiveDots",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Dots.png",
+        "codes": "Dots",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/FullDots.png",
+        "codes": "FullDots",
+        "inherit_codes": false
+      }
+    ]
+  },    {
+    "name": "Progressive Stars",
+	"codes": "ProgressiveStars",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Stars.png",
+        "codes": "Stars",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/StarSameColor.png",
+        "codes": "StarSameColor",
+        "inherit_codes": false
+      }
+    ]
+  },
   {
     "name": "Colored Dots",
     "type": "toggle",
@@ -85,6 +122,13 @@
     "codes": "Triangles"
   },
   {
+    "name": "Arrows",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Arrows.png",
+    "codes": "Arrows"
+  },
+  {
     "name": "Symmetry",
     "type": "toggle",
     "loop": "true",
@@ -106,11 +150,11 @@
     "codes": "Brain"
   },
 {
-    "name": "Shuffle Uncommon",
+    "name": "Expert",
     "type": "toggle",
     "loop": "true",
-    "img": "images/UncommonText.png",
-    "codes": "Uncommon"
+    "img": "images/ExpertText.png",
+    "codes": "Expert"
   },
   {
     "name": "Shuffle Unrandomized",
@@ -180,7 +224,7 @@
         "img": "images/mountainLong.png",
         "codes": "Long",
         "inherit_codes": false
-      },
+      }
     ]
   },
   {
@@ -233,7 +277,7 @@
         "img": "images/mountainLong.png",
         "codes": "hiddenLongGoal",
         "inherit_codes": false
-      },
+      }
     ]
   },
   {
@@ -1555,5 +1599,5 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Treehouse Laser"
-  },
+  }
 ]
