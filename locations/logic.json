@@ -220,7 +220,8 @@
       {
         "name": "plates3",
         "access_rules": [
-			"$isDoors|off, [@Pressure Plates 2/Pressure Plates], @Places/plates2",
+          "$isDoors|off, $isExpert|off, [@Pressure Plates 2/Pressure Plates], @Places/plates2",
+          "$isDoors|off, $isExpert|on, @Places/plates2",
 			"$isDoors|on, [Keep Pressure Plates 2 Exit Door], Keep Pressure Plates 1 Exit Door",
 			"$isDoors|on, Keep Pressure Plates 3 Exit Door, @Places/plates4"
 		],
@@ -295,7 +296,7 @@
       {
         "name": "treehouseOutsideLaser",
         "access_rules": [
-			"@Places/treehouseLeft2, @Treehouse Left Side/Left Orange Bridge"
+			"@Places/treehouseLeft2, $canSolve|158376-158389"
 		],
         "item_count": 1
       },
@@ -459,8 +460,9 @@
       {
         "name": "church",
         "access_rules": [
-			"$isDoors|off, [@Places/RGBHouse], @Town Church/Entry Panel, $hasPanel|Town Door to Church (Panel)",
-			"$isDoors|on, Town Door to Church"
+          "$isDoors|off, $isExpert|off, [@Places/RGBHouse], @Town Church/Entry Panel, $hasPanel|Town Door to Church (Panel)",
+          "$isDoors|off, $isExpert|on, @RGB House/Tinted Door Panel",
+			    "$isDoors|on, Town Door to Church"
 		],
         "item_count": 1
       },

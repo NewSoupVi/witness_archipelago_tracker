@@ -726,7 +726,7 @@
         "sections": [
             {
                 "name": "Pressure Plates",
-				"access_rules": ["$canSolve|158200,@Places/plates2"],
+				"access_rules": ["$canSolve|158200,$pp2,@Places/plates2"],
                 "item_count": 1
             }
         ],
@@ -798,7 +798,8 @@
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["$canSolve|158705, @Pressure Plates 4/Pressure Plates"],
+				"access_rules": ["$isExpert|off, $canSolve|158705, @Pressure Plates 4/Pressure Plates",
+                                 "$isExpert|on, $canSolve|158705, @Pressure Plates 2/Pressure Plates"],
                 "item_count": 1
             },
 			{
@@ -955,7 +956,8 @@
             },
             {
                 "name": "Entry Panel",
-				"access_rules": ["$canSolve|158226,@Places/overworld, [@Places/RGBHouse]"],
+				"access_rules": ["$isExpert|off, $canSolve|158226,@Places/overworld, [@Places/RGBHouse]",
+                                 "$isExpert|on, $canSolve|158226, @Places/overworld"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1037,7 +1039,8 @@
             },
 			{
                 "name": "Tinted Door Panel",
-				"access_rules": ["$canSolve|158225"],
+				"access_rules": ["$isExpert|off, $canSolve|158225",
+                                 "$isExpert|on, @Town Church/Entry Panel, $canSolve|158225"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -1554,7 +1557,8 @@
             },
 			{
                 "name": "Left Orange Bridge",
-				"access_rules": ["$canSolve|158376-158390,@Treehouse Left Side/Purple Bridge 2"],
+				"access_rules": ["$isExpert|off, $canSolve|158376-158390,@Treehouse Left Side/Purple Bridge 2",
+                                 "$isExpert|on, $canSolve|158376-158390,@Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"],
                 "item_count": 1
             }
         ],

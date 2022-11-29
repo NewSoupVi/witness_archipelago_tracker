@@ -68,7 +68,23 @@ function stars(level)
 end
 
 function pp2()
-	return true
+	
+	return (isExpert("off") or (isDoors("off") and canSolve("158198 158200 158202 158204")) or
+	(isDoors("on") and 
+	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
+	Tracker:ProviderCountForCode("Keep Pressure Plates 2 Exit Door") == 1 and
+	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and
+	(Tracker:ProviderCountForCode("Keep Shortcut to Shadows") == 1 or
+	(Tracker:ProviderCountForCode("Keep Pressure Plates 4 Exit Door") == 1 and
+	(Tracker:ProviderCountForCode("Keep Tower Shortcut") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 4 Exit Door") == 1 and
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 4 Shortcut") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Exit Door") == 1 and
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Shortcut") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Exit Door") == 1 and
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Shortcut") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit Door") == 1))))))))))))
+
 end
 
 function hasSymbol(symbol)
