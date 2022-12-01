@@ -861,7 +861,7 @@
             {
                 "name": "Outside Puzzles",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["$canSolve|158210-158213,[@Places/monastery],[$canSolve|158213]"],
+				"access_rules": ["$canSolve|158210-158212,[@Places/monastery],[$canSolve|158213]"],
                 "item_count": 1
             },
 			{
