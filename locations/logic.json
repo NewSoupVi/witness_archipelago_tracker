@@ -153,7 +153,7 @@
       {
         "name": "quarryBoathouseUpstairsBack",
         "access_rules": [
-			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
+			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
@@ -341,7 +341,8 @@
 			"$isDoors|off, @Swamp Platform Area/Between Bridges Near Row, @Places/swampBroken",
 			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, Swamp Platform Shortcut Door, @Places/swampPlatform",
 			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/ocean",
-			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform"
+			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform",
+      "$isDoors|on, Swamp Red Water Pump, @Places/swampRed"
 		],
         "item_count": 1
       },
@@ -382,7 +383,8 @@
         "name": "swampRed",
         "access_rules": [
 			"$isDoors|off, @Places/swampRotated, @Swamp Cyan Underwater Room/Cyan Underwater",
-			"$isDoors|on, @Places/swampRotated, Swamp Red Water Pump"
+			"$isDoors|on, @Places/swampRotated, Swamp Red Water Pump",
+      "$isDoors|on, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), [@Places/swampRotated], [Swamp Red Water Pump]"
 		],
         "item_count": 1
       },
@@ -494,7 +496,7 @@
       {
         "name": "bunkerTintedRoom",
         "access_rules": [
-			"$isDoors|off, @Places/bunkerAntechamber, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
+			"$isDoors|off, @Places/bunkerAntechamber, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
 			"$isDoors|on, @Places/bunkerAntechamber, Bunker Tinted Glass Door"
 		],
         "item_count": 1

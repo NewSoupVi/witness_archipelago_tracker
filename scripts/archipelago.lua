@@ -36,6 +36,7 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("doorsPanel").Active = false
 	Tracker:FindObjectForCode("doorsSimple").Active = false
 	Tracker:FindObjectForCode("doorsComplex").Active = false
+	Tracker:FindObjectForCode("doorsMax").Active = false
 	Tracker:FindObjectForCode("goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false

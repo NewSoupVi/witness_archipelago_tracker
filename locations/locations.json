@@ -126,7 +126,7 @@
     },	
 	{
         "name": "Inside Glass Factory",
-		"access_rules": ["@Places/glassFactory"],
+		"access_rules": ["[@Places/glassFactory]"],
         "sections": [
 			{
                 "name": "Back Wall",
@@ -367,7 +367,8 @@
         "sections": [
 			{
                 "name": "Lower Row",
-				"access_rules": ["$canSolve|158125-158130,@Places/quarryMill, [@Places/quarryMillMid]"],
+				"access_rules": ["$canSolve|158125-158130,@Places/quarryMill, [@Places/quarryMillMid]",
+                "$canSolve|158125-158130,[@Places/quarryMill], @Places/quarry"],
                 "item_count": 1
             },
 			{
@@ -415,17 +416,16 @@
     },
 	{
         "name": "Outside Quarry Mill",
-		"access_rules": ["@Places/quarry"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
             {
                 "name": "Door to Mill Left",
-				"access_rules": ["$canSolve|158121"],
+				"access_rules": ["[@Places/quarry], $canSolve|158121"],
                 "item_count": 1
             },            
 			{
                 "name": "Door to Mill Right",
-				"access_rules": ["$canSolve|158122"],
+				"access_rules": ["@Places/quarry, $canSolve|158122"],
                 "item_count": 1
             }
         ],
@@ -453,7 +453,7 @@
             },
 			{
                 "name": "Front Row",
-				"access_rules": ["$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront"],
+				"access_rules": ["$canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront]"],
                 "item_count": 1
             },
 			{
@@ -468,7 +468,7 @@
             },			
 			{
                 "name": "Second Barrier Panel",
-				"access_rules": ["@Places/quarryBoathouseUpstairsBack"],
+				"access_rules": ["[@Places/quarryBoathouseUpstairsBack]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -653,7 +653,8 @@
         "sections": [
             {
                 "name": "Door Panel",
-				"access_rules": ["$canSolve|158194,@Places/maze2"],
+				"access_rules": ["$canSolve|158194,@Places/maze2",
+                "$canSolve|158194,[@Places/maze2], Keep Hedge Maze 2 Shortcut"],
                 "item_count": 1
             }
         ],
@@ -671,7 +672,8 @@
         "sections": [
             {
                 "name": "Door Panel",
-				"access_rules": ["$canSolve|158195,@Places/maze3"],
+				"access_rules": ["$canSolve|158195,@Places/maze3",
+                "$canSolve|158195,[@Places/maze3], Keep Hedge Maze 3 Shortcut"],
                 "item_count": 1
             }
         ],
@@ -788,23 +790,24 @@
 	
 	{
         "name": "Keep Tower",
-		"access_rules": ["@Places/keepTower"],
         "sections": [
             {
                 "name": "Laser Hedges",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["$canSolve|158704,[@Hedge Maze 1/Door Panel],[@Hedge Maze 2/Door Panel],[@Hedge Maze 3/Door Panel],[@Hedge Maze 4/Door Panel]"],
+				"access_rules": ["$canSolve|158704,@Places/keepTower,[@Hedge Maze 1/Door Panel],[@Hedge Maze 2/Door Panel],[@Hedge Maze 3/Door Panel],[@Hedge Maze 4/Door Panel]"],
                 "item_count": 1
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["$isExpert|off, $canSolve|158705, @Pressure Plates 4/Pressure Plates",
-                                 "$isExpert|on, $canSolve|158705, @Pressure Plates 2/Pressure Plates"],
+				"access_rules": ["$isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 4/Pressure Plates",
+                                 "$isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 2/Pressure Plates"],
                 "item_count": 1
             },
 			{
                 "name": "Shortcut Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+                "access_rules": ["@Places/keepTower",
+                                 "[@Places/keepTower],@Places/plates3"],
                 "item_count": 1
             }
         ],
@@ -1299,7 +1302,7 @@
             },
             {
                 "name": "Intro Left",
-				"access_rules": ["$canSolve|158269-158273,@Places/bunkerAntechamber"],
+				"access_rules": ["$canSolve|158269-158273,[@Places/bunkerAntechamber]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
@@ -1311,7 +1314,7 @@
             },
 			{
                 "name": "Tinted Glass Puzzles",
-				"access_rules": ["$canSolve|158279-158281,@Places/bunkerTintedRoom,@Color Bunker/Drawn Squares Puzzles"],
+				"access_rules": ["$canSolve|158279-158281,[@Places/bunkerTintedRoom]"],
 				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
@@ -1380,7 +1383,7 @@
             },
 			{
                 "name": "Between Bridges Near Row",
-				"access_rules": ["$canSolve|158303-158306,@Places/swampBroken, @Swamp Platform Area/Platform Set"],
+				"access_rules": ["$canSolve|158303-158306,[@Places/swampBroken], @Swamp Platform Area/Platform Set"],
                 "item_count": 1
             },
 			{
@@ -1528,7 +1531,7 @@
             },
 			{
                 "name": "Third Door Panel",
-				"access_rules": ["$canSolve|158355,[@Places/treehouseThird], @Places/treehouseDock"],
+				"access_rules": ["$canSolve|158355,@Places/treehouseThird, @Places/treehouseDock"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1592,7 +1595,7 @@
             },
 			{
                 "name": "Drawbridge Panel",
-				"access_rules": ["$canSolve|158404,@Treehouse Right Side/Right Orange Bridge",
+				"access_rules": ["$canSolve|158404,[@Treehouse Right Side/Right Orange Bridge]",
 								 "$canSolve|158404,Treehouse Drawbridge"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -1698,7 +1701,7 @@
             },
             {
                 "name": "Laser Box Long Victory!",
-				"access_rules": ["$laserBox|long"],
+				"access_rules": ["$laserBox|long, [@Mountaintop/Mountain Entry]"],
 				"visibility_rules": ["Long"],
                 "item_count": 1
             },
