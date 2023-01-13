@@ -120,7 +120,7 @@
       {
         "name": "quarryMill",
         "access_rules": [
-			"$isDoors|off, [@Outside Quarry Mill/Door to Mill Left], [@Outside Quarry Mill/Door to Mill Right], @Places/quarry",
+			"$isDoors|off, $hasPanel|Quarry Mill Entry (Panel), [@Outside Quarry Mill/Door to Mill Left], [@Outside Quarry Mill/Door to Mill Right], @Places/quarry",
 			"$isDoors|on, Quarry Mill Rooftop Shortcut",
 			"$isDoors|on, Quarry Mill Side Door, @Places/quarry",
 			"$isDoors|on, Quarry Door to Mill, @Places/quarry"

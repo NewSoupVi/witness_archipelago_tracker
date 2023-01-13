@@ -188,12 +188,12 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["$canSolve|158046-158051, @Places/symmetryOuter"],
+				"access_rules": ["$canSolve|158046-158051, @Places/symmetryOuter, @Symmetry Island/Right 5"],
                 "name": "Back 6",
                 "item_count": 1
             },
 			{
-				"access_rules": ["$canSolve|158052-158058, @Places/symmetryOuter"],
+				"access_rules": ["$canSolve|158052-158058, @Places/symmetryOuter, @Symmetry Island/Back 6"],
                 "name": "Left 7",
                 "item_count": 1
             },
@@ -204,13 +204,15 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld"],
+				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
+                                 "$canSolve|158040, Symmetry Island Lower (Panel), @Places/overworld"],
                 "name": "Lower Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
-				"access_rules": ["$canSolve|158064, @Symmetry Island/Left 7, @Places/symmetryOuter"],
+				"access_rules": ["$canSolve|158064, @Symmetry Island/Left 7, @Places/symmetryOuter",
+                                 "$canSolve|158064, Symmetry Island Upper (Panel), @Places/symmetryOuter"],
                 "name": "Upper Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
@@ -378,12 +380,12 @@
             },
 			{
                 "name": "Control Room Right",
-				"access_rules": ["$canSolve|158144,@Places/quarryMillUpstairs"],
+				"access_rules": ["$canSolve|158144,@Places/quarryMillUpstairs, @Quarry Mill/Upper Row"],
                 "item_count": 1
             },
 			{
                 "name": "Control Room Left",
-				"access_rules": ["$canSolve|158143,@Places/quarryMillUpstairs"],
+				"access_rules": ["$canSolve|158143,@Places/quarryMillUpstairs, @Quarry Mill/Upper Row"],
 				"visibility_rules": [""],
                 "item_count": 1
             },            
@@ -960,7 +962,7 @@
             {
                 "name": "Entry Panel",
 				"access_rules": ["$isExpert|off, $canSolve|158226,@Places/overworld, [@Places/RGBHouse]",
-                                 "$isExpert|on, $canSolve|158226, @Places/overworld"],
+                                 "$isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Tinted Door Panel"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -1043,7 +1045,7 @@
 			{
                 "name": "Tinted Door Panel",
 				"access_rules": ["$isExpert|off, $canSolve|158225",
-                                 "$isExpert|on, @Town Church/Entry Panel, $canSolve|158225"],
+                                 "$isExpert|on, $canSolve|158225"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
@@ -1689,7 +1691,7 @@
         "name": "Mountaintop",
         "sections": [
             {
-                "name": "River Shape",
+                "name": "River Overlook Panel",
 				"visibility_rules": [""],
                 "item_count": 1
             },
@@ -1814,13 +1816,13 @@
             },
 			{
                 "name": "Door to Final Room Left Panel",
-				"access_rules": ["@Places/mountainPenultimateRoom"],
+				"access_rules": ["@Places/mountainPenultimateRoom, $canSolve|158445"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Door to Final Room Right Panel",
-				"access_rules": ["@Places/mountainPenultimateRoom"],
+				"access_rules": ["@Places/mountainPenultimateRoom, $canSolve|158446"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
