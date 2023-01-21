@@ -18,7 +18,7 @@
     },
 	{
         "name": "Tutorial Patio Floor",
-		"visibility_rules": ["@Places/tutorial, Unrandomized"],
+		"visibility_rules": ["Unrandomized"],
 		"access_rules": ["$canSolve|158009 158010"],
         "sections": [
             {
@@ -913,8 +913,8 @@
         "sections": [
             {
                 "name": "Discard",
-				"access_rules": ["$canSolve|158606, $canSolve|158219",
-                                 "$canSolve|158606, Town Cargo Box Door"],
+				"access_rules": ["$isDoors|off, $canSolve|158606, $canSolve|158219",
+                                 "$isDoors|on, $canSolve|158606, Town Cargo Box Door"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
