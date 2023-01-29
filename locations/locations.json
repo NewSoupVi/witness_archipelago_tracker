@@ -1298,7 +1298,7 @@
             },
             {
                 "name": "Tinted Glass Door Panel",
-				"access_rules": ["@Color Bunker/Drawn Squares Puzzles, @Places/bunkerAntechamber"],
+				"access_rules": ["@Color Bunker/Intro Back, @Places/bunkerAntechamber"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },

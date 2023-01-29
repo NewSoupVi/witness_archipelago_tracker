@@ -11,6 +11,8 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
+lasers = {0,0,0,0,0,0,0,0,0,0,0}
+
 function dump(o)
    if type(o) == 'table' then
       local s = '{ '
@@ -24,9 +26,59 @@ function dump(o)
    end
 end
 
+function setReply(key, val, old)
+	print(key .. "    " .. tostring(val))
+	if(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-628" and val) then lasers[1]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-1289" and val) then lasers[2]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-3062" and val) then lasers[3]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-4859" and val) then lasers[4]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-5307" and val) then lasers[5]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-5433" and val) then lasers[6]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-10404" and val) then lasers[7]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-13049" and val) then lasers[8]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-49842" and val) then lasers[9]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-97381" and val) then lasers[10]=1
+	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-98739" and val) then lasers[11]=1 end
+
+	laserCount = 0
+	for k, v in pairs(lasers) do
+		laserCount = laserCount + v
+		print(tostring(k) .. "   " .. tostring(v))
+	end
+
+	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+
+end
+
 function onClear(slot_data)
 
-    print(dump(slot_data))
+	lasers = {0,0,0,0,0,0,0,0,0,0,0}
+
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-628"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-1289"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-3062"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-4859"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5307"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5433"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-10404"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-13049"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-49842"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
+	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
+
+	
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-628"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-1289"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-3062"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-4859"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5307"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5433"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-10404"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-13049"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-49842"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
+	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
+
 
     SLOT_DATA = slot_data
     CUR_INDEX = -1
@@ -96,9 +148,6 @@ function onClear(slot_data)
 
 		local value = SLOT_DATA[k]
 		
-		print("-----------------------------------------------------------")
-		print(k, value)
-		print("-----------------------------------------------------------")
 
 		if k == "disable_non_randomized_puzzles" then
 			value = not value
@@ -143,9 +192,6 @@ function onClear(slot_data)
 		else
 			obj.Active = value
 		end
-		
-
-		
 	end
 	
 	if (Tracker:FindObjectForCode("Caves").Active) then
@@ -159,7 +205,7 @@ end
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
     end
     if index <= CUR_INDEX then
@@ -249,15 +295,8 @@ function onLocation(location_id, location_name)
 	if location_name == "Mountaintop River Shape" then
 		showGoal()
 	end
-	if Tracker:ProviderCountForCode("shuffleLasers") == 1 then
-		result = Tracker:ProviderCountForCode("Symmetry Laser") + Tracker:ProviderCountForCode("Desert Laser") + Tracker:ProviderCountForCode("Quarry Laser") + Tracker:ProviderCountForCode("Shadows Laser") + Tracker:ProviderCountForCode("Keep Laser") + Tracker:ProviderCountForCode("Monastery Laser") + Tracker:ProviderCountForCode("Town Laser") + Tracker:ProviderCountForCode("Jungle Laser") + Tracker:ProviderCountForCode("Bunker Laser") + Tracker:ProviderCountForCode("Swamp Laser") + Tracker:ProviderCountForCode("Treehouse Laser")
-	else
-		tower = Tracker:FindObjectForCode("@Keep Tower/Laser Pressure Plates").AvailableChestCount + Tracker:FindObjectForCode("@Keep Tower/Laser Hedges").AvailableChestCount - 1
-		if tower < 0 then tower = 0 end
-		result = 11 - (Tracker:FindObjectForCode("@Symmetry Island/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Desert/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Quarry Laser/Laser").AvailableChestCount + tower + Tracker:FindObjectForCode("@Treehouse Laser House/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Swamp Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Town Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Monastery/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Shadows Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Jungle Laser/Laser").AvailableChestCount + Tracker:FindObjectForCode("@Color Bunker/Laser").AvailableChestCount)
-	end
-	Tracker:FindObjectForCode("lasers").AcquiredCount = result	
 end
+
 
 function doorsSimple(item_name)
 	if item_name == "Outside Tutorial Outpost Doors" then
@@ -386,3 +425,6 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
+Archipelago:AddRetrievedHandler("retrieved", retrieved)
+Archipelago:AddSetReplyHandler("setReply", setReply)
+Archipelago:AddRetrievedHandler("setReply", setReply)
