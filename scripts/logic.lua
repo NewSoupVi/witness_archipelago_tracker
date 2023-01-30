@@ -31,7 +31,7 @@ end
 
 function laserCount(amount)
 	if tonumber(amount) > 0 then
-		return(Tracker:FindObjectForCode("lasers").AcquiredCount >= tonumber(amount))
+		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
 	else
 		return false
 	end
@@ -39,9 +39,9 @@ end
 	
 function laserBox(box)
 	if box == "short" then
-		return laserCount(tostring(Tracker:ProviderCountForCode("boxShort")))
+		return Tracker:ProviderCountForCode("lasers")>Tracker:ProviderCountForCode("boxShort")
 	else
-		return laserCount(tostring(Tracker:ProviderCountForCode("boxLong")))
+		return Tracker:ProviderCountForCode("lasers")>Tracker:ProviderCountForCode("boxLong")
 	end
 end
 

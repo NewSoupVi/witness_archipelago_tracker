@@ -27,7 +27,6 @@ function dump(o)
 end
 
 function setReply(key, val, old)
-	print(key .. "    " .. tostring(val))
 	if(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-628" and val) then lasers[1]=1
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-1289" and val) then lasers[2]=1
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-3062" and val) then lasers[3]=1
@@ -43,7 +42,6 @@ function setReply(key, val, old)
 	laserCount = 0
 	for k, v in pairs(lasers) do
 		laserCount = laserCount + v
-		print(tostring(k) .. "   " .. tostring(v))
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
@@ -93,6 +91,7 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
 	Tracker:FindObjectForCode("expert").Active = false
+	Tracker:FindObjectForCode("symbols").Active = false
 	
 	
     -- reset locations
@@ -425,6 +424,5 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
-Archipelago:AddRetrievedHandler("retrieved", retrieved)
 Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
