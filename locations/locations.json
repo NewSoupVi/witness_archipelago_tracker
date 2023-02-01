@@ -370,7 +370,7 @@
 			{
                 "name": "Lower Row",
 				"access_rules": ["$canSolve|158125-158130,@Places/quarryMill, [@Places/quarryMillMid]",
-                "$canSolve|158125-158130,[@Places/quarryMill], @Places/quarry"],
+                "$canSolve|158125-158130, [@Places/quarryMillMid], @Places/quarry"],
                 "item_count": 1
             },
 			{
@@ -1692,7 +1692,7 @@
         "sections": [
             {
                 "name": "River Overlook Panel",
-				"visibility_rules": [""],
+				"visibility_rules": ["Unrandomized"],
                 "item_count": 1
             },
             {
@@ -1710,7 +1710,7 @@
             {
                 "name": "Mountain Entry",
 				"access_rules": ["$canSolve|158407,$laserBox|short"],
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+				"visibility_rules": [],
                 "item_count": 1
             }
         ],
