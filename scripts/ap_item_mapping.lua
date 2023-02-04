@@ -186,7 +186,7 @@ ITEM_MAPPING = {
 	[159978] = {"Inside Mountain Bottom Layer Doors to Caves", "toggle"},
 	[159981] = {"Caves Doors to Challenge", "toggle"},
 	[159984] = {"Caves Exits to Main Island", "toggle"},
-	[159987] = {"Theater Walkway Doors", "toggle"},
+	[159987] = {"Tunnels Doors", "toggle"},
 	
 
 }

@@ -413,9 +413,9 @@
         "name": "theater",
         "access_rules": [
 			"$isDoors|off, @Windmill/Theater Entrance Door Panel, @Places/windmill",
-			"$isDoors|on, @Places/windmill, Theater Entry Door",
 			"$isDoors|on, Theater Exit Door Left",
 			"$isDoors|on, Theater Exit Door Right",
+			"$isDoors|on, @Places/windmill, Theater Entry Door",
 			"$isDoors|on, Theater Entry Door, Theater Walkway Door to Back of Theater, @Places/tunnels"
 		],
         "item_count": 1
@@ -604,8 +604,7 @@
 			"$isDoors|on, Theater Walkway Door to Town",
 			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill",
-			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge",
-      "$isDoors|on, Theater Walkway Doors"
+			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge"
 		],
         "item_count": 1
       }      

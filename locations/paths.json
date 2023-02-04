@@ -12,8 +12,8 @@
             {
                 "map": "doors",
                 "x": 440,
-                "y": 650,
-            },
+                "y": 650
+            }
         ]
     },
 	
@@ -34,8 +34,8 @@
             {
                 "map": "doors",
                 "x": 611,
-                "y": 692,
-            },
+                "y": 692
+            }
         ]
     },
 	
@@ -55,8 +55,8 @@
             {
                 "map": "doors",
                 "x": 510,
-                "y": 693,
-            },
+                "y": 693
+            }
         ]
     },
 	
@@ -76,8 +76,8 @@
             {
                 "map": "doors",
                 "x": 400,
-                "y": 704,
-            },
+                "y": 704
+            }
         ]
     },
 
@@ -97,8 +97,8 @@
             {
                 "map": "doors",
                 "x": 469,
-                "y": 731,
-            },
+                "y": 731
+            }
         ]
     },
 
@@ -119,8 +119,8 @@
             {
                 "map": "doors",
                 "x": 379,
-                "y": 550,
-            },
+                "y": 550
+            }
         ]
     },
 	
@@ -140,8 +140,8 @@
             {
                 "map": "doors",
                 "x": 82,
-                "y": 550,
-            },
+                "y": 550
+            }
         ]
     },
 	
@@ -163,8 +163,8 @@
             {
                 "map": "doors",
                 "x": 462,
-                "y": 499,
-            },
+                "y": 499
+            }
         ]
     },
 	
@@ -186,8 +186,8 @@
             {
                 "map": "doors",
                 "x": 377,
-                "y": 470,
-            },
+                "y": 470
+            }
         ]
     },
 	
@@ -209,8 +209,8 @@
             {
                 "map": "doors",
                 "x": 429,
-                "y": 266,
-            },
+                "y": 266
+            }
         ]
     },
 	
@@ -231,8 +231,8 @@
             {
                 "map": "doors",
                 "x": 388,
-                "y": 229,
-            },
+                "y": 229
+            }
         ]
     },
 	
@@ -254,8 +254,8 @@
             {
                 "map": "doors",
                 "x": 350,
-                "y": 189,
-            },
+                "y": 189
+            }
         ]
     },
 
@@ -275,8 +275,8 @@
             {
                 "map": "doors",
                 "x": 333,
-                "y": 170,
-            },
+                "y": 170
+            }
         ]
     },
 
@@ -305,7 +305,6 @@
 	{
         "name": "Desert door to challenge",
 		"access_rules": [
-			"Theater Walkway Doors",
 			"Theater Walkway Door to Desert Elevator Room"
 		],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
@@ -1627,7 +1626,7 @@
 	
 	{
         "name": "Underground Tunnels Exit to Town",
-		"access_rules": ["Theater Walkway Door to Town", "Theater Walkway Doors"],
+		"access_rules": ["Theater Walkway Door to Town"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1646,7 +1645,7 @@
 	
 	{
         "name": "Underground Tunnels Exit to Theater",
-		"access_rules": ["Theater Walkway Door to Back of Theater", "Theater Walkway Doors"],
+		"access_rules": ["Theater Walkway Door to Back of Theater"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{

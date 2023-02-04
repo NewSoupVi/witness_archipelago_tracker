@@ -403,7 +403,7 @@ function doorsSimple(item_name)
 	elseif item_name == "Caves Exits to Main Island"  then
 		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
-	elseif item_name == "Theater Walkway Doors"  then
+	elseif item_name == "Tunnels Doors"  then
 		Tracker:FindObjectForCode("Theater Walkway Door to Back of Theater").Active = true
 		Tracker:FindObjectForCode("Theater Walkway Door to Desert Elevator Room").Active = true
 		Tracker:FindObjectForCode("Theater Walkway Door to Town").Active = true
