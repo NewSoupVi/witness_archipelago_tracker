@@ -39,9 +39,9 @@ end
 	
 function laserBox(box)
 	if box == "short" then
-		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort")
+		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
 	else
-		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxLong")
+		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
 	end
 end
 
