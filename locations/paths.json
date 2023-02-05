@@ -1006,7 +1006,7 @@
 				"access_rules": [
 					"Treehouse Third Door (Panel)",
 					"Treehouse Entry Doors",
-					"Treehouse Third Door"
+					"Treehouse Beyond Yellow Bridge Door"
 				],
                 "item_count": 1
             }
@@ -1807,7 +1807,7 @@
     },
 	{
         "name": "Laser tower door 2",
-		"access_rules": ["Town Tower Doors", "Town Tower Lattice Door"],
+		"access_rules": ["Town Tower Doors", "Town Tower Environmental Set Door"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1825,7 +1825,7 @@
     },
 	{
         "name": "Laser tower door 3",
-		"access_rules": ["Town Tower Doors", "Town Tower Environmental Set Door"],
+		"access_rules": ["Town Tower Doors", "Town Tower Wooden Roof Set Door"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
@@ -1843,7 +1843,7 @@
     },
 	{
         "name": "Laser tower door 4",
-		"access_rules": ["Town Tower Doors", "Town Tower Wooden Roof Set Door"],
+		"access_rules": ["Town Tower Doors", "Town Tower Lattice Door"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
