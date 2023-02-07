@@ -1810,8 +1810,8 @@
             },
 			{
                 "name": "Statue Discard",
-				"access_rules": ["$canSolve|158614,@Places/mountainPenultimateRoom"],
-				"visibility_rules": ["doorsSimple, doorsComplex, doorsMax, Discarded"],
+				"access_rules": ["$canSolve|158614,$laserBox|long,@Places/mountainPenultimateRoom"],
+				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
 			{
@@ -1856,41 +1856,41 @@
 
 	{
         "name": "Caves Lower Puzzles",
-		"access_rules": ["@Places/caves"],
+		"access_rules": [],
         "sections": [
             {
                 "name": "Right First 4",
-				"access_rules": ["$canSolve|158454-158457"],
+				"access_rules": ["$canSolve|158454-158457, @Places/caves"],
                 "item_count": 1
             },
 			{
                 "name": "Left First 1",
-				"access_rules": ["$canSolve|158458"],
+				"access_rules": ["$canSolve|158458, @Places/caves"],
                 "item_count": 1
             },
 			{
                 "name": "Left Second 5",
-				"access_rules": ["$canSolve|158459-158463"],
+				"access_rules": ["$canSolve|158459-158463, @Places/caves"],
                 "item_count": 1
             },
 			{
                 "name": "Right Second 5",
-				"access_rules": ["$canSolve|158464-158468"],
+				"access_rules": ["$canSolve|158464-158468, @Places/caves"],
                 "item_count": 1
             },
 			{
                 "name": "Left Third 1",
-				"access_rules": ["$canSolve|158469"],
+				"access_rules": ["$canSolve|158469, @Places/caves"],
                 "item_count": 1
             },
 			{
                 "name": "Right Third 1",
-				"access_rules": ["$canSolve|158470"],
+				"access_rules": ["$canSolve|158470, @Places/caves"],
                 "item_count": 1
             },
 			{
                 "name": "Left Fourth 1",
-				"access_rules": ["$canSolve|158471"],
+				"access_rules": ["$canSolve|158471, @Places/caves"],
                 "item_count": 1
             },
 			{
@@ -1903,7 +1903,9 @@
             },
 			{
                 "name": "Caves Rock Timer Panel",
-				"access_rules": ["Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom","Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
+				"access_rules": ["Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom",
+                                 "Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom",
+                                 "Inside Mountain Door to Secret Area, @Places/caves"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
