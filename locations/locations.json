@@ -346,7 +346,7 @@
     },
 	
 	{
-        "name": "Quarry Mill Rooftop",
+        "name": "Quarry Stoneworks Rooftop",
         "sections": [
             {
                 "name": "Discard",
@@ -365,45 +365,45 @@
     },
 	
 	{
-        "name": "Quarry Mill",
+        "name": "Quarry Stoneworks",
         "sections": [
 			{
                 "name": "Lower Row",
-				"access_rules": ["$canSolve|158125-158130,@Places/quarryMill, [@Places/quarryMillMid]",
-                "$canSolve|158125-158130, [@Places/quarryMillMid], @Places/quarry"],
+				"access_rules": ["$canSolve|158125-158130,@Places/quarryStoneworks, [@Places/quarryStoneworksMid]",
+                "$canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry"],
                 "item_count": 1
             },
 			{
                 "name": "Upper Row",
-				"access_rules": ["$canSolve|158134-158141,@Places/quarryMill, [@Places/quarryMillUpstairs]"], 
+				"access_rules": ["$canSolve|158134-158141,@Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"], 
                 "item_count": 1
             },
 			{
                 "name": "Control Room Right",
-				"access_rules": ["$canSolve|158144,@Places/quarryMillUpstairs, @Quarry Mill/Upper Row"],
+				"access_rules": ["$canSolve|158144,@Places/quarryStoneworksUpstairs, @Quarry Stoneworks/Upper Row"],
                 "item_count": 1
             },
 			{
                 "name": "Control Room Left",
-				"access_rules": ["$canSolve|158143,@Places/quarryMillUpstairs, @Quarry Mill/Upper Row"],
+				"access_rules": ["$canSolve|158143,@Places/quarryStoneworksUpstairs, @Quarry Stoneworks/Upper Row"],
 				"visibility_rules": [""],
                 "item_count": 1
             },            
 			{
                 "name": "Side Exit Panel",
-				"access_rules": ["$canSolve|158123,[@Places/quarryMill]"],
+				"access_rules": ["$canSolve|158123,[@Places/quarryStoneworks]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Roof Exit Panel",
-				"access_rules": ["$canSolve|158145,@Places/quarryMill"],
+				"access_rules": ["$canSolve|158145,@Places/quarryStoneworks"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
 			{
                 "name": "Stairs Control Panel",
-				"access_rules": ["$canSolve|158142,@Places/quarryMill, [@Places/quarryMillUpstairs]"],
+				"access_rules": ["$canSolve|158142,@Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }
@@ -417,16 +417,16 @@
         ]
     },
 	{
-        "name": "Outside Quarry Mill",
+        "name": "Outside Quarry Stoneworks",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
             {
-                "name": "Door to Mill Left",
+                "name": "Door to Stoneworks Left",
 				"access_rules": ["[@Places/quarry], $canSolve|158121"],
                 "item_count": 1
             },            
 			{
-                "name": "Door to Mill Right",
+                "name": "Door to Stoneworks Right",
 				"access_rules": ["@Places/quarry, $canSolve|158122"],
                 "item_count": 1
             }
@@ -491,7 +491,7 @@
         "sections": [
             {
                 "name": "Laser",
-				"access_rules": ["$canSolve|158703,@Quarry Boathouse/Back Second Row,@Quarry Mill/Control Room Right"],
+				"access_rules": ["$canSolve|158703,@Quarry Boathouse/Back Second Row,@Quarry Stoneworks/Control Room Right"],
                 "item_count": 1
             }
         ],
@@ -1903,9 +1903,7 @@
             },
 			{
                 "name": "Caves Rock Timer Panel",
-				"access_rules": ["Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom",
-                                 "Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom",
-                                 "Inside Mountain Door to Secret Area, @Places/caves"],
+				"access_rules": ["Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom","Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom","@Places/caves, Inside Mountain Door to Secret Area"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             }

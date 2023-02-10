@@ -407,25 +407,25 @@
     "codes": "Desert Flood Room Flood Controls (Panel)"
   },
 {
-    "name": "Quarry Door to Mill (Panel)",
+    "name": "Quarry Door to Stoneworks (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Door to Mill (Panel)"
+    "codes": "Quarry Door to Stoneworks (Panel)"
   },
 {
-    "name": "Quarry Mill Ramp Controls (Panel)",
+    "name": "Quarry Stoneworks Ramp Controls (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Mill Ramp Controls (Panel)"
+    "codes": "Quarry Stoneworks Ramp Controls (Panel)"
   },
 {
-    "name": "Quarry Mill Elevator Controls (Panel)",
+    "name": "Quarry Stoneworks Elevator Controls (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Mill Elevator Controls (Panel)"
+    "codes": "Quarry Stoneworks Elevator Controls (Panel)"
   },
 {
     "name": "Quarry Boathouse Ramp Height Control (Panel)",
@@ -774,32 +774,32 @@
     "codes": "Quarry Main Entry 2"
   },
 {
-    "name": "Quarry Door to Mill",
+    "name": "Quarry Door to Stoneworks",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Door to Mill"
+    "codes": "Quarry Door to Stoneworks"
   },
 {
-    "name": "Quarry Mill Side Door",
+    "name": "Quarry Stoneworks Side Door",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Mill Side Door"
+    "codes": "Quarry Stoneworks Side Door"
   },
 {
-    "name": "Quarry Mill Rooftop Shortcut",
+    "name": "Quarry Stoneworks Rooftop Shortcut",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Mill Rooftop Shortcut"
+    "codes": "Quarry Stoneworks Rooftop Shortcut"
   },
 {
-    "name": "Quarry Mill Stairs",
+    "name": "Quarry Stoneworks Stairs",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Mill Stairs"
+    "codes": "Quarry Stoneworks Stairs"
   },
 {
     "name": "Quarry Boathouse Boat Staircase",
@@ -1370,11 +1370,11 @@
     "codes": "Quarry Main Entry"
   },
 {
-    "name": "Quarry Mill Shortcuts",
+    "name": "Quarry Stoneworks Shortcuts",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Mill Shortcuts"
+    "codes": "Quarry Stoneworks Shortcuts"
   },
 {
     "name": "Quarry Boathouse Barriers",

@@ -111,34 +111,34 @@
 			"$isDoors|off, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
 			"$isDoors|on, Quarry Main Entry 2, @Places/quarryMain1",
 			"$isDoors|on, Quarry Boathouse Boat Staircase, @Places/ocean",
-			"$isDoors|on, Quarry Mill Side Door, @Places/quarryMill",
-			"$isDoors|on, Quarry Door to Mill, @Places/quarryMill",
+			"$isDoors|on, Quarry Stoneworks Side Door, @Places/quarryStoneworks",
+			"$isDoors|on, Quarry Door to Stoneworks, @Places/quarryStoneworks",
 			"$isDoors|on, Shadows Barrier to Quarry, @Places/shadowsFirstSet"
 		],
         "item_count": 1
       },
       {
-        "name": "quarryMill",
+        "name": "quarryStoneworks",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Quarry Mill Entry (Panel), [@Outside Quarry Mill/Door to Mill Left], [@Outside Quarry Mill/Door to Mill Right], @Places/quarry",
-			"$isDoors|on, Quarry Mill Rooftop Shortcut",
-			"$isDoors|on, Quarry Mill Side Door, @Places/quarry",
-			"$isDoors|on, Quarry Door to Mill, @Places/quarry"
+			"$isDoors|off, $hasPanel|Quarry Stoneworks Entry (Panel), [@Outside Quarry Stoneworks/Door to Mill Left], [@Outside Quarry Stoneworks/Door to Mill Right], @Places/quarry",
+			"$isDoors|on, Quarry Stoneworks Rooftop Shortcut",
+			"$isDoors|on, Quarry Stoneworks Side Door, @Places/quarry",
+			"$isDoors|on, Quarry Door to Stoneworks, @Places/quarry"
 		],
         "item_count": 1
       },
       {
-        "name": "quarryMillMid",
+        "name": "quarryStoneworksMid",
         "access_rules": [
-			"$canSolve|158124, $hasPanel|Quarry Mill Ramp Controls (Panel), @Places/quarryMill"
+			"$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks"
 		],
         "item_count": 1
       },
       {
-        "name": "quarryMillUpstairs",
+        "name": "quarryStoneworksUpstairs",
         "access_rules": [
-			"@Places/quarryMill, $canSolve|158131, $hasPanel|Quarry Mill Elevator Controls (Panel)",
-			"$isDoors|on, Quarry Mill Stairs, @Places/quarryMill"
+			"@Places/quarryStoneworks, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
+			"$isDoors|on, Quarry Stoneworks Stairs, @Places/quarryStoneworks"
 			
 		],
         "item_count": 1
@@ -341,7 +341,7 @@
 			"$isDoors|off, @Swamp Platform Area/Between Bridges Near Row, @Places/swampBroken",
 			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, Swamp Platform Shortcut Door, @Places/swampPlatform",
 			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/ocean",
-			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampPlatform",
+			"$isDoors|on, Swamp Door to Rotated Shapers, @Places/swampBroken",
       "$isDoors|on, Swamp Red Water Pump, @Places/swampRed"
 		],
         "item_count": 1

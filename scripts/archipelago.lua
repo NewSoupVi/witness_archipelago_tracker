@@ -316,10 +316,10 @@ function doorsSimple(item_name)
 	elseif item_name == "Quarry Main Entry"  then
 		Tracker:FindObjectForCode("Quarry Main Entry 1").Active = true
 		Tracker:FindObjectForCode("Quarry Main Entry 2").Active = true
-	elseif item_name == "Quarry Mill Shortcuts"  then
-		Tracker:FindObjectForCode("Quarry Mill Side Door").Active = true
-		Tracker:FindObjectForCode("Quarry Mill Rooftop Shortcut").Active = true
-		Tracker:FindObjectForCode("Quarry Mill Stairs").Active = true
+	elseif item_name == "Quarry Stoneworks Shortcuts"  then
+		Tracker:FindObjectForCode("Quarry Stoneworks Side Door").Active = true
+		Tracker:FindObjectForCode("Quarry Stoneworks Rooftop Shortcut").Active = true
+		Tracker:FindObjectForCode("Quarry Stoneworks Stairs").Active = true
 	elseif item_name == "Quarry Boathouse Barriers"  then
 		Tracker:FindObjectForCode("Quarry Boathouse First Barrier").Active = true
 		Tracker:FindObjectForCode("Quarry Boathouse Shortcut").Active = true
