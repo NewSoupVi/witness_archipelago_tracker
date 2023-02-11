@@ -343,9 +343,9 @@
     },
 
 	{
-        "name": "Quarry mill outside stairs",
+        "name": "Quarry Stoneworks outside stairs",
 		"access_rules": [
-			"Quarry Mill Shortcuts",
+			"Quarry Stoneworks Shortcuts",
 			"Quarry Stoneworks Rooftop Shortcut",],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -406,9 +406,9 @@
     },
 	
 	{
-        "name": "Quarry mill small door",
+        "name": "Quarry Stoneworks small door",
 		"access_rules": [
-			"Quarry Mill Shortcuts",
+			"Quarry Stoneworks Shortcuts",
 			"Quarry Stoneworks Side Door"],
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
@@ -427,14 +427,14 @@
     },
 	
 	{
-        "name": "Quarry mill inside stairs",
+        "name": "Quarry Stoneworks inside stairs",
 		"visibility_rules": ["DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
                 "name": "Stairs",
 				"access_rules": [
-					"Quarry Mill Shortcuts",
-					"Quarry Mill Stairs"
+					"Quarry Stoneworks Shortcuts",
+					"Quarry Stoneworks Stairs"
 				],
                 "item_count": 1
             },
@@ -449,7 +449,7 @@
     },
 	
 	{
-        "name": "Quarry mill inside controls",
+        "name": "Quarry Stoneworks inside controls",
 		"visibility_rules": ["DoorsPanel", "DoorsMax"],
         "sections": [
 			{
@@ -475,10 +475,10 @@
     },
 	
 	{
-        "name": "Quarry mill big door",
+        "name": "Quarry Stoneworks big door",
 		"access_rules": [
 			"Quarry Door to Stoneworks (Panel)",
-			"Quarry Door to Mill"],
+			"Quarry Door to Stoneworks"],
 		"visibility_rules": ["DoorsPanel", "DoorsSimple", "DoorsComplex", "DoorsMax"],
         "sections": [
 			{
