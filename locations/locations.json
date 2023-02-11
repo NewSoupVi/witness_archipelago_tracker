@@ -1014,7 +1014,7 @@
             },
 			{
                 "name": "Rooftop Puzzle",
-				"access_rules": ["$canSolve|158240,@Places/woodenRoof"],
+				"access_rules": ["$canSolve|158240,@Town Wooden Rooftop/Lower Row, @Places/woodenRoof"],
                 "item_count": 1
             }
 			
