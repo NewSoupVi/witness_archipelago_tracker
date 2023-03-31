@@ -316,6 +316,40 @@
     "overlay_font_size": 16,
     "codes": "lasers"
   },
+  {
+  "name": "Doors Setting",
+  "codes": "doorsSetting",
+  "type": "progressive",
+  "allow_disabled": false,
+  "initial_stage_idx": 0,
+  "stages": [
+    {
+      "img": "images/doorsNoText.png",
+      "codes": "doorsNo",
+      "inherit_codes": false
+    },
+    {
+      "img": "images/doorsPanelText.png",
+      "codes": "doorsPanel",
+      "inherit_codes": false
+    },
+    {
+      "img": "images/doorsSimpleText.png",
+      "codes": "doorsSimple",
+      "inherit_codes": false
+    },
+    {
+      "img": "images/doorsComplexText.png",
+      "codes": "doorsComplex",
+      "inherit_codes": false
+    },
+    {
+      "img": "images/doorsMaxText.png",
+      "codes": "doorsMax",
+      "inherit_codes": false
+    }
+  ]
+},
     {
 	"name": "Doors Unshuffled",
 	"img": "images/doorsNoText.png",
@@ -357,6 +391,20 @@
 	"codes": "shuffleLasers",
     "type": "toggle",
     "loop": "true"
+  },
+  {
+  "name": "Shuffle EPs",
+  "img": "images/lasersText.png",
+  "codes": "eps",
+    "type": "toggle",
+    "loop": "true"
+  },
+  {
+  "name": "Shuffle Obelisks",
+  "img": "images/lasersText.png",
+  "codes": "obelisks",
+  "type": "toggle",
+  "loop": "true"
   },
   {
     "name": "Puzzle Skips",
