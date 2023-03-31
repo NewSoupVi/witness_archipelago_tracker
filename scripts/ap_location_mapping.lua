@@ -1,4 +1,7 @@
 LOCATION_MAPPING = {
+    [158004] = {"@Tutorial Gate/Front Left"},
+    [158005] = {"@Tutorial Gate/Back Left"},
+    [158006] = {"@Tutorial Gate/Back Right"},
     [158007] = {"@Tutorial Gate/Gate Open"},
 	[158010] = {"@Tutorial Entry/Patio Floor"},
 	[158017] = {"@Outside Tutorial Shed Row/Shed Row"},

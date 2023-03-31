@@ -1,15 +1,30 @@
 [
 	{
         "name": "Tutorial Gate",
-		"access_rules": ["@Places/overworld, $canSolve|158002-158007"],
         "sections": [
             {
+                "name": "Front Left",
+                "access_rules": ["@Places/tutorial, $canSolve|158002-158004"],
+                "item_count": 1
+            },
+            {
+                "name": "Back Left",
+                "access_rules": ["@Places/tutorial, $canSolve|158005"],
+                "item_count": 1
+            },
+            {
+                "name": "Back Right",
+                "access_rules": ["@Places/tutorial, $canSolve|158006"],
+                "item_count": 1
+            },
+            {
                 "name": "Gate Open",
+                "access_rules": ["@Places/tutorial, $canSolve|158002-158007"],
                 "item_count": 1
             },
             {
                 "name": "Gate EP",
-                "access_rules": ["@Places/tutorial"],
+                "access_rules": ["@Places/tutorial, Triangles"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             }
