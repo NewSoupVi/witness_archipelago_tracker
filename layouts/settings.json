@@ -47,17 +47,10 @@
 					{
                         "type": "item",
                         "margin": "0, 1",
-                        "item": "eps",                        
+                        "item": "epSetting",                        
                         "h_alignment": "center",
                         "v_alignment": "strech"
                     },                       
-					{
-                        "type": "item",
-                        "margin": "0, 1",
-                        "item": "obelisks",                        
-                        "h_alignment": "center",
-                        "v_alignment": "strech"
-                    },                    
 					{
                         "type": "item",
                         "margin": "0, 1",

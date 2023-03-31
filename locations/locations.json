@@ -39,7 +39,7 @@
             },
             {
                 "name": "Patio Flowers EP",
-                "access_rules": ["@Places/tutorial"],
+                "access_rules": ["@Places/tutorial, $canSolve|158009"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -53,8 +53,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 354,
-                "y": 1315
+                "x": 352,
+                "y": 1308
             }
         ]
     },	{
@@ -70,8 +70,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 354,
-                "y": 1315
+                "x": 413,
+                "y": 1265
             }
         ]
     },
@@ -515,8 +515,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1462,
-                "y": 705
+                "x": 361,
+                "y": 319
             }
         ]
     },
@@ -839,16 +839,17 @@
 	
 	{
         "name": "Quarry Entrance",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
             {
                 "name": "Door 1",
 				"access_rules": ["$canSolve|158118,@Places/overworld"],
+                "visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },            
 			{
                 "name": "Door 2",
 				"access_rules": ["$canSolve|158119,@Places/overworld, [Quarry Main Entry 1]","$canSolve|158119,@Places/overworld, Quarry Main Entry", "$canSolve|158119,@Places/quarry, Quarry Main Entry 2"],
+                "visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },			
 			{
@@ -1385,6 +1386,24 @@
 			{
                 "name": "Monastery Shortcut to River",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+                "item_count": 1
+            },
+            {
+                "name": "Left Shutter EP",
+				"access_rules": ["@Places/monastery,$canSolve|158213"],
+				"visibility_rules": ["eps"],
+                "item_count": 1
+            },
+            {
+                "name": "Middle Shutter EP",
+				"access_rules": ["@Places/monastery,$canSolve|158213"],
+				"visibility_rules": ["eps"],
+                "item_count": 1
+            },
+            {
+                "name": "Right Shutter EP",
+				"access_rules": ["@Places/monastery,$canSolve|158213"],
+				"visibility_rules": ["eps"],
                 "item_count": 1
             }
         ],
@@ -2138,8 +2157,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1468,
-                "y": 787
+                "x": 1448,
+                "y": 1120
             }
         ]
     },
@@ -2282,8 +2301,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1468,
-                "y": 787
+                "x": 1241,
+                "y": 685
             }
         ]
     }, 
@@ -2306,8 +2325,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1243,
-                "y": 682
+                "x": 1345,
+                "y": 742
             }
         ]
     },
@@ -2393,7 +2412,7 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1316,
+                "x": 1300,
                 "y": 712
             }
         ]
@@ -2445,6 +2464,12 @@
                 "name": "Third Door Panel",
 				"access_rules": ["$canSolve|158355,@Places/treehouseThird, @Places/treehouseDock"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+                "item_count": 1
+            },
+			{
+                "name": "Bouy EP",
+				"access_rules": ["@Places/ocean"],
+				"visibility_rules": ["eps"],
                 "item_count": 1
             }
         ],
@@ -2565,7 +2590,6 @@
     },	
     {
         "name": "Treehouse Beach",
-		"access_rules": ["@Places/swampLaser"],
         "sections": [
 			{
                 "name": "Rock Shadow EP",
@@ -2586,12 +2610,6 @@
                 "item_count": 1
             },
 			{
-                "name": "Bouy EP",
-				"access_rules": ["@Places/ocean"],
-				"visibility_rules": ["eps"],
-                "item_count": 1
-            },
-			{
                 "name": "Both Orange Bridges EP",
 				"access_rules": ["@Places/overworld, @Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge"],
 				"visibility_rules": ["eps"],
@@ -2608,7 +2626,6 @@
     },
     {
         "name": "Shipwreck EPs",
-		"access_rules": ["@Places/swampLaser"],
         "sections": [
 			{
                 "name": "Shipwreck Circle Far EP",
@@ -2669,13 +2686,19 @@
 				"access_rules": ["@Places/plates3"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
+            },
+			{
+                "name": "Boat CCW Underside EP",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["eps"],
+                "item_count": 1
             }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1241,
-                "y": 119
+                "x": 1216,
+                "y": 167
             }
         ]
     },
@@ -3339,7 +3362,7 @@
 			{
                 "name": "Side 2",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Treehouse Beach/Bouy EP, @Treehouse Right Side/Right Orange Bridge EP, @Treehouse Beach/Both Orange Bridges EP"],
+                "access_rules": ["@Treehouse Entrance/Bouy EP, @Treehouse Right Side/Right Orange Bridge EP, @Treehouse Beach/Both Orange Bridges EP"],
                 "item_count": 1
             },
 			{
@@ -3370,8 +3393,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 0,
-                "y": 0
+                "x": 1116,
+                "y": 339
             }
         ]
     },
@@ -3418,8 +3441,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 0,
-                "y": 0
+                "x": 1198,
+                "y": 997
             }
         ]
     },
@@ -3454,8 +3477,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 0,
-                "y": 0
+                "x": 754,
+                "y": 529
             }
         ]
     },
@@ -3502,8 +3525,8 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 0,
-                "y": 0
+                "x": 616,
+                "y": 933
             }
         ]
     }

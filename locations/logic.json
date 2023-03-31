@@ -13,7 +13,7 @@
       {
         "name": "ocean",
         "access_rules": [
-			"Boat"
+			"Boat", "doorsNo", "doorsSimple", "doorsComplex"
 			],
         "item_count": 1
       },
@@ -120,7 +120,7 @@
       {
         "name": "quarryStoneworks",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Quarry Stoneworks Entry (Panel), [@Outside Quarry Stoneworks/Door to Mill Left], [@Outside Quarry Stoneworks/Door to Mill Right], @Places/quarry",
+			"$isDoors|off, $hasPanel|Quarry Stoneworks Entry (Panel), [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry",
 			"$isDoors|on, Quarry Stoneworks Rooftop Shortcut",
 			"$isDoors|on, Quarry Stoneworks Side Door, @Places/quarry",
 			"$isDoors|on, Quarry Door to Stoneworks, @Places/quarry"
@@ -627,7 +627,7 @@
       {
         "name": "SymmetryLowerPanel",
         "access_rules": [
-			"DoorsNo, @Inside Glass Factory/Melting",
+			"doorsNo, @Inside Glass Factory/Melting",
 			"DoorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel)"
 		],
         "item_count": 1

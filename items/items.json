@@ -353,35 +353,35 @@
     {
 	"name": "Doors Unshuffled",
 	"img": "images/doorsNoText.png",
-	"codes": "AdoorsNo",
+	"codes": "DeprecateddoorsNo",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Door Panel Power Shuffled",
 	"img": "images/doorsPanelText.png",
-	"codes": "AdoorsPanel",
+	"codes": "DeprecateddoorsPanel",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Doors Simple",
 	"img": "images/doorsSimpleText.png",
-	"codes": "AdoorsSimple",
+	"codes": "DeprecateddoorsSimple",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Doors Complex",
 	"img": "images/doorsComplexText.png",
-	"codes": "AdoorsComplex",
+	"codes": "DeprecateddoorsComplex",
     "type": "toggle",
     "loop": "true"
   },
     {
 	"name": "Doors Max",
 	"img": "images/doorsMaxText.png",
-	"codes": "AdoorsMax",
+	"codes": "DeprecateddoorsMax",
     "type": "toggle",
     "loop": "true"
   },
@@ -393,18 +393,28 @@
     "loop": "true"
   },
   {
-  "name": "Shuffle EPs",
-  "img": "images/lasersText.png",
-  "codes": "eps",
-    "type": "toggle",
-    "loop": "true"
-  },
-  {
-  "name": "Shuffle Obelisks",
-  "img": "images/lasersText.png",
-  "codes": "obelisks",
-  "type": "toggle",
-  "loop": "true"
+    "name": "EP Shuffle",
+    "codes": "epSetting",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/epsOff.png",
+        "codes": "epsOff",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/epsIndividual.png",
+        "codes": "eps",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/epsObelisk.png",
+        "codes": "obelisks",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Puzzle Skips",

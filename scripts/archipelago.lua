@@ -82,11 +82,9 @@ function onClear(slot_data)
     CUR_INDEX = -1
 	
 	
-	Tracker:FindObjectForCode("doorsNo").Active = false
-	Tracker:FindObjectForCode("doorsPanel").Active = false
-	Tracker:FindObjectForCode("doorsSimple").Active = false
-	Tracker:FindObjectForCode("doorsComplex").Active = false
-	Tracker:FindObjectForCode("doorsMax").Active = false
+
+	Tracker:FindObjectForCode("doorsSetting").CurrentStage = 0
+	Tracker:FindObjectForCode("epSetting").CurrentStage = 0
 	Tracker:FindObjectForCode("goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
@@ -166,8 +164,10 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("BWSquare").Active = true
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
 			Tracker:FindObjectForCode("Arrows").Active = true
+		elseif k == "shuffle_EPs" then
+			Tracker:FindObjectForCode("epSetting").CurrentStage = value
 		elseif k == "shuffle_doors" then
-			Tracker:FindObjectForCode("doorsSetting").currentStage = value
+			Tracker:FindObjectForCode("doorsSetting").CurrentStage = value
 			if value == 0 then
 				Tracker:FindObjectForCode("doorsNo").Active = true
 				Tracker:FindObjectForCode("Boat").Active = true
