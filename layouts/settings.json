@@ -75,38 +75,10 @@
 					{
                         "type": "item",
                         "margin": "0, 1",
-                        "item": "DoorsNo",                        
+                        "item": "doorsSetting",                        
                         "h_alignment": "center",
                         "v_alignment": "strech"
-                    },                    
-					{
-                        "type": "item",
-                        "margin": "0, 1",
-                        "item": "DoorsPanel",                        
-                        "h_alignment": "center",
-                        "v_alignment": "strech"
-                    },
-					{
-                        "type": "item",
-                        "margin": "0, 1",
-                        "item": "DoorsSimple",                        
-                        "h_alignment": "center",
-                        "v_alignment": "strech"
-                    },
-					{
-                        "type": "item",
-                        "margin": "0, 1",
-                        "item": "DoorsComplex",                        
-                        "h_alignment": "center",
-                        "v_alignment": "strech"
-                    },
-					{
-                        "type": "item",
-                        "margin": "0, 1",
-                        "item": "doorsMax",                        
-                        "h_alignment": "center",
-                        "v_alignment": "strech"
-                    },
+                    }
 				
 				]
             },

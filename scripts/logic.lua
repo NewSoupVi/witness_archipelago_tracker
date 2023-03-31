@@ -4,7 +4,7 @@ end
 
 function isDoors(check)
 	if check == "on" then
-		result = (Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax"))
+		result = (Tracker:ProviderCountForCode("doorsSetting") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax"))
 	else
 		result = (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel")) 
 	end 

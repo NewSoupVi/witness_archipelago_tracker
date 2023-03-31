@@ -165,7 +165,9 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("ProgressiveStars").CurrentStage = 2
 			Tracker:FindObjectForCode("BWSquare").Active = true
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
+			Tracker:FindObjectForCode("Arrows").Active = true
 		elseif k == "shuffle_doors" then
+			Tracker:FindObjectForCode("doorsSetting").currentStage = value
 			if value == 0 then
 				Tracker:FindObjectForCode("doorsNo").Active = true
 				Tracker:FindObjectForCode("Boat").Active = true
