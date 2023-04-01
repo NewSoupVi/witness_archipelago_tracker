@@ -199,6 +199,7 @@ SETTINGS_MAPPING = {
 	["early_secret_area"]="Caves",
 	["shuffle_doors"]="shuffleDoorsSetting",
 	["shuffle_EPs"]="epSetting",
+	["EP_difficulty"]="epDiff",
 	["shuffle_symbols"]="Symbols",  
 	["victory_condition"]="hiddenGoal",
 	["mountain_lasers"]="hiddenShort",

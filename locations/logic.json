@@ -146,7 +146,7 @@
       {
         "name": "quarryBoathouseUpstairsFront",
         "access_rules": [
-			"@Places/quarry, [@Logic/boathouseRamp], $canSolve|158148"
+			"@Places/quarry, @Logic/boathouseRamp, $canSolve|158148"
 		],
         "item_count": 1
       },

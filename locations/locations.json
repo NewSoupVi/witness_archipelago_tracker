@@ -72,7 +72,8 @@
                 "y": 1308
             }
         ]
-    },	{
+    },	
+    {
         "name": "Tutorial East Wall",
         "sections": [
             {
@@ -244,14 +245,14 @@
         "sections": [
             {
                 "name": "Boat Tutorial EP",
-                "access_rules": ["@Places/ocean"],
-                "visibility_rules": ["eps"],
+                "access_rules": ["@Places/ocean", "epdiffNormal"],
+                "visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             },
             {
                 "name": "Boat Tutorial Reflection EP",
-                "access_rules": ["@Places/ocean"],
-                "visibility_rules": ["eps"],
+                "access_rules": ["@Places/ocean", "epdiffNormal"],
+                "visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             },
             {
@@ -818,7 +819,8 @@
             },			
 			{
                 "name": "Boathouse Moving Ramp EP",
-				"access_rules": ["@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"],
+				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
+                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -1730,14 +1732,14 @@
             },
             {
                 "name": "Second Blade EP",
-				"access_rules": ["$canSolve|158247,@Places/windmill"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["$canSolve|158247,@Places/windmill", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             },
             {
                 "name": "Third Blade EP",
-				"access_rules": ["$canSolve|158247,@Places/windmill"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["$canSolve|158247,@Places/windmill", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             }
         ],
@@ -1779,8 +1781,8 @@
             },
 			{
                 "name": "Flowers EP",
-				"visibility_rules": ["eps"],
-				"access_rules": ["@Theater/Tutorial Video, @Places/tunnels"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
+				"access_rules": ["@Theater/Tutorial Video, @Places/tunnels", "epDiffNormal"],
                 "item_count": 1
             },
 			{
@@ -1809,8 +1811,8 @@
             },
 			{
                 "name": "Eclipse EP",
-				"visibility_rules": ["eps"],
-				"access_rules": ["@Theater/Challenge Video"],
+				"visibility_rules": ["eps, epDiffEclipse"],
+				"access_rules": ["@Theater/Challenge Video", "epDiffNormal", "epdiffTedious"],
                 "item_count": 1
             },
 			{
@@ -2326,14 +2328,14 @@
         "sections": [
             {
                 "name": "Rotating Bridge CCW EP",
-				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"],
-                "visibility_rules": ["eps"],
+				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack", "epDiffNormal"],
+                "visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             },
             {
                 "name": "Rotating Bridge CW EP",
-				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"],
-                "visibility_rules": ["eps"],
+				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack", "epDiffNormal"],
+                "visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             }
         ],
@@ -2620,7 +2622,7 @@
             },
 			{
                 "name": "Burned House EP",
-				"access_rules": ["@Places/overworld, @Places/treehouseMain"],
+				"access_rules": ["@Treehouse Left Side/Left Orange Bridge"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -2662,8 +2664,8 @@
             },
 			{
                 "name": "Boat CCW Undersiade EP",
-				"access_rules": ["@Places/ocean"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["@Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             },
 			{
@@ -2686,26 +2688,20 @@
             },
 			{
                 "name": "Couch EP",
-				"access_rules": ["@Places/plates3, @Places/ocean"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["@Places/plates3, @Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffEclipse", "eps, epDiffTedious"],
                 "item_count": 1
             },
 			{
                 "name": "Boat Green EP",
-				"access_rules": ["@Places/ocean"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["@Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             },
 			{
                 "name": "Boat CW Underside EP",
-				"access_rules": ["@Places/plates3"],
-				"visibility_rules": ["eps"],
-                "item_count": 1
-            },
-			{
-                "name": "Boat CCW Underside EP",
-				"access_rules": ["@Places/plates3"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["@Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             }
         ],
@@ -2729,8 +2725,8 @@
             },
             {
                 "name": "Cloud Cycle EP",
-				"access_rules": ["@Places/overworld"],
-				"visibility_rules": ["eps"],
+				"access_rules": ["@Places/overworld", "epDiffNormal"],
+				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
             }
         ],

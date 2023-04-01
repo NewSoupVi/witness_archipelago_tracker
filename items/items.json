@@ -149,12 +149,29 @@
     "img": "images/Brain.png",
     "codes": "Brain"
   },
-{
-    "name": "Expert",
-    "type": "toggle",
-    "loop": "true",
-    "img": "images/ExpertText.png",
-    "codes": "Expert"
+  {
+    "name": "Puzzle Randomization",
+    "codes": "puzzleRandomization",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/randomizationSigma.png",
+        "codes": "randomizationSigma",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/ExpertText.png",
+        "codes": "Expert",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/randomizationVanilla.png",
+        "codes": "randomizationVanilla",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Shuffle Unrandomized",
@@ -412,6 +429,30 @@
       {
         "img": "images/epsObelisk.png",
         "codes": "obelisks",
+        "inherit_codes": false
+      }
+    ]
+  },  
+  {
+    "name": "EP Difficulty",
+    "codes": "epDiff",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/epDiffNormal.png",
+        "codes": "epDiffNormal",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/epDiffTedious.png",
+        "codes": "epDiffTedious",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/epDiffEclipse.png",
+        "codes": "epDiffEclipse",
         "inherit_codes": false
       }
     ]

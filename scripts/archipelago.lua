@@ -85,10 +85,10 @@ function onClear(slot_data)
 
 	Tracker:FindObjectForCode("doorsSetting").CurrentStage = 0
 	Tracker:FindObjectForCode("epSetting").CurrentStage = 0
+	Tracker:FindObjectForCode("epDiff").CurrentStage = 0
 	Tracker:FindObjectForCode("goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
-	Tracker:FindObjectForCode("expert").Active = false
 	Tracker:FindObjectForCode("symbols").Active = false
 	
 	
@@ -166,6 +166,8 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("Arrows").Active = true
 		elseif k == "shuffle_EPs" then
 			Tracker:FindObjectForCode("epSetting").CurrentStage = value
+		elseif k == "EP_difficulty" then
+			Tracker:FindObjectForCode("epDiff").CurrentStage = value
 		elseif k == "shuffle_doors" then
 			Tracker:FindObjectForCode("doorsSetting").CurrentStage = value
 			if value == 0 then
@@ -185,11 +187,7 @@ function onClear(slot_data)
 		elseif k == "victory_condition" then
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
-			if value == 0 then
-				Tracker:FindObjectForCode("Expert").Active = false
-			elseif value == 1 then
-				Tracker:FindObjectForCode("Expert").Active = true
-			end
+			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
 		else
 			obj.Active = value
 		end
