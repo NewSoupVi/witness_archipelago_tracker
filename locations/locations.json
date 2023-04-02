@@ -2788,7 +2788,7 @@
         "sections": [
             {
                 "name": "River Overlook Panel",
-				"visibility_rules": ["Unrandomized"],
+				"visibility_rules": [],
                 "item_count": 1
             },
             {
