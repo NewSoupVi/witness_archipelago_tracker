@@ -24,7 +24,7 @@
             },
             {
                 "name": "Gate EP",
-                "access_rules": ["@Places/tutorial, Triangles"],
+                "access_rules": ["@Places/tutorial, Triangles, [@Mountain Challenge Area/Challenge Vault]"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -735,7 +735,7 @@
             {
                 "name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
@@ -1451,7 +1451,8 @@
             },
             {
                 "name": "Boat Cargo Box EP",
-				"access_rules": ["@Places/ocean"],
+				"access_rules": ["@Places/ocean, Town Cargo Box Door",
+                "@Places/ocean, $canSolve|158219"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -2268,7 +2269,7 @@
         "sections": [
             {
                 "name": "Purple Sand Middle EP",
-				"access_rules": ["@Places/overworld"],
+				"access_rules": ["@Places/swampBack, $canSolve|158339"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -2280,7 +2281,7 @@
             },
             {
                 "name": "Purple Sand Bottom EP",
-				"access_rules": ["@Places/swampBack, $canSolve|158339"],
+				"access_rules": ["@Places/overworld"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -2912,7 +2913,7 @@
             },
 			{
                 "name": "Pink Bridge EP",
-				"access_rules": ["@Places/mountain2FrontStairs"],
+				"access_rules": ["@Places/mountain2FrontStairs", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -3475,11 +3476,17 @@
 			{
                 "name": "Side 3",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Quarry Entrance/Quarry Rock Line EP, @Quarry Entrance/Quarry Rock Line Reflection EP, @Town Tower/Town Brown Bridge EP"],
+                "access_rules": ["@Quarry Entrance/Quarry Rock Line EP, @Quarry Entrance/Quarry Rock Line Reflection EP"],
                 "item_count": 1
             },
 			{
                 "name": "Side 4",
+				"visibility_rules": ["obelisks"],
+                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
+                "item_count": 1
+            },
+			{
+                "name": "Side 5",
 				"visibility_rules": ["obelisks"],
                 "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
                 "item_count": 1
