@@ -1,15 +1,5 @@
 {
     "versions": [
-            {
-      "package_version": "1.3.0",
-      "download_url": "https://github.com/alwaysintreble/TheMessengerTrackPack/releases/download/1.3.0/TheMessengerTrackPack.zip",
-      "sha256": "5BA20720134056530877053C48302E943D790C840C00D08E375EA2B25E98153F",
-      "changelog": [
-        "Adds support for Mega Time Shards",
-        "Adds support for Quest 1 bosses",
-        "Adds an option to disable the automatic tab switching while connected to an AP server"
-        ]
-      },
       {
         "package_version": "0.4.0b",
         "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0b/witness_archipelago_tracker.zip",
