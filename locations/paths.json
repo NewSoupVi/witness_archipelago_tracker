@@ -2061,15 +2061,15 @@
             {
                 "map": "doors",
                 "x": 844,
-                "y": 1091,
-            },
+                "y": 1091
+            }
         ]
     },
 	
 	{
-        "name": "Untraviolet Room Entry Door",
+        "name": "Ultraviolet Room Entry Door",
 		"access_rules": [
-			"Bunker Door to Ultraviolet Room",],
+			"Bunker Door to Ultraviolet Room"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
