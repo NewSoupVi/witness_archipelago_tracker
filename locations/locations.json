@@ -54,7 +54,7 @@
             },
             {
                 "name": "Patio Flowers EP",
-                "access_rules": ["@Places/tutorial, $canSolve|158009"],
+                "access_rules": ["@Places/tutorial, $canSolve|158009-158010"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -598,7 +598,7 @@
             {
                 "name": "Elevator EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/desertLaser"],
+				"access_rules": ["@Places/desertLaser", "Desert Laser"],
                 "item_count": 1
             }
         ],
@@ -735,13 +735,15 @@
             {
                 "name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
                 "name": "Stoneworks Lift EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             }
         ],
@@ -807,13 +809,14 @@
             },			
 			{
                 "name": "Second Barrier Panel",
-				"access_rules": ["[@Places/quarryBoathouseUpstairsBack]"],
+				"access_rules": ["[@Places/quarryBoathouseUpstairsBack]",
+                                "$isDoors|on, @Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"],
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },			
 			{
                 "name": "Boathouse Hook EP",
-				"access_rules": ["@Places/quarryBoathouseUpstairsBack"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },			
@@ -1451,8 +1454,8 @@
             },
             {
                 "name": "Boat Cargo Box EP",
-				"access_rules": ["@Places/ocean, Town Cargo Box Door",
-                "@Places/ocean, $canSolve|158219"],
+				"access_rules": ["$isDoors|on, @Places/ocean, Town Cargo Box Door",
+                "$isDoors|off, @Places/ocean, $canSolve|158219"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -1666,7 +1669,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP",
-				"access_rules": ["@Desert/Laser"],
+				"access_rules": ["@Desert/Laser", "Desert Laser"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -2664,7 +2667,7 @@
                 "item_count": 1
             },
 			{
-                "name": "Boat CCW Undersiade EP",
+                "name": "Boat CCW Underside EP",
 				"access_rules": ["@Places/ocean", "epDiffNormal"],
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
                 "item_count": 1
@@ -3385,7 +3388,7 @@
             },
 			{
                 "name": "Side 4",
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
                 "access_rules": ["@Shipwreck EPs/Couch EP, @Shipwreck EPs/Boat Green EP, @Shipwreck EPs/Boat CW Underside EP"],
                 "item_count": 1
             },
@@ -3482,13 +3485,13 @@
 			{
                 "name": "Side 4",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
+                "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
                 "item_count": 1
             },
 			{
                 "name": "Side 5",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
+                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
                 "item_count": 1
             }
         ],
@@ -3512,7 +3515,7 @@
 			{
                 "name": "Side 2",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Tutorial Entry/First Hallway EP, @Tutorial Entry/Outside Tutorial Garden EP, @Tutorial East Wall/Tutorial Cloud EP, @Tutorial Entry/Patio Flowers EP, @Town Sewer/Outside Tutorial Town Sewer EP, @Town Sewer/Boat Town Long Sewer EP, @Outside Tutorial Path/Tutorial Path EP, @Tutorial Gate/Gate EP"],
+                "access_rules": ["@Tutorial Entry/First Hallway EP, @Tutorial Entry/Outside Tutorial Garden EP, @Tutorial East Wall/Tutorial Cloud EP, @Tutorial Entry/Patio Flowers EP, @Town Sewer/Outside Tutorial Town Sewer EP, @Town Sewer/Boat Town Long Sewer EP, @Outside Tutorial Path/Path EP, @Tutorial Gate/Gate EP"],
                 "item_count": 1
             },
 			{
