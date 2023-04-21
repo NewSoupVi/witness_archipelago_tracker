@@ -4,29 +4,18 @@ end
 
 function isDoors(check)
 	if check == "on" then
-		result = (Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax"))
+		return (Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax") > 0)
 	else
-		result = (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel")) 
-	end 
-	return result
-end
-
-function isLaserShuffle(check)
-	if check == "on" then
-		result = Tracker:ProviderCountForCode("shuffleLasers")
-	else
-		result = 1 - Tracker:ProviderCountForCode("shuffleLasers")
-	end 
-	return result
+		return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
+	end
 end
 
 function isExpert(check)
 	if check == "on" then
-		result = Tracker:ProviderCountForCode("Expert")
+		return (Tracker:ProviderCountForCode("Expert") > 0)
 	else
-		result = 1 - Tracker:ProviderCountForCode("Expert")
-	end 
-	return result
+		return (1 - Tracker:ProviderCountForCode("Expert") > 0)
+	end
 end
 
 function laserCount(amount)
@@ -64,7 +53,6 @@ function pp2()
 	return (isExpert("off") or (isDoors("off") and canSolve("158198 158200 158202 158204")) or
 	(isDoors("on") and 
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
-	Tracker:ProviderCountForCode("Keep Pressure Plates 2 Exit Door") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and
 	(Tracker:ProviderCountForCode("Keep Shortcut to Shadows") == 1 or
 	(Tracker:ProviderCountForCode("Keep Pressure Plates 4 Exit Door") == 1 and
