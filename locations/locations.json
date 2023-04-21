@@ -1694,7 +1694,7 @@
             },
             {
                 "name": "Black Line Redirect EP",
-				"access_rules": ["@Places/townLaser"],
+				"access_rules": ["@Places/overworld"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },
