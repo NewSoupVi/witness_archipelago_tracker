@@ -1817,7 +1817,7 @@
             },
 			{
                 "name": "Eclipse EP",
-				"visibility_rules": ["eps, epDiffEclipse"],
+				"visibility_rules": ["eps, epDiffEclipse, Unrandomized"],
 				"access_rules": ["@Theater/Challenge Video", "epDiffNormal", "epdiffTedious"],
                 "item_count": 1
             },
