@@ -2308,13 +2308,13 @@
         "sections": [
             {
                 "name": "Sliding Bridge Left EP",
-				"access_rules": ["$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"],
+				"access_rules": ["$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             },
             {
                 "name": "Sliding Bridge Right EP",
-				"access_rules": ["$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"],
+				"access_rules": ["$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"],
                 "visibility_rules": ["eps"],
                 "item_count": 1
             }

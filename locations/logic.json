@@ -314,14 +314,14 @@
         "access_rules": [
 			"$isDoors|off, @Swamp Entry Area/Door Panel, $hasPanel|Swamp Entry Door (Panel)",
 			"$isDoors|on, Swamp Entry Door",
-			"$isDoors|on, $canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
+			"$isDoors|on, $canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
 		],
         "item_count": 1
       },
       {
         "name": "swampPlatform",
         "access_rules": [
-			"$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
+			"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 			"$isDoors|on, Swamp Door to Broken Shapers, @Places/swampBroken",
 			"$isDoors|on, Swamp Platform Shortcut Door, @Places/ocean"
 		],
