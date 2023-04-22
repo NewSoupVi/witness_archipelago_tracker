@@ -898,7 +898,7 @@
             {
                 "name": "Elevator EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/desertLaser", "Desert Laser"],
+				"access_rules": ["@Places/desertLaser, $laser|4"],
                 "item_count": 1
             }
         ],
@@ -934,7 +934,7 @@
             {
                 "name": "Elevator EP (Desert Side 4)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Places/desertLaser", "Desert Laser"],
+				"access_rules": ["@Places/desertLaser, $laser|4"],
                 "item_count": 1
             }
         ],
@@ -1845,7 +1845,7 @@
 				"access_rules": ["@Pressure Plates 4/Pressure Plates, @Places/keepTower"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
@@ -2512,7 +2512,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP",
-				"access_rules": ["@Desert/Laser", "Desert Laser"],
+				"access_rules": ["$laser|4"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -2812,7 +2812,7 @@
 				"visibility_rules": ["obelisks, epDiffEclipse, Unrandomized"],
 				"access_rules": ["@Theater/Challenge Video", "epDiffNormal", "epdiffTedious"],
                 "item_count": 1
-            },
+            }
 
         ],
         "map_locations": [
@@ -4849,7 +4849,7 @@
                 "name": "Challenge Water EP (Town Side 4)",
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {

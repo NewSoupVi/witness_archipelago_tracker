@@ -92,7 +92,7 @@
         "access_rules": [
 			"$isDoors|off, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
 			"$isDoors|on, Desert Door to Elevator Room, @Places/desertFlood",
-			"$isDoors|on, Desert Laser, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
+			"$isDoors|on, $laser|4, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
 		],
         "item_count": 1
       },
@@ -603,7 +603,7 @@
         "access_rules": [
 			"$isDoors|off, @Mountain Challenge Area/Door to Tunnels Panel, @Places/challenge",
 			"$isDoors|on, Theater Walkway Door to Town",
-			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
+			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, $laser|4, @Places/desertLaser",
 			"$isDoors|on, Theater Walkway Door to Back of Theater, @Places/windmill",
 			"$isDoors|on, Challenge Door to Theater Walkway, @Places/challenge"
 		],

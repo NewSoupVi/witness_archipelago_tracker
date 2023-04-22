@@ -437,6 +437,10 @@ function showGoal()
 	print(Tracker:FindObjectForCode("Goal").CurrentStage, Tracker:FindObjectForCode("hiddenGoal").CurrentStage)
 end
 
+function laser(num)
+	return (lasers[tonumber(num)] > 0)
+end
+
 
 -- add AP callbacks
 -- un-/comment as needed
