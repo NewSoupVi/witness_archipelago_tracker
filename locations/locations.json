@@ -1580,7 +1580,7 @@
 			{
                 "name": "RGB Room Right",
 				"access_rules": ["$isExpert|off,$canSolve|158246,[$canSolve|158244],@Places/RGBHouseUpstairs",
-                                         "$isExpert|on,[$canSolve|158244],$canSolve|158245-158246"],
+                                         "$isExpert|on,[$canSolve|158244],$canSolve|158245-158246,@Places/RGBHouseUpstairs"],
 				"visibility_rules": [""],
                 "item_count": 1
             },
