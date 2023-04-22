@@ -37,6 +37,27 @@
             }
         ]
     },
+	
+	{
+		"name": "Tutorial Gate EPs",
+		"sections": [
+            {
+                "name": "Gate EP (Town Side 2)",
+                "access_rules": ["@Places/tutorial, Triangles, [@Mountain Challenge Area/Challenge Vault]"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+		],
+		"map_locations": [
+            {
+                "map": "fullmap",
+                "x": 445,
+                "y": 1361,
+				"size": 15
+            }
+        ]
+	},
+	
 	{
         "name": "Tutorial Entry",
         "sections": [
@@ -72,7 +93,40 @@
                 "y": 1308
             }
         ]
-    },	
+    },
+	
+	{
+        "name": "Tutorial Entry EPs",
+        "sections": [
+            {
+                "name": "First Hallway EP (Town Side 2)",
+                "access_rules": ["@Places/tutorial"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Patio Flowers EP (Town Side 2)",
+                "access_rules": ["@Places/tutorial, $canSolve|158009-158010"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Outside Tutorial Garden EP (Town Side 2)",
+                "access_rules": ["@Places/overworld"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 317,
+                "y": 1308,
+				"size": 15
+            }
+        ]
+    },
+	
     {
         "name": "Tutorial East Wall",
         "sections": [
@@ -88,6 +142,26 @@
                 "map": "fullmap",
                 "x": 413,
                 "y": 1265
+            }
+        ]
+    },
+	
+    {
+        "name": "Tutorial East Wall EPs",
+        "sections": [
+            {
+                "name": "Tutorial Cloud EP (Town Side 2)",
+                "access_rules": ["@Places/tutorial"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 413,
+                "y": 1265,
+				"size": 15
             }
         ]
     },
@@ -179,7 +253,28 @@
                 "y": 927
             }
         ]
-    },	
+    },
+	
+	{
+        "name": "Outside Tutorial Tractor EPs",
+        "sections": [
+            {
+                "name": "Tractor EP (Town Side 1)",
+                "access_rules": ["@Places/overworld"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 375,
+                "y": 927,
+				"size": 15
+            }
+        ]
+    },
+	
 	{
         "name": "Outside Tutorial Tree Row",
 		"access_rules": ["$canSolve|158018-158026,@Places/overworld"],
@@ -215,6 +310,27 @@
             }
         ]
     },	
+			
+    {
+        "name": "Outside Tutorial Path EPs",
+        "sections": [
+            {
+                "name": "Path EP (Town Side 2)",
+                "access_rules": ["@Places/overworld"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 481,
+                "y": 1137,
+				"size": 15
+            }
+        ]
+    },	
+	
 	{
         "name": "Town Sewer",
         "sections": [
@@ -236,6 +352,31 @@
                 "map": "fullmap",
                 "x": 579,
                 "y": 992
+            }
+        ]
+    },	
+	{
+        "name": "Town Sewer EPs",
+        "sections": [
+            {
+                "name": "Outside Tutorial Town Sewer EP (Town Side 2)",
+                "access_rules": ["@Places/overworld"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Boat Town Long Sewer EP (Town Side 2)",
+                "access_rules": ["@Places/ocean"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 579,
+                "y": 992,
+				"size": 15
             }
         ]
     },	
@@ -267,6 +408,38 @@
                 "map": "fullmap",
                 "x": 536,
                 "y": 1364
+            }
+        ]
+    },	
+	{
+        "name": "Ocean Outside Tutorial EPs",
+		"access_rules": ["@Places/overworld, $canSolve|158002-158007"],
+        "sections": [
+            {
+                "name": "Boat Tutorial EP (Town Side 3)",
+                "access_rules": ["@Places/ocean", "epdiffNormal"],
+                "visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            },
+            {
+                "name": "Boat Tutorial Reflection EP (Town Side 3)",
+                "access_rules": ["@Places/ocean", "epdiffNormal"],
+                "visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            },
+            {
+                "name": "Boat Tutorial Moss EP (Town Side 3)",
+                "access_rules": ["@Places/ocean"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 536,
+                "y": 1364,
+				"size": 15
             }
         ]
     },
@@ -327,6 +500,26 @@
                 "map": "fullmap",
                 "x": 220,
                 "y": 950
+            }
+        ]
+    },
+	{
+        "name": "Outside Glass Factory EPs",
+        "sections": [
+			{
+                "name": "Vase EP (Desert Side 1)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["$canSolve|158027, @Places/overworld"],
+                "item_count": 1
+            }
+			
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 255,
+                "y": 950,
+				"size": 15
             }
         ]
     },
@@ -395,6 +588,32 @@
             }
         ]
     },
+	
+	{
+        "name": "Symmetry Island EPs",
+        "sections": [
+            {
+				"access_rules": ["@Places/symmetryInner"],
+                "name": "Glass Factory Black Line EP (Desert Side 1)",
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+				"access_rules": ["@Places/symmetryOuter"],
+                "name": "Glass Factory Reflection EP (Desert Side 1)",
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 255,
+                "y": 715,
+				"size": 15
+            }
+        ]
+	},
 	
 	{
         "name": "Orchard",
@@ -475,6 +694,25 @@
                 "y": 605
             }
         ]
+    },
+	{
+        "name": "Desert Sand Snake EPs",
+        "sections": [
+            {
+                "name": "Sand Snake EP (Desert Side 3)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 425,
+                "y": 605,
+				"size": 15
+            }
+        ]
     },	
     {
         "name": "Desert Broken Wall",
@@ -497,6 +735,31 @@
                 "map": "fullmap",
                 "x": 296,
                 "y": 145
+            }
+        ]
+    },	
+    {
+        "name": "Desert Broken Wall EPs",
+        "sections": [
+            {
+                "name": "Broken Wall Straight EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Broken Wall Bend EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 296,
+                "y": 145,
+				"size": 15
             }
         ]
     },
@@ -533,6 +796,43 @@
                 "map": "fullmap",
                 "x": 361,
                 "y": 319
+            }
+        ]
+    },
+	{
+        "name": "Desert Facade EPs",
+        "sections": [
+            {
+                "name": "Facade Right EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Facade Left EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Stairs Right EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Stairs Left EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 361,
+                "y": 319,
+				"size": 15
             }
         ]
     },
@@ -610,6 +910,43 @@
             }
         ]
     },    
+	{
+        "name": "Desert EPs",
+        "sections": [
+            {
+                "name": "Pond Room Near Reflection EP (Desert Side 5)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/desertPond"],
+                "item_count": 1
+            },
+            {
+                "name": "Pond Room Far Reflection EP (Desert Side 5)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/desertPond"],
+                "item_count": 1
+            },
+            {
+                "name": "Flood Room EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/desertFlood, @Logic/canWaterLevel"],
+                "item_count": 1
+            },
+            {
+                "name": "Elevator EP (Desert Side 4)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/desertLaser", "Desert Laser"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 261,
+                "y": 298,
+				"size": 15
+            }
+        ]
+    },
     {
         "name": "Desert Shore",
         "sections": [
@@ -641,6 +978,37 @@
         ]
     },
     {
+        "name": "Desert Shore EPs",
+        "sections": [
+            {
+                "name": "Shore EP (Desert Side 5)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Island EP (Desert Side 5)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Boat EP (Desert Side 5)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/ocean"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 84,
+                "y": 243,
+				"size": 15
+            }
+        ]
+    },
+    {
         "name": "Quarry Railroad",
         "sections": [
             {
@@ -655,6 +1023,25 @@
                 "map": "fullmap",
                 "x": 685,
                 "y": 204
+            }
+        ]
+    },
+    {
+        "name": "Quarry Railroad EPs",
+        "sections": [
+            {
+                "name": "Railroad EP (Quarry Side 1)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Quarry Stoneworks/Control Room Right,@Places/quarry"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 685,
+                "y": 204,
+				"size": 15
             }
         ]
     },
@@ -685,6 +1072,31 @@
                 "map": "fullmap",
                 "x": 599,
                 "y": 345
+            }
+        ]
+    },
+	{
+        "name": "Quarry Stoneworks Rooftop EPs",
+        "sections": [
+            {
+                "name": "Quarry Shore EP (Quarry Side 1)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            },
+            {
+                "name": "Quarry Sand Pile EP (Quarry Side 2)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Places/overworld"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 599,
+                "y": 380,
+				"size": 15
             }
         ]
     },
@@ -752,6 +1164,32 @@
                 "map": "fullmap",
                 "x": 639,
                 "y": 385
+            }
+        ]
+    },{
+        "name": "Quarry Stoneworks EPs",
+        "sections": [
+            {
+                "name": "Stoneworks Ramp EP (Quarry Side 2)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
+                "item_count": 1
+            },
+            {
+                "name": "Stoneworks Lift EP (Quarry Side 2)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 639,
+                "y": 420,
+				"size": 15
             }
         ]
     },
@@ -836,6 +1274,33 @@
                 "y": 209
             }
         ]
+    },	
+	{
+        "name": "Quarry Boathouse EPs",
+		"access_rules": ["@Places/quarry"],
+        "sections": [
+			{
+                "name": "Boathouse Hook EP (Quarry Side 1)",
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },			
+			{
+                "name": "Boathouse Moving Ramp EP (Quarry Side 1)",
+				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
+                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 795,
+                "y": 244,
+				"size": 15
+            }
+        ]
     },
 	
 	{
@@ -896,6 +1361,38 @@
                 "map": "fullmap",
                 "x": 665,
                 "y": 543
+            }
+        ]
+    },
+	
+	{
+        "name": "Quarry Entrance EPs",
+        "sections": [
+			{
+                "name": "Quarry Entrance Pipe EP (Quarry Side 2)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },			
+			{
+                "name": "Quarry Rock Line EP (Quarry Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },			
+			{
+                "name": "Quarry Rock Line Reflection EP (Quarry Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 705,
+                "y": 543,
+				"size": 15
             }
         ]
     },
@@ -981,6 +1478,25 @@
                 "y": 473
             }
         ]
+    },	
+    {
+        "name": "Shadows Near Quarry EPs",
+        "sections": [
+            {
+                "name": "Quarry Stoneworks Rooftop Vent EP",
+				"access_rules": ["@Places/overworld"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 800,
+                "y": 473,
+				"size": 15
+            }
+        ]
     },
 	
 	{
@@ -1044,6 +1560,31 @@
             }
         ]
     },	
+    {
+        "name": "Outside Keep EPs",
+        "sections": [
+            {
+                "name": "Keep Red Flowers EP (Quarry Side 5)",
+        		"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Keep Purple Flowers EP (Quarry Side 5)",
+        		"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 927,
+                "y": 626,
+				"size": 15
+            }
+        ]
+    },		
 	
 	{
         "name": "Hedge Maze 1",
@@ -1122,11 +1663,11 @@
 	
 	{
         "name": "Pressure Plates 1",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
             {
                 "name": "Pressure Plates",
 				"access_rules": ["$canSolve|158198,@Places/overworld"],
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
@@ -1146,11 +1687,11 @@
     },		
 	{
         "name": "Pressure Plates 2",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
             {
                 "name": "Pressure Plates",
 				"access_rules": ["$canSolve|158200,$pp2,@Places/plates2"],
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
@@ -1170,11 +1711,11 @@
     },		
 	{
         "name": "Pressure Plates 3",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
             {
                 "name": "Pressure Plates",
 				"access_rules": ["$canSolve|158202,@Places/plates3"],
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
@@ -1233,6 +1774,88 @@
             }
         ]
     },
+	{
+        "name": "Pressure Plates 1 EPs",
+        "sections": [
+            {
+                "name": "Pressure Plates 1 EP (Treehouse Side 5)",
+				"access_rules": ["@Pressure Plates 1/Pressure Plates, @Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1061,
+                "y": 371,
+				"size": 15
+            }
+        ]
+    },		
+	{
+        "name": "Pressure Plates 2 EPs",
+        "sections": [
+            {
+                "name": "Pressure Plates 2 EP (Treehouse Side 5)",
+				"access_rules": ["@Pressure Plates 2/Pressure Plates, @Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1076,
+                "y": 299,
+				"size": 15
+            }
+        ]
+    },		
+	{
+        "name": "Pressure Plates 3 EPs",
+        "sections": [
+            {
+                "name": "Pressure Plates 3 EP (Treehouse Side 5)",
+				"access_rules": ["@Pressure Plates 3/Pressure Plates, @Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1008,
+                "y": 283,
+				"size": 15
+            }
+        ]
+    },	
+	{
+        "name": "Pressure Plates 4 EPs",
+        "sections": [
+            {
+                "name": "Pressure Plates 4 Left Exit EP (Treehouse Side 5)",
+				"access_rules": ["@Pressure Plates 4/Pressure Plates, @Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Pressure Plates 4 Right Exit EP (Treehouse Side 5)",
+				"access_rules": ["@Pressure Plates 4/Pressure Plates, @Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 990,
+                "y": 358,
+				"size": 15
+            }
+        ]
+    },
 	
 	{
         "name": "Keep Tower",
@@ -1274,6 +1897,32 @@
                 "map": "fullmap",
                 "x": 1014,
                 "y": 381
+            }
+        ]
+    },
+	
+	{
+        "name": "Keep Tower EPs",
+        "sections": [
+			{
+                "name": "Keep Path EP (Treehouse Side 6)",
+				"access_rules": ["@Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Hedges EP (Treehouse Side 6)",
+				"access_rules": ["@Places/keepTower"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1014,
+                "y": 416,
+				"size": 15
             }
         ]
     },
@@ -1369,6 +2018,61 @@
             }
         ]
     },
+	{
+        "name": "Monastery Facade EPs",
+        "sections": [
+            {
+                "name": "Left Near EP (Monastery Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Left Far Short EP (Monastery Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Left Far Long EP (Monastery Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Right Near EP (Monastery Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Left Stairs EP (Monastery Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Right Stairs EP (Monastery Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Grass Stairs EP (Monastery Side 5)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 878,
+                "y": 1029,
+				"size": 15
+            }
+        ]
+    },
 	
 	{
         "name": "Monastery",
@@ -1435,6 +2139,37 @@
             }
         ]
     },
+	{
+        "name": "Monastery EPs",
+        "sections": [
+            {
+                "name": "Left Shutter EP (Monastery Side 4)",
+				"access_rules": ["@Places/monastery,$canSolve|158213"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Middle Shutter EP (Monastery Side 4)",
+				"access_rules": ["@Places/monastery,$canSolve|158213"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Right Shutter EP (Monastery Side 4)",
+				"access_rules": ["@Places/monastery,$canSolve|158213"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 872,
+                "y": 929,
+				"size": 15
+            }
+        ]
+    },
 	
 	{
         "name": "Town Cargo Box",
@@ -1454,8 +2189,8 @@
             },
             {
                 "name": "Boat Cargo Box EP",
-				"access_rules": ["$isDoors|on, @Places/ocean, Town Cargo Box Door",
-                "$isDoors|off, @Places/ocean, $canSolve|158219"],
+				"access_rules": ["$isDoors|off, $canSolve|158219, @Places/ocean",
+                                 "$isDoors|on, Town Cargo Box Door, @Places/ocean"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -1465,6 +2200,25 @@
                 "map": "fullmap",
                 "x": 705,
                 "y": 953
+            }
+        ]
+    },{
+        "name": "Town Cargo Box EPs",
+        "sections": [
+            {
+                "name": "Boat Cargo Box EP (Town Side 4)",
+				"access_rules": ["$isDoors|off, $canSolve|158219, @Places/ocean",
+                                 "$isDoors|on, Town Cargo Box Door, @Places/ocean"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 705,
+                "y": 988,
+				"size": 15
             }
         ]
     },
@@ -1546,6 +2300,25 @@
         ]
     },
 	{
+        "name": "Town Red Rooftop EPs",
+        "sections": [
+            {
+                "name": "Bridge Underside EP (Town Side 5)",
+				"access_rules": ["@Places/redRoof"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 790,
+                "y": 877,
+				"size": 15
+            }
+        ]
+    },
+	{
         "name": "Town Wooden Rooftop",
         "sections": [
             {
@@ -1618,6 +2391,31 @@
         ]
     },
 	{
+        "name": "RGB House EPs",
+        "sections": [
+			{
+                "name": "RGB House Red EP (Town Side 5)",
+				"access_rules": ["$canSolve|158244,@Places/RGBHouseUpstairs"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "RGB House Green EP (Town Side 5)",
+				"access_rules": ["$canSolve|158244,@Places/RGBHouseUpstairs"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 808,
+                "y": 819,
+				"size": 15
+            }
+        ]
+    },
+	{
         "name": "Town Tower",
         "sections": [
             {
@@ -1664,6 +2462,49 @@
             }
         ]
     },		
+	{
+        "name": "Town Tower EPs",
+        "sections": [
+            {
+                "name": "Town Brown Bridge EP (Quarry Side 4)",
+                "access_rules": ["@Places/townLaser"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Tower Underside First EP (Town Side 5)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Tower Underside Second EP (Town Side 5)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Tower Underside Third EP (Town Side 5)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Tower Underside Fourth EP (Town Side 5)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 718,
+                "y": 824,
+				"size": 15
+            }
+        ]
+    },		
     {
         "name": "Thundercloud",
         "sections": [
@@ -1680,6 +2521,26 @@
                 "map": "fullmap",
                 "x": 1040,
                 "y": 800
+            }
+        ]
+    },		
+    {
+        "name": "Thundercloud EPs",
+        "sections": [
+            {
+                "name": "Main Island Thundercloud EP (Town Side 6)",
+				"access_rules": ["@Desert/Laser", "Desert Laser"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+			
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1040,
+                "y": 800,
+				"size": 15
             }
         ]
     },	
@@ -1710,6 +2571,37 @@
                 "map": "fullmap",
                 "x": 642,
                 "y": 837
+            }
+        ]
+    },	
+    {
+        "name": "Town Black Line EPs",
+        "sections": [
+            {
+                "name": "Black Line Tower EP (Town Side 6)",
+				"access_rules": ["@Places/townLaser"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Black Line Redirect EP (Town Side 6)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Black Line Church EP (Town Side 6)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }			
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 642,
+                "y": 837,
+				"size": 15
             }
         ]
     },
@@ -1752,6 +2644,37 @@
                 "map": "fullmap",
                 "x": 597,
                 "y": 735
+            }
+        ]
+    },
+	{
+        "name": "Windmill EPs",
+        "sections": [
+            {
+                "name": "First Blade EP (Desert Side 2)",
+				"access_rules": ["$canSolve|158247,@Places/windmill"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Second Blade EP (Desert Side 2)",
+				"access_rules": ["$canSolve|158247,@Places/windmill", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            },
+            {
+                "name": "Third Blade EP (Desert Side 2)",
+				"access_rules": ["$canSolve|158247,@Places/windmill", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 632,
+                "y": 735,
+				"size": 15
             }
         ]
     },
@@ -1853,6 +2776,52 @@
             }
         ]
     },
+	
+	{
+        "name": "Theater EPs",
+		"access_rules": ["@Places/theater"],
+        "sections": [
+			{
+                "name": "Window EP (Town Side 6)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Theater/Tutorial Video"],
+                "item_count": 1
+            },
+			{
+                "name": "Door EP (Town Side 6)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Theater/Tutorial Video"],
+                "item_count": 1
+            },
+			{
+                "name": "Flowers EP (Town Side 6)",
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+				"access_rules": ["@Theater/Tutorial Video, @Places/tunnels", "epDiffNormal"],
+                "item_count": 1
+            },
+			{
+                "name": "Church EP (Town Side 6)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Theater/Jungle Video"],
+                "item_count": 1
+            },
+			{
+                "name": "Eclipse EP (Town Side 6)",
+				"visibility_rules": ["obelisks, epDiffEclipse"],
+				"access_rules": ["@Theater/Challenge Video", "epDiffNormal", "epdiffTedious"],
+                "item_count": 1
+            },
+
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 522,
+                "y": 735,
+				"size": 15
+            }
+        ]
+    },
 	{
         "name": "Jungle Sound Waves Puzzles",
 		"access_rules": ["@Places/overworld"],
@@ -1949,6 +2918,55 @@
             }
         ]
     },
+    {
+        "name": "Jungle Staircase EPs",
+        "sections": [
+            {
+                "name": "Long Arch Moss EP (Monastery Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Straight Left Moss EP (Monastery Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Pop-up Wall Moss EP (Monastery Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Short Arch Moss EP (Monastery Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "River Green Leaf Moss EP (Monastery Side 2)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Tree Halo EP (Monastery Side 6)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1053,
+                "y": 1035,
+				"size": 15
+            }
+        ]
+    },
 	{
 		"name": "Jungle Discard",
         "sections": [
@@ -1985,6 +3003,25 @@
             }
         ]
 	},
+	{
+		"name": "Jungle Entrance EPs",
+        "sections": [
+            {
+                "name": "Entrance EP (Monastery Side 6)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+		"map_locations": [
+            {
+                "map": "fullmap",
+                "x": 936,
+                "y": 1117,
+				"size": 15
+            }
+        ]
+	},
     {
 		"name": "Monastery Garden",
         "sections": [
@@ -2006,6 +3043,31 @@
                 "map": "fullmap",
                 "x": 984,
                 "y": 942
+            }
+        ]
+	},
+    {
+		"name": "Monastery Garden EPs",
+        "sections": [
+            {
+                "name": "Garden Left EP (Monastery Side 3)",
+				"access_rules": ["Monastery Door to Garden", "Monastery Shortcuts","$isDoors|off, @Monastery/Outside Puzzles"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Garden Right EP (Monastery Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+		"map_locations": [
+            {
+                "map": "fullmap",
+                "x": 984,
+                "y": 942,
+				"size": 15
             }
         ]
 	},
@@ -2055,6 +3117,31 @@
                 "y": 1036
             }
         ]
+    },	
+    {
+        "name": "Jungle Bamboo EPs",
+        "sections": [
+            {
+                "name": "Bamboo CCW EP (River Side 6)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Bamboo CW EP (River Side 6)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1142,
+                "y": 1036,
+				"size": 15
+            }
+        ]
     },
 	{
         "name": "Between Jungle and Monastery",
@@ -2095,6 +3182,25 @@
                 "map": "fullmap",
                 "x": 973,
                 "y": 859
+            }
+        ]
+    },	
+    {
+        "name": "Monastery Wall EPs",
+        "sections": [
+            {
+                "name": "Wall EP (Monastery Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 973,
+                "y": 859,
+				"size": 15
             }
         ]
     },
@@ -2146,7 +3252,7 @@
             },
 			{
                 "name": "Green Room Flowers EP",
-				"access_rules": ["@Places/bunkerLaser"],
+				"access_rules": ["$canSolve|158286,@Places/bunkerLaser"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -2165,6 +3271,32 @@
             }
         ]
     },
+	{
+        "name": "Color Bunker EPs",
+		"visibility_rules": ["Unrandomized"],
+        "sections": [
+			{
+                "name": "Green Room Flowers EP (River Side 2)",
+				"access_rules": ["$canSolve|158286,@Places/bunkerLaser"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Tinted Door EP (River Side 2)",
+				"access_rules": ["@Places/bunkerLaser"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1361,
+                "y": 1126,
+				"size": 15
+            }
+        ]
+    },
     {
         "name": "Ocean Outside Bunker",
         "sections": [
@@ -2180,6 +3312,25 @@
                 "map": "fullmap",
                 "x": 1448,
                 "y": 1120
+            }
+        ]
+    },
+    {
+        "name": "Ocean Outside Bunker EPs",
+        "sections": [
+            {
+                "name": "Boat Bunker Yellow Line EP (River Side 3)",
+				"access_rules": ["@Places/ocean"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1448,
+                "y": 1120,
+				"size": 15
             }
         ]
     },
@@ -2266,6 +3417,25 @@
                 "y": 762
             }
         ]
+    },
+	{
+        "name": "Swamp Near Boat EPs",
+        "sections": [
+            {
+                "name": "Swamp Boat EP (River Side 4)",
+				"access_rules": ["@Places/ocean"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1540,
+                "y": 762,
+				"size": 15
+            }
+        ]
     },	
     {
         "name": "Swamp Purple Sand",
@@ -2302,6 +3472,43 @@
                 "y": 787
             }
         ]
+    },	
+    {
+        "name": "Swamp Purple Sand EPs",
+        "sections": [
+            {
+                "name": "Purple Sand Middle EP (River Side 3)",
+				"access_rules": ["@Places/swampBack, $canSolve|158339"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Purple Sand Top EP (River Side 3)",
+				"access_rules": ["@Places/swampBack, $canSolve|158339"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Purple Sand Bottom EP (River Side 3)",
+				"access_rules": ["@Places/overworld"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Long Bridge Slide EP (River Side 4)",
+				"access_rules": ["@Places/swampBack, $canSolve|158339"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1468,
+                "y": 787,
+				"size": 15
+            }
+        ]
     },       
     {
         "name": "Swamp Sliding Bridge",
@@ -2326,6 +3533,31 @@
                 "y": 685
             }
         ]
+    },       
+    {
+        "name": "Swamp Sliding Bridge EPs",
+        "sections": [
+            {
+                "name": "Sliding Bridge Left EP (River Side 5)",
+				"access_rules": ["$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Sliding Bridge Right EP (River Side 5)",
+				"access_rules": ["$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1241,
+                "y": 685,
+				"size": 15
+            }
+        ]
     }, 
     {
         "name": "Swamp Rotating Bridge",
@@ -2348,6 +3580,31 @@
                 "map": "fullmap",
                 "x": 1345,
                 "y": 742
+            }
+        ]
+    }, 
+    {
+        "name": "Swamp Rotating Bridge EPs",
+        "sections": [
+            {
+                "name": "Rotating Bridge CCW EP (River Side 4)",
+				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack", "epDiffNormal"],
+                "visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            },
+            {
+                "name": "Rotating Bridge CW EP (River Side 4)",
+				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack", "epDiffNormal"],
+                "visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1345,
+                "y": 742,
+				"size": 15
             }
         ]
     },
@@ -2378,6 +3635,31 @@
                 "map": "fullmap",
                 "x": 1369,
                 "y": 793
+            }
+        ]
+    },
+	{
+        "name": "Swamp Purple Underwater EPs",
+        "sections": [
+            {
+                "name": "Purple Underwater Right EP (River Side 4)",
+				"access_rules": ["@Places/swampPurple"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Purple Underwater Left EP (River Side 4)",
+				"access_rules": ["@Places/swampPurple"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1369,
+                "y": 828,
+				"size": 15
             }
         ]
     },
@@ -2418,6 +3700,25 @@
                 "map": "fullmap",
                 "x": 1226,
                 "y": 654
+            }
+        ]
+    },
+	{
+        "name": "Swamp Cyan Underwater Room EPs",
+        "sections": [
+            {
+                "name": "Underwater Sliding Bridge EP (River Side 5)",
+				"access_rules": ["$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform, @Places/swampCyan"],
+                "visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1261,
+                "y": 654,
+				"size": 15
             }
         ]
     },
@@ -2488,7 +3789,7 @@
                 "item_count": 1
             },
 			{
-                "name": "Bouy EP",
+                "name": "Buoy EP",
 				"access_rules": ["@Places/ocean"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
@@ -2499,6 +3800,25 @@
                 "map": "fullmap",
                 "x": 1311,
                 "y": 376
+            }
+        ]
+    },
+	{
+        "name": "Treehouse Entrance EPs",
+        "sections": [
+			{
+                "name": "Buoy EP (Treehouse Side 2)",
+				"access_rules": ["@Places/ocean"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1540,
+                "y": 376,
+				"size": 15
             }
         ]
     },
@@ -2581,6 +3901,26 @@
     },
 	
 	{
+        "name": "Treehouse Right Side EPs",
+        "sections": [
+			{
+                "name": "Right Orange Bridge EP (Treehouse Side 2)",
+				"access_rules": ["@Treehouse Right Side/Right Orange Bridge, @Treehouse Right Side/Green Bridge"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1216,
+                "y": 340,
+				"size": 15
+            }
+        ]
+    },
+	
+	{
         "name": "Treehouse Laser House",
         "sections": [
             {
@@ -2644,9 +3984,46 @@
                 "y": 442
             }
         ]
+    },	
+    {
+        "name": "Treehouse Beach EPs",
+        "sections": [
+			{
+                "name": "Rock Shadow EP (Treehouse Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Sand Shadow EP (Treehouse Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Burned House EP (Treehouse Side 1)",
+				"access_rules": ["@Treehouse Left Side/Left Orange Bridge"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Both Orange Bridges EP (Treehouse Side 2)",
+				"access_rules": ["@Places/overworld, @Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1210,
+                "y": 442,
+				"size": 15
+            }
+        ]
     },
     {
-        "name": "Shipwreck EPs",
+        "name": "Shipwreck",
         "sections": [
 			{
                 "name": "Shipwreck Circle Far EP",
@@ -2719,6 +4096,80 @@
     },
 	
 	{
+        "name": "Shipwreck EPs",
+        "sections": [
+			{
+                "name": "Shipwreck Circle Far EP (Treehouse Side 3)",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Shipwreck Circle Left EP (Treehouse Side 3)",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Shipwreck Circle Near EP (Treehouse Side 3)",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Boat CCW Underside EP (Treehouse Side 3)",
+				"access_rules": ["@Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            },
+			{
+                "name": "Shipwreck Stern EP (Treehouse Side 3)",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Shipwreck Rope Inner EP (Treehouse Side 3)",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Shipwreck Rope Outer EP (Treehouse Side 3)",
+				"access_rules": ["@Places/plates3"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Couch EP (Treehouse Side 4)",
+				"access_rules": ["@Places/plates3, @Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffEclipse", "obelisks, epDiffTedious"],
+                "item_count": 1
+            },
+			{
+                "name": "Boat Green EP (Treehouse Side 4)",
+				"access_rules": ["@Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            },
+			{
+                "name": "Boat CW Underside EP (Treehouse Side 4)",
+				"access_rules": ["@Places/ocean", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1216,
+                "y": 167,
+				"size": 15
+            }
+        ]
+    },
+	
+	{
         "name": "Mountainside Discard",
         "sections": [
             {
@@ -2739,6 +4190,26 @@
                 "map": "fullmap",
                 "x": 1267,
                 "y": 1008
+            }
+        ]
+    },
+	
+	{
+        "name": "Mountainside Discard EPs",
+        "sections": [
+            {
+                "name": "Cloud Cycle EP (River Side 1)",
+				"access_rules": ["@Places/overworld", "epDiffNormal"],
+				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1267,
+                "y": 1043,
+				"size": 15
             }
         ]
     },
@@ -2763,6 +4234,31 @@
                 "map": "fullmap",
                 "x": 1449,
                 "y": 970
+            }
+        ]
+    },
+	{
+        "name": "Mountainside Path EPs",
+        "sections": [
+            {
+                "name": "Bush EP (River Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Mountainside Apparent River EP (River Side 4)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1449,
+                "y": 970,
+				"size": 15
             }
         ]
     },
@@ -2848,6 +4344,44 @@
     },
 	
 	{
+        "name": "Mountaintop EPs",
+        "sections": [
+            {
+                "name": "River EP (River Side 1)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Arch Black EP (River Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Arch White Right EP (River Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+            {
+                "name": "Arch White Left EP (River Side 3)",
+				"access_rules": ["@Places/overworld"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1340,
+                "y": 1015,
+				"size": 15
+            }
+        ]
+    },
+	
+	{
         "name": "Inside Mountain Layer 1",
 		"access_rules": ["@Places/mountainLayer1, $canSolve|158408"],
         "sections": [
@@ -2916,7 +4450,7 @@
             },
 			{
                 "name": "Pink Bridge EP",
-				"access_rules": ["@Places/mountain2FrontStairs", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
+				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -2926,6 +4460,26 @@
                 "map": "fullmap",
                 "x": 1303,
                 "y": 980
+            }
+        ]
+    },
+	
+	{
+        "name": "Inside Mountain Layer 2 EPs",
+        "sections": [
+			{
+                "name": "Pink Bridge EP (River Side 2)",
+				"access_rules": ["@Places/mountainLayer2"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1268,
+                "y": 980,
+				"size": 15
             }
         ]
     },
@@ -2992,6 +4546,32 @@
                 "map": "fullmap",
                 "x": 1303,
                 "y": 1017
+            }
+        ]
+    },
+	
+	{
+        "name": "Inside Mountain Bottom Layer EPs",
+        "sections": [
+			{
+                "name": "Blue Bridge EP (River Side 2)",
+				"access_rules": ["@Places/mountainMeta, @Inside Mountain Layer 2/Blue Light Bridge"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+			{
+                "name": "Yellow Bridge EP (River Side 2)",
+				"access_rules": ["@Places/mountainMeta, @Inside Mountain Layer 2/Orange Light Bridge"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1303,
+                "y": 1052,
+				"size": 15
             }
         ]
     },
@@ -3208,7 +4788,25 @@
         ]
     },
 	
-	
+	{
+        "name": "Caves Lone Pillar EPs",
+        "sections": [
+            {
+                "name": "Caves Skylight EP (River Side 5)",
+				"access_rules": ["@Places/caves"],
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1467,
+                "y": 1248,
+				"size": 15
+            }
+        ]
+    },
 	
 	{
         "name": "Mountain Challenge Area",
@@ -3237,6 +4835,26 @@
                 "map": "fullmap",
                 "x": 1502,
                 "y": 1286
+            }
+        ]
+    },
+	
+	{
+        "name": "Mountain Challenge Area EPs",
+		"access_rules": ["@Places/challenge"],
+        "sections": [
+            {
+                "name": "Challenge Water EP (Town Side 4)",
+				"visibility_rules": ["obelisks"],
+                "item_count": 1
+            },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1467,
+                "y": 1286,
+				"size": 15
             }
         ]
     },
@@ -3377,19 +4995,19 @@
 			{
                 "name": "Side 2",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Treehouse Entrance/Bouy EP, @Treehouse Right Side/Right Orange Bridge EP, @Treehouse Beach/Both Orange Bridges EP"],
+                "access_rules": ["@Treehouse Entrance/Buoy EP, @Treehouse Right Side/Right Orange Bridge EP, @Treehouse Beach/Both Orange Bridges EP"],
                 "item_count": 1
             },
 			{
                 "name": "Side 3",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Shipwreck EPs/Shipwreck Circle Far EP, @Shipwreck EPs/Shipwreck Circle Left EP, @Shipwreck EPs/Shipwreck Circle Near EP, @Shipwreck EPs/Boat CCW Underside EP, @Shipwreck EPs/Shipwreck Stern EP, @Shipwreck EPs/Shipwreck Rope Inner EP, @Shipwreck EPs/Shipwreck Rope Outer EP"],
+                "access_rules": ["@Shipwreck/Shipwreck Circle Far EP, @Shipwreck/Shipwreck Circle Left EP, @Shipwreck/Shipwreck Circle Near EP, @Shipwreck/Boat CCW Underside EP, @Shipwreck/Shipwreck Stern EP, @Shipwreck/Shipwreck Rope Inner EP, @Shipwreck/Shipwreck Rope Outer EP"],
                 "item_count": 1
             },
 			{
                 "name": "Side 4",
 				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
-                "access_rules": ["@Shipwreck EPs/Couch EP, @Shipwreck EPs/Boat Green EP, @Shipwreck EPs/Boat CW Underside EP"],
+                "access_rules": ["@Shipwreck/Couch EP, @Shipwreck/Boat Green EP, @Shipwreck/Boat CW Underside EP"],
                 "item_count": 1
             },
 			{

@@ -46,6 +46,17 @@ function setReply(key, val, old)
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
 
+	if(val and key:sub(1, 9) == "WitnessEP") then
+		local separatorIndex, _ = key:find("-")
+		local epId = tonumber(key:sub(separatorIndex + 1))
+		local locationName = EP_DATASTORAGE_IDS[epId][1]
+		if locationName then
+			local location = Tracker:FindObjectForCode(locationName)
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+		end
+	end
 end
 
 function onClear(slot_data)
@@ -76,7 +87,15 @@ function onClear(slot_data)
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-49842"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
-
+	
+	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
+		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onClear: setting up tracking for EP: " .. datastorageString))
+		end
+		Archipelago:Get({datastorageString})
+		Archipelago:SetNotify({datastorageString})
+	end
 
     SLOT_DATA = slot_data
     CUR_INDEX = -1
