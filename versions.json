@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.4.0d",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0d/witness_archipelago_tracker.zip",
+      "sha256": "11E850057EAEEE73E71729916D4D854F1817DE8AA3BA42350F40DAC67586E7D0",
+      "changelog": [
+        "EP tracking in Obelisks and more fixes to logic"
+      ]
+    },    
+    {
       "package_version": "0.4.0c",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0c/witness_archipelago_tracker.zip",
       "sha256": "6C709D1B335828DBC296B11E08DC707291B77F3381A705DE4F8517DF098DDD1E",
