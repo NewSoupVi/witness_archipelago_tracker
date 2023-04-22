@@ -593,7 +593,7 @@
         "name": "Symmetry Island EPs",
         "sections": [
             {
-				"access_rules": ["@Places/symmetryInner"],
+				"access_rules": ["@Places/symmetryOuter, [@Places/symmetryInner]"],
                 "name": "Glass Factory Black Line EP (Desert Side 1)",
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
@@ -2396,8 +2396,9 @@
         "name": "RGB House EPs",
         "sections": [
 			{
-                "name": "RGB House Red EP (Town Side 5)",
-				"access_rules": ["$canSolve|158244,@Places/RGBHouseUpstairs"],
+                "name": "RGB House Red EP (Town Side 5)",				
+                "access_rules": ["$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs,@Places/redRoof",
+                                         "$isExpert|on,$canSolve|158244-158246,@Places/redRoof"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             },
