@@ -43,7 +43,7 @@
 		"sections": [
             {
                 "name": "Gate EP (Town Side 2)",
-                "access_rules": ["@Places/tutorial, Triangles, [@Mountain Challenge Area/Challenge Vault]"],
+                "access_rules": ["@Places/tutorial, Triangles, [@Places/tunnels]"],
                 "visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
