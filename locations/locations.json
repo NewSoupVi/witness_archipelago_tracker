@@ -44,7 +44,7 @@
             {
                 "name": "Gate EP (Town Side 2)",
                 "access_rules": ["@Places/tutorial, Triangles, [@Mountain Challenge Area/Challenge Vault]"],
-                "visibility_rules": ["obelisks"],
+                "visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
 		],
@@ -107,7 +107,7 @@
             {
                 "name": "Patio Flowers EP (Town Side 2)",
                 "access_rules": ["@Places/tutorial, $canSolve|158009-158010"],
-                "visibility_rules": ["obelisks"],
+                "visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             },
             {
@@ -2145,19 +2145,19 @@
             {
                 "name": "Left Shutter EP (Monastery Side 4)",
 				"access_rules": ["@Places/monastery,$canSolve|158213"],
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             },
             {
                 "name": "Middle Shutter EP (Monastery Side 4)",
 				"access_rules": ["@Places/monastery,$canSolve|158213"],
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             },
             {
                 "name": "Right Shutter EP (Monastery Side 4)",
 				"access_rules": ["@Places/monastery,$canSolve|158213"],
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
         ],
@@ -2785,31 +2785,31 @@
         "sections": [
 			{
                 "name": "Window EP (Town Side 6)",
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
 				"access_rules": ["@Theater/Tutorial Video"],
                 "item_count": 1
             },
 			{
                 "name": "Door EP (Town Side 6)",
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
 				"access_rules": ["@Theater/Tutorial Video"],
                 "item_count": 1
             },
 			{
                 "name": "Flowers EP (Town Side 6)",
-				"visibility_rules": ["obelisks, epDiffTedious", "obelisks, epDiffEclipse"],
+				"visibility_rules": ["obelisks, epDiffTedious, Unrandomized", "obelisks, epDiffEclipse, Unrandomized"],
 				"access_rules": ["@Theater/Tutorial Video, @Places/tunnels", "epDiffNormal"],
                 "item_count": 1
             },
 			{
                 "name": "Church EP (Town Side 6)",
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
 				"access_rules": ["@Theater/Jungle Video"],
                 "item_count": 1
             },
 			{
                 "name": "Eclipse EP (Town Side 6)",
-				"visibility_rules": ["obelisks, epDiffEclipse"],
+				"visibility_rules": ["obelisks, epDiffEclipse, Unrandomized"],
 				"access_rules": ["@Theater/Challenge Video", "epDiffNormal", "epdiffTedious"],
                 "item_count": 1
             },
@@ -3054,7 +3054,7 @@
             {
                 "name": "Garden Left EP (Monastery Side 3)",
 				"access_rules": ["Monastery Door to Garden", "Monastery Shortcuts","$isDoors|off, @Monastery/Outside Puzzles"],
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             },
             {
@@ -3255,7 +3255,7 @@
 			{
                 "name": "Green Room Flowers EP",
 				"access_rules": ["$canSolve|158286,@Places/bunkerLaser"],
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             },
 			{
@@ -3280,13 +3280,13 @@
 			{
                 "name": "Green Room Flowers EP (River Side 2)",
 				"access_rules": ["$canSolve|158286,@Places/bunkerLaser"],
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             },
 			{
                 "name": "Tinted Door EP (River Side 2)",
 				"access_rules": ["@Places/bunkerLaser"],
-				"visibility_rules": ["obelisks"],
+				"visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
         ],
