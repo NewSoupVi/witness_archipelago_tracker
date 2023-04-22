@@ -24,8 +24,8 @@
             },
             {
                 "name": "Gate EP",
-                "access_rules": ["@Places/tutorial, Triangles, [@Mountain Challenge Area/Challenge Vault]"],
-                "visibility_rules": ["eps"],
+                "access_rules": ["@Places/tutorial, Triangles, [@Places/tunnels]"],
+                "visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             }
         ],
@@ -76,7 +76,7 @@
             {
                 "name": "Patio Flowers EP",
                 "access_rules": ["@Places/tutorial, $canSolve|158009-158010"],
-                "visibility_rules": ["eps"],
+                "visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             },
             {
@@ -563,7 +563,7 @@
                 "item_count": 1
             },			
             {
-				"access_rules": ["@Places/symmetryInner"],
+				"access_rules": ["@Places/symmetryOuter, [@Places/symmetryInner]"],
                 "name": "Glass Factory Black Line EP",
 				"visibility_rules": ["eps"],
                 "item_count": 1
@@ -2115,19 +2115,19 @@
             {
                 "name": "Left Shutter EP",
 				"access_rules": ["@Places/monastery,$canSolve|158213"],
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             },
             {
                 "name": "Middle Shutter EP",
 				"access_rules": ["@Places/monastery,$canSolve|158213"],
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             },
             {
                 "name": "Right Shutter EP",
 				"access_rules": ["@Places/monastery,$canSolve|158213"],
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             }
         ],
@@ -2352,7 +2352,8 @@
             },
 			{
                 "name": "RGB Room Right",
-				"access_rules": ["$canSolve|158246,[$canSolve|158244],@Places/RGBHouseUpstairs"],
+				"access_rules": ["$isExpert|off,$canSolve|158246,[$canSolve|158244],@Places/RGBHouseUpstairs",
+                                         "$isExpert|on,[$canSolve|158244],$canSolve|158245-158246,@Places/RGBHouseUpstairs"],
 				"visibility_rules": [""],
                 "item_count": 1
             },
@@ -2371,7 +2372,8 @@
             },
 			{
                 "name": "RGB House Red EP",
-				"access_rules": ["$canSolve|158244,@Places/RGBHouseUpstairs"],
+				"access_rules": ["$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs,@Places/redRoof",
+                                         "$isExpert|on,$canSolve|158244-158246,@Places/redRoof"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -2696,19 +2698,19 @@
             },
 			{
                 "name": "Window EP",
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
 				"access_rules": ["@Theater/Tutorial Video"],
                 "item_count": 1
             },
 			{
                 "name": "Door EP",
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
 				"access_rules": ["@Theater/Tutorial Video"],
                 "item_count": 1
             },
 			{
                 "name": "Flowers EP",
-				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
+				"visibility_rules": ["eps, epDiffTedious, Unrandomized", "eps, epDiffEclipse, Unrandomized"],
 				"access_rules": ["@Theater/Tutorial Video, @Places/tunnels", "epDiffNormal"],
                 "item_count": 1
             },
@@ -2726,7 +2728,7 @@
             },
 			{
                 "name": "Church EP",
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
 				"access_rules": ["@Theater/Jungle Video"],
                 "item_count": 1
             },
@@ -2738,7 +2740,7 @@
             },
 			{
                 "name": "Eclipse EP",
-				"visibility_rules": ["eps, epDiffEclipse"],
+				"visibility_rules": ["eps, epDiffEclipse, Unrandomized"],
 				"access_rules": ["@Theater/Challenge Video", "epDiffNormal", "epdiffTedious"],
                 "item_count": 1
             },
@@ -3028,7 +3030,7 @@
             {
                 "name": "Garden Left EP",
 				"access_rules": ["Monastery Door to Garden", "Monastery Shortcuts","$isDoors|off, @Monastery/Outside Puzzles"],
-				"visibility_rules": ["eps"],
+				"visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             },
             {
@@ -4288,7 +4290,7 @@
         "sections": [
             {
                 "name": "River Overlook Panel",
-				"visibility_rules": ["Unrandomized"],
+				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4306,7 +4308,7 @@
             {
                 "name": "Mountain Entry",
 				"access_rules": ["$canSolve|158407,$laserBox|short"],
-				"visibility_rules": [],
+				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4578,7 +4580,7 @@
 
 	{
         "name": "Caves Lower Puzzles",
-		"access_rules": [],
+		"access_rules": [""],
         "sections": [
             {
                 "name": "Right First 4",
@@ -4826,7 +4828,7 @@
 			{
                 "name": "Challenge Vault",
 				"access_rules": ["$canSolve|158499-158517,$laserBox|long"],
-				"visibility_rules": [],
+				"visibility_rules": [""],
                 "item_count": 1
             }
         ],
