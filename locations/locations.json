@@ -382,7 +382,7 @@
     },	
 	{
         "name": "Ocean Outside Tutorial",
-		"access_rules": ["@Places/overworld, $canSolve|158002-158007"],
+		"access_rules": ["@Places/overworld"],
         "sections": [
             {
                 "name": "Boat Tutorial EP",
