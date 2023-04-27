@@ -490,7 +490,7 @@
 			{
                 "name": "Vase EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158027, @Places/overworld"],
+				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
                 "item_count": 1
             }
 			
@@ -508,7 +508,7 @@
         "sections": [
 			{
                 "name": "Vase EP (Desert Side 1)",
-				"visibility_rules": ["obelisks"],
+				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
 				"access_rules": ["$canSolve|158027, @Places/overworld"],
                 "item_count": 1
             }
@@ -1254,14 +1254,15 @@
             },			
 			{
                 "name": "Boathouse Hook EP",
-				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack",
+						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },			
 			{
                 "name": "Boathouse Moving Ramp EP",
 				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier"],
+                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -1281,14 +1282,15 @@
         "sections": [
 			{
                 "name": "Boathouse Hook EP (Quarry Side 1)",
-				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack",
+						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             },			
 			{
                 "name": "Boathouse Moving Ramp EP (Quarry Side 1)",
 				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier"],
+                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
@@ -1720,7 +1722,8 @@
             },
             {
                 "name": "Pressure Plates 3 EP",
-				"access_rules": ["@Pressure Plates 3/Pressure Plates, @Places/keepTower"],
+				"access_rules": ["$isDoors|off, @Pressure Plates 3/Pressure Plates, @Places/keepTower",
+						 "$isDoors|on, Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -1817,7 +1820,8 @@
         "sections": [
             {
                 "name": "Pressure Plates 3 EP (Treehouse Side 5)",
-				"access_rules": ["@Pressure Plates 3/Pressure Plates, @Places/keepTower"],
+				"access_rules": ["$isDoors|off, @Pressure Plates 3/Pressure Plates, @Places/keepTower",
+						 "$isDoors|on, Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
@@ -2372,8 +2376,10 @@
             },
 			{
                 "name": "RGB House Red EP",
-				"access_rules": ["$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs,@Places/redRoof",
-                                         "$isExpert|on,$canSolve|158244-158246,@Places/redRoof"],
+                                "access_rules": ["$isDoors|off,$hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel),$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
+                                "$isDoors|on,Town Maze Staircase,$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
+                                "$isDoors|off,$hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel),$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs",
+                                "$isDoors|on,Town Maze Staircase,$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },
@@ -2396,9 +2402,11 @@
         "name": "RGB House EPs",
         "sections": [
 			{
-                "name": "RGB House Red EP (Town Side 5)",				
-                "access_rules": ["$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs,@Places/redRoof",
-                                         "$isExpert|on,$canSolve|158244-158246,@Places/redRoof"],
+                "name": "RGB House Red EP (Town Side 5)",
+                                "access_rules": ["$isDoors|off,$hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel),$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
+                                "$isDoors|on,Town Maze Staircase,$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
+                                "$isDoors|off,$hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel),$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs",
+                                "$isDoors|on,Town Maze Staircase,$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             },
