@@ -490,7 +490,8 @@
 			{
                 "name": "Vase EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158027, @Places/overworld"],
+				"access_rules": ["$isDoors|off, $canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+						 "$isDoors|on, $canSolve|158027, @Places/overworld"],
                 "item_count": 1
             }
 			
@@ -508,7 +509,8 @@
         "sections": [
 			{
                 "name": "Vase EP (Desert Side 1)",
-				"visibility_rules": ["obelisks"],
+				"access_rules": ["$isDoors|off, $canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+						 "$isDoors|on, $canSolve|158027, @Places/overworld"],
 				"access_rules": ["$canSolve|158027, @Places/overworld"],
                 "item_count": 1
             }
