@@ -154,7 +154,7 @@
       {
         "name": "quarryBoathouseUpstairsBack",
         "access_rules": [
-			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
+			"$isDoors|off, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
 			"$isDoors|on, @Places/quarryBoathouseUpstairsFront, $canSolve|158154, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 		],
