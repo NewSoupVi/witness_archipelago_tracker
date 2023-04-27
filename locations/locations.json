@@ -509,7 +509,6 @@
 			{
                 "name": "Vase EP (Desert Side 1)",
 				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
-				"access_rules": ["$canSolve|158027, @Places/overworld"],
                 "item_count": 1
             }
 			
