@@ -1262,7 +1262,7 @@
 			{
                 "name": "Boathouse Moving Ramp EP",
 				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier"],
+                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -1290,7 +1290,7 @@
 			{
                 "name": "Boathouse Moving Ramp EP (Quarry Side 1)",
 				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier"],
+                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
