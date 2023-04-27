@@ -1254,7 +1254,8 @@
             },			
 			{
                 "name": "Boathouse Hook EP",
-				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack",
+						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },			
@@ -1281,7 +1282,8 @@
         "sections": [
 			{
                 "name": "Boathouse Hook EP (Quarry Side 1)",
-				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack",
+						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             },			
