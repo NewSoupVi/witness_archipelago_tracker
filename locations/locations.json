@@ -413,7 +413,7 @@
     },	
 	{
         "name": "Ocean Outside Tutorial EPs",
-		"access_rules": ["@Places/overworld, $canSolve|158002-158007"],
+		"access_rules": ["@Places/overworld"],
         "sections": [
             {
                 "name": "Boat Tutorial EP (Town Side 3)",
