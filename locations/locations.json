@@ -490,7 +490,8 @@
 			{
                 "name": "Vase EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
+				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+                                         "$canSolve|158027, @Places/overworld, $isDoors|on"],
                 "item_count": 1
             }
 			
@@ -509,7 +510,8 @@
 			{
                 "name": "Vase EP (Desert Side 1)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
+				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+                                         "$canSolve|158027, @Places/overworld, $isDoors|on"],
                 "item_count": 1
             }
 			
@@ -4480,7 +4482,7 @@
         "sections": [
 			{
                 "name": "Pink Bridge EP (River Side 2)",
-				"access_rules": ["@Places/mountainLayer2"],
+				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
@@ -5114,13 +5116,13 @@
 			{
                 "name": "Side 4",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
+                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
                 "item_count": 1
             },
 			{
                 "name": "Side 5",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
+                "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
                 "item_count": 1
             }
         ],
