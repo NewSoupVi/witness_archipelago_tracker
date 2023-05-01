@@ -2542,7 +2542,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP (Town Side 6)",
-				"access_rules": ["@Desert/Laser", "Desert Laser"],
+				"access_rules": ["$laser|4"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
