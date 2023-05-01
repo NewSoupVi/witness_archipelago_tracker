@@ -1770,7 +1770,8 @@
         "name": "Full dot grid stairs",
 		"access_rules": [
 			"doorsSimple, Town Doors",
-			"doorsComplex, Town Wooden Roof Staircase"],
+			"doorsComplex, Town Wooden Roof Staircase",
+                        "doorsMax, Town Wooden Roof Staircase"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
