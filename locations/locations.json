@@ -19,12 +19,13 @@
             },
             {
                 "name": "Gate Open",
-                "access_rules": ["@Places/tutorial, $canSolve|158002-158007"],
+                "access_rules": ["$isExpert|off, @Places/tutorial, $canSolve|158002-158007",
+                                 "$isExpert|on, @Places/tutorial, $canSolve|158002 158003 158004 158007"],
                 "item_count": 1
             },
             {
                 "name": "Gate EP",
-                "access_rules": ["@Places/tutorial, Triangles, [@Places/tunnels]"],
+                "access_rules": ["@Tutorial Gate/Gate Open, @Places/tunnels"],
                 "visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             }
@@ -43,7 +44,7 @@
 		"sections": [
             {
                 "name": "Gate EP (Town Side 2)",
-                "access_rules": ["@Places/tutorial, Triangles, [@Places/tunnels]"],
+                "access_rules": ["@Tutorial Gate/Gate Open, @Places/tunnels"],
                 "visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
@@ -1256,8 +1257,8 @@
             },			
 			{
                 "name": "Boathouse Hook EP",
-				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack",
-						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack, $canSolve|158165",
+						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },			
