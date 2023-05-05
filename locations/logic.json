@@ -386,7 +386,7 @@
         "access_rules": [
 			"$isDoors|off, @Places/swampRotated, @Swamp Cyan Underwater Room/Cyan Underwater",
 			"$isDoors|on, @Places/swampRotated, Swamp Red Water Pump",
-      "$isDoors|on, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), [@Places/swampRotated], [Swamp Red Water Pump]"
+      "$isDoors|on, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit, [@Places/swampRotated], [Swamp Red Water Pump]"
 		],
         "item_count": 1
       },
