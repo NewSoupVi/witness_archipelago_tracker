@@ -1291,7 +1291,6 @@
 	
 	{
         "name": "Swamp red underwater door",
-		"access_rules": ["Swamp Red Underwater Exit", "Swamp Doors"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
@@ -1304,22 +1303,32 @@
 					"doorsMax, Swamp Red Underwater Exit",
 				],
                 "item_count": 1
-            },
-			{
-                "name": "Maze Control",
-				"access_rules": [
-					"Shapers, RotatedShapers, NegativeShapers, Swamp Maze Control (Panel)"
-				],
-				"visibility_rules": ["doorsPanel", "doorsMax"],
-                "item_count": 1
-            },
-			
+            }			
         ],
         "map_locations": [
             {
                 "map": "doors",
-                "x": 1100,
-                "y": 742,
+                "x": 1110,
+                "y": 735,
+            },	
+        ]
+    },
+
+	{
+        "name": "Swamp maze",
+		"visibility_rules": ["doorsPanel", "doorsMax"],
+        "sections": [
+			{
+                "name": "Maze Control",
+				"access_rules": ["Swamp Maze Control (Panel)"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "doors",
+                "x": 1085,
+                "y": 750,
             },
         ]
     },
