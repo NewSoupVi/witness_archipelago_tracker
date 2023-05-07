@@ -1126,7 +1126,6 @@
 			{
                 "name": "Control Room Left",
 				"access_rules": ["$canSolve|158143,@Places/quarryStoneworksUpstairs, @Quarry Stoneworks/Upper Row"],
-				"visibility_rules": [""],
                 "item_count": 1
             },            
 			{
@@ -2353,7 +2352,6 @@
         "sections": [
             {
                 "name": "RGB Room Left",
-				"visibility_rules": [""],
 				"access_rules": ["$canSolve|158245,[$canSolve|158244],@Places/RGBHouseUpstairs"],
                 "item_count": 1
             },
@@ -2361,7 +2359,6 @@
                 "name": "RGB Room Right",
 				"access_rules": ["$isExpert|off,$canSolve|158246,[$canSolve|158244],@Places/RGBHouseUpstairs",
                                          "$isExpert|on,[$canSolve|158244],$canSolve|158245-158246,@Places/RGBHouseUpstairs"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
@@ -3628,7 +3625,6 @@
             {
                 "name": "Purple Underwater",
 				"access_rules": ["$canSolve|158333,@Places/swampPurple"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4302,7 +4298,6 @@
         "sections": [
             {
                 "name": "River Overlook Panel",
-				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4320,7 +4315,6 @@
             {
                 "name": "Mountain Entry",
 				"access_rules": ["$canSolve|158407,$laserBox|short"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4527,13 +4521,11 @@
 			{
                 "name": "Final Room Pillars Right",
 				"access_rules": ["$canSolve|158522-158525,@Places/mountainFinalRoom"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
                 "name": "Final Room Pillars Left",
 				"access_rules": ["$canSolve|158526-158529,@Places/mountainFinalRoom"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
@@ -4840,7 +4832,6 @@
 			{
                 "name": "Challenge Vault",
 				"access_rules": ["$canSolve|158499-158517,$laserBox|long"],
-				"visibility_rules": [""],
                 "item_count": 1
             }
         ],
