@@ -18,6 +18,14 @@ function isExpert(check)
 	end
 end
 
+function shuffleLasers(check)
+	if check == "on" then
+		return (Tracker:ProviderCountForCode("shuffleLasers") > 0)
+	else
+		return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
+	end
+end
+
 function laserCount(amount)
 	if tonumber(amount) > 0 then
 		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
