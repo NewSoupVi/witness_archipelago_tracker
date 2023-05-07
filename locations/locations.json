@@ -901,7 +901,7 @@
             {
                 "name": "Elevator EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/desertLaser, $laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, @Places/desertLaser, $laser|4"],
                 "item_count": 1
             }
         ],
@@ -937,7 +937,7 @@
             {
                 "name": "Elevator EP (Desert Side 4)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Places/desertLaser, $laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, @Places/desertLaser, $laser|4"],
                 "item_count": 1
             }
         ],
@@ -2524,7 +2524,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP",
-				"access_rules": ["$laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, $laser|4"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -2543,7 +2543,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP (Town Side 6)",
-				"access_rules": ["$laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, $laser|4"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
