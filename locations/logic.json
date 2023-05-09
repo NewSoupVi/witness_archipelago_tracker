@@ -214,7 +214,8 @@
         "access_rules": [
 			"$isDoors|off, @Pressure Plates 1/Pressure Plates",
 			"$isDoors|on, Keep Pressure Plates 1 Exit Door",
-			"$isDoors|on, [Keep Pressure Plates 2 Exit Door], @Places/plates3"
+			"$isDoors|on, [Keep Pressure Plates 2 Exit Door], @Places/plates3",
+			"$isExpert|on, @Places/plates3"
 		],
         "item_count": 1
       },
