@@ -4452,7 +4452,7 @@
                 "name": "Elevator Discard",
 				"access_rules": ["$canSolve|158439 158613,@Places/mountainMeta",
 								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge",
-								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door"],
+								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
