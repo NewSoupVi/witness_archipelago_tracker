@@ -555,7 +555,7 @@
         "name": "mountainMeta",
         "access_rules": [
 			"$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge, @Places/mountain2BackStairs",
-			"$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs",
+			"$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Orange Light Bridge, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs, @Places/mountain2BackStairs",
 			"$isDoors|on, Inside Mountain Giant Puzzle Exit Door, @Places/mountainPenultimateRoom"
 		],
         "item_count": 1
