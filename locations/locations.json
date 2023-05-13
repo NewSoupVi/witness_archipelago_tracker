@@ -1149,15 +1149,15 @@
             {
                 "name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
                 "name": "Stoneworks Lift EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             }
         ],
@@ -1174,15 +1174,15 @@
             {
                 "name": "Stoneworks Ramp EP (Quarry Side 2)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
                 "name": "Stoneworks Lift EP (Quarry Side 2)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             }
         ],
