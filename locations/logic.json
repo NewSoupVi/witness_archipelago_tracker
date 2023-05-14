@@ -120,7 +120,7 @@
       {
         "name": "quarryStoneworks",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Quarry Stoneworks Entry (Panel), [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry",
+			"$isDoors|off, $hasPanel|Quarry Door to Stoneworks (Panel), [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry",
 			"$isDoors|on, Quarry Stoneworks Rooftop Shortcut",
 			"$isDoors|on, Quarry Stoneworks Side Door, @Places/quarry",
 			"$isDoors|on, Quarry Door to Stoneworks, @Places/quarry"
