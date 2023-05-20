@@ -25,7 +25,7 @@
             },
             {
                 "name": "Gate EP",
-                "access_rules": ["@Tutorial Gate/Gate Open, @Places/tunnels"],
+                "access_rules": ["@Tutorial Gate/Gate Open, [@Places/tunnels]"],
                 "visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             }
@@ -44,7 +44,7 @@
 		"sections": [
             {
                 "name": "Gate EP (Town Side 2)",
-                "access_rules": ["@Tutorial Gate/Gate Open, @Places/tunnels"],
+                "access_rules": ["@Tutorial Gate/Gate Open, [@Places/tunnels]"],
                 "visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
