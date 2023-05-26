@@ -1874,8 +1874,8 @@
             },
 			{
                 "name": "Laser Pressure Plates",
-				"access_rules": ["$isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 4/Pressure Plates",
-                                 "$isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 2/Pressure Plates"],
+				"access_rules": ["$isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
+                                 "$isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"],
                 "item_count": 1
             },
 			{
