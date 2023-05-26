@@ -239,7 +239,7 @@ function onItem(index, item_id, item_name, player_number)
         return
     end
 	if item_id > 159902 and item_id < 159988 then
-		doorsSimple(item_name)
+		doorsSimple(v[1])
 	end
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onItem: code: %s, type %s", v[1], v[2]))

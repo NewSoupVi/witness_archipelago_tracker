@@ -269,7 +269,7 @@
     "codes": "boxLong"
   },
     {
-    "name": "Hiiden Victory Condition",
+    "name": "Hidden Victory Condition",
 	"codes": "hiddenGoal",
     "type": "progressive",
     "allow_disabled": true,
@@ -1616,11 +1616,11 @@
     "codes": "Caves Exits to Main Island"
   },
 {
-    "name": "Theater Walkway Doors",
+    "name": "Tunnels Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Theater Walkway Doors"
+    "codes": "Tunnels Doors"
   },
 {
     "name": "Symmetry Laser",

@@ -19,12 +19,13 @@
             },
             {
                 "name": "Gate Open",
-                "access_rules": ["@Places/tutorial, $canSolve|158002-158007"],
+                "access_rules": ["$isExpert|off, @Places/tutorial, $canSolve|158002-158007",
+                                 "$isExpert|on, @Places/tutorial, $canSolve|158002 158003 158004 158007"],
                 "item_count": 1
             },
             {
                 "name": "Gate EP",
-                "access_rules": ["@Places/tutorial, Triangles, [@Places/tunnels]"],
+                "access_rules": ["@Tutorial Gate/Gate Open, [@Places/tunnels]"],
                 "visibility_rules": ["eps, Unrandomized"],
                 "item_count": 1
             }
@@ -43,7 +44,7 @@
 		"sections": [
             {
                 "name": "Gate EP (Town Side 2)",
-                "access_rules": ["@Places/tutorial, Triangles, [@Places/tunnels]"],
+                "access_rules": ["@Tutorial Gate/Gate Open, [@Places/tunnels]"],
                 "visibility_rules": ["obelisks, Unrandomized"],
                 "item_count": 1
             }
@@ -413,7 +414,7 @@
     },	
 	{
         "name": "Ocean Outside Tutorial EPs",
-		"access_rules": ["@Places/overworld, $canSolve|158002-158007"],
+		"access_rules": ["@Places/overworld"],
         "sections": [
             {
                 "name": "Boat Tutorial EP (Town Side 3)",
@@ -490,7 +491,8 @@
 			{
                 "name": "Vase EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
+				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+                                         "$canSolve|158027, @Places/overworld, $isDoors|on"],
                 "item_count": 1
             }
 			
@@ -509,7 +511,8 @@
 			{
                 "name": "Vase EP (Desert Side 1)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)"],
+				"access_rules": ["$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+                                         "$canSolve|158027, @Places/overworld, $isDoors|on"],
                 "item_count": 1
             }
 			
@@ -898,7 +901,7 @@
             {
                 "name": "Elevator EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/desertLaser, $laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, @Places/desertLaser, $laser|4"],
                 "item_count": 1
             }
         ],
@@ -934,7 +937,7 @@
             {
                 "name": "Elevator EP (Desert Side 4)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Places/desertLaser, $laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, @Places/desertLaser, $laser|4"],
                 "item_count": 1
             }
         ],
@@ -1123,7 +1126,6 @@
 			{
                 "name": "Control Room Left",
 				"access_rules": ["$canSolve|158143,@Places/quarryStoneworksUpstairs, @Quarry Stoneworks/Upper Row"],
-				"visibility_rules": [""],
                 "item_count": 1
             },            
 			{
@@ -1147,15 +1149,15 @@
             {
                 "name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
                 "name": "Stoneworks Lift EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             }
         ],
@@ -1172,15 +1174,15 @@
             {
                 "name": "Stoneworks Ramp EP (Quarry Side 2)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
                 "name": "Stoneworks Lift EP (Quarry Side 2)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel),@Places/quarryStoneworksUpstairs"],
+				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+                            "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             }
         ],
@@ -1254,8 +1256,8 @@
             },			
 			{
                 "name": "Boathouse Hook EP",
-				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack",
-						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut"],
+				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack, $canSolve|158165",
+						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             },			
@@ -2350,7 +2352,6 @@
         "sections": [
             {
                 "name": "RGB Room Left",
-				"visibility_rules": [""],
 				"access_rules": ["$canSolve|158245,[$canSolve|158244],@Places/RGBHouseUpstairs"],
                 "item_count": 1
             },
@@ -2358,7 +2359,6 @@
                 "name": "RGB Room Right",
 				"access_rules": ["$isExpert|off,$canSolve|158246,[$canSolve|158244],@Places/RGBHouseUpstairs",
                                          "$isExpert|on,[$canSolve|158244],$canSolve|158245-158246,@Places/RGBHouseUpstairs"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
@@ -2521,7 +2521,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP",
-				"access_rules": ["$laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, $laser|4"],
 				"visibility_rules": ["eps"],
                 "item_count": 1
             }
@@ -2540,7 +2540,7 @@
         "sections": [
             {
                 "name": "Main Island Thundercloud EP (Town Side 6)",
-				"access_rules": ["@Desert/Laser", "Desert Laser"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, $laser|4"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
@@ -3625,7 +3625,6 @@
             {
                 "name": "Purple Underwater",
 				"access_rules": ["$canSolve|158333,@Places/swampPurple"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4299,7 +4298,6 @@
         "sections": [
             {
                 "name": "River Overlook Panel",
-				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4317,7 +4315,6 @@
             {
                 "name": "Mountain Entry",
 				"access_rules": ["$canSolve|158407,$laserBox|short"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
             {
@@ -4455,7 +4452,7 @@
                 "name": "Elevator Discard",
 				"access_rules": ["$canSolve|158439 158613,@Places/mountainMeta",
 								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge",
-								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Exit Door"],
+								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
 				"visibility_rules": ["Discarded"],
                 "item_count": 1
             },
@@ -4480,7 +4477,7 @@
         "sections": [
 			{
                 "name": "Pink Bridge EP (River Side 2)",
-				"access_rules": ["@Places/mountainLayer2"],
+				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
 				"visibility_rules": ["obelisks"],
                 "item_count": 1
             }
@@ -4524,13 +4521,11 @@
 			{
                 "name": "Final Room Pillars Right",
 				"access_rules": ["$canSolve|158522-158525,@Places/mountainFinalRoom"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
                 "name": "Final Room Pillars Left",
 				"access_rules": ["$canSolve|158526-158529,@Places/mountainFinalRoom"],
-				"visibility_rules": [""],
                 "item_count": 1
             },
 			{
@@ -4837,7 +4832,6 @@
 			{
                 "name": "Challenge Vault",
 				"access_rules": ["$canSolve|158499-158517,$laserBox|long"],
-				"visibility_rules": [""],
                 "item_count": 1
             }
         ],
@@ -5114,13 +5108,13 @@
 			{
                 "name": "Side 4",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
+                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
                 "item_count": 1
             },
 			{
                 "name": "Side 5",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Town Tower/Town Brown Bridge EP"],
+                "access_rules": ["@Outside Keep/Keep Red Flowers EP, @Outside Keep/Keep Purple Flowers EP"],
                 "item_count": 1
             }
         ],
