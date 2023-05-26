@@ -2,7 +2,7 @@
   "versions": [
     {
       "package_version": "0.4.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/tag/v0.4.1",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1/witness_archipelago_tracker.zip",
       "sha256": "FD0220C74171E52FFB7D66319BF9A7B2077F30227D5D00D236840516C79F713F",
       "changelog": [
         "Various fixes courtesy of ExemptMedic"
