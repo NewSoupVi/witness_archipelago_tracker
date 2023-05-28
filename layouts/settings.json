@@ -6,7 +6,7 @@
             {
                 "type": "group",
                 "dock": "top",
-                "header": "Included locations",
+                "header": "Randomization settings",
                 "header_background": "#3e4b57",                
 				"content": [
 				                    {
