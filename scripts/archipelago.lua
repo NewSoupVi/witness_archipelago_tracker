@@ -399,8 +399,8 @@ function doorsSimple(item_name)
 		Tracker:FindObjectForCode("Swamp Door to Broken Shapers").Active = true
 		Tracker:FindObjectForCode("Swamp Platform Shortcut Door").Active = true
 		Tracker:FindObjectForCode("Swamp Door to Rotated Shapers").Active = true
-		Tracker:FindObjectForCode("Swamp Red Underwater Exit").Active = true
 	elseif item_name == "Swamp Water Pumps"  then
+		Tracker:FindObjectForCode("Swamp Red Underwater Exit").Active = true
 		Tracker:FindObjectForCode("Swamp Cyan Water Pump").Active = true
 		Tracker:FindObjectForCode("Swamp Red Water Pump").Active = true
 		Tracker:FindObjectForCode("Swamp Blue Water Pump").Active = true
