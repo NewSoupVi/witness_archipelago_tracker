@@ -1298,7 +1298,7 @@
 				"access_rules": [
 					"doorsNo, @Swamp Red Underwater Room/Even More Negative Shapers",
 					"doorsPanel, @Swamp Red Underwater Room/Even More Negative Shapers",
-					"doorsSimple, Swamp Doors",
+					"doorsSimple, Swamp Water Pumps",
 					"doorsComplex, Swamp Red Underwater Exit",
 					"doorsMax, Swamp Red Underwater Exit",
 				],
