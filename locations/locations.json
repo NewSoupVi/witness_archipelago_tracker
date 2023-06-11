@@ -2245,7 +2245,7 @@
         "name": "Monastery Laser Activation",
         "sections": [
             {
-                "name": "Jungle Laser",
+                "name": "Laser",
                 "access_rules": ["@Monastery/Laser"],
                 "visibility_rules": ["$shuffleLasers|off, Unrandomized"],
                 "item_count": 1
