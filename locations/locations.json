@@ -2750,7 +2750,12 @@
 			{
                 "name": "Eclipse EP",
 				"visibility_rules": ["eps, epDiffEclipse, Unrandomized"],
-				"access_rules": ["@Theater/Challenge Video, Theater Exit Left Door, Theater Exit Right Door", "epDiffNormal", "epdiffTedious"],
+				"access_rules": [
+                                    "@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
+                                    "$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
+                                    "epDiffNormal",
+                                    "epdiffTedious"
+                                ],
                 "item_count": 1
             },
 			{
@@ -2819,7 +2824,12 @@
 			{
                 "name": "Eclipse EP (Town Side 6)",
 				"visibility_rules": ["obelisks, epDiffEclipse, Unrandomized"],
-				"access_rules": ["@Theater/Challenge Video, Theater Exit Left Door, Theater Exit Right Door", "epDiffNormal", "epdiffTedious"],
+				"access_rules": [
+                                    "@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
+                                    "$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
+                                    "epDiffNormal",
+                                    "epdiffTedious"
+                                ],
                 "item_count": 1
             }
 
