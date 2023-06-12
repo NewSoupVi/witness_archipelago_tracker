@@ -591,7 +591,25 @@
             }
         ]
     },
-	
+    {
+        "name": "Symmetry Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Symmetry Island/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 190,
+                "y": 745,
+                "size": 15
+            }
+        ]
+    },
 	{
         "name": "Symmetry Island EPs",
         "sections": [
@@ -912,7 +930,26 @@
                 "y": 298
             }
         ]
-    },    
+    },
+    {
+        "name": "Desert Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Desert/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 266,
+                "y": 328,
+                "size": 15
+            }
+        ]
+    },
 	{
         "name": "Desert EPs",
         "sections": [
@@ -1325,6 +1362,26 @@
             }
         ]
     },
+
+    {
+        "name": "Quarry Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Quarry Laser/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 595,
+                "y": 553,
+                "size": 15
+            }
+        ]
+    },
 	
 	{
         "name": "Quarry Entrance",
@@ -1539,7 +1596,26 @@
                 "y": 541
             }
         ]
-    },	
+    },
+    {
+        "name": "Shadows Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Shadows Laser/Laser"],
+                "visibility_rules": ["$shuffleLasers|off, Unrandomized"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 795,
+                "y": 571,
+                "size": 15
+            }
+        ]
+    },
     {
         "name": "Outside Keep",
         "sections": [
@@ -1906,7 +1982,27 @@
             }
         ]
     },
-	
+
+    {
+        "name": "Keep Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Keep Tower/Laser Hedges, Unrandomized", "@Keep Tower/Laser Pressure Plates"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 984,
+                "y": 411,
+                "size": 15
+            }
+        ]
+    },
+
 	{
         "name": "Keep Tower EPs",
         "sections": [
@@ -2142,6 +2238,25 @@
                 "map": "fullmap",
                 "x": 907,
                 "y": 929
+            }
+        ]
+    },
+    {
+        "name": "Monastery Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Monastery/Laser"],
+                "visibility_rules": ["$shuffleLasers|off, Unrandomized"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 877,
+                "y": 969,
+                "size": 15
             }
         ]
     },
@@ -2472,7 +2587,26 @@
                 "y": 859
             }
         ]
-    },		
+    },
+    {
+        "name": "Town Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Town Tower/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 748,
+                "y": 829,
+                "size": 15
+            }
+        ]
+    },
 	{
         "name": "Town Tower EPs",
         "sections": [
@@ -2750,7 +2884,12 @@
 			{
                 "name": "Eclipse EP",
 				"visibility_rules": ["eps, epDiffEclipse, Unrandomized"],
-				"access_rules": ["@Theater/Challenge Video, Theater Exit Left Door, Theater Exit Right Door", "epDiffNormal", "epdiffTedious"],
+				"access_rules": [
+                                    "@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
+                                    "$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
+                                    "epDiffNormal",
+                                    "epdiffTedious"
+                                ],
                 "item_count": 1
             },
 			{
@@ -2819,7 +2958,12 @@
 			{
                 "name": "Eclipse EP (Town Side 6)",
 				"visibility_rules": ["obelisks, epDiffEclipse, Unrandomized"],
-				"access_rules": ["@Theater/Challenge Video, Theater Exit Left Door, Theater Exit Right Door", "epDiffNormal", "epdiffTedious"],
+				"access_rules": [
+                                    "@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
+                                    "$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
+                                    "epDiffNormal",
+                                    "epdiffTedious"
+                                ],
                 "item_count": 1
             }
 
@@ -3082,7 +3226,7 @@
             }
         ]
 	},
-	{
+    {
         "name": "Jungle Laser",
         "sections": [
             {
@@ -3104,7 +3248,26 @@
                 "y": 983
             }
         ]
-    },	
+    },
+    {
+        "name": "Jungle Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Jungle Laser/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1096,
+                "y": 1013,
+                "size": 15
+            }
+        ]
+    },
     {
         "name": "Jungle Bamboo",
         "sections": [
@@ -3279,6 +3442,25 @@
                 "map": "fullmap",
                 "x": 1361,
                 "y": 1091
+            }
+        ]
+    },
+    {
+        "name": "Bunker Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Color Bunker/Laser"],
+                "visibility_rules": ["$shuffleLasers|off, Unrandomized"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1331,
+                "y": 1121,
+                "size": 15
             }
         ]
     },
@@ -3772,6 +3954,25 @@
             }
         ]
     },
+    {
+        "name": "Swamp Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Swamp Laser/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1282,
+                "y": 846,
+                "size": 15
+            }
+        ]
+    },
 	{
         "name": "Treehouse Entrance",
         "sections": [
@@ -3958,7 +4159,26 @@
                 "y": 408
             }
         ]
-    },	
+    },
+    {
+        "name": "Treehouse Laser Activation",
+        "sections": [
+            {
+                "name": "Laser",
+                "access_rules": ["@Treehouse Laser House/Laser"],
+                "visibility_rules": ["$shuffleLasers|off"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1139,
+                "y": 438,
+                "size": 15
+            }
+        ]
+    },
     {
         "name": "Treehouse Beach",
         "sections": [
