@@ -113,7 +113,8 @@
 			"$isDoors|on, Quarry Boathouse Boat Staircase, @Places/ocean",
 			"$isDoors|on, Quarry Stoneworks Side Door, @Places/quarryStoneworks",
 			"$isDoors|on, Quarry Door to Stoneworks, @Places/quarryStoneworks",
-			"$isDoors|on, Shadows Barrier to Quarry, @Places/shadowsFirstSet"
+			"$isDoors|on, Shadows Barrier to Quarry, @Places/shadowsFirstSet",
+			"@Quarry Stoneworks/Control Room Right, $canSolve|158120"
 		],
         "item_count": 1
       },
