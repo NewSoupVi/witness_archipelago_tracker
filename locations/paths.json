@@ -325,8 +325,8 @@
 	
 	{
         "name": "Quarry elevator",
-		"access_rules": ["Quarry Stoneworks Elevator Controls (Panel)"],
-		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["@Quarry Stoneworks/Control Room Right"],
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "elevator",
