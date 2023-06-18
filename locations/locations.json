@@ -1771,7 +1771,7 @@
             {
                 "name": "Pressure Plates",
 				"access_rules": ["$canSolve|158200,$pp2,@Places/plates2"],
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+				"visibility_rules": ["$isExpert|on", "doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
@@ -1820,6 +1820,7 @@
             {
                 "name": "Pressure Plates",
 				"access_rules": ["$canSolve|158204, @Places/plates4"],
+				"visibility_rules": ["$isExpert|off", "doorsSimple", "doorsComplex", "doorsMax"],
                 "item_count": 1
             },
             {
