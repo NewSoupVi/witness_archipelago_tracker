@@ -4701,24 +4701,67 @@
     },
 
 	{
-        "name": "Inside Mountain Layer 1",
+        "name": "Mountain Layer 1 Trash",
 		"access_rules": ["@Places/mountainLayer1, $canSolve|158408"],
         "sections": [
             {
                 "name": "Angled Inside Trash",
 				"access_rules": ["$canSolve|158424 158425"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 90,
+                "size": 20
+            }
+        ]
+    },
+	{
+        "name": "Inside Mountain Layer 1 Left",
+		"access_rules": ["@Places/mountainLayer1, $canSolve|158408"],
+        "sections": [
 			{
                 "name": "Left Row",
 				"access_rules": ["$canSolve|158414-158420"],
                 "item_count": 1
             },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1849,
+                "y": 90,
+                "size": 20
+            }
+        ]
+    },	
+    
+    {
+        "name": "Inside Mountain Layer 1 Right",
+		"access_rules": ["@Places/mountainLayer1, $canSolve|158408"],
+        "sections": [
 			{
                 "name": "Right Row",
 				"access_rules": ["$canSolve|158409-158413"],
                 "item_count": 1
             },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1950,
+                "y": 90,
+                "size": 20
+            }
+        ]
+    },    
+    {
+        "name": "Inside Mountain Layer 1 Back",
+		"access_rules": ["@Places/mountainLayer1, $canSolve|158408"],
+        "sections": [
 			{
                 "name": "Back Row",
 				"access_rules": ["$canSolve|158421-158423"],
@@ -4728,37 +4771,128 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1303,
-                "y": 943
+                "x": 1866,
+                "y": 27,
+                "size": 20
             }
         ]
-    },
+    },    
 
 	{
-        "name": "Inside Mountain Layer 2",
+        "name": "Inside Mountain Layer 2 Near",
         "sections": [
             {
                 "name": "Near Row",
 				"access_rules": ["$canSolve|158426-158430,@Places/mountainLayer2"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1870,
+                "y": 260,
+                "size": 20
+            }
+        ]
+    },
+	{
+        "name": "Inside Mountain Layer 2 Far",
+        "sections": [
 			{
                 "name": "Far Row",
 				"access_rules": ["$canSolve|158432-158437,@Places/mountainLayer2, @Places/mountain2FrontStairs"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1870,
+                "y": 190,
+                "size": 20
+            }
+        ]
+    },
+	{
+        "name": "Inside Mountain Layer 2 Blue",
+        "sections": [
 			{
                 "name": "Blue Light Bridge",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["$canSolve|158431,@Places/mountainLayer2, @Places/mountain2FrontStairs"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 260,
+                "size": 20
+            }
+        ]
+    },
+	{
+        "name": "Inside Mountain Layer 2 Orange",
+        "sections": [
 			{
                 "name": "Orange Light Bridge",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["$canSolve|158438,@Places/mountainLayer2, @Places/mountain2BackStairs"],
                 "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 190,
+                "size": 20
+            }
+        ]
+    },
+	{
+        "name": "Inside Mountain Layer 2 EPs",
+        "sections": [
+			{
+                "name": "Pink Bridge EP (River Side 2)",
+				"visibility_rules": ["obelisks"],
+				"access_rules": ["@Inside Mountain Layer 2 Look Up/Pink Bridge EP"],
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 225,
+                "size": 10
+            }
+        ]
+    },	
+    {
+        "name": "Inside Mountain Layer 2 Look Up",
+        "sections": [
+			{
+                "name": "Pink Bridge EP",
+				"visibility_rules": ["eps"],
+				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
+                "item_count": 1
             },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 225,
+                "size": 20
+            }
+        ]
+    },
+	{
+        "name": "Inside Mountain Elevator",
+        "sections": [
 			{
                 "name": "Elevator Discard",
 				"visibility_rules": ["Discarded"],
@@ -4766,85 +4900,156 @@
 								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge",
 								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
                 "item_count": 1
-            },
-			{
-                "name": "Pink Bridge EP",
-				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
-                "item_count": 1
             }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1303,
-                "y": 980
+                "x": 1964,
+                "y": 210,
+                "size": 20
             }
         ]
     },
 	
-	{
-        "name": "Inside Mountain Layer 2 EPs",
-        "sections": [
-			{
-                "name": "Pink Bridge EP (River Side 2)",
-				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Inside Mountain Layer 2/Pink Bridge EP"],
-                "item_count": 1
-            }
-        ],
-        "map_locations": [
-            {
-                "map": "fullmap",
-                "x": 1268,
-                "y": 980,
-				"size": 15
-            }
-        ]
-    },
 
 	{
-        "name": "Inside Mountain Bottom Layer",
+        "name": "Inside Mountain Bottom Layer Giant",
         "sections": [
             {
                 "name": "Giant Puzzle",
 				"access_rules": ["$canSolve|158440-158444,@Places/mountainMeta"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 360,
+                "size": 20
+            }
+        ]
+    },	
+
+	{
+        "name": "Inside Mountain Bottom Layer Statue",
+        "sections": [
 			{
                 "name": "Statue Discard",
 				"visibility_rules": ["Discarded"],
 				"access_rules": ["$canSolve|158614,$laserBox|long,@Places/mountainPenultimateRoom"],
                 "item_count": 1
             },
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 410,
+                "size": 20
+            }
+        ]
+    },	
+
+	{
+        "name": "Inside Mountain Bottom Layer Door Left",
+        "sections": [
 			{
                 "name": "Door to Final Room Left Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["@Places/mountainPenultimateRoom, $canSolve|158445"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1900,
+                "y": 460,
+                "size": 20
+            }
+        ]
+    },	
+
+	{
+        "name": "Inside Mountain Bottom Layer Door Right",
+        "sections": [
 			{
                 "name": "Door to Final Room Right Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["@Places/mountainPenultimateRoom, $canSolve|158446"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1930,
+                "y": 460,
+                "size": 20
+            }
+        ]
+    },	
+
+	{
+        "name": "Inside Mountain Bottom Layer Pillars Right",
+        "sections": [
 			{
                 "name": "Final Room Pillars Right",
 				"access_rules": ["$canSolve|158522-158525,@Places/mountainFinalRoom"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1973,
+                "y": 515,
+                "size": 20
+            }
+        ]
+    },
+    {
+        "name": "Inside Mountain Bottom Layer Pillars Left",
+        "sections": [
 			{
                 "name": "Final Room Pillars Left",
 				"access_rules": ["$canSolve|158526-158529,@Places/mountainFinalRoom"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1898,
+                "y": 515,
+                "size": 20
+            }
+        ]
+    },	
+    {
+        "name": "Victory!",
+        "sections": [
 			{
                 "name": "Final Elevator: Victory!",
 				"visibility_rules": ["wonkavator"],
-				"access_rules": ["@Places/mountainFinalRoom, @Inside Mountain Bottom Layer/Final Room Pillars Left, @Inside Mountain Bottom Layer/Final Room Pillars Right"],
+				"access_rules": ["@Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right"],
                 "item_count": 1
-            },
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "fullmap",
+                "x": 1934,
+                "y": 515,
+                "size": 20
+            }
+        ]
+    },
+    {
+        "name": "Inside Mountain Bottom Layer Look Up",
+        "sections": [
 			{
                 "name": "Blue Bridge EP",
 				"visibility_rules": ["eps"],
@@ -4861,11 +5066,13 @@
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1303,
-                "y": 1017
+                "x": 1945,
+                "y": 360,
+                "size": 20
             }
         ]
     },
+	
 	
 	{
         "name": "Inside Mountain Bottom Layer EPs",
@@ -4873,22 +5080,22 @@
 			{
                 "name": "Blue Bridge EP (River Side 2)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Inside Mountain Bottom Layer/Blue Bridge EP"],
+				"access_rules": ["@Inside Mountain Bottom Layer Look Up/Blue Bridge EP"],
                 "item_count": 1
             },
 			{
                 "name": "Yellow Bridge EP (River Side 2)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Inside Mountain Bottom Layer/Yellow Bridge EP"],
+				"access_rules": ["@Inside Mountain Bottom Layer Look Up/Yellow Bridge EP"],
                 "item_count": 1
             }
         ],
         "map_locations": [
             {
                 "map": "fullmap",
-                "x": 1303,
-                "y": 1052,
-				"size": 15
+                "x": 1945,
+                "y": 360,
+				"size": 10
             }
         ]
     },
