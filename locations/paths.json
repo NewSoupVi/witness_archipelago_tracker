@@ -1,6 +1,6 @@
 [
 	{
-        "name": "Tutorial Gate",
+        "name": "Tutorial Main Gate",
 		"visibility_rules": ["never"],
         "sections": [
 			{
@@ -1106,7 +1106,7 @@
     },
 	
 	{
-        "name": "Swamp Sliding Bridge",
+        "name": "Swamp Sliding Bridge Panel",
 		"access_rules": ["Swamp Sliding Bridge (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
         "sections": [
@@ -1251,7 +1251,7 @@
     },
 	
 	{
-        "name": "Swamp Rotating Bridge",
+        "name": "Swamp Rotating Bridge Panel",
 		"access_rules": ["Swamp Rotating Bridge (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
         "sections": [
