@@ -4934,7 +4934,7 @@
 			{
                 "name": "Caves Entrance Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["$canSolve|158447,Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom",
+				"access_rules": ["$canSolve|158447,Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
                                  "$canSolve|158447,@Places/caves, Inside Mountain Door to Secret Area",
                                  "$canSolve|158447,Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom"],
                 "item_count": 1
@@ -4943,7 +4943,7 @@
                 "name": "Caves Rock Timer Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom",
-                                 "Inside Mountain Bottom Layer Rock Open, @Places/mountainPenultimateRoom",
+                                 "Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
                                  "@Places/caves, Inside Mountain Door to Secret Area"],
                 "item_count": 1
             }
