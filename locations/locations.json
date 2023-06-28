@@ -554,17 +554,17 @@
                 "item_count": 1
             },
 			{
-				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
-                                 "$canSolve|158040, Symmetry Island Lower (Panel), @Places/overworld"],
                 "name": "Lower Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
+                                 "$canSolve|158040, $hasPanel|Door to Symmetry Island Lower (Panel), @Places/overworld"],
                 "item_count": 1
             },
 			{
                 "name": "Upper Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["$canSolve|158064, @Symmetry Island/Left 7, @Places/symmetryOuter",
-                                 "$canSolve|158064, Symmetry Island Upper (Panel), @Places/symmetryOuter"],
+                                 "$canSolve|158064, $hasPanel|Door to Symmetry Island Upper (Panel), @Places/symmetryOuter"],
                 "item_count": 1
             },			
             {
@@ -900,7 +900,7 @@
             },
 			{
                 "name": "Flood Room Puzzles",
-				"access_rules": ["$canSolve|158105-158110,@Places/desertFlood, @Logic/canWaterLevel"],
+				"access_rules": ["$canSolve|158105-158110,@Places/desertFlood, [@Logic/canWaterLevel]"],
                 "item_count": 1
             },
 			{
@@ -2529,7 +2529,6 @@
             },
 			{
                 "name": "Sound Room",
-				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["$canSolve|158243,@Places/RGBHouse"],
                 "item_count": 1
             },
