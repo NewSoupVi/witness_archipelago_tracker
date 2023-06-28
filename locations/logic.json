@@ -20,7 +20,7 @@
       {
         "name": "tutorialOutpost",
         "access_rules": [
-			"$isDoors|off,$canSolve|158011",
+			"$isDoors|off,$canSolve|158005, $canSolve|158011",
 			"$isDoors|on,Outside Tutorial Optional Door,Outside Tutorial Outpost Entry Door",
 			"$isDoors|on,Outside Tutorial Outpost Exit Door"
 			
@@ -141,7 +141,8 @@
 			"doorsMax, @Places/quarryStoneworks, [@Places/quarryStoneworksMid], $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
 			"doorsPanel, @Places/quarryStoneworks, [@Places/quarryStoneworksMid], $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
 			"@Places/quarryStoneworksMid, $canSolve|158131, $canSolve|158125-158130, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
-			"$isDoors|on, @Places/quarryStoneworks, Quarry Stoneworks Stairs"
+			"$isDoors|on, @Places/quarryStoneworks, Quarry Stoneworks Stairs",
+      "$isDoors|off, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]"
 		],
         "item_count": 1
       },
@@ -619,7 +620,7 @@
     "sections": [
       {
         "name": "canWaterLevel",
-        "access_rules": [			
+        "access_rules": [
 			"doorsNo",
 			"doorsPanel, $hasPanel|Desert Flood Room Flood Controls (Panel)",
 			"doorsSimple",
@@ -632,7 +633,7 @@
         "name": "SymmetryLowerPanel",
         "access_rules": [
 			"doorsNo, @Inside Glass Factory/Melting",
-			"DoorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel)"
+			"doorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel)"
 		],
         "item_count": 1
       },
