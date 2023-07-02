@@ -532,7 +532,7 @@
       {
         "name": "mountainLayer2",
         "access_rules": [
-			"$isDoors|off,$canSolve|158408, @Inside Mountain Layer 1/Angled Inside Trash,@Inside Mountain Layer 1/Left Row,@Inside Mountain Layer 1/Right Row,@Inside Mountain Layer 1/Back Row, @Places/mountainLayer1",
+			"$isDoors|off,$canSolve|158408, @Inside Mountain Layer 1 Trash/Angled Inside Trash,@Inside Mountain Layer 1 Left/Left Row,@Inside Mountain Layer 1 Right/Right Row,@Inside Mountain Layer 1 Back/Back Row, @Places/mountainLayer1",
 			"$isDoors|on, $canSolve|158408, Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
 		],
         "item_count": 1
@@ -540,7 +540,7 @@
       {
         "name": "mountain2FrontStairs",
         "access_rules": [
-			"$isDoors|off, @Inside Mountain Layer 2/Near Row, @Places/mountainLayer2",
+			"$isDoors|off, @Inside Mountain Layer 2 Near/Near Row, @Places/mountainLayer2",
 			"$isDoors|on, Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2"
 		],
         "item_count": 1
@@ -548,16 +548,16 @@
       {
         "name": "mountain2BackStairs",
         "access_rules": [
-			"$isDoors|off, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Far Row, @Places/mountain2FrontStairs",
-			"$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs"
+			"$isDoors|off, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Far/Far Row, @Places/mountain2FrontStairs",
+			"$isDoors|on, @Inside Mountain Layer 2 Blue/Blue Light Bridge, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs"
 		],
         "item_count": 1
       },
       {
         "name": "mountainMeta",
         "access_rules": [
-			"$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge, @Places/mountain2BackStairs",
-			"$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Orange Light Bridge, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs, @Places/mountain2BackStairs",
+			"$isDoors|off, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountain2BackStairs",
+			"$isDoors|on, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door, @Places/mountain2FrontStairs, @Places/mountain2BackStairs",
 			"$isDoors|on, Inside Mountain Giant Puzzle Exit Door, @Places/mountainPenultimateRoom"
 		],
         "item_count": 1
@@ -565,7 +565,7 @@
       {
         "name": "mountainPenultimateRoom",
         "access_rules": [
-			"$isDoors|off, @Inside Mountain Bottom Layer/Giant Puzzle, @Places/mountainMeta",
+			"$isDoors|off, @Inside Mountain Bottom Layer Giant/Giant Puzzle, @Places/mountainMeta",
 			"$isDoors|on, Inside Mountain Giant Puzzle Exit Door, @Places/mountainMeta",
 			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/caves",
 			"$isDoors|on, Inside Mountain Bottom Layer Doors to Caves, @Places/caves"
@@ -586,7 +586,7 @@
 			"Caves Mountain Shortcut",
 			"Caves Swamp Shortcut",
 			"Caves",
-			"$isDoors|off,$laserBox|long, @Inside Mountain Bottom Layer/Statue Discard, @Places/mountainPenultimateRoom",
+			"$isDoors|off,$laserBox|long, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
 			"$isDoors|on, Challenge Entry Door, Caves Pillar Door, @Places/challenge"
 		],

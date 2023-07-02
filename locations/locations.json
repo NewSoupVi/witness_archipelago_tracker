@@ -4926,8 +4926,8 @@
                 "name": "Elevator Discard",
 				"visibility_rules": ["Discarded"],
 				"access_rules": ["$canSolve|158439 158613,@Places/mountainMeta",
-								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2/Orange Light Bridge",
-								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2/Blue Light Bridge, @Inside Mountain Layer 2/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
+								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
+								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
                 "item_count": 1
             }
         ],
@@ -5082,13 +5082,13 @@
 			{
                 "name": "Blue Bridge EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/mountainMeta, @Inside Mountain Layer 2/Blue Light Bridge"],
+				"access_rules": ["@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge"],
                 "item_count": 1
             },
 			{
                 "name": "Yellow Bridge EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/mountainMeta, @Inside Mountain Layer 2/Orange Light Bridge"],
+				"access_rules": ["@Places/mountainMeta, @Inside Mountain Layer 2 Orange/Orange Light Bridge"],
                 "item_count": 1
             }
         ],
@@ -5928,7 +5928,7 @@
 			{
                 "name": "Side 2",
 				"visibility_rules": ["obelisks"],
-                "access_rules": ["@Color Bunker/Green Room Flowers EP, @Color Bunker/Tinted Door EP, @Inside Mountain Layer 2/Pink Bridge EP, @Inside Mountain Bottom Layer/Blue Bridge EP, @Inside Mountain Bottom Layer/Yellow Bridge EP"],
+                "access_rules": ["@Color Bunker/Green Room Flowers EP, @Color Bunker/Tinted Door EP, @Inside Mountain Layer 2 Look Up/Pink Bridge EP, @Inside Mountain Bottom Layer Look Up/Blue Bridge EP, @Inside Mountain Bottom Layer Look Up/Yellow Bridge EP"],
                 "item_count": 1
             },
 			{
