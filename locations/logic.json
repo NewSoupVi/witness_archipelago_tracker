@@ -416,7 +416,7 @@
       {
         "name": "theater",
         "access_rules": [
-			"$isDoors|off, @Theater Entry/Entry Door Panel, @Places/windmill",
+			"$isDoors|off, $canSolve|158248, @Places/windmill",
 			"$isDoors|on, Theater Exit Door Left",
 			"$isDoors|on, Theater Exit Door Right",
 			"$isDoors|on, @Places/windmill, Theater Entry Door",
