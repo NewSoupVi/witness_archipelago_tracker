@@ -4755,7 +4755,7 @@
                 "name": "Left Row",
 				"access_rules": ["$canSolve|158414-158420"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
@@ -4775,7 +4775,7 @@
                 "name": "Right Row",
 				"access_rules": ["$canSolve|158409-158413"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
@@ -4907,7 +4907,7 @@
 				"visibility_rules": ["eps"],
 				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
@@ -4968,7 +4968,7 @@
 				"visibility_rules": ["Discarded"],
 				"access_rules": ["$canSolve|158614,$laserBox|long,@Places/mountainPenultimateRoom"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
@@ -5455,7 +5455,7 @@
                 "name": "Third",
 				"access_rules": ["$canSolve|158480"],
                 "item_count": 1
-            },
+            }
         ],
         "map_locations": [
             {
