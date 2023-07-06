@@ -2960,7 +2960,6 @@
     },
     {
         "name": "Theater Entry",
-		"access_rules": ["@Places/theater"],
         "sections": [
             {
                 "name": "Entry Door Panel",
