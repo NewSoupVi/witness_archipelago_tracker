@@ -563,8 +563,7 @@
 			{
                 "name": "Upper Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["$canSolve|158064, @Symmetry Island/Left 7, @Places/symmetryOuter",
-                                 "$canSolve|158064, $hasPanel|Door to Symmetry Island Upper (Panel), @Places/symmetryOuter"],
+				"access_rules": ["$canSolve|158064, @Symmetry Island/Left 7, $hasPanel|Door to Symmetry Island Upper (Panel), @Places/symmetryOuter"],
                 "item_count": 1
             },			
             {
