@@ -604,7 +604,7 @@
       {
         "name": "tunnels",
         "access_rules": [
-			"$isDoors|off, @Mountain Challenge Area/Door to Tunnels Panel, @Places/challenge",
+			"$isDoors|off, @Tunnels Entry/Door to Tunnels Panel, @Places/challenge",
 			"$isDoors|on, Theater Walkway Door to Town",
 			"$isDoors|on, $shuffleLasers|off, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
 			"$isDoors|on, Theater Walkway Door to Desert Elevator Room, $laser|4, @Places/desertLaser",
