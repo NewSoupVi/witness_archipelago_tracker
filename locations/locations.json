@@ -1563,7 +1563,7 @@
         "name": "Shadows Near Quarry EPs",
         "sections": [
             {
-                "name": "Quarry Stoneworks Rooftop Vent EP",
+                "name": "Quarry Stoneworks Rooftop Vent EP (Quarry Side 1)",
                 "visibility_rules": ["obelisks"],
 				"access_rules": ["@Shadows Near Quarry/Quarry Stoneworks Rooftop Vent EP"],
                 "item_count": 1
