@@ -2958,7 +2958,7 @@
         ]
     },
     {
-        "name": "Theater Entry",
+        "name": "Theater Entry Area",
         "sections": [
             {
                 "name": "Entry Door Panel",
@@ -5588,7 +5588,7 @@
         ]
     },
     {
-        "name": "Challenge Entry",
+        "name": "Challenge Entry Area",
         "sections": [
             {
                 "name": "Challenge Entry Panel",
