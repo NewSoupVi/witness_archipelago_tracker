@@ -47,7 +47,7 @@
       {
         "name": "symmetryOuter",
         "access_rules": [
-			"$isDoors|off, @Logic/SymmetryLowerPanel, @Symmetry Island/Lower Door Panel",
+			"$isDoors|off, @Logic/SymmetryLowerPanel, $canSolve|158040",
 			"$isDoors|on, Symmetry Island Lower Door"
 		],
         "item_count": 1
