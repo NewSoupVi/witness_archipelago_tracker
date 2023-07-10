@@ -363,7 +363,7 @@
       {
         "name": "swampPurple",
         "access_rules": [
-			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+			"$isDoors|off, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Swamp Near Boat/Beyond Rotating Bridge, @Places/swampBack",
 			"$isDoors|on, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, Swamp Purple Water Pump, @Places/swampBack"
 		],
         "item_count": 1
