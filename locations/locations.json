@@ -556,8 +556,7 @@
 			{
                 "name": "Lower Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
-                                 "$canSolve|158040, $hasPanel|Door to Symmetry Island Lower (Panel), @Places/overworld"],
+				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld"],
                 "item_count": 1
             },
 			{
