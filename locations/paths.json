@@ -1341,12 +1341,9 @@
 	{
         "name": "Swamp Red Underwater Exit",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-	    "access_rules": [
-            "doorsNo, @Swamp Red Underwater Room/Even More Negative Shapers",
-            "doorsPanel, @Swamp Red Underwater Room/Even More Negative Shapers",
-            "doorsSimple, Swamp Water Pumps",
-            "doorsComplex, Swamp Red Underwater Exit",
-            "doorsMax, Swamp Red Underwater Exit"
+        "access_rules": [
+            "Swamp Water Pumps",
+            "Swamp Red Underwater Exit"
         ],
         "sections": [
 			{
@@ -1845,9 +1842,8 @@
         "name": "Town Wooden Roof Stairs",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-            "doorsSimple, Town Doors",
-            "doorsComplex, Town Wooden Roof Staircase",
-            "doorsMax, Town Wooden Roof Staircase"
+            "Town Doors",
+            "Town Wooden Roof Staircase"
         ],
         "sections": [
 			{
