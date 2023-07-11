@@ -19,11 +19,11 @@
 	
 	{
         "name": "Orchard First Gate",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Orchard Gates",
 			"Orchard Middle Gate"
 		],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -41,11 +41,11 @@
 
 	{
         "name": "Orchard Second Gate",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Orchard Gates",
 			"Orchard Final Gate"
 		],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -63,10 +63,8 @@
 
 	{
         "name": "Outside Tutorial Outpost Exit",
-		"access_rules": [
-				"Outside Tutorial Outpost Exit Door"
-		],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Outside Tutorial Outpost Exit Door"],
         "sections": [
 			{
                 "name": "Door",
@@ -85,12 +83,10 @@
 	{
         "name": "Outside Tutorial Outpost Path",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": ["Outside Tutorial Optional Door"],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Outside Tutorial Optional Door"
-					],
                 "item_count": 1
             }
         ],
@@ -105,10 +101,8 @@
 
 	{
         "name": "Outside Tutorial Outpost Entry",
-		"access_rules": [
-			"Outside Tutorial Outpost Entry Door"
-		],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Outside Tutorial Outpost Entry Door"],
         "sections": [
 			{
                 "name": "Door",
@@ -126,11 +120,11 @@
 
 	{
         "name": "Glass Factory Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Glass Factory Entry Door (Panel)",
 			"Glass Factory Entry Door"
 			],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -148,10 +142,8 @@
 	
 	{
         "name": "Glass Factory Back Wall",
-		"access_rules": [
-			"Glass Factory Back Wall"
-		],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Glass Factory Back Wall"],
         "sections": [
 			{
                 "name": "Door",
@@ -169,12 +161,12 @@
 	
 	{
         "name": "Symmetry Island Lower",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Door to Symmetry Island Lower (Panel)",
 			"Symmetry Island Doors",
 			"Symmetry Island Lower Door"
 		],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -192,12 +184,12 @@
 	
 	{
         "name": "Symmetry Island Upper",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Door to Symmetry Island Upper (Panel)",
 			"Symmetry Island Doors",
 			"Symmetry Island Upper Door"
 		],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -215,12 +207,12 @@
 	
 	{
         "name": "Desert Light Room Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Door to Desert Flood Light Room (Panel)",
 			"Desert Doors",
 			"Desert Door to Flood Light Room"
 		],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -238,11 +230,11 @@
 	
 	{
         "name": "Desert Pond Room Entry",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Desert Doors",
 			"Desert Door to Pond Room"
 		],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -260,12 +252,12 @@
 	
 	{
         "name": "Desert Flood Room Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Door to Desert Flood Light Room (Panel)",
 			"Desert Doors",
 			"Desert Door to Water Levels Room"
 		],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -283,10 +275,8 @@
 
 	{
         "name": "Desert Flood Controls",
-		"access_rules": [
-			"Desert Flood Room Flood Controls (Panel)"
-		],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["Desert Flood Room Flood Controls (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
@@ -304,11 +294,11 @@
 
 	{
         "name": "Desert Elevator Room Entry",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Desert Doors",
 			"Desert Door to Elevator Room"
 		],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -326,10 +316,8 @@
 	
 	{
         "name": "Tunnels Desert Shortcut",
-		"access_rules": [
-			"Theater Walkway Door to Desert Elevator Room"
-		],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Theater Walkway Door to Desert Elevator Room"],
         "sections": [
 			{
                 "name": "Door",
@@ -347,8 +335,8 @@
 	
 	{
         "name": "Quarry Elevator",
-		"access_rules": ["@Quarry Stoneworks/Control Room Right"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["@Quarry Stoneworks/Control Room Right"],
         "sections": [
 			{
                 "name": "Elevator",
@@ -366,10 +354,11 @@
 
 	{
         "name": "Quarry Stoneworks Roof Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Quarry Stoneworks Shortcuts",
-			"Quarry Stoneworks Rooftop Shortcut"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Quarry Stoneworks Rooftop Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -387,10 +376,11 @@
 
 	{
         "name": "Quarry Entry 1",
-		"access_rules": [
-					"Quarry Main Entry",
-					"Quarry Main Entry 1"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+			"Quarry Main Entry",
+			"Quarry Main Entry 1"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -405,13 +395,14 @@
             }
         ]
     },
+
 	{
         "name": "Quarry Entry 2",
-		"access_rules": [
-					"Quarry Main Entry",
-					"Quarry Main Entry 2"
-		],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+			"Quarry Main Entry",
+			"Quarry Main Entry 2"
+		],
         "sections": [
 			{
                 "name": "Door",
@@ -429,10 +420,11 @@
 	
 	{
         "name": "Quarry Stoneworks Side Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Quarry Stoneworks Shortcuts",
-			"Quarry Stoneworks Side Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Quarry Stoneworks Side Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -451,13 +443,13 @@
 	{
         "name": "Quarry Stoneworks Stairs",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Quarry Stoneworks Shortcuts",
+            "Quarry Stoneworks Stairs"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Quarry Stoneworks Shortcuts",
-					"Quarry Stoneworks Stairs"
-				],
                 "item_count": 1
             }
         ],
@@ -496,10 +488,11 @@
 	
 	{
         "name": "Quarry Stoneworks Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Quarry Door to Stoneworks (Panel)",
-			"Quarry Door to Stoneworks"],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+			"Quarry Door to Stoneworks"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -517,8 +510,8 @@
 	
 	{
         "name": "Quarry Boathouse Dock",
-		"access_rules": ["Quarry Boathouse Boat Staircase"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Quarry Boathouse Boat Staircase"],
         "sections": [
 			{
                 "name": "Door",
@@ -536,8 +529,8 @@
 
 	{
         "name": "Quarry Boathouse Ramp Height Control",
-		"access_rules": ["Quarry Boathouse Ramp Height Control (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["Quarry Boathouse Ramp Height Control (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
@@ -552,10 +545,11 @@
             }
         ]
     },
+
 	{
         "name": "Quarry Boathouse Ramp Horizontal Control",
-		"access_rules": ["Quarry Boathouse Ramp Horizontal Control (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["Quarry Boathouse Ramp Horizontal Control (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
@@ -570,10 +564,14 @@
             }
         ]
     },
+
 	{
         "name": "Quarry Boathouse First Barrier",
-		"access_rules": ["Quarry Boathouse First Barrier", "Quarry Boathouse Barriers"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Quarry Boathouse First Barrier",
+            "Quarry Boathouse Barriers"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -587,11 +585,15 @@
                 "y": 76
             }
         ]
-    },	
+    },
+
 	{
         "name": "Quarry Boathouse Second Barrier",
-		"access_rules": ["Quarry Boathouse Shortcut", "Quarry Boathouse Barriers"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Quarry Boathouse Shortcut",
+            "Quarry Boathouse Barriers"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -609,10 +611,11 @@
 	
 	{
         "name": "Shadows Quarry Barrier",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Shadows Barriers",
-			"Shadows Barrier to Quarry"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Shadows Barrier to Quarry"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -630,10 +633,11 @@
 	
 	{
         "name": "Shadows Timed Door",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Shadows Door Timer (Panel)",
-			"Shadows Timed Door"],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+			"Shadows Timed Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -651,10 +655,11 @@
 	
 	{
         "name": "Shadows Ledge Barrier",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Shadows Barrier to Ledge",
-			"Shadows Barriers"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Shadows Barriers"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -678,14 +683,16 @@
                 "name": "Entry Left",
 				"access_rules": [
 					"Shadows Laser Room Door",
-					"Shadows Laser Room Left Door"],
+					"Shadows Laser Room Left Door"
+                ],
                 "item_count": 1
             },
 			{
                 "name": "Entry Right",
 				"access_rules": [
 					"Shadows Laser Room Door",
-					"Shadows Laser Room Right Door"],
+					"Shadows Laser Room Right Door"
+                ],
                 "item_count": 1
             }
         ],
@@ -700,10 +707,11 @@
 	
 	{
         "name": "Keep Shadows Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Shortcuts",
-			"Keep Shortcut to Shadows"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Shortcut to Shadows"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -721,10 +729,11 @@
 	
 	{
         "name": "Keep Pressure Plates 1 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Pressure Plates Doors",
-			"Keep Pressure Plates 1 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Pressure Plates 1 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -742,10 +751,11 @@
 	
 	{
         "name": "Keep Pressure Plates 2 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Pressure Plates Doors",
-			"Keep Pressure Plates 2 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Pressure Plates 2 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -763,10 +773,11 @@
 	
 	{
         "name": "Keep Pressure plates 3 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Pressure Plates Doors",
-			"Keep Pressure Plates 3 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Pressure Plates 3 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -784,10 +795,11 @@
 	
 	{
         "name": "Keep Pressure Plates 4 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Pressure Plates Doors",
-			"Keep Pressure Plates 4 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Pressure Plates 4 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -805,10 +817,11 @@
 	
 	{
         "name": "Keep Tower Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Shortcuts",
-			"Keep Tower Shortcut"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Tower Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -826,10 +839,11 @@
 	
 	{
         "name": "Keep Hedge Maze 1 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 1 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 1 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -847,10 +861,11 @@
 	
 	{
         "name": "Keep Hedge Maze 2 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 2 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 2 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -868,10 +883,11 @@
 	
 	{
         "name": "Keep Hedge Maze 3 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 3 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 3 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -889,10 +905,11 @@
 	
 	{
         "name": "Keep Hedge Maze 4 Exit",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 4 Exit Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 4 Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -910,10 +927,11 @@
 	
 	{
         "name": "Keep Hedge Maze 2 Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 2 Shortcut"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 2 Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -931,10 +949,11 @@
 	
 	{
         "name": "Keep Hedge Maze 3 Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 3 Shortcut"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 3 Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -952,10 +971,11 @@
 	
 	{
         "name": "Keep Hedge Maze 4 Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Keep Hedge Maze Doors",
-			"Keep Hedge Maze 4 Shortcut"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Keep Hedge Maze 4 Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -974,14 +994,14 @@
 	{
         "name": "Treehouse First Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Treehouse First & Second Doors (Panel)",
+            "Treehouse Entry Doors",
+            "Treehouse First Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Treehouse First & Second Doors (Panel)",
-					"Treehouse Entry Doors",
-					"Treehouse First Door"
-				],
                 "item_count": 1
             }
         ],
@@ -997,14 +1017,14 @@
 	{
         "name": "Treehouse Second Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Treehouse First & Second Doors (Panel)",
+            "Treehouse Entry Doors",
+            "Treehouse Second Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Treehouse First & Second Doors (Panel)",
-					"Treehouse Entry Doors",
-					"Treehouse Second Door"
-				],
                 "item_count": 1
             }
         ],
@@ -1020,14 +1040,14 @@
 	{
         "name": "Treehouse Third Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Treehouse Third Door (Panel)",
+            "Treehouse Entry Doors",
+            "Treehouse Beyond Yellow Bridge Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Treehouse Third Door (Panel)",
-					"Treehouse Entry Doors",
-					"Treehouse Beyond Yellow Bridge Door"
-				],
                 "item_count": 1
             }
         ],
@@ -1042,10 +1062,11 @@
 	
 	{
         "name": "Treehouse Laser House Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Treehouse Laser House Door Timer (Panel)",
-			"Treehouse Timed Door to Laser House"],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+			"Treehouse Timed Door to Laser House"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1063,11 +1084,11 @@
 	
 	{
         "name": "Treehouse Drawbridge",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Treehouse Shortcut Drop-Down Bridge (Panel)",
 			"Treehouse Drawbridge"
-			],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		],
         "sections": [
 			{
                 "name": "Door",
@@ -1085,11 +1106,12 @@
 	
 	{
         "name": "Swamp Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Shapers, Swamp Entry Door (Panel)",
 			"Swamp Doors",
-			"Swamp Entry Door"],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Entry Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1107,8 +1129,8 @@
 	
 	{
         "name": "Swamp Sliding Bridge Panel",
-		"access_rules": ["Swamp Sliding Bridge (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["Swamp Sliding Bridge (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
@@ -1126,10 +1148,11 @@
 
 	{
         "name": "Swamp Cyan Water Pump",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Water Pumps",
-			"Swamp Cyan Water Pump"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Cyan Water Pump"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1147,10 +1170,11 @@
 	
 	{
         "name": "Swamp Red Water Pump",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Water Pumps",
-			"Swamp Red Water Pump"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Red Water Pump"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1168,10 +1192,11 @@
 	
 	{
         "name": "Swamp Blue Water Pump",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Water Pumps",
-			"Swamp Blue Water Pump"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Blue Water Pump"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1189,10 +1214,11 @@
 
 	{
         "name": "Swamp Purple Water Pump",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Water Pumps",
-			"Swamp Purple Water Pump"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Purple Water Pump"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1210,10 +1236,11 @@
 
 	{
         "name": "Swamp Between Bridges First Door",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Doors",
-			"Swamp Door to Broken Shapers"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Door to Broken Shapers"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1231,10 +1258,11 @@
 	
 	{
         "name": "Swamp Between Bridges Second Door",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Doors",
-			"Swamp Door to Rotated Shapers"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Door to Rotated Shapers"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1252,8 +1280,8 @@
 	
 	{
         "name": "Swamp Rotating Bridge Panel",
-		"access_rules": ["Swamp Rotating Bridge (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["Swamp Rotating Bridge (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
@@ -1271,10 +1299,11 @@
 	
 	{
         "name": "Swamp Platform Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Swamp Doors",
-			"Swamp Platform Shortcut Door"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Swamp Platform Shortcut Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1292,8 +1321,8 @@
 	
 	{
         "name": "Swamp Laser Shortcut",
-		"access_rules": ["Swamp Near Laser Shortcut"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Swamp Near Laser Shortcut"],
         "sections": [
 			{
                 "name": "Door",
@@ -1312,16 +1341,16 @@
 	{
         "name": "Swamp Red Underwater Exit",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+	    "access_rules": [
+            "doorsNo, @Swamp Red Underwater Room/Even More Negative Shapers",
+            "doorsPanel, @Swamp Red Underwater Room/Even More Negative Shapers",
+            "doorsSimple, Swamp Water Pumps",
+            "doorsComplex, Swamp Red Underwater Exit",
+            "doorsMax, Swamp Red Underwater Exit"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"doorsNo, @Swamp Red Underwater Room/Even More Negative Shapers",
-					"doorsPanel, @Swamp Red Underwater Room/Even More Negative Shapers",
-					"doorsSimple, Swamp Water Pumps",
-					"doorsComplex, Swamp Red Underwater Exit",
-					"doorsMax, Swamp Red Underwater Exit"
-				],
                 "item_count": 1
             }			
         ],
@@ -1337,10 +1366,10 @@
 	{
         "name": "Swamp Maze Control",
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+        "access_rules": ["Swamp Maze Control (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
-				"access_rules": ["Swamp Maze Control (Panel)"],
                 "item_count": 1
             }
         ],
@@ -1373,11 +1402,12 @@
 	
 	{
         "name": "Caves Mountain Shortcut",
-		"access_rules": [
-			"Caves",
-			"Caves Exits to Main Island",
-			"Caves Mountain Shortcut"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Caves",
+			"Caves Exits to Main Island",
+			"Caves Mountain Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1395,11 +1425,12 @@
 	
 	{
         "name": "Caves Swamp Shortcut",
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Caves",
 			"Caves Exits to Main Island",
-			"Caves Swamp Shortcut"],
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+			"Caves Swamp Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1435,8 +1466,8 @@
 
 	{
         "name": "Mountain Floor 1 Exit",
-		"access_rules": ["Inside Mountain First Layer Exit Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Inside Mountain First Layer Exit Door"],
         "sections": [
 			{
                 "name": "Door",
@@ -1455,13 +1486,13 @@
 	{
         "name": "Mountain Floor 2 Exit",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Inside Mountain Second Layer Stairs & Doors",
+            "Inside Mountain Second Layer Exit Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Inside Mountain Second Layer Stairs & Doors",
-					"Inside Mountain Second Layer Exit Door"
-					],
                 "item_count": 1
             }
         ],
@@ -1473,16 +1504,17 @@
             }
         ]
     },
+
 	{
         "name": "Mountain Floor 2 Staircase Near",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Inside Mountain Second Layer Stairs & Doors",
+            "Inside Mountain Second Layer Staircase Near"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Inside Mountain Second Layer Stairs & Doors",
-					"Inside Mountain Second Layer Staircase Near"
-					],
                 "item_count": 1
             }
         ],
@@ -1494,16 +1526,17 @@
             }
         ]
     },
+
 	{
         "name": "Mountain Floor 2 Staircase Far",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Inside Mountain Second Layer Stairs & Doors",
+            "Inside Mountain Second Layer Staircase Far"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Inside Mountain Second Layer Stairs & Doors",
-					"Inside Mountain Second Layer Staircase Far"
-					],
                 "item_count": 1
             }
         ],
@@ -1518,8 +1551,8 @@
 	
 	{
         "name": "Mountain Bottom Floor Giant Puzzle Exit",
-		"access_rules": ["Inside Mountain Giant Puzzle Exit Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Inside Mountain Giant Puzzle Exit Door"],
         "sections": [
 			{
                 "name": "Door",
@@ -1537,8 +1570,8 @@
 	
 	{
         "name": "Mountain Bottom Floor Final Room Entry",
-		"access_rules": ["Inside Mountain Door to Final Room"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Inside Mountain Door to Final Room"],
         "sections": [
 			{
                 "name": "Door",
@@ -1557,13 +1590,13 @@
 	{
         "name": "Mountain Bottom Floor Rock",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Inside Mountain Bottom Layer Doors to Caves",
+            "Inside Mountain Bottom Layer Rock"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Inside Mountain Bottom Layer Doors to Caves",
-					"Inside Mountain Bottom Layer Rock"
-				],
                 "item_count": 1
             }
         ],
@@ -1575,16 +1608,17 @@
             }
         ]
     },
+
 	{
         "name": "Caves Entry",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Inside Mountain Bottom Layer Doors to Caves",
+            "Inside Mountain Door to Secret Area"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Inside Mountain Bottom Layer Doors to Caves",
-					"Inside Mountain Door to Secret Area"
-				],
                 "item_count": 1
             }
         ],
@@ -1599,8 +1633,11 @@
 	
 	{
         "name": "Challenge Entry",
-		"access_rules": ["Challenge Entry Door", "Caves Doors to Challenge"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Challenge Entry Door",
+            "Caves Doors to Challenge"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1615,10 +1652,14 @@
             }
         ]
     },
+
 	{
         "name": "Caves Pillar",
-		"access_rules": ["Caves Pillar Door", "Caves Doors to Challenge"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Caves Pillar Door",
+            "Caves Doors to Challenge"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1636,8 +1677,8 @@
 	
 	{
         "name": "Challenge Tunnels Entry",
-		"access_rules": ["Challenge Door to Theater Walkway"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Challenge Door to Theater Walkway"],
         "sections": [
 			{
                 "name": "Door",
@@ -1655,8 +1696,8 @@
 	
 	{
         "name": "Tunnels Town Shortcut",
-		"access_rules": ["Theater Walkway Door to Town"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Theater Walkway Door to Town"],
         "sections": [
 			{
                 "name": "Door",
@@ -1674,8 +1715,8 @@
 	
 	{
         "name": "Tunnels Theater Shortcut",
-		"access_rules": ["Theater Walkway Door to Back of Theater"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Theater Walkway Door to Back of Theater"],
         "sections": [
 			{
                 "name": "Door",
@@ -1693,8 +1734,12 @@
 	
 	{
         "name": "Town Windmill Entry",
-		"access_rules": ["Town Windmill Door", "Windmill Door (Panel)", "Town Doors"],
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Windmill Door (Panel)",
+            "Town Windmill Door",
+            "Town Doors"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1712,8 +1757,8 @@
 	
 	{
         "name": "Theater Entry",
-		"access_rules": ["Theater Entry Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Theater Entry Door"],
         "sections": [
 			{
                 "name": "Door",
@@ -1732,13 +1777,13 @@
 	{
         "name": "Theater Exit Left",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Theater Exit Door",
+            "Theater Exit Door Left"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Theater Exit Door",
-					"Theater Exit Door Left"
-				],
                 "item_count": 1
             }
         ],
@@ -1750,16 +1795,17 @@
             }
         ]
     },
+
 	{
         "name": "Theater Exit Right",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Theater Exit Door",
+            "Theater Exit Door Right"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Theater Exit Door",
-					"Theater Exit Door Right"
-				],
                 "item_count": 1
             }
         ],
@@ -1774,12 +1820,12 @@
 
 	{
         "name": "Town Maze Stairs",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Town Maze Panel (Drop-Down Staircase) (Panel)",
 			"Town Doors",
 			"Town Maze Staircase"
 		],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "sections": [
 			{
                 "name": "Door",
@@ -1797,11 +1843,12 @@
 
 	{
         "name": "Town Wooden Roof Stairs",
-		"access_rules": [
-			"doorsSimple, Town Doors",
-			"doorsComplex, Town Wooden Roof Staircase",
-                        "doorsMax, Town Wooden Roof Staircase"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "doorsSimple, Town Doors",
+            "doorsComplex, Town Wooden Roof Staircase",
+            "doorsMax, Town Wooden Roof Staircase"
+        ],
         "sections": [
 			{
                 "name": "Doors",
@@ -1819,8 +1866,11 @@
 
     {
         "name": "Town Tower First Door",
-		"access_rules": ["Town Tower Doors", "Town Tower Lattice Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town Tower Doors",
+            "Town Tower Lattice Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1838,8 +1888,11 @@
 
 	{
         "name": "Town Tower Second Door",
-		"access_rules": ["Town Tower Doors", "Town Tower Blue Panels Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town Tower Doors",
+            "Town Tower Blue Panels Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1857,8 +1910,11 @@
 
     {
         "name": "Town Tower Third Door",
-		"access_rules": ["Town Tower Doors", "Town Tower Wooden Roof Set Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town Tower Doors",
+            "Town Tower Wooden Roof Set Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1876,8 +1932,11 @@
 
 	{
         "name": "Town Tower Fourth Door",
-		"access_rules": ["Town Tower Doors", "Town Tower Environmental Set Door"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town Tower Doors",
+            "Town Tower Environmental Set Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1895,8 +1954,12 @@
 	
 	{
         "name": "Town Tinted Glass",
-		"access_rules": ["Town Door to RGB House (Panel)", "Town Doors", "Town Tinted Door to RGB House"],
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town Door to RGB House (Panel)",
+            "Town Doors",
+            "Town Tinted Door to RGB House"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1914,8 +1977,12 @@
 	
 	{
         "name": "Town Church Entry",
-		"access_rules": ["Town Door to Church (Panel)", "Town Doors", "Town Door to Church"],
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town Door to Church (Panel)",
+            "Town Doors",
+            "Town Door to Church"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1933,8 +2000,11 @@
 	
 	{
         "name": "Town RGB House Stairs",
-		"access_rules": ["Town doors", "Town RGB House Staircase"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Town doors",
+            "Town RGB House Staircase"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -1953,14 +2023,14 @@
 	{
         "name": "Monastery Entry Outer",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Monastery Entry Door Right (Panel)",
+            "Monastery Entry Door",
+            "Monastery Outer Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Monastery Entry Door Right (Panel)",
-					"Monastery Entry Door",
-					"Monastery Outer Door"
-				],
                 "item_count": 1
             }
         ],
@@ -1972,17 +2042,18 @@
             }
         ]
     },
+
 	{
         "name": "Monastery Entry Inner",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Monastery Entry Door Left (Panel)",
+            "Monastery Entry Door",
+            "Monastery Inner Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Monastery Entry Door Left (Panel)",
-					"Monastery Entry Door",
-					"Monastery Inner Door"
-				],
                 "item_count": 1
             }
         ],
@@ -1998,13 +2069,13 @@
 	{
         "name": "Monastery Garden Entry",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Monastery Shortcuts",
+            "Monastery Door to Garden"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Monastery Shortcuts",
-					"Monastery Door to Garden"
-				],
                 "item_count": 1
             }
         ],
@@ -2016,16 +2087,17 @@
             }
         ]
     },
+
 	{
         "name": "River Monastery Shortcut",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Jungle & River Shortcuts",
+            "River Shortcut to Monastery Garden"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": [
-					"Jungle & River Shortcuts",
-					"River Shortcut to Monastery Garden"
-				],
                 "item_count": 1
             }
         ],
@@ -2040,8 +2112,11 @@
 	
 	{
         "name": "Jungle Popup wall",
-		"access_rules": ["Jungle Popup Wall", "Jungle Popup Wall (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Jungle Popup Wall (Panel)",
+            "Jungle Popup Wall"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -2059,10 +2134,11 @@
 
 	{
         "name": "Bunker Entry",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Bunker Entry Door (Panel)",
-			"Bunker Bunker Entry Door"],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+			"Bunker Bunker Entry Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -2080,10 +2156,11 @@
 	
 	{
         "name": "Bunker Tinted Glass",
+		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
 			"Inside Bunker Door to Bunker Proper (Panel)",
-			"Bunker Tinted Glass Door"],
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+			"Bunker Tinted Glass Door"
+        ],
         "sections": [
 			{
                 "name": "Door",
@@ -2101,9 +2178,8 @@
 	
 	{
         "name": "Bunker UV Room Entry",
-		"access_rules": [
-			"Bunker Door to Ultraviolet Room"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Bunker Door to Ultraviolet Room"],
         "sections": [
 			{
                 "name": "Door",
@@ -2121,8 +2197,8 @@
 	
 	{
         "name": "Bunker Elevator Room Entry",
-		"access_rules": ["Bunker Door to Elevator"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": ["Bunker Door to Elevator"],
         "sections": [
 			{
                 "name": "Door",
@@ -2137,11 +2213,11 @@
             }
         ]
     },
+
 	{
         "name": "Bunker Elevator Control",
-		"access_rules": [
-			"Bunker Elevator Control (Panel)"],
 		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"access_rules": ["Bunker Elevator Control (Panel)"],
         "sections": [
 			{
                 "name": "Panel",
@@ -2160,10 +2236,13 @@
 	{
         "name": "Monastery Shortcut",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+        "access_rules": [
+            "Monastery Shortcuts",
+            "Monastery Shortcut"
+        ],
         "sections": [
 			{
                 "name": "Door",
-				"access_rules": ["Monastery Shortcuts", "Monastery Shortcut"],
                 "item_count": 1
             }
         ],
@@ -2175,10 +2254,14 @@
             }
         ]
     },
+
 	{
         "name": "Jungle Bamboo Laser Shortcut",
-		"access_rules": ["Jungle Bamboo Shortcut to River", "Jungle & River Shortcuts"],
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"access_rules": [
+            "Jungle Bamboo Shortcut to River",
+            "Jungle & River Shortcuts"
+        ],
         "sections": [
 			{
                 "name": "Door",
