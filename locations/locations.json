@@ -25,7 +25,7 @@
             },
             {
                 "name": "Gate EP",
-                "visibility_rules": ["eps, Unrandomized"],
+                "visibility_rules": ["eps, Unrandomized, Vaults"],
                 "access_rules": ["@Tutorial Gate/Gate Open, [@Places/tunnels]"],
                 "item_count": 1
             }
@@ -44,7 +44,7 @@
 		"sections": [
             {
                 "name": "Gate EP (Town Side 2)",
-                "visibility_rules": ["obelisks, Unrandomized"],
+                "visibility_rules": ["obelisks, Unrandomized, Vaults"],
                 "access_rules": ["@Tutorial Gate/Gate EP"],
                 "item_count": 1
             }
@@ -556,8 +556,7 @@
 			{
                 "name": "Lower Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
-				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
-                                 "$canSolve|158040, $hasPanel|Door to Symmetry Island Lower (Panel), @Places/overworld"],
+				"access_rules": ["$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld"],
                 "item_count": 1
             },
 			{
@@ -1563,7 +1562,7 @@
         "name": "Shadows Near Quarry EPs",
         "sections": [
             {
-                "name": "Quarry Stoneworks Rooftop Vent EP",
+                "name": "Quarry Stoneworks Rooftop Vent EP (Quarry Side 1)",
                 "visibility_rules": ["obelisks"],
 				"access_rules": ["@Shadows Near Quarry/Quarry Stoneworks Rooftop Vent EP"],
                 "item_count": 1
@@ -2885,19 +2884,19 @@
             },
 			{
                 "name": "Window EP",
-				"visibility_rules": ["eps, Unrandomized"],
+				"visibility_rules": ["eps, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Tutorial Video"],
                 "item_count": 1
             },
 			{
                 "name": "Door EP",
-				"visibility_rules": ["eps, Unrandomized"],
+				"visibility_rules": ["eps, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Tutorial Video"],
                 "item_count": 1
             },
 			{
                 "name": "Flowers EP",
-				"visibility_rules": ["eps, epDiffTedious, Unrandomized", "eps, epDiffEclipse, Unrandomized"],
+				"visibility_rules": ["eps, epDiffTedious, Unrandomized, Vaults", "eps, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Tutorial Video, @Places/tunnels", "epDiffNormal"],
                 "item_count": 1
             },
@@ -2915,7 +2914,7 @@
             },
 			{
                 "name": "Church EP",
-				"visibility_rules": ["eps, Unrandomized"],
+				"visibility_rules": ["eps, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Jungle Video"],
                 "item_count": 1
             },
@@ -2927,7 +2926,7 @@
             },
 			{
                 "name": "Eclipse EP",
-				"visibility_rules": ["eps, epDiffEclipse, Unrandomized"],
+				"visibility_rules": ["eps, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
                                  "$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
                                  "epDiffNormal",
@@ -2958,7 +2957,7 @@
         ]
     },
     {
-        "name": "Theater Entry",
+        "name": "Theater Entry Area",
         "sections": [
             {
                 "name": "Entry Door Panel",
@@ -3009,31 +3008,31 @@
         "sections": [
 			{
                 "name": "Window EP (Town Side 6)",
-				"visibility_rules": ["obelisks, Unrandomized"],
+				"visibility_rules": ["obelisks, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Window EP"],
                 "item_count": 1
             },
 			{
                 "name": "Door EP (Town Side 6)",
-				"visibility_rules": ["obelisks, Unrandomized"],
+				"visibility_rules": ["obelisks, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Door EP"],
                 "item_count": 1
             },
 			{
                 "name": "Flowers EP (Town Side 6)",
-				"visibility_rules": ["obelisks, epDiffTedious, Unrandomized", "obelisks, epDiffEclipse, Unrandomized"],
+				"visibility_rules": ["obelisks, epDiffTedious, Unrandomized, Vaults", "obelisks, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Flowers EP"],
                 "item_count": 1
             },
 			{
                 "name": "Church EP (Town Side 6)",
-				"visibility_rules": ["obelisks, Unrandomized"],
+				"visibility_rules": ["obelisks, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Church EP"],
                 "item_count": 1
             },
 			{
                 "name": "Eclipse EP (Town Side 6)",
-				"visibility_rules": ["obelisks, epDiffEclipse, Unrandomized"],
+				"visibility_rules": ["obelisks, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": ["@Theater/Eclipse EP"],
                 "item_count": 1
             }
@@ -5588,7 +5587,7 @@
         ]
     },
     {
-        "name": "Challenge Entry",
+        "name": "Challenge Entry Area",
         "sections": [
             {
                 "name": "Challenge Entry Panel",
