@@ -122,7 +122,7 @@
         "name": "Glass Factory Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Glass Factory Entry Door (Panel)",
+			"doorsPanel, Glass Factory Entry Door (Panel)",
 			"Glass Factory Entry Door"
 			],
         "sections": [
@@ -163,7 +163,7 @@
         "name": "Symmetry Island Lower",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Door to Symmetry Island Lower (Panel)",
+			"doorsPanel, Door to Symmetry Island Lower (Panel)",
 			"Symmetry Island Doors",
 			"Symmetry Island Lower Door"
 		],
@@ -186,7 +186,7 @@
         "name": "Symmetry Island Upper",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Door to Symmetry Island Upper (Panel)",
+			"doorsPanel, Door to Symmetry Island Upper (Panel)",
 			"Symmetry Island Doors",
 			"Symmetry Island Upper Door"
 		],
@@ -209,7 +209,7 @@
         "name": "Desert Light Room Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Door to Desert Flood Light Room (Panel)",
+			"doorsPanel, Door to Desert Flood Light Room (Panel)",
 			"Desert Doors",
 			"Desert Door to Flood Light Room"
 		],
@@ -254,7 +254,7 @@
         "name": "Desert Flood Room Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Door to Desert Flood Light Room (Panel)",
+			"doorsPanel, Door to Desert Flood Light Room (Panel)",
 			"Desert Doors",
 			"Desert Door to Water Levels Room"
 		],
@@ -490,7 +490,7 @@
         "name": "Quarry Stoneworks Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Quarry Door to Stoneworks (Panel)",
+			"doorsPanel, Quarry Door to Stoneworks (Panel)",
 			"Quarry Door to Stoneworks"
         ],
         "sections": [
@@ -635,7 +635,7 @@
         "name": "Shadows Timed Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Shadows Door Timer (Panel)",
+			"doorsPanel, Shadows Door Timer (Panel)",
 			"Shadows Timed Door"
         ],
         "sections": [
@@ -995,7 +995,7 @@
         "name": "Treehouse First Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "access_rules": [
-            "Treehouse First & Second Doors (Panel)",
+            "doorsPanel, Treehouse First & Second Doors (Panel)",
             "Treehouse Entry Doors",
             "Treehouse First Door"
         ],
@@ -1018,7 +1018,7 @@
         "name": "Treehouse Second Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "access_rules": [
-            "Treehouse First & Second Doors (Panel)",
+            "doorsPanel, Treehouse First & Second Doors (Panel)",
             "Treehouse Entry Doors",
             "Treehouse Second Door"
         ],
@@ -1041,7 +1041,7 @@
         "name": "Treehouse Third Door",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "access_rules": [
-            "Treehouse Third Door (Panel)",
+            "doorsPanel, Treehouse Third Door (Panel)",
             "Treehouse Entry Doors",
             "Treehouse Beyond Yellow Bridge Door"
         ],
@@ -1064,7 +1064,7 @@
         "name": "Treehouse Laser House Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Treehouse Laser House Door Timer (Panel)",
+			"doorsPanel, Treehouse Laser House Door Timer (Panel)",
 			"Treehouse Timed Door to Laser House"
         ],
         "sections": [
@@ -1086,7 +1086,7 @@
         "name": "Treehouse Drawbridge",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Treehouse Shortcut Drop-Down Bridge (Panel)",
+			"doorsPanel, Treehouse Shortcut Drop-Down Bridge (Panel)",
 			"Treehouse Drawbridge"
 		],
         "sections": [
@@ -1108,7 +1108,7 @@
         "name": "Swamp Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Shapers, Swamp Entry Door (Panel)",
+			"doorsPanel, Swamp Entry Door (Panel)",
 			"Swamp Doors",
 			"Swamp Entry Door"
         ],
@@ -1733,7 +1733,7 @@
         "name": "Town Windmill Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-            "Windmill Door (Panel)",
+            "doorsPanel, Windmill Door (Panel)",
             "Town Windmill Door",
             "Town Doors"
         ],
@@ -1819,7 +1819,7 @@
         "name": "Town Maze Stairs",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Town Maze Panel (Drop-Down Staircase) (Panel)",
+			"doorsPanel, Town Maze Panel (Drop-Down Staircase) (Panel)",
 			"Town Doors",
 			"Town Maze Staircase"
 		],
@@ -1952,7 +1952,7 @@
         "name": "Town Tinted Glass",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-            "Town Door to RGB House (Panel)",
+            "doorsPanel, Town Door to RGB House (Panel)",
             "Town Doors",
             "Town Tinted Door to RGB House"
         ],
@@ -1975,7 +1975,7 @@
         "name": "Town Church Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-            "Town Door to Church (Panel)",
+            "doorsPanel, Town Door to Church (Panel)",
             "Town Doors",
             "Town Door to Church"
         ],
@@ -2020,7 +2020,7 @@
         "name": "Monastery Entry Outer",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "access_rules": [
-            "Monastery Entry Door Right (Panel)",
+            "doorsPanel, Monastery Entry Door Right (Panel)",
             "Monastery Entry Door",
             "Monastery Outer Door"
         ],
@@ -2043,7 +2043,7 @@
         "name": "Monastery Entry Inner",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
         "access_rules": [
-            "Monastery Entry Door Left (Panel)",
+            "doorsPanel, Monastery Entry Door Left (Panel)",
             "Monastery Entry Door",
             "Monastery Inner Door"
         ],
@@ -2110,7 +2110,7 @@
         "name": "Jungle Popup wall",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-            "Jungle Popup Wall (Panel)",
+            "doorsPanel, Jungle Popup Wall (Panel)",
             "Jungle Popup Wall"
         ],
         "sections": [
@@ -2132,7 +2132,7 @@
         "name": "Bunker Entry",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Bunker Entry Door (Panel)",
+			"doorsPanel, Bunker Entry Door (Panel)",
 			"Bunker Bunker Entry Door"
         ],
         "sections": [
@@ -2154,7 +2154,7 @@
         "name": "Bunker Tinted Glass",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"Inside Bunker Door to Bunker Proper (Panel)",
+			"doorsPanel, Inside Bunker Door to Bunker Proper (Panel)",
 			"Bunker Tinted Glass Door"
         ],
         "sections": [
