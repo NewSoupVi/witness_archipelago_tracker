@@ -163,7 +163,7 @@
 			{
 				"name": "shadowsFirstSet",
 				"access_rules": [
-					"$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)]",
+					"$isDoors|off, [Unrandomized], [$hasPanel|Shadows Door Timer (Panel)]",
 					"Shadows Timed Door",
 					"Shadows Barrier to Ledge",
 					"Shadows Barrier to Quarry, @Places/quarry"
@@ -173,7 +173,7 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"$isDoors|off, @Places/shadowsFirstSet",
+					"$isDoors|off, [Unrandomized], [$hasPanel|Shadows Door Timer (Panel)]",
 					"Shadows Laser Room Right Door, [Shadows Laser Room Left Door]",
 					"[Shadows Laser Room Right Door], Shadows Laser Room Left Door"
 				],
