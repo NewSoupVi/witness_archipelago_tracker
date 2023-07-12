@@ -459,7 +459,7 @@
 				"access_rules": [
 					"$isDoors|off, $isExpert|off, [@Places/RGBHouse], @Town Church/Entry Panel, $hasPanel|Town Door to Church (Panel)",
 					"$isDoors|off, $isExpert|on, @RGB House/RGB Room Right",
-					"$isDoors|on, Town Door to Church"
+					"Town Door to Church"
 				],
 				"item_count": 1
 			},
