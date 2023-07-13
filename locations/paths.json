@@ -124,7 +124,7 @@
 		"access_rules": [
 			"doorsPanel, Glass Factory Entry Door (Panel)",
 			"Glass Factory Entry Door"
-			],
+		],
         "sections": [
 			{
                 "name": "Door",
@@ -1998,7 +1998,7 @@
         "name": "Town RGB House Stairs",
 		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-            "Town doors",
+            "Town Doors",
             "Town RGB House Staircase"
         ],
         "sections": [
