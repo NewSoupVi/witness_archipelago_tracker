@@ -898,7 +898,7 @@
             },
 			{
                 "name": "Flood Room Puzzles",
-				"access_rules": ["$canSolve|158105-158110,@Places/desertFlood, [@Logic/canWaterLevel]"],
+				"access_rules": ["$canSolve|158105-158110,@Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"],
                 "item_count": 1
             },
 			{
@@ -921,7 +921,7 @@
             {
                 "name": "Flood Room EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/desertFlood, @Logic/canWaterLevel"],
+				"access_rules": ["@Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)"],
                 "item_count": 1
             },
             {
@@ -3490,7 +3490,7 @@
             {
                 "name": "Intro Back",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["$canSolve|158274-158277,@Places/bunkerAntechamber"],
+				"access_rules": ["$canSolve|158269-158277,@Places/bunkerAntechamber"],
                 "item_count": 1
             },
 			{
