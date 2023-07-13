@@ -3490,7 +3490,7 @@
             {
                 "name": "Intro Back",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["$canSolve|158274-158277,@Places/bunkerAntechamber"],
+				"access_rules": ["$canSolve|158269-158277,@Places/bunkerAntechamber"],
                 "item_count": 1
             },
 			{
