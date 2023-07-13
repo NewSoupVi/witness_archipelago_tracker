@@ -1203,14 +1203,14 @@
                 "name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
 				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"],
+                                 "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             },
             {
                 "name": "Stoneworks Lift EP",
 				"visibility_rules": ["eps"],
 				"access_rules": ["$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-                            "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"],
+                                 "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"],
                 "item_count": 1
             }
         ],
@@ -1306,21 +1306,21 @@
                 "name": "Second Barrier Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["[@Places/quarryBoathouseUpstairsBack]",
-                                "@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"],
+                                 "@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"],
                 "item_count": 1
             },
 			{
                 "name": "Boathouse Hook EP",
 				"visibility_rules": ["eps"],
 				"access_rules": ["$isDoors|off, @Places/quarryBoathouseUpstairsBack, $canSolve|158165",
-						"$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"],
+						         "$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"],
                 "item_count": 1
             },
 			{
                 "name": "Boathouse Moving Ramp EP",
 				"visibility_rules": ["eps"],
 				"access_rules": ["$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
+                                 "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
                 "item_count": 1
             }
 			
@@ -1866,7 +1866,8 @@
 			{
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["$canSolve|158604, @Places/plates4", "$canSolve|158604, [@Places/plates4], @Places/keepTower"],
+				"access_rules": ["$canSolve|158604, @Places/plates4",
+                "$canSolve|158604, [@Places/plates4], @Places/keepTower"],
                 "item_count": 1
             },
 			{
@@ -1975,10 +1976,10 @@
         "name": "Keep Tower",
         "sections": [
             {
-                "name": "Laser Hedges",
+				"name": "Laser Hedges",
 				"visibility_rules": ["Unrandomized"],
 				"access_rules": ["$canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Door Panel], [@Hedge Maze 2/Door Panel], [@Hedge Maze 3/Door Panel], [@Hedge Maze 4/Door Panel]"],
-                "item_count": 1
+				"item_count": 1
             },
 			{
                 "name": "Laser Pressure Plates",
@@ -2021,7 +2022,8 @@
             {
                 "name": "Laser",
                 "visibility_rules": ["$shuffleLasers|off"],
-                "access_rules": ["@Keep Tower/Laser Hedges, Unrandomized", "@Keep Tower/Laser Pressure Plates"],
+                "access_rules": ["@Keep Tower/Laser Hedges, Unrandomized",
+                "@Keep Tower/Laser Pressure Plates"],
                 "item_count": 1
             }
         ],
@@ -2700,7 +2702,8 @@
             {
                 "name": "Main Island Thundercloud EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$shuffleLasers|off, @Places/desertLaser", "$shuffleLasers|on, $laser|4"],
+				"access_rules": ["$shuffleLasers|off, @Places/desertLaser",
+                "$shuffleLasers|on, $laser|4"],
                 "item_count": 1
             }
 			
@@ -3262,7 +3265,9 @@
             {
                 "name": "Garden Left EP",
 				"visibility_rules": ["eps, Unrandomized"],
-				"access_rules": ["Monastery Door to Garden", "Monastery Shortcuts", "$isDoors|off, @Monastery/Outside Puzzles"],
+				"access_rules": ["Monastery Door to Garden",
+                "Monastery Shortcuts",
+                "$isDoors|off, @Monastery/Outside Puzzles"],
                 "item_count": 1
             },
             {
@@ -3858,13 +3863,15 @@
             {
                 "name": "Rotating Bridge CCW EP",
                 "visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
-				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack", "epDiffNormal"],
+				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+                                 "epDiffNormal"],
                 "item_count": 1
             },
             {
                 "name": "Rotating Bridge CW EP",
                 "visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
-				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack", "epDiffNormal"],
+				"access_rules": ["$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+                                 "epDiffNormal"],
                 "item_count": 1
             }
         ],
@@ -4416,7 +4423,8 @@
 			{
                 "name": "Couch EP",
 				"visibility_rules": ["eps, epDiffEclipse", "eps, epDiffTedious"],
-				"access_rules": ["@Places/plates3, @Places/ocean", "epDiffNormal"],
+				"access_rules": ["@Places/plates3, @Places/ocean",
+                "epDiffNormal"],
                 "item_count": 1
             },
 			{
@@ -4904,7 +4912,8 @@
 			{
                 "name": "Pink Bridge EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/mountainLayer2", "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
+				"access_rules": ["@Places/mountainLayer2",
+                                 "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"],
                 "item_count": 1
             }
         ],
