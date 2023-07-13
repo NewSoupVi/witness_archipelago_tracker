@@ -1481,21 +1481,21 @@
                 "name": "Shadows Intro 8",
 				"visibility_rules": ["Unrandomized"],
 				"access_rules": ["$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-								 "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+								 "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"],
                 "item_count": 1
             },
             {
                 "name": "Shadows Intro 3",
 				"visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
 				"access_rules": ["$canSolve|158188 158189 158190,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-								 "$canSolve|158188 158189 158190, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+								 "$canSolve|158188 158189 158190, [Shadows Timed Door]"],
                 "item_count": 1
             },
             {
                 "name": "Shadows Intro 5",
                 "visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
 				"access_rules": ["$canSolve|158188 158189 158190 158191 158192,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-								 "$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+								 "$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"],
                 "item_count": 1
             },
             {
