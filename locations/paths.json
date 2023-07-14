@@ -252,9 +252,8 @@
 	
 	{
         "name": "Desert Flood Room Entry",
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"doorsPanel, Door to Desert Flood Light Room (Panel)",
 			"Desert Doors",
 			"Desert Door to Water Levels Room"
 		],
@@ -1086,7 +1085,7 @@
         "name": "Treehouse Drawbridge",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
-			"doorsPanel, Treehouse Shortcut Drop-Down Bridge (Panel)",
+			"doorsPanel, Treehouse Shortcut Drop",
 			"Treehouse Drawbridge"
 		],
         "sections": [
