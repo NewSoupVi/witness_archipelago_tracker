@@ -1306,7 +1306,7 @@
                 "name": "Second Barrier Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["[@Places/quarryBoathouseUpstairsBack]",
-                                "$isDoors|on, @Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"],
+                                "@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"],
                 "item_count": 1
             },			
 			{
@@ -1481,21 +1481,21 @@
                 "name": "Shadows Intro 8",
 				"visibility_rules": ["Unrandomized"],
 				"access_rules": ["$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-								 "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+								 "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"],
                 "item_count": 1
             },
             {
                 "name": "Shadows Intro 3",
 				"visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
 				"access_rules": ["$canSolve|158188 158189 158190,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-								 "$canSolve|158188 158189 158190,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+								 "$canSolve|158188 158189 158190, [Shadows Timed Door]"],
                 "item_count": 1
             },
             {
                 "name": "Shadows Intro 5",
                 "visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
 				"access_rules": ["$canSolve|158188 158189 158190 158191 158192,$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-								 "$canSolve|158188 158189 158190 158191 158192,$isDoors|on, [Shadows Timed Door], [@Places/shadowsFirstSet]"],
+								 "$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"],
                 "item_count": 1
             },
             {
@@ -1829,7 +1829,7 @@
                 "name": "Pressure Plates 3 EP",
 				"visibility_rules": ["eps"],
 				"access_rules": ["$isDoors|off, @Pressure Plates 3/Pressure Plates, @Places/keepTower",
-						 "$isDoors|on, Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower"],
+						 "Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower"],
                 "item_count": 1
             }
         ],
@@ -2335,7 +2335,7 @@
                 "name": "Discard",
 				"visibility_rules": ["Discarded"],
 				"access_rules": ["$isDoors|off, $canSolve|158606, $canSolve|158219",
-                                 "$isDoors|on, $canSolve|158606, Town Cargo Box Door"],
+                                 "$canSolve|158606, Town Cargo Box Door"],
                 "item_count": 1
             },
             {
@@ -2348,7 +2348,7 @@
                 "name": "Boat Cargo Box EP",
 				"visibility_rules": ["eps"],
 				"access_rules": ["$isDoors|off, $canSolve|158219, @Places/ocean",
-                                 "$isDoors|on, Town Cargo Box Door, @Places/ocean"],
+                                 "Town Cargo Box Door, @Places/ocean"],
                 "item_count": 1
             }
         ],
@@ -2535,9 +2535,9 @@
                 "name": "RGB House Red EP",
 				"visibility_rules": ["eps"],
                 "access_rules": ["$isDoors|off,$hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel),$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
-                                 "$isDoors|on,Town Maze Staircase,$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
+                                 "Town Maze Staircase,$isExpert|off,$canSolve|158244,@Places/RGBHouseUpstairs",
                                  "$isDoors|off,$hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel),$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs",
-                                 "$isDoors|on,Town Maze Staircase,$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs"],
+                                 "Town Maze Staircase,$isExpert|on,$canSolve|158244-158246,@Places/RGBHouseUpstairs"],
                 "item_count": 1
             },
 			{
@@ -2982,13 +2982,13 @@
         "sections": [
 			{
                 "name": "Exit Door Left",
-				"visibility_rules": ["$isDoors|on"],
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["$canSolve|158249"],
                 "item_count": 1
             },
 			{
                 "name": "Exit Door Right",
-				"visibility_rules": ["$isDoors|on"],
+				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": ["$canSolve|158250"],
                 "item_count": 1
             }
@@ -4925,7 +4925,7 @@
 				"visibility_rules": ["Discarded"],
 				"access_rules": ["$canSolve|158439 158613,@Places/mountainMeta",
 								 "$canSolve|158613,$isDoors|off, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
-								 "$canSolve|158613,$isDoors|on, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
+								 "$canSolve|158613,@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"],
                 "item_count": 1
             }
         ],
