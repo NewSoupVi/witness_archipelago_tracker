@@ -163,7 +163,7 @@
 			{
 				"name": "shadowsFirstSet",
 				"access_rules": [
-					"$isDoors|off, [$hasPanel|Shadows Door Timer (Panel)]",
+					"$isDoors|off, [Unrandomized], [$hasPanel|Shadows Door Timer (Panel)]",
 					"Shadows Timed Door",
 					"Shadows Barrier to Ledge",
 					"Shadows Barrier to Quarry, @Places/quarry"
@@ -173,7 +173,7 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"$isDoors|off, @Places/shadowsFirstSet",
+					"$isDoors|off, [Unrandomized], [$hasPanel|Shadows Door Timer (Panel)]",
 					"Shadows Laser Room Right Door, [Shadows Laser Room Left Door]",
 					"[Shadows Laser Room Right Door], Shadows Laser Room Left Door"
 				],
@@ -498,7 +498,7 @@
 			{
 				"name": "bunkerUV",
 				"access_rules": [
-					"$isDoors|off, @Places/bunkerTintedRoom",
+					"$isDoors|off, @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
 					"@Places/bunkerTintedRoom, Bunker Door to Ultraviolet Room"
 				],
 				"item_count": 1
@@ -506,7 +506,7 @@
 			{
 				"name": "bunkerLaser",
 				"access_rules": [
-					"$isDoors|off, @Places/bunkerUV, $hasPanel|Bunker Elevator Control (Panel)",
+					"$isDoors|off, @Places/bunkerUV, $hasPanel|Bunker Elevator Control (Panel), @Color Bunker/Ultraviolet Room",
 					"@Places/bunkerUV, Bunker Door to Elevator, $hasPanel|Bunker Elevator Control (Panel)"
 				],
 				"item_count": 1
@@ -561,7 +561,7 @@
 			{
 				"name": "mountainFinalRoom",
 				"access_rules": [
-					"$isDoors|off, @Places/mountainPenultimateRoom",
+					"$isDoors|off, @Places/mountainPenultimateRoom, $canSolve|158445-158446",
 					"Inside Mountain Door to Final Room, @Places/mountainPenultimateRoom"
 				],
 				"item_count": 1
