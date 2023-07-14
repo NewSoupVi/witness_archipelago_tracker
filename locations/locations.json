@@ -1177,8 +1177,10 @@
 		"sections": [
 			{
 				"name": "Lower Row",
-				"access_rules": ["$canSolve|158125-158130, @Places/quarryStoneworks, [@Places/quarryStoneworksMid]",
-				"$canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry"],
+				"access_rules": [
+					"$canSolve|158125-158130, @Places/quarryStoneworks, [@Places/quarryStoneworksMid]",
+					"$canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry"
+				],
 				"item_count": 1
 			},
 			{
@@ -1218,7 +1220,7 @@
 				"name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
+                    "Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
                     "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"
                 ],
 				"item_count": 1
@@ -1227,8 +1229,10 @@
 				"name": "Stoneworks Lift EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$isDoors|on, Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-                    "$isDoors|off, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
+                    "Quarry Stoneworks Side Door, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"Quarry Stoneworks Side Door, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+                    "$isDoors|off, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"$isDoors|off, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
                 ],
 				"item_count": 1
 			}
@@ -1335,7 +1339,7 @@
 				"visibility_rules": ["eps"],
 				"access_rules": [
                     "$isDoors|off, @Places/quarryBoathouseUpstairsBack, $canSolve|158165",
-                    "$isDoors|on, @Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"
+                    "@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"
                 ],
 				"item_count": 1
 			},
@@ -1344,7 +1348,7 @@
 				"visibility_rules": ["eps"],
 				"access_rules": [
                     "$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "$isDoors|on, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
+                    "@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
 				"item_count": 1
 			}
 			
@@ -1746,9 +1750,11 @@
 		"sections": [
 			{
 				"name": "Door Panel",
-				"access_rules": ["$canSolve|158194, @Places/maze2",
-				"$canSolve|158194, [@Places/maze2], @Places/maze3",
-				"$canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"],
+				"access_rules": [
+					"$canSolve|158194, @Places/maze2",
+					"$canSolve|158194, [@Places/maze2], @Places/maze3",
+					"$canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
+				],
 				"item_count": 1
 			}
 		],
@@ -1767,8 +1773,10 @@
 		"sections": [
 			{
 				"name": "Door Panel",
-				"access_rules": ["$canSolve|158195, @Places/maze3",
-				"$canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"],
+				"access_rules": [
+					"$canSolve|158195, @Places/maze3",
+					"$canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
+				],
 				"item_count": 1
 			}
 		],
@@ -1900,8 +1908,10 @@
 			{
 				"name": "Discard",
 				"visibility_rules": ["Discarded"],
-				"access_rules": ["$canSolve|158604, @Places/plates4",
-				"$canSolve|158604, [@Places/plates4], @Places/keepTower"],
+				"access_rules": [
+					"$canSolve|158604, @Places/plates4",
+					"$canSolve|158604, [@Places/plates4], @Places/keepTower"
+				],
 				"item_count": 1
 			},
 			{
@@ -2752,8 +2762,10 @@
 			{
 				"name": "Main Island Thundercloud EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["$shuffleLasers|off, @Places/desertLaser",
-				"$shuffleLasers|on, $laser|4"],
+				"access_rules": [
+					"$shuffleLasers|off, @Places/desertLaser",
+					"$shuffleLasers|on, $laser|4"
+				],
 				"item_count": 1
 			}
 			
@@ -3326,9 +3338,11 @@
 			{
 				"name": "Garden Left EP",
 				"visibility_rules": ["eps, Unrandomized"],
-				"access_rules": ["Monastery Door to Garden",
-				"Monastery Shortcuts",
-				"$isDoors|off, @Monastery/Outside Puzzles"],
+				"access_rules": [
+					"Monastery Door to Garden",
+					"Monastery Shortcuts",
+					"$isDoors|off, @Monastery/Outside Puzzles"
+				],
 				"item_count": 1
 			},
 			{
@@ -4495,9 +4509,10 @@
 			{
 				"name": "Couch EP",
 				"visibility_rules": ["eps, epDiffEclipse", "eps, epDiffTedious"],
-				"access_rules": ["@Places/plates3, @Places/ocean",
-				"epDiffNormal"
-            ],
+				"access_rules": [
+					"@Places/plates3, @Places/ocean",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
