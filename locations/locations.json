@@ -5171,7 +5171,7 @@
 			{
 				"name": "Final Elevator: Victory!",
 				"visibility_rules": ["wonkavator"],
-				"access_rules": ["@Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right"],
+				"access_rules": ["$laserBox|short, @Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right"],
 				"item_count": 1
 			}
 		],
