@@ -3861,7 +3861,7 @@
 			{
 				"name": "Purple Sand Bottom EP (River Side 3)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Swamp Purple Sand/Purple Sand Top EP"],
+				"access_rules": ["@Swamp Purple Sand/Purple Sand Bottom EP"],
 				"item_count": 1
 			},
 			{
