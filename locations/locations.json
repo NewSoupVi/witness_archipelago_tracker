@@ -20,9 +20,9 @@
 			{
 				"name": "Gate Open",
 				"access_rules": [
-                    "$isExpert|off, @Places/tutorial, $canSolve|158002-158007",
-                    "$isExpert|on, @Places/tutorial, $canSolve|158002 158003 158004 158007"
-                ],
+					"$isExpert|off, @Places/tutorial, $canSolve|158002-158007",
+					"$isExpert|on, @Places/tutorial, $canSolve|158002 158003 158004 158007"
+				],
 				"item_count": 1
 			},
 			{
@@ -201,10 +201,10 @@
 				"name": "Entry Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$canSolve|158011, @Places/tutorialOutpost, Outside Tutorial Outpost Entry Door",
-                    "$canSolve|158011, @Places/overworld, Outside Tutorial Optional Door",
-                    "$canSolve|158011, @Places/overworld, Outside Tutorial Outpost Doors"
-                ],
+					"$canSolve|158011, @Places/tutorialOutpost, Outside Tutorial Outpost Entry Door",
+					"$canSolve|158011, @Places/overworld, Outside Tutorial Optional Door",
+					"$canSolve|158011, @Places/overworld, Outside Tutorial Outpost Doors"
+				],
 				"item_count": 1
 			},
 			{
@@ -395,18 +395,18 @@
 				"name": "Boat Tutorial EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "@Places/ocean",
-                    "epdiffNormal"
-                ],
+					"@Places/ocean",
+					"epdiffNormal"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Boat Tutorial Reflection EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "@Places/ocean",
-                    "epdiffNormal"
-                ],
+					"@Places/ocean",
+					"epdiffNormal"
+				],
 				"item_count": 1
 			},
 			{
@@ -505,9 +505,9 @@
 				"name": "Vase EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
-                    "$canSolve|158027, @Places/overworld, $isDoors|on"
-                ],
+					"$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
+					"$canSolve|158027, @Places/overworld, $isDoors|on"
+				],
 				"item_count": 1
 			}
 			
@@ -940,9 +940,9 @@
 				"name": "Elevator EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$shuffleLasers|off, @Places/desertLaser",
-                    "$shuffleLasers|on, @Places/desertLaser, $laser|4"
-                ],
+					"$shuffleLasers|off, @Places/desertLaser",
+					"$shuffleLasers|on, @Places/desertLaser, $laser|4"
+				],
 				"item_count": 1
 			}
 		],
@@ -1220,20 +1220,20 @@
 				"name": "Stoneworks Ramp EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
-                    "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"
-                ],
+					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Stoneworks Lift EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "Quarry Stoneworks Side Door, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"Quarry Stoneworks Side Door, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
 					"Quarry Stoneworks Side Door, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-                    "$isDoors|off, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"$isDoors|off, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
 					"$isDoors|off, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
-                ],
+				],
 				"item_count": 1
 			}
 		],
@@ -1329,26 +1329,26 @@
 				"name": "Second Barrier Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "[@Places/quarryBoathouseUpstairsBack]",
-                    "@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"
-                ],
+					"[@Places/quarryBoathouseUpstairsBack]",
+					"@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Boathouse Hook EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$isDoors|off, @Places/quarryBoathouseUpstairsBack, $canSolve|158165",
-                    "@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"
-                ],
+					"$isDoors|off, @Places/quarryBoathouseUpstairsBack, $canSolve|158165",
+					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Boathouse Moving Ramp EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-                    "@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
+					"$isDoors|off, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
+					"@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"],
 				"item_count": 1
 			}
 			
@@ -1440,10 +1440,10 @@
 				"name": "Door 2",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
-                    "$canSolve|158119, @Places/overworld, Quarry Main Entry",
-                    "$canSolve|158119, @Places/quarry, Quarry Main Entry 2"
-                ],
+					"$canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
+					"$canSolve|158119, @Places/overworld, Quarry Main Entry",
+					"$canSolve|158119, @Places/quarry, Quarry Main Entry 2"
+				],
 				"item_count": 1
 			},
 			{
@@ -1513,27 +1513,27 @@
 				"name": "Shadows Intro 8",
 				"visibility_rules": ["Unrandomized"],
 				"access_rules": [
-                    "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-                    "$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"
-                ],
+					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Shadows Intro 3",
 				"visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
 				"access_rules": [
-                    "$canSolve|158188 158189 158190, $isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-                    "$canSolve|158188 158189 158190, [Shadows Timed Door]"
-                ],
+					"$canSolve|158188 158189 158190, $isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190, [Shadows Timed Door]"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Shadows Intro 5",
 				"visibility_rules": ["Unrandomized, doorsSimple", "Unrandomized, doorsComplex", "Unrandomized, doorsMax"],
 				"access_rules": [
-                    "$canSolve|158188 158189 158190 158191 158192, $isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-                    "$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"
-                ],
+					"$canSolve|158188 158189 158190 158191 158192, $isDoors|off, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"
+				],
 				"item_count": 1
 			},
 			{
@@ -2028,18 +2028,18 @@
 			{
 				"name": "Laser Pressure Plates",
 				"access_rules": [
-                    "$isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
-                    "$isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
-                ],
+					"$isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
+					"$isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Shortcut Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "@Places/keepTower",
-                    "[@Places/keepTower], @Places/plates3"
-                ],
+					"@Places/keepTower",
+					"[@Places/keepTower], @Places/plates3"
+				],
 				"item_count": 1
 			},
 			{
@@ -2385,9 +2385,9 @@
 				"name": "Discard",
 				"visibility_rules": ["Discarded"],
 				"access_rules": [
-                    "$isDoors|off, $canSolve|158606, $canSolve|158219",
-                    "$canSolve|158606, Town Cargo Box Door"
-                ],
+					"$isDoors|off, $canSolve|158606, $canSolve|158219",
+					"$canSolve|158606, Town Cargo Box Door"
+				],
 				"item_count": 1
 			},
 			{
@@ -2400,9 +2400,9 @@
 				"name": "Boat Cargo Box EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$isDoors|off, $canSolve|158219, @Places/ocean",
-                    "Town Cargo Box Door, @Places/ocean"
-                ],
+					"$isDoors|off, $canSolve|158219, @Places/ocean",
+					"Town Cargo Box Door, @Places/ocean"
+				],
 				"item_count": 1
 			}
 		],
@@ -2466,9 +2466,9 @@
 				"name": "Entry Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
-                    "$isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Tinted Door Panel"
-                ],
+					"$isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
+					"$isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Tinted Door Panel"
+				],
 				"item_count": 1
 			}
 		],
@@ -2572,18 +2572,18 @@
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
-                    "$isExpert|off, $canSolve|158246, [$canSolve|158244], @Places/RGBHouseUpstairs",
-                    "$isExpert|on, [$canSolve|158244], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
-                ],
+					"$isExpert|off, $canSolve|158246, [$canSolve|158244], @Places/RGBHouseUpstairs",
+					"$isExpert|on, [$canSolve|158244], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Tinted Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$isExpert|off, $canSolve|158225",
-                    "$isExpert|on, $canSolve|158225"
-                ],
+					"$isExpert|off, $canSolve|158225",
+					"$isExpert|on, $canSolve|158225"
+				],
 				"item_count": 1
 			},
 			{
@@ -2595,11 +2595,11 @@
 				"name": "RGB House Red EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs",
-                    "Town Maze Staircase, $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs",
-                    "$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs",
-                    "Town Maze Staircase, $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs"
-                ],
+					"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs",
+					"Town Maze Staircase, $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs",
+					"$isDoors|off, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs",
+					"Town Maze Staircase, $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs"
+				],
 				"item_count": 1
 			},
 			{
@@ -2882,18 +2882,18 @@
 				"name": "Second Blade EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "$canSolve|158247, @Places/windmill",
-                    "epDiffNormal"
-                ],
+					"$canSolve|158247, @Places/windmill",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Third Blade EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "$canSolve|158247, @Places/windmill",
-                    "epDiffNormal"
-                ],
+					"$canSolve|158247, @Places/windmill",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			}
 		],
@@ -2970,9 +2970,12 @@
 				"name": "Flowers EP",
 				"visibility_rules": ["eps, epDiffTedious, Unrandomized, Vaults", "eps, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": [
-                    "@Theater/Tutorial Video, @Places/tunnels",
-                    "epDiffNormal"
-                ],
+					"$isDoors|off, @Theater/Tutorial Video, @Places/tunnels",
+					"@Theater/Tutorial Video, Theater Walkway Door to Town",
+					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater",
+					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
@@ -3003,11 +3006,11 @@
 				"name": "Eclipse EP",
 				"visibility_rules": ["eps, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": [
-                    "@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
-                    "$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
-                    "epDiffNormal",
-                    "epdiffTedious"
-                ],
+					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
+					"$isDoors|off, @Theater/Challenge Video, $canSolve|158249-158250",
+					"epDiffNormal",
+					"epdiffTedious"
+				],
 				"item_count": 1
 			},
 			{
@@ -3861,7 +3864,7 @@
 			{
 				"name": "Purple Sand Bottom EP (River Side 3)",
 				"visibility_rules": ["obelisks"],
-				"access_rules": ["@Swamp Purple Sand/Purple Sand Top EP"],
+				"access_rules": ["@Swamp Purple Sand/Purple Sand Bottom EP"],
 				"item_count": 1
 			},
 			{
@@ -3939,18 +3942,18 @@
 				"name": "Rotating Bridge CCW EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
-                    "epDiffNormal"
-                ],
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Rotating Bridge CW EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
-                    "epDiffNormal"
-                ],
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			}
 		],
@@ -4248,9 +4251,9 @@
 			{
 				"name": "Left Orange Bridge",
 				"access_rules": [
-                    "$isExpert|off, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2",
-                    "$isExpert|on, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"
-                ],
+					"$isExpert|off, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2",
+					"$isExpert|on, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"
+				],
 				"item_count": 1
 			}
 		],
@@ -4286,9 +4289,9 @@
 				"name": "Drawbridge Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
-                    "$canSolve|158404, Treehouse Drawbridge"
-                ],
+					"$canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
+					"$canSolve|158404, Treehouse Drawbridge"
+				],
 				"item_count": 1
 			},
 			{
@@ -4483,9 +4486,9 @@
 				"name": "Boat CCW Underside EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "@Places/ocean",
-                    "epDiffNormal"
-                ],
+					"@Places/ocean",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
@@ -4519,18 +4522,18 @@
 				"name": "Boat Green EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "@Places/ocean",
-                    "epDiffNormal"
-                ],
+					"@Places/ocean",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Boat CW Underside EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "@Places/ocean",
-                    "epDiffNormal"
-                ],
+					"@Places/ocean",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			}
 		],
@@ -4630,9 +4633,9 @@
 				"name": "Cloud Cycle EP",
 				"visibility_rules": ["eps, epDiffTedious", "eps, epDiffEclipse"],
 				"access_rules": [
-                    "@Places/overworld",
-                    "epDiffNormal"
-                ],
+					"@Places/overworld",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			}
 		],
@@ -5010,9 +5013,9 @@
 				"name": "Pink Bridge EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-                    "@Places/mountainLayer2",
-                    "@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
-                ],
+					"@Places/mountainLayer2",
+					"@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
+				],
 				"item_count": 1
 			}
 		],
@@ -5032,10 +5035,10 @@
 				"name": "Elevator Discard",
 				"visibility_rules": ["Discarded"],
 				"access_rules": [
-                    "$canSolve|158439 158613, @Places/mountainMeta",
-                    "$canSolve|158613, $isDoors|off, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
-                    "$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"
-                ],
+					"$canSolve|158439 158613, @Places/mountainMeta",
+					"$canSolve|158613, $isDoors|off, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
+					"$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"
+				],
 				"item_count": 1
 			}
 		],
@@ -5377,20 +5380,20 @@
 				"name": "Caves Entrance Door Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$canSolve|158447, Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
-                    "$canSolve|158447, @Places/caves, Inside Mountain Door to Secret Area",
-                    "$canSolve|158447, Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom"
-                ],
+					"$canSolve|158447, Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
+					"$canSolve|158447, @Places/caves, Inside Mountain Door to Secret Area",
+					"$canSolve|158447, Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Caves Rock Timer Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom",
-                    "Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
-                    "@Places/caves, Inside Mountain Door to Secret Area"
-                ],
+					"Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom",
+					"Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
+					"@Places/caves, Inside Mountain Door to Secret Area"
+				],
 				"item_count": 1
 			}
 			
@@ -5708,10 +5711,10 @@
 				"name": "Challenge Entry Panel",
 				"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
 				"access_rules": [
-                    "$canSolve|158477, @Places/caves, Caves Doors to Challenge",
-                    "$canSolve|158477, @Places/caves, Caves Pillar Door",
-                    "$canSolve|158477, @Places/challenge, Challenge Entry Door"
-                ],
+					"$canSolve|158477, @Places/caves, Caves Doors to Challenge",
+					"$canSolve|158477, @Places/caves, Caves Pillar Door",
+					"$canSolve|158477, @Places/challenge, Challenge Entry Door"
+				],
 				"item_count": 1
 			}
 		],
