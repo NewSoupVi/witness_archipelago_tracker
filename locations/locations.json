@@ -1221,7 +1221,7 @@
 				"visibility_rules": ["eps"],
 				"access_rules": [
                     "Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
-                    "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel),  @Places/quarryStoneworksUpstairs"
+                    "$isDoors|off, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs"
                 ],
 				"item_count": 1
 			},
@@ -2970,9 +2970,12 @@
 				"name": "Flowers EP",
 				"visibility_rules": ["eps, epDiffTedious, Unrandomized, Vaults", "eps, epDiffEclipse, Unrandomized, Vaults"],
 				"access_rules": [
-                    "@Theater/Tutorial Video, @Places/tunnels",
-                    "epDiffNormal"
-                ],
+					"$isDoors|off, @Theater/Tutorial Video, @Places/tunnels",
+					"@Theater/Tutorial Video, Theater Walkway Door to Town",
+					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater",
+					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater",
+					"epDiffNormal"
+				],
 				"item_count": 1
 			},
 			{
