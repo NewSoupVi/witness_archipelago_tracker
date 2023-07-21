@@ -19,7 +19,7 @@
 	
 	{
         "name": "Orchard First Gate",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": [
 			"Orchard Gates",
 			"Orchard Middle Gate"
@@ -41,7 +41,7 @@
 
 	{
         "name": "Orchard Second Gate",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": [
 			"Orchard Gates",
 			"Orchard Final Gate"
@@ -2017,7 +2017,7 @@
 	
 	{
         "name": "Monastery Entry Outer",
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsPanel, Unrandomized", "doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
         "access_rules": [
             "doorsPanel, Monastery Entry Door Right (Panel)",
             "Monastery Entry Door",
@@ -2040,7 +2040,7 @@
 
 	{
         "name": "Monastery Entry Inner",
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsPanel, Unrandomized", "doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
         "access_rules": [
             "doorsPanel, Monastery Entry Door Left (Panel)",
             "Monastery Entry Door",
@@ -2129,7 +2129,7 @@
 
 	{
         "name": "Bunker Entry",
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsPanel, Unrandomized", "doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": [
 			"doorsPanel, Bunker Entry Door (Panel)",
 			"Bunker Bunker Entry Door"
@@ -2151,7 +2151,7 @@
 	
 	{
         "name": "Bunker Tinted Glass",
-		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsPanel, Unrandomized", "doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": [
 			"doorsPanel, Inside Bunker Door to Bunker Proper (Panel)",
 			"Bunker Tinted Glass Door"
@@ -2173,7 +2173,7 @@
 	
 	{
         "name": "Bunker UV Room Entry",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": ["Bunker Door to Ultraviolet Room"],
         "sections": [
 			{
@@ -2192,7 +2192,7 @@
 	
 	{
         "name": "Bunker Elevator Room Entry",
-		"visibility_rules": ["doorsSimple", "doorsComplex", "doorsMax"],
+		"visibility_rules": ["doorsSimple, Unrandomized", "doorsComplex, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": ["Bunker Door to Elevator"],
         "sections": [
 			{
@@ -2211,7 +2211,7 @@
 
 	{
         "name": "Bunker Elevator Control",
-		"visibility_rules": ["doorsPanel", "doorsMax"],
+		"visibility_rules": ["doorsPanel, Unrandomized", "doorsMax, Unrandomized"],
 		"access_rules": ["Bunker Elevator Control (Panel)"],
         "sections": [
 			{
