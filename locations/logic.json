@@ -17,7 +17,7 @@
 					"doorsNo",
 					"doorsSimple",
 					"doorsComplex"
-                ],
+				],
 				"item_count": 1
 			},
 			{
@@ -555,7 +555,7 @@
 					"$isDoors|off, @Inside Mountain Bottom Layer Giant/Giant Puzzle, @Places/mountainMeta",
 					"Inside Mountain Giant Puzzle Exit Door, @Places/mountainMeta",
 					"Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/caves"
-                ],
+				],
 				"item_count": 1
 			},
 			{
