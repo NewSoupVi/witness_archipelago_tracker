@@ -941,7 +941,7 @@
 				"visibility_rules": ["eps"],
 				"access_rules": [
 					"$shuffleLasers|off, @Places/desertLaser",
-					"$shuffleLasers|on, @Places/desertLaser, $laser|4"
+					"@Places/desertLaser, $laser|4"
 				],
 				"item_count": 1
 			}
@@ -2764,7 +2764,7 @@
 				"visibility_rules": ["eps"],
 				"access_rules": [
 					"$shuffleLasers|off, @Places/desertLaser",
-					"$shuffleLasers|on, $laser|4"
+					"$laser|4"
 				],
 				"item_count": 1
 			}
