@@ -505,8 +505,11 @@
 				"name": "Vase EP",
 				"visibility_rules": ["eps"],
 				"access_rules": [
-					"$canSolve|158027, @Places/overworld, $hasPanel|Glass Factory Entry Door (Panel)",
-					"$canSolve|158027, @Places/overworld, $isDoors|on"
+					"doorsNo, $canSolve|158027, @Places/overworld",
+					"doorsPanel, $canSolve|158027, @Places/overworld, Glass Factory Entry Door (Panel)",
+					"doorsSimple, $canSolve|158027, @Places/overworld",
+					"doorsComplex, $canSolve|158027, @Places/overworld",
+					"doorsMax, $canSolve|158027, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -4236,7 +4239,7 @@
 
 	{
 		"name": "Treehouse Left Side",
-		"access_rules": ["@Places/treehouseMain, $stars|1"],
+		"access_rules": ["@Places/treehouseMain"],
 		"sections": [
 			{
 				"name": "Purple Bridge 1",
