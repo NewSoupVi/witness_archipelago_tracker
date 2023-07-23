@@ -4239,7 +4239,7 @@
 
 	{
 		"name": "Treehouse Left Side",
-		"access_rules": ["@Places/treehouseMain, $stars|1"],
+		"access_rules": ["@Places/treehouseMain"],
 		"sections": [
 			{
 				"name": "Purple Bridge 1",
