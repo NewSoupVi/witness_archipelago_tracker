@@ -1,13 +1,5 @@
-function unrandomized_off()
-	return 1 - Tracker:ProviderCountForCode("Unrandomized")
-end
-
-function isDoors(check)
-	if check == "on" then
-		return (Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax") > 0)
-	else
-		return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
-	end
+function isNotDoors()
+	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
 end
 
 function isExpert(check)
@@ -18,12 +10,8 @@ function isExpert(check)
 	end
 end
 
-function shuffleLasers(check)
-	if check == "on" then
-		return (Tracker:ProviderCountForCode("shuffleLasers") > 0)
-	else
-		return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
-	end
+function isNotLaserShuffle()
+	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
 end
 
 function laserCount(amount)
@@ -58,8 +46,8 @@ end
 
 function pp2()
 	
-	return (isExpert("off") or (isDoors("off") and canSolve("158198 158200 158202 158204")) or
-	(isDoors("on") and 
+	return (isExpert("off") or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
+	(
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and
 	(Tracker:ProviderCountForCode("Keep Shortcut to Shadows") == 1 or
