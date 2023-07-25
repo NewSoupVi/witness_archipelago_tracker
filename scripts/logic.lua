@@ -2,6 +2,10 @@ function isNotDoors()
 	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
 end
 
+function isNotPanelsOnly()
+	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
+end
+
 function isExpert(check)
 	if check == "on" then
 		return (Tracker:ProviderCountForCode("Expert") > 0)
@@ -31,7 +35,7 @@ function laserBox(box)
 end
 
 function hasPanel(panel)
-	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") > 0 then return true
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
 	else return Tracker:ProviderCountForCode(panel)
 	end
 end
