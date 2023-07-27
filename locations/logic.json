@@ -35,7 +35,7 @@
 			{
 				"name": "glassFactory",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Glass Factory Entry (Panel), @Outside Glass Factory/Entry Door Panel",
+					"$isNotDoors, $hasPanel|Glass Factory Entry (Panel), @Outside Glass Factory/Entry Panel",
 					"Glass Factory Entry Door",
 					"@Places/ocean, Glass Factory Back Wall"
 				],
@@ -53,7 +53,7 @@
 			{
 				"name": "symmetryInner",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Door to Symmetry Island Upper (Panel), @Symmetry Island/Upper Door Panel",
+					"$isNotDoors, $hasPanel|Door to Symmetry Island Upper (Panel), @Symmetry Island/Upper Entry Panel",
 					"Symmetry Island Upper Door, @Places/symmetryOuter"
 				],
 				"item_count": 1
@@ -301,7 +301,7 @@
 			{
 				"name": "swampEntry",
 				"access_rules": [
-					"$isNotDoors, @Swamp Entry Area/Door Panel, $hasPanel|Swamp Entry (Panel)",
+					"$isNotDoors, @Swamp Entry Area/Entry Panel, $hasPanel|Swamp Entry (Panel)",
 					"Swamp Entry Door",
 					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
 				],
@@ -391,7 +391,7 @@
 			{
 				"name": "windmill",
 				"access_rules": [
-					"$isNotDoors, @Windmill/Entrance Door Panel, $hasPanel|Windmill Entry (Panel)",
+					"$isNotDoors, @Windmill/Entry Panel, $hasPanel|Windmill Entry (Panel)",
 					"$isNotDoors, @Places/tunnels",
 					"Town Windmill Door",
 					"Theater Entry Door, @Places/theater",
@@ -437,7 +437,7 @@
 			{
 				"name": "RGBHouse",
 				"access_rules": [
-					"$isNotDoors, @RGB House/Tinted Door Panel, $hasPanel|Town Door to RGB House (Panel)",
+					"$isNotDoors, @RGB House/Entry Panel, $hasPanel|Town Door to RGB House (Panel)",
 					"Town Tinted Door to RGB House"
 				],
 				"item_count": 1
