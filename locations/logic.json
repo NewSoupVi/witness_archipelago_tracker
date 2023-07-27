@@ -44,7 +44,8 @@
 			{
 				"name": "symmetryOuter",
 				"access_rules": [
-					"$isNotDoors, @Logic/SymmetryLowerPanel, $canSolve|158040",
+					"doorsNo, @Inside Glass Factory/Melting, $canSolve|158040",
+					"doorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel), $canSolve|158040",
 					"Symmetry Island Lower Door"
 				],
 				"item_count": 1
@@ -60,8 +61,8 @@
 			{
 				"name": "desertFloodLight",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Door to Desert Flood Light Room (Panel)",
-					"Desert Door to Flood Light Room",
+					"$isNotDoors, $hasPanel|Desert Light Room Entry (Panel)",
+					"Desert Door to Light Room",
 					"Desert Door to Pond Room, @Places/desertPond"
 				],
 				"item_count": 1
@@ -70,18 +71,18 @@
 				"name": "desertPond",
 				"access_rules": [
 					"doorsNo, @Places/desertFloodLight",
-					"doorsPanel, @Places/desertFloodLight, Desert Flood Light Room Light Control (Panel)",
-					"doorsMix, @Places/desertFloodLight, Desert Flood Light Room Light Control (Panel)",
+					"doorsPanel, @Places/desertFloodLight, Desert Light Room Light Control (Panel)",
+					"doorsMix, @Places/desertFloodLight, Desert Light Room Light Control (Panel)",
 					"Desert Door to Pond Room, @Places/desertFloodLight",
-					"Desert Door to Water Levels Room, @Places/desertFlood"
+					"Desert Door to Flood Room, @Places/desertFlood"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "desertFlood",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Door to Desert Flood Room (Panel), @Places/desertPond",
-					"Desert Door to Water Levels Room, @Places/desertPond",
+					"$isNotDoors, $hasPanel|Desert Flood Room Entry (Panel), @Places/desertPond",
+					"Desert Door to Flood Room, @Places/desertPond",
 					"Desert Door to Elevator Room, @Places/desertLaser"
 				],
 				"item_count": 1
@@ -318,7 +319,7 @@
 			{
 				"name": "swampBroken",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Swamp Platform Shortcut (Panel), @Swamp Platform Area/Platform Set, @Places/swampPlatform",
+					"$isNotDoors, @Swamp Platform Area/Platform Set, @Places/swampPlatform",
 					"Swamp Door to Broken Shapers, @Places/swampPlatform",
 					"Swamp Door to Rotated Shapers, @Places/swampRotated"
 				],
@@ -340,7 +341,7 @@
 				"access_rules": [
 					"@Places/ocean",
 					"Swamp Platform Shortcut Door, @Places/swampPlatform",
-					"$isNotDoors, $canSolve|158317-158318, @Places/swampPlatform",
+					"$isNotDoors, $hasPanel|Swamp Platform Shortcut (Panel), $canSolve|158317-158318, @Places/swampPlatform",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated"
 				],
 				"item_count": 1
@@ -567,7 +568,7 @@
 					"Caves Mountain Shortcut",
 					"Caves Swamp Shortcut",
 					"Caves",
-					"$isNotDoors, $laserBox|long, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom, $hasPanel|Caves Entry (Door), $canSolve|158447",
+					"$isNotDoors, $laserBox|long, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom, $hasPanel|Caves Entry (Panel), $canSolve|158447",
 					"Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
 					"Challenge Entry Door, Caves Pillar Door, @Places/challenge"
 				],
@@ -599,14 +600,6 @@
 	{
 		"name": "Logic",
 		"sections": [
-			{
-				"name": "SymmetryLowerPanel",
-				"access_rules": [
-					"doorsNo, @Inside Glass Factory/Melting",
-					"doorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel)"
-				],
-				"item_count": 1
-			},
 			{
 				"name": "boathouseRamp",
 				"access_rules": [
