@@ -201,8 +201,8 @@
 		"name": "Desert Light Room Entry",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
-			"doorsPanel, Door to Desert Flood Light Room (Panel)",
-			"Desert Door to Flood Light Room"
+			"doorsPanel, Desert Light Room Entry (Panel)",
+			"Desert Door to Light Room"
 		],
 		"sections": [
 			{
@@ -222,7 +222,7 @@
 	{
 		"name": "Desert Light Control",
 		"visibility_rules": [ "doorsPanel", "doorsMix" ],
-		"access_rules": [ "Desert Flood Light Room Light Control (Panel)" ],
+		"access_rules": [ "Desert Light Room Light Control (Panel)" ],
 		"sections": [
 			{
 				"name": "Panel",
@@ -261,8 +261,8 @@
 		"name": "Desert Flood Room Entry",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
-			"doorsPanel, Door to Desert Flood Room (Panel)",
-			"Desert Door to Water Levels Room"
+			"doorsPanel, Desert Flood Room Entry (Panel)",
+			"Desert Door to Flood Room"
 		],
 		"sections": [
 			{
@@ -622,7 +622,7 @@
 
 	{
 		"name": "Shadows Quarry Barrier",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Shadows Barrier to Quarry" ],
 		"sections": [
 			{
@@ -641,7 +641,7 @@
 
 	{
 		"name": "Shadows Timed Door",
-		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [
 			"doorsPanel, Shadows Door Timer (Panel)",
 			"Shadows Timed Door"
@@ -663,7 +663,7 @@
 
 	{
 		"name": "Shadows Ledge Barrier",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Shadows Barrier to Ledge" ],
 		"sections": [
 			{
@@ -682,7 +682,7 @@
 
 	{
 		"name": "Shadows Laser Doors",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"sections": [
 			{
 				"name": "Entry Left",
@@ -820,7 +820,7 @@
 
 	{
 		"name": "Keep Hedge Maze 1 Exit",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 1 Exit Door" ],
 		"sections": [
 			{
@@ -839,7 +839,7 @@
 
 	{
 		"name": "Keep Hedge Maze 2 Exit",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 2 Exit Door" ],
 		"sections": [
 			{
@@ -858,7 +858,7 @@
 
 	{
 		"name": "Keep Hedge Maze 3 Exit",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 3 Exit Door" ],
 		"sections": [
 			{
@@ -877,7 +877,7 @@
 
 	{
 		"name": "Keep Hedge Maze 4 Exit",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 4 Exit Door" ],
 		"sections": [
 			{
@@ -896,7 +896,7 @@
 
 	{
 		"name": "Keep Hedge Maze 2 Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 2 Shortcut" ],
 		"sections": [
 			{
@@ -915,7 +915,7 @@
 
 	{
 		"name": "Keep Hedge Maze 3 Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 3 Shortcut" ],
 		"sections": [
 			{
@@ -934,7 +934,7 @@
 
 	{
 		"name": "Keep Hedge Maze 4 Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Keep Hedge Maze 4 Shortcut" ],
 		"sections": [
 			{
@@ -1335,7 +1335,7 @@
 
 	{
 		"name": "Caves Mountain Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
 			"Caves",
 			"Caves Mountain Shortcut"
@@ -1357,7 +1357,7 @@
 
 	{
 		"name": "Caves Swamp Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
 			"Caves",
 			"Caves Swamp Shortcut"
@@ -1649,7 +1649,7 @@
 		"name": "Challenge Entry",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
-			"doorsPanelm Challenge Entry (Panel)",
+			"doorsPanel, Challenge Entry (Panel)",
 			"Challenge Entry Door"
 		],
 		"sections": [
@@ -1814,7 +1814,7 @@
 
 	{
 		"name": "Theater Video Input",
-		"visibility_rules": [ "doorsPanel", "doorsMix" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized, Vaults", "doorsMix, Unrandomized, Vaults" ],
 		"access_rules": [ "Theater Video Input (Panel)" ],
 		"sections": [
 			{
