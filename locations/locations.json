@@ -566,12 +566,18 @@
 			},
 			{
 				"name": "Lower Door Panel",
-				"access_rules": [ "$canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld" ],
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
+					"Door to Symmetry Island Lower (Panel), $canSolve|158040, @Places/overworld"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Upper Door Panel",
-				"access_rules": [ "$canSolve|158064, @Symmetry Island/Left 7" ],
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158064, @Symmetry Island/Left 7",
+					"Door to Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7"
+				],
 				"item_count": 1
 			},
 			{
@@ -901,7 +907,7 @@
 			},
 			{
 				"name": "Light Room Puzzles",
-				"access_rules": ["$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Flood Light Room Light Control (Panel)"],
+				"access_rules": ["$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)"],
 				"item_count": 1
 			},
 			{
@@ -1465,7 +1471,7 @@
 					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
 					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, Quarry Main Entry",
 					"$isNotPanelsOnly, $canSolve|158119, @Places/quarry, Quarry Main Entry 2",
-					"$isNotDoors, $hasPanel|Quary Entry 2 (Panel), $canSolve|158119, @Quarry Entrance/Door 1",
+					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Quarry Entrance/Door 1",
 					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
 					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, Quarry Main Entry",
 					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarry, Quarry Main Entry 2"
@@ -1564,13 +1570,13 @@
 			},
 			{
 				"name": "Entry Door Timer Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [ "$canSolve|158170, @Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Door to Quarry Timer Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [ "$canSolve|158187, [@Places/shadowsFirstSet]" ],
 				"item_count": 1
 			}
@@ -2493,7 +2499,7 @@
 					"$isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
 					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Tinted Door Panel",
 					"Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
-					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Tinted Door Panel"
+					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -3199,8 +3205,8 @@
 			},
 			{
 				"name": "Popup Wall Control",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -3218,38 +3224,38 @@
 		"sections": [
 			{
 				"name": "Long Arch Moss EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Straight Left Moss EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Pop-up Wall Moss EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Short Arch Moss EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "River Green Leaf Moss EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Tree Halo EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -4812,14 +4818,14 @@
 			},
 			{
 				"name": "River EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Arch Black EP",
-				"access_rules": [ "@Places/overworld" ],
 				"visibility_rules": [ "eps" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
@@ -5821,6 +5827,7 @@
 			},
 			{
 				"name": "Challenge Vault",
+				"visibility_rules": [ "Vaults", "challengeBox" ],
 				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ],
 				"item_count": 1
 			}
