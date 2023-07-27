@@ -279,7 +279,7 @@ function onClear(slot_data)
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	end
 	
-	if (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
+	if (not Tracker:FindObjectForCode("hiddenGoal").Active) then showGoal() end
 	
 end
 
@@ -300,7 +300,7 @@ function onItem(index, item_id, item_name, player_number)
         end
         return
     end
-	if item_id > 159902 and item_id < 159988 then
+	if item_id > 159902 and item_id < 160171 then
 		doorsRegional(v[1])
 	end
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -390,9 +390,9 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Orchard Middle Gate").Active = true
 		Tracker:FindObjectForCode("Orchard Final Gate").Active = true
 	elseif item_name == "Desert Doors"  then
-		Tracker:FindObjectForCode("Desert Door to Flood Light Room").Active = true
+		Tracker:FindObjectForCode("Desert Door to Light Room").Active = true
 		Tracker:FindObjectForCode("Desert Door to Pond Room").Active = true
-		Tracker:FindObjectForCode("Desert Door to Water Levels Room").Active = true
+		Tracker:FindObjectForCode("Desert Door to Flood Room").Active = true
 		Tracker:FindObjectForCode("Desert Door to Elevator Room").Active = true
 	elseif item_name == "Quarry Main Entry"  then
 		Tracker:FindObjectForCode("Quarry Main Entry 1").Active = true
@@ -491,7 +491,7 @@ function doorsRegional(item_name)
 
 	elseif item_name == "Desert Control Panels" then
 		Tracker:FindObjectForCode("Desert Flood Room Flood Controls (Panel)").Active = true
-		Tracker:FindObjectForCode("Desert Flood Light Room Light Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Light Room Light Control (Panel)").Active = true
 	elseif item_name == "Quarry Stoneworks Control Panels" then
 		Tracker:FindObjectForCode("Quarry Stoneworks Ramp Controls (Panel)").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Elevator Controls (Panel)").Active = true
@@ -524,10 +524,10 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Door to Symmetry Island Lower (Panel)").Active = true
 		Tracker:FindObjectForCode("Door to Symmetry Island Upper (Panel)").Active = true
 	elseif item_name == "Desert Panels" then
-		Tracker:FindObjectForCode("Desert Flood Light Room Light Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Light Room Light Control (Panel)").Active = true
 		Tracker:FindObjectForCode("Desert Flood Room Flood Controls (Panel)").Active = true
-		Tracker:FindObjectForCode("Door to Desert Flood Light Room (Panel)").Active = true
-		Tracker:FindObjectForCode("Door to Desert Flood Room (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Light Room Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Flood Room Entry (Panel)").Active = true
 	elseif item_name == "Quarry Outside Panels" then
 		Tracker:FindObjectForCode("Quarry Entry 1 (Panel)").Active = true
 		Tracker:FindObjectForCode("Quarry Entry 2 (Panel)").Active = true
@@ -594,7 +594,6 @@ function showGoal()
 	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = Tracker:FindObjectForCode("hiddenShort").AcquiredCount
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = Tracker:FindObjectForCode("hiddenLong").AcquiredCount
-	print(Tracker:FindObjectForCode("Goal").CurrentStage, Tracker:FindObjectForCode("hiddenGoal").CurrentStage)
 end
 
 function laser(num)
