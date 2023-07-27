@@ -507,25 +507,25 @@
     "codes": "Door to Symmetry Island Upper (Panel)"
   },
   {
-    "name": "Door to Desert Flood Light Room (Panel)",
+    "name": "Desert Light Room Entry (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Door to Desert Flood Light Room (Panel)"
+    "codes": "Desert Light Room Entry (Panel)"
   },
   {
-    "name": "Desert Flood Light Room Light Control (Panel)",
+    "name": "Desert Light Room Light Control (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Desert Flood Light Room Light Control (Panel)"
+    "codes": "Desert Light Room Light Control (Panel)"
   },
   {
-    "name": "Door to Desert Flood Room (Panel)",
+    "name": "Desert Flood Room Entry (Panel)",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Door to Desert Flood Room (Panel)"
+    "codes": "Desert Flood Room Entry (Panel)"
   },
   {
     "name": "Desert Flood Room Flood Controls (Panel)",
@@ -1096,11 +1096,11 @@
     "codes": "Orchard Final Gate"
   },
   {
-    "name": "Desert Door to Flood Light Room",
+    "name": "Desert Door to Light Room",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Desert Door to Flood Light Room"
+    "codes": "Desert Door to Light Room"
   },
   {
     "name": "Desert Door to Pond Room",
@@ -1110,11 +1110,11 @@
     "codes": "Desert Door to Pond Room"
   },
   {
-    "name": "Desert Door to Water Levels Room",
+    "name": "Desert Door to Flood Room",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Desert Door to Water Levels Room"
+    "codes": "Desert Door to Flood Room"
   },
   {
     "name": "Desert Door to Elevator Room",
