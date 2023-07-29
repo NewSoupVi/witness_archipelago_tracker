@@ -12,14 +12,23 @@
 			},
 			{
 				"name": "ocean",
-				"access_rules": ["Boat"],
+				"access_rules": [ "Boat" ],
 				"item_count": 1
 			},
 			{
-				"name": "tutorialOutpost",
+				"name": "tutorialOutpostPath",
 				"access_rules": [
-					"$isNotDoors, $canSolve|158005, $canSolve|158011",
-					"Outside Tutorial Optional Door, Outside Tutorial Outpost Entry Door",
+					"$isNotDoors, $canSolve|158005",
+					"Outside Tutorial Optional Door",
+					"Outside Tutorial Outpost Exit Door, Outside Tutorial Outpost Entry Door"
+				],
+				"item_count": 1
+			},
+			{
+				"name": "tutorialOutpostInterior",
+				"access_rules": [
+					"$isNotDoors, @Places/tutorialOutpostPath, $canSolve|158011",
+					"@Places/tutorialOutpostPath, Outside Tutorial Outpost Entry Door",
 					"Outside Tutorial Outpost Exit Door"
 				],
 				"item_count": 1
@@ -97,19 +106,20 @@
 				"item_count": 1
 			},
 			{
-				"name": "quarryMain1",
+				"name": "quarryBetweenEntries",
 				"access_rules": [
 					"$isNotDoors, $hasPanel|Quarry Entry 1 (Panel), $canSolve|158118",
-					"Quarry Main Entry 1"
+					"Quarry Main Entry 1",
+					"@Places/quarry, Quarry Main Entry 2"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "quarry",
 				"access_rules": [
-					"$isNotDoors, @Places/quarryMain1, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119",
+					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119",
+					"@Places/quarryBetweenEntries, Quarry Main Entry 2",
 					"$isNotDoors, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
-					"Quarry Main Entry 2, @Places/quarryMain1",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
 					"Quarry Door to Stoneworks, @Places/quarryStoneworks",
@@ -578,17 +588,26 @@
 					"Caves Mountain Shortcut",
 					"Caves Swamp Shortcut",
 					"Caves",
-					"@Places/cavesAntechamber, $hasPanel|Caves Entry (Panel), $canSolve|158447",
+					"$isNotDoors, @Places/cavesAntechamber, $hasPanel|Caves Entry (Panel), $canSolve|158447",
 					"@Places/cavesAntechamber, Inside Mountain Door to Secret Area",
-					"Challenge Entry Door, Caves Pillar Door, @Places/challenge"
+					"@Places/challengeAntechamber, Caves Pillar Door"
+				],
+				"item_count": 1
+			},
+			{
+				"name": "challengeAntechamber",
+				"access_rules": [
+					"$isNotDoors, $canSolve|158476, @Places/caves",
+					"Caves Pillar Door, @Places/caves",
+					"Challenge Entry Door, Challenge Door to Theater Walkway, @Places/tunnels"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "challenge",
 				"access_rules": [
-					"$isNotDoors, $canSolve|158476-158377, @Places/caves, $hasPanel|Challenge Entry (Panel)",
-					"Challenge Entry Door, Caves Pillar Door, @Places/caves",
+					"$isNotDoors, $canSolve|158477, $hasPanel|Challenge Entry (Panel), @Places/challengeAntechamber",
+					"Challenge Entry Door, @Places/challengeAntechamber",
 					"Challenge Door to Theater Walkway, @Places/tunnels"
 				],
 				"item_count": 1
