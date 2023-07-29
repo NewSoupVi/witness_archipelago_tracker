@@ -404,7 +404,7 @@ function doorsRegional(item_name)
 	elseif item_name == "Quarry Boathouse Barriers"  then
 		Tracker:FindObjectForCode("Quarry Boathouse First Barrier").Active = true
 		Tracker:FindObjectForCode("Quarry Boathouse Shortcut").Active = true
-	elseif item_name == "Shadows Laser Room Door"  then
+	elseif item_name == "Shadows Laser Room Doors"  then
 		Tracker:FindObjectForCode("Shadows Laser Room Right Door").Active = true
 		Tracker:FindObjectForCode("Shadows Laser Room Left Door").Active = true
 	elseif item_name == "Shadows Barriers"  then
@@ -433,7 +433,7 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Monastery Shortcut").Active = true
 		Tracker:FindObjectForCode("Monastery Door to Garden").Active = true
 	elseif item_name == "Town Tower Doors" then
-		Tracker:FindObjectForCode("Town Tower Blue Panels Door").Active = true
+		Tracker:FindObjectForCode("Town Tower Red Roof Set Door").Active = true
 		Tracker:FindObjectForCode("Town Tower Lattice Door").Active = true
 		Tracker:FindObjectForCode("Town Tower Environmental Set Door").Active = true
 		Tracker:FindObjectForCode("Town Tower Wooden Roof Set Door").Active = true
@@ -504,7 +504,7 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Town RGB Room RGB Control (Panel)").Active = true
 	elseif item_name == "Windmill & Theater Control Panels" then
 		Tracker:FindObjectForCode("Windmill Turn Control (Panel)").Active = true
-		Tracker:FindObjectForCode("Theater Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Theater Video Input (Panel)").Active = true
 	elseif item_name == "Bunker Control Panels" then
 		Tracker:FindObjectForCode("Bunker Elevator Control (Panel)").Active = true
 		Tracker:FindObjectForCode("Bunker UV Room Drop-Down Door Control (Panel)").Active = true
