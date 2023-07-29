@@ -198,17 +198,16 @@
 				"item_count": 1
 			},
 			{
-				"name": "Entry Door Panel",
+				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotDoors, @Places/tutorialOutpost",
-					"$canSolve|158011, @Places/tutorialOutpost, Outside Tutorial Outpost Entry Door",
-					"$canSolve|158011, @Places/overworld, Outside Tutorial Optional Door",
-					"$canSolve|158011, @Places/overworld, Outside Tutorial Outpost Doors"
+					"$isNotDoors, $canSolve|158005, $canSolve|158011",
+					"$canSolve|158011, Outside Tutorial Outpost Exit Door, Outside Tutorial Outpost Entry Door",
+					"$canSolve|158011, Outside Tutorial Optional Door"
 				],
 				"item_count": 1
 			},
 			{
-				"name": "Exit Door Panel",
+				"name": "Exit Panel",
 				"access_rules": [ "$canSolve|158012, @Places/tutorialOutpost" ],
 				"item_count": 1
 			}
@@ -495,7 +494,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Entry Door Panel",
+				"name": "Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [ "$canSolve|158027, @Places/overworld" ],
 				"item_count": 1
@@ -565,7 +564,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Lower Door Panel",
+				"name": "Lower Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
 					"Door to Symmetry Island Lower (Panel), $canSolve|158040, @Places/overworld"
@@ -573,7 +572,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Upper Door Panel",
+				"name": "Upper Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158064, @Symmetry Island/Left 7",
 					"Door to Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7"
@@ -1471,10 +1470,10 @@
 					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
 					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, Quarry Main Entry",
 					"$isNotPanelsOnly, $canSolve|158119, @Places/quarry, Quarry Main Entry 2",
-					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Quarry Entrance/Door 1",
 					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
 					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, Quarry Main Entry",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarry, Quarry Main Entry 2"
+					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarry, Quarry Main Entry 2",
+					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Quarry Entrance/Door 1"
 				],
 				"item_count": 1
 			},
@@ -1569,7 +1568,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Entry Door Timer Panel",
+				"name": "Entry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [ "$canSolve|158170, @Places/overworld" ],
 				"item_count": 1
@@ -1762,7 +1761,7 @@
 		"visibility_rules": [ "Unrandomized" ],
 		"sections": [
 			{
-				"name": "Door Panel",
+				"name": "Exit Panel",
 				"access_rules": [ "$canSolve|158193, @Places/overworld" ],
 				"item_count": 1
 			}
@@ -1781,7 +1780,7 @@
 		"visibility_rules": [ "Unrandomized" ],
 		"sections": [
 			{
-				"name": "Door Panel",
+				"name": "Exit Panel",
 				"access_rules": [
 					"$canSolve|158194, @Places/maze2",
 					"$canSolve|158194, [@Places/maze2], @Places/maze3",
@@ -1804,7 +1803,7 @@
 		"visibility_rules": [ "Unrandomized" ],
 		"sections": [
 			{
-				"name": "Door Panel",
+				"name": "Exit Panel",
 				"access_rules": [
 					"$canSolve|158195, @Places/maze3",
 					"$canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
@@ -1826,7 +1825,7 @@
 		"visibility_rules": [ "Unrandomized" ],
 		"sections": [
 			{
-				"name": "Door Panel",
+				"name": "Exit Panel",
 				"access_rules": [ "$canSolve|158196, [@Places/maze4]" ],
 				"item_count": 1
 			}
@@ -2052,7 +2051,7 @@
 			{
 				"name": "Laser Hedges",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Door Panel], [@Hedge Maze 2/Door Panel], [@Hedge Maze 3/Door Panel], [@Hedge Maze 4/Door Panel]" ],
+				"access_rules": [ "$canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], [@Hedge Maze 4/Exit Panel]" ],
 				"item_count": 1
 			},
 			{
@@ -2064,7 +2063,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Shortcut Door Panel",
+				"name": "Shortcut Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Places/keepTower",
@@ -2314,13 +2313,13 @@
 				"item_count": 1
 			},
 			{
-				"name": "Door Panel Left",
+				"name": "Entry Panel Left",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [ "$canSolve|158208, @Places/overworld" ],
 				"item_count": 1
 			},
 			{
-				"name": "Door Panel Right",
+				"name": "Entry Panel Right",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [ "$canSolve|158209, @Places/overworld" ],
 				"item_count": 1
@@ -2497,7 +2496,7 @@
 				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
-					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Tinted Door Panel",
+					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
 					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld"
 				],
@@ -2612,7 +2611,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Tinted Door Panel",
+				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158225",
 					"Town Door to RGB House (Panel), $canSolve|158225"
@@ -2900,7 +2899,7 @@
 		"name": "Windmill",
 		"sections": [
 			{
-				"name": "Entrance Door Panel",
+				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158241, @Places/overworld",
 					"Windmill Entry (Panel), $canSolve|158241, @Places/overworld"
@@ -3075,10 +3074,10 @@
 		"name": "Theater Entry Area",
 		"sections": [
 			{
-				"name": "Entry Door Panel",
+				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158248, @Places/windmill",
-					"Theater Entry (Panel) $canSolve|158248, @Places/windmill"
+					"Theater Entry (Panel), $canSolve|158248, @Places/windmill"
 				],
 				"item_count": 1
 			}
@@ -3749,7 +3748,7 @@
 		"name": "Swamp Entry Area",
 		"sections": [
 			{
-				"name": "Door Panel",
+				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158287, @Places/overworld",
 					"Swamp Entry (Panel), $canSolve|158287, @Places/overworld"
@@ -3785,7 +3784,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Shortcut Door Panels",
+				"name": "Shortcut Panels",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158317 158318, @Places/swampPlatform",
 					"Swamp Platform Shortcut (Panel), $canSolve|158317 158318, @Places/swampPlatform"
@@ -4184,7 +4183,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Shortcut Door Panels",
+				"name": "Shortcut Panels",
 				"access_rules": [ "$canSolve|158341 158342" ],
 				"item_count": 1
 			}
@@ -5148,7 +5147,10 @@
 			{
 				"name": "Statue Discard",
 				"visibility_rules": [ "Discarded" ],
-				"access_rules": [ "$canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom" ],
+				"access_rules": [
+					"$canSolve|158407, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom",
+					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom"
+				],
 				"item_count": 1
 			}
 		],
@@ -5445,7 +5447,7 @@
 		"name": "Caves Entrance",
 		"sections": [
 			{
-				"name": "Caves Entrance Door Panel",
+				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158447, Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
 					"$isNotPanelsOnly, $canSolve|158447, @Places/caves, Inside Mountain Door to Secret Area",
@@ -5775,7 +5777,7 @@
 		"name": "Challenge Entry Area",
 		"sections": [
 			{
-				"name": "Challenge Entry Panel",
+				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158477, @Places/caves, Caves Pillar Door",
 					"$isNotPanelsOnly, $canSolve|158477, @Places/challenge, Challenge Entry Door",
@@ -5827,7 +5829,13 @@
 			},
 			{
 				"name": "Challenge Vault",
-				"visibility_rules": [ "Vaults", "challengeBox" ],
+				"visibility_rules": [ "Vaults, Short", "Vaults, Long", "Vaults, wonkavator" ],
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ],
+				"item_count": 1
+			},
+			{
+				"name": "Victory!",
+				"visibility_rules": [ "challengeBox" ],
 				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ],
 				"item_count": 1
 			}
