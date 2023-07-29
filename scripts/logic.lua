@@ -18,6 +18,10 @@ function isNotLaserShuffle()
 	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
 end
 
+function longBoxWithoutMountainEntry()
+	return (Tracker:ProviderCountForCode("boxLong") < 8)
+end
+
 function laserCount(amount)
 	if tonumber(amount) > 0 then
 		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
@@ -25,7 +29,7 @@ function laserCount(amount)
 		return false
 	end
 end
-	
+
 function laserBox(box)
 	if box == "short" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
