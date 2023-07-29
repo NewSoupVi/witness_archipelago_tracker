@@ -552,7 +552,7 @@
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Bottom Layer Giant/Giant Puzzle, @Places/mountainMeta",
 					"Inside Mountain Giant Puzzle Exit Door, @Places/mountainMeta",
-					"Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/caves"
+					"Inside Mountain Bottom Layer Rock, @Places/cavesAntechamber"
 				],
 				"item_count": 1
 			},
@@ -565,13 +565,21 @@
 				"item_count": 1
 			},
 			{
+				"name": "cavesAntechamber",
+				"access_rules": [
+					"$isNotDoors, @Places/mountainPenultimateRoom, @Inside Mountain Bottom Layer Statue/Statue Discard",
+					"@Places/mountainPenultimateRoom, Inside Mountain Bottom Layer Rock",
+					"@Places/caves, Inside Mountain Door to Secret Area"
+				]
+			},
+			{
 				"name": "caves",
 				"access_rules": [
 					"Caves Mountain Shortcut",
 					"Caves Swamp Shortcut",
 					"Caves",
-					"$isNotDoors, $laserBox|long, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom, $hasPanel|Caves Entry (Panel), $canSolve|158447",
-					"Inside Mountain Bottom Layer Rock, Inside Mountain Door to Secret Area, @Places/mountainPenultimateRoom",
+					"@Places/cavesAntechamber, $hasPanel|Caves Entry (Panel), $canSolve|158447",
+					"@Places/cavesAntechamber, Inside Mountain Door to Secret Area",
 					"Challenge Entry Door, Caves Pillar Door, @Places/challenge"
 				],
 				"item_count": 1
