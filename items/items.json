@@ -1390,11 +1390,11 @@
     "codes": "Town RGB House Staircase"
   },
   {
-    "name": "Town Tower Blue Panels Door",
+    "name": "Town Tower Red Roof Set Door",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Town Tower Blue Panels Door"
+    "codes": "Town Tower Red Roof Set Door"
   },
   {
     "name": "Town Tower Lattice Door",
@@ -1755,11 +1755,11 @@
     "codes": "Quarry Boathouse Barriers"
   },
   {
-    "name": "Shadows Laser Room Door",
+    "name": "Shadows Laser Room Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Shadows Laser Room Door"
+    "codes": "Shadows Laser Room Doors"
   },
   {
     "name": "Shadows Barriers",
