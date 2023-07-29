@@ -194,21 +194,17 @@
 			{
 				"name": "Discard",
 				"visibility_rules": [ "Discarded" ],
-				"access_rules": [ "$canSolve|158600, @Places/tutorialOutpost" ],
+				"access_rules": [ "$canSolve|158600, @Places/tutorialOutpostInterior" ],
 				"item_count": 1
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotDoors, $canSolve|158005, $canSolve|158011",
-					"$canSolve|158011, Outside Tutorial Outpost Exit Door, Outside Tutorial Outpost Entry Door",
-					"$canSolve|158011, Outside Tutorial Optional Door"
-				],
+				"access_rules": [ "$canSolve|158011, @Places/tutorialOutpostPath" ],
 				"item_count": 1
 			},
 			{
 				"name": "Exit Panel",
-				"access_rules": [ "$canSolve|158012, @Places/tutorialOutpost" ],
+				"access_rules": [ "$canSolve|158012, @Places/tutorialOutpostInterior" ],
 				"item_count": 1
 			}
 		],
@@ -1467,13 +1463,8 @@
 			{
 				"name": "Door 2",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
-					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, Quarry Main Entry",
-					"$isNotPanelsOnly, $canSolve|158119, @Places/quarry, Quarry Main Entry 2",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [Quarry Main Entry 1]",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, Quarry Main Entry",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarry, Quarry Main Entry 2",
-					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Quarry Entrance/Door 1"
+					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
+					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
 				],
 				"item_count": 1
 			},
@@ -2410,7 +2401,7 @@
 	},
 
 	{
-		"name": "Town Cargo Box",
+		"name": "Town Cargo Box Area",
 		"sections": [
 			{
 				"name": "Discard",
@@ -2451,7 +2442,7 @@
 			{
 				"name": "Boat Cargo Box EP (Town Side 4)",
 				"visibility_rules": [ "obelisks" ],
-				"access_rules": [ "@Town Cargo Box/Boat Cargo Box EP" ],
+				"access_rules": [ "@Town Cargo Box Area/Boat Cargo Box EP" ],
 				"item_count": 1
 			}
 		],
@@ -3041,7 +3032,7 @@
 				"visibility_rules": [ "eps, epDiffEclipse, Unrandomized, Vaults" ],
 				"access_rules": [
 					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
-					"$isNotDoors, @Theater/Challenge Video, $canSolve|158249-158250",
+					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250",
 					"epDiffNormal",
 					"epdiffTedious"
 				],
@@ -3383,7 +3374,6 @@
 				"visibility_rules": [ "eps, Unrandomized" ],
 				"access_rules": [
 					"Monastery Door to Garden",
-					"Monastery Shortcuts",
 					"$isNotDoors, @Monastery/Outside Puzzles"
 				],
 				"item_count": 1
@@ -5103,7 +5093,7 @@
 				"name": "Elevator Discard",
 				"visibility_rules": [ "Discarded" ],
 				"access_rules": [
-					"$canSolve|158439 158613, @Places/mountainMeta",
+					"$canSolve|158439 158613, $hasPanel|Mountain Elevator (Panel), @Places/mountainMeta",
 					"$canSolve|158613, $isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
 					"$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"
 				],
@@ -5449,7 +5439,7 @@
 				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158447, @Places/cavesAntechamber",
-					"Caves Entry (Panel), $canSolve|158447, @Places/cavesAntechamber",
+					"Caves Entry (Panel), $canSolve|158447, @Places/cavesAntechamber"
 				],
 				"item_count": 1
 			},
@@ -5771,11 +5761,8 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158477, @Places/caves, Caves Pillar Door",
-					"$isNotPanelsOnly, $canSolve|158477, @Places/challenge, Challenge Entry Door",
-					"Challenge Entry (Panel), $canSolve|158477, @Places/caves, Caves Pillar Door",
-					"Challenge Entry (Panel), $canSolve|158477, @Places/challenge, Challenge Entry Door",
-					"$isNotDoors, $hasPanel|Challenge Entry (Panel), $canSolve|158476-158477, @Places/caves"
+					"$isNotPanelsOnly, $canSolve|158477, @Places/challengeAntechamber",
+					"Challenge Entry (Panel), $canSolve|158477, @Places/challengeAntechamber"
 				],
 				"item_count": 1
 			}
@@ -6222,7 +6209,7 @@
 			{
 				"name": "Side 4",
 				"visibility_rules": [ "obelisks" ],
-				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP, @Town Cargo Box/Boat Cargo Box EP" ],
+				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP, @Town Cargo Box Area/Boat Cargo Box EP" ],
 				"item_count": 1
 			},
 			{
