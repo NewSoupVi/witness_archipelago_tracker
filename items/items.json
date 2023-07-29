@@ -390,7 +390,7 @@
     "loop": "true"
   },
   {
-    "name": "Door Panel Power Shuffled",
+    "name": "Panel Power Shuffled",
     "img": "images/doorsPanelText.png",
     "codes": "DeprecateddoorsPanel",
     "type": "toggle",
