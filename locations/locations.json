@@ -3589,8 +3589,7 @@
 		]
 	},
 
-	{
-		"name": "Color Bunker",
+	{		"name": "Color Bunker",
 		"visibility_rules": [ "Unrandomized" ],
 		"sections": [
 			{
@@ -3602,7 +3601,7 @@
 				"item_count": 1
 			},
 			{
-				"name": "Tinted Glass Door Panel",
+				"name": "Tinted Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [ "@Color Bunker/Intro Back, @Places/bunkerAntechamber" ],
 				"item_count": 1
@@ -5449,22 +5448,15 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158447, Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
-					"$isNotPanelsOnly, $canSolve|158447, @Places/caves, Inside Mountain Door to Secret Area",
-					"Caves Entry (Panel), $canSolve|158447, Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
-					"Caves Entry (Panel), $canSolve|158447, @Places/caves, Inside Mountain Door to Secret Area",
-					"$isNotDoors, $hasPanel|Caves Entry (Panel), $canSolve|158447, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom"
+					"$isNotPanelsOnly, $canSolve|158447, @Places/cavesAntechamber",
+					"Caves Entry (Panel), $canSolve|158447, @Places/cavesAntechamber",
 				],
 				"item_count": 1
 			},
 			{
 				"name": "Caves Rock Timer Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [
-					"Inside Mountain Bottom Layer Doors to Caves, @Places/mountainPenultimateRoom",
-					"Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
-					"@Places/caves, Inside Mountain Door to Secret Area"
-				],
+				"access_rules": [ "@Places/cavesAntechamber" ],
 				"item_count": 1
 			}
 
