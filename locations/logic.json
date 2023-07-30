@@ -504,11 +504,16 @@
 				"item_count": 1
 			},
 			{
-				"name": "bunkerLaser",
+				"name": "bunkerElevator",
 				"access_rules": [
-					"$isDoors|off, @Places/bunkerUV, $hasPanel|Bunker Elevator Control (Panel), @Color Bunker/Ultraviolet Room",
-					"@Places/bunkerUV, Bunker Door to Elevator, $hasPanel|Bunker Elevator Control (Panel)"
+					"$isDoors|off, @Places/bunkerUV, @Color Bunker/Ultraviolet Room",
+					"@Places/bunkerUV, Bunker Door to Elevator"
 				],
+				"item_count": 1
+			},
+			{
+				"name": "bunkerLaser",
+				"access_rules": [ "@Places/bunkerElevator, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286" ],
 				"item_count": 1
 			},
 			{
