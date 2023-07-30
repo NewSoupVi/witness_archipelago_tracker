@@ -117,8 +117,8 @@
 			{
 				"name": "quarry",
 				"access_rules": [
-					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119",
 					"@Places/quarryBetweenEntries, Quarry Main Entry 2",
+					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119",
 					"$isNotDoors, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
@@ -512,11 +512,16 @@
 				"item_count": 1
 			},
 			{
-				"name": "bunkerLaser",
+				"name": "bunkerElevator",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel), @Places/bunkerUV, $hasPanel|Bunker Elevator Control (Panel), @Color Bunker/Ultraviolet Room",
-					"@Places/bunkerUV, Bunker Door to Elevator, $hasPanel|Bunker Elevator Control (Panel)"
+					"$isNotDoors, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel), @Color Bunker/Ultraviolet Room",
+					"@Places/bunkerUV, Bunker Door to Elevator"
 				],
+				"item_count": 1
+			},
+			{
+				"name": "bunkerLaser",
+				"access_rules": [ "@Places/bunkerElevator, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286" ],
 				"item_count": 1
 			},
 			{
