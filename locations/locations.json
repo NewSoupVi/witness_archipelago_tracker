@@ -3595,19 +3595,19 @@
 			{
 				"name": "Laser",
 				"visibility_rules": ["Unrandomized"],
-				"access_rules": ["$canSolve|158286, @Places/bunkerLaser, @Color Bunker/Ultraviolet Room"],
+				"access_rules": ["@Places/bunkerLaser"],
 				"item_count": 1
 			},
 			{
 				"name": "Green Room Flowers EP",
 				"visibility_rules": ["eps, Unrandomized"],
-				"access_rules": ["$canSolve|158286, @Places/bunkerLaser"],
+				"access_rules": ["@Places/bunkerLaser"],
 				"item_count": 1
 			},
 			{
 				"name": "Tinted Door EP",
 				"visibility_rules": ["eps"],
-				"access_rules": ["@Places/bunkerLaser"],
+				"access_rules": ["@Places/bunkerElevator"],
 				"item_count": 1
 			}
 		],
