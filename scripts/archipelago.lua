@@ -401,7 +401,7 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Quarry Main Entry 1").Active = true
 		Tracker:FindObjectForCode("Quarry Main Entry 2").Active = true
 	elseif item_name == "Quarry Stoneworks Doors"  then
-		Tracker:FindObjectForCode("Quarry Doors to Stoneworks").Active = true
+		Tracker:FindObjectForCode("Quarry Door to Stoneworks").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Side Door").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Rooftop Shortcut").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Stairs").Active = true
