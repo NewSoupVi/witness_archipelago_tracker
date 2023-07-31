@@ -1902,11 +1902,11 @@
     "codes": "Caves Doors"
   },
   {
-    "name": "Caves Exits to Main Island",
+    "name": "Caves Shortcuts",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Caves Exits to Main Island"
+    "codes": "Caves Shortcuts"
   },
   {
     "name": "Tunnels Doors",
