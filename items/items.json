@@ -1713,6 +1713,13 @@
     "codes": "Outside Tutorial Outpost Doors"
   },
   {
+    "name": "Glass Factory Doors",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Glass Factory Doors"
+  },
+  {
     "name": "Symmetry Island Doors",
     "type": "toggle",
     "loop": "true",
@@ -1734,25 +1741,25 @@
     "codes": "Desert Doors"
   },
   {
-    "name": "Quarry Main Entry",
+    "name": "Quarry Entry Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Main Entry"
+    "codes": "Quarry Entry Doors"
   },
   {
-    "name": "Quarry Stoneworks Shortcuts",
+    "name": "Quarry Stoneworks Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Stoneworks Shortcuts"
+    "codes": "Quarry Stoneworks Doors"
   },
   {
-    "name": "Quarry Boathouse Barriers",
+    "name": "Quarry Boathouse Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Quarry Boathouse Barriers"
+    "codes": "Quarry Boathouse Doors"
   },
   {
     "name": "Shadows Laser Room Doors",
@@ -1762,11 +1769,11 @@
     "codes": "Shadows Laser Room Doors"
   },
   {
-    "name": "Shadows Barriers",
+    "name": "Shadows Lower Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Shadows Barriers"
+    "codes": "Shadows Lower Doors"
   },
   {
     "name": "Keep Hedge Maze Doors",
@@ -1790,11 +1797,11 @@
     "codes": "Keep Shortcuts"
   },
   {
-    "name": "Monastery Entry Door",
+    "name": "Monastery Entry Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Monastery Entry Door"
+    "codes": "Monastery Entry Doors"
   },
   {
     "name": "Monastery Shortcuts",
@@ -1818,18 +1825,18 @@
     "codes": "Town Tower Doors"
   },
   {
-    "name": "Theater Exit Door",
+    "name": "Windmill & Theater Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Theater Exit Door"
+    "codes": "Windmill & Theater Doors"
   },
   {
-    "name": "Jungle & River Shortcuts",
+    "name": "Jungle Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Jungle & River Shortcuts"
+    "codes": "Jungle Doors"
   },
   {
     "name": "Bunker Doors",
@@ -1846,6 +1853,13 @@
     "codes": "Swamp Doors"
   },
   {
+    "name": "Swamp Shortcuts",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Swamp Shortcuts"
+  },
+  {
     "name": "Swamp Water Pumps",
     "type": "toggle",
     "loop": "true",
@@ -1860,25 +1874,32 @@
     "codes": "Treehouse Entry Doors"
   },
   {
-    "name": "Inside Mountain Second Layer Stairs & Doors",
+    "name": "Treehouse Upper Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Inside Mountain Second Layer Stairs & Doors"
+    "codes": "Treehouse Upper Doors"
   },
   {
-    "name": "Inside Mountain Bottom Layer Doors to Caves",
+    "name": "Mountain Floor 1 & 2 Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Inside Mountain Bottom Layer Doors to Caves"
+    "codes": "Mountain Floor 1 & 2 Doors"
   },
   {
-    "name": "Caves Doors to Challenge",
+    "name": "Mountain Bottom Floor Doors",
     "type": "toggle",
     "loop": "true",
     "img": "images/Door.png",
-    "codes": "Caves Doors to Challenge"
+    "codes": "Mountain Bottom Floor Doors"
+  },
+  {
+    "name": "Caves Doors",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Caves Doors"
   },
   {
     "name": "Caves Exits to Main Island",
