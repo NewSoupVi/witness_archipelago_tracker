@@ -498,9 +498,7 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Inside Mountain Door to Secret Area").Active = true
 		Tracker:FindObjectForCode("Caves Pillar Door").Active = true
 		Tracker:FindObjectForCode("Challenge Entry Door").Active = true
-		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
-		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
-	elseif item_name == "Caves Exits to Main Island"  then
+	elseif item_name == "Caves Shortcuts"  then
 		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	elseif item_name == "Tunnels Doors"  then
