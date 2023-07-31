@@ -214,7 +214,7 @@ ITEM_MAPPING = {
 	[159975] = {"Mountain Floor 1 & 2 Doors", "toggle"},
 	[159978] = {"Mountain Bottom Floor Doors", "toggle"},
 	[159981] = {"Caves Doors", "toggle"},
-	[159984] = {"Caves Exits to Main Island", "toggle"},
+	[159984] = {"Caves Shortcuts", "toggle"},
 	[159987] = {"Tunnels Doors", "toggle"},
 
 	[160000] = {"Desert Control Panels", "toggle"},
