@@ -117,25 +117,25 @@
 			{
 				"name": "quarry",
 				"access_rules": [
-					"@Places/quarryBetweenEntries, Quarry Main Entry 2",
-					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119",
 					"$isNotDoors, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
 					"Quarry Door to Stoneworks, @Places/quarryStoneworks",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
 					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120",
-					"Quarry Elevator (Panel), $canSolve|158120"
+					"Quarry Elevator (Panel), $canSolve|158120",
+					"@Places/quarryBetweenEntries, Quarry Main Entry 2",
+					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "quarryStoneworks",
 				"access_rules": [
-					"$isNotDoors, [$hasPanel|Quarry Door to Stoneworks (Panel)], [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry",
 					"Quarry Stoneworks Rooftop Shortcut",
 					"Quarry Stoneworks Side Door, @Places/quarry",
-					"Quarry Door to Stoneworks, @Places/quarry"
+					"Quarry Door to Stoneworks, @Places/quarry",
+					"$isNotDoors, [$hasPanel|Quarry Door to Stoneworks (Panel)], [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry"
 				],
 				"item_count": 1
 			},
