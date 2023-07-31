@@ -2305,13 +2305,13 @@
 			},
 			{
 				"name": "Entry Panel Left",
-				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [ "$canSolve|158208, @Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Entry Panel Right",
-				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [ "$canSolve|158209, @Places/overworld" ],
 				"item_count": 1
 			},
