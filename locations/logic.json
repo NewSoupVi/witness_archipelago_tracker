@@ -117,7 +117,7 @@
 			{
 				"name": "quarry",
 				"access_rules": [
-					"$isNotDoors, [Unrandomized], $hasPanel|Shadows Door Timer (Panel)",
+					"$isNotDoors, [Unrandomized], [$hasPanel|Shadows Door Timer (Panel)]",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
 					"Quarry Door to Stoneworks, @Places/quarryStoneworks",
