@@ -3624,7 +3624,7 @@
 			{
 				"name": "Ultraviolet Room",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158284-158285, @Places/bunkerUV, @Color Bunker/Tinted Glass Puzzles, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel)" ],
+				"access_rules": [ "$canSolve|158284-158285, @Places/bunkerUV, @Color Bunker/Tinted Glass Puzzles, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]" ],
 				"item_count": 1
 			},
 			{
