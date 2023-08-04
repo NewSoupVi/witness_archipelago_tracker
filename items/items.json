@@ -473,6 +473,12 @@
     ]
   },
   {
+    "name": "Automatic Elevators",
+    "codes": "autoElevators",
+    "type": "toggle",
+    "loop": "true"
+  },
+  {
     "name": "Puzzle Skips",
     "type": "consumable",
     "loop": "true",
