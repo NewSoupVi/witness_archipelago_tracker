@@ -14,70 +14,70 @@
                 "margin": "0, 1",
                 "item": "Unrandomized",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "Vaults",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "Discarded",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "puzzleRandomization",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "Caves",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "Symbols",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "shuffleLasers",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "epSetting",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "epDiff",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               },
               {
                 "type": "item",
                 "margin": "0, 1",
                 "item": "doorsSetting",
                 "h_alignment": "center",
-                "v_alignment": "strech"
+                "v_alignment": "stretch"
               }
             ]
           }
