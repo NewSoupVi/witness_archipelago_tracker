@@ -353,7 +353,8 @@
 					"@Places/ocean",
 					"Swamp Platform Shortcut Door, @Places/swampPlatform",
 					"$isNotDoors, $hasPanel|Swamp Platform Shortcut (Panel), $canSolve|158317-158318, @Places/swampPlatform",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated"
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
+					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, autoElevators"
 				],
 				"item_count": 1
 			},
@@ -491,7 +492,8 @@
 				"name": "bunkerAntechamber",
 				"access_rules": [
 					"$isNotDoors, $hasPanel|Bunker Entry (Panel), @Color Bunker/Entry Panel",
-					"Bunker Entry Door"
+					"Bunker Entry Door",
+					"autoElevators, @Places/bunkerLaser, Bunker Door to Elevator, Bunker Door to Ultraviolet Room, Bunker Tinted Glass Door"
 				],
 				"item_count": 1
 			},
@@ -499,7 +501,8 @@
 				"name": "bunkerTintedRoom",
 				"access_rules": [
 					"$isNotDoors, @Places/bunkerAntechamber, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
-					"@Places/bunkerAntechamber, Bunker Tinted Glass Door"
+					"@Places/bunkerAntechamber, Bunker Tinted Glass Door",
+					"autoElevators, @Places/bunkerLaser, Bunker Door to Elevator, Bunker Door to Ultraviolet Room"
 				],
 				"item_count": 1
 			},
@@ -507,7 +510,8 @@
 				"name": "bunkerUV",
 				"access_rules": [
 					"$isNotDoors, @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
-					"@Places/bunkerTintedRoom, Bunker Door to Ultraviolet Room"
+					"@Places/bunkerTintedRoom, Bunker Door to Ultraviolet Room",
+					"autoElevators, @Places/bunkerLaser, Bunker Door to Elevator"
 				],
 				"item_count": 1
 			},
@@ -515,13 +519,17 @@
 				"name": "bunkerElevator",
 				"access_rules": [
 					"$isNotDoors, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)], @Color Bunker/Ultraviolet Room",
-					"@Places/bunkerUV, Bunker Door to Elevator"
+					"@Places/bunkerUV, Bunker Door to Elevator",
+					"autoElevators, @Places/bunkerLaser"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "bunkerLaser",
-				"access_rules": [ "@Places/bunkerElevator, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286" ],
+				"access_rules": [
+					"@Places/bunkerElevator, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286",
+					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators"
+				],
 				"item_count": 1
 			},
 			{
