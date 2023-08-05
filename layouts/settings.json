@@ -40,7 +40,7 @@
               {
                 "type": "item",
                 "margin": "0, 1",
-                "item": "Caves",
+                "item": "cavesSetting",
                 "h_alignment": "center",
                 "v_alignment": "stretch"
               },
