@@ -1335,7 +1335,7 @@
 
 	{
 		"name": "Caves Mountain Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix", "Caves" ],
+		"visibility_rules": [ "doorsDoor", "doorsMix", "Caves", "cavesItem" ],
 		"access_rules": [
 			"Caves",
 			"Caves Mountain Shortcut"
@@ -1357,7 +1357,7 @@
 
 	{
 		"name": "Caves Swamp Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix", "Caves" ],
+		"visibility_rules": [ "doorsDoor", "doorsMix", "Caves", "cavesItem" ],
 		"access_rules": [
 			"Caves",
 			"Caves Swamp Shortcut"
