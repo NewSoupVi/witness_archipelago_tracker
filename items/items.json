@@ -197,10 +197,22 @@
   },
   {
     "name": "Early Caves",
-    "type": "toggle",
-    "loop": "true",
-    "img": "images/CavesText.png",
-    "codes": "Caves"
+    "codes": "cavesSetting",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/CavesText.png",
+        "codes": "cavesItem",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/CavesText.png",
+        "codes": "Caves",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Shuffle Postgame",
