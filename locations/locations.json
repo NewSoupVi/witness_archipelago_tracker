@@ -3866,13 +3866,19 @@
 			{
 				"name": "Purple Sand Top EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)" ],
+				"access_rules": [
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Purple Sand Bottom EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/overworld" ],
+				"access_rules": [
+					"$isNotAutoElevators, @Places/overworld",
+					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)"
+				],
 				"item_count": 1
 			},
 			{
