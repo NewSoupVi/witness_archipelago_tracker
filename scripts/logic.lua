@@ -19,7 +19,7 @@ function isNotLaserShuffle()
 end
 
 function isNotAutoElevators()
-	return (1 - Tacker:ProviderCountForCode("autoElevators") > 0)
+	return (1 - Tracker:ProviderCountForCode("autoElevators") > 0)
 end
 
 function longBoxWithoutMountainEntry()
