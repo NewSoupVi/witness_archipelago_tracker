@@ -18,6 +18,10 @@ function isNotLaserShuffle()
 	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
 end
 
+function isNotAutoElevators()
+	return (1 - Tacker:ProviderCountForCode("autoElevators") > 0)
+end
+
 function longBoxWithoutMountainEntry()
 	return (Tracker:ProviderCountForCode("boxLong") < 8)
 end
