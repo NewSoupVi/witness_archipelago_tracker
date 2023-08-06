@@ -2189,7 +2189,7 @@
 
 	{
 		"name": "Monastery Garden Entry",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Monastery Door to Garden" ],
 		"sections": [
 			{
@@ -2208,7 +2208,7 @@
 
 	{
 		"name": "River Monastery Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "River Shortcut to Monastery Garden" ],
 		"sections": [
 			{
