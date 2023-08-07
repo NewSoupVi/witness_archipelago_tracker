@@ -162,10 +162,10 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("doorsGrouping").CurrentStage = 0
 	Tracker:FindObjectForCode("epSetting").CurrentStage = 0
 	Tracker:FindObjectForCode("epDiff").CurrentStage = 0
-	Tracker:FindObjectForCode("goal").Active = false
+	Tracker:FindObjectForCode("Goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
-	Tracker:FindObjectForCode("symbols").Active = false
+	Tracker:FindObjectForCode("Symbols").Active = false
 	
 	
     -- reset locations
@@ -212,7 +212,7 @@ function onClear(slot_data)
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
 	
-	Tracker:FindObjectForCode("goal").CurrentStage = 0
+	Tracker:FindObjectForCode("Goal").CurrentStage = 0
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = 0
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = 0
 	
@@ -270,10 +270,8 @@ function onClear(slot_data)
 		elseif k == "shuffle_boat" then
 			Tracker:FindObjectForCode("Boat").Active = not value
 		elseif k == "early_caves" then
-			if value == 1 then
-				Tracker:FindObjectForCode("cavesItem").Active = true
-			elseif value == 2 then
-				Tracker:FindObjectForCode("Caves").Active = true
+			Tracker:FindObjectForCode("cavesSetting").CurrentStage = value
+			if value == 2 then
 				Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
 				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 			end
