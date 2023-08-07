@@ -269,14 +269,17 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
 		elseif k == "shuffle_boat" then
 			Tracker:FindObjectForCode("Boat").Active = not value
+		elseif k == "early_caves" then
+			if value == 1 then
+				Tracker:FindObjectForCode("cavesItem").Active = true
+			elseif value == 2 then
+				Tracker:FindObjectForCode("Caves").Active = true
+				Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
+				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
+			end
 		else
 			obj.Active = value
 		end
-	end
-	
-	if (Tracker:FindObjectForCode("Caves").Active) then
-		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
-		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	end
 	
 	if (not Tracker:FindObjectForCode("hiddenGoal").Active) then showGoal() end
