@@ -230,7 +230,7 @@
   },
   {
     "name": "Victory Condition",
-    "codes": "goal",
+    "codes": "Goal",
     "type": "progressive",
     "allow_disabled": true,
     "initial_stage_idx": 0,
