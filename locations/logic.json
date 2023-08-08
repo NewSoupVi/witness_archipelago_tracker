@@ -81,7 +81,6 @@
 				"access_rules": [
 					"doorsNo, @Places/desertFloodLight",
 					"doorsPanel, @Places/desertFloodLight, Desert Light Room Light Control (Panel)",
-					"doorsMix, @Places/desertFloodLight, Desert Light Room Light Control (Panel)",
 					"Desert Door to Pond Room, @Places/desertFloodLight",
 					"Desert Door to Flood Room, @Places/desertFlood"
 				],
