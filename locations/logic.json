@@ -519,7 +519,7 @@
 				"access_rules": [
 					"$isNotDoors, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)], @Color Bunker/Ultraviolet Room",
 					"@Places/bunkerUV, Bunker Door to Elevator",
-					"autoElevators, @Places/bunkerLaser"
+					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators"
 				],
 				"item_count": 1
 			},
