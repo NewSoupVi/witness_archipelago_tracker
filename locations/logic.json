@@ -527,8 +527,8 @@
 			{
 				"name": "bunkerLaser",
 				"access_rules": [
-					"@Places/bunkerElevator, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286",
-					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators"
+					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators",
+					"@Places/bunkerElevator, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286"
 				],
 				"item_count": 1
 			},
