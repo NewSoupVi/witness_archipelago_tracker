@@ -350,10 +350,10 @@
 				"name": "swampBack",
 				"access_rules": [
 					"@Places/ocean",
+					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, autoElevators",
 					"Swamp Platform Shortcut Door, @Places/swampPlatform",
 					"$isNotDoors, $hasPanel|Swamp Platform Shortcut (Panel), $canSolve|158317-158318, @Places/swampPlatform",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
-					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, autoElevators"
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated"
 				],
 				"item_count": 1
 			},
