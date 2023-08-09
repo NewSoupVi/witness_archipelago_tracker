@@ -492,7 +492,7 @@
 				"access_rules": [
 					"$isNotDoors, $hasPanel|Bunker Entry (Panel), @Color Bunker/Entry Panel",
 					"Bunker Entry Door",
-					"autoElevators, @Places/bunkerLaser, Bunker Door to Elevator, Bunker Door to Ultraviolet Room, Bunker Tinted Glass Door"
+					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, Bunker Door to Elevator, Bunker Door to Ultraviolet Room, Bunker Tinted Glass Door"
 				],
 				"item_count": 1
 			},
@@ -501,7 +501,7 @@
 				"access_rules": [
 					"$isNotDoors, @Places/bunkerAntechamber, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
 					"@Places/bunkerAntechamber, Bunker Tinted Glass Door",
-					"autoElevators, @Places/bunkerLaser, Bunker Door to Elevator, Bunker Door to Ultraviolet Room"
+					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, Bunker Door to Elevator, Bunker Door to Ultraviolet Room"
 				],
 				"item_count": 1
 			},
@@ -510,7 +510,7 @@
 				"access_rules": [
 					"$isNotDoors, @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
 					"@Places/bunkerTintedRoom, Bunker Door to Ultraviolet Room",
-					"autoElevators, @Places/bunkerLaser, Bunker Door to Elevator"
+					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, Bunker Door to Elevator"
 				],
 				"item_count": 1
 			},
