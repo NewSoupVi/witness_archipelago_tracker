@@ -199,12 +199,18 @@
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [ "$canSolve|158011, @Places/tutorialOutpostPath" ],
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158011, @Places/tutorialOutpostPath",
+					"Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Exit Panel",
-				"access_rules": [ "$canSolve|158012, @Places/tutorialOutpostInterior" ],
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158012, @Places/tutorialOutpostInterior",
+					"Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior"
+				],
 				"item_count": 1
 			}
 		],
@@ -1760,7 +1766,10 @@
 		"sections": [
 			{
 				"name": "Exit Panel",
-				"access_rules": [ "$canSolve|158193, @Places/overworld" ],
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158193, @Places/overworld",
+					"Keep Hedge Maze 1 (Panel), $canSolve|158193, @Places/overworld"
+				],
 				"item_count": 1
 			}
 		],
@@ -1780,9 +1789,12 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$canSolve|158194, @Places/maze2",
-					"$canSolve|158194, [@Places/maze2], @Places/maze3",
-					"$canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
+					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2",
+					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], @Places/maze3",
+					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door",
+					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
+					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
+					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
 				],
 				"item_count": 1
 			}
@@ -1803,8 +1815,10 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$canSolve|158195, @Places/maze3",
-					"$canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
+					"$isNotPanelsOnly, $canSolve|158195, @Places/maze3",
+					"$isNotPanelsOnly, $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door",
+					"Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
+					"Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
 				],
 				"item_count": 1
 			}
@@ -1824,7 +1838,10 @@
 		"sections": [
 			{
 				"name": "Exit Panel",
-				"access_rules": [ "$canSolve|158196, [@Places/maze4]" ],
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158196, [@Places/maze4]",
+					"Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4]"
+				],
 				"item_count": 1
 			}
 		],
