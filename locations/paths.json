@@ -57,8 +57,11 @@
 
 	{
 		"name": "Outside Tutorial Outpost Exit",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
-		"access_rules": [ "Outside Tutorial Outpost Exit Door" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+		"access_rules": [
+			"doorsPanel, Tutorial Outpost Exit (Panel)",
+			"Outside Tutorial Outpost Exit Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
@@ -95,8 +98,11 @@
 
 	{
 		"name": "Outside Tutorial Outpost Entry",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
-		"access_rules": [ "Outside Tutorial Outpost Entry Door" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+		"access_rules": [
+			"doorsPanel, Tutorial Outpost Entry (Panel)",
+			"Outside Tutorial Outpost Entry Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
@@ -820,8 +826,11 @@
 
 	{
 		"name": "Keep Hedge Maze 1 Exit",
-		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-		"access_rules": [ "Keep Hedge Maze 1 Exit Door" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+		"access_rules": [
+			"doorsPanel, Keep Hedge Maze 1 (Panel)",
+			"Keep Hedge Maze 1 Exit Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
@@ -839,8 +848,11 @@
 
 	{
 		"name": "Keep Hedge Maze 2 Exit",
-		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-		"access_rules": [ "Keep Hedge Maze 2 Exit Door" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+		"access_rules": [
+			"doorsPanel, Keep Hedge Maze 2 (Panel)",
+			"Keep Hedge Maze 2 Exit Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
@@ -858,8 +870,11 @@
 
 	{
 		"name": "Keep Hedge Maze 3 Exit",
-		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-		"access_rules": [ "Keep Hedge Maze 3 Exit Door" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+		"access_rules": [
+			"doorsPanel, Keep Hedge Maze 3 (Panel)",
+			"Keep Hedge Maze 3 Exit Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
@@ -877,8 +892,11 @@
 
 	{
 		"name": "Keep Hedge Maze 4 Exit",
-		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-		"access_rules": [ "Keep Hedge Maze 4 Exit Door" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+		"access_rules": [
+			"doorsPanel, Keep Hedge Maze 4 (Panel)",
+			"Keep Hedge Maze 4 Exit Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
