@@ -511,6 +511,20 @@
     "codes": "Glass Factory Entry (Panel)"
   },
   {
+    "name": "Tutorial Outpost Entry (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Tutorial Outpost Entry (Panel)"
+  },
+  {
+    "name": "Tutorial Outpost Exit (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Tutorial Outpost Exit (Panel)"
+  },
+  {
     "name": "Door to Symmetry Island Lower (Panel)",
     "type": "toggle",
     "loop": "true",
@@ -621,6 +635,34 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Shadows Door Timer (Panel)"
+  },
+  {
+    "name": "Keep Hedge Maze 1 (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Keep Hedge Maze 1 (Panel)"
+  },
+  {
+    "name": "Keep Hedge Maze 2 (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Keep Hedge Maze 2 (Panel)"
+  },
+  {
+    "name": "Keep Hedge Maze 3 (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Keep Hedge Maze 3 (Panel)"
+  },
+  {
+    "name": "Keep Hedge Maze 4 (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Keep Hedge Maze 4 (Panel)"
   },
   {
     "name": "Monastery Entry Door Left (Panel)",
@@ -945,6 +987,13 @@
     "codes": "Symmetry Island Panels"
   },
   {
+    "name": "Tutorial Outpost Panels",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Tutorial Outpost Panels"
+  },
+  {
     "name": "Desert Panels",
     "type": "toggle",
     "loop": "true",
@@ -971,6 +1020,13 @@
     "loop": "true",
     "img": "images/Door.png",
     "codes": "Quarry Boathouse Panels"
+  },
+  {
+    "name": "Keep Hedge Maze Panels",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Keep Hedge Maze Panels"
   },
   {
     "name": "Monastery Panels",
