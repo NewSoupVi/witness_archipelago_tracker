@@ -542,6 +542,9 @@ function doorsRegional(item_name)
 	elseif item_name == "Symmetry Island Panels" then
 		Tracker:FindObjectForCode("Door to Symmetry Island Lower (Panel)").Active = true
 		Tracker:FindObjectForCode("Door to Symmetry Island Upper (Panel)").Active = true
+	elseif item_name == "Tutorial Outpost Panels" then
+		Tracker:FindObjectForCode("Tutorial Outpost Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Tutorial Outpost Exit (Panel)").Active = true
 	elseif item_name == "Desert Panels" then
 		Tracker:FindObjectForCode("Desert Light Room Light Control (Panel)").Active = true
 		Tracker:FindObjectForCode("Desert Flood Room Flood Controls (Panel)").Active = true
@@ -559,6 +562,11 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Quarry Boathouse Ramp Height Control (Panel)").Active = true
 		Tracker:FindObjectForCode("Quarry Boathouse Ramp Horizontal Control (Panel)").Active = true
 		Tracker:FindObjectForCode("Quarry Boathouse Hook Control (Panel)").Active = true
+	elseif item_name == "Keep Hedge Maze Panels" then
+		Tracker:FindObjectForCode("Keep Hedge Maze 1 (Panel)").Active = true
+		Tracker:FindObjectForCode("Keep Hedge Maze 2 (Panel)").Active = true
+		Tracker:FindObjectForCode("Keep Hedge Maze 3 (Panel)").Active = true
+		Tracker:FindObjectForCode("Keep Hedge Maze 4 (Panel)").Active = true
 	elseif item_name == "Monastery Panels" then
 		Tracker:FindObjectForCode("Monastery Entry Door Left (Panel)").Active = true
 		Tracker:FindObjectForCode("Monastery Entry Door Right (Panel)").Active = true
