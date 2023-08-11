@@ -199,12 +199,17 @@
     "name": "Early Caves",
     "codes": "cavesSetting",
     "type": "progressive",
-    "allow_disabled": true,
+    "allow_disabled": false,
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/CavesText.png",
-        "codes": "cavesItem",
+        "img": "images/CavesNo.png",
+        "codes": "cavesNo",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/CavesPool.png",
+        "codes": "cavesPool",
         "inherit_codes": false
       },
       {
@@ -364,12 +369,12 @@
         "inherit_codes": false
       },
       {
-        "img": "images/doorsSimpleText.png",
+        "img": "images/doorsDoorText.png",
         "codes": "doorsDoor",
         "inherit_codes": false
       },
       {
-        "img": "images/doorsMaxText.png",
+        "img": "images/doorsMixText.png",
         "codes": "doorsMix",
         "inherit_codes": false
       }
@@ -486,6 +491,7 @@
   },
   {
     "name": "Automatic Elevators",
+    "img":  "images/autoElevators.png",
     "codes": "autoElevators",
     "type": "toggle",
     "loop": "true"
