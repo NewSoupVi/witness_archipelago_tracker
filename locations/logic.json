@@ -146,8 +146,7 @@
 			{
 				"name": "quarryStoneworksUpstairs",
 				"access_rules": [
-					"doorsMix, @Places/quarryStoneworks, [@Places/quarryStoneworksMid], $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
-					"doorsPanel, @Places/quarryStoneworks, [@Places/quarryStoneworksMid], $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
+					"@Places/quarryStoneworks, [@Places/quarryStoneworksMid], $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel)",
 					"@Places/quarryStoneworksMid, $canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
 					"@Places/quarryStoneworks, Quarry Stoneworks Stairs",
 					"$isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]"
@@ -464,7 +463,7 @@
 			{
 				"name": "church",
 				"access_rules": [
-					"$isNotDoors, $isExpert|off, [@Places/RGBHouse], @Town Church/Entry Panel, $hasPanel|Town Door to Church (Panel)",
+					"$isNotDoors, $isExpert|off, @Town Church/Entry Panel",
 					"$isNotDoors, $isExpert|on, @RGB House/RGB Room Right",
 					"Town Door to Church",
 					"[Town Door to Church], randomizationVanilla"
