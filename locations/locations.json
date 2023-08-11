@@ -1112,7 +1112,10 @@
 			{
 				"name": "Railroad EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$hasPanel|Quarry Elevator (Panel), @Places/overworld, $canSolve|158120" ],
+				"access_rules": [
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120",
+					"Quarry Elevator (Panel), $canSolve|158120"
+				],
 				"item_count": 1
 			}
 		],
@@ -3617,7 +3620,10 @@
 			{
 				"name": "Tinted Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Color Bunker/Intro Back, @Places/bunkerAntechamber" ],
+				"access_rules": [
+					"@Color Bunker/Intro Back, @Places/bunkerAntechamber",
+					"Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
+				],
 				"item_count": 1
 			},
 			{
