@@ -18,8 +18,8 @@
 				[ "Symmetry", "ColoredDots", "SoundDots", "Triangles" , "Boat", "lasers", "boxShort"],
 				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong"]
             ]
-          },
-        ]},
+          }
+        ]}
 	]
   },
   "tracker_default": {
@@ -88,7 +88,7 @@
 					}
 				}
 			]
-		},
+		}
       ]
     }
   },
@@ -160,7 +160,7 @@
 					}
 				}
 			]
-		},
+		}
       ]
     }
   }
