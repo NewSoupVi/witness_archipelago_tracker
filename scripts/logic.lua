@@ -1,13 +1,9 @@
-function unrandomized_off()
-	return 1 - Tracker:ProviderCountForCode("Unrandomized")
+function isNotDoors()
+	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
 end
 
-function isDoors(check)
-	if check == "on" then
-		return (Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") + Tracker:ProviderCountForCode("doorsMax") > 0)
-	else
-		return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
-	end
+function isNotPanelsOnly()
+	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
 end
 
 function isExpert(check)
@@ -18,12 +14,16 @@ function isExpert(check)
 	end
 end
 
-function shuffleLasers(check)
-	if check == "on" then
-		return (Tracker:ProviderCountForCode("shuffleLasers") > 0)
-	else
-		return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
-	end
+function isNotLaserShuffle()
+	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
+end
+
+function isNotAutoElevators()
+	return (1 - Tracker:ProviderCountForCode("autoElevators") > 0)
+end
+
+function longBoxWithoutMountainEntry()
+	return (Tracker:ProviderCountForCode("boxLong") < 8)
 end
 
 function laserCount(amount)
@@ -33,7 +33,7 @@ function laserCount(amount)
 		return false
 	end
 end
-	
+
 function laserBox(box)
 	if box == "short" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
@@ -43,7 +43,7 @@ function laserBox(box)
 end
 
 function hasPanel(panel)
-	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") > 0 then return true
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
 	else return Tracker:ProviderCountForCode(panel)
 	end
 end
@@ -58,8 +58,8 @@ end
 
 function pp2()
 	
-	return (isExpert("off") or (isDoors("off") and canSolve("158198 158200 158202 158204")) or
-	(isDoors("on") and 
+	return (isExpert("off") or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
+	(
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and
 	(Tracker:ProviderCountForCode("Keep Shortcut to Shadows") == 1 or

@@ -159,6 +159,7 @@ function onClear(slot_data)
 	
 
 	Tracker:FindObjectForCode("doorsSetting").CurrentStage = 0
+	Tracker:FindObjectForCode("doorsGrouping").CurrentStage = 0
 	Tracker:FindObjectForCode("epSetting").CurrentStage = 0
 	Tracker:FindObjectForCode("epDiff").CurrentStage = 0
 	Tracker:FindObjectForCode("goal").Active = false
@@ -247,15 +248,18 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("doorsSetting").CurrentStage = value
 			if value == 0 then
 				Tracker:FindObjectForCode("doorsNo").Active = true
-				Tracker:FindObjectForCode("Boat").Active = true
-			elseif value == 1 then Tracker:FindObjectForCode("doorsPanel").Active = true
+			elseif value == 1 then
+				Tracker:FindObjectForCode("doorsPanel").Active = true
 			elseif value == 2 then
-				Tracker:FindObjectForCode("doorsSimple").Active = true
-				Tracker:FindObjectForCode("Boat").Active = true
+				Tracker:FindObjectForCode("doorsDoor").Active = true
 			elseif value == 3 then
+				Tracker:FindObjectForCode("doorsMix").Active = true
+			end
+		elseif k == "door_groupings" then
+			if value == 0 then
 				Tracker:FindObjectForCode("doorsComplex").Active = true
-				Tracker:FindObjectForCode("Boat").Active = true
-			elseif value == 4 then Tracker:FindObjectForCode("doorsMax").Active = true
+			elseif value == 1 then
+				Tracker:FindObjectForCode("doorsSimple").Active = true
 			end
 		elseif k == "mountain_lasers" or k == "challenge_lasers" then
 			obj.AcquiredCount = value
@@ -263,17 +267,22 @@ function onClear(slot_data)
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
+		elseif k == "shuffle_boat" then
+			Tracker:FindObjectForCode("Boat").Active = not value
+		elseif k == "early_caves" then
+			if value == 1 then
+				Tracker:FindObjectForCode("cavesItem").Active = true
+			elseif value == 2 then
+				Tracker:FindObjectForCode("Caves").Active = true
+				Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
+				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
+			end
 		else
 			obj.Active = value
 		end
 	end
 	
-	if (Tracker:FindObjectForCode("Caves").Active) then
-		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
-		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
-	end
-	
-	if (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
+	if (not Tracker:FindObjectForCode("hiddenGoal").Active) then showGoal() end
 	
 end
 
@@ -294,8 +303,8 @@ function onItem(index, item_id, item_name, player_number)
         end
         return
     end
-	if item_id > 159902 and item_id < 159988 then
-		doorsSimple(v[1])
+	if item_id > 159902 and item_id < 160171 then
+		doorsRegional(v[1])
 	end
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onItem: code: %s, type %s", v[1], v[2]))
@@ -372,11 +381,14 @@ function onLocation(location_id, location_name)
 end
 
 
-function doorsSimple(item_name)
+function doorsRegional(item_name)
 	if item_name == "Outside Tutorial Outpost Doors" then
 		Tracker:FindObjectForCode("Outside Tutorial Optional Door").Active = true
 		Tracker:FindObjectForCode("Outside Tutorial Outpost Entry Door").Active = true
 		Tracker:FindObjectForCode("Outside Tutorial Outpost Exit Door").Active = true
+	elseif item_name == "Glass Factory Doors"  then
+		Tracker:FindObjectForCode("Glass Factory Entry Door").Active = true
+		Tracker:FindObjectForCode("Glass Factory Back Wall").Active = true
 	elseif item_name == "Symmetry Island Doors"  then
 		Tracker:FindObjectForCode("Symmetry Island Lower Door").Active = true
 		Tracker:FindObjectForCode("Symmetry Island Upper Door").Active = true
@@ -384,24 +396,27 @@ function doorsSimple(item_name)
 		Tracker:FindObjectForCode("Orchard Middle Gate").Active = true
 		Tracker:FindObjectForCode("Orchard Final Gate").Active = true
 	elseif item_name == "Desert Doors"  then
-		Tracker:FindObjectForCode("Desert Door to Flood Light Room").Active = true
+		Tracker:FindObjectForCode("Desert Door to Light Room").Active = true
 		Tracker:FindObjectForCode("Desert Door to Pond Room").Active = true
-		Tracker:FindObjectForCode("Desert Door to Water Levels Room").Active = true
+		Tracker:FindObjectForCode("Desert Door to Flood Room").Active = true
 		Tracker:FindObjectForCode("Desert Door to Elevator Room").Active = true
-	elseif item_name == "Quarry Main Entry"  then
+	elseif item_name == "Quarry Entry Doors"  then
 		Tracker:FindObjectForCode("Quarry Main Entry 1").Active = true
 		Tracker:FindObjectForCode("Quarry Main Entry 2").Active = true
-	elseif item_name == "Quarry Stoneworks Shortcuts"  then
+	elseif item_name == "Quarry Stoneworks Doors"  then
+		Tracker:FindObjectForCode("Quarry Door to Stoneworks").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Side Door").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Rooftop Shortcut").Active = true
 		Tracker:FindObjectForCode("Quarry Stoneworks Stairs").Active = true
-	elseif item_name == "Quarry Boathouse Barriers"  then
+	elseif item_name == "Quarry Boathouse Doors"  then
+		Tracker:FindObjectForCode("Quarry Boathouse Boat Staircase").Active = true
 		Tracker:FindObjectForCode("Quarry Boathouse First Barrier").Active = true
 		Tracker:FindObjectForCode("Quarry Boathouse Shortcut").Active = true
-	elseif item_name == "Shadows Laser Room Door"  then
+	elseif item_name == "Shadows Laser Room Doors"  then
 		Tracker:FindObjectForCode("Shadows Laser Room Right Door").Active = true
 		Tracker:FindObjectForCode("Shadows Laser Room Left Door").Active = true
-	elseif item_name == "Shadows Barriers"  then
+	elseif item_name == "Shadows Lower Doors"  then
+		Tracker:FindObjectForCode("Shadows Timed Door").Active = true
 		Tracker:FindObjectForCode("Shadows Barrier to Quarry").Active = true
 		Tracker:FindObjectForCode("Shadows Barrier to Ledge").Active = true
 	elseif item_name == "Keep Hedge Maze Doors"  then
@@ -420,17 +435,13 @@ function doorsSimple(item_name)
 	elseif item_name == "Keep Shortcuts"  then
 		Tracker:FindObjectForCode("Keep Shortcut to Shadows").Active = true
 		Tracker:FindObjectForCode("Keep Tower Shortcut").Active = true
-	elseif item_name == "Monastery Entry Door"  then
+	elseif item_name == "Monastery Entry Doors"  then
 		Tracker:FindObjectForCode("Monastery Inner Door").Active = true
 		Tracker:FindObjectForCode("Monastery Outer Door").Active = true
 	elseif item_name == "Monastery Shortcuts"  then
 		Tracker:FindObjectForCode("Monastery Shortcut").Active = true
 		Tracker:FindObjectForCode("Monastery Door to Garden").Active = true
-	elseif item_name == "Town Tower Doors" then
-		Tracker:FindObjectForCode("Town Tower Blue Panels Door").Active = true
-		Tracker:FindObjectForCode("Town Tower Lattice Door").Active = true
-		Tracker:FindObjectForCode("Town Tower Environmental Set Door").Active = true
-		Tracker:FindObjectForCode("Town Tower Wooden Roof Set Door").Active = true
+		Tracker:FindObjectForCode("River Shortcut to Monastery Garden").Active = true
 	elseif item_name == "Town Doors"  then
 		Tracker:FindObjectForCode("Town Cargo Box Door").Active = true
 		Tracker:FindObjectForCode("Town Wooden Roof Staircase").Active = true
@@ -439,22 +450,31 @@ function doorsSimple(item_name)
 		Tracker:FindObjectForCode("Town Maze Staircase").Active = true
 		Tracker:FindObjectForCode("Town Windmill Door").Active = true
 		Tracker:FindObjectForCode("Town RGB House Staircase").Active = true
-	elseif item_name == "Theater Exit Door"  then
+	elseif item_name == "Town Tower Doors" then
+		Tracker:FindObjectForCode("Town Tower Red Roof Set Door").Active = true
+		Tracker:FindObjectForCode("Town Tower Lattice Door").Active = true
+		Tracker:FindObjectForCode("Town Tower Environmental Set Door").Active = true
+		Tracker:FindObjectForCode("Town Tower Wooden Roof Set Door").Active = true
+	elseif item_name == "Windmill & Theater Doors"  then
+		Tracker:FindObjectForCode("Town Windmill Door").Active = true
+		Tracker:FindObjectForCode("Theater Entry Door").Active = true
 		Tracker:FindObjectForCode("Theater Exit Door Left").Active = true
 		Tracker:FindObjectForCode("Theater Exit Door Right").Active = true
-	elseif item_name == "Jungle & River Shortcuts"  then
+	elseif item_name == "Jungle Doors"  then
 		Tracker:FindObjectForCode("Jungle Bamboo Shortcut to River").Active = true
-		Tracker:FindObjectForCode("River Shortcut to Monastery Garden").Active = true
+		Tracker:FindObjectForCode("Jungle Popup Wall").Active = true
 	elseif item_name == "Bunker Doors"  then
-		Tracker:FindObjectForCode("Bunker Bunker Entry Door").Active = true
+		Tracker:FindObjectForCode("Bunker Entry Door").Active = true
 		Tracker:FindObjectForCode("Bunker Tinted Glass Door").Active = true
 		Tracker:FindObjectForCode("Bunker Door to Ultraviolet Room").Active = true
 		Tracker:FindObjectForCode("Bunker Door to Elevator").Active = true
 	elseif item_name == "Swamp Doors"  then
 		Tracker:FindObjectForCode("Swamp Entry Door").Active = true
 		Tracker:FindObjectForCode("Swamp Door to Broken Shapers").Active = true
-		Tracker:FindObjectForCode("Swamp Platform Shortcut Door").Active = true
 		Tracker:FindObjectForCode("Swamp Door to Rotated Shapers").Active = true
+	elseif item_name == "Swamp Shortcuts"  then
+		Tracker:FindObjectForCode("Swamp Platform Shortcut Door").Active = true
+		Tracker:FindObjectForCode("Swamp Near Laser Shortcut").Active = true		
 	elseif item_name == "Swamp Water Pumps"  then
 		Tracker:FindObjectForCode("Swamp Red Underwater Exit").Active = true
 		Tracker:FindObjectForCode("Swamp Cyan Water Pump").Active = true
@@ -465,23 +485,128 @@ function doorsSimple(item_name)
 		Tracker:FindObjectForCode("Treehouse First Door").Active = true
 		Tracker:FindObjectForCode("Treehouse Second Door").Active = true
 		Tracker:FindObjectForCode("Treehouse Beyond Yellow Bridge Door").Active = true
-	elseif item_name == "Inside Mountain Second Layer Stairs & Doors"  then
+	elseif item_name == "Treehouse Upper Doors"  then
+		Tracker:FindObjectForCode("Treehouse Timed Door to Laser House").Active = true
+		Tracker:FindObjectForCode("Treehouse Drawbridge").Active = true
+	elseif item_name == "Mountain Floor 1 & 2 Doors"  then
+		Tracker:FindObjectForCode("Inside Mountain First Layer Exit Door").Active = true
 		Tracker:FindObjectForCode("Inside Mountain Second Layer Staircase Near").Active = true
-		Tracker:FindObjectForCode("Inside Mountain Second Layer Exit Door").Active = true
 		Tracker:FindObjectForCode("Inside Mountain Second Layer Staircase Far").Active = true
-	elseif item_name == "Inside Mountain Bottom Layer Doors to Caves"  then
+		Tracker:FindObjectForCode("Inside Mountain Second Layer Exit Door").Active = true
+	elseif item_name == "Mountain Bottom Floor Doors"  then
 		Tracker:FindObjectForCode("Inside Mountain Bottom Layer Rock").Active = true
+		Tracker:FindObjectForCode("Inside Mountain Giant Puzzle Exit Door").Active = true
+		Tracker:FindObjectForCode("Inside Mountain Door to Final Room").Active = true
+	elseif item_name == "Caves Doors"  then
 		Tracker:FindObjectForCode("Inside Mountain Door to Secret Area").Active = true
-	elseif item_name == "Caves Doors to Challenge"  then
 		Tracker:FindObjectForCode("Caves Pillar Door").Active = true
 		Tracker:FindObjectForCode("Challenge Entry Door").Active = true
-	elseif item_name == "Caves Exits to Main Island"  then
+	elseif item_name == "Caves Shortcuts"  then
 		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
 		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 	elseif item_name == "Tunnels Doors"  then
+		Tracker:FindObjectForCode("Challenge Door to Theater Walkway").Active = true
 		Tracker:FindObjectForCode("Theater Walkway Door to Back of Theater").Active = true
 		Tracker:FindObjectForCode("Theater Walkway Door to Desert Elevator Room").Active = true
 		Tracker:FindObjectForCode("Theater Walkway Door to Town").Active = true
+
+	elseif item_name == "Desert Control Panels" then
+		Tracker:FindObjectForCode("Desert Flood Room Flood Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Light Room Light Control (Panel)").Active = true
+	elseif item_name == "Quarry Stoneworks Control Panels" then
+		Tracker:FindObjectForCode("Quarry Stoneworks Ramp Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Stoneworks Elevator Controls (Panel)").Active = true
+	elseif item_name == "Quarry Boathouse Control Panels" then
+		Tracker:FindObjectForCode("Quarry Boathouse Ramp Height Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Boathouse Ramp Horizontal Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Boathouse Hook Control (Panel)").Active = true
+	elseif item_name == "Town Control Panels" then
+		Tracker:FindObjectForCode("Town Maze Rooftop Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Town RGB Room RGB Control (Panel)").Active = true
+	elseif item_name == "Windmill & Theater Control Panels" then
+		Tracker:FindObjectForCode("Windmill Turn Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Theater Video Input (Panel)").Active = true
+	elseif item_name == "Bunker Control Panels" then
+		Tracker:FindObjectForCode("Bunker Elevator Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Bunker UV Room Drop-Down Door Control (Panel)").Active = true
+	elseif item_name == "Swamp Control Panels" then
+		Tracker:FindObjectForCode("Swamp Sliding Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Rotating Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Long Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Maze Control (Panel)").Active = true
+	elseif item_name == "Mountain & Caves Control Panels" then
+		Tracker:FindObjectForCode("Mountain Floor 1 Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Mountain Floor 2 Bridge Near (Panel)").Active = true
+		Tracker:FindObjectForCode("Mountain Floor 2 Bridge Far (Panel)").Active = true
+		Tracker:FindObjectForCode("Mountain Elevator (Panel)").Active = true
+		Tracker:FindObjectForCode("Caves Elevator (Panel)").Active = true
+
+	elseif item_name == "Symmetry Island Panels" then
+		Tracker:FindObjectForCode("Door to Symmetry Island Lower (Panel)").Active = true
+		Tracker:FindObjectForCode("Door to Symmetry Island Upper (Panel)").Active = true
+	elseif item_name == "Desert Panels" then
+		Tracker:FindObjectForCode("Desert Light Room Light Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Flood Room Flood Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Light Room Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Desert Flood Room Entry (Panel)").Active = true
+	elseif item_name == "Quarry Outside Panels" then
+		Tracker:FindObjectForCode("Quarry Entry 1 (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Entry 2 (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Elevator (Panel)").Active = true
+	elseif item_name == "Quarry Stoneworks Panels" then
+		Tracker:FindObjectForCode("Quarry Stoneworks Ramp Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Stoneworks Elevator Controls (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Door to Stoneworks (Panel)").Active = true
+	elseif item_name == "Quarry Boathouse Panels" then
+		Tracker:FindObjectForCode("Quarry Boathouse Ramp Height Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Boathouse Ramp Horizontal Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Quarry Boathouse Hook Control (Panel)").Active = true
+	elseif item_name == "Monastery Panels" then
+		Tracker:FindObjectForCode("Monastery Entry Door Left (Panel)").Active = true
+		Tracker:FindObjectForCode("Monastery Entry Door Right (Panel)").Active = true
+		Tracker:FindObjectForCode("Monastery Shutter Control (Panel)").Active = true
+	elseif item_name == "Town Church & RGB House Panels" then
+		Tracker:FindObjectForCode("Town Door to RGB House (Panel)").Active = true
+		Tracker:FindObjectForCode("Town RGB Room RGB Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Door to Church (Panel)").Active = true
+	elseif item_name == "Town Maze Panels" then
+		Tracker:FindObjectForCode("Town Maze Panel (Drop-Down Staircase) (Panel)").Active = true
+		Tracker:FindObjectForCode("Town Maze Rooftop Bridge (Panel)").Active = true
+	elseif item_name == "Town Windmill & Theater Panels" then
+		Tracker:FindObjectForCode("Windmill Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Windmill Turn Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Theater Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Theater Video Input (Panel)").Active = true
+		Tracker:FindObjectForCode("Theater Exit (Panel)").Active = true
+	elseif item_name == "Treehouse Panels" then
+		Tracker:FindObjectForCode("Treehouse First & Second Doors (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Third Door (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Laser House Door Timer (Panel)").Active = true
+		Tracker:FindObjectForCode("Treehouse Drawbridge (Panel)").Active = true
+	elseif item_name == "Bunker Panels" then
+		Tracker:FindObjectForCode("Bunker Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Inside Bunker Door to Bunker Proper (Panel)").Active = true
+		Tracker:FindObjectForCode("Bunker UV Room Drop-Down Door Control (Panel)").Active = true
+		Tracker:FindObjectForCode("Bunker Elevator Control (Panel)").Active = true
+	elseif item_name == "Swamp Panels" then
+		Tracker:FindObjectForCode("Swamp Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Platform Shortcut (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Sliding Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Rotating Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Long Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Swamp Maze Control (Panel)").Active = true
+	elseif item_name == "Mountain Panels" then
+		Tracker:FindObjectForCode("Mountain Floor 1 Bridge (Panel)").Active = true
+		Tracker:FindObjectForCode("Mountain Floor 2 Bridge Near (Panel)").Active = true
+		Tracker:FindObjectForCode("Mountain Floor 2 Bridge Far (Panel)").Active = true
+		Tracker:FindObjectForCode("Mountain Elevator (Panel)").Active = true
+	elseif item_name == "Caves Panels" then
+		Tracker:FindObjectForCode("Caves Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Challenge Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Caves Elevator (Panel)").Active = true
+	elseif item_name == "Tunnels Panels" then
+		Tracker:FindObjectForCode("Tunnels Entry (Panel)").Active = true
+		Tracker:FindObjectForCode("Tunnels Town Shortcut (Panel)").Active = true
 	end
 end
 	
@@ -490,7 +615,6 @@ function showGoal()
 	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = Tracker:FindObjectForCode("hiddenShort").AcquiredCount
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = Tracker:FindObjectForCode("hiddenLong").AcquiredCount
-	print(Tracker:FindObjectForCode("Goal").CurrentStage, Tracker:FindObjectForCode("hiddenGoal").CurrentStage)
 end
 
 function laser(num)
