@@ -256,6 +256,7 @@ function onClear(slot_data)
 				Tracker:FindObjectForCode("doorsMix").Active = true
 			end
 		elseif k == "door_groupings" then
+			Tracker:FindObjectForCode("doorsGrouping").CurrentStage = value
 			if value == 0 then
 				Tracker:FindObjectForCode("doorsComplex").Active = true
 			elseif value == 1 then
