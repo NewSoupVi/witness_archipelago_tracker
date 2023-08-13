@@ -386,14 +386,15 @@
     "type": "progressive",
     "allow_disabled": false,
     "initial_stage_idx": 0,
+    "loop": true,
     "stages": [
       {
-        "img": "images/doorsComplex.png",
+        "img": "images/doorsComplexText.png",
         "codes": "doorsComplex",
         "inherit_codes": false
       },
       {
-        "img": "images/doorsSimple.png",
+        "img": "images/doorsSimpleText.png",
         "codes": "doorsSimple",
         "inherit_codes": false
       }
