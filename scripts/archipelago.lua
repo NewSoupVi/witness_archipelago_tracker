@@ -447,7 +447,6 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Town Tinted Door to RGB House").Active = true
 		Tracker:FindObjectForCode("Town Door to Church").Active = true
 		Tracker:FindObjectForCode("Town Maze Staircase").Active = true
-		Tracker:FindObjectForCode("Town Windmill Door").Active = true
 		Tracker:FindObjectForCode("Town RGB House Staircase").Active = true
 	elseif item_name == "Town Tower Doors" then
 		Tracker:FindObjectForCode("Town Tower Red Roof Set Door").Active = true
