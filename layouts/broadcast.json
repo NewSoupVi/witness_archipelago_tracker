@@ -1,4 +1,4 @@
-﻿{
+{
   "tracker_broadcast": {
     "type": "array",
     "orientation": "vertical",
@@ -13,11 +13,11 @@
             "type": "itemgrid",
             "item_margin": "6,1",
             "h_alignment": "left",
-            "item_size": 50,
+            "item_size": "50",
             "rows": [
-				[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles", "Brain" ],
-				[ "Dots", "ColoredDots", "SoundDots", "Symmetry", "Boat" ],
-				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "Skip"]
+              [ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "Goal" ],
+              [ "Symmetry", "ColoredDots", "SoundDots", "Triangles", "Boat", "lasers", "boxShort" ],
+              [ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong" ]
             ]
           }
         ]
