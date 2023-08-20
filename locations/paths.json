@@ -1909,7 +1909,10 @@
 	{
 		"name": "Town Cargo Box Entry",
 		"visibility_rules": [ "doorsDoor", "doorsMix" ],
-		"access_rules": [ "Town Cargo Box Door" ],
+		"access_rules": [
+			"doorsPanel, Town Cargo Box Entry (Panel)",
+			"Town Cargo Box Door"
+		],
 		"sections": [
 			{
 				"name": "Door",
@@ -2225,7 +2228,7 @@
 	},
 
 	{
-		"name": "River Monastery Shortcut",
+		"name": "River Monastery Garden Shortcut",
 		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "River Shortcut to Monastery Garden" ],
 		"sections": [
@@ -2386,7 +2389,7 @@
 	},
 
 	{
-		"name": "Monastery Shortcut",
+		"name": "Monastery Laser Shortcut",
 		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Monastery Shortcut" ],
 		"sections": [
