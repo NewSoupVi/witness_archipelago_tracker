@@ -1908,7 +1908,7 @@
 
 	{
 		"name": "Town Cargo Box Entry",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
 			"doorsPanel, Town Cargo Box Entry (Panel)",
 			"Town Cargo Box Door"
