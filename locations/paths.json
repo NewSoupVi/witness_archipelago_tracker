@@ -2144,7 +2144,7 @@
 
 	{
 		"name": "Monastery Entry Outer",
-		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoors, Unrandomized", "doorsMix, Unrandomized" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [
 			"doorsPanel, Monastery Entry Door Right (Panel)",
 			"Monastery Outer Door"
