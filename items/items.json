@@ -735,6 +735,13 @@
     "codes": "Windmill Entry (Panel)"
   },
   {
+    "name": "Town Cargo Box Entry (Panel)",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/Door.png",
+    "codes": "Town Cargo Box Entry (Panel)"
+  },
+  {
     "name": "Windmill Turn Control (Panel)",
     "type": "toggle",
     "loop": "true",
