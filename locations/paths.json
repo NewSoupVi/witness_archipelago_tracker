@@ -2387,7 +2387,7 @@
 
 	{
 		"name": "Monastery Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "Monastery Shortcut" ],
 		"sections": [
 			{
