@@ -15,27 +15,9 @@
 						"h_alignment": "left",
 						"item_size": "50",
 						"rows": [
-							[ "BWSquare", "ColoredSquares", "Stars", "StarSameColor", "Triangles" ],
-							[ "Dots", "ColoredDots", "SoundDots", "Symmetry" ],
-							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "Skip" ]
-						]
-					}
-				]
-			},
-			{
-				"type": "array",
-				"orientation": "horizontal",
-				"margin": "0,0",
-				"content": [
-					{
-						"type": "itemgrid",
-						"item_margin": "6,1",
-						"h_alignment": "left",
-						"item_size": "50",
-						"rows": [
-							[ "Unrandomized", "Uncommon" ],
-							[ "Vaults", "Hard" ],
-							[ "Discarded", "UTM" ]
+							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "goal" ],
+							[ "Symmetry", "ColoredDots", "SoundDots", "Triangles", "Boat", "lasers", "boxShort" ],
+							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong" ]
 						]
 					}
 				]
