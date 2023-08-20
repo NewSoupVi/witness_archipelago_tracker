@@ -50,6 +50,7 @@ ITEM_MAPPING = {
 	[159166] = {"Town Maze Panel (Drop-Down Staircase) (Panel)", "toggle"},
 	[159167] = {"Town Maze Rooftop Bridge (Panel)", "toggle"},
 	[159169] = {"Windmill Entry (Panel)", "toggle"},
+	[159172] = {"Town Cargo Box Entry (Panel)", "toggle"},
 	[159182] = {"Windmill Turn Control (Panel)", "toggle"},
 	[159184] = {"Theater Entry (Panel)", "toggle"},
 	[159185] = {"Theater Video Input (Panel)", "toggle"},
