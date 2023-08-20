@@ -2434,14 +2434,17 @@
 				"name": "Discard",
 				"visibility_rules": [ "Discarded" ],
 				"access_rules": [
-					"$isNotDoors, $canSolve|158606, $canSolve|158219",
+					"$isNotDoors, $canSolve|158606, @Town Cargo Box Area/Entry Panel",
 					"$canSolve|158606, Town Cargo Box Door"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [ "$canSolve|158219" ],
+				"access_rules": [
+					"$isNotPanelsOnly, @Places/overworld, $canSolve|158219",
+					"Town Cargo Box Entry (Panel), @Places/overworld, $canSolve|158219"
+				],
 				"item_count": 1
 			},
 			{
