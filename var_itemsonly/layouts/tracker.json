@@ -15,7 +15,7 @@
 						"h_alignment": "left",
 						"item_size": "50",
 						"rows": [
-							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "goal" ],
+							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "Goal" ],
 							[ "Symmetry", "ColoredDots", "SoundDots", "Triangles", "Boat", "lasers", "boxShort" ],
 							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong" ]
 						]
