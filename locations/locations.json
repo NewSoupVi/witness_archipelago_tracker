@@ -2344,7 +2344,7 @@
 			},
 			{
 				"name": "Monastery Shortcut to River",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"item_count": 1
 			},
 			{
