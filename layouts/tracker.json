@@ -2,166 +2,170 @@
   "shared_item_grid": {
 	"type": "array",
 	"orientation": "horizontal",
-    "margin": "0,0",
-    "content": [
-		{"type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "6,1",
-            "h_alignment": "left",
-			"item_size": "50",
-            "rows": [
-				[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "Goal" ],
-				[ "Symmetry", "ColoredDots", "SoundDots", "Triangles" , "Boat", "lasers", "boxShort"],
-				[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong"]
-            ]
-          }
-        ]}
-	]
+	"margin": "0,0",
+		"content": [
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+					{
+						"type": "itemgrid",
+						"item_margin": "6,1",
+						"h_alignment": "left",
+						"item_size": "50",
+						"rows": [
+							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "Goal" ],
+							[ "Symmetry", "ColoredDots", "SoundDots", "Triangles", "Boat", "lasers", "boxShort" ],
+							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong" ]
+						]
+					}
+				]
+			}
+		]
   },
   "tracker_default": {
-    "type": "container",
-    "background": "#000000",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
-          "dock": "left",
-          "v_alignment": "stretch",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "shared_item_grid"
-              }
-            },
-            {
-              "type": "group",
-              "header": "Pinned Locations",
-              "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "vertical",
-                "compact": true
-              }
-            }
-          ]
-        },
-        {
-			"type": "tabbed",
-				"tabs": [
+	"type": "container",
+	"background": "#000000",
+		"content": {
+			"type": "dock",
+			"dropshadow": true,
+			"content": [
 				{
-					"title": "Both",
-					"content": {
-						"type": "map",
-						"maps": [
-						  "fullmap", "doors"
-						]
-					}
+					"type": "dock",
+					"dock": "left",
+					"v_alignment": "stretch",
+					"content": [
+						{
+							"type": "group",
+							"header": "Items",
+							"dock": "top",
+							"content": {
+								"type": "layout",
+								"key": "shared_item_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Pinned Locations",
+							"content": {
+								"type": "recentpins",
+								"style": "wrap",
+								"h_alignment": "stretch",
+								"v_alignment": "stretch",
+								"orientation": "vertical",
+								"compact": true
+							}
+						}
+					]
 				},
 				{
-					"title": "Map",
-					"content": {
-						"type": "map",
-						"maps": [
-						  "fullmap"
-						]
-					}
-				},
-				{
-					"title": "Metro",
-					"content": {
-						"type": "map",
-						"maps": [
-						  "doors"
-						]
-					}
+					"type": "tabbed",
+					"tabs": [
+						{
+							"title": "Both",
+							"content": {
+								"type": "map",
+								"maps": [
+									"fullmap",
+									"doors"
+								]
+							}
+						},
+						{
+							"title": "Map",
+							"content": {
+								"type": "map",
+								"maps": [
+									"fullmap"
+								]
+							}
+						},
+						{
+							"title": "Metro",
+							"content": {
+								"type": "map",
+								"maps": [
+									"doors"
+								]
+							}
+						}
+					]
 				}
 			]
 		}
-      ]
-    }
   },
   "tracker_horizontal": {
-    "type": "container",
-    "background": "#000000",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
-          "dock": "bottom",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "left",
-              "margin": "0,0,3,0",
-              "content": {
-                "type": "layout",
-                "h_alignment": "center",
-                "v_alignment": "center",
-                "key": "shared_item_grid"
-              }
-            },
-            {
-              "type": "group",
-              "header": "Pinned Locations",
-              "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "horizontal",
-                "compact": true
-              }
-            }
-          ]
-        },
-        {
-			"type": "tabbed",
-				"tabs": [
+	"type": "container",
+	"background": "#000000",
+		"content": {
+			"type": "dock",
+			"dropshadow": true,
+			"content": [
 				{
-					"title": "Both",
-					"content": {
-						"type": "map",
-						"maps": [
-						  "fullmap", "doors"
-						]
-					}
+					"type": "dock",
+					"dock": "bottom",
+					"content": [
+						{
+							"type": "group",
+							"header": "Items",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "shared_item_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Pinned Locations",
+							"content": {
+								"type": "recentpins",
+								"style": "wrap",
+								"h_alignment": "stretch",
+								"v_alignment": "stretch",
+								"orientation": "horizontal",
+								"compact": true
+							}
+						}
+					]
 				},
 				{
-					"title": "Map",
-					"content": {
-						"type": "map",
-						"maps": [
-						  "fullmap"
-						]
-					}
-				},
-				{
-					"title": "Metro",
-					"content": {
-						"type": "map",
-						"maps": [
-						  "doors"
-						]
-					}
+					"type": "tabbed",
+					"tabs": [
+						{
+							"title": "Both",
+							"content": {
+								"type": "map",
+								"maps": [
+									"fullmap",
+									"doors"
+								]
+							}
+						},
+						{
+							"title": "Map",
+							"content": {
+								"type": "map",
+								"maps": [
+									"fullmap"
+								]
+							}
+						},
+						{
+							"title": "Metro",
+							"content": {
+								"type": "map",
+								"maps": [
+									"doors"
+								]
+							}
+						}
+					]
 				}
 			]
 		}
-      ]
-    }
   }
 }
