@@ -644,8 +644,7 @@
 				"name": "boathouseRamp",
 				"access_rules": [
 					"doorsNo, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left",
-					"doorsSimple, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left",
-					"doorsComplex, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left",
+					"doorsDoor, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left",
 					"Quarry Boathouse Ramp Height Control (Panel)"
 				],
 				"item_count": 1
