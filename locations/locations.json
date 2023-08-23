@@ -2658,7 +2658,7 @@
 			{
 				"name": "RGB House Green EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158244, @Places/RGBHouseUpstairs" ],
+				"access_rules": [ "$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)" ],
 				"item_count": 1
 			}
 		],
