@@ -2683,7 +2683,7 @@
 			{
 				"name": "RGB House Green EP (Town Side 5)",
 				"visibility_rules": [ "obelisks" ],
-				"access_rules": [ "$canSolve|158244, @Places/RGBHouseUpstairs" ],
+				"access_rules": [ "@RGB House/RGB House Green EP" ],
 				"item_count": 1
 			}
 		],
