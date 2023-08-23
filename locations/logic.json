@@ -249,9 +249,9 @@
 				"access_rules": [
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates, @Places/plates4",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4, [Unrandomized]",
-					"Keep Pressure Plates 4 Exit Door, @Places/plates4",
 					"Keep Tower Shortcut",
-					"Keep Hedge Maze 4 Exit Door, @Places/maze4"
+					"Keep Hedge Maze 4 Exit Door, @Places/maze4",
+					"Keep Pressure Plates 4 Exit Door, @Places/plates4"
 				],
 				"item_count": 1
 			},
