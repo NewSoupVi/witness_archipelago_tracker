@@ -321,7 +321,7 @@
 				"access_rules": [
 					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 					"Swamp Door to Broken Shapers, @Places/swampBroken",
-					"Swamp Platform Shortcut Door, @Places/ocean"
+					"Swamp Platform Shortcut Door, @Places/swampBack"
 				],
 				"item_count": 1
 			},
