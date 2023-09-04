@@ -182,6 +182,12 @@
     "codes": "Unrandomized"
   },
   {
+    "name": "Unrandomized Panels Enabled",
+    "codes": "unrandomizedPanelsEnabled",
+    "type": "toggle",
+    "loop": "true"
+  },
+  {
     "name": "Shuffle Vaults",
     "type": "toggle",
     "loop": "true",
@@ -492,7 +498,7 @@
   },
   {
     "name": "Automatic Elevators",
-    "img":  "images/autoElevators.png",
+    "img": "images/autoElevators.png",
     "codes": "autoElevators",
     "type": "toggle",
     "loop": "true"
