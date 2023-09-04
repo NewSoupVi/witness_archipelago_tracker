@@ -1,3 +1,4 @@
+panel = {}
 panel[158000] = {"True"}
 panel[159510] = {"True"}
 panel[158001] = {"True"}
@@ -753,3 +754,7 @@ panel[159752] = {"True"}
 panel[159753] = {"True"}
 panel[159754] = {"True"}
 panel[159755] = {"True"}
+
+function getLogic()
+    return panel
+end
