@@ -102,6 +102,10 @@ function setReply(key, val, old)
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
 
+	if(val and key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled") then
+		Tracker:FindObjectForCode("unrandomizedPanelsEnabled").Active = val ~= "Prevent Solve")
+	end
+
 	if(val and key:sub(1, 9) == "WitnessEP") then
 		local separatorIndex, _ = key:find("-")
 		local epId = tonumber(key:sub(separatorIndex + 1))
@@ -131,6 +135,7 @@ function onClear(slot_data)
 	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
 	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
 
+	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 	
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-628"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-1289"})
@@ -143,7 +148,9 @@ function onClear(slot_data)
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-49842"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
-	
+
+	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
+
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
