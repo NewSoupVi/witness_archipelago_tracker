@@ -1,6 +1,30 @@
 {
   "versions": [
     {
+      "package_version": "0.4.2",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.2/witness_archipelago_tracker.zip",
+      "sha256": "7B3279949E42F866EF66E4ABB05865A66327615012C45A17155C37D07ED763F2",
+      "changelog": [
+        "Updated to be compatible with 0.4.2 logic changes"
+      ]
+    },   
+    {
+      "package_version": "0.4.1.2b",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2b/witness_archipelago_tracker.zip",
+      "sha256": "2B21E7CA5A625774D8FC5CD7458D12135A2801E510FAFF6E4A352B9F24DA8591",
+      "changelog": [
+        "Broadcast view and items only fix"
+      ]
+    },   
+    {
+      "package_version": "0.4.1.2",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2/witness_archipelago_tracker.zip",
+      "sha256": "78D0007CB6F551347894C9F2B168462220FF58F1FBFF97AA322956161CF2CD34",
+      "changelog": [
+        "Theater entry fix"
+      ]
+    },   
+    {
       "package_version": "0.4.1.1c",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1c/witness_archipelago_tracker.zip",
       "sha256": "1C5E88B6D6485CD9E39488DC231730B6187F070A34FB9F7F736A5CE5BB8B5C63",
