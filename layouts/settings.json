@@ -7,77 +7,91 @@
 				"type": "group",
 				"dock": "top",
 				"header": "Randomization settings",
-				"header_background": "#3e4b57",				
+				"header_background": "#3e4b57",
 				"content": [
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "Unrandomized",						
+						"item": "Unrandomized",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},					
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "Vaults",						
+						"item": "Vaults",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},		
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "Discarded",						
+						"item": "Discarded",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},					
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "puzzleRandomization",						
+						"item": "puzzleRandomization",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},					
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "Caves",						
+						"item": "cavesSetting",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},						 
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "Symbols",						
+						"item": "autoElevators",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},					
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "shuffleLasers",						
+						"item": "Symbols",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},							
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "epSetting",						
+						"item": "shuffleLasers",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					},					 
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "epDiff",						
+						"item": "epSetting",
 						"h_alignment": "center",
-						"v_alignment": "strech"
-					}, 
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
-						"item": "doorsSetting",						
+						"item": "epDiff",
 						"h_alignment": "center",
-						"v_alignment": "strech"
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "doorsSetting",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "doorsGrouping",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
 					}
 				]
 			}
