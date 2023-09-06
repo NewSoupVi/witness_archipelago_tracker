@@ -44,13 +44,13 @@
 						"h_alignment": "center",
 						"v_alignment": "stretch"
 					},
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "autoElevators",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "autoElevators",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
 					{
 						"type": "item",
 						"margin": "0, 1",
@@ -86,13 +86,13 @@
 						"h_alignment": "center",
 						"v_alignment": "stretch"
 					},
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "doorsGrouping",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          }
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "doorsGrouping",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					}
 				]
 			}
 		]
