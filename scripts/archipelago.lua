@@ -14,16 +14,16 @@ GLOBAL_ITEMS = {}
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
 function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o)
-   end
+	if type(o) == 'table' then
+		local s = '{ '
+		for k,v in pairs(o) do
+			if type(k) ~= 'number' then k = '"'..k..'"' end
+			s = s .. '['..k..'] = ' .. dump(v) .. ','
+		end
+		return s .. '} '
+	else
+		return tostring(o)
+	end
 end
 
 function setReply(key, val, old)
@@ -136,7 +136,7 @@ function onClear(slot_data)
 	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
 
 	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
-	
+
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-628"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-1289"})
 	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-3062"})
@@ -162,8 +162,8 @@ function onClear(slot_data)
 
     SLOT_DATA = slot_data
     CUR_INDEX = -1
-	
-	
+
+
 
 	Tracker:FindObjectForCode("doorsSetting").CurrentStage = 0
 	Tracker:FindObjectForCode("doorsGrouping").CurrentStage = 0
@@ -173,8 +173,8 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
 	Tracker:FindObjectForCode("Symbols").Active = false
-	
-	
+
+
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -218,16 +218,15 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
-	
+
 	Tracker:FindObjectForCode("Goal").CurrentStage = 0
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = 0
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = 0
-	
+
 	for k, v in pairs(SETTINGS_MAPPING) do
 		obj = Tracker:FindObjectForCode(v)
 
 		local value = SLOT_DATA[k]
-		
 
 		if k == "disable_non_randomized_puzzles" then
 			value = not value
@@ -287,9 +286,9 @@ function onClear(slot_data)
 			obj.Active = value
 		end
 	end
-	
+
 	if (not Tracker:FindObjectForCode("hiddenGoal").Active) then showGoal() end
-	
+
 end
 
 -- called when an item gets collected
@@ -622,7 +621,7 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Tunnels Town Shortcut (Panel)").Active = true
 	end
 end
-	
+
 
 function showGoal()
 	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
