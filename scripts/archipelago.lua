@@ -103,7 +103,7 @@ function setReply(key, val, old)
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
 
 	if(val and key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled") then
-		Tracker:FindObjectForCode("unrandomizedPanelsEnabled").Active = val ~= "Prevent Solve")
+		Tracker:FindObjectForCode("unrandomizedPanelsEnabled").Active = (val ~= "Prevent Solve")
 	end
 
 	if(val and key:sub(1, 9) == "WitnessEP") then
