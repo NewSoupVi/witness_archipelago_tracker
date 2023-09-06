@@ -1,8 +1,8 @@
 {
-  "shared_item_grid": {
-	"type": "array",
-	"orientation": "horizontal",
-	"margin": "0,0",
+	"shared_item_grid": {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
 		"content": [
 			{
 				"type": "array",
@@ -23,10 +23,10 @@
 				]
 			}
 		]
-  },
-  "tracker_default": {
-	"type": "container",
-	"background": "#000000",
+	},
+	"tracker_default": {
+		"type": "container",
+		"background": "#000000",
 		"content": {
 			"type": "dock",
 			"dropshadow": true,
@@ -94,10 +94,10 @@
 				}
 			]
 		}
-  },
-  "tracker_horizontal": {
-	"type": "container",
-	"background": "#000000",
+	},
+	"tracker_horizontal": {
+		"type": "container",
+		"background": "#000000",
 		"content": {
 			"type": "dock",
 			"dropshadow": true,
@@ -167,5 +167,5 @@
 				}
 			]
 		}
-  }
+	}
 }
