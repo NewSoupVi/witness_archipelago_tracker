@@ -30,6 +30,16 @@ function longBoxWithoutMountainEntry()
 	return (Tracker:ProviderCountForCode("boxLong") < 8)
 end
 
+function extraChecksRequired()
+	return (
+		Tracker:ProviderCountForCode("Unrandomized") == 0 and
+		Tracker:ProviderCountForCode("Expert") ~= 0 and
+		Tracker:ProviderCountForCode("doorsPanel") ~= 0 and
+		Tracker:ProviderCountForCode("Symbols") ~= 0 and
+		Tracker:ProviderCountForCode("epsOff") ~= 0
+	)
+end
+
 function laserCount(amount)
 	if tonumber(amount) > 0 then
 		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
