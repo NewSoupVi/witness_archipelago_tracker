@@ -1,49 +1,49 @@
 {
-  "settings_popup": {
-    "type": "dock",
-    "margin": "-20",
-    "content": [
-      {
-        "type": "group",
-        "dock": "top",
-        "header": "Randomization settings",
-        "header_background": "#3e4b57",
-        "content": [
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "Unrandomized",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "Vaults",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "Discarded",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "puzzleRandomization",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "cavesSetting",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
+	"settings_popup": {
+		"type": "dock",
+		"margin": "-20",
+		"content": [
+			{
+				"type": "group",
+				"dock": "top",
+				"header": "Randomization settings",
+				"header_background": "#3e4b57",
+				"content": [
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "Unrandomized",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "Vaults",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "Discarded",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "puzzleRandomization",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "cavesSetting",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
           {
             "type": "item",
             "margin": "0, 1",
@@ -51,41 +51,41 @@
             "h_alignment": "center",
             "v_alignment": "stretch"
           },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "Symbols",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "shuffleLasers",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "epSetting",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "epDiff",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
-          {
-            "type": "item",
-            "margin": "0, 1",
-            "item": "doorsSetting",
-            "h_alignment": "center",
-            "v_alignment": "stretch"
-          },
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "Symbols",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "shuffleLasers",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "epSetting",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "epDiff",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "doorsSetting",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
           {
             "type": "item",
             "margin": "0, 1",
@@ -93,8 +93,8 @@
             "h_alignment": "center",
             "v_alignment": "stretch"
           }
-        ]
-      }
-    ]
-  }
+				]
+			}
+		]
+	}
 }
