@@ -3627,7 +3627,8 @@
 		]
 	},
 
-	{		"name": "Color Bunker",
+	{
+		"name": "Color Bunker",
 		"visibility_rules": [ "Unrandomized" ],
 		"sections": [
 			{
