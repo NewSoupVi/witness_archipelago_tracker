@@ -2087,7 +2087,7 @@
 			{
 				"name": "Laser Hedges",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], [@Hedge Maze 4/Exit Panel]" ],
+				"access_rules": [ "$canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], @Hedge Maze 4/Exit Panel" ],
 				"item_count": 1
 			},
 			{
@@ -2469,7 +2469,7 @@
 				"name": "Boat Cargo Box EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotDoors, $canSolve|158219, @Places/ocean",
+					"$isNotDoors, $hasPanel|Town Cargo Box Entry (Panel), $canSolve|158219, @Places/ocean",
 					"Town Cargo Box Door, @Places/ocean"
 				],
 				"item_count": 1
