@@ -4857,7 +4857,10 @@
 			{
 				"name": "Laser Box Long Victory!",
 				"visibility_rules": [ "Long" ],
-				"access_rules": [ "$laserBox|long, [@Mountaintop/Mountain Entry]" ],
+				"access_rules": [
+					"$longBoxWithoutMountainEntry, $laserBox|long",
+					"$laserBox|long, [@Mountaintop/Mountain Entry]"
+				],
 				"item_count": 1
 			},
 			{
