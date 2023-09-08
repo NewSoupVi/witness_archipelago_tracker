@@ -118,13 +118,13 @@
 				"access_rules": [
 					"$isNotDoors, $unrandomizedSolvable, [$hasPanel|Shadows Door Timer (Panel)]",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
-					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
-					"Quarry Door to Stoneworks, @Places/quarryStoneworks",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120",
 					"Quarry Elevator (Panel), $canSolve|158120",
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120",
 					"@Places/quarryBetweenEntries, Quarry Main Entry 2",
-					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119"
+					"$isNotDoors, @Places/quarryBetweenEntries, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119",
+					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
+					"Quarry Door to Stoneworks, @Places/quarryStoneworks"
 				],
 				"item_count": 1
 			},
