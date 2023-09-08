@@ -1,4 +1,6 @@
 LOCATION_MAPPING = {
+	[158000] = {"@Tutorial Entry/First Hallway Straight"},
+	[158001] = {"@Tutorial Entry/First Hallway Bent"},
     [158004] = {"@Tutorial Gate/Front Left"},
     [158005] = {"@Tutorial Gate/Back Left"},
     [158006] = {"@Tutorial Gate/Back Right"},
@@ -16,6 +18,7 @@ LOCATION_MAPPING = {
 	[158067] = {"@Symmetry Island/Laser Yellow 3"},
 	[158070] = {"@Symmetry Island/Laser Blue 3"},
 	[158075] = {"@Orchard/Apple Trees Inside Gate"},
+	[158078] = {"@Desert/Third Surface Puzzle"},
 	[158084] = {"@Desert/Surface Puzzles"},
 	[158090] = {"@Desert/Light Room Puzzles"},
 	[158095] = {"@Desert/Pond Room Puzzles"},
