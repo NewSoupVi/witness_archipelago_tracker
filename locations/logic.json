@@ -146,7 +146,7 @@
 			{
 				"name": "quarryStoneworksUpstairs",
 				"access_rules": [
-					"@Places/quarryStoneworks, [@Places/quarryStoneworksMid], $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel)",
+					"@Places/quarryStoneworks, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel)",
 					"@Places/quarryStoneworksMid, $canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
 					"@Places/quarryStoneworks, Quarry Stoneworks Stairs",
 					"$isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]"
