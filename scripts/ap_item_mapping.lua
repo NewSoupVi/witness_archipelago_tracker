@@ -270,5 +270,7 @@ SETTINGS_MAPPING = {
 	["shuffle_lasers"] = "shuffleLasers",
 	["puzzle_randomization"] = "puzzleRandomization",
 	["shuffle_boat"] = "Boat",
-	["elevators_come_to_you"] = "autoElevators"
+	["elevators_come_to_you"] = "autoElevators",
+	["disabled_entities"] = "disabledPanels"
+
 }
