@@ -10,6 +10,7 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+disabledDict = {}
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -281,6 +282,10 @@ function onClear(slot_data)
 			if value == 2 then
 				Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
 				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
+			end
+		elseif k == "disabled_entities" then
+			for num, id pairs(value) do
+				disabledDict[id] = true
 			end
 		else
 			obj.Active = value
@@ -633,6 +638,9 @@ function laser(num)
 	return (lasers[tonumber(num)] > 0)
 end
 
+function getDisabledDict()
+	return disabledDict
+end
 
 -- add AP callbacks
 -- un-/comment as needed
