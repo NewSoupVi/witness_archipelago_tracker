@@ -14,8 +14,8 @@ ITEM_MAPPING = {
 	[158072] = {"ColoredSquares", "toggle"},
 	[158080] = {"Arrows", "toggle"},
 	[158510] = {"Skip", "consumable"},
-    [158200] = {"ProgressiveDots", "progressive"},
-    [158260] = {"ProgressiveStars", "progressive"},
+	[158200] = {"ProgressiveDots", "progressive"},
+	[158260] = {"ProgressiveStars", "progressive"},
 	[158650] = {"Brain", "toggle"},
 	
 	[159100] = {"Glass Factory Entry (Panel)", "toggle"},
