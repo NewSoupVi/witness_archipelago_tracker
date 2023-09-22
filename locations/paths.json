@@ -34,7 +34,7 @@
 			{
 				"map": "doors",
 				"x": 611,
-				"y": 677
+				"y": 692
 			}
 		]
 	},
@@ -55,8 +55,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 611,
-				"y": 707
+				"x": 651,
+				"y": 730
 			}
 		]
 	},
@@ -93,7 +93,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 400,
+				"x": 401,
 				"y": 704
 			}
 		]
@@ -176,7 +176,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 462,
+				"x": 461,
 				"y": 499
 			}
 		]
@@ -200,7 +200,7 @@
 			{
 				"map": "doors",
 				"x": 377,
-				"y": 470
+				"y": 471
 			}
 		]
 	},
@@ -223,7 +223,7 @@
 			{
 				"map": "doors",
 				"x": 387,
-				"y": 225
+				"y": 222
 			}
 		]
 	},
@@ -244,8 +244,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 281,
-				"y": 119
+				"x": 259,
+				"y": 105
 			}
 		]
 	},
@@ -266,8 +266,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 131,
-				"y": 72
+				"x": 78,
+				"y": 74
 			}
 		]
 	},
@@ -285,8 +285,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 73,
-				"y": 223
+				"x": 74,
+				"y": 170
 			}
 		]
 	},
@@ -307,8 +307,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 73,
-				"y": 248
+				"x": 74,
+				"y": 270
 			}
 		]
 	},
@@ -412,7 +412,7 @@
 			{
 				"map": "doors",
 				"x": 711,
-				"y": 366
+				"y": 326
 			}
 		]
 	},
@@ -539,8 +539,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 817,
-				"y": 87
+				"x": 805,
+				"y": 91
 			}
 		]
 	},
@@ -558,8 +558,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 956,
-				"y": 81
+				"x": 960,
+				"y": 64
 			}
 		]
 	},
@@ -580,8 +580,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 931,
-				"y": 71
+				"x": 915,
+				"y": 74
 			}
 		]
 	},
@@ -602,8 +602,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 956,
-				"y": 61
+				"x": 960,
+				"y": 84
 			}
 		]
 	},	
@@ -624,8 +624,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 758,
-				"y": 233
+				"x": 760,
+				"y": 232
 			}
 		]
 	},
@@ -646,7 +646,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 832,
+				"x": 827,
 				"y": 265
 			}
 		]
@@ -668,7 +668,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 842,
+				"x": 847,
 				"y": 245
 			}
 		]
@@ -742,7 +742,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1021,
+				"x": 1025,
 				"y": 277
 			}
 		]
@@ -764,8 +764,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1083,
-				"y": 219
+				"x": 1082,
+				"y": 225
 			}
 		]
 	},
@@ -786,8 +786,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1143,
-				"y": 161
+				"x": 1148,
+				"y": 160
 			}
 		]
 	},
@@ -809,7 +809,7 @@
 			{
 				"map": "doors",
 				"x": 1213,
-				"y": 93
+				"y": 90
 			}
 		]
 	},
@@ -940,7 +940,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1113,
+				"x": 1110,
 				"y": 350
 			}
 		]
@@ -962,8 +962,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1171,
-				"y": 298
+				"x": 1170,
+				"y": 290
 			}
 		]
 	},
@@ -984,8 +984,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1231,
-				"y": 229
+				"x": 1230,
+				"y": 230
 			}
 		]
 	},
@@ -1372,7 +1372,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1085,
+				"x": 1075,
 				"y": 750
 			}
 		]
@@ -1473,8 +1473,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1179,
-				"y": 1017
+				"x": 1180,
+				"y": 1020
 			}
 		]
 	},
@@ -1517,7 +1517,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1187,
+				"x": 1200,
 				"y": 1093
 			}
 		]
@@ -1539,8 +1539,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1273,
-				"y": 1050
+				"x": 1275,
+				"y": 1072
 			}
 		]
 	},
@@ -1558,8 +1558,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1332,
-				"y": 1197
+				"x": 1333,
+				"y": 1200
 			}
 		]
 	},
@@ -1577,8 +1577,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1332,
-				"y": 1281
+				"x": 1333,
+				"y": 1273
 			}
 		]
 	},
@@ -1599,8 +1599,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 1287,
-				"y": 1232
+				"x": 1300,
+				"y": 1230
 			}
 		]
 	},
@@ -1745,7 +1745,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 560,
+				"x": 565,
 				"y": 953
 			}
 		]
@@ -1815,6 +1815,25 @@
 	},
 
 	{
+		"name": "Town Cargo Box Entry",
+		"visibility_rules": [ "doorsSimple", "doorsComplex", "doorsMax" ],
+		"access_rules": [ "Town Cargo Box Door" ],
+		"sections": [
+			{
+				"name": "Door",
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "doors",
+				"x": 408,
+				"y": 1051
+			}
+		]
+	},
+
+	{
 		"name": "Town Maze Stairs",
 		"visibility_rules": ["doorsPanel", "doorsSimple", "doorsComplex", "doorsMax"],
 		"access_rules": [
@@ -1831,8 +1850,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 371,
-				"y": 1090
+				"x": 398,
+				"y": 1091
 			}
 		]
 	},
@@ -1853,7 +1872,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 362,
+				"x": 330,
 				"y": 1130
 			}
 		]
@@ -1875,8 +1894,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 302,
-				"y": 1170
+				"x": 300,
+				"y": 1172
 			}
 		]
 	},
@@ -1897,8 +1916,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 282,
-				"y": 1170
+				"x": 280,
+				"y": 1172
 			}
 		]
 	},
@@ -1919,8 +1938,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 262,
-				"y": 1170
+				"x": 260,
+				"y": 1172
 			}
 		]
 	},
@@ -1941,8 +1960,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 242,
-				"y": 1170
+				"x": 240,
+				"y": 1172
 			}
 		]
 	},
@@ -1964,8 +1983,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 326,
-				"y": 1233
+				"x": 334,
+				"y": 1229
 			}
 		]
 	},
@@ -1987,8 +2006,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 250,
-				"y": 1210
+				"x": 264,
+				"y": 1213
 			}
 		]
 	},
@@ -2009,8 +2028,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 273,
-				"y": 1293
+				"x": 270,
+				"y": 1290
 			}
 		]
 	},
@@ -2032,8 +2051,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 578,
-				"y": 1128
+				"x": 595,
+				"y": 1110
 			}
 		]
 	},
@@ -2055,8 +2074,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 558,
-				"y": 1148
+				"x": 575,
+				"y": 1130
 			}
 		]
 	},
@@ -2184,7 +2203,7 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 904,
+				"x": 890,
 				"y": 1091
 			}
 		]
