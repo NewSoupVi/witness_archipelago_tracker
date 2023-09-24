@@ -284,7 +284,7 @@ function onClear(slot_data)
 				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
 			end
 		elseif k == "disabled_entities" then
-			for num, id pairs(value) do
+			for num, id in pairs(value) do
 				disabledDict[id] = true
 			end
 		else
