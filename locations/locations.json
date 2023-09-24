@@ -27,7 +27,7 @@
 			},
 			{
 				"name": "Gate EP",
-				"visibility_rules": [ "eps, Unrandomized, Vaults" ],
+				"visibility_rules": [ "eps, Unrandomized, Vaults, $isNotDisabledByPostgame|210223" ],
 				"access_rules": [ "@Tutorial Gate/Gate Open, [@Places/tunnels]" ],
 				"item_count": 1
 			}
@@ -3041,7 +3041,7 @@
 			},
 			{
 				"name": "Flowers EP",
-				"visibility_rules": [ "eps, epDiffTedious, Unrandomized, Vaults", "eps, epDiffEclipse, Unrandomized, Vaults" ],
+				"visibility_rules": [ "eps, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488" ],
 				"access_rules": [
 					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels",
 					"@Theater/Tutorial Video, Theater Walkway Door to Town",
@@ -3071,13 +3071,13 @@
 			},
 			{
 				"name": "Challenge Video",
-				"visibility_rules": [ "Unrandomized, Vaults" ],
+				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabledByPostgame|13641" ],
 				"access_rules": [ "[@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel)" ],
 				"item_count": 1
 			},
 			{
 				"name": "Eclipse EP",
-				"visibility_rules": [ "eps, epDiffEclipse, Unrandomized, Vaults" ],
+				"visibility_rules": [ "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382" ],
 				"access_rules": [
 					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
 					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250",
@@ -3179,7 +3179,7 @@
 			},
 			{
 				"name": "Flowers EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, epDiffTedious, Unrandomized, Vaults", "obelisks, epDiffEclipse, Unrandomized, Vaults" ],
+				"visibility_rules": [ "obelisks, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "obelisks, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488" ],
 				"access_rules": [ "@Theater/Flowers EP" ],
 				"item_count": 1
 			},
@@ -3191,7 +3191,7 @@
 			},
 			{
 				"name": "Eclipse EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, epDiffEclipse, Unrandomized, Vaults" ],
+				"visibility_rules": [ "obelisks, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382" ],
 				"access_rules": [ "@Theater/Eclipse EP" ],
 				"item_count": 1
 			}
@@ -4865,6 +4865,7 @@
 			},
 			{
 				"name": "Mountain Entry",
+				"visibility_rules": [ "$isNotDisabledByPostgame|97332" ],
 				"access_rules": [ "$canSolve|158407, $laserBox|short" ],
 				"item_count": 1
 			},
@@ -4942,6 +4943,7 @@
 
 	{
 		"name": "Inside Mountain Layer 1 Bridge",
+		"visibility_rules": [ "$isNotDisabledByPostgame|40505" ],
 		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
@@ -4965,6 +4967,7 @@
 		"sections": [
 			{
 				"name": "Angled Inside Trash",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40623" ],
 				"access_rules": [ "$canSolve|158424 158425" ],
 				"item_count": 1
 			}
@@ -4980,6 +4983,7 @@
 	},
 	{
 		"name": "Inside Mountain Layer 1 Left",
+		"visibility_rules": [ "$isNotDisabledByPostgame|40555" ],
 		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
@@ -5000,6 +5004,7 @@
 
 	{
 		"name": "Inside Mountain Layer 1 Right",
+		"visibility_rules": [ "$isNotDisabledByPostgame|40571" ],
 		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
@@ -5019,6 +5024,7 @@
 	},
 	{
 		"name": "Inside Mountain Layer 1 Back",
+		"visibility_rules": [ "$isNotDisabledByPostgame|40814" ],
 		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
@@ -5042,6 +5048,7 @@
 		"sections": [
 			{
 				"name": "Near Row",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40920" ],
 				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2" ],
 				"item_count": 1
 			}
@@ -5060,6 +5067,7 @@
 		"sections": [
 			{
 				"name": "Far Row",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40914" ],
 				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2, @Places/mountain2FrontStairs" ],
 				"item_count": 1
 			}
@@ -5078,6 +5086,7 @@
 		"sections": [
 			{
 				"name": "Blue Light Bridge",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40582" ],
 				"access_rules": [ "$canSolve|158431, @Places/mountainLayer2, @Places/mountain2FrontStairs" ],
 				"item_count": 1
 			}
@@ -5096,6 +5105,7 @@
 		"sections": [
 			{
 				"name": "Orange Light Bridge",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40664" ],
 				"access_rules": [ "$canSolve|158438, @Places/mountainLayer2, @Places/mountain2BackStairs" ],
 				"item_count": 1
 			}
@@ -5114,7 +5124,7 @@
 		"sections": [
 			{
 				"name": "Pink Bridge EP (River Side 2)",
-				"visibility_rules": [ "obelisks" ],
+				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|40291" ],
 				"access_rules": [ "@Inside Mountain Layer 2 Look Up/Pink Bridge EP" ],
 				"item_count": 1
 			}
@@ -5133,7 +5143,7 @@
 		"sections": [
 			{
 				"name": "Pink Bridge EP",
-				"visibility_rules": [ "eps" ],
+				"visibility_rules": [ "eps, $isNotDisabledByPostgame|40291" ],
 				"access_rules": [
 					"@Places/mountainLayer2",
 					"@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
@@ -5155,7 +5165,7 @@
 		"sections": [
 			{
 				"name": "Elevator Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded, $isNotDisabledByPostgame|98195" ],
 				"access_rules": [
 					"$canSolve|158439 158613, $hasPanel|Mountain Elevator (Panel), @Places/mountainMeta",
 					"$canSolve|158613, $isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
@@ -5180,6 +5190,7 @@
 		"sections": [
 			{
 				"name": "Giant Puzzle",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40922" ],
 				"access_rules": [ "$canSolve|158440-158444, @Places/mountainMeta" ],
 				"item_count": 1
 			}
@@ -5199,7 +5210,7 @@
 		"sections": [
 			{
 				"name": "Statue Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded, $isNotDisabledByPostgame|98210" ],
 				"access_rules": [
 					"$canSolve|158407, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom",
 					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom"
@@ -5222,6 +5233,7 @@
 		"sections": [
 			{
 				"name": "Door to Final Room Left Panel",
+				"visibility_rules": [ "$isNotDisabledByPostgame|6531" ],
 				"access_rules": [ "@Places/mountainPenultimateRoom, $canSolve|158445" ],
 				"item_count": 1
 			}
@@ -5241,6 +5253,7 @@
 		"sections": [
 			{
 				"name": "Door to Final Room Right Panel",
+				"visibility_rules": [ "$isNotDisabledByPostgame|6535" ],
 				"access_rules": [ "@Places/mountainPenultimateRoom, $canSolve|158446" ],
 				"item_count": 1
 			}
@@ -5260,6 +5273,7 @@
 		"sections": [
 			{
 				"name": "Final Room Pillars Right",
+				"visibility_rules": [ "$isNotDisabledByPostgame|211297" ],
 				"access_rules": [ "$canSolve|158522-158525, @Places/mountainFinalRoom" ],
 				"item_count": 1
 			}
@@ -5278,6 +5292,7 @@
 		"sections": [
 			{
 				"name": "Final Room Pillars Left",
+				"visibility_rules": [ "$isNotDisabledByPostgame|211387" ],
 				"access_rules": [ "$canSolve|158526-158529, @Places/mountainFinalRoom" ],
 				"item_count": 1
 			}
@@ -5315,13 +5330,13 @@
 		"sections": [
 			{
 				"name": "Blue Bridge EP",
-				"visibility_rules": [ "eps" ],
+				"visibility_rules": [ "eps, $isNotDisabledByPostgame|40286" ],
 				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge" ],
 				"item_count": 1
 			},
 			{
 				"name": "Yellow Bridge EP",
-				"visibility_rules": [ "eps" ],
+				"visibility_rules": [ "eps, $isNotDisabledByPostgame|40285" ],
 				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ],
 				"item_count": 1
 			}
@@ -5342,13 +5357,13 @@
 		"sections": [
 			{
 				"name": "Blue Bridge EP (River Side 2)",
-				"visibility_rules": [ "obelisks" ],
+				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|40286" ],
 				"access_rules": [ "@Inside Mountain Bottom Layer Look Up/Blue Bridge EP" ],
 				"item_count": 1
 			},
 			{
 				"name": "Yellow Bridge EP (River Side 2)",
-				"visibility_rules": [ "obelisks" ],
+				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|40285" ],
 				"access_rules": [ "@Inside Mountain Bottom Layer Look Up/Yellow Bridge EP" ],
 				"item_count": 1
 			}
@@ -5368,6 +5383,7 @@
 		"sections": [
 			{
 				"name": "Left First 1",
+				"visibility_rules": [ "$isNotDisabledByPostgame|6669" ],
 				"access_rules": [ "$canSolve|158458, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5387,6 +5403,7 @@
 		"sections": [
 			{
 				"name": "Left Second 5",
+				"visibility_rules": [ "$isNotDisabledByPostgame|2430" ],
 				"access_rules": [ "$canSolve|158459-158463, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5406,6 +5423,7 @@
 		"sections": [
 			{
 				"name": "Left Third 1",
+				"visibility_rules": [ "$isNotDisabledByPostgame|2468" ],
 				"access_rules": [ "$canSolve|158469, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5425,6 +5443,7 @@
 		"sections": [
 			{
 				"name": "Left Fourth 1",
+				"visibility_rules": [ "$isNotDisabledByPostgame|2674" ],
 				"access_rules": [ "$canSolve|158471, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5444,6 +5463,7 @@
 		"sections": [
 			{
 				"name": "Right First 4",
+				"visibility_rules": [ "$isNotDisabledByPostgame|1790" ],
 				"access_rules": [ "$canSolve|158454-158457, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5464,6 +5484,7 @@
 		"sections": [
 			{
 				"name": "Right Second 5",
+				"visibility_rules": [ "$isNotDisabledByPostgame|2456" ],
 				"access_rules": [ "$canSolve|158464-158468, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5483,6 +5504,7 @@
 		"sections": [
 			{
 				"name": "Right Third 1",
+				"visibility_rules": [ "$isNotDisabledByPostgame|6304" ],
 				"access_rules": [ "$canSolve|158470, @Places/caves" ],
 				"item_count": 1
 			}
@@ -5501,6 +5523,7 @@
 		"sections": [
 			{
 				"name": "Entry Panel",
+				"visibility_rules": [ "$isNotDisabledByPostgame|4088" ],
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158447, @Places/cavesAntechamber",
 					"Caves Entry (Panel), $canSolve|158447, @Places/cavesAntechamber"
@@ -5509,7 +5532,7 @@
 			},
 			{
 				"name": "Caves Rock Timer Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|210145", "doorsMix, $isNotDisabledByPostgame|210145" ],
 				"access_rules": [ "@Places/cavesAntechamber" ],
 				"item_count": 1
 			}
@@ -5531,6 +5554,7 @@
 		"sections": [
 			{
 				"name": "Left",
+				"visibility_rules": [ "$isNotDisabledByPostgame|207202" ],
 				"access_rules": [ "$canSolve|158472" ],
 				"item_count": 1
 			}
@@ -5546,6 +5570,7 @@
 	},
 	{
 		"name": "Caves First Floor Grounded",
+		"visibility_rules": [ "$isNotDisabledByPostgame|207206" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5565,6 +5590,7 @@
 	},
 	{
 		"name": "Caves First Floor Middle",
+		"visibility_rules": [ "$isNotDisabledByPostgame|6705" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5584,6 +5610,7 @@
 	},
 	{
 		"name": "Caves First Floor Right",
+		"visibility_rules": [ "$isNotDisabledByPostgame|2929" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5603,6 +5630,7 @@
 	},
 	{
 		"name": "Caves Shortcut to Mountain",
+		"visibility_rules": [ "$isNotDisabledByPostgame|8663" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5622,6 +5650,7 @@
 	},
 	{
 		"name": "Caves Shortcut to Swamp",
+		"visibility_rules": [ "$isNotDisabledByPostgame|97522" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5642,6 +5671,7 @@
 
 	{
 		"name": "Caves Wooden Beams First",
+		"visibility_rules": [ "$isNotDisabledByPostgame|166122" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5662,6 +5692,7 @@
 	{
 		"name": "Caves Wooden Beams Second",
 		"access_rules": [ "@Places/caves" ],
+		"visibility_rules": [ "$isNotDisabledByPostgame|166140" ],
 		"sections": [
 			{
 				"name": "Second",
@@ -5680,6 +5711,7 @@
 	},
 	{
 		"name": "Caves Wooden Beams Third",
+		"visibility_rules": [ "$isNotDisabledByPostgame|166375" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5699,6 +5731,7 @@
 	},
 	{
 		"name": "Caves Wooden Beams Fourth",
+		"visibility_rules": [ "$isNotDisabledByPostgame|166058" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5719,6 +5752,7 @@
 
 	{
 		"name": "Caves Upstairs Left - Left",
+		"visibility_rules": [ "$isNotDisabledByPostgame|41706" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5738,6 +5772,7 @@
 	},
 	{
 		"name": "Caves Upstairs Left Single",
+		"visibility_rules": [ "$isNotDisabledByPostgame|98233" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5757,6 +5792,7 @@
 	},
 	{
 		"name": "Caves Upstairs Right - Left",
+		"visibility_rules": [ "$isNotDisabledByPostgame|108" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5776,6 +5812,7 @@
 	},
 	{
 		"name": "Caves Upstairs Right - Right",
+		"visibility_rules": [ "$isNotDisabledByPostgame|41" ],
 		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
@@ -5799,13 +5836,14 @@
 		"sections": [
 			{
 				"name": "Pillar",
+				"visibility_rules": [ "$isNotDisabledByPostgame|40405" ],
 				"access_rules": [ "$canSolve|158476, @Places/caves" ],
 				"item_count": 1
 			},
 
 			{
 				"name": "Caves Skylight EP",
-				"visibility_rules": [ "eps" ],
+				"visibility_rules": [ "eps, $isNotDisabledByPostgame|211324" ],
 				"access_rules": [ "@Places/caves" ],
 				"item_count": 1
 			}
@@ -5824,6 +5862,7 @@
 		"sections": [
 			{
 				"name": "Entry Panel",
+				"visibility_rules": [ "$isNotDisabledByPostgame|41326" ],
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158477, @Places/challengeAntechamber",
 					"Challenge Entry (Panel), $canSolve|158477, @Places/challengeAntechamber"
@@ -5846,7 +5885,7 @@
 		"sections": [
 			{
 				"name": "Caves Skylight EP (River Side 5)",
-				"visibility_rules": [ "obelisks" ],
+				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|211324" ],
 				"access_rules": [ "@Caves Lone Pillar/Caves Skylight EP" ],
 				"item_count": 1
 			}
@@ -5867,12 +5906,12 @@
 		"sections": [
 			{
 				"name": "Challenge Water EP",
-				"visibility_rules": [ "eps" ],
+				"visibility_rules": [ "eps, $isNotDisabledByPostgame|166704" ],
 				"item_count": 1
 			},
 			{
 				"name": "Challenge Vault",
-				"visibility_rules": [ "Vaults, Short", "Vaults, Long", "Vaults, wonkavator" ],
+				"visibility_rules": [ "Vaults, Short, $isNotDisabledByPostgame|13675", "Vaults, Long, $isNotDisabledByPostgame|13675", "Vaults, wonkavator, $isNotDisabledByPostgame|13675" ],
 				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ],
 				"item_count": 1
 			},
@@ -5898,6 +5937,7 @@
 		"sections": [
 			{
 				"name": "Door to Tunnels Panel",
+				"visibility_rules": [ "$isNotDisabledByPostgame|14772" ],
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158518",
 					"Tunnels Entry (Panel), $canSolve|158518"
@@ -5920,7 +5960,7 @@
 		"sections": [
 			{
 				"name": "Challenge Water EP (Town Side 4)",
-				"visibility_rules": [ "obelisks" ],
+				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|166704" ],
 				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP" ],
 				"item_count": 1
 			}
@@ -5942,7 +5982,7 @@
 		"sections": [
 			{
 				"name": "Theater Vault Box",
-				"visibility_rules": [ "Vaults" ],
+				"visibility_rules": [ "Vaults, $isNotDisabledByPostgame|195318" ],
 				"item_count": 1
 			}
 		],
@@ -5961,7 +6001,7 @@
 		"sections": [
 			{
 				"name": "Theater Shortcut Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|161586", "doorsMix, $isNotDisabledByPostgame|161586" ],
 				"item_count": 1
 			}
 		],
@@ -5976,6 +6016,7 @@
 	},
 	{
 		"name": "Tunnels Exit to Town",
+		"visibility_rules": [ "$isNotDisabledByPostgame|40583" ],
 		"access_rules": [ "@Places/tunnels" ],
 		"sections": [
 			{
@@ -6002,7 +6043,7 @@
 		"sections": [
 			{
 				"name": "Desert Shortcut Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|161597", "doorsMix, $isNotDisabledByPostgame|161597" ],
 				"item_count": 1
 			}
 		],

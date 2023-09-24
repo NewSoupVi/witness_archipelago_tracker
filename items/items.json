@@ -182,6 +182,12 @@
 		"codes": "Unrandomized"
 	},
 	{
+		"name": "Disabled Panels",
+		"type": "toggle",
+		"loop": "true",
+		"codes": "disabledPanels"
+	},
+	{
 		"name": "Unrandomized Panels Enabled",
 		"codes": "unrandomizedPanelsEnabled",
 		"type": "toggle",
