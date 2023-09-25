@@ -2,6 +2,10 @@ function isNotDoors()
 	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
 end
 
+function isNotPanelsOnly()
+	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
+end
+
 function isExpert(check)
 	if check == "on" then
 		return (Tracker:ProviderCountForCode("Expert") > 0)
@@ -14,6 +18,32 @@ function isNotLaserShuffle()
 	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
 end
 
+function isNotAutoElevators()
+	return (1 - Tracker:ProviderCountForCode("autoElevators") > 0)
+end
+
+function unrandomizedSolvable()
+	return (Tracker:ProviderCountForCode("Unrandomized") + Tracker:ProviderCountForCode("unrandomizedPanelsEnabled") > 0)
+end
+
+function longBoxWithoutMountainEntry()
+	return (Tracker:ProviderCountForCode("boxLong") < 8)
+end
+
+function isNotDisabledByPostgame(id)
+	return not getDisabledDict()[tonumber(id)]
+end
+
+function extraChecksRequired()
+	return (
+		Tracker:ProviderCountForCode("Unrandomized") == 0 and
+		Tracker:ProviderCountForCode("Expert") ~= 0 and
+		Tracker:ProviderCountForCode("doorsPanel") ~= 0 and
+		Tracker:ProviderCountForCode("Symbols") ~= 0 and
+		Tracker:ProviderCountForCode("epsOff") ~= 0
+	)
+end
+
 function laserCount(amount)
 	if tonumber(amount) > 0 then
 		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
@@ -21,7 +51,7 @@ function laserCount(amount)
 		return false
 	end
 end
-	
+
 function laserBox(box)
 	if box == "short" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
@@ -31,7 +61,7 @@ function laserBox(box)
 end
 
 function hasPanel(panel)
-	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") > 0 then return true
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
 	else return Tracker:ProviderCountForCode(panel)
 	end
 end
