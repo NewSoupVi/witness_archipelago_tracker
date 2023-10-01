@@ -5124,7 +5124,7 @@
 		"sections": [
 			{
 				"name": "Pink Bridge EP (River Side 2)",
-				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|40291" ],
+				"visibility_rules": [ "obelisks, epDiffTedious, $isNotDisabledByPostgame|40291", "obelisks, epDiffEclipse, $isNotDisabledByPostgame|40291" ],
 				"access_rules": [ "@Inside Mountain Layer 2 Look Up/Pink Bridge EP" ],
 				"item_count": 1
 			}
@@ -5143,7 +5143,7 @@
 		"sections": [
 			{
 				"name": "Pink Bridge EP",
-				"visibility_rules": [ "eps, $isNotDisabledByPostgame|40291" ],
+				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40291", "eps, epDiffEclipse, $isNotDisabledByPostgame|40291" ],
 				"access_rules": [
 					"@Places/mountainLayer2",
 					"@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
@@ -5330,13 +5330,13 @@
 		"sections": [
 			{
 				"name": "Blue Bridge EP",
-				"visibility_rules": [ "eps, $isNotDisabledByPostgame|40286" ],
+				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40286", "eps, epDiffEclipse, $isNotDisabledByPostgame|40286" ],
 				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge" ],
 				"item_count": 1
 			},
 			{
 				"name": "Yellow Bridge EP",
-				"visibility_rules": [ "eps, $isNotDisabledByPostgame|40285" ],
+				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40285", "eps, epDiffEclipse, $isNotDisabledByPostgame|40285" ],
 				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ],
 				"item_count": 1
 			}
@@ -5357,13 +5357,13 @@
 		"sections": [
 			{
 				"name": "Blue Bridge EP (River Side 2)",
-				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|40286" ],
+				"visibility_rules": [ "obelisks, epDiffTedious, $isNotDisabledByPostgame|40286", "obelisks, epDiffEclipse, $isNotDisabledByPostgame|40286" ],
 				"access_rules": [ "@Inside Mountain Bottom Layer Look Up/Blue Bridge EP" ],
 				"item_count": 1
 			},
 			{
 				"name": "Yellow Bridge EP (River Side 2)",
-				"visibility_rules": [ "obelisks, $isNotDisabledByPostgame|40285" ],
+				"visibility_rules": [ "obelisks, epDiffTedious, $isNotDisabledByPostgame|40285", "obelisks, epDiffEclipse, $isNotDisabledByPostgame|40285" ],
 				"access_rules": [ "@Inside Mountain Bottom Layer Look Up/Yellow Bridge EP" ],
 				"item_count": 1
 			}
