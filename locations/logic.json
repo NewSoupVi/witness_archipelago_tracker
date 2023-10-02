@@ -54,7 +54,7 @@
 				"name": "symmetryOuter",
 				"access_rules": [
 					"doorsNo, @Inside Glass Factory/Melting, $canSolve|158040",
-					"doorsPanel, $hasPanel|Door to Symmetry Island Lower (Panel), $canSolve|158040",
+					"$isNotDoors, Door to Symmetry Island Lower (Panel), $canSolve|158040",
 					"Symmetry Island Lower Door"
 				],
 				"item_count": 1
@@ -79,8 +79,7 @@
 			{
 				"name": "desertPond",
 				"access_rules": [
-					"doorsNo, @Places/desertFloodLight",
-					"doorsPanel, @Places/desertFloodLight, Desert Light Room Light Control (Panel)",
+					"$isNotDoors, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
 					"Desert Door to Pond Room, @Places/desertFloodLight",
 					"Desert Door to Flood Room, @Places/desertFlood"
 				],
@@ -439,7 +438,10 @@
 			{
 				"name": "townLaser",
 				"access_rules": [
-					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal",
+					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Tutorial Outpost/Discard",
+					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Outside Glass Factory/Rooftop Discard",
+					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Theater/Discard",
+					"$isNotDoors, unrandomized, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal",
 					"Town Tower Red Roof Set Door, Town Tower Lattice Door, Town Tower Environmental Set Door, Town Tower Wooden Roof Set Door"
 				],
 				"item_count": 1
@@ -481,6 +483,7 @@
 			{
 				"name": "junglePopup",
 				"access_rules": [
+					"$isNotDoors, $unrandomizedDisabled, @Jungle Discard/Discard",
 					"$isNotDoors, $hasPanel|Jungle Popup Wall (Panel)",
 					"Jungle Popup Wall"
 				],

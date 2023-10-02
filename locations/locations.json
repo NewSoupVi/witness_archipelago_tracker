@@ -728,7 +728,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
 				"access_rules": [ "$canSolve|158602, @Places/overworld" ],
 				"item_count": 1
 			}
@@ -2183,7 +2183,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
 				"access_rules": [ "$canSolve|158605, @Places/plates3" ],
 				"item_count": 1
 			}
@@ -2450,7 +2450,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158606, @Town Cargo Box Area/Entry Panel",
 					"$canSolve|158606, Town Cargo Box Door"
@@ -2561,7 +2561,7 @@
 			},
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
 				"access_rules": [ "$canSolve|158607, @Places/redRoof" ],
 				"item_count": 1
 			},
@@ -4382,7 +4382,7 @@
 			},
 			{
 				"name": "Green Bridge Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
 				"access_rules": [ "$canSolve|158610, @Places/treehouseMain, @Treehouse Right Side/Green Bridge" ],
 				"item_count": 1
 			},
@@ -4727,7 +4727,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
 				"access_rules": [ "$canSolve|158612, @Places/overworld" ],
 				"item_count": 1
 			},

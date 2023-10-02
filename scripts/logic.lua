@@ -22,6 +22,10 @@ function isNotAutoElevators()
 	return (1 - Tracker:ProviderCountForCode("autoElevators") > 0)
 end
 
+function unrandomizedDisabled()
+	return (Tracker:ProviderCountForCode("Unrandomized") == 0)
+end
+
 function unrandomizedSolvable()
 	return (Tracker:ProviderCountForCode("Unrandomized") + Tracker:ProviderCountForCode("unrandomizedPanelsEnabled") > 0)
 end

@@ -82,17 +82,47 @@ function setReply(key, val, old)
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
+		if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
+			local location = Tracker:FindObjectForCode("@Town Cargo Box Area/Discard")
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+			local location = Tracker:FindObjectForCode("@Mountainside Discard/Discard")
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-97381" and val) then
 		lasers[10]=1
 		local location = Tracker:FindObjectForCode("@Monastery Laser Activation/Laser")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
+		if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
+			local location = Tracker:FindObjectForCode("@Desert Discard/Discard")
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+			local location = Tracker:FindObjectForCode("@Treehouse Right Side/Green Bridge Discard")
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-98739" and val) then
 		lasers[11]=1
 		local location = Tracker:FindObjectForCode("@Shadows Laser Activation/Laser")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
+		if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
+			local location = Tracker:FindObjectForCode("@Shipwreck Discard/Discard")
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+			local location = Tracker:FindObjectForCode("@Town Red Rooftop/Discard")
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
 		end
 	end
 
