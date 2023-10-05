@@ -139,7 +139,10 @@
 			},
 			{
 				"name": "quarryStoneworksMid",
-				"access_rules": [ "$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks" ],
+				"access_rules": [
+					"$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks",
+					"@Places/quarryStoneworks, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel)"
+				],
 				"item_count": 1
 			},
 			{
