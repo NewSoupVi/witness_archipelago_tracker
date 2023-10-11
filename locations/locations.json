@@ -3747,8 +3747,7 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
-					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, @Places/bunkerAtechamber",
-					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]",
+					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom",
 					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber",
 					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]"
 				],

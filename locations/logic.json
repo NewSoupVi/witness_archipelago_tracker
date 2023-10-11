@@ -681,9 +681,9 @@
 				"name": "bunkerElevatorProper",
 				"access_rules": [
 					"$Warp|Bunker Green Room",
-					"@Places/bunkerLaser",
 					"@Places/bunkerElevatorRoom",
-					"autoElevators, @Places/overworld"
+					"autoElevators, @Places/overworld",
+					"@Places/bunkerLaser"
 				],
 				"item_count": 1
 			},
