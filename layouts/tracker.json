@@ -89,6 +89,15 @@
 									"doors"
 								]
 							}
+						},
+						{
+							"title": "Audio Logs",
+							"content": {
+								"type": "map",
+								"maps": [
+									"audioLogs"
+								]
+							}
 						}
 					]
 				}
@@ -160,6 +169,15 @@
 								"type": "map",
 								"maps": [
 									"doors"
+								]
+							}
+						},
+						{
+							"title": "Audio Logs",
+							"content": {
+								"type": "map",
+								"maps": [
+									"audioLogs"
 								]
 							}
 						}

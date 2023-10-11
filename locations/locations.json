@@ -67,13 +67,13 @@
 			{
 				"name": "First Hallway Straight",
 				"visibility_rules": [ "$extraChecksRequired" ],
-				"access_rules": [ "@Places/tutorial" ],
+				"access_rules": [ "@Places/firstHallway" ],
 				"item_count": 1
 			},
 			{
 				"name": "First Hallway Bent",
 				"visibility_rules": [ "$extraChecksRequired" ],
-				"access_rules": [ "@Places/tutorial" ],
+				"access_rules": [ "@Places/firstHallwayRoom" ],
 				"item_count": 1
 			},
 			{
@@ -85,7 +85,10 @@
 			{
 				"name": "First Hallway EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/tutorial" ],
+				"access_rules": [
+					"@Places/firstHallwayRoom, First Hallway Door",
+					"$isNotDoors, $hasPanel|First Hallway Panel, @Places/firstHallway"
+				],
 				"item_count": 1
 			},
 			{
@@ -184,7 +187,10 @@
 	{
 		"name": "Outside Tutorial Vault",
 		"visibility_rules": [ "Vaults" ],
-		"access_rules": [ "@Places/overworld, $canSolve|158650" ],
+		"access_rules": [
+			"$Warp|Outside Tutorial Vault",
+			"@Places/overworld, $canSolve|158650"
+		],
 		"sections": [
 			{
 				"name": "Vault Box",
@@ -354,7 +360,10 @@
 			{
 				"name": "Outside Tutorial Town Sewer EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/overworld" ],
+				"access_rules": [
+					"@Places/overworld",
+					"[@Places/overworld], @Places/ocean"
+				],
 				"item_count": 1
 			},
 			{
@@ -401,7 +410,6 @@
 
 	{
 		"name": "Ocean Outside Tutorial",
-		"access_rules": [ "@Places/overworld" ],
 		"sections": [
 			{
 				"name": "Boat Tutorial EP",
@@ -471,7 +479,10 @@
 
 	{
 		"name": "Inside Glass Factory",
-		"access_rules": [ "[@Places/glassFactory]" ],
+		"access_rules": [
+			"@Places/overworld, [@Places/glassFactory]",
+			"@Places/glassFactory"
+		],
 		"sections": [
 			{
 				"name": "Back Wall",
@@ -510,7 +521,10 @@
 			{
 				"name": "Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "$canSolve|158027, @Places/overworld" ],
+				"access_rules": [
+					"$canSolve|158027, @Places/overworld",
+					"$canSolve|158027, @Places/glassFactory"
+				],
 				"item_count": 1
 			},
 			{
@@ -599,7 +613,10 @@
 			{
 				"name": "Glass Factory Black Line EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/symmetryOuter, [@Places/symmetryInner]" ],
+				"access_rules": [
+					"@Places/symmetryOuter, [@Places/symmetryInner]",
+					"@Places/symmetryInner"
+				],
 				"item_count": 1
 			},
 			{
@@ -691,7 +708,7 @@
 			{
 				"name": "Apple Trees Inside Gate",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158074-158075, @Places/orchardInner" ],
+				"access_rules": [ "@Orchard/Apple Trees Outside Gate, $canSolve|158074-158075, @Places/orchardInner" ],
 				"item_count": 1
 			}
 		],
@@ -710,7 +727,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158652, @Places/overworld" ],
+				"access_rules": [
+					"$Warp|Desert Vault",
+					"$canSolve|158652, @Places/overworld"
+				],
 				"item_count": 1
 			}
 		],
@@ -931,7 +951,8 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
-					"randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
 				],
 				"item_count": 1
 			},
@@ -943,7 +964,7 @@
 			{
 				"name": "Flood Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Places/desertPond" ],
+				"access_rules": [ "$canSolve|158091-158095, @Places/desertPond" ],
 				"item_count": 1
 			},
 			{
@@ -963,7 +984,10 @@
 			},
 			{
 				"name": "Laser",
-				"access_rules": [ "@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/desertLaser" ],
+				"access_rules": [
+					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
+					"$isNotLaserShuffle, @Desert/Final Hexagonal, @Desert/Final Bent 3"
+				],
 				"item_count": 1
 			},
 			{
@@ -1131,8 +1155,8 @@
 				"name": "Railroad EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120",
-					"Quarry Elevator (Panel), $canSolve|158120"
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
+					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -1252,7 +1276,12 @@
 			{
 				"name": "Side Exit Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "$canSolve|158123, [@Places/quarryStoneworks]" ],
+				"access_rules": [
+					"$canSolve|158123, @Places/quarryStoneworks",
+					"$canSolve|158123, [@Places/quarryStoneworks], @Places/overworld",
+					"$canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs",
+					"$canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid"
+				],
 				"item_count": 1
 			},
 			{
@@ -1271,7 +1300,7 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
 				],
 				"item_count": 1
 			},
@@ -1281,8 +1310,8 @@
 				"access_rules": [
 					"Quarry Stoneworks Side Door, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
 					"Quarry Stoneworks Side Door, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"$isNotDoors, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, [@Places/quarryStoneworks]",
+					"$isNotDoors, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, [@Places/quarryStoneworks]"
 				],
 				"item_count": 1
 			}
@@ -1328,8 +1357,10 @@
 			{
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
-					"$isNotPanelsOnly, [@Places/quarry], $canSolve|158121",
-					"Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121"
+					"$isNotPanelsOnly, [@Places/quarry], @Places/overworld, $canSolve|158121",
+					"$isNotPanelsOnly, @Places/quarry, $canSolve|158121",
+					"Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121",
+					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121"
 				],
 				"item_count": 1
 			},
@@ -1338,7 +1369,8 @@
 				"access_rules": [
 					"$isNotPanelsOnly, @Places/quarry, $canSolve|158122",
 					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122"
+					"Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], @Places/overworld, $canSolve|158122",
+					"Quarry Door to Stoneworks (Panel), randomizationVanilla, @Places/quarry, $canSolve|158122"
 				]
 			}
 		],
@@ -1384,8 +1416,8 @@
 				"name": "Second Barrier Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"[@Places/quarryBoathouseUpstairsBack]",
-					"@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"
+					"[@Places/quarryBoathouseUpstairsBack], @Places/quarry",
+					"@Places/quarryBoathouseUpstairsBack"
 				],
 				"item_count": 1
 			},
@@ -1450,7 +1482,7 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "$canSolve|158703, @Quarry Boathouse/Back Second Row, @Quarry Stoneworks/Control Room Right" ],
+				"access_rules": [ "$canSolve|158703, @Quarry Boathouse/Back Second Row, @Quarry Stoneworks/Control Room Right, @Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -1498,7 +1530,9 @@
 				"name": "Door 2",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
+					"$isNotPanelsOnly, $canSolve|158119, @Places/quarryBetweenEntries",
+					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
+					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries"
 				],
 				"item_count": 1
 			},
@@ -1569,8 +1603,8 @@
 				"name": "Shadows Intro 8",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"
+					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]"
 				],
 				"item_count": 1
 			},
@@ -1578,8 +1612,8 @@
 				"name": "Shadows Intro 3",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190, [Shadows Timed Door]"
+					"$isNotDoors, $canSolve|158188-158190, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]"
 				],
 				"item_count": 1
 			},
@@ -1587,8 +1621,8 @@
 				"name": "Shadows Intro 5",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190 158191 158192, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"
+					"$isNotDoors, $canSolve|158188-158192, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]"
 				],
 				"item_count": 1
 			},
@@ -1601,7 +1635,11 @@
 			{
 				"name": "Door to Quarry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "$canSolve|158187, [@Places/shadowsFirstSet]" ],
+				"access_rules": [
+					"$canSolve|158187, @Places/shadowsFirstSet",
+					"$canSolve|158187, @Places/overworld, [@Places/shadowsFirstSet]",
+					"$canSolve|158187, @Places/quarry, [@Places/shadowsFirstSet]"
+				],
 				"item_count": 1
 			}
 		],
@@ -1812,10 +1850,10 @@
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2",
 					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door",
+					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door, @Places/overworld",
 					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
 					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
+					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -1837,9 +1875,9 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158195, @Places/maze3",
-					"$isNotPanelsOnly, $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door",
+					"$isNotPanelsOnly, $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld",
 					"Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
-					"Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
+					"Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -1860,8 +1898,10 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158196, [@Places/maze4]",
-					"Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4]"
+					"$isNotPanelsOnly, $canSolve|158196, [@Places/maze4], @Places/overworld",
+					"$isNotPanelsOnly, $canSolve|158196, @Places/maze4",
+					"Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4], @Places/overworld",
+					"Keep Hedge Maze 4 (Panel), $canSolve|158196, @Places/maze4"
 				],
 				"item_count": 1
 			}
@@ -2203,7 +2243,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158654, @Places/plates3" ],
+				"access_rules": [
+					"$Warp|Shipwreck Vault",
+					"$canSolve|158654, @Places/plates3"
+				],
 				"item_count": 1
 			}
 		],
@@ -2333,7 +2376,7 @@
 			{
 				"name": "Outside Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158210-158212, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]" ],
+				"access_rules": [ "$canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]" ],
 				"item_count": 1
 			},
 			{
@@ -2345,24 +2388,31 @@
 			{
 				"name": "Laser",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "@Monastery/Inside Puzzles, @Places/monastery" ],
+				"access_rules": [ "@Monastery/Inside Puzzles, @Places/monastery, @Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "$canSolve|158208, @Places/overworld" ],
+				"access_rules": [
+					"$canSolve|158208, @Places/overworld",
+					"$canSolve|158208, @Places/monastery"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "$canSolve|158209, @Places/overworld" ],
+				"access_rules": [
+					"$canSolve|158209, @Places/overworld",
+					"$canSolve|158209, @Places/monastery"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Monastery Shortcut to River",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
+				"access_rules": [ "@Places/overworld" ],
 				"item_count": 1
 			},
 			{
@@ -2451,17 +2501,14 @@
 			{
 				"name": "Discard",
 				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
-				"access_rules": [
-					"$isNotDoors, $canSolve|158606, @Town Cargo Box Area/Entry Panel",
-					"$canSolve|158606, Town Cargo Box Door"
-				],
+				"access_rules": [ "$canSolve|158606, @Places/cargoBox" ],
 				"item_count": 1
 			},
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, @Places/overworld, $canSolve|158219",
-					"Town Cargo Box Entry (Panel), @Places/overworld, $canSolve|158219"
+					"$isNotPanelsOnly, $canSolve|158219, @Places/overworld",
+					"Town Cargo Box Entry (Panel), $canSolve|158219, @Places/overworld"
 				],
 				"item_count": 1
 			},
@@ -2469,7 +2516,7 @@
 				"name": "Boat Cargo Box EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Town Cargo Box Entry (Panel), $canSolve|158219, @Places/ocean",
+					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/ocean",
 					"Town Cargo Box Door, @Places/ocean"
 				],
 				"item_count": 1
@@ -2576,7 +2623,7 @@
 			{
 				"name": "Bridge Underside EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/redRoof" ],
+				"access_rules": [ "$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof, @Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -2652,8 +2699,8 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158225",
-					"Town Door to RGB House (Panel), $canSolve|158225"
+					"$isNotPanelsOnly, $canSolve|158225, @Places/overworld",
+					"Town Door to RGB House (Panel), $canSolve|158225, @Places/overworld"
 				],
 				"item_count": 1
 			},
@@ -2666,17 +2713,15 @@
 				"name": "RGB House Red EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
-					"Town Maze Staircase, $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
-					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
-					"Town Maze Staircase, $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)"
+					"$isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof",
+					"$isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "RGB House Green EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)" ],
+				"access_rules": [ "$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -2834,8 +2879,8 @@
 				"name": "Main Island Thundercloud EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotLaserShuffle, @Places/desertLaser",
-					"$laser|4"
+					"$isNotLaserShuffle, @Places/desertLaser, @Places/overworld",
+					"$laser|4, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -2948,14 +2993,14 @@
 			{
 				"name": "First Blade EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel)" ],
+				"access_rules": [ "$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Second Blade EP",
 				"visibility_rules": [ "eps, epDiffTedious", "eps, epDiffEclipse" ],
 				"access_rules": [
-					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel)",
+					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld",
 					"epDiffNormal"
 				],
 				"item_count": 1
@@ -2964,7 +3009,7 @@
 				"name": "Third Blade EP",
 				"visibility_rules": [ "eps, epDiffTedious", "eps, epDiffEclipse" ],
 				"access_rules": [
-					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel)",
+					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld",
 					"epDiffNormal"
 				],
 				"item_count": 1
@@ -3421,8 +3466,8 @@
 				"name": "Garden Left EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
 				"access_rules": [
-					"Monastery Door to Garden",
-					"$isNotDoors, @Monastery/Outside Puzzles"
+					"$isNotDoors, @Monastery/Outside Puzzles",
+					"Monastery Door to Garden, @Places/overworld"
 				],
 				"item_count": 1
 			},
@@ -3473,7 +3518,7 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "@Places/overworld, SoundDots, @Jungle Popup Wall/Sound Dots Puzzles" ],
+				"access_rules": [ "@Jungle Popup Wall/Sound Dots Puzzles" ],
 				"item_count": 1
 			},
 			{
@@ -3569,7 +3614,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158663, @Places/overworld" ],
+				"access_rules": [
+					"$Warp|Jungle Vault",
+					"$canSolve|158663, @Places/overworld"
+				],
 				"item_count": 1
 			},
 			{
@@ -3634,8 +3682,8 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158268",
-					"Bunker Entry (Panel), $canSolve|158268"
+					"$isNotPanelsOnly, $canSolve|158268, @Places/overworld",
+					"Bunker Entry (Panel), $canSolve|158268, @Places/overworld"
 				],
 				"item_count": 1
 			},
@@ -3644,6 +3692,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Color Bunker/Intro Back, @Places/bunkerAntechamber",
+					"Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
 					"Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
 				],
 				"item_count": 1
@@ -3651,7 +3700,10 @@
 			{
 				"name": "Intro Left",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158269-158273, [@Places/bunkerAntechamber]" ],
+				"access_rules": [
+					"$canSolve|158269-158273, @Places/bunkerAntechamber",
+					"$canSolve|158269-158273, @Places/overworld, [@Places/bunkerAntechamber]"
+				],
 				"item_count": 1
 			},
 			{
@@ -3663,7 +3715,10 @@
 			{
 				"name": "Tinted Glass Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158279-158281, [@Places/bunkerTintedRoom]" ],
+				"access_rules": [
+					"$canSolve|158279-158281, @Places/bunkerTintedRoom",
+					"$canSolve|158279-158281, @Places/overworld, [@Places/bunkerTintedRoom]"
+				],
 				"item_count": 1
 			},
 			{
@@ -3681,15 +3736,21 @@
 			{
 				"name": "Green Room Flowers EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
-				"access_rules": [ "@Places/bunkerLaser" ],
+				"access_rules": [
+					"$Warp|Bunker Green Room",
+					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Tinted Door EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"Bunker Tinted Glass Door, @Places/bunkerElevator",
-					"$isNotDoors, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevator"
+					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
+					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, @Places/bunkerAtechamber",
+					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]",
+					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber",
+					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]"
 				],
 				"item_count": 1
 			}
@@ -3806,7 +3867,7 @@
 			},
 			{
 				"name": "Intro Back",
-				"access_rules": [ "$canSolve|158294-158301, @Places/swampEntry" ],
+				"access_rules": [ "$canSolve|158288-158301, @Places/swampEntry" ],
 				"item_count": 1
 			}
 		],
@@ -4093,19 +4154,19 @@
 		"sections": [
 			{
 				"name": "Purple Underwater",
-				"access_rules": [ "$canSolve|158333, @Places/swampPurple" ],
+				"access_rules": [ "$canSolve|158333, @Places/swampPurpleUnderwater" ],
 				"item_count": 1
 			},
 			{
 				"name": "Purple Underwater Right EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampPurple" ],
+				"access_rules": [ "@Places/swampPurpleUnderwater" ],
 				"item_count": 1
 			},
 			{
 				"name": "Purple Underwater Left EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampPurple" ],
+				"access_rules": [ "@Places/swampPurpleUnderwater" ],
 				"item_count": 1
 			}
 		],
@@ -4173,7 +4234,7 @@
 			{
 				"name": "Underwater Sliding Bridge EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform, @Places/swampCyan" ],
+				"access_rules": [ "$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan" ],
 				"item_count": 1
 			}
 		],
@@ -4287,15 +4348,17 @@
 				"name": "Second Door Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
-					"Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
+					"$isNotPanelsOnly, $canSolve|158345, @Places/treehouseSecond",
+					"Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
+					"Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "Third Door Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158355, @Places/treehouseThird, @Places/treehouseDock",
-					"Treehouse Third Door (Panel), @Places/treehouseThird, @Places/treehouseDock"
+					"$isNotPanelsOnly, $canSolve|158355, @Places/treehouseAfterYellowBridge",
+					"Treehouse Third Door (Panel), $canSolve|158355, @Places/treehouseAfterYellowBridge"
 				],
 				"item_count": 1
 			},
@@ -4337,23 +4400,22 @@
 
 	{
 		"name": "Treehouse Left Side",
-		"access_rules": [ "@Places/treehouseMain" ],
 		"sections": [
 			{
 				"name": "Purple Bridge 1",
-				"access_rules": [ "$canSolve|158357-158361" ],
+				"access_rules": [ "@Places/treehouseMain, $canSolve|158357-158361" ],
 				"item_count": 1
 			},
 			{
 				"name": "Purple Bridge 2",
-				"access_rules": [ "@Treehouse Left Side/Purple Bridge 1, $canSolve|158362-158368" ],
+				"access_rules": [ "@Places/treehouseLeft1, $canSolve|158362-158368" ],
 				"item_count": 1
 			},
 			{
 				"name": "Left Orange Bridge",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2",
-					"$isExpert|on, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"
+					"$isExpert|off, $canSolve|158376-158390, @Places/treehouseLeft2",
+					"$isExpert|on, $canSolve|158376-158390, @Places/treehouseLeft2, @Treehouse Laser House/Laser"
 				],
 				"item_count": 1
 			}
@@ -4377,22 +4439,22 @@
 			},
 			{
 				"name": "Green Bridge",
-				"access_rules": [ "$canSolve|158369-158375, @Treehouse Right Side/Right Orange Bridge, @Places/treehouseMain" ],
+				"access_rules": [ "$canSolve|158369-158375, @Places/treehouseMain" ],
 				"item_count": 1
 			},
 			{
 				"name": "Green Bridge Discard",
 				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotLaserShuffle" ],
-				"access_rules": [ "$canSolve|158610, @Places/treehouseMain, @Treehouse Right Side/Green Bridge" ],
+				"access_rules": [ "$canSolve|158610, @Treehouse Right Side/Green Bridge" ],
 				"item_count": 1
 			},
 			{
 				"name": "Drawbridge Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
-					"$isNotPanelsOnly, $canSolve|158404, Treehouse Drawbridge",
-					"Treehouse Drawbridge (Panel), $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
-					"Treehouse Drawbridge (Panel), $canSolve|158404, Treehouse Drawbridge"
+					"$isNotPanelsOnly, $canSolve|158404, @Places/treehouseDrawbridge",
+					"$isNotPanelsOnly, $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]",
+					"Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseDrawbridge",
+					"Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]"
 				],
 				"item_count": 1
 			},
@@ -4455,7 +4517,10 @@
 			{
 				"name": "Discard",
 				"visibility_rules": [ "Discarded" ],
-				"access_rules": [ "$canSolve|158611, @Treehouse Left Side/Left Orange Bridge" ],
+				"access_rules": [
+					"$Warp|Treehouse Behind Laser, $canSolve|158611",
+					"$canSolve|158611, @Treehouse Left Side/Left Orange Bridge"
+				],
 				"item_count": 1
 			}
 		],
@@ -4506,13 +4571,16 @@
 			{
 				"name": "Burned House EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Treehouse Left Side/Left Orange Bridge" ],
+				"access_rules": [
+					"$Warp|Treehouse Burned House",
+					"@Treehouse Left Side/Left Orange Bridge"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Both Orange Bridges EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/overworld, @Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge" ],
+				"access_rules": [ "@Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge, @Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -4827,7 +4895,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158665, @Places/overworld" ],
+				"access_rules": [
+					"$Warp|Mountainside Vault",
+					"$canSolve|158665, @Places/overworld"
+				],
 				"item_count": 1
 			}
 		],
@@ -4851,22 +4922,22 @@
 			{
 				"name": "Laser Box Short Victory!",
 				"visibility_rules": [ "Short" ],
-				"access_rules": [ "$laserBox|short" ],
+				"access_rules": [ "$laserBox|short, @Places/overworld" ],
 				"item_count": 1
 			},
 			{
 				"name": "Laser Box Long Victory!",
 				"visibility_rules": [ "Long" ],
 				"access_rules": [
-					"$longBoxWithoutMountainEntry, $laserBox|long",
-					"$laserBox|long, [@Mountaintop/Mountain Entry]"
+					"$laserBox|long, $longBoxWithoutMountainEntry, @Places/overworld",
+					"$laserBox|long, [@Mountaintop/Mountain Entry], @Places/overworld"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "Mountain Entry",
 				"visibility_rules": [ "$isNotDisabledByPostgame|97332" ],
-				"access_rules": [ "$canSolve|158407, $laserBox|short" ],
+				"access_rules": [ "$canSolve|158407, $laserBox|short, @Places/overworld" ],
 				"item_count": 1
 			},
 			{
@@ -4944,7 +5015,7 @@
 	{
 		"name": "Inside Mountain Layer 1 Bridge",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40505" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
+		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Pink Light Bridge",
@@ -4963,7 +5034,7 @@
 
 	{
 		"name": "Inside Mountain Layer 1 Trash",
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
+		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Angled Inside Trash",
@@ -4984,7 +5055,7 @@
 	{
 		"name": "Inside Mountain Layer 1 Left",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40555" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
+		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Left Row",
@@ -5005,7 +5076,7 @@
 	{
 		"name": "Inside Mountain Layer 1 Right",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40571" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
+		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Right Row",
@@ -5025,7 +5096,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Back",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40814" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
+		"access_rules": [
+			"$Warp|Mountain Floor 1 Back",
+			"@Places/mountainLayer1"
+		],
 		"sections": [
 			{
 				"name": "Back Row",
@@ -5049,7 +5123,7 @@
 			{
 				"name": "Near Row",
 				"visibility_rules": [ "$isNotDisabledByPostgame|40920" ],
-				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2" ],
+				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2Near" ],
 				"item_count": 1
 			}
 		],
@@ -5068,7 +5142,7 @@
 			{
 				"name": "Far Row",
 				"visibility_rules": [ "$isNotDisabledByPostgame|40914" ],
-				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2, @Places/mountain2FrontStairs" ],
+				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2Far" ],
 				"item_count": 1
 			}
 		],
@@ -5087,7 +5161,7 @@
 			{
 				"name": "Blue Light Bridge",
 				"visibility_rules": [ "$isNotDisabledByPostgame|40582" ],
-				"access_rules": [ "$canSolve|158431, @Places/mountainLayer2, @Places/mountain2FrontStairs" ],
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Near (Panel), $canSolve|158431, @Places/mountain2FrontStairs" ],
 				"item_count": 1
 			}
 		],
@@ -5106,7 +5180,7 @@
 			{
 				"name": "Orange Light Bridge",
 				"visibility_rules": [ "$isNotDisabledByPostgame|40664" ],
-				"access_rules": [ "$canSolve|158438, @Places/mountainLayer2, @Places/mountain2BackStairs" ],
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Far (Panel), $canSolve|158438, @Places/mountain2BackStairs" ],
 				"item_count": 1
 			}
 		],
@@ -5145,8 +5219,9 @@
 				"name": "Pink Bridge EP",
 				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40291", "eps, epDiffEclipse, $isNotDisabledByPostgame|40291" ],
 				"access_rules": [
-					"@Places/mountainLayer2",
-					"@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
+					"@Places/mountainLayer2Near, @Places/mountainLayer1",
+					"@Places/mountainLayer2Far, @Places/mountainLayer1",
+					"@Places/mountainMeta, @Places/mountainLayer1"
 				],
 				"item_count": 1
 			}
@@ -5166,11 +5241,7 @@
 			{
 				"name": "Elevator Discard",
 				"visibility_rules": [ "Discarded, $isNotDisabledByPostgame|98195" ],
-				"access_rules": [
-					"$canSolve|158439 158613, $hasPanel|Mountain Elevator (Panel), @Places/mountainMeta",
-					"$canSolve|158613, $isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
-					"$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"
-				],
+				"access_rules": [ "$canSolve|158613, @Places/mountainElevator" ],
 				"item_count": 1
 			}
 		],
@@ -5212,8 +5283,8 @@
 				"name": "Statue Discard",
 				"visibility_rules": [ "Discarded, $isNotDisabledByPostgame|98210" ],
 				"access_rules": [
-					"$canSolve|158407, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom",
-					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom"
+					"@Mountaintop/Mountain Entry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom",
+					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld"
 				],
 				"item_count": 1
 			}
@@ -5254,7 +5325,7 @@
 			{
 				"name": "Door to Final Room Right Panel",
 				"visibility_rules": [ "$isNotDisabledByPostgame|6535" ],
-				"access_rules": [ "@Places/mountainPenultimateRoom, $canSolve|158446" ],
+				"access_rules": [ "$canSolve|158446, @Places/mountainPenultimateRoom" ],
 				"item_count": 1
 			}
 		],
@@ -5274,7 +5345,7 @@
 			{
 				"name": "Final Room Pillars Right",
 				"visibility_rules": [ "$isNotDisabledByPostgame|211297" ],
-				"access_rules": [ "$canSolve|158522-158525, @Places/mountainFinalRoom" ],
+				"access_rules": [ "@Places/mountainFinalRoom, $canSolve|158522-158525" ],
 				"item_count": 1
 			}
 		],

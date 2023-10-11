@@ -70,6 +70,12 @@ function hasPanel(panel)
 	end
 end
 
+function Warp(location)
+	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then return true
+	else return false
+	end
+end
+
 function dots(level)
 	return Tracker:FindObjectForCode("ProgressiveDots").CurrentStage >= tonumber(level)
 end
