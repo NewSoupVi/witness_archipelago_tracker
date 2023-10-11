@@ -3689,7 +3689,8 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"Bunker Tinted Glass Door, @Places/bunkerElevator",
-					"$isNotDoors, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevator"
+					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevator",
+					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber, @Places/bunkerElevator"
 				],
 				"item_count": 1
 			}
