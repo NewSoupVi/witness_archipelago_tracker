@@ -1279,10 +1279,8 @@
 				"name": "Stoneworks Lift EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"Quarry Stoneworks Side Door, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"Quarry Stoneworks Side Door, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, @Quarry Stoneworks/Lower Row, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
 				],
 				"item_count": 1
 			}
