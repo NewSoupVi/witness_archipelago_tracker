@@ -180,7 +180,7 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 
-		Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246007"})
+	Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246007"})
 	Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246013"})
 	Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-207360"})
 	Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246014"})
@@ -244,7 +244,7 @@ function onClear(slot_data)
 
 	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 
-		Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246007"})
+	Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246007"})
 	Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246013"})
 	Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-207360"})
 	Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-246014"})
