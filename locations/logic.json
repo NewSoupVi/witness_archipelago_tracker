@@ -209,7 +209,7 @@
 				"access_rules": [
 					"$Warp|Quarry Boathouse Upstairs Front",
 					"@Logic/boathouseRamp, $canSolve|158148, @Places/quarry",
-					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/QuarryBoathouseUpstairsBack"
+					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsBack"
 				],
 				"item_count": 1
 			},
