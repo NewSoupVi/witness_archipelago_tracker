@@ -3661,7 +3661,12 @@
 			{
 				"name": "Tinted Glass Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158279-158281, [@Places/bunkerTintedRoom]" ],
+				"access_rules": [
+					"$isNotAutoElevators, $canSolve|158279-158281, [@Places/bunkerTintedRoom]",
+					"[Bunker Tinted Glass Door], $canSolve|158279-158281, [@Places/bunkerTintedRoom]",
+					"doorsNo, [@Color Bunker/Intro Back], $canSolve|158279-158281, [@Places/bunkerTintedRoom]",
+					"$isNotDoors, [Inside Bunker Door to Bunker Proper (Panel)], $canSolve|158279-158281, [@Places/bunkerTintedRoom]"
+				],
 				"item_count": 1
 			},
 			{
