@@ -1012,7 +1012,7 @@
 				"name": "Elevator EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"isNotDoors, @Desert/Laser",
+					"$isNotDoors, @Desert/Laser",
 					"Desert Elevator Door, @Places/desertLaser"
 				],
 				"item_count": 1
