@@ -1224,6 +1224,13 @@
 		"codes": "Desert Door to Elevator Room"
 	},
 	{
+		"name": "Desert Elevator Door",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Elevator Door"
+	},
+	{
 		"name": "Quarry Main Entry 1",
 		"type": "toggle",
 		"loop": "true",

@@ -553,6 +553,7 @@ function doorsRegional(item_name)
 		Tracker:FindObjectForCode("Desert Door to Pond Room").Active = true
 		Tracker:FindObjectForCode("Desert Door to Flood Room").Active = true
 		Tracker:FindObjectForCode("Desert Door to Elevator Room").Active = true
+		Tracker:FindObjectForCode("Desert Elevator Door").Active = true
 	elseif item_name == "Quarry Entry Doors"  then
 		Tracker:FindObjectForCode("Quarry Main Entry 1").Active = true
 		Tracker:FindObjectForCode("Quarry Main Entry 2").Active = true
