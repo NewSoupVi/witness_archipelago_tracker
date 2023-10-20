@@ -1012,8 +1012,8 @@
 				"name": "Elevator EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotLaserShuffle, @Places/desertLaser",
-					"@Places/desertLaser, $laser|4"
+					"isNotDoors, @Desert/Laser",
+					"Desert Elevator Door, @Places/desertLaser"
 				],
 				"item_count": 1
 			}
@@ -2877,12 +2877,11 @@
 				"name": "Main Island Thundercloud EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotLaserShuffle, @Places/desertLaser, @Places/overworld",
+					"$isNotLaserShuffle, @Desert/Laser, @Places/overworld",
 					"$laser|4, @Places/overworld"
 				],
 				"item_count": 1
 			}
-
 		],
 		"map_locations": [
 			{

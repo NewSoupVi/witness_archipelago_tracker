@@ -109,6 +109,7 @@ ITEM_MAPPING = {
 	[159624] = {"Desert Door to Pond Room", "toggle"},
 	[159627] = {"Desert Door to Flood Room", "toggle"},
 	[159630] = {"Desert Door to Elevator Room", "toggle"},
+	[159631] = {"Desert Elevator Door", "toggle"},
 	[159633] = {"Quarry Main Entry 1", "toggle"},
 	[159636] = {"Quarry Main Entry 2", "toggle"},
 	[159639] = {"Quarry Door to Stoneworks", "toggle"},

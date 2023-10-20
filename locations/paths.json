@@ -324,6 +324,25 @@
 	},
 
 	{
+		"name": "Desert Elevator",
+		"visibility_rules": [ "doorsDoor", "doorsMix" ],
+		"access_rules": [ "Desert Elevator Door" ],
+		"sections": [
+			{
+				"name": "Door",
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "doors",
+				"x": 74,
+				"y": 350
+			}
+		]
+	},
+
+	{
 		"name": "Quarry Elevator",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
