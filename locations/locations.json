@@ -1948,7 +1948,7 @@
 			{
 				"name": "Pressure Plates 2 EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Pressure Plates 2/Pressure Plates, @Places/keepTower" ],
+				"access_rules": [ "@Pressure Plates 2/Pressure Plates, [@Places/keepTower]" ],
 				"item_count": 1
 			}
 		],
