@@ -1849,11 +1849,9 @@
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2",
 					"showSnipes, $isNotPanelsOnly, $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2, Keep Hedge Maze 2 Exit Door",
 					"showSnipes, $isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door",
 					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
 					"showSnipes, Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2, Keep Hedge Maze 2 Exit Door",
 					"showSnipes, Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
 				],
 				"item_count": 1
