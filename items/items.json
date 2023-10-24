@@ -510,6 +510,13 @@
 		"loop": "true"
 	},
 	{
+		"name": "Show Snipes",
+		"img": "images/showSnipes.png",
+		"codes": "showSnipes",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Puzzle Skips",
 		"type": "consumable",
 		"loop": "true",

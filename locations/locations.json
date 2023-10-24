@@ -28,7 +28,10 @@
 			{
 				"name": "Gate EP",
 				"visibility_rules": [ "eps, Unrandomized, Vaults, $isNotDisabledByPostgame|210223" ],
-				"access_rules": [ "@Tutorial Gate/Gate Open, [@Places/tunnels]" ],
+				"access_rules": [
+					"@Tutorial Gate/Gate Open, @Places/tunnels",
+					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels]"
+				],
 				"item_count": 1
 			}
 		],
@@ -471,7 +474,10 @@
 
 	{
 		"name": "Inside Glass Factory",
-		"access_rules": [ "[@Places/glassFactory]" ],
+		"access_rules": [
+			"@Places/glassFactory",
+			"showSnipes, [@Places/glassFactory]"
+		],
 		"sections": [
 			{
 				"name": "Back Wall",
@@ -560,7 +566,8 @@
 				"name": "Right 5",
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
-					"randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]"
+					"randomizationVanilla, $canSolve|158041-158045, @Places/overworld, @Places/symmetryOuter",
+					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]"
 				],
 				"item_count": 1
 			},
@@ -599,7 +606,10 @@
 			{
 				"name": "Glass Factory Black Line EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/symmetryOuter, [@Places/symmetryInner]" ],
+				"access_rules": [
+					"@Places/symmetryOuter, @Places/symmetryInner",
+					"showSnipes, @Places/symmetryOuter, [@Places/symmetryInner]"
+				],
 				"item_count": 1
 			},
 			{
@@ -931,7 +941,8 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
-					"randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"randomizationVanilla, $canSolve|158087-158090, @Places/overworld, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]"
 				],
 				"item_count": 1
 			},
@@ -948,7 +959,10 @@
 			},
 			{
 				"name": "Flood Room Puzzles",
-				"access_rules": [ "$canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]" ],
+				"access_rules": [
+					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
+					"showSnipes, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
+				],
 				"item_count": 1
 			},
 			{
@@ -1229,14 +1243,18 @@
 			{
 				"name": "Lower Row",
 				"access_rules": [
-					"$canSolve|158125-158130, @Places/quarryStoneworks, [@Places/quarryStoneworksMid]",
-					"$canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry"
+					"$canSolve|158125-158130, @Places/quarryStoneworks, @Places/quarryStoneworksMid",
+					"showSnipes, $canSolve|158125-158130, @Places/quarryStoneworks, [@Places/quarryStoneworksMid]",
+					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "Upper Row",
-				"access_rules": [ "$canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]" ],
+				"access_rules": [
+					"$canSolve|158134-158141, @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+				],
 				"item_count": 1
 			},
 			{
@@ -1252,7 +1270,10 @@
 			{
 				"name": "Side Exit Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "$canSolve|158123, [@Places/quarryStoneworks]" ],
+				"access_rules": [
+					"$canSolve|158123, @Places/quarryStoneworks",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks]"
+				],
 				"item_count": 1
 			},
 			{
@@ -1263,7 +1284,10 @@
 			},
 			{
 				"name": "Stairs Control Panel",
-				"access_rules": [ "$canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]" ],
+				"access_rules": [
+					"$canSolve|158142, @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+				],
 				"item_count": 1
 			},
 			{
@@ -1326,8 +1350,10 @@
 			{
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
-					"$isNotPanelsOnly, [@Places/quarry], $canSolve|158121",
-					"Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121"
+					"$isNotPanelsOnly, @Places/quarry, $canSolve|158121",
+					"showSnipes, $isNotPanelsOnly, [@Places/quarry], $canSolve|158121",
+					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121",
+					"showSnipes, Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121"
 				],
 				"item_count": 1
 			},
@@ -1336,7 +1362,7 @@
 				"access_rules": [
 					"$isNotPanelsOnly, @Places/quarry, $canSolve|158122",
 					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122"
+					"showSnipes, Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122"
 				]
 			}
 		],
@@ -1365,7 +1391,10 @@
 			},
 			{
 				"name": "Front Row",
-				"access_rules": [ "$canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront]" ],
+				"access_rules": [
+					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
+					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront]"
+				],
 				"item_count": 1
 			},
 			{
@@ -1382,8 +1411,10 @@
 				"name": "Second Barrier Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"[@Places/quarryBoathouseUpstairsBack]",
-					"@Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"
+					"@Places/quarryBoathouseUpstairsBack",
+					"showSnipes, [@Places/quarryBoathouseUpstairsBack]",
+					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
+					"showSnipes, @Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"
 				],
 				"item_count": 1
 			},
@@ -1444,7 +1475,6 @@
 
 	{
 		"name": "Quarry Laser",
-		"access_rules": [ "Shapers, Eraser" ],
 		"sections": [
 			{
 				"name": "Laser",
@@ -1495,8 +1525,10 @@
 			{
 				"name": "Door 2",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
+					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, @Places/quarryBetweenEntries",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
+					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, @Places/quarryBetweenEntries",
+					"showSnipes, Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
 				],
 				"item_count": 1
 			},
@@ -1567,8 +1599,10 @@
 				"name": "Shadows Intro 8",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"
+					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isNotDoors, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, Shadows Timed Door",
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"
 				],
 				"item_count": 1
 			},
@@ -1576,8 +1610,10 @@
 				"name": "Shadows Intro 3",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190, [Shadows Timed Door]"
+					"$canSolve|158188 158189 158190, $isNotDoors, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"showSnipes, $canSolve|158188 158189 158190, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190, Shadows Timed Door",
+					"showSnipes, $canSolve|158188 158189 158190, [Shadows Timed Door]"
 				],
 				"item_count": 1
 			},
@@ -1585,8 +1621,10 @@
 				"name": "Shadows Intro 5",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190 158191 158192, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"
+					"$canSolve|158188 158189 158190 158191 158192, $isNotDoors, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190 158191 158192, Shadows Timed Door",
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"
 				],
 				"item_count": 1
 			},
@@ -1599,7 +1637,10 @@
 			{
 				"name": "Door to Quarry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "$canSolve|158187, [@Places/shadowsFirstSet]" ],
+				"access_rules": [
+					"$canSolve|158187, @Places/shadowsFirstSet",
+					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet]"
+				],
 				"item_count": 1
 			}
 		],
@@ -1809,11 +1850,13 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2",
-					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"$isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158194, [@Places/maze2], @Places/maze3",
+					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2, Keep Hedge Maze 2 Exit Door",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door",
 					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
-					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
+					"showSnipes, Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
+					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2, Keep Hedge Maze 2 Exit Door",
+					"showSnipes, Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
 				],
 				"item_count": 1
 			}
@@ -1835,9 +1878,9 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158195, @Places/maze3",
-					"$isNotPanelsOnly, $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door",
 					"Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
-					"Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
+					"showSnipes, Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
 				],
 				"item_count": 1
 			}
@@ -1858,8 +1901,10 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158196, [@Places/maze4]",
-					"Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4]"
+					"$isNotPanelsOnly, $canSolve|158196, @Places/maze4",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158196, [@Places/maze4]",
+					"Keep Hedge Maze 4 (Panel), $canSolve|158196, @Places/maze4",
+					"showSnipes, Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4]"
 				],
 				"item_count": 1
 			}
@@ -1908,7 +1953,10 @@
 			{
 				"name": "Pressure Plates 2 EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Pressure Plates 2/Pressure Plates, [@Places/keepTower]" ],
+				"access_rules": [
+					"@Pressure Plates 2/Pressure Plates, @Places/keepTower",
+					"showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]"
+				],
 				"item_count": 1
 			}
 		],
@@ -1973,7 +2021,7 @@
 				"visibility_rules": [ "Discarded" ],
 				"access_rules": [
 					"$canSolve|158604, @Places/plates4",
-					"$canSolve|158604, [@Places/plates4], @Places/keepTower"
+					"showSnipes, $canSolve|158604, [@Places/plates4], @Places/keepTower"
 				],
 				"item_count": 1
 			},
@@ -2085,14 +2133,19 @@
 			{
 				"name": "Laser Hedges",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], @Hedge Maze 4/Exit Panel" ],
+				"access_rules": [
+					"$canSolve|158704, @Places/keepTower, @Hedge Maze 1/Exit Panel, @Hedge Maze 2/Exit Panel, @Hedge Maze 3/Exit Panel, @Hedge Maze 4/Exit Panel",
+					"showSnipes, $canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], @Hedge Maze 4/Exit Panel"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Laser Pressure Plates",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
-					"$isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
+					"$isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
+					"showSnipes, $isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
+					"$isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
+					"showSnipes, $isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
 				],
 				"item_count": 1
 			},
@@ -2101,7 +2154,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Places/keepTower",
-					"[@Places/keepTower], @Places/plates3"
+					"showSnipes, [@Places/keepTower], @Places/plates3"
 				],
 				"item_count": 1
 			},
@@ -2331,7 +2384,10 @@
 			{
 				"name": "Outside Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158210-158212, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]" ],
+				"access_rules": [
+					"$canSolve|158210-158212, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
+					"showSnipes, $canSolve|158210-158212, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]"
+				],
 				"item_count": 1
 			},
 			{
@@ -2508,7 +2564,10 @@
 			{
 				"name": "Tall Hexagonal",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158220-158224, @Places/overworld, [@Places/redRoof]" ],
+				"access_rules": [
+					"$canSolve|158220-158224, @Places/overworld, @Places/redRoof",
+					"showSnipes, $canSolve|158220-158224, @Places/overworld, [@Places/redRoof]"
+				],
 				"item_count": 1
 			}
 		],
@@ -2532,9 +2591,11 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
+					"$isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"showSnipes, $isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
 					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
-					"Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
+					"Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"showSnipes, Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
 					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld"
 				],
 				"item_count": 1
@@ -2636,14 +2697,19 @@
 		"sections": [
 			{
 				"name": "RGB Room Left",
-				"access_rules": [ "$canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs" ],
+				"access_rules": [
+					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$isExpert|off, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, $isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"$isExpert|on, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), $canSolve|158245-158246, @Places/RGBHouseUpstairs",
+					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				],
 				"item_count": 1
 			},
@@ -3021,7 +3087,10 @@
 			{
 				"name": "Tutorial Video",
 				"visibility_rules": [ "Vaults, Unrandomized" ],
-				"access_rules": [ "[@Outside Tutorial Vault/Vault Box], $hasPanel|Theater Video Input (Panel)" ],
+				"access_rules": [
+					"@Outside Tutorial Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
+					"showSnipes, [@Outside Tutorial Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+				],
 				"item_count": 1
 			},
 			{
@@ -3051,13 +3120,19 @@
 			{
 				"name": "Desert Video",
 				"visibility_rules": [ "Vaults, Unrandomized" ],
-				"access_rules": [ "[@Desert Vault/Vault Box], $hasPanel|Theater Video Input (Panel)" ],
+				"access_rules": [
+					"@Desert Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
+					"showSnipes, [@Desert Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Jungle Video",
 				"visibility_rules": [ "Vaults, Unrandomized" ],
-				"access_rules": [ "[@Between Jungle and Monastery/Vault Box], $hasPanel|Theater Video Input (Panel)" ],
+				"access_rules": [
+					"@Between Jungle and Monastery/Vault Box, $hasPanel|Theater Video Input (Panel)",
+					"showSnipes, [@Between Jungle and Monastery/Vault Box], $hasPanel|Theater Video Input (Panel)"
+				],
 				"item_count": 1
 			},
 			{
@@ -3069,7 +3144,10 @@
 			{
 				"name": "Challenge Video",
 				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabledByPostgame|13641" ],
-				"access_rules": [ "[@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel)" ],
+				"access_rules": [
+					"@Mountain Challenge Area/Challenge Vault, $hasPanel|Theater Video Input (Panel)",
+					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel)"
+				],
 				"item_count": 1
 			},
 			{
@@ -3086,13 +3164,19 @@
 			{
 				"name": "Shipwreck Video",
 				"visibility_rules": [ "Vaults, Unrandomized" ],
-				"access_rules": [ "[@Shipwreck Vault/Vault Box], $hasPanel|Theater Video Input (Panel)" ],
+				"access_rules": [
+					"@Shipwreck Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
+					"showSnipes, [@Shipwreck Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+				],
 				"item_count": 1
 			},
 			{
 				"name": "Mountain Video",
 				"visibility_rules": [ "Vaults, Unrandomized" ],
-				"access_rules": [ "[@Mountainside Vault/Vault Box], $hasPanel|Theater Video Input (Panel)" ],
+				"access_rules": [
+					"@Mountainside Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
+					"showSnipes, [@Mountainside Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+				],
 				"item_count": 1
 			}
 
@@ -3470,7 +3554,7 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "@Places/overworld, SoundDots, @Jungle Popup Wall/Sound Dots Puzzles" ],
+				"access_rules": [ "@Places/overworld, @Jungle Popup Wall/Sound Dots Puzzles" ],
 				"item_count": 1
 			},
 			{
@@ -3641,14 +3725,18 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Color Bunker/Intro Back, @Places/bunkerAntechamber",
-					"Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
+					"Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, @Places/bunkerAntechamber",
+					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
 				],
 				"item_count": 1
 			},
 			{
 				"name": "Intro Left",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158269-158273, [@Places/bunkerAntechamber]" ],
+				"access_rules": [
+					"$canSolve|158269-158273, @Places/bunkerAntechamber",
+					"showSnipes, $canSolve|158269-158273, [@Places/bunkerAntechamber]"
+				],
 				"item_count": 1
 			},
 			{
@@ -3661,7 +3749,8 @@
 				"name": "Tinted Glass Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"[Bunker Tinted Glass Door], $canSolve|158279-158281, [@Places/bunkerTintedRoom]",
+					"Bunker Tinted Glass Door, $canSolve|158279-158281, @Places/bunkerTintedRoom",
+					"showSnipes, [Bunker Tinted Glass Door], $canSolve|158279-158281, [@Places/bunkerTintedRoom]",
 					"doorsNo, $canSolve|158279-158281, @Color Bunker/Intro Back",
 					"$isNotDoors, $canSolve|158279-158281, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber"
 				],
@@ -3670,7 +3759,10 @@
 			{
 				"name": "Ultraviolet Room",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]" ],
+				"access_rules": [
+					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel)",
+					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]"
+				],
 				"item_count": 1
 			},
 			{
@@ -3839,7 +3931,10 @@
 			},
 			{
 				"name": "Between Bridges Near Row",
-				"access_rules": [ "$canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform Area/Platform Set" ],
+				"access_rules": [
+					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform Area/Platform Set",
+					"showSnipes, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform Area/Platform Set"
+				],
 				"item_count": 1
 			},
 			{
@@ -3915,7 +4010,7 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
-					"autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
 				],
 				"item_count": 1
 			},
@@ -4288,8 +4383,10 @@
 			{
 				"name": "Second Door Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
-					"Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
+					"$isNotPanelsOnly, $canSolve|158345, @Places/treehouseSecond, @Places/treehouseDock",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
+					"Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond, @Places/treehouseDock",
+					"showSnipes, Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
 				],
 				"item_count": 1
 			},
@@ -4391,9 +4488,11 @@
 			{
 				"name": "Drawbridge Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
+					"$isNotPanelsOnly, $canSolve|158404, @Treehouse Right Side/Right Orange Bridge",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
 					"$isNotPanelsOnly, $canSolve|158404, Treehouse Drawbridge",
-					"Treehouse Drawbridge (Panel), $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
+					"Treehouse Drawbridge (Panel), $canSolve|158404, @Treehouse Right Side/Right Orange Bridge",
+					"showSnipes, Treehouse Drawbridge (Panel), $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
 					"Treehouse Drawbridge (Panel), $canSolve|158404, Treehouse Drawbridge"
 				],
 				"item_count": 1
@@ -4861,7 +4960,8 @@
 				"visibility_rules": [ "Long" ],
 				"access_rules": [
 					"$longBoxWithoutMountainEntry, $laserBox|long",
-					"$laserBox|long, [@Mountaintop/Mountain Entry]"
+					"$laserBox|long, @Mountaintop/Mountain Entry",
+					"showSnipes, $laserBox|long, [@Mountaintop/Mountain Entry]"
 				],
 				"item_count": 1
 			},

@@ -132,7 +132,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]" ]
+				"access_rules": [
+					"@Places/quarryStoneworksUpstairs",
+					"showSnipes, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+				]
 			}
 		],
 		"map_locations": [
