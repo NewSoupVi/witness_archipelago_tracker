@@ -1359,6 +1359,7 @@
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnly, @Places/quarry, $canSolve|158122",
+					"showSnipes, $isNotPanelsOnly, randomizationVanilla, [@Places/quarry], $canSolve|158122",
 					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
 					"showSnipes, Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122"
 				]
