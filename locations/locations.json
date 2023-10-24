@@ -190,13 +190,13 @@
 	{
 		"name": "Outside Tutorial Vault",
 		"visibility_rules": [ "Vaults" ],
-		"access_rules": [
-			"$Warp|Outside Tutorial Vault",
-			"@Places/overworld, $canSolve|158650"
-		],
 		"sections": [
 			{
 				"name": "Vault Box",
+				"access_rules": [
+					"$Warp|Outside Tutorial Vault",
+					"@Places/overworld, $canSolve|158650"
+				],
 				"item_count": 1
 			}
 		],
@@ -246,10 +246,10 @@
 
 	{
 		"name": "Outside Tutorial Shed Row",
-		"access_rules": [ "$canSolve|158013-158017, @Places/overworld" ],
 		"sections": [
 			{
 				"name": "Shed Row",
+				"access_rules": [ "$canSolve|158013-158017, @Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -303,10 +303,10 @@
 
 	{
 		"name": "Outside Tutorial Tree Row",
-		"access_rules": [ "$canSolve|158018-158026, @Places/overworld" ],
 		"sections": [
 			{
 				"name": "Tree Row",
+				"access_rules": [ "$canSolve|158018-158026, @Places/overworld" ],
 				"item_count": 1
 			}
 		],
@@ -1398,23 +1398,23 @@
 
 	{
 		"name": "Quarry Boathouse",
-		"access_rules": [ "@Places/quarry" ],
 		"sections": [
 			{
 				"name": "Intro Right",
-				"access_rules": [ "$canSolve|158147" ],
+				"access_rules": [ "$canSolve|158147, @Places/quarry" ],
 				"item_count": 1
 			},
 			{
 				"name": "Intro Left",
-				"access_rules": [ "$canSolve|158146" ],
+				"access_rules": [ "$canSolve|158146, @Places/quarry" ],
 				"item_count": 1
 			},
 			{
 				"name": "Front Row",
 				"access_rules": [
 					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
-					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront]"
+					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarry",
+					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarryUpstairsBack"
 				],
 				"item_count": 1
 			},
@@ -1753,10 +1753,10 @@
 	{
 		"name": "Shadows Laser",
 		"visibility_rules": [ "Unrandomized" ],
-		"access_rules": [ "$canSolve|158703, @Places/shadowsLaser" ],
 		"sections": [
 			{
 				"name": "Laser",
+				"access_rules": [ "$canSolve|158703, @Places/shadowsLaser" ],
 				"item_count": 1
 			}
 		],
@@ -4362,7 +4362,7 @@
 			},
 			{
 				"name": "Shortcut Panels",
-				"access_rules": [ "$canSolve|158341 158342" ],
+				"access_rules": [ "$canSolve|158341-158342" ],
 				"item_count": 1
 			}
 		],
@@ -4520,8 +4520,10 @@
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158404, @Places/treehouseDrawbridge",
 					"showSnipes, $isNotPanelsOnly, $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]",
+					"showSnipes, $isNotPanelsOnly, $canSolve|158404, @Places/treehouseMain, [@Places/treehouseDrawbridge]",
 					"Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseDrawbridge",
-					"showSnipes, Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]"
+					"showSnipes, Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]",
+					"showSnipes, Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseMain, [@Places/treehouseDrawbridge]"
 				],
 				"item_count": 1
 			},
@@ -5083,10 +5085,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Bridge",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40505" ],
-		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Pink Light Bridge",
+				"access_rules": [ "@Places/mountainLayer1" ],
 				"item_count": 1
 			}
 		],
@@ -5102,12 +5104,11 @@
 
 	{
 		"name": "Inside Mountain Layer 1 Trash",
-		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Angled Inside Trash",
 				"visibility_rules": [ "$isNotDisabledByPostgame|40623" ],
-				"access_rules": [ "$canSolve|158424 158425" ],
+				"access_rules": [ "$canSolve|158424 158425, @Places/mountainLayer1" ],
 				"item_count": 1
 			}
 		],
@@ -5123,11 +5124,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Left",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40555" ],
-		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Left Row",
-				"access_rules": [ "$canSolve|158414-158420" ],
+				"access_rules": [ "$canSolve|158414-158420, @Places/mountainLayer1" ],
 				"item_count": 1
 			}
 		],
@@ -5144,11 +5144,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Right",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40571" ],
-		"access_rules": [ "@Places/mountainLayer1" ],
 		"sections": [
 			{
 				"name": "Right Row",
-				"access_rules": [ "$canSolve|158409-158413" ],
+				"access_rules": [ "$canSolve|158409-158413, @Places/mountainLayer1" ],
 				"item_count": 1
 			}
 		],
@@ -5164,14 +5163,13 @@
 	{
 		"name": "Inside Mountain Layer 1 Back",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40814" ],
-		"access_rules": [
-			"$Warp|Mountain Floor 1 Back",
-			"@Places/mountainLayer1"
-		],
 		"sections": [
 			{
 				"name": "Back Row",
-				"access_rules": [ "$canSolve|158421-158423" ],
+				"access_rules": [
+					"$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
+					"@Places/mountainLayer1, $canSolve|158421-158423"
+				],
 				"item_count": 1
 			}
 		],
@@ -5689,12 +5687,11 @@
 
 	{
 		"name": "Caves First Floor Left",
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Left",
 				"visibility_rules": [ "$isNotDisabledByPostgame|207202" ],
-				"access_rules": [ "$canSolve|158472" ],
+				"access_rules": [ "$canSolve|158472, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5710,11 +5707,10 @@
 	{
 		"name": "Caves First Floor Grounded",
 		"visibility_rules": [ "$isNotDisabledByPostgame|207206" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Grounded",
-				"access_rules": [ "$canSolve|158473" ],
+				"access_rules": [ "$canSolve|158473, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5730,11 +5726,10 @@
 	{
 		"name": "Caves First Floor Middle",
 		"visibility_rules": [ "$isNotDisabledByPostgame|6705" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Middle",
-				"access_rules": [ "$canSolve|158474" ],
+				"access_rules": [ "$canSolve|158474, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5750,11 +5745,10 @@
 	{
 		"name": "Caves First Floor Right",
 		"visibility_rules": [ "$isNotDisabledByPostgame|2929" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Right",
-				"access_rules": [ "$canSolve|158475" ],
+				"access_rules": [ "$canSolve|158475, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5770,11 +5764,10 @@
 	{
 		"name": "Caves Shortcut to Mountain",
 		"visibility_rules": [ "$isNotDisabledByPostgame|8663" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Shortcut to Mountain Panel",
-				"access_rules": [ "$canSolve|158449" ],
+				"access_rules": [ "$canSolve|158449, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5790,11 +5783,10 @@
 	{
 		"name": "Caves Shortcut to Swamp",
 		"visibility_rules": [ "$isNotDisabledByPostgame|97522" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Shortcut to Swamp Panel",
-				"access_rules": [ "$canSolve|158450" ],
+				"access_rules": [ "$canSolve|158450, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5811,11 +5803,10 @@
 	{
 		"name": "Caves Wooden Beams First",
 		"visibility_rules": [ "$isNotDisabledByPostgame|166122" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "First",
-				"access_rules": [ "$canSolve|158478" ],
+				"access_rules": [ "$canSolve|158478, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5830,12 +5821,11 @@
 	},
 	{
 		"name": "Caves Wooden Beams Second",
-		"access_rules": [ "@Places/caves" ],
 		"visibility_rules": [ "$isNotDisabledByPostgame|166140" ],
 		"sections": [
 			{
 				"name": "Second",
-				"access_rules": [ "$canSolve|158479" ],
+				"access_rules": [ "$canSolve|158479, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5851,11 +5841,10 @@
 	{
 		"name": "Caves Wooden Beams Third",
 		"visibility_rules": [ "$isNotDisabledByPostgame|166375" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Third",
-				"access_rules": [ "$canSolve|158480" ],
+				"access_rules": [ "$canSolve|158480, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5871,11 +5860,10 @@
 	{
 		"name": "Caves Wooden Beams Fourth",
 		"visibility_rules": [ "$isNotDisabledByPostgame|166058" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Fourth",
-				"access_rules": [ "$canSolve|158481" ],
+				"access_rules": [ "$canSolve|158481, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5892,11 +5880,10 @@
 	{
 		"name": "Caves Upstairs Left - Left",
 		"visibility_rules": [ "$isNotDisabledByPostgame|41706" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Left - Left Row 5",
-				"access_rules": [ "$canSolve|158483-158487" ],
+				"access_rules": [ "$canSolve|158483-158487, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5912,11 +5899,10 @@
 	{
 		"name": "Caves Upstairs Left Single",
 		"visibility_rules": [ "$isNotDisabledByPostgame|98233" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Single",
-				"access_rules": [ "$canSolve|158482" ],
+				"access_rules": [ "$canSolve|158482, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5932,11 +5918,10 @@
 	{
 		"name": "Caves Upstairs Right - Left",
 		"visibility_rules": [ "$isNotDisabledByPostgame|108" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Right - Left Row 8",
-				"access_rules": [ "$canSolve|158488-158495" ],
+				"access_rules": [ "$canSolve|158488-158495, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -5952,11 +5937,10 @@
 	{
 		"name": "Caves Upstairs Right - Right",
 		"visibility_rules": [ "$isNotDisabledByPostgame|41" ],
-		"access_rules": [ "@Places/caves" ],
 		"sections": [
 			{
 				"name": "Right - Right Row 3",
-				"access_rules": [ "$canSolve|158496-158498" ],
+				"access_rules": [ "$canSolve|158496-158498, @Places/caves" ],
 				"item_count": 1
 			}
 		],
@@ -6072,14 +6056,13 @@
 	},
 	{
 		"name": "Tunnels Entry",
-		"access_rules": [ "@Places/challenge" ],
 		"sections": [
 			{
 				"name": "Door to Tunnels Panel",
 				"visibility_rules": [ "$isNotDisabledByPostgame|14772" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158518",
-					"Tunnels Entry (Panel), $canSolve|158518"
+					"$isNotPanelsOnly, $canSolve|158518, @Places/challenge",
+					"Tunnels Entry (Panel), $canSolve|158518, @Places/challenge"
 				],
 				"item_count": 1
 			}
@@ -6117,11 +6100,11 @@
 
 	{
 		"name": "Underground Tunnels",
-		"access_rules": [ "@Places/tunnels" ],
 		"sections": [
 			{
 				"name": "Theater Vault Box",
 				"visibility_rules": [ "Vaults, $isNotDisabledByPostgame|195318" ],
+				"access_rules": [ "@Places/tunnels" ],
 				"item_count": 1
 			}
 		],
@@ -6136,11 +6119,11 @@
 	},
 	{
 		"name": "Tunnels Exit to Theater",
-		"access_rules": [ "@Places/tunnels" ],
 		"sections": [
 			{
 				"name": "Theater Shortcut Panel",
 				"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|161586", "doorsMix, $isNotDisabledByPostgame|161586" ],
+				"access_rules": [ "@Places/tunnels" ],
 				"item_count": 1
 			}
 		],
@@ -6156,13 +6139,12 @@
 	{
 		"name": "Tunnels Exit to Town",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40583" ],
-		"access_rules": [ "@Places/tunnels" ],
 		"sections": [
 			{
 				"name": "Town Shortcut Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158521",
-					"Tunnels Town Shortcut (Panel), $canSolve|158521"
+					"$isNotPanelsOnly, $canSolve|158521, @Places/tunnels",
+					"Tunnels Town Shortcut (Panel), $canSolve|158521, @Places/tunnels"
 				],
 				"item_count": 1
 			}
@@ -6178,11 +6160,11 @@
 	},
 	{
 		"name": "Tunnels Exit to Desert",
-		"access_rules": [ "@Places/tunnels" ],
 		"sections": [
 			{
 				"name": "Desert Shortcut Panel",
 				"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|161597", "doorsMix, $isNotDisabledByPostgame|161597" ],
+				"access_rules": [ "@Places/tunnels" ],
 				"item_count": 1
 			}
 		],
