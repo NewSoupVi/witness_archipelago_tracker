@@ -164,6 +164,9 @@ end
 
 
 function canSolve(ids)
+	if Tracker:ProviderCountForCode("Symbols") == 0 then
+		return true
+	end
 	ids = parseIds(ids)
 	require(getLogicFile())
 	for id in ids:gmatch("%S+") do

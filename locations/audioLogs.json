@@ -133,8 +133,8 @@
       {
         "name": "Audio Log",
         "access_rules": [
-          "@Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
-          "@Places/quarryStoneworksUpstairs"
+          "@Places/quarryStoneworksUpstairs",
+          "showSnipes, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
         ]
       }
     ],
