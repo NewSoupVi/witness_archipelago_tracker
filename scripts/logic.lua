@@ -70,6 +70,10 @@ function hasPanel(panel)
 	end
 end
 
+function isNotPanelsOnlyOrHasPanel(panel)
+	return isNotPanelsOnly() or hasPanel(panel)
+end
+
 function Warp(location)
 	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then return true
 	else return false

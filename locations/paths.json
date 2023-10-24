@@ -4,8 +4,7 @@
 		"visibility_rules": [ "never" ],
 		"sections": [
 			{
-				"name": "Gate",
-				"item_count": 1
+				"name": "Gate"
 			}
 		],
 		"map_locations": [
@@ -23,8 +22,7 @@
 		"access_rules": [ "Orchard Middle Gate" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -42,8 +40,7 @@
 		"access_rules": [ "Orchard Final Gate" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -64,8 +61,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -83,8 +79,7 @@
 		"access_rules": [ "Outside Tutorial Optional Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -105,8 +100,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -127,8 +121,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -146,8 +139,7 @@
 		"access_rules": [ "Glass Factory Back Wall" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -168,8 +160,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -190,8 +181,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -212,8 +202,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -231,8 +220,7 @@
 		"access_rules": [ "Desert Light Room Light Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -250,8 +238,7 @@
 		"access_rules": [ "Desert Door to Pond Room" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -272,8 +259,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -291,8 +277,7 @@
 		"access_rules": [ "Desert Flood Room Flood Controls (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -310,8 +295,7 @@
 		"access_rules": [ "Desert Door to Elevator Room" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -329,8 +313,7 @@
 		"access_rules": [ "Desert Elevator Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -352,8 +335,7 @@
 		],
 		"sections": [
 			{
-				"name": "Elevator",
-				"item_count": 1
+				"name": "Elevator"
 			}
 		],
 		"map_locations": [
@@ -371,8 +353,7 @@
 		"access_rules": [ "Quarry Stoneworks Rooftop Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -393,8 +374,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -415,8 +395,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -434,8 +413,7 @@
 		"access_rules": [ "Quarry Stoneworks Side Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -453,8 +431,7 @@
 		"access_rules": [ "Quarry Stoneworks Stairs" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -472,13 +449,11 @@
 		"sections": [
 			{
 				"name": "Ramp Controls Panel",
-				"access_rules": [ "Quarry Stoneworks Ramp Controls (Panel)" ],
-				"item_count": 1
+				"access_rules": [ "Quarry Stoneworks Ramp Controls (Panel)" ]
 			},
 			{
 				"name": "Lift Controls Panel",
-				"access_rules": [ "Quarry Stoneworks Elevator Controls (Panel)" ],
-				"item_count": 1
+				"access_rules": [ "Quarry Stoneworks Elevator Controls (Panel)" ]
 			}
 		],
 		"map_locations": [
@@ -499,8 +474,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -518,8 +492,7 @@
 		"access_rules": [ "Quarry Boathouse Boat Staircase" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -537,8 +510,7 @@
 		"access_rules": [ "Quarry Boathouse Ramp Height Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -556,8 +528,7 @@
 		"access_rules": [ "Quarry Boathouse Ramp Horizontal Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -575,8 +546,7 @@
 		"access_rules": [ "Quarry Boathouse Hook Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -594,8 +564,7 @@
 		"access_rules": [ "Quarry Boathouse First Barrier" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -613,8 +582,7 @@
 		"access_rules": [ "Quarry Boathouse Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -632,8 +600,7 @@
 		"access_rules": [ "Shadows Barrier to Quarry" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -654,8 +621,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -673,8 +639,7 @@
 		"access_rules": [ "Shadows Barrier to Ledge" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -692,13 +657,11 @@
 		"sections": [
 			{
 				"name": "Left Door",
-				"access_rules": [ "Shadows Laser Room Left Door" ],
-				"item_count": 1
+				"access_rules": [ "Shadows Laser Room Left Door" ]
 			},
 			{
 				"name": "Right Door",
-				"access_rules": [ "Shadows Laser Room Right Door" ],
-				"item_count": 1
+				"access_rules": [ "Shadows Laser Room Right Door" ]
 			}
 		],
 		"map_locations": [
@@ -716,8 +679,7 @@
 		"access_rules": [ "Keep Shortcut to Shadows" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -735,8 +697,7 @@
 		"access_rules": [ "Keep Pressure Plates 1 Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -754,8 +715,7 @@
 		"access_rules": [ "Keep Pressure Plates 2 Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -773,8 +733,7 @@
 		"access_rules": [ "Keep Pressure Plates 3 Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -792,8 +751,7 @@
 		"access_rules": [ "Keep Pressure Plates 4 Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -811,8 +769,7 @@
 		"access_rules": [ "Keep Tower Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -833,8 +790,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -855,8 +811,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -877,8 +832,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -899,8 +853,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -918,8 +871,7 @@
 		"access_rules": [ "Keep Hedge Maze 2 Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -937,8 +889,7 @@
 		"access_rules": [ "Keep Hedge Maze 3 Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -956,8 +907,7 @@
 		"access_rules": [ "Keep Hedge Maze 4 Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -978,8 +928,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1000,8 +949,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1022,8 +970,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1044,8 +991,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1066,8 +1012,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1088,8 +1033,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1107,8 +1051,7 @@
 		"access_rules": [ "Swamp Sliding Bridge (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1126,8 +1069,7 @@
 		"access_rules": [ "Swamp Cyan Water Pump" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1145,8 +1087,7 @@
 		"access_rules": [ "Swamp Red Water Pump" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1164,8 +1105,7 @@
 		"access_rules": [ "Swamp Blue Water Pump" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1183,8 +1123,7 @@
 		"access_rules": [ "Swamp Purple Water Pump" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1202,8 +1141,7 @@
 		"access_rules": [ "Swamp Door to Broken Shapers" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1221,8 +1159,7 @@
 		"access_rules": [ "Swamp Door to Rotated Shapers" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1240,8 +1177,7 @@
 		"access_rules": [ "Swamp Rotating Bridge (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1262,8 +1198,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1281,8 +1216,7 @@
 		"access_rules": [ "Swamp Near Laser Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1300,8 +1234,7 @@
 		"access_rules": [ "Swamp Red Underwater Exit" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1319,8 +1252,7 @@
 		"access_rules": [ "Swamp Maze Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1338,8 +1270,7 @@
 		"access_rules": [ "Swamp Long Bridge (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1360,8 +1291,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1382,8 +1312,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1400,8 +1329,7 @@
 		"visibility_rules": [ "never" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1419,8 +1347,7 @@
 		"access_rules": [ "Mountain Floor 1 Bridge (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1438,8 +1365,7 @@
 		"access_rules": [ "Inside Mountain First Layer Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1457,8 +1383,7 @@
 		"access_rules": [ "Mountain Floor 2 Bridge Near (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1476,8 +1401,7 @@
 		"access_rules": [ "Inside Mountain Second Layer Staircase Near" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1495,8 +1419,7 @@
 		"access_rules": [ "Mountain Floor 2 Bridge Far (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1514,8 +1437,7 @@
 		"access_rules": [ "Inside Mountain Second Layer Staircase Far" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1533,8 +1455,7 @@
 		"access_rules": [ "Inside Mountain Second Layer Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1552,8 +1473,7 @@
 		"access_rules": [ "Mountain Elevator (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1571,8 +1491,7 @@
 		"access_rules": [ "Inside Mountain Giant Puzzle Exit Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1590,8 +1509,7 @@
 		"access_rules": [ "Inside Mountain Door to Final Room" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1609,8 +1527,7 @@
 		"access_rules": [ "Inside Mountain Bottom Layer Rock" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1631,8 +1548,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1650,8 +1566,7 @@
 		"access_rules": [ "Caves Elevator (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1672,8 +1587,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1691,8 +1605,7 @@
 		"access_rules": [ "Caves Pillar Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1713,8 +1626,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1735,8 +1647,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1754,8 +1665,7 @@
 		"access_rules": [ "Theater Walkway Door to Desert Elevator Room" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1773,8 +1683,7 @@
 		"access_rules": [ "Theater Walkway Door to Back of Theater" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1795,8 +1704,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1814,8 +1722,7 @@
 		"access_rules": [ "Windmill Turn Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1836,8 +1743,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1855,8 +1761,7 @@
 		"access_rules": [ "Theater Video Input (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1874,8 +1779,7 @@
 		"access_rules": [ "Theater Exit (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1893,8 +1797,7 @@
 		"access_rules": [ "Theater Exit Door Left" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1912,8 +1815,7 @@
 		"access_rules": [ "Theater Exit Door Right" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1934,8 +1836,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1956,8 +1857,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -1975,8 +1875,7 @@
 		"access_rules": [ "Town Maze Rooftop Bridge (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -1994,8 +1893,7 @@
 		"access_rules": [ "Town Wooden Roof Staircase" ],
 		"sections": [
 			{
-				"name": "Doors",
-				"item_count": 1
+				"name": "Doors"
 			}
 		],
 		"map_locations": [
@@ -2013,8 +1911,7 @@
 		"access_rules": [ "Town Tower Lattice Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2032,8 +1929,7 @@
 		"access_rules": [ "Town Tower Red Roof Set Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2051,8 +1947,7 @@
 		"access_rules": [ "Town Tower Wooden Roof Set Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2070,8 +1965,7 @@
 		"access_rules": [ "Town Tower Environmental Set Door" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2092,8 +1986,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2114,8 +2007,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2133,8 +2025,7 @@
 		"access_rules": [ "Town RGB Room RGB Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -2151,8 +2042,7 @@
 		"access_rules": [ "Town RGB House Staircase" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2173,8 +2063,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2195,8 +2084,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2214,8 +2102,7 @@
 		"access_rules": [ "Monastery Shutter Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -2233,8 +2120,7 @@
 		"access_rules": [ "Monastery Door to Garden" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2252,8 +2138,7 @@
 		"access_rules": [ "River Shortcut to Monastery Garden" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2274,8 +2159,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2296,8 +2180,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2318,8 +2201,7 @@
 		],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2337,8 +2219,7 @@
 		"access_rules": [ "Bunker Door to Ultraviolet Room" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2356,8 +2237,7 @@
 		"access_rules": [ "Bunker UV Room Drop-Down Door Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -2375,8 +2255,7 @@
 		"access_rules": [ "Bunker Door to Elevator" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2394,8 +2273,7 @@
 		"access_rules": [ "Bunker Elevator Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Panel",
-				"item_count": 1
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
@@ -2413,8 +2291,7 @@
 		"access_rules": [ "Monastery Shortcut" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
@@ -2432,8 +2309,7 @@
 		"access_rules": [ "Jungle Bamboo Shortcut to River" ],
 		"sections": [
 			{
-				"name": "Door",
-				"item_count": 1
+				"name": "Door"
 			}
 		],
 		"map_locations": [
