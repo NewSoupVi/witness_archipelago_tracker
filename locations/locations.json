@@ -566,7 +566,6 @@
 				"name": "Right 5",
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
-					"randomizationVanilla, $canSolve|158041-158045, @Places/overworld, @Places/symmetryOuter",
 					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]"
 				],
 				"item_count": 1
@@ -941,7 +940,6 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
-					"randomizationVanilla, $canSolve|158087-158090, @Places/overworld, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]"
 				],
 				"item_count": 1

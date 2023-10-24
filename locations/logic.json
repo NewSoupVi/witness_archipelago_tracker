@@ -481,7 +481,7 @@
 					"$isNotDoors, $isExpert|off, @Town Church/Entry Panel",
 					"$isNotDoors, $isExpert|on, @RGB House/RGB Room Right",
 					"Town Door to Church",
-					"[Town Door to Church], randomizationVanilla"
+					"showSnipes, [Town Door to Church], randomizationVanilla"
 				],
 				"item_count": 1
 			},
