@@ -1411,9 +1411,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Places/quarryBoathouseUpstairsBack",
-					"showSnipes, [@Places/quarryBoathouseUpstairsBack]",
-					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
-					"showSnipes, @Places/quarryBoathouseUpstairsBack, [Quarry Boathouse First Barrier], [Quarry Boathouse Shortcut]"
+					"showSnipes, [@Places/quarryBoathouseUpstairsBack]"
 				],
 				"item_count": 1
 			},
