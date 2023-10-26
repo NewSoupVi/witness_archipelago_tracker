@@ -453,9 +453,7 @@
 			{
 				"name": "townLaser",
 				"access_rules": [
-					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Tutorial Outpost/Discard",
 					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Outside Glass Factory/Rooftop Discard",
-					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Theater/Discard",
 					"$isNotDoors, unrandomized, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal",
 					"Town Tower Red Roof Set Door, Town Tower Lattice Door, Town Tower Environmental Set Door, Town Tower Wooden Roof Set Door"
 				],
