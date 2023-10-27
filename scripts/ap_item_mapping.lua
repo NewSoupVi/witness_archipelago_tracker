@@ -272,6 +272,9 @@ SETTINGS_MAPPING = {
 	["puzzle_randomization"] = "puzzleRandomization",
 	["shuffle_boat"] = "Boat",
 	["elevators_come_to_you"] = "autoElevators",
-	["disabled_entities"] = "disabledPanels"
+	["disabled_entities"] = "disabledPanels",
+	["expect_snipes"] = "snipesDifficulty",
+	["expect_non_randomized_snipes"] = "nonRandomizedSnipes",
+	["expect_prior_knowledge"] = "Foreknowledge"
 
 }

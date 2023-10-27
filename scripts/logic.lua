@@ -74,6 +74,14 @@ function isNotPanelsOnlyOrHasPanel(panel)
 	return isNotPanelsOnly() or hasPanel(panel)
 end
 
+function Snipeable(difficulty)
+	return Tracker:FindObjectForCode("snipesDifficulty").CurrentStage >= tonumber(difficulty)
+end
+
+function Foreknowable(difficulty)
+	return Tracker:FindObjectForCode("Foreknowledge").CurrentStage >= tonumber(difficulty)
+end
+
 function Warp(location)
 	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then return true
 	else return false

@@ -23,10 +23,11 @@
 			},
 			{
 				"name": "Gate EP",
-				"visibility_rules": [ "eps, Unrandomized, Vaults, $isNotDisabledByPostgame|210223" ],
+				"visibility_rules": [ "eps, Unrandomized, Vaults, $isNotDisabledByPostgame|210223", "eps, $Foreknowable|1, Unrandomized, $isNotDisabledByPostgame|210223" ],
 				"access_rules": [
 					"@Tutorial Gate/Gate Open, @Places/tunnels",
-					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels]"
+					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels]",
+					"$Snipeable|1, @Tutorial Gate/Gate Open"
 				]
 			}
 		],
@@ -44,7 +45,7 @@
 		"sections": [
 			{
 				"name": "Gate EP (Town Side 2)",
-				"visibility_rules": [ "obelisks, Unrandomized, Vaults" ],
+				"visibility_rules": [ "obelisks, Unrandomized, Vaults, $isNotDisabledByPostgame|210223", "obelisks, $Foreknowable|1, Unrandomized, $isNotDisabledByPostgame|210223" ],
 				"access_rules": [ "@Tutorial Gate/Gate EP" ]
 			}
 		],
@@ -332,7 +333,8 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"@Places/overworld",
-					"showSnipes, [@Places/overworld], @Places/ocean"
+					"showSnipes, [@Places/overworld], @Places/ocean",
+					"$Snipeable|1, @Places/ocean"
 				]
 			},
 			{
@@ -441,7 +443,8 @@
 		"name": "Inside Glass Factory",
 		"access_rules": [
 			"@Places/glassFactory",
-			"showSnipes, @Places/overworld, [@Places/glassFactory]"
+			"showSnipes, @Places/overworld, [@Places/glassFactory]",
+			"$Snipeable|2, @Places/overworld"
 		],
 		"sections": [
 			{
@@ -524,7 +527,8 @@
 				"name": "Right 5",
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
-					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]"
+					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
+					"$Snipeable|2, randomizationVanilla, $canSolve|158041-158045, @Places/overworld"
 				]
 			},
 			{
@@ -556,7 +560,8 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"@Places/symmetryInner",
-					"showSnipes, @Places/symmetryOuter, [@Places/symmetryInner]"
+					"showSnipes, @Places/symmetryOuter, [@Places/symmetryInner]",
+					"$Snipeable|1, @Places/symmetryOuter"
 				]
 			},
 			{
@@ -864,7 +869,9 @@
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"$Snipeable|2, randomizationVanilla, $canSolve|158087-158090, @Places/overworld",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"$Snipeable|1, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight"
 				]
 			},
 			{
@@ -880,7 +887,8 @@
 				"name": "Flood Room Puzzles",
 				"access_rules": [
 					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
-					"showSnipes, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
+					"showSnipes, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
+					"$Foreknowable|2, $canSolve|158105-158110, @Places/desertFlood"
 				]
 			},
 			{
@@ -1141,14 +1149,21 @@
 				"access_rules": [
 					"$canSolve|158125-158130, @Places/quarryStoneworksMid",
 					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry",
-					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarryStoneworks"
+					"$Snipeable|2, $canSolve|158125-158130, @Places/quarry",
+					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarryStoneworks",
+					"$Snipeable|1, $canSolve|158125-158130, @Places/quarryStoneworks",
+					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld",
+					"$Snipeable|3, $canSolve|158125-158130, @Places/overworld"
 				]
 			},
 			{
 				"name": "Upper Row",
 				"access_rules": [
 					"$canSolve|158134-158141, @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
+					"$Snipeable|2, $canSolve|158134-158141, @Places/quarryStoneworks",
+					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworksMid, [@Places/quarryStoneworksUpstairs]",
+					"$Snipeable|3, $canSolve|158134-158141, @Places/quarryStoneworksMid"
 				]
 			},
 			{
@@ -1165,8 +1180,11 @@
 				"access_rules": [
 					"$canSolve|158123, @Places/quarryStoneworks",
 					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld",
+					"$Snipeable|1, $canSolve|158123, @Places/overworld",
 					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid"
+					"$Snipeable|1, $canSolve|158123, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid",
+					"$Snipeable|1, $canSolve|158123, @Places/quarryStoneworksMid"
 				]
 			},
 			{
@@ -1178,7 +1196,8 @@
 				"name": "Stairs Control Panel",
 				"access_rules": [
 					"$canSolve|158142, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"showSnipes, $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
+					"$Snipeable|3, nonRandomizedSnipes, $canSolve|158142, @Places/quarryStoneworks"
 				]
 			},
 			{
@@ -1187,7 +1206,8 @@
 				"access_rules": [
 					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
 					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
+					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs",
+					"$Snipeable|1, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
@@ -1196,7 +1216,8 @@
 				"access_rules": [
 					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
 					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
+					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs",
+					"$Snipeable|1, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
 				]
 			}
 		],
@@ -1239,15 +1260,17 @@
 			{
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158121, @Places/quarry",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121, @Places/overworld",
+					"$Snipeable|2, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158121, @Places/overworld"
 				]
 			},
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122, @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld",
+					"$Snipeable|3, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/overworld"
 				]
 			}
 		],
@@ -1276,7 +1299,9 @@
 				"access_rules": [
 					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
 					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarry",
-					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarryUpstairsBack"
+					"$Snipeable|1, $canSolve|158149-158153, @Places/quarry",
+					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarryUpstairsBack",
+					"$Snipeable|2, $canSolve|158149-158153, @Places/quarryUpstairsBack"
 				]
 			},
 			{
@@ -1292,7 +1317,8 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Places/quarryBoathouseUpstairsBack",
-					"showSnipes, [@Places/quarryBoathouseUpstairsBack], @Places/quarry"
+					"showSnipes, [@Places/quarryBoathouseUpstairsBack], @Places/quarry",
+					"$Snipeable|1, @Places/quarry"
 				]
 			},
 			{
@@ -1393,7 +1419,8 @@
 				"name": "Door 2",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
+					"$Snipeable|2, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld"
 				]
 			},
 			{
@@ -1458,9 +1485,9 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188-158190, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188-158190, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188-158190, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]",
+					"$Snipeable|2, nonRandomizedSnipes, $canSolve|158188-158190, @Places/overworld"
 				]
 			},
 			{
@@ -1468,9 +1495,9 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188-158192, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188-158192, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]",
+					"$Snipeable|2, nonRandomizedSnipes, $canSolve|158188-158192, @Places/overworld"
 				]
 			},
 			{
@@ -1478,9 +1505,9 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]",
+					"$Snipeable|2, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld"
 				]
 			},
 			{
@@ -1494,7 +1521,9 @@
 				"access_rules": [
 					"$canSolve|158187, @Places/shadowsFirstSet",
 					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/overworld",
-					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/quarry"
+					"$Snipeable|1, $canSolve|158187, @Places/overworld",
+					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/quarry",
+					"$Snipeable|1, $canSolve|158187, @Places/quarry"
 				]
 			}
 		],
@@ -1691,7 +1720,9 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door, @Places/overworld"
+					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze3",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door, @Places/overworld",
+					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, Keep Hedge Maze 2 Exit Door, @Places/overworld"
 				]
 			}
 		],
@@ -1712,7 +1743,8 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld",
+					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, Keep Hedge Maze 3 Exit Door, @Places/overworld"
 				]
 			}
 		],
@@ -1733,7 +1765,8 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 4 (Panel), $canSolve|158196, @Places/maze4",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4], @Places/overworld"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4], @Places/overworld",
+					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 4 (Panel), $canSolve|158196, @Places/overworld"
 				]
 			}
 		],
@@ -1780,7 +1813,8 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"@Pressure Plates 2/Pressure Plates, @Places/keepTower",
-					"showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]"
+					"showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]",
+					"$Snipeable|1, @Pressure Plates 2/Pressure Plates"
 				]
 			}
 		],
@@ -1840,7 +1874,8 @@
 				"visibility_rules": [ "Discarded" ],
 				"access_rules": [
 					"$canSolve|158604, @Places/plates4",
-					"showSnipes, $canSolve|158604, [@Places/plates4], @Places/keepTower"
+					"showSnipes, $canSolve|158604, [@Places/plates4], @Places/keepTower",
+					"$Snipeable|1, $canSolve|158604, @Places/keepTower"
 				]
 			},
 			{
@@ -1947,7 +1982,8 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158704, @Places/keepTower, @Hedge Maze 1/Exit Panel, @Hedge Maze 2/Exit Panel, @Hedge Maze 3/Exit Panel, @Hedge Maze 4/Exit Panel",
-					"showSnipes, $canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], @Hedge Maze 4/Exit Panel"
+					"showSnipes, $canSolve|158704, @Places/keepTower, [@Hedge Maze 1/Exit Panel], [@Hedge Maze 2/Exit Panel], [@Hedge Maze 3/Exit Panel], @Hedge Maze 4/Exit Panel",
+					"$Foreknowable|1, $canSolve|158704, @Places/keepTower, @Hedge Maze 4/Exit Panel"
 				]
 			},
 			{
@@ -1955,8 +1991,10 @@
 				"access_rules": [
 					"$isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
 					"showSnipes, $isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
+					"$Foreknowable|2, $isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 4/Pressure Plates",
 					"$isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
-					"showSnipes, $isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
+					"showSnipes, $isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]",
+					"$Foreknowable|2, $isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 2/Pressure Plates"
 				]
 			},
 			{
@@ -1964,7 +2002,10 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Places/keepTower",
-					"showSnipes, [@Places/keepTower], @Places/plates3"
+					"showSnipes, [@Places/keepTower], @Places/plates3",
+					"$Snipeable|2, @Places/plates3",
+					"showSnipes, [@Places/keepTower], @Places/plates4",
+					"$Snipeable|1, @Places/plates4"
 				]
 			},
 			{
@@ -2177,7 +2218,8 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
-					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]"
+					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]",
+					"$Foreknowable|1, $canSolve|158210-158212, @Places/overworld"
 				]
 			},
 			{
@@ -2341,7 +2383,8 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158220-158224, @Places/overworld, @Places/redRoof",
-					"showSnipes, $canSolve|158220-158224, @Places/overworld, [@Places/redRoof]"
+					"showSnipes, $canSolve|158220-158224, @Places/overworld, [@Places/redRoof]",
+					"$Snipeable|1, nonRandomizedSnipes, $canSolve|158220-158224, @Places/overworld"
 				]
 			}
 		],
@@ -2367,7 +2410,8 @@
 					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
 					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
+					"$Foreknowable|2, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld"
 				]
 			}
 		],
@@ -2459,7 +2503,8 @@
 				"name": "RGB Room Left",
 				"access_rules": [
 					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
+					"showSnipes, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"$Foreknowable|2, $canSolve|158245, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2467,8 +2512,10 @@
 				"access_rules": [
 					"$isExpert|off, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"$Foreknowable|2, $isExpert|off, $canSolve|158246, @Places/RGBHouseUpstairs",
 					"$isExpert|on, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs",
+					"$Foreknowable|2, $isExpert|on, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2802,25 +2849,26 @@
 			},
 			{
 				"name": "Tutorial Video",
-				"visibility_rules": [ "Vaults, Unrandomized" ],
+				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
 					"@Outside Tutorial Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Outside Tutorial Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+					"showSnipes, [@Outside Tutorial Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
 				]
 			},
 			{
 				"name": "Window EP",
-				"visibility_rules": [ "eps, Unrandomized, Vaults" ],
+				"visibility_rules": [ "eps, Unrandomized, Vaults", "eps, $Foreknowable|1, Unrandomized" ],
 				"access_rules": [ "@Theater/Tutorial Video" ]
 			},
 			{
 				"name": "Door EP",
-				"visibility_rules": [ "eps, Unrandomized, Vaults" ],
+				"visibility_rules": [ "eps, Unrandomized, Vaults", "eps, $Foreknowable|1, Unrandomized" ],
 				"access_rules": [ "@Theater/Tutorial Video" ]
 			},
 			{
 				"name": "Flowers EP",
-				"visibility_rules": [ "eps, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488" ],
+				"visibility_rules": [ "eps, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "eps, epDiffTedious, Unrandomized, $Foreknowable|1, $isNotDisabledByPostgame|211488", "eps, epDiffEclipse, Unrandomized, $Foreknowable|1, $isNotDisabledByPostgame|211488" ],
 				"access_rules": [
 					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels",
 					"@Theater/Tutorial Video, Theater Walkway Door to Town",
@@ -2831,36 +2879,39 @@
 			},
 			{
 				"name": "Desert Video",
-				"visibility_rules": [ "Vaults, Unrandomized" ],
+				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
 					"@Desert Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Desert Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+					"showSnipes, [@Desert Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
 				]
 			},
 			{
 				"name": "Jungle Video",
-				"visibility_rules": [ "Vaults, Unrandomized" ],
+				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
 					"@Between Jungle and Monastery/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Between Jungle and Monastery/Vault Box], $hasPanel|Theater Video Input (Panel)"
+					"showSnipes, [@Between Jungle and Monastery/Vault Box], $hasPanel|Theater Video Input (Panel)",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
 				]
 			},
 			{
 				"name": "Church EP",
-				"visibility_rules": [ "eps, Unrandomized, Vaults" ],
+				"visibility_rules": [ "eps, Unrandomized, Vaults", "eps, $Foreknowable|1, Unrandomized" ],
 				"access_rules": [ "@Theater/Jungle Video" ]
 			},
 			{
 				"name": "Challenge Video",
-				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabledByPostgame|13641" ],
+				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabledByPostgame|13641", "eps, $Foreknowable|1, Unrandomized, $isNotDisabledByPostgame|13641" ],
 				"access_rules": [
 					"@Mountain Challenge Area/Challenge Vault, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel)"
+					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel)",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
 				]
 			},
 			{
 				"name": "Eclipse EP",
-				"visibility_rules": [ "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382" ],
+				"visibility_rules": [ "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382", "eps, epDiffEclipse, $Foreknowable|1, Unrandomized, $isNotDisabledByPostgame|211382" ],
 				"access_rules": [
 					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
 					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250",
@@ -2870,18 +2921,20 @@
 			},
 			{
 				"name": "Shipwreck Video",
-				"visibility_rules": [ "Vaults, Unrandomized" ],
+				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
 					"@Shipwreck Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Shipwreck Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+					"showSnipes, [@Shipwreck Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
 				]
 			},
 			{
 				"name": "Mountain Video",
-				"visibility_rules": [ "Vaults, Unrandomized" ],
+				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
 					"@Mountainside Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Mountainside Vault/Vault Box], $hasPanel|Theater Video Input (Panel)"
+					"showSnipes, [@Mountainside Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
 				]
 			}
 
@@ -2941,27 +2994,27 @@
 		"sections": [
 			{
 				"name": "Window EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, Unrandomized, Vaults" ],
+				"visibility_rules": [ "obelisks, Unrandomized, Vaults", "obelisks, $Foreknowable|1, Unrandomized" ],
 				"access_rules": [ "@Theater/Window EP" ]
 			},
 			{
 				"name": "Door EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, Unrandomized, Vaults" ],
+				"visibility_rules": [ "obelisks, Unrandomized, Vaults", "obelisks, $Foreknowable|1, Unrandomized" ],
 				"access_rules": [ "@Theater/Door EP" ]
 			},
 			{
 				"name": "Flowers EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "obelisks, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488" ],
+				"visibility_rules": [ "obelisks, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "obelisks, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "obelisks, epDiffTedious, Unrandomized, $Foreknowable|1, $isNotDisabledByPostgame|211488", "obelisks, epDiffEclipse, Unrandomized, $Foreknowable|1, $isNotDisabledByPostgame|211488" ],
 				"access_rules": [ "@Theater/Flowers EP" ]
 			},
 			{
 				"name": "Church EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, Unrandomized, Vaults" ],
+				"visibility_rules": [ "obelisks, Unrandomized, Vaults", "obelisks, $Foreknowable|1, Unrandomized" ],
 				"access_rules": [ "@Theater/Church EP" ]
 			},
 			{
 				"name": "Eclipse EP (Town Side 6)",
-				"visibility_rules": [ "obelisks, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382" ],
+				"visibility_rules": [ "obelisks, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382", "obelisks, epDiffEclipse, Unrandomized, $Foreknowable|1, $isNotDisabledByPostgame|211382" ],
 				"access_rules": [ "@Theater/Eclipse EP" ]
 			}
 
@@ -3379,7 +3432,8 @@
 				"access_rules": [
 					"@Color Bunker/Intro Back, @Places/bunkerAntechamber",
 					"Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
+					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]",
+					"$Snipeable|1, Inside Bunker Door to Bunker Proper (Panel), @Places/overworld"
 				]
 			},
 			{
@@ -3387,7 +3441,8 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158269-158273, @Places/bunkerAntechamber",
-					"showSnipes, $canSolve|158269-158273, @Places/overworld, [@Places/bunkerAntechamber]"
+					"showSnipes, $canSolve|158269-158273, @Places/overworld, [@Places/bunkerAntechamber]",
+					"$Snipeable|2, nonRandomizedSnipes, $canSolve|158269-158273, @Places/overworld"
 				]
 			},
 			{
@@ -3401,7 +3456,9 @@
 				"access_rules": [
 					"$canSolve|158279-158281, Bunker Tinted Glass Door, @Places/bunkerTintedRoom",
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/bunkerTintedRoom",
+					"$Foreknowable|1, $canSolve|158279-158281, @Places/bunkerTintedRoom",
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/overworld, [@Places/bunkerTintedRoom]",
+					"$Snipeable|2, nonRandomizedSnipes, $canSolve|158279-158281, @Places/overworld",
 					"doorsNo, $canSolve|158279-158281, @Color Bunker/Intro Back",
 					"$isNotDoors, $canSolve|158279-158281, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber"
 				]
@@ -3411,7 +3468,8 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel)",
-					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]"
+					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]",
+					"$Foreknowable|1, $canSolve|158284-158285, @Places/bunkerUV"
 				]
 			},
 			{
@@ -3434,7 +3492,8 @@
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
 					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom",
 					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber",
-					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]"
+					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]",
+					"$Snipeable|1, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld"
 				]
 			}
 		],
@@ -3536,7 +3595,11 @@
 			},
 			{
 				"name": "Intro Front",
-				"access_rules": [ "$canSolve|158288-158293, @Places/swampEntry" ]
+				"access_rules": [
+					"$canSolve|158288-158293, @Places/swampEntry",
+					"showSnipes, $canSolve|158288-158293, @Places/overworld, [@Places/swampEntry]",
+					"$Snipeable|3, $canSolve|158288-158293, @Places/overworld"
+				]
 			},
 			{
 				"name": "Intro Back",
@@ -3567,7 +3630,8 @@
 				"name": "Between Bridges Near Row",
 				"access_rules": [
 					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform Area/Platform Set",
-					"showSnipes, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform Area/Platform Set"
+					"showSnipes, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform Area/Platform Set",
+					"$Snipeable|2, $canSolve|158303-158306, @Swamp Platform Area/Platform Set"
 				]
 			},
 			{
@@ -3638,7 +3702,8 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]",
+					"$Snipeable|1, autoElevators"
 				]
 			},
 			{
@@ -3979,7 +4044,8 @@
 				"name": "Second Door Panel",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
+					"$Snipeable|2, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), @Places/treehouseDock"
 				]
 			},
 			{
@@ -4069,7 +4135,9 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseDrawbridge",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseMain, [@Places/treehouseDrawbridge]"
+					"$Snipeable|2, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseMain, [@Places/treehouseDrawbridge]",
+					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseMain"
 				]
 			},
 			{
@@ -4500,7 +4568,8 @@
 				"access_rules": [
 					"$laserBox|long, $longBoxWithoutMountainEntry, @Places/overworld",
 					"$laserBox|long, @Mountaintop/Mountain Entry, @Places/overworld",
-					"showSnipes, $laserBox|long, [@Mountaintop/Mountain Entry], @Places/overworld"
+					"showSnipes, $laserBox|long, [@Mountaintop/Mountain Entry], @Places/overworld",
+					"$Snipeable|1, $laserBox|long, @Places/overworld"
 				]
 			},
 			{

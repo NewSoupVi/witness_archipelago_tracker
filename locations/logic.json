@@ -127,6 +127,7 @@
 					"$Warp|Desert Laser Room",
 					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
 					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
+					"$Foreknowable|2, $isNotDoors, @Places/desertFlood",
 					"Desert Door to Elevator Room, @Places/desertFlood",
 					"$isNotDoors, Desert Elevator Door, @Places/tunnels",
 					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
@@ -147,12 +148,15 @@
 					"$Warp|Quarry",
 					"$isNotDoors, $unrandomizedSolvable, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $isNotDoors, $unrandomizedSolvable, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, $unrandomizedSolvable, @Places/overworld",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"showSnipes, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
+					"$Snipeable|1, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"autoElevators, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
+					"$Snipeable|2, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"Quarry Main Entry 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
@@ -167,7 +171,8 @@
 					"Quarry Stoneworks Side Door, @Places/quarry",
 					"Quarry Door to Stoneworks, @Places/quarry",
 					"$isNotDoors, $hasPanel|Quarry Door to Stoneworks (Panel), @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
-					"showSnipes, $isNotDoors, [$hasPanel|Quarry Door to Stoneworks (Panel)], [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry, @Places/overworld"
+					"showSnipes, $isNotDoors, [$hasPanel|Quarry Door to Stoneworks (Panel)], [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry, @Places/overworld",
+					"$Snipeable|1, $isNotDoors, @Places/quarry, @Places/overworld"
 				]
 			},
 			{
@@ -186,7 +191,8 @@
 					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
 					"$canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
-					"showSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]"
+					"showSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]",
+					"$Snipeable|3, nonRandomizedSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142"
 				]
 			},
 			{
@@ -203,6 +209,7 @@
 					"$Warp|Quarry Boathouse Upstairs Back",
 					"$isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
 					"showSnipes, $isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
+					"$Snipeable|1, $isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153",
 					"@Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
 					"@Places/quarryBoathouseUpstairsFront, $canSolve|158154, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
 				]
@@ -213,6 +220,7 @@
 					"$Warp|Shadows First Set",
 					"$isNotDoors, $unrandomizedSolvable, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $isNotDoors, $unrandomizedSolvable, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, $unrandomizedSolvable, @Places/overworld",
 					"Shadows Timed Door, @Places/overworld",
 					"Shadows Barrier to Ledge, @Places/overworld",
 					"Shadows Barrier to Quarry, @Places/quarry"
@@ -224,9 +232,12 @@
 					"$Warp|Shadows Laser",
 					"$isNotDoors, $unrandomizedSolvable, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $isNotDoors, $unrandomizedSolvable, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, $unrandomizedSolvable, @Places/overworld",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
 					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
-					"showSnipes, [Shadows Laser Room Right Door], Shadows Laser Room Left Door, @Places/overworld"
+					"$Foreknowable|1, Shadows Laser Room Right Door, @Places/overworld",
+					"showSnipes, [Shadows Laser Room Right Door], Shadows Laser Room Left Door, @Places/overworld",
+					"$Foreknowable|1, Shadows Laser Room Left Door, @Places/overworld"
 				]
 			},
 			{
@@ -455,7 +466,8 @@
 					"$Warp|Swamp Red Underwater",
 					"$isNotDoors, @Swamp Cyan Underwater Room/Cyan Underwater, @Places/swampRotated",
 					"Swamp Red Water Pump, @Places/swampRotated",
-					"showSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit, [@Places/swampRotated], [Swamp Red Water Pump]"
+					"showSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit, [@Places/swampRotated], [Swamp Red Water Pump]",
+					"$Snipeable|1, nonRandomizedSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit"
 				]
 			},
 			{
@@ -551,7 +563,8 @@
 					"$isNotDoors, $isExpert|off, @Town Church/Entry Panel, @Places/overworld",
 					"$isNotDoors, $isExpert|on, @RGB House/RGB Room Right, @Places/overworld",
 					"Town Door to Church, @Places/overworld",
-					"showSnipes, randomizationVanilla, [Town Door to Church], @Places/overworld"
+					"showSnipes, randomizationVanilla, [Town Door to Church], @Places/overworld",
+					"$Snipeable|1, randomizationVanilla, @Places/overworld"
 				]
 			},
 			{

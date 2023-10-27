@@ -194,6 +194,66 @@
 		"loop": "true"
 	},
 	{
+		"name": "Snipes Difficulty",
+		"codes": "snipesDifficulty",
+		"type": "progressive",
+		"allow_disabled": false,
+		"intial_stage_idx": 0,
+		"stages": [
+			{
+				"img": "images/NoSnipes.png",
+				"codes": "snipesNone",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/EasySnipes.png",
+				"codes": "snipesEasy",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/MediumSnipes.png",
+				"codes": "snipesMedium",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/HardSnipes.png",
+				"codes": "snipesHard",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Non-Randomized Snipes",
+		"codes": "nonRandomizedSnipes",
+		"type": "toggle",
+		"loop": true,
+		"img": "images/NonRandomizedSnipes.png"
+	},
+	{
+		"name": "Foreknowledge",
+		"codes": "Foreknowledge",
+		"type": "progressive",
+		"allow_disabled": false,
+		"intial_stage_idx": 0,
+		"stages": [
+			{
+				"img": "images/NoForeknowledge.png",
+				"codes": "foreknowledgeNone",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/NormalForeknowledge.png",
+				"codes": "foreknowledgeNormal",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/TediousForeknowledge.png",
+				"codes": "foreknowledgeTedious",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Shuffle Vaults",
 		"type": "toggle",
 		"loop": "true",

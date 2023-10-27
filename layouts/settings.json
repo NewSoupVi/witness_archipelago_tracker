@@ -91,13 +91,34 @@
 			{
 				"type": "group",
 				"dock": "right",
-				"header": "Tracker settings",
+				"header": "Snipe settings",
 				"header_background": "#3e4b57",
 				"content": [
 					{
 						"type": "item",
 						"margin": "0, 1",
 						"item": "showSnipes",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "nonRandomizedSnipes",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "snipesDifficulty",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
+						"item": "Foreknowledge",
 						"h_alignment": "center",
 						"v_alignment": "stretch"
 					}
