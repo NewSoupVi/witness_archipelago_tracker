@@ -868,8 +868,10 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
+					"$Snipeable|1, $Foreknowable|3, $canSolve|158087-158090, @Places/overworld",
+					"$Foreknowable|3, $canSolve|158087-158090, @Places/desertFloodLight",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"$Snipeable|2, randomizationVanilla, $canSolve|158087-158090, @Places/overworld",
+					"$Snipeable|1, randomizationVanilla, $canSolve|158087-158090, @Places/overworld",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"$Snipeable|1, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight"
 				]
@@ -888,7 +890,7 @@
 				"access_rules": [
 					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
 					"showSnipes, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
-					"$Foreknowable|2, $canSolve|158105-158110, @Places/desertFlood"
+					"$Foreknowable|3, $canSolve|158105-158110, @Places/desertFlood"
 				]
 			},
 			{
@@ -1163,7 +1165,7 @@
 					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
 					"$Snipeable|2, $canSolve|158134-158141, @Places/quarryStoneworks",
 					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworksMid, [@Places/quarryStoneworksUpstairs]",
-					"$Snipeable|3, $canSolve|158134-158141, @Places/quarryStoneworksMid"
+					"$Snipeable|1, $canSolve|158134-158141, @Places/quarryStoneworksMid"
 				]
 			},
 			{
@@ -1262,15 +1264,14 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158121, @Places/quarry",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121, @Places/overworld",
-					"$Snipeable|2, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158121, @Places/overworld"
+					"$Snipeable|3, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158121, @Places/overworld"
 				]
 			},
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld",
-					"$Snipeable|3, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/overworld"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld"
 				]
 			}
 		],
@@ -1300,8 +1301,8 @@
 					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
 					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarry",
 					"$Snipeable|1, $canSolve|158149-158153, @Places/quarry",
-					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarryUpstairsBack",
-					"$Snipeable|2, $canSolve|158149-158153, @Places/quarryUpstairsBack"
+					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarryBoathouseUpstairsBack",
+					"$Snipeable|2, $canSolve|158149-158153, @Places/quarryBoathouseUpstairsBack"
 				]
 			},
 			{
@@ -1420,7 +1421,7 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
-					"$Snipeable|2, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld"
+					"$Snipeable|2, $isNotDoors, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld"
 				]
 			},
 			{
@@ -2504,7 +2505,7 @@
 				"access_rules": [
 					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$Foreknowable|2, $canSolve|158245, @Places/RGBHouseUpstairs"
+					"$Foreknowable|3, $canSolve|158245, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2512,10 +2513,10 @@
 				"access_rules": [
 					"$isExpert|off, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$Foreknowable|2, $isExpert|off, $canSolve|158246, @Places/RGBHouseUpstairs",
+					"$Foreknowable|3, $isExpert|off, $canSolve|158246, @Places/RGBHouseUpstairs",
 					"$isExpert|on, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs",
-					"$Foreknowable|2, $isExpert|on, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$Foreknowable|3, $isExpert|on, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
