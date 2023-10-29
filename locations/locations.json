@@ -5428,13 +5428,13 @@
 			{
 				"name": "Blue Bridge EP",
 				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40286", "eps, epDiffEclipse, $isNotDisabledByPostgame|40286" ],
-				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge" ],
+				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ],
 				"item_count": 1
 			},
 			{
 				"name": "Yellow Bridge EP",
 				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40285", "eps, epDiffEclipse, $isNotDisabledByPostgame|40285" ],
-				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ],
+				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ],
 				"item_count": 1
 			}
 		],
