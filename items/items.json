@@ -250,6 +250,11 @@
 				"img": "images/TediousForeknowledge.png",
 				"codes": "foreknowledgeTedious",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/BruteForceForeknowledge.png",
+				"codes": "foreknowledgeBruteForce",
+				"inherit_codes": false
 			}
 		]
 	},
