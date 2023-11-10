@@ -631,6 +631,11 @@
 				"name": "Laser",
 				"access_rules": [ "$canSolve|158065-158070, @Places/symmetryInner" ],
 				"item_count": 1
+			},
+			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Symmetry Island/Laser" ]
 			}
 		],
 		"map_locations": [
@@ -638,26 +643,6 @@
 				"map": "fullmap",
 				"x": 220,
 				"y": 715
-			}
-		]
-	},
-
-	{
-		"name": "Symmetry Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Symmetry Island/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 190,
-				"y": 745,
-				"size": 15
 			}
 		]
 	},
@@ -979,6 +964,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Desert/Laser" ]
+			},
+			{
 				"name": "Pond Room Near Reflection EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [ "@Places/desertPond" ],
@@ -1011,26 +1001,6 @@
 				"map": "fullmap",
 				"x": 296,
 				"y": 298
-			}
-		]
-	},
-
-	{
-		"name": "Desert Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Desert/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 266,
-				"y": 328,
-				"size": 15
 			}
 		]
 	},
@@ -1477,6 +1447,11 @@
 				"name": "Laser",
 				"access_rules": [ "$canSolve|158703, @Quarry Boathouse/Back Second Row, @Quarry Stoneworks/Control Room Right" ],
 				"item_count": 1
+			},
+			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Quarry Laser/Laser" ]
 			}
 		],
 		"map_locations": [
@@ -1484,26 +1459,6 @@
 				"map": "fullmap",
 				"x": 625,
 				"y": 523
-			}
-		]
-	},
-
-	{
-		"name": "Quarry Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Quarry Laser/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 595,
-				"y": 553,
-				"size": 15
 			}
 		]
 	},
@@ -1735,6 +1690,10 @@
 			{
 				"name": "Laser",
 				"item_count": 1
+			},
+			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ]
 			}
 		],
 		"map_locations": [
@@ -1742,26 +1701,6 @@
 				"map": "fullmap",
 				"x": 825,
 				"y": 541
-			}
-		]
-	},
-
-	{
-		"name": "Shadows Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
-				"access_rules": [ "@Shadows Laser/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 795,
-				"y": 571,
-				"size": 15
 			}
 		]
 	},
@@ -2145,6 +2084,14 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"acesss_rules": [
+					"@Keep Tower/Laser Hedges, Unrandomized",
+					"@Keep Tower/Laser Pressure Plates"
+				]
+			},
+			{
 				"name": "Shortcut Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
@@ -2171,29 +2118,6 @@
 				"map": "fullmap",
 				"x": 1014,
 				"y": 381
-			}
-		]
-	},
-
-	{
-		"name": "Keep Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [
-					"@Keep Tower/Laser Hedges, Unrandomized",
-					"@Keep Tower/Laser Pressure Plates"
-				],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 984,
-				"y": 411,
-				"size": 15
 			}
 		]
 	},
@@ -2398,6 +2322,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
+				"access_rules": [ "@Monastery/Laser" ]
+			}
+			{
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [ "$canSolve|158208, @Places/overworld" ],
@@ -2438,26 +2367,6 @@
 				"map": "fullmap",
 				"x": 907,
 				"y": 929
-			}
-		]
-	},
-
-	{
-		"name": "Monastery Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
-				"access_rules": [ "@Monastery/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 877,
-				"y": 969,
-				"size": 15
 			}
 		]
 	},
@@ -2801,6 +2710,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Town Tower/Laser" ]
+			},
+			{
 				"name": "Town Brown Bridge EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [ "@Places/townLaser" ],
@@ -2836,26 +2750,6 @@
 				"map": "fullmap",
 				"x": 718,
 				"y": 859
-			}
-		]
-	},
-
-	{
-		"name": "Town Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Town Tower/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 748,
-				"y": 829,
-				"size": 15
 			}
 		]
 	},
@@ -3571,6 +3465,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Jungle Laser/Laser"]
+			},
+			{
 				"name": "Shortcut to River Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [ "@Places/overworld" ],
@@ -3582,26 +3481,6 @@
 				"map": "fullmap",
 				"x": 1126,
 				"y": 983
-			}
-		]
-	},
-
-	{
-		"name": "Jungle Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Jungle Laser/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 1096,
-				"y": 1013,
-				"size": 15
 			}
 		]
 	},
@@ -3785,6 +3664,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
+				"access_rules": [ "@Color Bunker/Laser" ]
+			},
+			{
 				"name": "Green Room Flowers EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
 				"access_rules": [ "@Places/bunkerLaser" ],
@@ -3806,26 +3690,6 @@
 				"map": "fullmap",
 				"x": 1361,
 				"y": 1091
-			}
-		]
-	},
-
-	{
-		"name": "Bunker Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
-				"access_rules": [ "@Color Bunker/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 1331,
-				"y": 1121,
-				"size": 15
 			}
 		]
 	},
@@ -4343,6 +4207,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Swamp Laser/Laser" ]
+			},
+			{
 				"name": "Shortcut Panels",
 				"access_rules": [ "$canSolve|158341 158342" ],
 				"item_count": 1
@@ -4353,26 +4222,6 @@
 				"map": "fullmap",
 				"x": 1312,
 				"y": 816
-			}
-		]
-	},
-
-	{
-		"name": "Swamp Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Swamp Laser/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 1282,
-				"y": 846,
-				"size": 15
 			}
 		]
 	},
@@ -4561,6 +4410,11 @@
 				"item_count": 1
 			},
 			{
+				"name": "Laser Activation",
+				"visibility_rules": [ "$isNotLaserShuffle" ],
+				"access_rules": [ "@Treehouse Laser House/Laser" ]
+			},
+			{
 				"name": "Laser House Door Inside Timer",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [ "@Places/treehouseLaser" ],
@@ -4578,26 +4432,6 @@
 				"map": "fullmap",
 				"x": 1169,
 				"y": 408
-			}
-		]
-	},
-
-	{
-		"name": "Treehouse Laser Activation",
-		"sections": [
-			{
-				"name": "Laser",
-				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Treehouse Laser House/Laser" ],
-				"item_count": 1
-			}
-		],
-		"map_locations": [
-			{
-				"map": "fullmap",
-				"x": 1139,
-				"y": 438,
-				"size": 15
 			}
 		]
 	},
