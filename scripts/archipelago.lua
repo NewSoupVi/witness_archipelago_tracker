@@ -149,7 +149,7 @@ function setReply(key, val, old)
 		end
 	end
 
-	if(val and key:sub(1, 9) == "WitnessEP") then
+	if(key:sub(1, 9) == "WitnessEP" and val) then
 		local separatorIndex, _ = key:find("-")
 		local epId = tonumber(key:sub(separatorIndex + 1))
 		local locationName = EP_DATASTORAGE_IDS[epId][1]
