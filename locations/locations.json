@@ -2495,6 +2495,24 @@
 	},
 
 	{
+		"name": "Town",
+		"sections": [
+			{
+				"name": "Pet the Dog",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "fullmap",
+				"x": 509,
+				"y": 1126,
+				"size": 15
+			}
+		]
+	},
+
+	{
 		"name": "Town Cargo Box Area",
 		"sections": [
 			{
