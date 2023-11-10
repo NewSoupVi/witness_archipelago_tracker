@@ -2325,7 +2325,7 @@
 				"name": "Laser Activation",
 				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
 				"access_rules": [ "@Monastery/Laser" ]
-			}
+			},
 			{
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
