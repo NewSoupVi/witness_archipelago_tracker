@@ -3618,7 +3618,7 @@
 				"access_rules": [
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
 					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]",
-					"$Snipeable|1, autoElevators"
+					"$Foreknowable|1, autoElevators"
 				]
 			},
 			{
