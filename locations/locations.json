@@ -1249,7 +1249,7 @@
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld",
+					"randomizationSigma, showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld",
 					"randomizationSigma, $Snipeable|4, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/overworld"
 				]
 			}
@@ -2452,7 +2452,7 @@
 				"access_rules": [
 					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$Foreknowable|3, $canSolve|158245, @Places/RGBHouseUpstairs"
+					"$Foreknowable|4, $canSolve|158245, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2460,10 +2460,10 @@
 				"access_rules": [
 					"$isExpert|off, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$Foreknowable|3, $isExpert|off, $canSolve|158246, @Places/RGBHouseUpstairs",
+					"$Foreknowable|4, $isExpert|off, $canSolve|158246, @Places/RGBHouseUpstairs",
 					"$isExpert|on, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs",
-					"$Foreknowable|3, $isExpert|on, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$Foreknowable|4, $isExpert|on, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2531,7 +2531,7 @@
 			{
 				"name": "Laser Activation",
 				"visibility_rules": [ "$isNotLaserShuffle" ],
-				"access_rules": [ "@Town Laser/Laser" ]
+				"access_rules": [ "@Town Tower/Laser" ]
 			},
 			{
 				"name": "Town Brown Bridge EP",
