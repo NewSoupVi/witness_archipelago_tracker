@@ -1477,7 +1477,7 @@
 					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
 					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, Shadows Timed Door",
 					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]",
-					"$Snipeable|2, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld",
+					"$Snipeable|2, nonRandomizedSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld",
 					"showSnipes, [Shadows Timed Door], @Places/shadowsFirstSet",
 					"$Foreknowable|1, @Places/shadowsFirstSet"
 				]
