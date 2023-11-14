@@ -430,7 +430,7 @@ function onClear(slot_data)
 			for num, id in pairs(value) do
 				disabledDict[id] = true
 			end
-				elseif k == "expect_snipes" then
+		elseif k == "expect_snipes" then
 			Tracker:FindObjectForCode("snipesDifficulty").CurrentStage = value
 		elseif k == "expect_non_randomized_snipes" then
 			Tracker:FindObjectForCode("nonRandomizedSnipes").Active = value

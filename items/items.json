@@ -219,6 +219,11 @@
 				"img": "images/HardSnipes.png",
 				"codes": "snipesHard",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/DeadlySnipes.png",
+				"codes": "snipesDeadly",
+				"inherit_codes": false
 			}
 		]
 	},
@@ -242,18 +247,23 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "images/NormalForeknowledge.png",
-				"codes": "foreknowledgeNormal",
+				"img": "images/EasyForeknowledge.png",
+				"codes": "foreknowledgeEasy",
 				"inherit_codes": false
 			},
 			{
-				"img": "images/TediousForeknowledge.png",
-				"codes": "foreknowledgeTedious",
+				"img": "images/HardForeknowledge.png",
+				"codes": "foreknowledgeHard",
 				"inherit_codes": false
 			},
 			{
-				"img": "images/BruteForceForeknowledge.png",
-				"codes": "foreknowledgeBruteForce",
+				"img": "images/DesertForeknowledge.png",
+				"codes": "foreknowledgeDesert",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/RGBForeknowledge.png",
+				"codes": "foreknowledgeRGB",
 				"inherit_codes": false
 			}
 		]
