@@ -381,8 +381,8 @@ LOCATION_MAPPING = {
 	[159753] = {"@Town Obelisk/Side 4"},
 	[159754] = {"@Town Obelisk/Side 5"},
 	[159755] = {"@Town Obelisk/Side 6"},
-	
-	
+	[159800] = {"@Town/Pet the Dog"}
+
 }
 
 EP_DATASTORAGE_IDS = {
