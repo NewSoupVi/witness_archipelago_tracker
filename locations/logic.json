@@ -127,7 +127,7 @@
 					"$Warp|Desert Laser Room",
 					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
 					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
-					"$Foreknowable|2, $isNotDoors, @Places/desertFlood",
+					"$Foreknowable|3, $isNotDoors, @Places/desertFlood",
 					"Desert Door to Elevator Room, @Places/desertFlood",
 					"$isNotDoors, Desert Elevator Door, @Places/tunnels",
 					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
@@ -466,8 +466,7 @@
 					"$Warp|Swamp Red Underwater",
 					"$isNotDoors, @Swamp Cyan Underwater Room/Cyan Underwater, @Places/swampRotated",
 					"Swamp Red Water Pump, @Places/swampRotated",
-					"showSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit, [@Places/swampRotated], [Swamp Red Water Pump]",
-					"$Snipeable|1, nonRandomizedSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit"
+					"@Places/swampMaze, Swamp Red Underwater Exit"
 				]
 			},
 			{
@@ -475,7 +474,9 @@
 				"access_rules": [
 					"$Warp|Swamp Maze",
 					"$isNotDoors, @Swamp Red Underwater Room/Red Underwater, @Places/swampRed",
-					"Swamp Red Underwater Exit, @Places/swampRed"
+					"Swamp Red Underwater Exit, @Places/swampRed",
+					"showSnipes, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), @Places/swampLaser, [Swamp Red Underwater Exit], [@Places/swampRed]",
+					"$Snipeable|1, nonRandomizedSnipes, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), @Places/swampLaser"
 				]
 			},
 			{
