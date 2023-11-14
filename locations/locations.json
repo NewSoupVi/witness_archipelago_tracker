@@ -27,7 +27,7 @@
 				"access_rules": [
 					"@Tutorial Gate/Gate Open, @Places/tunnels",
 					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels]",
-					"Foreknowable|1, @Tutorial Gate/Gate Open"
+					"$Foreknowable|1, @Tutorial Gate/Gate Open"
 				]
 			}
 		],
