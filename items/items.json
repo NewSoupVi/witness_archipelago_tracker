@@ -602,7 +602,7 @@
 	{
 		"name": "Speed Boosts",
 		"type": "consumable",
-		"codes": "Speed Boost"
+		"codes": "SpeedBoost"
 	},
 	{
 		"name": "Slownesses",
@@ -612,7 +612,7 @@
 	{
 		"name": "Power Surges",
 		"type": "consumable",
-		"codes": "Power Surge"
+		"codes": "PowerSurge"
 	},
 	{
 		"name": "Glass Factory Entry (Panel)",
