@@ -4837,7 +4837,7 @@
 			{
 				"name": "Final Room Pillars Right",
 				"visibility_rules": [ "$isNotDisabledByPostgame|211297" ],
-				"access_rules": [ "@Places/mountainFinalRoom, $canSolve|158522-158525" ]
+				"access_rules": [ "$canSolve|158522-158525, @Places/mountainFinalRoom" ]
 			}
 		],
 		"map_locations": [
