@@ -615,12 +615,12 @@
 			{
 				"name": "Apple Trees Outside Gate",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "@Orchard/Apple Trees Outside Gate, @Places/overworld" ]
+				"access_rules": [ "$canSolve|158071-158073, @Places/overworld" ]
 			},
 			{
 				"name": "Apple Trees Inside Gate",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158074-158075, @Places/orchardInner" ]
+				"access_rules": [ "@Orchard/Apple Trees Outside Gate, $canSolve|158074-158075, @Places/orchardInner" ]
 			}
 		],
 		"map_locations": [
@@ -1231,7 +1231,7 @@
 				"name": "Front Row",
 				"access_rules": [
 					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
-					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront]"
+					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarry"
 				]
 			},
 			{
@@ -1398,30 +1398,30 @@
 				"name": "Shadows Intro 3",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190, $isNotDoors, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $canSolve|158188 158189 158190, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190, Shadows Timed Door",
-					"showSnipes, $canSolve|158188 158189 158190, [Shadows Timed Door]"
+					"$isNotDoors, $canSolve|158188-158190, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, $canSolve|158188-158190, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188-158190, @Places/overworld, Shadows Timed Door",
+					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]"
 				]
 			},
 			{
 				"name": "Shadows Intro 5",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190 158191 158192, $isNotDoors, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190 158191 158192, Shadows Timed Door",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192, [Shadows Timed Door]"
+					"$isNotDoors, $canSolve|158188-158192, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188-158192, @Places/overworld, Shadows Timed Door",
+					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]"
 				]
 			},
 			{
 				"name": "Shadows Intro 8",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isNotDoors, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, $isNotDoors, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
-					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, Shadows Timed Door",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, [Shadows Timed Door]"
+					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
+					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, Shadows Timed Door",
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]"
 				]
 			},
 			{
@@ -3318,7 +3318,8 @@
 				"access_rules": [
 					"Bunker Tinted Glass Door, @Places/bunkerElevator",
 					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevator",
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber, @Places/bunkerElevator"
+					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber, @Places/bunkerElevator",
+					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevator, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
 			}
 		],
@@ -3835,7 +3836,7 @@
 			},
 			{
 				"name": "Third Door Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse Third Door (Panel), $canSolve|158355, @Places/treehouseThird, @Places/treehouseDock" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse Third Door (Panel), $canSolve|158355, @Places/treehouseAfterYellowBridge" ]
 			},
 			{
 				"name": "Buoy EP",
@@ -3919,7 +3920,8 @@
 				"name": "Drawbridge Panel",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseDrawbridge",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseMain, [@Places/treehouseDrawbridge]"
 				]
 			},
 			{

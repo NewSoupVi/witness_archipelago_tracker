@@ -254,8 +254,12 @@
 				"name": "treehouseThird",
 				"access_rules": [
 					"$isNotDoors, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel",
-					"@Places/treehouseSecond, Treehouse Second Door, $canSolve|158346-158354"
+					"Treehouse Second Door, @Places/treehouseSecond"
 				]
+			},
+			{
+				"name": "treehouseAfterYellowBridge",
+				"access_rules": [ "$canSolve|158346-158354, @Places/treehouseThird" ]
 			},
 			{
 				"name": "treehouseMain",
