@@ -397,11 +397,15 @@
 				]
 			},
 			{
-				"name": "redRoof",
+				"name": "mazeRoof",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229",
-					"Town Maze Staircase, $hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229"
+					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), @Places/overworld",
+					"Town Maze Staircase, @Places/overworld"
 				]
+			},
+			{
+				"name": "redRoof",
+				"access_rules": [ "$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof" ]
 			},
 			{
 				"name": "woodenRoof",
@@ -439,6 +443,13 @@
 					"$isNotDoors, Expert, @RGB House/RGB Room Right",
 					"Town Door to Church",
 					"showSnipes, [Town Door to Church], randomizationVanilla"
+				]
+			},
+			{
+				"name": "cargoBox",
+				"access_rules": [
+					"$isNotDoors, @Town Cargo Box Area/Entry Panel",
+					"Town Cargo Box Door, @Places/overworld"
 				]
 			},
 			{
