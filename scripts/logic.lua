@@ -7,7 +7,7 @@ function isNotPanelsOnly()
 end
 
 function isNotExpert(check)
-		return (1 - Tracker:ProviderCountForCode("Expert") > 0)
+	return (1 - Tracker:ProviderCountForCode("Expert") > 0)
 end
 
 function isNotLaserShuffle()
