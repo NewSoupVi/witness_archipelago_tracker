@@ -4799,7 +4799,7 @@
 			{
 				"name": "Door to Final Room Left Panel",
 				"visibility_rules": [ "$isNotDisabledByPostgame|6531" ],
-				"access_rules": [ "@Places/mountainPenultimateRoom, $canSolve|158445" ]
+				"access_rules": [ "$canSolve|158445, @Places/mountainPenultimateRoom" ]
 			}
 		],
 		"map_locations": [
