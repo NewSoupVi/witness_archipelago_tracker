@@ -891,10 +891,7 @@
 			},
 			{
 				"name": "Laser",
-				"access_rules": [
-					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
-					"$isNotLaserShuffle, @Desert/Final Hexagonal, @Desert/Final Bent 3"
-				]
+				"access_rules": [ "@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld" ]
 			},
 			{
 				"name": "Laser Activation",
@@ -1280,8 +1277,6 @@
 					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
 					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarry",
 					"$Snipeable|1, $canSolve|158149-158153, @Places/quarry",
-					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarryBoathouseUpstairsBack",
-					"$Snipeable|2, $canSolve|158149-158153, @Places/quarryBoathouseUpstairsBack"
 				]
 			},
 			{
@@ -2174,7 +2169,7 @@
 			{
 				"name": "Laser",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "@Monastery/Inside Puzzles, @Places/monastery, @Places/overworld" ]
+				"access_rules": [ "@Monastery/Inside Puzzles, @Places/overworld" ]
 			},
 			{
 				"name": "Laser Activation",
