@@ -6,12 +6,8 @@ function isNotPanelsOnly()
 	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
 end
 
-function isExpert(check)
-	if check == "on" then
-		return (Tracker:ProviderCountForCode("Expert") > 0)
-	else
-		return (1 - Tracker:ProviderCountForCode("Expert") > 0)
-	end
+function isNotExpert(check)
+	return (1 - Tracker:ProviderCountForCode("Expert") > 0)
 end
 
 function isNotLaserShuffle()
@@ -98,7 +94,7 @@ end
 
 function pp2()
 	
-	return (isExpert("off") or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
+	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
 	(
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and

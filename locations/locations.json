@@ -17,8 +17,8 @@
 			{
 				"name": "Gate Open",
 				"access_rules": [
-					"$isExpert|off, @Places/tutorial, $canSolve|158002-158007",
-					"$isExpert|on, @Places/tutorial, $canSolve|158002 158003 158004 158007"
+					"$isNotExpert, @Places/tutorial, $canSolve|158002-158007",
+					"Expert, @Places/tutorial, $canSolve|158002 158003 158004 158007"
 				]
 			},
 			{
@@ -1947,12 +1947,12 @@
 			{
 				"name": "Laser Pressure Plates",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
-					"showSnipes, $isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
-					"$Foreknowable|2, $isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 4/Pressure Plates",
-					"$isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
-					"showSnipes, $isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]",
-					"$Foreknowable|2, $isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 2/Pressure Plates"
+					"$isNotExpert, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
+					"showSnipes, $isNotExpert, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
+					"$Foreknowable|2, $isNotExpert, $canSolve|158705, @Places/keepTower, @Pressure Plates 4/Pressure Plates",
+					"Expert, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
+					"showSnipes, Expert, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]",
+					"$Foreknowable|2, Expert, $canSolve|158705, @Places/keepTower, @Pressure Plates 2/Pressure Plates"
 				]
 			},
 			{
@@ -2355,11 +2355,11 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
-					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
-					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
-					"$Foreknowable|2, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
+					"Town Door to Church (Panel), Expert, $canSolve|158226, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
+					"$Foreknowable|2, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld"
 				]
 			}
 		],
@@ -2458,12 +2458,12 @@
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$Foreknowable|4, $isExpert|off, $canSolve|158246, @Places/RGBHouseUpstairs",
-					"$isExpert|on, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs",
-					"$Foreknowable|4, $isExpert|on, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, $isNotExpert, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"$Foreknowable|4, $isNotExpert, $canSolve|158246, @Places/RGBHouseUpstairs",
+					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs",
+					"$Foreknowable|4, Expert, $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2478,8 +2478,8 @@
 				"name": "RGB House Red EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof",
-					"$isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof"
+					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof",
+					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof"
 				]
 			},
 			{
@@ -4002,8 +4002,8 @@
 			{
 				"name": "Left Orange Bridge",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158376-158390, @Places/treehouseLeft2",
-					"$isExpert|on, $canSolve|158376-158390, @Places/treehouseLeft2, @Treehouse Laser House/Laser"
+					"$isNotExpert, $canSolve|158376-158390, @Places/treehouseLeft2",
+					"Expert, $canSolve|158376-158390, @Places/treehouseLeft2, @Treehouse Laser House/Laser"
 				]
 			}
 		],

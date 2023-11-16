@@ -561,8 +561,8 @@
 			{
 				"name": "church",
 				"access_rules": [
-					"$isNotDoors, $isExpert|off, @Town Church/Entry Panel, @Places/overworld",
-					"$isNotDoors, $isExpert|on, @RGB House/RGB Room Right, @Places/overworld",
+					"$isNotDoors, $isNotExpert, @Town Church/Entry Panel, @Places/overworld",
+					"$isNotDoors, Expert, @RGB House/RGB Room Right, @Places/overworld",
 					"Town Door to Church, @Places/overworld",
 					"showSnipes, randomizationVanilla, [Town Door to Church], @Places/overworld",
 					"$Snipeable|1, randomizationVanilla, @Places/overworld"
