@@ -284,6 +284,13 @@
 				]
 			},
 			{
+				"name": "treehouseDrawbridge",
+				"access_rules": [
+					"Treehouse Drawbridge, @Places/overworld",
+					"@Treehouse Right Side/Right Orange Bridge"
+				]
+			},
+			{
 				"name": "swampEntry",
 				"access_rules": [
 					"$isNotDoors, @Swamp Entry Area/Entry Panel, $hasPanel|Swamp Entry (Panel)",
@@ -428,8 +435,8 @@
 			{
 				"name": "church",
 				"access_rules": [
-					"$isNotDoors, $isExpert|off, @Town Church/Entry Panel",
-					"$isNotDoors, $isExpert|on, @RGB House/RGB Room Right",
+					"$isNotDoors, $isNotExpert, @Town Church/Entry Panel",
+					"$isNotDoors, Expert, @RGB House/RGB Room Right",
 					"Town Door to Church",
 					"showSnipes, [Town Door to Church], randomizationVanilla"
 				]

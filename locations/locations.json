@@ -17,8 +17,8 @@
 			{
 				"name": "Gate Open",
 				"access_rules": [
-					"$isExpert|off, @Places/tutorial, $canSolve|158002-158007",
-					"$isExpert|on, @Places/tutorial, $canSolve|158002 158003 158004 158007"
+					"$isNotExpert, @Places/tutorial, $canSolve|158002-158007",
+					"Expert, @Places/tutorial, $canSolve|158002 158003 158004 158007"
 				]
 			},
 			{
@@ -195,17 +195,11 @@
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158011, @Places/tutorialOutpostPath",
-					"Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath" ]
 			},
 			{
 				"name": "Exit Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158012, @Places/tutorialOutpostInterior",
-					"Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior" ]
 			}
 		],
 		"map_locations": [
@@ -480,10 +474,7 @@
 			{
 				"name": "Vase EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158027, @Places/overworld",
-					"Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld" ]
 			}
 
 		],
@@ -547,10 +538,7 @@
 			},
 			{
 				"name": "Upper Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158064, @Symmetry Island/Left 7",
-					"Door to Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Door to Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7" ]
 			},
 			{
 				"name": "Glass Factory Black Line EP",
@@ -1201,19 +1189,15 @@
 			{
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
-					"$isNotPanelsOnly, @Places/quarry, $canSolve|158121",
-					"showSnipes, $isNotPanelsOnly, [@Places/quarry], $canSolve|158121",
-					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121",
-					"showSnipes, Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158121",
 				]
 			},
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
-					"$isNotPanelsOnly, @Places/quarry, $canSolve|158122",
-					"showSnipes, $isNotPanelsOnly, randomizationVanilla, [@Places/quarry], $canSolve|158122",
-					"Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"showSnipes, Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], $canSolve|158122",
 				]
 			}
 		],
@@ -1339,18 +1323,13 @@
 		"sections": [
 			{
 				"name": "Door 1",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158118, @Places/overworld",
-					"Quarry Entry 1 (Panel), $canSolve|158118, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Quarry Entry 1 (Panel), $canSolve|158118, @Places/overworld" ]
 			},
 			{
 				"name": "Door 2",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158119, @Places/overworld, @Places/quarryBetweenEntries",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
-					"Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, @Places/quarryBetweenEntries",
-					"showSnipes, Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, @Places/quarryBetweenEntries",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]",
 				]
 			},
 			{
@@ -1611,10 +1590,7 @@
 		"sections": [
 			{
 				"name": "Exit Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158193, @Places/overworld",
-					"Keep Hedge Maze 1 (Panel), $canSolve|158193, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 1 (Panel), $canSolve|158193, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -1633,12 +1609,9 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158194, @Places/maze2",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door",
-					"Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
-					"showSnipes, Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"showSnipes, Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
+					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door"
 				]
 			}
 		],
@@ -1658,10 +1631,8 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158195, @Places/maze3",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door",
-					"Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
-					"showSnipes, Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
+					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door"
 				]
 			}
 		],
@@ -1681,10 +1652,8 @@
 			{
 				"name": "Exit Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158196, @Places/maze4",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158196, [@Places/maze4]",
-					"Keep Hedge Maze 4 (Panel), $canSolve|158196, @Places/maze4",
-					"showSnipes, Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4]"
+					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 4 (Panel), $canSolve|158196, @Places/maze4",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 4 (Panel), $canSolve|158196, [@Places/maze4]"
 				]
 			}
 		],
@@ -1904,10 +1873,10 @@
 			{
 				"name": "Laser Pressure Plates",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
-					"showSnipes, $isExpert|off, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
-					"$isExpert|on, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
-					"showSnipes, $isExpert|on, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
+					"$isNotExpert, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
+					"showSnipes, $isNotExpert, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], [@Pressure Plates 2/Pressure Plates], [@Pressure Plates 3/Pressure Plates], @Pressure Plates 4/Pressure Plates",
+					"Expert, $canSolve|158705, @Places/keepTower, @Pressure Plates 1/Pressure Plates, @Pressure Plates 2/Pressure Plates, @Pressure Plates 3/Pressure Plates, @Pressure Plates 4/Pressure Plates",
+					"showSnipes, Expert, $canSolve|158705, @Places/keepTower, [@Pressure Plates 1/Pressure Plates], @Pressure Plates 2/Pressure Plates, [@Pressure Plates 3/Pressure Plates], [@Pressure Plates 4/Pressure Plates]"
 				]
 			},
 			{
@@ -2228,10 +2197,7 @@
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, @Places/overworld, $canSolve|158219",
-					"Town Cargo Box Entry (Panel), @Places/overworld, $canSolve|158219"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Cargo Box Entry (Panel), @Places/overworld, $canSolve|158219" ]
 			},
 			{
 				"name": "Boat Cargo Box EP",
@@ -2301,12 +2267,10 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
-					"showSnipes, $isNotPanelsOnly, $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
-					"$isNotPanelsOnly, $isExpert|on, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
-					"Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
-					"showSnipes, Town Door to Church (Panel), $isExpert|off, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]",
-					"Town Door to Church (Panel), $isExpert|on, $canSolve|158226, @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
+					"Town Door to Church (Panel), Expert, $canSolve|158226, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
 				]
 			}
 		],
@@ -2333,10 +2297,7 @@
 			},
 			{
 				"name": "Maze Stair Control",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158228, @Places/overworld",
-					"Town Maze Panel (Drop-Down Staircase) (Panel), $canSolve|158228, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $canSolve|158228, @Places/overworld" ]
 			},
 			{
 				"name": "Bridge Underside EP",
@@ -2407,18 +2368,15 @@
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isExpert|off, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"$isExpert|on, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), $canSolve|158245-158246, @Places/RGBHouseUpstairs",
-					"showSnipes, $isExpert|on, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, $isNotExpert, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"Expert, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), $canSolve|158245-158246, @Places/RGBHouseUpstairs",
+					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158225",
-					"Town Door to RGB House (Panel), $canSolve|158225"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Door to RGB House (Panel), $canSolve|158225, @Places/overworld" ]
 			},
 			{
 				"name": "Sound Room",
@@ -2428,10 +2386,10 @@
 				"name": "RGB House Red EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
-					"Town Maze Staircase, $isExpert|off, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
-					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
-					"Town Maze Staircase, $isExpert|on, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)"
+					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
+					"Town Maze Staircase, $isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
+					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)",
+					"Town Maze Staircase, Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel)"
 				]
 			},
 			{
@@ -2662,10 +2620,7 @@
 		"sections": [
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158241, @Places/overworld",
-					"Windmill Entry (Panel), $canSolve|158241, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Windmill Entry (Panel), $canSolve|158241, @Places/overworld" ]
 			},
 			{
 				"name": "First Blade EP",
@@ -2836,10 +2791,7 @@
 		"sections": [
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158248, @Places/windmill",
-					"Theater Entry (Panel), $canSolve|158248, @Places/windmill"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Entry (Panel), $canSolve|158248, @Places/windmill" ]
 			}
 		],
 		"map_locations": [
@@ -2857,17 +2809,11 @@
 		"sections": [
 			{
 				"name": "Exit Door Left",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158249",
-					"Theater Exit (Panel), $canSolve|158249"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Exit (Panel), $canSolve|158249" ]
 			},
 			{
 				"name": "Exit Door Right",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158250",
-					"Theater Exit (Panel), $canSolve|158250"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Exit (Panel), $canSolve|158250" ]
 			}
 
 		],
@@ -3299,10 +3245,7 @@
 		"sections": [
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158268",
-					"Bunker Entry (Panel), $canSolve|158268"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Bunker Entry (Panel), $canSolve|158268, @Places/overworld" ]
 			},
 			{
 				"name": "Tinted Room Entry Panel",
@@ -3444,10 +3387,7 @@
 		"sections": [
 			{
 				"name": "Entry Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158287, @Places/overworld",
-					"Swamp Entry (Panel), $canSolve|158287, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Swamp Entry (Panel), $canSolve|158287, @Places/overworld" ]
 			},
 			{
 				"name": "Intro Front",
@@ -3476,10 +3416,7 @@
 			},
 			{
 				"name": "Shortcut Panels",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158317 158318, @Places/swampPlatform",
-					"Swamp Platform Shortcut (Panel), $canSolve|158317 158318, @Places/swampPlatform"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Swamp Platform Shortcut (Panel), $canSolve|158317 158318, @Places/swampPlatform" ]
 			},
 			{
 				"name": "Between Bridges Near Row",
@@ -3877,26 +3814,18 @@
 			},
 			{
 				"name": "First Door Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158344, @Places/treehouseDock",
-					"Treehouse First & Second Doors (Panel), $canSolve|158344, @Places/treehouseDock"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158344, @Places/treehouseDock" ]
 			},
 			{
 				"name": "Second Door Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158345, @Places/treehouseSecond, @Places/treehouseDock",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
-					"Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond, @Places/treehouseDock",
-					"showSnipes, Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
+					"$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
 				]
 			},
 			{
 				"name": "Third Door Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158355, @Places/treehouseThird, @Places/treehouseDock",
-					"Treehouse Third Door (Panel), @Places/treehouseThird, @Places/treehouseDock"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse Third Door (Panel), $canSolve|158355, @Places/treehouseThird, @Places/treehouseDock" ]
 			},
 			{
 				"name": "Buoy EP",
@@ -3947,8 +3876,8 @@
 			{
 				"name": "Left Orange Bridge",
 				"access_rules": [
-					"$isExpert|off, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2",
-					"$isExpert|on, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"
+					"$isNotExpert, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2",
+					"Expert, $canSolve|158376-158390, @Treehouse Left Side/Purple Bridge 2, @Treehouse Laser House/Laser"
 				]
 			}
 		],
@@ -3980,12 +3909,8 @@
 			{
 				"name": "Drawbridge Panel",
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158404, @Treehouse Right Side/Right Orange Bridge",
-					"showSnipes, $isNotPanelsOnly, $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
-					"$isNotPanelsOnly, $canSolve|158404, Treehouse Drawbridge",
-					"Treehouse Drawbridge (Panel), $canSolve|158404, @Treehouse Right Side/Right Orange Bridge",
-					"showSnipes, Treehouse Drawbridge (Panel), $canSolve|158404, [@Treehouse Right Side/Right Orange Bridge]",
-					"Treehouse Drawbridge (Panel), $canSolve|158404, Treehouse Drawbridge"
+					"$isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/treehouseDrawbridge",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse Drawbridge (Panel), $canSolve|158404, @Places/overworld, [@Places/treehouseDrawbridge]"
 				]
 			},
 			{
@@ -5018,10 +4943,7 @@
 			{
 				"name": "Entry Panel",
 				"visibility_rules": [ "$isNotDisabledByPostgame|4088" ],
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158447, @Places/cavesAntechamber",
-					"Caves Entry (Panel), $canSolve|158447, @Places/cavesAntechamber"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Entry (Panel), $canSolve|158447, @Places/cavesAntechamber" ]
 			},
 			{
 				"name": "Caves Rock Timer Panel",
@@ -5339,10 +5261,7 @@
 			{
 				"name": "Entry Panel",
 				"visibility_rules": [ "$isNotDisabledByPostgame|41326" ],
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158477, @Places/challengeAntechamber",
-					"Challenge Entry (Panel), $canSolve|158477, @Places/challengeAntechamber"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Challenge Entry (Panel), $canSolve|158477, @Places/challengeAntechamber" ]
 			}
 		],
 		"map_locations": [
@@ -5404,15 +5323,11 @@
 	},
 	{
 		"name": "Tunnels Entry",
-		"access_rules": [ "@Places/challenge" ],
 		"sections": [
 			{
 				"name": "Door to Tunnels Panel",
 				"visibility_rules": [ "$isNotDisabledByPostgame|14772" ],
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158518",
-					"Tunnels Entry (Panel), $canSolve|158518"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, @Places/challenge" ]
 			}
 		],
 		"map_locations": [
@@ -5484,14 +5399,10 @@
 	{
 		"name": "Tunnels Exit to Town",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40583" ],
-		"access_rules": [ "@Places/tunnels" ],
 		"sections": [
 			{
 				"name": "Town Shortcut Panel",
-				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158521",
-					"Tunnels Town Shortcut (Panel), $canSolve|158521"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tunnels Town Shortcut (Panel), $canSolve|158521, @Places/tunnels" ]
 			}
 		],
 		"map_locations": [
