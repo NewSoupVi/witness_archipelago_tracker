@@ -329,9 +329,13 @@
 			},
 			{
 				"name": "swampPurple",
+				"access_rules": [ "$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack" ]
+			},
+			{
+				"name": "swampPurpleUnderwater",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Swamp Near Boat/Beyond Rotating Bridge, @Places/swampBack",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, Swamp Purple Water Pump, @Places/swampBack"
+					"$isNotDoors, @Swamp Near Boat/Beyond Rotating Bridge, @Places/swampPurple",
+					"Swamp Purple Water Pump, @Places/swampPurple"
 				]
 			},
 			{
@@ -472,9 +476,8 @@
 			{
 				"name": "bunkerElevator",
 				"access_rules": [
-					"$isNotDoors, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel), @Color Bunker/Ultraviolet Room",
-					"showSnipes, $isNotDoors, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)], @Color Bunker/Ultraviolet Room",
-					"@Places/bunkerUV, Bunker Door to Elevator",
+					"$isNotDoors, @Color Bunker/Ultraviolet Room",
+					"Bunker Door to Elevator, @Places/bunkerUV",
 					"@Places/overworld, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators"
 				]
 			},
@@ -487,7 +490,7 @@
 			},
 			{
 				"name": "mountainLayer1",
-				"access_rules": [ "$laserBox|short, @Mountaintop/Mountain Entry, $hasPanel|Mountain Floor 1 Bridge (Panel)" ]
+				"access_rules": [ "@Mountaintop/Mountain Entry, $hasPanel|Mountain Floor 1 Bridge (Panel)" ]
 			},
 			{
 				"name": "mountainLayer2",

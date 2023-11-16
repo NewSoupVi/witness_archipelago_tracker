@@ -3721,17 +3721,17 @@
 		"sections": [
 			{
 				"name": "Purple Underwater",
-				"access_rules": [ "$canSolve|158333, @Places/swampPurple" ]
+				"access_rules": [ "$canSolve|158333, @Places/swampPurpleUnderwater" ]
 			},
 			{
 				"name": "Purple Underwater Right EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampPurple" ]
+				"access_rules": [ "@Places/swampPurpleUnderwater" ]
 			},
 			{
 				"name": "Purple Underwater Left EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampPurple" ]
+				"access_rules": [ "@Places/swampPurpleUnderwater" ]
 			}
 		],
 		"map_locations": [

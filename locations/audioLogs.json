@@ -343,7 +343,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/swampPurple" ]
+				"access_rules": [ "@Places/swampPurpleUnderwater" ]
 			}
 		],
 		"map_locations": [
