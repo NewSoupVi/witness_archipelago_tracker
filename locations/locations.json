@@ -1029,8 +1029,8 @@
 				"name": "Railroad EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
-					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld"
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry",
+					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry"
 				]
 			}
 		],
