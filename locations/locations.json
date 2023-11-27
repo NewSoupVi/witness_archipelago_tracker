@@ -1765,9 +1765,14 @@
 				"name": "Pressure Plates 2 EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
-					"@Pressure Plates 2/Pressure Plates, @Places/keepTower",
-					"showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]",
-					"$Snipeable|1, @Pressure Plates 2/Pressure Plates"
+					"Expert, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
+					"randomizationSigma, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
+					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
+					"randomizationVanilla, Keep Pressure Plates 2 Exit Door, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
+					"Expert, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]",
+					"randomizationSigma, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]",
+					"Expert, $Snipeable|1, @Pressure Plates 2/Pressure Plates",
+					"randomizationSigma, $Snipeable|1, @Pressure Plates 2/Pressure Plates"
 				]
 			}
 		],
