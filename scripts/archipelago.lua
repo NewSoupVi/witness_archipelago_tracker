@@ -29,25 +29,25 @@ end
 
 function setReply(key, val, old)
 	if(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-628" and val) then
-		lasers[1]=1
+		lasers[8]=1
 		local location = Tracker:FindObjectForCode("@Jungle Laser/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-1289" and val) then
-		lasers[2]=1
+		lasers[1]=1
 		local location = Tracker:FindObjectForCode("@Symmetry Island/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-3062" and val) then
-		lasers[3]=1
+		lasers[10]=1
 		local location = Tracker:FindObjectForCode("@Swamp Laser/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-4859" and val) then
-		lasers[4]=1
+		lasers[2]=1
 		local location = Tracker:FindObjectForCode("@Desert/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
@@ -59,19 +59,19 @@ function setReply(key, val, old)
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-5433" and val) then
-		lasers[6]=1
+		lasers[3]=1
 		local location = Tracker:FindObjectForCode("@Quarry Laser/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-10404" and val) then
-		lasers[7]=1
+		lasers[11]=1
 		local location = Tracker:FindObjectForCode("@Treehouse Laser House/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-13049" and val) then
-		lasers[8]=1
+		lasers[7]=1
 		local location = Tracker:FindObjectForCode("@Town Tower/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
@@ -93,7 +93,7 @@ function setReply(key, val, old)
 			end
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-97381" and val) then
-		lasers[10]=1
+		lasers[6]=1
 		local location = Tracker:FindObjectForCode("@Monastery/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
@@ -109,7 +109,7 @@ function setReply(key, val, old)
 			end
 		end
 	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-98739" and val) then
-		lasers[11]=1
+		lasers[4]=1
 		local location = Tracker:FindObjectForCode("@Shadows Laser/Laser Activation")
 		if location then
 			location.AvailableChestCount = location.AvailableChestCount - 1
@@ -125,13 +125,8 @@ function setReply(key, val, old)
 			end
 		end
 	end
-
-	laserCount = 0
-	for k, v in pairs(lasers) do
-		laserCount = laserCount + v
-	end
-
-	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+	
+	laserCounting()
 
 	if(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
 		Tracker:FindObjectForCode("unrandomizedPanelsEnabled").Active = (val ~= "Prevent Solve")
@@ -462,6 +457,10 @@ function onItem(index, item_id, item_name, player_number)
         end
         return
     end
+	if item_id > 159499 and item_id < 159511 then
+		lasers[item_id - 159499] = 1
+		laserCounting()
+	end
 	if item_id > 159902 and item_id < 160171 then
 		doorsRegional(v[1])
 	end
@@ -777,6 +776,14 @@ function doorsRegional(item_name)
 	end
 end
 
+function laserCounting()
+	laserCount = 0
+	for k, v in pairs(lasers) do
+		laserCount = laserCount + v
+	end
+	
+	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+end
 
 function showGoal()
 	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
