@@ -3946,8 +3946,8 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock",
-					"randomizationSigma, $Snipeable|2, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), @Places/treehouseDock",
-					"Expert, $Snipeable|3, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), @Places/treehouseDock"
+					"randomizationSigma, $Snipeable|2, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseDock",
+					"Expert, $Snipeable|3, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseDock"
 				]
 			},
 			{
