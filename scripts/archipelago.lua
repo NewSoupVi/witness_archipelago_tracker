@@ -11,6 +11,7 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
+currentlyClearing = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -158,6 +159,7 @@ function setReply(key, val, old)
 end
 
 function onClear(slot_data)
+	currentlyClearing = true
 
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -432,6 +434,7 @@ function onClear(slot_data)
 
 	if (not Tracker:FindObjectForCode("hiddenGoal").Active) then showGoal() end
 
+	currentlyClearing = false
 end
 
 -- called when an item gets collected
@@ -791,6 +794,10 @@ end
 
 function getDisabledDict()
 	return disabledDict
+end
+
+function isClearing()
+	return currentlyClearing
 end
 
 -- add AP callbacks

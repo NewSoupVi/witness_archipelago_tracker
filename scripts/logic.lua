@@ -158,7 +158,7 @@ end
 
 
 function canSolve(ids)
-	if Tracker:ProviderCountForCode("Symbols") == 0 then
+	if Tracker:ProviderCountForCode("Symbols") == 0 or isClearing() then
 		return true
 	end
 	ids = parseIds(ids)
