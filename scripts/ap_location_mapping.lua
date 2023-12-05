@@ -570,7 +570,7 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[211145] = {"@Caves Mountain Shortcut Area/Audio Log"},
 	[211159] = {"@Caves Stairwell/Audio Log"},
 	[211137] = {"@Challenge Area/Audio Log"},
-	[211146] = {"@Caves Upstairs/Audio Log"},
+	[211146] = {"@Caves Upstairs/Audio Log"}
 }
 
 LASER_DATASTORAGE_ID = {
@@ -584,5 +584,5 @@ LASER_DATASTORAGE_ID = {
 	[13049] = {"@Town Tower/Laser Activation",{7}},
 	[49842] = {"@Color Bunker/Laser Activation", {9, "@Town Cargo Box Area/Discard", "@Mountainside Discard/Discard"} },
 	[97381] = {"@Monastery/Laser Activation",{6, "@Desert Discard/Discard", "@Treehouse Right Side/Green Bridge Discard"}},
-	[98739] = {"@Shadows Laser/Laser Activation",{4, "@Shipwreck Discard/Discard", "@Town Red Rooftop/Discard"}},
+	[98739] = {"@Shadows Laser/Laser Activation",{4, "@Shipwreck Discard/Discard", "@Town Red Rooftop/Discard"}}
 }
