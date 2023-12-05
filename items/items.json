@@ -188,8 +188,8 @@
 		"codes": "disabledPanels"
 	},
 	{
-		"name": "Unrandomized Panels Enabled",
-		"codes": "unrandomizedPanelsEnabled",
+		"name": "Disabled Panels Enabled",
+		"codes": "disabledPanelsEnabled",
 		"type": "toggle",
 		"loop": "true"
 	},

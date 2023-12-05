@@ -130,7 +130,7 @@ function setReply(key, val, old)
 	laserCounting()
 
 	if(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
-		Tracker:FindObjectForCode("unrandomizedPanelsEnabled").Active = (val ~= "Prevent Solve")
+		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
 	end
 
 	if(key:sub(1, 15) == "WitnessAudioLog" and val) then

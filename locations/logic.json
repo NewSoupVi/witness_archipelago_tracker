@@ -731,7 +731,8 @@
 				"name": "cavesAntechamber",
 				"access_rules": [
 					"$Warp|Caves Entry Area",
-					"$isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard",
+					"$isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, $isNotDisabledByPostgame|98210",
+					"showSnipes, $isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, disabledPanelsEnabled, [$isNotDisabledByPostgame|98210]",
 					"Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
 					"Inside Mountain Door to Secret Area, @Places/caves"
 				]
