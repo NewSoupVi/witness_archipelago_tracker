@@ -61,7 +61,7 @@ function laserBox(box)
 end
 
 function hasPanel(panel)
-	if isNotDoors() then return true
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
 	else return Tracker:ProviderCountForCode(panel)
 	end
 end
@@ -108,7 +108,7 @@ symbolCheck = {
 	["Negative Shapers"] = "NegativeShapers",
 	["Eraser"] = "Eraser",
 	["Triangles"] = "Triangles",
-	["Arrows"] = "Arrows",
+	["Arrows"] = "Arrows"
 }
 
 function hasSymbol(symbol)
