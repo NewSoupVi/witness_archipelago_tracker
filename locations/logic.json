@@ -147,8 +147,8 @@
 				"access_rules": [
 					"$Warp|Quarry",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
-					"showSnipes, $isNotDoors, [unrandomized], disabledPanelsEnabled, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
-					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, [unrandomized], disabledPanelsEnabled, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, unrandomized, @Places/overworld",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
@@ -219,8 +219,8 @@
 				"access_rules": [
 					"$Warp|Shadows First Set",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
-					"showSnipes, $isNotDoors, [unrandomized], disabledPanelsEnabled, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
-					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, [unrandomized], disabledPanelsEnabled, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, unrandomized, @Places/overworld",
 					"Shadows Timed Door, @Places/overworld",
 					"Shadows Barrier to Ledge, @Places/overworld",
 					"Shadows Barrier to Quarry, @Places/quarry"
@@ -231,8 +231,8 @@
 				"access_rules": [
 					"$Warp|Shadows Laser",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
-					"showSnipes, $isNotDoors, [unrandomized], disabledPanelsEnabled, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
-					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, [unrandomized], disabledPanelsEnabled, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door]",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, unrandomized, @Places/overworld",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
 					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
 					"$Foreknowable|1, Shadows Laser Room Right Door, @Places/overworld",
@@ -245,7 +245,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 2",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 1 (Panel), unrandomized, @Places/overworld",
-					"showSnipes, $isNotDoors, [$hasPanel|Keep Hedge Maze 1 (Panel)], [unrandomized], disabledPanelsEnabled, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 2 Shortcut]",
 					"Keep Hedge Maze 1 Exit Door, @Places/overworld",
 					"Keep Hedge Maze 2 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze3"
@@ -256,7 +256,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 3",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 2 (Panel), @Places/maze2, unrandomized",
-					"showSnipes, $isNotDoors, [$hasPanel|Keep Hedge Maze 2 (Panel)], @Places/maze2, [unrandomized], disabledPanelsEnabled",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 3 Shortcut]",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze2",
 					"Keep Hedge Maze 3 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze4"
@@ -267,7 +267,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 4",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 3 (Panel), @Places/maze3, unrandomized",
-					"showSnipes, $isNotDoors, [$hasPanel|Keep Hedge Maze 3 (Panel)], @Places/maze3, [unrandomized], disabledPanelsEnabled",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 4 Shortcut]",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze3",
 					"Keep Hedge Maze 4 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/keepTower"
@@ -302,7 +302,7 @@
 					"$Warp|Keep Laser",
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4, unrandomized",
-					"showSnipes, [$hasPanel|Keep Hedge Maze 4 (Panel)], @Places/maze4, [unrandomized], disabledPanelsEnabled",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Tower Shortcut]",
 					"Keep Tower Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/maze4",
 					"Keep Pressure Plates 4 Exit Door, @Places/plates4"
@@ -542,7 +542,7 @@
 				"access_rules": [
 					"$Warp|Town Laser",
 					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Outside Glass Factory/Rooftop Discard",
-					"showSnipes, $isNotDoors, $unrandomizedDisabled, disabledPanelsEnabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard]",
+					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard]",
 					"$isNotDoors, unrandomized, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal",
 					"Town Tower Red Roof Set Door, Town Tower Lattice Door, Town Tower Environmental Set Door, Town Tower Wooden Roof Set Door"
 				]
