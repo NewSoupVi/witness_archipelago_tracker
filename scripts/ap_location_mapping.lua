@@ -211,7 +211,6 @@ LOCATION_MAPPING = {
 	[158519] = {"@Tunnels Exit to Theater/Theater Shortcut Panel"},
 	[158520] = {"@Tunnels Exit to Desert/Desert Shortcut Panel"},
 	[158521] = {"@Tunnels Exit to Town/Town Shortcut Panel"},
-
 	[159000] = {"@Symmetry Island/Glass Factory Reflection EP"},
 	[159001] = {"@Symmetry Island/Glass Factory Black Line EP"},
 	[159002] = {"@Outside Glass Factory/Vase EP"},
@@ -381,8 +380,7 @@ LOCATION_MAPPING = {
 	[159753] = {"@Town Obelisk/Side 4"},
 	[159754] = {"@Town Obelisk/Side 5"},
 	[159755] = {"@Town Obelisk/Side 6"},
-	[159800] = {"@Town/Pet the Dog"}
-	
+	[159800] = {"@Town/Pet the Dog"},
 }
 
 EP_DATASTORAGE_IDS = {
@@ -572,5 +570,19 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[211145] = {"@Caves Mountain Shortcut Area/Audio Log"},
 	[211159] = {"@Caves Stairwell/Audio Log"},
 	[211137] = {"@Challenge Area/Audio Log"},
-	[211146] = {"@Caves Upstairs/Audio Log"}
+	[211146] = {"@Caves Upstairs/Audio Log"},
+}
+
+LASER_DATASTORAGE_ID = {
+	[628] = {"@Jungle Laser/Laser Activation",{8}},
+	[1289] = {"@Symmetry Island/Laser Activation",{1}},
+	[3062] = {"@Swamp Laser/Laser Activation",{10}},
+	[4859] = {"@Desert/Laser Activation",{2}},
+	[5307] = {"@Keep Tower/Laser Activation",{5}},
+	[5433] = {"@Quarry Laser/Laser Activation",{3}},
+	[10404] = {"@Treehouse Laser House/Laser Activation",{11}},
+	[13049] = {"@Town Tower/Laser Activation",{7}},
+	[49842] = {"@Color Bunker/Laser Activation", {9, "@Town Cargo Box Area/Discard", "@Mountainside Discard/Discard"} },
+	[97381] = {"@Monastery/Laser Activation",{6, "@Desert Discard/Discard", "@Treehouse Right Side/Green Bridge Discard"}},
+	[98739] = {"@Shadows Laser/Laser Activation",{4, "@Shipwreck Discard/Discard", "@Town Red Rooftop/Discard"}},
 }
