@@ -753,8 +753,5 @@ panel = {
     [159752] = {"True"},
     [159753] = {"True"},
     [159754] = {"True"},
-    [159755] = {"True"},
+    [159755] = {"True"}
 }
-function getLogic()
-    return panel
-end

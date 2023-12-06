@@ -211,6 +211,7 @@ LOCATION_MAPPING = {
 	[158519] = {"@Tunnels Exit to Theater/Theater Shortcut Panel"},
 	[158520] = {"@Tunnels Exit to Desert/Desert Shortcut Panel"},
 	[158521] = {"@Tunnels Exit to Town/Town Shortcut Panel"},
+
 	[159000] = {"@Symmetry Island/Glass Factory Reflection EP"},
 	[159001] = {"@Symmetry Island/Glass Factory Black Line EP"},
 	[159002] = {"@Outside Glass Factory/Vase EP"},
