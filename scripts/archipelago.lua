@@ -387,6 +387,7 @@ function onClear(slot_data)
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
+			require(getLogicFile())
 		elseif k == "shuffle_boat" then
 			Tracker:FindObjectForCode("Boat").Active = not value
 		elseif k == "early_caves" then
