@@ -123,9 +123,9 @@ function parseIds(ids)
 end
 
 
+require(getLogicFile())
 function canSolve(ids)
 	ids = parseIds(ids)
-	require(getLogicFile())
 	for id in ids:gmatch("%S+") do
 		requiredSymbols = getLogic()[tonumber(id)]
 		for k, v in pairs(requiredSymbols) do
