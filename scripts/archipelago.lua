@@ -263,7 +263,6 @@ function onClear(slot_data)
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
-			require(getLogicFile())
 		else
 			obj.Active = value
 		end
