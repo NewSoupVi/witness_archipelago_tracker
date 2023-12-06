@@ -516,3 +516,17 @@ EP_DATASTORAGE_IDS = {
 	[0x33A20] = {"@Theater EPs/Flowers EP (Town Side 6)"},
 	[0x33B06] = {"@Theater EPs/Church EP (Town Side 6)"},
 }
+
+LASER_DATASTORAGE_ID = {
+	[628] = {"@Jungle Laser/Laser Activation",{8}},
+	[1289] = {"@Symmetry Island/Laser Activation",{1}},
+	[3062] = {"@Swamp Laser/Laser Activation",{10}},
+	[4859] = {"@Desert/Laser Activation",{2}},
+	[5307] = {"@Keep Tower/Laser Activation",{5}},
+	[5433] = {"@Quarry Laser/Laser Activation",{3}},
+	[10404] = {"@Treehouse Laser House/Laser Activation",{11}},
+	[13049] = {"@Town Tower/Laser Activation",{7}},
+	[49842] = {"@Color Bunker/Laser Activation", {9, "@Town Cargo Box Area/Discard", "@Mountainside Discard/Discard"} },
+	[97381] = {"@Monastery/Laser Activation",{6, "@Desert Discard/Discard", "@Treehouse Right Side/Green Bridge Discard"}},
+	[98739] = {"@Shadows Laser/Laser Activation",{4, "@Shipwreck Discard/Discard", "@Town Red Rooftop/Discard"}}
+}
