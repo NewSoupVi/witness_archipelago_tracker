@@ -121,7 +121,6 @@ function hasSymbol(symbol)
 	elseif symbol == "Stars + Same Colored Symbol" then
 		return stars(2)
 	elseif symbolCheck[symbol] ~= nil then
-		-- print("test")
 		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
 	else
 		return true
@@ -129,7 +128,6 @@ function hasSymbol(symbol)
 end
 
 function getLogicFile()
-	print(test, Tracker:ProviderCountForCode("Expert"), Tracker:ProviderCountForCode("randomizationSigma"))
 	if Tracker:ProviderCountForCode("Expert") == 1 then
 		return "WitnessLogicExpert"
 	elseif Tracker:ProviderCountForCode("randomizationSigma") == 1 then
@@ -158,7 +156,6 @@ function canSolve(ids)
 		return true
 	end
 	ids = parseIds(ids)
-	-- require("WitnessLogic")
 	for id in ids:gmatch("%S+") do
 		requiredSymbols = panel[tonumber(id)]
 		for k, v in pairs(requiredSymbols) do

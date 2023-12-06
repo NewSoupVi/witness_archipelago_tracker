@@ -267,7 +267,7 @@ function onClear(slot_data)
 		Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
 	end
 
-	for AudioLogID, test in pairs(AUDIO_LOG_DATASTORAGE_IDS) do
+	for AudioLogID, _ in pairs(AUDIO_LOG_DATASTORAGE_IDS) do
 
 		Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
 		Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
@@ -378,23 +378,9 @@ function onClear(slot_data)
 		elseif k == "shuffle_doors" then
 			Tracker:FindObjectForCode("doorsSetting").CurrentStage = value
 			Tracker:FindObjectForCode("doorsSetting").Active = true
-			-- if value == 0 then
-			-- 	Tracker:FindObjectForCode("doorsNo").Active = true
-			-- elseif value == 1 then
-			-- 	Tracker:FindObjectForCode("doorsPanel").Active = true
-			-- elseif value == 2 then
-			-- 	Tracker:FindObjectForCode("doorsDoor").Active = true
-			-- elseif value == 3 then
-			-- 	Tracker:FindObjectForCode("doorsMix").Active = true
-			-- end
 		elseif k == "door_groupings" then
 			Tracker:FindObjectForCode("doorsGrouping").CurrentStage = value
 			Tracker:FindObjectForCode("doorsGrouping").Active = true
-			-- if value == 0 then
-			-- 	Tracker:FindObjectForCode("doorsComplex").Active = true
-			-- elseif value == 1 then
-			-- 	Tracker:FindObjectForCode("doorsSimple").Active = true
-			-- end
 		elseif k == "mountain_lasers" or k == "challenge_lasers" then
 			obj.AcquiredCount = value
 		elseif k == "victory_condition" then
@@ -550,13 +536,14 @@ function laser(num)
 	return (lasers[tonumber(num)] > 0)
 end
 
--- function getDisabledDict()
--- 	return disabledDict
--- end
-
 function isClearing()
 	return currentlyClearing
 end
+
+function randomizationChanged()
+    require(getLogicFile())
+end
+
 
 -- add AP callbacks
 -- un-/comment as needed
@@ -565,3 +552,5 @@ Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
+
+ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)

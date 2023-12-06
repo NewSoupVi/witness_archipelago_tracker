@@ -585,7 +585,3 @@ panel = {
     [158535] = {"True"},
     [158536] = {"True"}
 }
-
-function getLogic()
-    return panel
-end
