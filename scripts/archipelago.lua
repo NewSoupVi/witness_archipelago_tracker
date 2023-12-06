@@ -263,6 +263,7 @@ function onClear(slot_data)
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
+			require(getLogicFile())
 		else
 			obj.Active = value
 		end
@@ -497,6 +498,9 @@ function laser(num)
 	return (lasers[tonumber(num)] > 0)
 end
 
+function randomizationChanged()
+    require(getLogicFile())
+end
 
 -- add AP callbacks
 -- un-/comment as needed
@@ -505,3 +509,5 @@ Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
+
+ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
