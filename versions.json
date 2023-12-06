@@ -3,7 +3,7 @@
     {
       "package_version": "0.4.3.1a",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3.1a/witness_archipelago_tracker.zip",
-      "sha256": "64CDA43E3CD006CAD3E4A8EF8144F16E28D54F2512D2F8DF7176DB1F4AAC4B07",
+      "sha256": "7FD90DAF602B19CA62426C09875E6E8D61408D0AA698FBF9AD1D76824E67742A",
       "changelog": [
         "Logic file loading error fix"
       ]
