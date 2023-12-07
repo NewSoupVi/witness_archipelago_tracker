@@ -838,7 +838,7 @@
 		"sections": [
 			{
 				"name": "Third Surface Puzzle",
-				"visibility_rules": [ "$extraChecksRequired" ],
+				"visibility_rules": [ "$extraDesertCheckRequired" ],
 				"access_rules": [ "$canSolve|158076-158078, @Places/overworld" ]
 			},
 			{

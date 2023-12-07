@@ -44,6 +44,10 @@ function extraChecksRequired()
 	)
 end
 
+function extraDesertCheckRequired()
+	return extraChecksRequired() and not (Foreknowable(3) and Snipeable(1)) -- Desert Light Room Snipe
+end
+
 function laserCount(amount)
 	if tonumber(amount) > 0 then
 		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
