@@ -25,6 +25,7 @@
 				"name": "Gate EP",
 				"visibility_rules": [ "eps, Unrandomized, Vaults, $isNotDisabledByPostgame|210223" ],
 				"access_rules": [
+					"$isDisabledByPostgame|210223",
 					"@Tutorial Gate/Gate Open, @Places/tunnels",
 					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels]"
 				]
@@ -2726,6 +2727,7 @@
 				"name": "Flowers EP",
 				"visibility_rules": [ "eps, epDiffTedious, Unrandomized, Vaults, $isNotDisabledByPostgame|211488", "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211488" ],
 				"access_rules": [
+					"$isDisabledByPostgame|211488",
 					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels",
 					"@Theater/Tutorial Video, Theater Walkway Door to Town",
 					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater",
@@ -2766,6 +2768,7 @@
 				"name": "Eclipse EP",
 				"visibility_rules": [ "eps, epDiffEclipse, Unrandomized, Vaults, $isNotDisabledByPostgame|211382" ],
 				"access_rules": [
+					"$isDisabledByPostgame|211382",
 					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
 					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250",
 					"epDiffNormal",
@@ -4599,6 +4602,7 @@
 				"name": "Pink Bridge EP",
 				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40291", "eps, epDiffEclipse, $isNotDisabledByPostgame|40291" ],
 				"access_rules": [
+					"$isDisabledByPostgame|40291",
 					"@Places/mountainLayer2",
 					"@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
 				]
@@ -4776,12 +4780,18 @@
 			{
 				"name": "Blue Bridge EP",
 				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40286", "eps, epDiffEclipse, $isNotDisabledByPostgame|40286" ],
-				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ]
+				"access_rules": [
+					"$isDisabledByPostgame|40286",
+					"@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge"
+				]
 			},
 			{
 				"name": "Yellow Bridge EP",
 				"visibility_rules": [ "eps, epDiffTedious, $isNotDisabledByPostgame|40285", "eps, epDiffEclipse, $isNotDisabledByPostgame|40285" ],
-				"access_rules": [ "@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge" ]
+				"access_rules": [
+					"$isDisabledByPostgame|40285",
+					"@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge"
+				]
 			}
 		],
 		"map_locations": [
@@ -4903,7 +4913,6 @@
 				"visibility_rules": [ "$isNotDisabledByPostgame|1790" ],
 				"access_rules": [ "$canSolve|158454-158457, @Places/caves" ]
 			}
-
 		],
 		"map_locations": [
 			{
@@ -5157,7 +5166,6 @@
 			}
 		]
 	},
-
 	{
 		"name": "Caves Upstairs Left - Left",
 		"visibility_rules": [ "$isNotDisabledByPostgame|41706" ],
@@ -5243,7 +5251,10 @@
 			{
 				"name": "Caves Skylight EP",
 				"visibility_rules": [ "eps, $isNotDisabledByPostgame|211324" ],
-				"access_rules": [ "@Places/caves" ]
+				"access_rules": [
+					"$isDisabledByPostgame|211324",
+					"@Places/caves"
+				]
 			}
 		],
 		"map_locations": [
@@ -5299,7 +5310,11 @@
 		"sections": [
 			{
 				"name": "Challenge Water EP",
-				"visibility_rules": [ "eps, $isNotDisabledByPostgame|166704" ]
+				"visibility_rules": [ "eps, $isNotDisabledByPostgame|166704" ],
+				"access_rules": [
+					"$isDisabledByPostgame|166704",
+					"@Places/challenge"
+				]
 			},
 			{
 				"name": "Challenge Vault",
