@@ -385,6 +385,7 @@ function onClear(slot_data)
 			obj.AcquiredCount = value
 		elseif k == "victory_condition" then
 			obj.CurrentStage = value
+			obj.Active = true
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
 			require(getLogicFile())
@@ -405,8 +406,6 @@ function onClear(slot_data)
 			obj.Active = value
 		end
 	end
-
-	if (not Tracker:FindObjectForCode("hiddenGoal").Active) then showGoal() end
 
 	currentlyClearing = false
 end
@@ -527,7 +526,7 @@ function laserCounting()
 end
 
 function showGoal()
-	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
+	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = Tracker:FindObjectForCode("hiddenShort").AcquiredCount
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = Tracker:FindObjectForCode("hiddenLong").AcquiredCount
 end
