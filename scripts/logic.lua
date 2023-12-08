@@ -30,6 +30,10 @@ function longBoxWithoutMountainEntry()
 	return (Tracker:ProviderCountForCode("boxLong") < 8)
 end
 
+function isDisabledByPostgame(id)
+	return disabledDict[tonumber(id)]
+end
+
 function isNotDisabledByPostgame(id)
 	return not disabledDict[tonumber(id)]
 end
