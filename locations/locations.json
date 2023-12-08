@@ -2538,7 +2538,7 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"$isNotLaserShuffle, @Desert/Laser, @Places/overworld",
-					"$laser|4, @Places/overworld"
+					"$laser|2, @Places/overworld"
 				]
 			}
 		],
