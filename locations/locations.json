@@ -4743,7 +4743,11 @@
 			{
 				"name": "Elevator Discard",
 				"visibility_rules": [ "Discarded, $isNotDisabledByPostgame|98195" ],
-				"access_rules": [ "$canSolve|158613, @Places/mountainElevator" ]
+				"access_rules": [
+					"$canSolve|158613, @Places/mountainElevator",
+					"showSnipes, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]",
+					"$Snipeable|2, nonRandomizedSnipes, $canSolve|158613, @Places/mountainLayer2Near"
+				]
 			}
 		],
 		"map_locations": [
