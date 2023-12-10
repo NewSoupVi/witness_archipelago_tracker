@@ -89,7 +89,10 @@
 			{
 				"name": "Patio Flowers EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
-				"access_rules": [ "@Places/tutorial, $canSolve|158009-158010" ]
+				"access_rules": [
+					"$isDisabledByPostgame|210432",
+					"@Places/tutorial, $canSolve|158009-158010"
+				]
 			},
 			{
 				"name": "Outside Tutorial Garden EP",
@@ -2206,17 +2209,26 @@
 			{
 				"name": "Left Shutter EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
-				"access_rules": [ "@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)" ]
+				"access_rules": [
+					"$isDisabledByPostgame|13479",
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+				]
 			},
 			{
 				"name": "Middle Shutter EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
-				"access_rules": [ "@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)" ]
+				"access_rules": [
+					"$isDisabledByPostgame|13485",
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+				]
 			},
 			{
 				"name": "Right Shutter EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
-				"access_rules": [ "@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)" ]
+				"access_rules": [
+					"$isDisabledByPostgame|13487",
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+				]
 			}
 		],
 		"map_locations": [
@@ -2775,31 +2787,36 @@
 
 	{
 		"name": "Theater",
-		"access_rules": [ "@Places/theater" ],
 		"sections": [
 			{
 				"name": "Discard",
 				"visibility_rules": [ "Discarded" ],
-				"access_rules": [ "$canSolve|158608" ]
+				"access_rules": [ "$canSolve|158608, @Places/theater" ]
 			},
 			{
 				"name": "Tutorial Video",
 				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
-					"@Outside Tutorial Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Outside Tutorial Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
-					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
+					"@Outside Tutorial Vault/Vault Box, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Outside Tutorial Vault/Vault Box], $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
 				"name": "Window EP",
 				"visibility_rules": [ "eps, Unrandomized, Vaults", "eps, $Foreknowable|1, Unrandomized" ],
-				"access_rules": [ "@Theater/Tutorial Video" ]
+				"access_rules": [
+					"$isDisabledByPostgame|211497",
+					"@Theater/Tutorial Video"
+				]
 			},
 			{
 				"name": "Door EP",
 				"visibility_rules": [ "eps, Unrandomized, Vaults", "eps, $Foreknowable|1, Unrandomized" ],
-				"access_rules": [ "@Theater/Tutorial Video" ]
+				"access_rules": [
+					"$isDisabledByPostgame|211498",
+					"@Theater/Tutorial Video"
+				]
 			},
 			{
 				"name": "Flowers EP",
@@ -2817,32 +2834,35 @@
 				"name": "Desert Video",
 				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
-					"@Desert Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Desert Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
-					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
+					"@Desert Vault/Vault Box, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Desert Vault/Vault Box], $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
 				"name": "Jungle Video",
 				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
-					"@Between Jungle and Monastery/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Between Jungle and Monastery/Vault Box], $hasPanel|Theater Video Input (Panel)",
-					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
+					"@Between Jungle and Monastery/Vault Box, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Between Jungle and Monastery/Vault Box], $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
 				"name": "Church EP",
 				"visibility_rules": [ "eps, Unrandomized, Vaults", "eps, $Foreknowable|1, Unrandomized" ],
-				"access_rules": [ "@Theater/Jungle Video" ]
+				"access_rules": [
+					"$isDisabledByPostgame|211718",
+					"@Theater/Jungle Video"
+				]
 			},
 			{
 				"name": "Challenge Video",
 				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabledByPostgame|13641", "eps, $Foreknowable|1, Unrandomized, $isNotDisabledByPostgame|13641" ],
 				"access_rules": [
-					"@Mountain Challenge Area/Challenge Vault, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel)",
-					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
+					"@Mountain Challenge Area/Challenge Vault, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
@@ -2860,18 +2880,18 @@
 				"name": "Shipwreck Video",
 				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
-					"@Shipwreck Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Shipwreck Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
-					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
+					"@Shipwreck Vault/Vault Box, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Shipwreck Vault/Vault Box], $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
 				"name": "Mountain Video",
 				"visibility_rules": [ "Vaults, Unrandomized", "$Foreknowable|1, Unrandomized" ],
 				"access_rules": [
-					"@Mountainside Vault/Vault Box, $hasPanel|Theater Video Input (Panel)",
-					"showSnipes, [@Mountainside Vault/Vault Box], $hasPanel|Theater Video Input (Panel)",
-					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel)"
+					"@Mountainside Vault/Vault Box, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Mountainside Vault/Vault Box], $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"$Foreknowable|1, $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			}
 
@@ -3161,6 +3181,7 @@
 				"name": "Garden Left EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
 				"access_rules": [
+					"$isDisabledByPostgame|15330",
 					"$isNotDoors, @Monastery/Outside Puzzles",
 					"Monastery Door to Garden, @Places/overworld"
 				]
@@ -3409,6 +3430,7 @@
 				"name": "Green Room Flowers EP",
 				"visibility_rules": [ "eps, Unrandomized" ],
 				"access_rules": [
+					"$isDisabledByPostgame|211",
 					"$Warp|Bunker Green Room",
 					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
 				]
@@ -3417,6 +3439,7 @@
 				"name": "Tinted Door EP",
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
+					"$isDisabledByPostgame|13813",
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
 					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom",
 					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber",
