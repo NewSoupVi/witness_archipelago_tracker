@@ -414,6 +414,11 @@ function onClear(slot_data)
 	end
 
 	currentlyClearing = false
+
+	-- Dummy item state change so canSolve works properly with 0 items received
+	Tracker:FindObjectForCode("Brain").Active = true
+	Tracker:FindObjectForCode("Brain").Active = false
+
 end
 
 -- called when an item gets collected
