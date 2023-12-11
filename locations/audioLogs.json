@@ -327,7 +327,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/overworld" ]
+				"access_rules": [
+					"@Places/overworld",
+					"showSnipes, @Places/ocean, [@Places/overworld]"
+				]
 			}
 		],
 		"map_locations": [
