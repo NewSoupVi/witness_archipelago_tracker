@@ -1754,8 +1754,8 @@
 					"@Pressure Plates 1/Pressure Plates, @Places/keepTower",
 					"showSnipes, randomizationSigma, @Pressure Plates 1/Pressure Plates, [@Places/keepTower]",
 					"showSnipes, Expert, @Pressure Plates 1/Pressure Plates, [@Places/keepTower]",
-					"$Snipeable|1, randomizationSigma, @Pressure Plates 1/Pressure Plates",
-					"$Snipeable|1, Expert, @Pressure Plates 1/Pressure Plates"
+					"$Snipeable|1, fovSnipes, randomizationSigma, @Pressure Plates 1/Pressure Plates",
+					"$Snipeable|1, fovSnipes, Expert, @Pressure Plates 1/Pressure Plates"
 				]
 			}
 		],
