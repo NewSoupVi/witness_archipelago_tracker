@@ -3650,7 +3650,11 @@
 			{
 				"name": "Purple Sand Middle EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)" ]
+				"access_rules": [
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack",
+					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack"
+				]
 			},
 			{
 				"name": "Purple Sand Top EP",
