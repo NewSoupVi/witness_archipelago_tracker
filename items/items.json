@@ -235,6 +235,13 @@
 		"img": "images/NonRandomizedSnipes.png"
 	},
 	{
+		"name": "FOV Snipes",
+		"codes": "fovSnipes",
+		"type": "toggle",
+		"loop": true,
+		"img": "images/FOVSnipes.png"
+	},
+	{
 		"name": "Foreknowledge",
 		"codes": "Foreknowledge",
 		"type": "progressive",

@@ -895,7 +895,11 @@
 			},
 			{
 				"name": "Laser",
-				"access_rules": [ "@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld" ]
+				"access_rules": [
+					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
+					"showSnipes, Desert Elevator Door, [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld",
+					"$Snipeable|1, fovSnipes, Desert Elevator Door, @Places/overworld"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -1746,7 +1750,13 @@
 			{
 				"name": "Pressure Plates 1 EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Pressure Plates 1/Pressure Plates, @Places/keepTower" ]
+				"access_rules": [
+					"@Pressure Plates 1/Pressure Plates, @Places/keepTower",
+					"showSnipes, randomizationSigma, @Pressure Plates 1/Pressure Plates, [@Places/keepTower]",
+					"showSnipes, Expert, @Pressure Plates 1/Pressure Plates, [@Places/keepTower]",
+					"$Snipeable|1, randomizationSigma, @Pressure Plates 1/Pressure Plates",
+					"$Snipeable|1, Expert, @Pressure Plates 1/Pressure Plates"
+				]
 			}
 		],
 		"map_locations": [
@@ -2667,7 +2677,11 @@
 			{
 				"name": "Black Line Tower EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/townLaser" ]
+				"access_rules": [
+					"@Places/townLaser",
+					"showSnipes, @Places/overworld, [@Places/townLaser]",
+					"$Snipeable|1, fovSnipes, @Places/overworld"
+				]
 			},
 			{
 				"name": "Black Line Redirect EP",
@@ -3644,7 +3658,9 @@
 				"access_rules": [
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
 					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]",
-					"$Foreknowable|1, autoElevators"
+					"$Foreknowable|1, autoElevators",
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack",
+					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack"
 				]
 			},
 			{
@@ -3652,13 +3668,19 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"$isNotAutoElevators, @Places/overworld",
-					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)"
+					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack",
+					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack"
 				]
 			},
 			{
 				"name": "Long Bridge Slide EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)" ]
+				"access_rules": [
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack",
+					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack"
+				]
 			}
 		],
 		"map_locations": [
@@ -3710,12 +3732,20 @@
 			{
 				"name": "Sliding Bridge Left EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform" ]
+				"access_rules": [
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform",
+					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]",
+					"$Snipeable|2, @Places/swampEntry, @Places/swampPlatform"
+				]
 			},
 			{
 				"name": "Sliding Bridge Right EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform" ]
+				"access_rules": [
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform",
+					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]",
+					"$Snipeable|2, @Places/swampEntry, @Places/swampPlatform"
+				]
 			}
 		],
 		"map_locations": [
@@ -4112,7 +4142,13 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "@Places/treehouseLaser" ]
+				"access_rules": [
+					"@Places/treehouseLaser",
+					"showSnipes, $Warp|Treehouse Behind Laser, [@Places/treehouseLaser]",
+					"showSnipes, @Treehouse Left Side/Left Orange Bridge, [@Places/treehouseLaser]",
+					"$Snipeable|1, fovSnipes, $Warp|Treehouse Behind Laser",
+					"$Snipeable|1, fovSnipes, @Treehouse Left Side/Left Orange Bridge"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -4160,7 +4196,9 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"$Warp|Treehouse Burned House",
-					"@Treehouse Left Side/Left Orange Bridge"
+					"@Treehouse Left Side/Left Orange Bridge",
+					"showSnipes, @Places/overworld, [@Treehouse Left Side/Left Orange Bridge]",
+					"$Snipeable|1, fovSnipes, @Places/overworld"
 				]
 			},
 			{

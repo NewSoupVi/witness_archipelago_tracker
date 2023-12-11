@@ -406,6 +406,8 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("snipesDifficulty").CurrentStage = value
 		elseif k == "expect_non_randomized_snipes" then
 			Tracker:FindObjectForCode("nonRandomizedSnipes").Active = value
+		elseif k == "expect_fov_snipes" then
+			Tracker:FindObjectForCode("fovSnipes").Active = value
 		elseif k == "expect_prior_knowledge" then
 			Tracker:FindObjectForCode("Foreknowledge").CurrentStage = value
 		else

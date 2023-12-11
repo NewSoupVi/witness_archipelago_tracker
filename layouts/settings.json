@@ -111,6 +111,13 @@
 					{
 						"type": "item",
 						"margin": "0, 1",
+						"item": "fovSnipes",
+						"h_alignment": "center",
+						"v_alignment": "stretch"
+					},
+					{
+						"type": "item",
+						"margin": "0, 1",
 						"item": "snipesDifficulty",
 						"h_alignment": "center",
 						"v_alignment": "stretch"
