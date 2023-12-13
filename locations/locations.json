@@ -2749,6 +2749,9 @@
 					"@Theater/Tutorial Video, Theater Walkway Door to Town",
 					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater",
 					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater",
+					"showSnipes, @Theater/Tutorial Video, Desert Door to Light Room, Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town]",
+					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town]",
+					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town]",
 					"epDiffNormal"
 				]
 			},
