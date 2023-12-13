@@ -546,7 +546,11 @@
 			{
 				"name": "Environmental Set",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158059-158063, @Places/symmetryOuter" ]
+				"access_rules": [
+					"$canSolve|158059-158063, @Places/symmetryOuter",
+					"showSnipes, $canSolve|158059-158063, @Places/ocean, [@Places/symmetryOuter]",
+					"$Snipeable|3, nonRandomizedSnipes, $canSolve|158059-158063, @Places/ocean"
+				]
 			},
 			{
 				"name": "Lower Entry Panel",
