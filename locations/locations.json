@@ -3674,7 +3674,8 @@
 					"$isNotAutoElevators, @Places/overworld",
 					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
 					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack",
-					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack"
+					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack",
+					"$Foreknowable|1, autoElevators, @Places/overworld, @Places/swampBack"
 				]
 			},
 			{
