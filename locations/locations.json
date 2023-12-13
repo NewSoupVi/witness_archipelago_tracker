@@ -3529,7 +3529,10 @@
 			{
 				"name": "Purple Sand Middle EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)" ]
+				"access_rules": [
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+				]
 			},
 			{
 				"name": "Purple Sand Top EP",
@@ -3544,13 +3547,17 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"$isNotAutoElevators, @Places/overworld",
-					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)"
+					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
 				]
 			},
 			{
 				"name": "Long Bridge Slide EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)" ]
+				"access_rules": [
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
+					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+				]
 			}
 		],
 		"map_locations": [
@@ -3602,12 +3609,18 @@
 			{
 				"name": "Sliding Bridge Left EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform" ]
+				"access_rules": [
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform",
+					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]"
+				]
 			},
 			{
 				"name": "Sliding Bridge Right EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform" ]
+				"access_rules": [
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform",
+					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]"
+				]
 			}
 		],
 		"map_locations": [
@@ -3774,7 +3787,10 @@
 			{
 				"name": "Underwater Sliding Bridge EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan" ]
+				"access_rules": [
+					"$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan",
+					"showSnipes, @Places/swampEntry, @Places/swampCyan, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]"
+				]
 			}
 		],
 		"map_locations": [
@@ -4651,7 +4667,8 @@
 				"access_rules": [
 					"$canSolve|158439 158613, $hasPanel|Mountain Elevator (Panel), @Places/mountainMeta",
 					"$canSolve|158613, $isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
-					"$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door"
+					"$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door",
+					"showSnipes, @Places/mountainLayer2, $canSolve|158613, [$isNotDoors], [@Inside Mountain Layer 2 Orange/Orange Light Bridge]"
 				]
 			}
 		],
