@@ -3774,7 +3774,11 @@
 			{
 				"name": "Underwater Sliding Bridge EP",
 				"visibility_rules": [ "eps" ],
-				"access_rules": [ "$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan" ]
+				"access_rules": [
+					"$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan",
+					"showSnipes, @Places/swampCyan, @Places/swampEntry, [$Snipeable|2]",
+					"$Snipeable|2, @Places/swampCyan, @Places/swampEntry"
+				]
 			}
 		],
 		"map_locations": [
