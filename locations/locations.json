@@ -3920,7 +3920,7 @@
 				"access_rules": [
 					"$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan",
 					"showSnipes, @Places/swampCyan, @Places/swampEntry, [$Snipeable|2]",
-					"$Snipeable|2, @Places/swampCyan, @Places/sawmpEntry"
+					"$Snipeable|2, @Places/swampCyan, @Places/swampEntry"
 				]
 			}
 		],
