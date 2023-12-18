@@ -4037,7 +4037,7 @@
 			{
 				"name": "Discard",
 				"visibility_rules": [ "Discarded" ],
-				"access_rules": [ "$canSolve|158611, @Treehouse Left Side/Left Orange Bridge" ]
+				"access_rules": [ "$canSolve|158611, @Places/treehouseLaserDiscard" ]
 			}
 		],
 		"map_locations": [

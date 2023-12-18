@@ -15,7 +15,7 @@
 			{
 				"name": "tutorialOutpostPath",
 				"access_rules": [
-					"$isNotDoors, $canSolve|158005, @Places/overworld",
+					"$isNotDoors, $canSolve|158005, @Places/tutorial, @Places/overworld",
 					"Outside Tutorial Optional Door, @Places/overworld",
 					"Outside Tutorial Outpost Entry Door, @Places/tutorialOutpostInterior"
 				]
@@ -180,10 +180,10 @@
 				"name": "shadowsLaser",
 				"access_rules": [
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Left Door], [Shadows Laser Room Right Door]",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door]",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
-					"showSnipes, [Shadows Laser Room Right Door], Shadows Laser Room Left Door, @Places/overworld",
-					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld"
+					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
+					"showSnipes, [Shadows Laser Room Right Door], Shadows Laser Room Left Door, @Places/overworld"
 				]
 			},
 			{
@@ -287,6 +287,10 @@
 			{
 				"name": "treehouseLeft2",
 				"access_rules": [ "@Treehouse Left Side/Purple Bridge 2" ]
+			},
+			{
+				"name": "treehouseLaserDiscard",
+				"access_rules": [ "@Treehouse Left Side/Left Orange Bridge" ]
 			},
 			{
 				"name": "treehouseOutsideLaser",
