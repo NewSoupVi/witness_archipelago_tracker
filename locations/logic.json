@@ -149,13 +149,12 @@
 					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
 					"$canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
-					"$isNotDoors, @Places/quarryStoneworks, $canSolve|158142, @Places/quarryStoneworksMid, $canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel)",
 					"showSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]"
 				]
 			},
 			{
 				"name": "quarryBoathouseUpstairsFront",
-				"access_rules": [ "@Places/quarry, @Logic/boathouseRamp, $canSolve|158148" ]
+				"access_rules": [ "@Logic/boathouseRamp, $canSolve|158148, @Places/quarry" ]
 			},
 			{
 				"name": "quarryBoathouseUpstairsBack",
@@ -289,12 +288,12 @@
 				"access_rules": [ "@Treehouse Left Side/Purple Bridge 2" ]
 			},
 			{
-				"name": "treehouseLaserDiscard",
-				"access_rules": [ "@Treehouse Left Side/Left Orange Bridge" ]
-			},
-			{
 				"name": "treehouseOutsideLaser",
 				"access_rules": [ "$canSolve|158376-158387, @Places/treehouseLeft2" ]
+			},
+			{
+				"name": "treehouseLaserDiscard",
+				"access_rules": [ "@Treehouse Left Side/Left Orange Bridge" ]
 			},
 			{
 				"name": "treehouseLaser",
