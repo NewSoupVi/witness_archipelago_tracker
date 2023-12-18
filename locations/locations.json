@@ -183,7 +183,7 @@
 				"name": "Vault Box",
 				"access_rules": [
 					"$Warp|Outside Tutorial Vault",
-					"@Places/overworld, $canSolve|158650"
+					"$canSolve|158650, @Places/overworld"
 				]
 			}
 		],
@@ -4163,10 +4163,8 @@
 				"name": "Laser",
 				"access_rules": [
 					"@Places/treehouseLaser",
-					"showSnipes, $Warp|Treehouse Behind Laser, [@Places/treehouseLaser]",
-					"showSnipes, @Treehouse Left Side/Left Orange Bridge, [@Places/treehouseLaser]",
-					"$Snipeable|1, fovSnipes, $Warp|Treehouse Behind Laser",
-					"$Snipeable|1, fovSnipes, @Treehouse Left Side/Left Orange Bridge"
+					"showSnipes, @Places/treehouseLaserDiscard, [@Places/treehouseLaser]",
+					"$Snipeable|1, fovSnipes, @Places/treehouseLaserDiscard"
 				]
 			},
 			{
@@ -4182,10 +4180,7 @@
 			{
 				"name": "Discard",
 				"visibility_rules": [ "Discarded" ],
-				"access_rules": [
-					"$Warp|Treehouse Behind Laser, $canSolve|158611",
-					"$canSolve|158611, @Treehouse Left Side/Left Orange Bridge"
-				]
+				"access_rules": [ "$canSolve|158611, @Places/treehouseLaserDiscard" ]
 			}
 		],
 		"map_locations": [
