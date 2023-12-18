@@ -31,7 +31,7 @@
 			{
 				"name": "orchardInner",
 				"access_rules": [
-					"$isNotDoors",
+					"$isNotDoors, @Places/overworld",
 					"Orchard Middle Gate, @Places/overworld"
 				]
 			},
@@ -229,7 +229,7 @@
 			{
 				"name": "plates4",
 				"access_rules": [
-					"$isNotDoors, @Pressure Plates 3/Pressure Plates, @Places/plates3",
+					"$isNotDoors, @Pressure Plates 3/Pressure Plates",
 					"Keep Pressure Plates 4 Exit Door, @Places/keepTower",
 					"Keep Shortcut to Shadows, @Places/overworld",
 					"Keep Pressure Plates 3 Exit Door, @Places/plates3"
@@ -238,7 +238,7 @@
 			{
 				"name": "keepTower",
 				"access_rules": [
-					"$isNotDoors, @Pressure Plates 4/Pressure Plates, @Places/plates4",
+					"$isNotDoors, @Pressure Plates 4/Pressure Plates",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4, unrandomized",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Tower Shortcut]",
 					"Keep Tower Shortcut, @Places/overworld",
@@ -266,7 +266,10 @@
 			},
 			{
 				"name": "treehouseAfterYellowBridge",
-				"access_rules": [ "$canSolve|158346-158354, @Places/treehouseThird" ]
+				"access_rules": [
+					"$canSolve|158346-158354, @Places/treehouseThird",
+					"Treehouse Beyond Yellow Bridge Door, @Places/treehouseMain"
+				]
 			},
 			{
 				"name": "treehouseMain",
