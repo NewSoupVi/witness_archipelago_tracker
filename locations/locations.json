@@ -174,10 +174,10 @@
 	{
 		"name": "Outside Tutorial Vault",
 		"visibility_rules": [ "Vaults" ],
-		"access_rules": [ "@Places/overworld, $canSolve|158650" ],
 		"sections": [
 			{
-				"name": "Vault Box"
+				"name": "Vault Box",
+				"access_rules": [ "$canSolve|158650, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -1131,7 +1131,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"$canSolve|158123, @Places/quarryStoneworks",
-					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks]"
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld"
 				]
 			},
 			{
@@ -3354,10 +3354,10 @@
 				"visibility_rules": [ "eps" ],
 				"access_rules": [
 					"$isDisabledByPostgame|13813",
-					"Bunker Tinted Glass Door, @Places/bunkerElevator",
-					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevator",
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber, @Places/bunkerElevator",
-					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevator, @Places/overworld, [@Places/bunkerAntechamber]"
+					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
+					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom",
+					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber",
+					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
 			}
 		],
@@ -4458,10 +4458,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Bridge",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40505" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
-				"name": "Pink Light Bridge"
+				"name": "Pink Light Bridge",
+				"access_rules": [ "@Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -4476,12 +4476,11 @@
 
 	{
 		"name": "Inside Mountain Layer 1 Trash",
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
 				"name": "Angled Inside Trash",
 				"visibility_rules": [ "$isNotDisabledByPostgame|40623" ],
-				"access_rules": [ "$canSolve|158424 158425" ]
+				"access_rules": [ "$canSolve|158424 158425, @Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -4496,11 +4495,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Left",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40555" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
 				"name": "Left Row",
-				"access_rules": [ "$canSolve|158414-158420" ]
+				"access_rules": [ "$canSolve|158414-158420, @Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -4516,11 +4514,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Right",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40571" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
 				"name": "Right Row",
-				"access_rules": [ "$canSolve|158409-158413" ]
+				"access_rules": [ "$canSolve|158409-158413, @Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -4535,11 +4532,10 @@
 	{
 		"name": "Inside Mountain Layer 1 Back",
 		"visibility_rules": [ "$isNotDisabledByPostgame|40814" ],
-		"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ],
 		"sections": [
 			{
 				"name": "Back Row",
-				"access_rules": [ "$canSolve|158421-158423" ]
+				"access_rules": [ "$canSolve|158421-158423, @Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -4651,7 +4647,7 @@
 				"access_rules": [
 					"$isDisabledByPostgame|40291",
 					"@Places/mountainLayer2",
-					"@Places/mountainLayer1, $canSolve|158408, @Places/mountainMeta"
+					"@Places/mountainLayer1, @Places/mountainMeta"
 				]
 			}
 		],
@@ -4671,10 +4667,8 @@
 				"name": "Elevator Discard",
 				"visibility_rules": [ "Discarded, $isNotDisabledByPostgame|98195" ],
 				"access_rules": [
-					"$canSolve|158439 158613, $hasPanel|Mountain Elevator (Panel), @Places/mountainMeta",
-					"$canSolve|158613, $isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
-					"$canSolve|158613, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, Inside Mountain Second Layer Exit Door",
-					"showSnipes, @Places/mountainLayer2, $canSolve|158613, [$isNotDoors], [@Inside Mountain Layer 2 Orange/Orange Light Bridge]"
+					"$canSolve|158613, @Places/mountainElevator",
+					"showSnipes, $canSolve|158613, @Places/mountainLayer2, [@Places/mountainElevator]"
 				]
 			}
 		],

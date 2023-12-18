@@ -362,7 +362,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/bunkerElevator" ]
+				"access_rules": [ "@Places/bunkerLaser" ]
 			}
 		],
 		"map_locations": [
@@ -618,7 +618,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ]
+				"access_rules": [ "@Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -634,7 +634,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/mountainLayer1, $canSolve|158408" ]
+				"access_rules": [ "@Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
