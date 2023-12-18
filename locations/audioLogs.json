@@ -362,7 +362,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/bunkerElevatorProper" ]
+				"access_rules": [ "$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper" ]
 			}
 		],
 		"map_locations": [
