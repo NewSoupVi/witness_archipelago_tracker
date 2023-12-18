@@ -31,14 +31,16 @@
 			{
 				"name": "orchardInner",
 				"access_rules": [
-					"$isNotDoors, @Places/overworld",
+					"unrandomized, $isNotDoors, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Middle Gate], @Places/overworld",
 					"Orchard Middle Gate, @Places/overworld"
 				]
 			},
 			{
 				"name": "orchardHeart",
 				"access_rules": [
-					"$isNotDoors, @Places/overworld",
+					"unrandomized, $isNotDoors, @Places/orchardInner",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Final Gate], @Places/ochardInner",
 					"Orchard Final Gate, @Places/orchardInner"
 				]
 			},
