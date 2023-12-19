@@ -384,8 +384,8 @@ function onClear(slot_data)
 		elseif k == "mountain_lasers" or k == "challenge_lasers" then
 			obj.AcquiredCount = value
 		elseif k == "victory_condition" then
-			obj.CurrentStage = value
 			obj.Active = true
+			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
 			require(getLogicFile())
