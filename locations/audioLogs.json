@@ -328,8 +328,8 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"@Places/overworld",
-					"showSnipes, @Places/ocean, [@Places/overworld]"
+					"@Places/swampBack",
+					"showSnipes, @Places/ocean, [@Places/swampBack]"
 				]
 			}
 		],
