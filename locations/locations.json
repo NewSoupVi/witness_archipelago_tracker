@@ -1137,7 +1137,10 @@
 			{
 				"name": "Roof Exit Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "$canSolve|158145, @Places/quarryStoneworks" ]
+				"access_rules": [
+					"$canSolve|158145, @Places/quarryStoneworks",
+					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]"
+				]
 			},
 			{
 				"name": "Stairs Control Panel",
