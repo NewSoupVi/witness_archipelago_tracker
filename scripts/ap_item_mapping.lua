@@ -278,7 +278,7 @@ SETTINGS_MAPPING = {
 	["disabled_entities"] = "disabledPanels",
 	["expect_snipes"] = "snipesDifficulty",
 	["expect_non_randomized_snipes"] = "nonRandomizedSnipes",
-	["expect_fov_snipes"] = "fovSnipes"
+	["expect_fov_snipes"] = "fovSnipes",
 	["expect_prior_knowledge"] = "Foreknowledge"
 
 }
