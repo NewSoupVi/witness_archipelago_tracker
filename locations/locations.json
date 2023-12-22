@@ -64,12 +64,12 @@
 		"sections": [
 			{
 				"name": "First Hallway Straight",
-				"visibility_rules": [ "$extraChecksRequired" ],
+				"visibility_rules": [ "Tutorial 1 Extra" ],
 				"access_rules": [ "@Places/tutorial" ]
 			},
 			{
 				"name": "First Hallway Bent",
-				"visibility_rules": [ "$extraChecksRequired" ],
+				"visibility_rules": [ "Tutorial 2 Extra" ],
 				"access_rules": [ "@Places/tutorial" ]
 			},
 			{
@@ -831,7 +831,7 @@
 		"sections": [
 			{
 				"name": "Third Surface Puzzle",
-				"visibility_rules": [ "$extraChecksRequired" ],
+				"visibility_rules": [ "Desert 3 Extra" ],
 				"access_rules": [ "$canSolve|158076-158078, @Places/overworld" ]
 			},
 			{
