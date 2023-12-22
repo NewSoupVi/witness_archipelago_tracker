@@ -30,12 +30,24 @@ function longBoxWithoutMountainEntry()
 	return (Tracker:ProviderCountForCode("boxLong") < 8)
 end
 
-function isDisabledByPostgame(id)
+function isDisabled(id)
 	return disabledDict[tonumber(id)]
 end
 
-function isNotDisabledByPostgame(id)
+function isNotDisabled(id)
 	return not disabledDict[tonumber(id)]
+end
+
+function anyIsNotDisabled(ids)
+	local eval = false
+	ids = parseIds(ids)
+	for id in ids:gmatch("%S+") do
+		eval = isNotDisabled(id)
+		if eval then
+			return eval
+		end
+	end
+	return eval
 end
 
 function laserCount(amount)
