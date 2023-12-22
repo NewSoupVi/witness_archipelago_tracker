@@ -46,7 +46,7 @@
 		"sections": [
 			{
 				"name": "Gate EP (Town Side 2)",
-				"visibility_rules": [ "obelisks, Unrandomized, Vaults, $isNotDisabledByPostgame|210223", "obelisks, $Foreknowable|1, Unrandomized, $isNotDisabledByPostgame|210223" ],
+				"visibility_rules": [ "obelisks, Unrandomized, Vaults, $isNotDisabled|210223", "obelisks, $Foreknowable|1, Unrandomized, $isNotDisabled|210223" ],
 				"access_rules": [ "@Tutorial Gate/Gate EP" ]
 			}
 		],
