@@ -1284,7 +1284,7 @@
 
 	{
 		"name": "Caves Mountain Shortcut",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|186175", "doorsMix, $isNotDisabledByPostgame|186175", "Caves", "cavesPool" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
 		"access_rules": [
 			"Caves",
 			"Caves Mountain Shortcut"
@@ -1305,7 +1305,7 @@
 
 	{
 		"name": "Caves Swamp Shortcut",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|186457", "doorsMix, $isNotDisabledByPostgame|186457", "Caves", "cavesPool" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|186457", "doorsMix, $isNotDisabled|186457", "Caves", "cavesPool" ],
 		"access_rules": [
 			"Caves",
 			"Caves Swamp Shortcut"
@@ -1343,7 +1343,7 @@
 
 	{
 		"name": "Mountain Floor 1 Light Bridge",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|40505", "doorsMix, $isNotDisabledByPostgame|40505" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|40505", "doorsMix, $isNotDisabled|40505" ],
 		"access_rules": [ "Mountain Floor 1 Bridge (Panel)" ],
 		"sections": [
 			{
@@ -1361,7 +1361,7 @@
 
 	{
 		"name": "Mountain Floor 1 Exit",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|40532", "doorsMix, $isNotDisabledByPostgame|40532" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|40532", "doorsMix, $isNotDisabled|40532" ],
 		"access_rules": [ "Inside Mountain First Layer Exit Door" ],
 		"sections": [
 			{
@@ -1379,7 +1379,7 @@
 
 	{
 		"name": "Mountain Floor 2 Light Bridge Near",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|40582", "doorsMix, $isNotDisabledByPostgame|40582" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|40582", "doorsMix, $isNotDisabled|40582" ],
 		"access_rules": [ "Mountain Floor 2 Bridge Near (Panel)" ],
 		"sections": [
 			{
@@ -1397,7 +1397,7 @@
 
 	{
 		"name": "Mountain Floor 2 Staircase Near",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|40955", "doorsMix, $isNotDisabledByPostgame|40955" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|40955", "doorsMix, $isNotDisabled|40955" ],
 		"access_rules": [ "Inside Mountain Second Layer Staircase Near" ],
 		"sections": [
 			{
@@ -1415,7 +1415,7 @@
 
 	{
 		"name": "Mountain Floor 2 Light Bridge Far",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|40664", "doorsMix, $isNotDisabledByPostgame|40664" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|40664", "doorsMix, $isNotDisabled|40664" ],
 		"access_rules": [ "Mountain Floor 2 Bridge Far (Panel)" ],
 		"sections": [
 			{
@@ -1433,7 +1433,7 @@
 
 	{
 		"name": "Mountain Floor 2 Staircase Far",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|40455", "doorsMix, $isNotDisabledByPostgame|40455" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|40455", "doorsMix, $isNotDisabled|40455" ],
 		"access_rules": [ "Inside Mountain Second Layer Staircase Far" ],
 		"sections": [
 			{
@@ -1451,7 +1451,7 @@
 
 	{
 		"name": "Mountain Floor 2 Exit",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|40669", "doorsMix, $isNotDisabledByPostgame|40669" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|40669", "doorsMix, $isNotDisabled|40669" ],
 		"access_rules": [ "Inside Mountain Second Layer Exit Door" ],
 		"sections": [
 			{
@@ -1469,7 +1469,7 @@
 
 	{
 		"name": "Mountain Floor 2 Elevator",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|40683", "doorsMix, $isNotDisabledByPostgame|40683" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|40683", "doorsMix, $isNotDisabled|40683" ],
 		"access_rules": [ "Mountain Elevator (Panel)" ],
 		"sections": [
 			{
@@ -1487,7 +1487,7 @@
 
 	{
 		"name": "Mountain Bottom Floor Giant Puzzle Exit",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|40841", "doorsMix, $isNotDisabledByPostgame|40841" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|40841", "doorsMix, $isNotDisabled|40841" ],
 		"access_rules": [ "Inside Mountain Giant Puzzle Exit Door" ],
 		"sections": [
 			{
@@ -1505,7 +1505,7 @@
 
 	{
 		"name": "Mountain Bottom Floor Final Room Entry",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|49473", "doorsMix, $isNotDisabledByPostgame|49473" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|49473", "doorsMix, $isNotDisabled|49473" ],
 		"access_rules": [ "Inside Mountain Door to Final Room" ],
 		"sections": [
 			{
@@ -1523,7 +1523,7 @@
 
 	{
 		"name": "Mountain Bottom Floor Rock",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|98099", "doorsMix, $isNotDisabledByPostgame|98099" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|98099", "doorsMix, $isNotDisabled|98099" ],
 		"access_rules": [ "Inside Mountain Bottom Layer Rock" ],
 		"sections": [
 			{
@@ -1541,7 +1541,7 @@
 
 	{
 		"name": "Caves Entry",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|4088", "doorsDoor, $isNotDisabledByPostgame|186237", "doorsMix, $isNotDisabledByPostgame|186237" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|4088", "doorsDoor, $isNotDisabled|186237", "doorsMix, $isNotDisabled|186237" ],
 		"access_rules": [
 			"doorsPanel, Caves Entry (Panel)",
 			"Inside Mountain Door to Secret Area"
@@ -1562,7 +1562,7 @@
 
 	{
 		"name": "Caves Elevator Control",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|210347", "doorsMix, $isNotDisabledByPostgame|210347" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|210347", "doorsMix, $isNotDisabled|210347" ],
 		"access_rules": [ "Caves Elevator (Panel)" ],
 		"sections": [
 			{
@@ -1580,7 +1580,7 @@
 
 	{
 		"name": "Challenge Entry",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|41326", "doorsDoor, $isNotDisabledByPostgame|41370", "doorsMix, $isNotDisabledByPostgame|41370" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|41326", "doorsDoor, $isNotDisabled|41370", "doorsMix, $isNotDisabled|41370" ],
 		"access_rules": [
 			"doorsPanel, Challenge Entry (Panel)",
 			"Challenge Entry Door"
@@ -1601,7 +1601,7 @@
 
 	{
 		"name": "Caves Pillar",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|6565", "doorsMix, $isNotDisabledByPostgame|6565" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|6565", "doorsMix, $isNotDisabled|6565" ],
 		"access_rules": [ "Caves Pillar Door" ],
 		"sections": [
 			{
@@ -1619,7 +1619,7 @@
 
 	{
 		"name": "Challenge Tunnels Entry",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|14772", "doorsDoor, $isNotDisabledByPostgame|13450", "doorsMix, $isNotDisabledByPostgame|13450" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|14772", "doorsDoor, $isNotDisabled|13450", "doorsMix, $isNotDisabled|13450" ],
 		"access_rules": [
 			"doorsPanel, Tunnels Entry (Panel)",
 			"Challenge Door to Theater Walkway"
@@ -1640,7 +1640,7 @@
 
 	{
 		"name": "Tunnels Town Shortcut",
-		"visibility_rules": [ "doorsPanel, $isNotDisabledByPostgame|40581", "doorsDoor, $isNotDisabledByPostgame|40583", "doorsMix, $isNotDisabledByPostgame|40583" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|40581", "doorsDoor, $isNotDisabled|40583", "doorsMix, $isNotDisabled|40583" ],
 		"access_rules": [
 			"doorsPanel, Tunnels Town Shortcut (Panel)",
 			"Theater Walkway Door to Town"
@@ -1661,7 +1661,7 @@
 
 	{
 		"name": "Tunnels Desert Shortcut",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|160355", "doorsMix, $isNotDisabledByPostgame|160355" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|160355", "doorsMix, $isNotDisabled|160355" ],
 		"access_rules": [ "Theater Walkway Door to Desert Elevator Room" ],
 		"sections": [
 			{
@@ -1679,7 +1679,7 @@
 
 	{
 		"name": "Tunnels Theater Shortcut",
-		"visibility_rules": [ "doorsDoor, $isNotDisabledByPostgame|161593", "doorsMix, $isNotDisabledByPostgame|161593" ],
+		"visibility_rules": [ "doorsDoor, $isNotDisabled|161593", "doorsMix, $isNotDisabled|161593" ],
 		"access_rules": [ "Theater Walkway Door to Back of Theater" ],
 		"sections": [
 			{

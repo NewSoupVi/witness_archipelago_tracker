@@ -593,8 +593,8 @@
 			{
 				"name": "cavesAntechamber",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, $isNotDisabledByPostgame|98210",
-					"showSnipes, $isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, disabledPanelsEnabled, [$isNotDisabledByPostgame|98210]",
+					"$isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, $isNotDisabled|98210",
+					"showSnipes, $isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, disabledPanelsEnabled, [$isNotDisabled|98210]",
 					"Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
 					"Inside Mountain Door to Secret Area, @Places/caves"
 				]
