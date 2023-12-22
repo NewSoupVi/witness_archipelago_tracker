@@ -622,6 +622,21 @@
 		"codes": "PowerSurge"
 	},
 	{
+		"name": "Tutorial 1 Extra",
+		"type": "toggle",
+		"codes": "Tutorial 1 Extra"
+	},
+	{
+		"name": "Tutorial 2 Extra",
+		"type": "toggle",
+		"codes": "Tutorial 2 Extra"
+	},
+	{
+		"name": "Desert 3 Extra",
+		"type": "toggle",
+		"codes": "Desert 3 Extra"
+	},
+	{
 		"name": "Glass Factory Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",

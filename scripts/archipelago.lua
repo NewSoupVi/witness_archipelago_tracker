@@ -417,10 +417,41 @@ function onClear(slot_data)
 
 	currentlyClearing = false
 
+	Tracker:FindObjectForCode("Tutorial 1 Extra").Active,
+	Tracker:FindObjectForCode("Tutorial 2 Extra").Active,
+	Tracker:FindObjectForCode("Desert 3 Extra").Active = getExtraLocations()
 	-- Dummy item state change so canSolve works properly with 0 items received
 	Tracker:FindObjectForCode("Brain").Active = true
 	Tracker:FindObjectForCode("Brain").Active = false
 
+end
+
+function getExtraLocations()
+	local first_tutorial_loc = 158000
+	local second_tutorial_loc = 158001
+	local desert_third_loc = 158078
+	local tutorial_1_enabled = false
+	local tutorial_2_enabled = false
+	local desert_3_enabled = false
+	for _, i in ipairs(Archipelago.CheckedLocations) do
+		if first_tutorial_loc == i then
+			tutorial_1_enabled = true
+		elseif second_tutorial_loc == i then
+			tutorial_2_enabled = true
+		elseif desert_third_loc == i then
+			desert_3_enabled = true
+		end
+	end
+	for _, i in ipairs(Archipelago.MissingLocations) do
+		if first_tutorial_loc == i then
+			tutorial_1_enabled = true
+		elseif second_tutorial_loc == i then
+			tutorial_2_enabled = true
+		elseif desert_third_loc == i then
+			desert_3_enabled = true
+		end
+	end
+	return tutorial_1_enabled, tutorial_2_enabled, desert_3_enabled
 end
 
 -- called when an item gets collected
