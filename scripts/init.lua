@@ -1,9 +1,8 @@
-ScriptHost:LoadScript("scripts/logic.lua")
-ScriptHost:LoadScript("scripts/archipelago.lua")
-
+Tracker:AddMaps("maps/maps.json")
 Tracker:AddItems("items/items.json")
 
-Tracker:AddMaps("maps/maps.json")
+ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/archipelago.lua")
 
 Tracker:AddLocations("locations/logic.json")
 Tracker:AddLocations("locations/locations.json")
