@@ -5910,12 +5910,12 @@
 			{
 				"name": "Side 3",
 				"visibility_rules": [ "obelisks, $anyIsNotDisabled|210702 210632 210586 210181 13790 13827 13825 15629" ],
-				"access_rules": [ "@Mountaintop/Arch Black EP, @Swamp Purple Sand/Purple Sand Bottom EP, @Swamp Purple Sand/Purple Sand Middle EP, @Swamp Purple Sand/Purple Sand Top EP, @Ocean Outside Bunker/Boat Bunker Yellow Line EP, @Mountaintop/Arch White Right EP, @Mountainside Path/Bush EP, @Mountaintop/Arch White Left EP" ]
+				"access_rules": [ "@Mountaintop/Arch Black EP, @Swamp Purple Sand/Purple Sand Top EP, @Swamp Purple Sand/Purple Sand Middle EP, @Ocean Outside Bunker/Boat Bunker Yellow Line EP, @Mountaintop/Arch White Right EP, @Mountainside Path/Bush EP, @Mountaintop/Arch White Left EP, @Swamp Purple Sand/Purple Sand Bottom EP" ]
 			},
 			{
 				"name": "Side 4",
 				"visibility_rules": [ "obelisks, $anyIsNotDisabled|5810 14030 210527 14129 15006 14995 15367" ],
-				"access_rules": [ "@Swamp Rotating Bridge/Rotating Bridge CCW EP, @Swamp Rotating Bridge/Rotating Bridge CW EP, @Swamp Near Boat/Swamp Boat EP, @Swamp Purple Sand/Long Bridge Slide EP, @Mountainside Path/Mountainside Apparent River EP, @Swamp Purple Underwater/Purple Underwater Right EP, @Swamp Purple Underwater/Purple Underwater Left EP" ]
+				"access_rules": [ "@Swamp Purple Underwater/Purple Underwater Right EP, @Swamp Rotating Bridge/Rotating Bridge CCW EP, @Swamp Near Boat/Swamp Boat EP, @Swamp Purple Sand/Long Bridge Slide EP, @Swamp Rotating Bridge/Rotating Bridge CW EP, @Mountainside Path/Mountainside Apparent River EP, @Swamp Purple Underwater/Purple Underwater Left EP" ]
 			},
 			{
 				"name": "Side 5",
@@ -6001,7 +6001,7 @@
 			{
 				"name": "Side 5",
 				"visibility_rules": [ "obelisks, $anyIsNotDisabled|13109 13330 14502 14506 15936 166798 15935" ],
-				"access_rules": [ "@Town Tower/Tower Underside Third EP, @Town Tower/Tower Underside Fourth EP, @Town Tower/Tower Underside First EP, @Town Tower/Tower Underside Second EP, @RGB House/RGB House Red EP, @RGB House/RGB House Green EP, @Town Red Rooftop/Bridge Underside EP" ]
+				"access_rules": [ "@Town Tower/Tower Underside First EP, @Town Tower/Tower Underside Second EP, @Town Tower/Tower Underside Third EP, @Town Tower/Tower Underside Fourth EP, @RGB House/RGB House Red EP, @RGB House/RGB House Green EP, @Town Red Rooftop/Bridge Underside EP" ]
 			},
 			{
 				"name": "Side 6",
