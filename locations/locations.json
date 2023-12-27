@@ -5140,7 +5140,8 @@
 				"visibility_rules": [ "Discarded, $isNotDisabled|98210" ],
 				"access_rules": [
 					"@Mountaintop/Mountain Entry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom",
-					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld"
+					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld",
+					"showSnipes, [@Mountaintop/Mountain Entry], $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld"
 				]
 			}
 		],
