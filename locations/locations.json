@@ -5141,7 +5141,8 @@
 				"access_rules": [
 					"@Mountaintop/Mountain Entry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom",
 					"$longBoxWithoutMountainEntry, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld",
-					"showSnipes, [@Mountaintop/Mountain Entry], $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld"
+					"showSnipes, [@Mountaintop/Mountain Entry], $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld",
+					"$Snipeable|1, $canSolve|158614, $laserBox|long, @Places/mountainPenultimateRoom, @Places/overworld"
 				]
 			}
 		],
