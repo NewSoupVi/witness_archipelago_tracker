@@ -59,6 +59,25 @@
 		]
 	},
 	{
+		"name": "Progressive Symmetry",
+		"codes": "ProgressiveSymmetry",
+		"type": "progressive",
+		"allow_disabled": true,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"img": "images/Symmetry.png",
+				"codes": "Symmetry",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/ColoredDots.png",
+				"codes": "ColoredDots",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Colored Dots",
 		"type": "toggle",
 		"loop": "true",
@@ -550,9 +569,14 @@
 		"codes": "Tutorial 2 Extra"
 	},
 	{
-		"name": "Desert 3 Extra",
+		"name": "Desert 1 Extra",
 		"type": "toggle",
-		"codes": "Desert 3 Extra"
+		"codes": "Desert 1 Extra"
+	},
+	{
+		"name": "Desert 2 Extra",
+		"type": "toggle",
+		"codes": "Desert 2 Extra"
 	},
 	{
 		"name": "Glass Factory Entry (Panel)",
@@ -590,6 +614,20 @@
 		"codes": "Door to Symmetry Island Upper (Panel)"
 	},
 	{
+		"name": "Desert Surface 3 Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Surface 3 Control (Panel)"
+	},
+	{
+		"name": "Desert Surface 8 Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Surface 8 Control (Panel)"
+	},
+	{
 		"name": "Desert Light Room Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -609,6 +647,13 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Desert Flood Room Entry (Panel)"
+	},
+	{
+		"name": "Desert Elevator Room Hexagonal Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Elevator Room Hexagonal Control (Panel)"
 	},
 	{
 		"name": "Desert Flood Room Flood Controls (Panel)",
