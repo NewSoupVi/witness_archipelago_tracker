@@ -27,7 +27,7 @@ function unrandomizedDisabledButSolvable()
 end
 
 function longBoxWithoutMountainEntry()
-	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort" > 7))
+	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7)
 end
 
 function isDisabled(id)
