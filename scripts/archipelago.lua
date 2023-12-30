@@ -113,8 +113,11 @@ doors = {
 		"Theater Walkway Door to Back of Theater", 
 		"Theater Walkway Door to Desert Elevator Room", 
 		"Theater Walkway Door to Town"},
-	["Desert Control Panels"] = {"Desert Flood Room Flood Controls (Panel)", 
-		"Desert Light Room Light Control (Panel)"},
+	["Desert Control Panels"] = {"Desert Surface 3 Control (Panel)",
+		"Desert Surface 8 Control (Panel)",
+		"Desert Flood Room Flood Controls (Panel)", 
+		"Desert Light Room Light Control (Panel)",
+		"Desert Elevator Room Hexagonal Control (Panel)"},
 	["Quarry Stoneworks Control Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)", 
 		"Quarry Stoneworks Elevator Controls (Panel)"},
 	["Quarry Boathouse Control Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)", 
@@ -139,10 +142,13 @@ doors = {
 		"Door to Symmetry Island Upper (Panel)"},
 	["Tutorial Outpost Panels"] = {"Tutorial Outpost Entry (Panel)", 
 		"Tutorial Outpost Exit (Panel)"},
-			["Desert Panels"] = {"Desert Light Room Light Control (Panel)", 
-		"Desert Flood Room Flood Controls (Panel)", 
-		"Desert Light Room Entry (Panel)", 
-		"Desert Flood Room Entry (Panel)"},
+			["Desert Panels"] = {"Desert Surface 3 Control (Panel)",
+		"Desert Surface 8 Control (Panel)",
+		"Desert Light Room Light Control (Panel)",
+		"Desert Flood Room Flood Controls (Panel)",
+		"Desert Light Room Entry (Panel)",
+		"Desert Flood Room Entry (Panel)",
+		"Desert Elevator Room Hexagonal Control (Panel)"},
 	["Quarry Outside Panels"] = {"Quarry Entry 1 (Panel)", 
 		"Quarry Entry 2 (Panel)", 
 		"Quarry Elevator (Panel)"},
@@ -359,9 +365,8 @@ function onClear(slot_data)
 
 		if k == "shuffle_symbols" and value == false then
 			Tracker:FindObjectForCode("ProgressiveDots").CurrentStage = 2
-			Tracker:FindObjectForCode("ColoredDots").Active = true
+			Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage = 2
 			Tracker:FindObjectForCode("SoundDots").Active = true
-			Tracker:FindObjectForCode("Symmetry").Active = true
 			Tracker:FindObjectForCode("Triangles").Active = true
 			Tracker:FindObjectForCode("Eraser").Active = true
 			Tracker:FindObjectForCode("Shapers").Active = true
@@ -419,7 +424,8 @@ function onClear(slot_data)
 
 	Tracker:FindObjectForCode("Tutorial 1 Extra").Active,
 	Tracker:FindObjectForCode("Tutorial 2 Extra").Active,
-	Tracker:FindObjectForCode("Desert 3 Extra").Active = getExtraLocations()
+	Tracker:FindObjectForCode("Desert 1 Extra").Active,
+	Tracker:FindObjectForCode("Desert 2 Extra").Active = getExtraLocations()
 	-- Dummy item state change so canSolve works properly with 0 items received
 	Tracker:FindObjectForCode("Brain").Active = true
 	Tracker:FindObjectForCode("Brain").Active = false
@@ -429,17 +435,21 @@ end
 function getExtraLocations()
 	local first_tutorial_loc = 158000
 	local second_tutorial_loc = 158001
-	local desert_third_loc = 158078
+	local desert_first_loc = 158076
+	local desert_second_loc = 158077
 	local tutorial_1_enabled = false
 	local tutorial_2_enabled = false
-	local desert_3_enabled = false
+	local desert_1_enabled = false
+	local desert_2_enabled = false
 	for _, i in ipairs(Archipelago.CheckedLocations) do
 		if first_tutorial_loc == i then
 			tutorial_1_enabled = true
 		elseif second_tutorial_loc == i then
 			tutorial_2_enabled = true
-		elseif desert_third_loc == i then
-			desert_3_enabled = true
+		elseif desert_first_loc == i then
+			desert_1_enabled = true
+		elseif desert_second_loc == i then
+			desert_2_enabled = true
 		end
 	end
 	for _, i in ipairs(Archipelago.MissingLocations) do
@@ -447,11 +457,13 @@ function getExtraLocations()
 			tutorial_1_enabled = true
 		elseif second_tutorial_loc == i then
 			tutorial_2_enabled = true
-		elseif desert_third_loc == i then
-			desert_3_enabled = true
+		elseif desert_first_loc == i then
+			desert_1_enabled = true
+		elseif desert_second_loc == i then
+			desert_2_enabled = true
 		end
 	end
-	return tutorial_1_enabled, tutorial_2_enabled, desert_3_enabled
+	return tutorial_1_enabled, tutorial_2_enabled, desert_1_enabled, desert_2_enabled
 end
 
 -- called when an item gets collected

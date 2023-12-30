@@ -27,7 +27,7 @@ function unrandomizedDisabledButSolvable()
 end
 
 function longBoxWithoutMountainEntry()
-	return (Tracker:ProviderCountForCode("boxLong") < 8)
+	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort" > 7))
 end
 
 function isDisabled(id)
@@ -98,6 +98,10 @@ function stars(level)
 	return Tracker:FindObjectForCode("ProgressiveStars").CurrentStage >= tonumber(level)
 end
 
+function symmetry(level)
+	return Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage >= tonumber(level)
+end
+
 function pp2()
 	
 	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
@@ -120,8 +124,6 @@ end
 symbolCheck = {
 	["Black/White Squares"] = "BWSquare",
 	["Colored Squares"] = "ColoredSquares",
-	["Symmetry"] = "Symmetry",
-	["Colored Dots"] = "ColoredDots",
 	["Sound Dots"] = "SoundDots",
 	["Shapers"] = "Shapers",
 	["Rotated Shapers"] = "RotatedShapers",
@@ -140,6 +142,10 @@ function hasSymbol(symbol)
 		return stars(1)
 	elseif symbol == "Stars + Same Colored Symbol" then
 		return stars(2)
+	elseif symbol == "Symmetry" then
+		return symmetry(1)
+	elseif symbol == "Colored Dots" then
+		return symmetry(2)
 	elseif symbolCheck[symbol] ~= nil then
 		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
 	else

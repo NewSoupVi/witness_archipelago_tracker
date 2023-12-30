@@ -194,6 +194,42 @@
 	},
 
 	{
+		"name": "Desert Surface 3 Control",
+		"visibility_rules": [ "doorsPanel", "doorsMix" ],
+		"access_rules": [ "Desert Surface 3 Control (Panel)" ],
+		"sections": [
+			{
+				"name": "Panel"
+			}
+		],
+		"map_locations": [
+			{
+				"map": "doors",
+				"x": 420,
+				"y": 260
+			}
+		]
+	},
+
+	{
+		"name": "Desert Surface 8 Control",
+		"visibility_rules": [ "doorsPanel", "doorsMix" ],
+		"access_rules": [ "Desert Surface 8 Control (Panel)" ],
+		"sections": [
+			{
+				"name": "Panel"
+			}
+		],
+		"map_locations": [
+			{
+				"map": "doors",
+				"x": 395,
+				"y": 235
+			}
+		]
+	},
+
+	{
 		"name": "Desert Light Room Entry",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
@@ -208,8 +244,8 @@
 		"map_locations": [
 			{
 				"map": "doors",
-				"x": 387,
-				"y": 222
+				"x": 370,
+				"y": 210
 			}
 		]
 	},
@@ -302,7 +338,25 @@
 			{
 				"map": "doors",
 				"x": 74,
-				"y": 270
+				"y": 250
+			}
+		]
+	},
+
+	{
+		"name": "Desert Elevator Room Hexagonal Control",
+		"visibility_rules": [ "doorsPanel", "doorsMix" ],
+		"access_rules": [ "Desert Elevator Room Hexagonal Control (Panel)" ],
+		"sections": [
+			{
+				"name": "Panel"
+			}
+		],
+		"map_locations": [
+			{
+				"map": "doors",
+				"x": 74,
+				"y": 280
 			}
 		]
 	},
