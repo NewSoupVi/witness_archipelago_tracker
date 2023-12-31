@@ -636,6 +636,11 @@
 		"codes": "Slowness"
 	},
 	{
+		"name": "Bonks",
+		"type": "consumable",
+		"codes": "Bonk"
+	},
+	{
 		"name": "Power Surges",
 		"type": "consumable",
 		"codes": "PowerSurge"

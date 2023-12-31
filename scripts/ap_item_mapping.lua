@@ -20,6 +20,7 @@ ITEM_MAPPING = {
 	[158510] = {"Skip", "consumable"},
 	[158600] = {"Slowness", "consumable"},
 	[158610] = {"PowerSurge", "consumable"},
+	[158615] = {"Bonk", "consumable"},
 	[158650] = {"Brain", "toggle"},
 	
 	[159100] = {"Glass Factory Entry (Panel)", "toggle"},
