@@ -2,16 +2,52 @@ function isNotDoors()
 	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
 end
 
-function isExpert(check)
-	if check == "on" then
-		return (Tracker:ProviderCountForCode("Expert") > 0)
-	else
-		return (1 - Tracker:ProviderCountForCode("Expert") > 0)
-	end
+function isNotPanelsOnly()
+	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
+end
+
+function isNotExpert(check)
+	return (1 - Tracker:ProviderCountForCode("Expert") > 0)
 end
 
 function isNotLaserShuffle()
 	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
+end
+
+function isNotAutoElevators()
+	return (1 - Tracker:ProviderCountForCode("autoElevators") > 0)
+end
+
+function unrandomizedDisabled()
+	return (Tracker:ProviderCountForCode("Unrandomized") == 0)
+end
+
+function unrandomizedDisabledButSolvable()
+	return (unrandomizedDisabled() and Tracker:ProviderCountForCode("disabledPanelsEnabled") > 0)
+end
+
+function longBoxWithoutMountainEntry()
+	return (Tracker:ProviderCountForCode("boxLong") < 8)
+end
+
+function isDisabled(id)
+	return disabledDict[tonumber(id)]
+end
+
+function isNotDisabled(id)
+	return not disabledDict[tonumber(id)]
+end
+
+function anyIsNotDisabled(ids)
+	local eval = false
+	ids = parseIds(ids)
+	for id in ids:gmatch("%S+") do
+		eval = isNotDisabled(id)
+		if eval then
+			return eval
+		end
+	end
+	return eval
 end
 
 function laserCount(amount)
@@ -21,7 +57,7 @@ function laserCount(amount)
 		return false
 	end
 end
-	
+
 function laserBox(box)
 	if box == "short" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
@@ -31,9 +67,13 @@ function laserBox(box)
 end
 
 function hasPanel(panel)
-	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsSimple") + Tracker:ProviderCountForCode("doorsComplex") > 0 then return true
+	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
 	else return Tracker:ProviderCountForCode(panel)
 	end
+end
+
+function isNotPanelsOnlyOrHasPanel(panel)
+	return isNotPanelsOnly() or hasPanel(panel)
 end
 
 function dots(level)
@@ -46,7 +86,7 @@ end
 
 function pp2()
 	
-	return (isExpert("off") or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
+	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
 	(
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and
@@ -63,6 +103,20 @@ function pp2()
 
 end
 
+symbolCheck = {
+	["Black/White Squares"] = "BWSquare",
+	["Colored Squares"] = "ColoredSquares",
+	["Symmetry"] = "Symmetry",
+	["Colored Dots"] = "ColoredDots",
+	["Sound Dots"] = "SoundDots",
+	["Shapers"] = "Shapers",
+	["Rotated Shapers"] = "RotatedShapers",
+	["Negative Shapers"] = "NegativeShapers",
+	["Eraser"] = "Eraser",
+	["Triangles"] = "Triangles",
+	["Arrows"] = "Arrows"
+}
+
 function hasSymbol(symbol)
 	if symbol == "Dots" then
 		return dots(1)
@@ -72,28 +126,8 @@ function hasSymbol(symbol)
 		return stars(1)
 	elseif symbol == "Stars + Same Colored Symbol" then
 		return stars(2)
-	elseif symbol == "Black/White Squares" then
-		return Tracker:ProviderCountForCode("BWSquare") == 1
-	elseif symbol == "Colored Squares" then
-		return Tracker:ProviderCountForCode("ColoredSquares") == 1
-	elseif symbol == "Symmetry" then
-		return Tracker:ProviderCountForCode("Symmetry") == 1
-	elseif symbol == "Colored Dots" then
-		return Tracker:ProviderCountForCode("ColoredDots") == 1
-	elseif symbol == "Sound Dots" then
-		return Tracker:ProviderCountForCode("SoundDots") == 1
-	elseif symbol == "Shapers" then
-		return Tracker:ProviderCountForCode("Shapers") == 1
-	elseif symbol == "Rotated Shapers" then
-		return Tracker:ProviderCountForCode("RotatedShapers") == 1
-	elseif symbol == "Negative Shapers" then
-		return Tracker:ProviderCountForCode("NegativeShapers") == 1
-	elseif symbol == "Eraser" then
-		return Tracker:ProviderCountForCode("Eraser") == 1
-	elseif symbol == "Triangles" then
-		return Tracker:ProviderCountForCode("Triangles") == 1
-	elseif symbol == "Arrows" then
-		return Tracker:ProviderCountForCode("Arrows") == 1
+	elseif symbolCheck[symbol] ~= nil then
+		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
 	else
 		return true
 	end
@@ -122,12 +156,14 @@ function parseIds(ids)
 	end
 end
 
-
 require(getLogicFile())
 function canSolve(ids)
+	if Tracker:ProviderCountForCode("Symbols") == 0 or isClearing() then
+		return true
+	end
 	ids = parseIds(ids)
 	for id in ids:gmatch("%S+") do
-		requiredSymbols = getLogic()[tonumber(id)]
+		requiredSymbols = panel[tonumber(id)]
 		for k, v in pairs(requiredSymbols) do
 			if(not hasSymbol(v)) then
 				return false

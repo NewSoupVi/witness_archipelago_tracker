@@ -10,102 +10,243 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+disabledDict = {}
+currentlyClearing = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
+doors = {
+	["Outside Tutorial Outpost Doors"] = {"Outside Tutorial Optional Door", 
+		"Outside Tutorial Outpost Entry Door", 
+		"Outside Tutorial Outpost Exit Door"},
+	["Glass Factory Doors"] = {"Glass Factory Entry Door", 
+		"Glass Factory Back Wall"},
+	["Symmetry Island Doors"] = {"Symmetry Island Lower Door", 
+		"Symmetry Island Upper Door"},
+	["Orchard Gates"] = {"Orchard Middle Gate", 
+		"Orchard Final Gate"},
+	["Desert Doors"] = {"Desert Door to Light Room", 
+		"Desert Door to Pond Room", 
+		"Desert Door to Flood Room", 
+		"Desert Door to Elevator Room", 
+		"Desert Elevator Door"},
+	["Quarry Entry Doors"] = {"Quarry Main Entry 1", 
+		"Quarry Main Entry 2"},
+	["Quarry Stoneworks Doors"] = {"Quarry Door to Stoneworks", 
+		"Quarry Stoneworks Side Door", 
+		"Quarry Stoneworks Rooftop Shortcut", 
+		"Quarry Stoneworks Stairs"},
+	["Quarry Boathouse Doors"] = {"Quarry Boathouse Boat Staircase", 
+		"Quarry Boathouse First Barrier", 
+		"Quarry Boathouse Shortcut"},
+	["Shadows Laser Room Doors"] = {"Shadows Laser Room Right Door", 
+		"Shadows Laser Room Left Door"},
+	["Shadows Lower Doors"] = {"Shadows Timed Door", 
+		"Shadows Barrier to Quarry", 
+		"Shadows Barrier to Ledge"},
+	["Keep Hedge Maze Doors"] = {"Keep Hedge Maze 1 Exit Door", 
+		"Keep Hedge Maze 2 Shortcut", 
+		"Keep Hedge Maze 2 Exit Door", 
+		"Keep Hedge Maze 3 Shortcut", 
+		"Keep Hedge Maze 3 Exit Door", 
+		"Keep Hedge Maze 4 Shortcut", 
+		"Keep Hedge Maze 4 Exit Door"},
+	["Keep Pressure Plates Doors"] = {"Keep Pressure Plates 1 Exit Door", 
+		"Keep Pressure Plates 2 Exit Door", 
+		"Keep Pressure Plates 3 Exit Door", 
+		"Keep Pressure Plates 4 Exit Door"},
+	["Keep Shortcuts"] = {"Keep Shortcut to Shadows", 
+		"Keep Tower Shortcut"},
+	["Monastery Entry Doors"] = {"Monastery Inner Door", 
+		"Monastery Outer Door"},
+	["Monastery Shortcuts"] = {"Monastery Shortcut", 
+		"Monastery Door to Garden", 
+		"River Shortcut to Monastery Garden"},
+	["Town Doors"] = {"Town Cargo Box Door", 
+		"Town Wooden Roof Staircase", 
+		"Town Tinted Door to RGB House", 
+		"Town Door to Church", 
+		"Town Maze Staircase", 
+		"Town RGB House Staircase"},
+	["Town Tower Doors"] = {"Town Tower Red Roof Set Door", 
+		"Town Tower Lattice Door", 
+		"Town Tower Environmental Set Door", 
+		"Town Tower Wooden Roof Set Door"},
+	["Windmill & Theater Doors"] = {"Town Windmill Door", 
+		"Theater Entry Door", 
+		"Theater Exit Door Left", 
+		"Theater Exit Door Right"},
+	["Jungle Doors"] = {"Jungle Bamboo Shortcut to River", 
+		"Jungle Popup Wall"},
+	["Bunker Doors"] = {"Bunker Entry Door", 
+		"Bunker Tinted Glass Door", 
+		"Bunker Door to Ultraviolet Room", 
+		"Bunker Door to Elevator"},
+	["Swamp Doors"] = {"Swamp Entry Door", 
+		"Swamp Door to Broken Shapers", 
+		"Swamp Door to Rotated Shapers"},
+	["Swamp Shortcuts"] = {"Swamp Platform Shortcut Door", 
+		"Swamp Near Laser Shortcut"},
+	["Swamp Water Pumps"] = {"Swamp Red Underwater Exit", 
+		"Swamp Cyan Water Pump", 
+		"Swamp Red Water Pump", 
+		"Swamp Blue Water Pump", 
+		"Swamp Purple Water Pump"},
+	["Treehouse Entry Doors"] = {"Treehouse First Door", 
+		"Treehouse Second Door", 
+		"Treehouse Beyond Yellow Bridge Door"},
+	["Treehouse Upper Doors"] = {"Treehouse Timed Door to Laser House", 
+		"Treehouse Drawbridge"},
+	["Mountain Floor 1 & 2 Doors"] = {"Inside Mountain First Layer Exit Door", 
+		"Inside Mountain Second Layer Staircase Near", 
+		"Inside Mountain Second Layer Staircase Far", 
+		"Inside Mountain Second Layer Exit Door"},
+	["Mountain Bottom Floor Doors"] = {"Inside Mountain Bottom Layer Rock", 
+		"Inside Mountain Giant Puzzle Exit Door", 
+		"Inside Mountain Door to Final Room"},
+	["Caves Doors"] = {"Inside Mountain Door to Secret Area", 
+		"Caves Pillar Door", 
+		"Challenge Entry Door"},
+	["Caves Shortcuts"] = {"Caves Swamp Shortcut", 
+		"Caves Mountain Shortcut"},
+	["Tunnels Doors"] = {"Challenge Door to Theater Walkway", 
+		"Theater Walkway Door to Back of Theater", 
+		"Theater Walkway Door to Desert Elevator Room", 
+		"Theater Walkway Door to Town"},
+	["Desert Control Panels"] = {"Desert Flood Room Flood Controls (Panel)", 
+		"Desert Light Room Light Control (Panel)"},
+	["Quarry Stoneworks Control Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)", 
+		"Quarry Stoneworks Elevator Controls (Panel)"},
+	["Quarry Boathouse Control Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)", 
+		"Quarry Boathouse Ramp Horizontal Control (Panel)", 
+		"Quarry Boathouse Hook Control (Panel)"},
+	["Town Control Panels"] = {"Town Maze Rooftop Bridge (Panel)", 
+		"Town RGB Room RGB Control (Panel)"},
+	["Windmill & Theater Control Panels"] = {"Windmill Turn Control (Panel)", 
+		"Theater Video Input (Panel)"},
+	["Bunker Control Panels"] = {"Bunker Elevator Control (Panel)", 
+		"Bunker UV Room Drop-Down Door Control (Panel)"},
+	["Swamp Control Panels"] = {"Swamp Sliding Bridge (Panel)", 
+		"Swamp Rotating Bridge (Panel)", 
+		"Swamp Long Bridge (Panel)", 
+		"Swamp Maze Control (Panel)"},
+	["Mountain & Caves Control Panels"] = {"Mountain Floor 1 Bridge (Panel)", 
+		"Mountain Floor 2 Bridge Near (Panel)", 
+		"Mountain Floor 2 Bridge Far (Panel)", 
+		"Mountain Elevator (Panel)", 
+		"Caves Elevator (Panel)"},
+	["Symmetry Island Panels"] = {"Door to Symmetry Island Lower (Panel)", 
+		"Door to Symmetry Island Upper (Panel)"},
+	["Tutorial Outpost Panels"] = {"Tutorial Outpost Entry (Panel)", 
+		"Tutorial Outpost Exit (Panel)"},
+			["Desert Panels"] = {"Desert Light Room Light Control (Panel)", 
+		"Desert Flood Room Flood Controls (Panel)", 
+		"Desert Light Room Entry (Panel)", 
+		"Desert Flood Room Entry (Panel)"},
+	["Quarry Outside Panels"] = {"Quarry Entry 1 (Panel)", 
+		"Quarry Entry 2 (Panel)", 
+		"Quarry Elevator (Panel)"},
+	["Quarry Stoneworks Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)", 
+		"Quarry Stoneworks Elevator Controls (Panel)", 
+		"Quarry Door to Stoneworks (Panel)"},
+	["Quarry Boathouse Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)", 
+		"Quarry Boathouse Ramp Horizontal Control (Panel)", 
+		"Quarry Boathouse Hook Control (Panel)"},
+	["Keep Hedge Maze Panels"] = {"Keep Hedge Maze 1 (Panel)", 
+		"Keep Hedge Maze 2 (Panel)", 
+		"Keep Hedge Maze 3 (Panel)", 
+		"Keep Hedge Maze 4 (Panel)"},
+	["Monastery Panels"] = {"Monastery Entry Door Left (Panel)", 
+		"Monastery Entry Door Right (Panel)", 
+		"Monastery Shutter Control (Panel)"},
+	["Town Church & RGB House Panels"] = {"Town Door to RGB House (Panel)", 
+		"Town RGB Room RGB Control (Panel)", 
+		"Town Door to Church (Panel)"},
+	["Town Maze Panels"] = {"Town Maze Panel (Drop-Down Staircase) (Panel)", 
+		"Town Maze Rooftop Bridge (Panel)"},
+	["Town Windmill & Theater Panels"] = {"Windmill Entry (Panel)", 
+		"Windmill Turn Control (Panel)", 
+		"Theater Entry (Panel)", 
+		"Theater Video Input (Panel)", 
+		"Theater Exit (Panel)"},
+	["Treehouse Panels"] = {"Treehouse First & Second Doors (Panel)", 
+		"Treehouse Third Door (Panel)", 
+		"Treehouse Laser House Door Timer (Panel)", 
+		"Treehouse Drawbridge (Panel)"},
+	["Bunker Panels"] = {"Bunker Entry (Panel)", 
+		"Inside Bunker Door to Bunker Proper (Panel)", 
+		"Bunker UV Room Drop-Down Door Control (Panel)", 
+		"Bunker Elevator Control (Panel)"},
+	["Swamp Panels"] = {"Swamp Entry (Panel)", 
+		"Swamp Platform Shortcut (Panel)", 
+		"Swamp Sliding Bridge (Panel)", 
+		"Swamp Rotating Bridge (Panel)", 
+		"Swamp Long Bridge (Panel)", 
+		"Swamp Maze Control (Panel)"},
+	["Mountain Panels"] = {"Mountain Floor 1 Bridge (Panel)", 
+		"Mountain Floor 2 Bridge Near (Panel)", 
+		"Mountain Floor 2 Bridge Far (Panel)", 
+		"Mountain Elevator (Panel)"},
+	["Caves Panels"] = {"Caves Entry (Panel)", 
+		"Challenge Entry (Panel)", 
+		"Caves Elevator (Panel)"},
+	["Tunnels Panels"] = {"Tunnels Entry (Panel)", 
+		"Tunnels Town Shortcut (Panel)"}
+}
+
 function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o)
-   end
+	if type(o) == 'table' then
+		local s = '{ '
+		for k,v in pairs(o) do
+			if type(k) ~= 'number' then k = '"'..k..'"' end
+			s = s .. '['..k..'] = ' .. dump(v) .. ','
+		end
+		return s .. '} '
+	else
+		return tostring(o)
+	end
 end
 
 function setReply(key, val, old)
-	if(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-628" and val) then
-		lasers[1]=1
-		local location = Tracker:FindObjectForCode("@Jungle Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-1289" and val) then
-		lasers[2]=1
-		local location = Tracker:FindObjectForCode("@Symmetry Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-3062" and val) then
-		lasers[3]=1
-		local location = Tracker:FindObjectForCode("@Swamp Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-4859" and val) then
-		lasers[4]=1
-		local location = Tracker:FindObjectForCode("@Desert Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-5307" and val) then
-		lasers[5]=1
-		local location = Tracker:FindObjectForCode("@Keep Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-5433" and val) then
-		lasers[6]=1
-		local location = Tracker:FindObjectForCode("@Quarry Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-10404" and val) then
-		lasers[7]=1
-		local location = Tracker:FindObjectForCode("@Treehouse Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-13049" and val) then
-		lasers[8]=1
-		local location = Tracker:FindObjectForCode("@Town Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-49842" and val) then
-		lasers[9]=1
-		local location = Tracker:FindObjectForCode("@Bunker Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-97381" and val) then
-		lasers[10]=1
-		local location = Tracker:FindObjectForCode("@Monastery Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	elseif(key == "WitnessLaser" .. Archipelago.PlayerNumber .. "-98739" and val) then
-		lasers[11]=1
-		local location = Tracker:FindObjectForCode("@Shadows Laser Activation/Laser")
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-	end
+	local separatorIndex, _ = key:find("-")
+	local locationID = tonumber(key:sub(separatorIndex + 1))
+	if key:sub(1, 12) == "WitnessLaser" and val then
+		locationName = LASER_DATASTORAGE_ID[locationID][1]
+		locationTable = LASER_DATASTORAGE_ID[locationID][2]
 
-	laserCount = 0
-	for k, v in pairs(lasers) do
-		laserCount = laserCount + v
-	end
+		lasers[locationTable[1]]=1
 
-	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+		local location = Tracker:FindObjectForCode(locationName)
+		if location then
+			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
+		if locationTable[2] ~= nil then
+			if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
+				local location = Tracker:FindObjectForCode(locationTable[2])
+				if location then
+					location.AvailableChestCount = location.AvailableChestCount - 1
+				end
+				local location = Tracker:FindObjectForCode(locationTable[3])
+				if location then
+					location.AvailableChestCount = location.AvailableChestCount - 1
+				end
+			end
+		end
 
-	if(val and key:sub(1, 9) == "WitnessEP") then
-		local separatorIndex, _ = key:find("-")
-		local epId = tonumber(key:sub(separatorIndex + 1))
-		local locationName = EP_DATASTORAGE_IDS[epId][1]
+	elseif(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
+		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
+
+	elseif(key:sub(1, 15) == "WitnessAudioLog" and val) then
+		local locationName = AUDIO_LOG_DATASTORAGE_IDS[locationID][1]
+		if locationName then
+			local location = Tracker:FindObjectForCode(locationName)
+			if location then
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+		end
+
+	elseif(key:sub(1, 9) == "WitnessEP" and val) then
+		local locationName = EP_DATASTORAGE_IDS[locationID][1]
 		if locationName then
 			local location = Tracker:FindObjectForCode(locationName)
 			if location then
@@ -113,37 +254,28 @@ function setReply(key, val, old)
 			end
 		end
 	end
+	laserCounting()
 end
 
 function onClear(slot_data)
+	currentlyClearing = true
 
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-628"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-1289"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-3062"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-4859"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5307"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5433"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-10404"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-13049"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-49842"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
-	Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
+	for LaserID, _ in pairs(LASER_DATASTORAGE_ID) do
+		Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
+		Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
+	end
 
-	
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-628"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-1289"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-3062"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-4859"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5307"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-5433"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-10404"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-13049"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-49842"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-97381"})
-	Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-98739"})
-	
+	for AudioLogID, _ in pairs(AUDIO_LOG_DATASTORAGE_IDS) do
+
+		Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
+		Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
+	end
+
+	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
+	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
+
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -155,18 +287,19 @@ function onClear(slot_data)
 
     SLOT_DATA = slot_data
     CUR_INDEX = -1
-	
-	
+
+
 
 	Tracker:FindObjectForCode("doorsSetting").CurrentStage = 0
+	Tracker:FindObjectForCode("doorsGrouping").CurrentStage = 0
 	Tracker:FindObjectForCode("epSetting").CurrentStage = 0
 	Tracker:FindObjectForCode("epDiff").CurrentStage = 0
-	Tracker:FindObjectForCode("goal").Active = false
+	Tracker:FindObjectForCode("Goal").Active = false
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
-	Tracker:FindObjectForCode("symbols").Active = false
-	
-	
+	Tracker:FindObjectForCode("Symbols").Active = false
+
+
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -210,16 +343,15 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
-	
-	Tracker:FindObjectForCode("goal").CurrentStage = 0
+
+	Tracker:FindObjectForCode("Goal").CurrentStage = 0
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = 0
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = 0
-	
+
 	for k, v in pairs(SETTINGS_MAPPING) do
 		obj = Tracker:FindObjectForCode(v)
 
 		local value = SLOT_DATA[k]
-		
 
 		if k == "disable_non_randomized_puzzles" then
 			value = not value
@@ -245,37 +377,73 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("epDiff").CurrentStage = value
 		elseif k == "shuffle_doors" then
 			Tracker:FindObjectForCode("doorsSetting").CurrentStage = value
-			if value == 0 then
-				Tracker:FindObjectForCode("doorsNo").Active = true
-				Tracker:FindObjectForCode("Boat").Active = true
-			elseif value == 1 then Tracker:FindObjectForCode("doorsPanel").Active = true
-			elseif value == 2 then
-				Tracker:FindObjectForCode("doorsSimple").Active = true
-				Tracker:FindObjectForCode("Boat").Active = true
-			elseif value == 3 then
-				Tracker:FindObjectForCode("doorsComplex").Active = true
-				Tracker:FindObjectForCode("Boat").Active = true
-			elseif value == 4 then Tracker:FindObjectForCode("doorsMax").Active = true
-			end
+			Tracker:FindObjectForCode("doorsSetting").Active = true
+		elseif k == "door_groupings" then
+			Tracker:FindObjectForCode("doorsGrouping").CurrentStage = value
+			Tracker:FindObjectForCode("doorsGrouping").Active = true
 		elseif k == "mountain_lasers" or k == "challenge_lasers" then
 			obj.AcquiredCount = value
 		elseif k == "victory_condition" then
+			obj.Active = true
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
 			require(getLogicFile())
+		elseif k == "shuffle_boat" then
+			Tracker:FindObjectForCode("Boat").Active = not value
+		elseif k == "early_caves" then
+			Tracker:FindObjectForCode("cavesSetting").CurrentStage = value
+			if value == 2 then
+				Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
+				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
+			end
+		elseif k == "disabled_entities" then
+			disabledDict = {}
+			for num, id in pairs(value) do
+				disabledDict[id] = true
+			end
 		else
 			obj.Active = value
 		end
 	end
-	
-	if (Tracker:FindObjectForCode("Caves").Active) then
-		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
-		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
+
+	currentlyClearing = false
+
+	Tracker:FindObjectForCode("Tutorial 1 Extra").Active,
+	Tracker:FindObjectForCode("Tutorial 2 Extra").Active,
+	Tracker:FindObjectForCode("Desert 3 Extra").Active = getExtraLocations()
+	-- Dummy item state change so canSolve works properly with 0 items received
+	Tracker:FindObjectForCode("Brain").Active = true
+	Tracker:FindObjectForCode("Brain").Active = false
+
+end
+
+function getExtraLocations()
+	local first_tutorial_loc = 158000
+	local second_tutorial_loc = 158001
+	local desert_third_loc = 158078
+	local tutorial_1_enabled = false
+	local tutorial_2_enabled = false
+	local desert_3_enabled = false
+	for _, i in ipairs(Archipelago.CheckedLocations) do
+		if first_tutorial_loc == i then
+			tutorial_1_enabled = true
+		elseif second_tutorial_loc == i then
+			tutorial_2_enabled = true
+		elseif desert_third_loc == i then
+			desert_3_enabled = true
+		end
 	end
-	
-	if (not Tracker:FindObjectForCode("Unrandomized").Active) then showGoal() end
-	
+	for _, i in ipairs(Archipelago.MissingLocations) do
+		if first_tutorial_loc == i then
+			tutorial_1_enabled = true
+		elseif second_tutorial_loc == i then
+			tutorial_2_enabled = true
+		elseif desert_third_loc == i then
+			desert_3_enabled = true
+		end
+	end
+	return tutorial_1_enabled, tutorial_2_enabled, desert_3_enabled
 end
 
 -- called when an item gets collected
@@ -295,8 +463,12 @@ function onItem(index, item_id, item_name, player_number)
         end
         return
     end
-	if item_id > 159902 and item_id < 159988 then
-		doorsSimple(v[1])
+	if item_id > 159499 and item_id < 159511 then
+		lasers[item_id - 159499] = 1
+		laserCounting()
+	end
+	if item_id > 159902 and item_id < 160171 then
+		doorsRegional(v[1])
 	end
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onItem: code: %s, type %s", v[1], v[2]))
@@ -373,134 +545,40 @@ function onLocation(location_id, location_name)
 end
 
 
-function doorsSimple(item_name)
-	if item_name == "Outside Tutorial Outpost Doors" then
-		Tracker:FindObjectForCode("Outside Tutorial Optional Door").Active = true
-		Tracker:FindObjectForCode("Outside Tutorial Outpost Entry Door").Active = true
-		Tracker:FindObjectForCode("Outside Tutorial Outpost Exit Door").Active = true
-	elseif item_name == "Symmetry Island Doors"  then
-		Tracker:FindObjectForCode("Symmetry Island Lower Door").Active = true
-		Tracker:FindObjectForCode("Symmetry Island Upper Door").Active = true
-	elseif item_name == "Orchard Gates"  then
-		Tracker:FindObjectForCode("Orchard Middle Gate").Active = true
-		Tracker:FindObjectForCode("Orchard Final Gate").Active = true
-	elseif item_name == "Desert Doors"  then
-		Tracker:FindObjectForCode("Desert Door to Flood Light Room").Active = true
-		Tracker:FindObjectForCode("Desert Door to Pond Room").Active = true
-		Tracker:FindObjectForCode("Desert Door to Water Levels Room").Active = true
-		Tracker:FindObjectForCode("Desert Door to Elevator Room").Active = true
-	elseif item_name == "Quarry Main Entry"  then
-		Tracker:FindObjectForCode("Quarry Main Entry 1").Active = true
-		Tracker:FindObjectForCode("Quarry Main Entry 2").Active = true
-	elseif item_name == "Quarry Stoneworks Shortcuts"  then
-		Tracker:FindObjectForCode("Quarry Stoneworks Side Door").Active = true
-		Tracker:FindObjectForCode("Quarry Stoneworks Rooftop Shortcut").Active = true
-		Tracker:FindObjectForCode("Quarry Stoneworks Stairs").Active = true
-	elseif item_name == "Quarry Boathouse Barriers"  then
-		Tracker:FindObjectForCode("Quarry Boathouse First Barrier").Active = true
-		Tracker:FindObjectForCode("Quarry Boathouse Shortcut").Active = true
-	elseif item_name == "Shadows Laser Room Door"  then
-		Tracker:FindObjectForCode("Shadows Laser Room Right Door").Active = true
-		Tracker:FindObjectForCode("Shadows Laser Room Left Door").Active = true
-	elseif item_name == "Shadows Barriers"  then
-		Tracker:FindObjectForCode("Shadows Barrier to Quarry").Active = true
-		Tracker:FindObjectForCode("Shadows Barrier to Ledge").Active = true
-	elseif item_name == "Keep Hedge Maze Doors"  then
-		Tracker:FindObjectForCode("Keep Hedge Maze 1 Exit Door").Active = true
-		Tracker:FindObjectForCode("Keep Hedge Maze 2 Shortcut").Active = true
-		Tracker:FindObjectForCode("Keep Hedge Maze 2 Exit Door").Active = true
-		Tracker:FindObjectForCode("Keep Hedge Maze 3 Shortcut").Active = true
-		Tracker:FindObjectForCode("Keep Hedge Maze 3 Exit Door").Active = true
-		Tracker:FindObjectForCode("Keep Hedge Maze 4 Shortcut").Active = true
-		Tracker:FindObjectForCode("Keep Hedge Maze 4 Exit Door").Active = true
-	elseif item_name == "Keep Pressure Plates Doors"  then
-		Tracker:FindObjectForCode("Keep Pressure Plates 1 Exit Door").Active = true
-		Tracker:FindObjectForCode("Keep Pressure Plates 2 Exit Door").Active = true
-		Tracker:FindObjectForCode("Keep Pressure Plates 3 Exit Door").Active = true
-		Tracker:FindObjectForCode("Keep Pressure Plates 4 Exit Door").Active = true
-	elseif item_name == "Keep Shortcuts"  then
-		Tracker:FindObjectForCode("Keep Shortcut to Shadows").Active = true
-		Tracker:FindObjectForCode("Keep Tower Shortcut").Active = true
-	elseif item_name == "Monastery Entry Door"  then
-		Tracker:FindObjectForCode("Monastery Inner Door").Active = true
-		Tracker:FindObjectForCode("Monastery Outer Door").Active = true
-	elseif item_name == "Monastery Shortcuts"  then
-		Tracker:FindObjectForCode("Monastery Shortcut").Active = true
-		Tracker:FindObjectForCode("Monastery Door to Garden").Active = true
-	elseif item_name == "Town Tower Doors" then
-		Tracker:FindObjectForCode("Town Tower Blue Panels Door").Active = true
-		Tracker:FindObjectForCode("Town Tower Lattice Door").Active = true
-		Tracker:FindObjectForCode("Town Tower Environmental Set Door").Active = true
-		Tracker:FindObjectForCode("Town Tower Wooden Roof Set Door").Active = true
-	elseif item_name == "Town Doors"  then
-		Tracker:FindObjectForCode("Town Cargo Box Door").Active = true
-		Tracker:FindObjectForCode("Town Wooden Roof Staircase").Active = true
-		Tracker:FindObjectForCode("Town Tinted Door to RGB House").Active = true
-		Tracker:FindObjectForCode("Town Door to Church").Active = true
-		Tracker:FindObjectForCode("Town Maze Staircase").Active = true
-		Tracker:FindObjectForCode("Town Windmill Door").Active = true
-		Tracker:FindObjectForCode("Town RGB House Staircase").Active = true
-	elseif item_name == "Theater Exit Door"  then
-		Tracker:FindObjectForCode("Theater Exit Door Left").Active = true
-		Tracker:FindObjectForCode("Theater Exit Door Right").Active = true
-	elseif item_name == "Jungle & River Shortcuts"  then
-		Tracker:FindObjectForCode("Jungle Bamboo Shortcut to River").Active = true
-		Tracker:FindObjectForCode("River Shortcut to Monastery Garden").Active = true
-	elseif item_name == "Bunker Doors"  then
-		Tracker:FindObjectForCode("Bunker Bunker Entry Door").Active = true
-		Tracker:FindObjectForCode("Bunker Tinted Glass Door").Active = true
-		Tracker:FindObjectForCode("Bunker Door to Ultraviolet Room").Active = true
-		Tracker:FindObjectForCode("Bunker Door to Elevator").Active = true
-	elseif item_name == "Swamp Doors"  then
-		Tracker:FindObjectForCode("Swamp Entry Door").Active = true
-		Tracker:FindObjectForCode("Swamp Door to Broken Shapers").Active = true
-		Tracker:FindObjectForCode("Swamp Platform Shortcut Door").Active = true
-		Tracker:FindObjectForCode("Swamp Door to Rotated Shapers").Active = true
-	elseif item_name == "Swamp Water Pumps"  then
-		Tracker:FindObjectForCode("Swamp Red Underwater Exit").Active = true
-		Tracker:FindObjectForCode("Swamp Cyan Water Pump").Active = true
-		Tracker:FindObjectForCode("Swamp Red Water Pump").Active = true
-		Tracker:FindObjectForCode("Swamp Blue Water Pump").Active = true
-		Tracker:FindObjectForCode("Swamp Purple Water Pump").Active = true
-	elseif item_name == "Treehouse Entry Doors"  then
-		Tracker:FindObjectForCode("Treehouse First Door").Active = true
-		Tracker:FindObjectForCode("Treehouse Second Door").Active = true
-		Tracker:FindObjectForCode("Treehouse Beyond Yellow Bridge Door").Active = true
-	elseif item_name == "Inside Mountain Second Layer Stairs & Doors"  then
-		Tracker:FindObjectForCode("Inside Mountain Second Layer Staircase Near").Active = true
-		Tracker:FindObjectForCode("Inside Mountain Second Layer Exit Door").Active = true
-		Tracker:FindObjectForCode("Inside Mountain Second Layer Staircase Far").Active = true
-	elseif item_name == "Inside Mountain Bottom Layer Doors to Caves"  then
-		Tracker:FindObjectForCode("Inside Mountain Bottom Layer Rock").Active = true
-		Tracker:FindObjectForCode("Inside Mountain Door to Secret Area").Active = true
-	elseif item_name == "Caves Doors to Challenge"  then
-		Tracker:FindObjectForCode("Caves Pillar Door").Active = true
-		Tracker:FindObjectForCode("Challenge Entry Door").Active = true
-	elseif item_name == "Caves Exits to Main Island"  then
-		Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
-		Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
-	elseif item_name == "Tunnels Doors"  then
-		Tracker:FindObjectForCode("Theater Walkway Door to Back of Theater").Active = true
-		Tracker:FindObjectForCode("Theater Walkway Door to Desert Elevator Room").Active = true
-		Tracker:FindObjectForCode("Theater Walkway Door to Town").Active = true
+
+function doorsRegional(item_name)
+	for _, door in pairs(doors[item_name]) do
+		Tracker:FindObjectForCode(door).Active = true
 	end
 end
+
+function laserCounting()
+	laserCount = 0
+	for k, v in pairs(lasers) do
+		laserCount = laserCount + v
+	end
 	
+	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+end
 
 function showGoal()
 	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = Tracker:FindObjectForCode("hiddenShort").AcquiredCount
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = Tracker:FindObjectForCode("hiddenLong").AcquiredCount
-	print(Tracker:FindObjectForCode("Goal").CurrentStage, Tracker:FindObjectForCode("hiddenGoal").CurrentStage)
 end
 
 function laser(num)
 	return (lasers[tonumber(num)] > 0)
 end
 
+function isClearing()
+	return currentlyClearing
+end
+
 function randomizationChanged()
     require(getLogicFile())
 end
+
 
 -- add AP callbacks
 -- un-/comment as needed

@@ -1,0 +1,792 @@
+[
+	{
+		"name": "Tutorial Gate Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 447,
+				"y": 1331
+			}
+		]
+	},
+	{
+		"name": "Tutorial Patio Roof",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 360,
+				"y": 1296
+			}
+		]
+	},
+	{
+		"name": "Outside Tutorial Outpost",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/tutorialOutpostInterior" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 508,
+				"y": 1195
+			}
+		]
+	},
+	{
+		"name": "Black & White Squares Tutorial",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 337,
+				"y": 1026
+			}
+		]
+	},
+	{
+		"name": "Ocean Broken Boat",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/ocean" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1564,
+				"y": 989
+			}
+		]
+	},
+	{
+		"name": "Symmetry Island Lower Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/symmetryOuter" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 234,
+				"y": 751
+			}
+		]
+	},
+	{
+		"name": "Symmetry Island Upper Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/symmetryInner" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 170,
+				"y": 705
+			}
+		]
+	},
+	{
+		"name": "Desert Broken Wall Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 315,
+				"y": 153
+			}
+		]
+	},
+	{
+		"name": "Quarry Stoneworks Alcove",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [
+					"@Places/quarryStoneworksUpstairs",
+					"showSnipes, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+				]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 630,
+				"y": 350
+			}
+		]
+	},
+	{
+		"name": "Shadows Orange Crate",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 847,
+				"y": 307
+			}
+		]
+	},
+	{
+		"name": "Shadows Laser Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/shadowsLaser" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 830,
+				"y": 540
+			}
+		]
+	},
+	{
+		"name": "Keep Front Wall",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/maze3" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1014,
+				"y": 557
+			}
+		]
+	},
+	{
+		"name": "Keep Guitar Amp",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1025,
+				"y": 340
+			}
+		]
+	},
+	{
+		"name": "Keep Throne",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1047,
+				"y": 318
+			}
+		]
+	},
+	{
+		"name": "Keep Corridor",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/plates3" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1048,
+				"y": 232
+			}
+		]
+	},
+	{
+		"name": "Shipwreck Cabin",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/plates3" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1400,
+				"y": 150
+			}
+		]
+	},
+	{
+		"name": "Treehouse Dock",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/treehouseDock" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1380,
+				"y": 340
+			}
+		]
+	},
+	{
+		"name": "Ocean Treehouse Rock",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/ocean" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1552,
+				"y": 342
+			}
+		]
+	},
+	{
+		"name": "Treehouse Green Bridge",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Treehouse Right Side/Green Bridge" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1236,
+				"y": 363
+			}
+		]
+	},
+	{
+		"name": "Treehouse Beach Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1268,
+				"y": 303
+			}
+		]
+	},
+	{
+		"name": "Swamp Back Shoreline",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [
+					"@Places/swampBack",
+					"showSnipes, @Places/ocean, [@Places/swampBack]"
+				]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1388,
+				"y": 585
+			}
+		]
+	},
+	{
+		"name": "Swamp Purple Underwater Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/swampPurpleUnderwater" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1370,
+				"y": 795
+			}
+		]
+	},
+	{
+		"name": "Bunker Green Floor",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/bunkerLaser" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1361,
+				"y": 1087
+			}
+		]
+	},
+	{
+		"name": "Jungle Entrance Left",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 909,
+				"y": 1090
+			}
+		]
+	},
+	{
+		"name": "Jungle Entrance Right",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 909,
+				"y": 1110
+			}
+		]
+	},
+	{
+		"name": "Jungle Beach",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1190,
+				"y": 1190
+			}
+		]
+	},
+	{
+		"name": "Jungle Laser Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1165,
+				"y": 1020
+			}
+		]
+	},
+	{
+		"name": "Peninsula",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 719,
+				"y": 1324
+			}
+		]
+	},
+	{
+		"name": "Monastery Left Shutter",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Monastery/Left Shutter EP" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 878,
+				"y": 934
+			}
+		]
+	},
+	{
+		"name": "Town Obelisk Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 612,
+				"y": 936
+			}
+		]
+	},
+	{
+		"name": "Town Bell Tower",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 697,
+				"y": 782
+			}
+		]
+	},
+	{
+		"name": "Town Church Left",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 742,
+				"y": 773
+			}
+		]
+	},
+	{
+		"name": "Town Church Right",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 742,
+				"y": 794
+			}
+		]
+	},
+	{
+		"name": "Town Laser Redirect",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 680,
+				"y": 930
+			}
+		]
+	},
+	{
+		"name": "Mountainside Discard Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1252,
+				"y": 992
+			}
+		]
+	},
+	{
+		"name": "Mountaintop Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1312,
+				"y": 955
+			}
+		]
+	},
+	{
+		"name": "Tunnels Vault",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/tunnels" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1841,
+				"y": 1145
+			}
+		]
+	},
+	{
+		"name": "Mountain Floor 1 Bridge Panel",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Mountaintop/Mountain Entry" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1917,
+				"y": 139
+			}
+		]
+	},
+	{
+		"name": "Mountain Floor 1 Trash Pillar",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/mountainLayer1" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1902,
+				"y": 91
+			}
+		]
+	},
+	{
+		"name": "Mountain Floor 1 Back Row",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/mountainLayer1" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1870,
+				"y": 43
+			}
+		]
+	},
+	{
+		"name": "Mountain Floor 2 Blue Bridge Panel",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/mountain2FrontStairs" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1899,
+				"y": 261
+			}
+		]
+	},
+	{
+		"name": "Mountain Floor 3 Giant Puzzle",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/mountainMeta" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1921,
+				"y": 404
+			}
+		]
+	},
+	{
+		"name": "Mountain Bottom Floor",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/mountainPenultimateRoom" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1909,
+				"y": 439
+			}
+		]
+	},
+	{
+		"name": "Caves Blue Tunnel",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/caves" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1788,
+				"y": 532
+			}
+		]
+	},
+	{
+		"name": "Caves Stairwell",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/caves" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1884,
+				"y": 735
+			}
+		]
+	},
+	{
+		"name": "Caves Upstairs",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/caves" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1914,
+				"y": 850
+			}
+		]
+	},
+	{
+		"name": "Caves Mountain Shortcut Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/caves" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1726,
+				"y": 756
+			}
+		]
+	},
+	{
+		"name": "Challenge Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/challenge" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1839,
+				"y": 1040
+			}
+		]
+	},
+	{
+		"name": "Tunnels Town Shortcut Area",
+		"sections": [
+			{
+				"name": "Audio Log",
+				"access_rules": [ "@Places/tunnels" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "audioLogs",
+				"x": 1755,
+				"y": 1213
+			}
+		]
+	}
+]

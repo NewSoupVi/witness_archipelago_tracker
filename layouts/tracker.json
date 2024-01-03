@@ -15,9 +15,9 @@
 						"h_alignment": "left",
 						"item_size": "50",
 						"rows": [
-							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "goal" ],
-							[ "Symmetry", "ColoredDots", "SoundDots", "Triangles" , "Boat", "lasers", "boxShort"],
-							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong"]
+							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "Goal" ],
+							[ "Symmetry", "ColoredDots", "SoundDots", "Triangles", "Boat", "lasers", "boxShort" ],
+							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong" ]
 						]
 					}
 				]
@@ -67,7 +67,8 @@
 							"content": {
 								"type": "map",
 								"maps": [
-									"fullmap", "doors"
+									"fullmap",
+									"doors"
 								]
 							}
 						},
@@ -86,6 +87,15 @@
 								"type": "map",
 								"maps": [
 									"doors"
+								]
+							}
+						},
+						{
+							"title": "Audio Logs",
+							"content": {
+								"type": "map",
+								"maps": [
+									"audioLogs"
 								]
 							}
 						}
@@ -139,7 +149,8 @@
 							"content": {
 								"type": "map",
 								"maps": [
-									"fullmap", "doors"
+									"fullmap",
+									"doors"
 								]
 							}
 						},
@@ -158,6 +169,15 @@
 								"type": "map",
 								"maps": [
 									"doors"
+								]
+							}
+						},
+						{
+							"title": "Audio Logs",
+							"content": {
+								"type": "map",
+								"maps": [
+									"audioLogs"
 								]
 							}
 						}
