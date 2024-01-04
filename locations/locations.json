@@ -65,12 +65,12 @@
 			{
 				"name": "First Hallway Straight",
 				"visibility_rules": [ "Tutorial 1 Extra" ],
-				"access_rules": [ "@Places/tutorial" ]
+				"access_rules": [ "@Places/firstHallway" ]
 			},
 			{
 				"name": "First Hallway Bent",
 				"visibility_rules": [ "Tutorial 2 Extra" ],
-				"access_rules": [ "@Places/tutorial" ]
+				"access_rules": [ "@Places/firstHallwayRoom" ]
 			},
 			{
 				"name": "Patio Floor",
@@ -82,7 +82,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|6216" ],
 				"access_rules": [
 					"$isDisabled|6216",
-					"@Places/tutorial"
+					"@Places/firstHallwayRoom, First Hallway Door",
+					"$isNotDoors, $hasPanel|First Hallway Panel, @Places/firstHallway"
 				]
 			},
 			{
@@ -186,7 +187,10 @@
 		"sections": [
 			{
 				"name": "Vault Box",
-				"access_rules": [ "$canSolve|158650, @Places/overworld" ]
+				"access_rules": [
+					"$Warp|Outside Tutorial Vault",
+					"$canSolve|158650, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -676,7 +680,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158652, @Places/overworld" ]
+				"access_rules": [
+					"$Warp|Desert Vault",
+					"$canSolve|158652, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -882,21 +889,13 @@
 		"name": "Desert",
 		"sections": [
 			{
-				"name": "First Surface Puzzle",
-				"visibility_rules": [ "Desert 1 Extra" ],
-				"access_rules": [ "$canSolve|158076, @Places/overworld" ]
-			},
-			{
-				"name": "Second Surface Puzzle",
-				"visibility_rules": [ "Desert 2 Extra" ],
-				"access_rules": [ "$canSolve|158076-158077, @Places/overworld" ]
+				"name": "Third Surface Puzzle",
+				"visibility_rules": [ "Desert 3 Extra" ],
+				"access_rules": [ "$canSolve|158076-158078, @Places/overworld" ]
 			},
 			{
 				"name": "Surface Puzzles",
-				"access_rules": [
-					"$canSolve|158076-158085, $hasPanel|Desert Surface 3 Control (Panel), $hasPanel|Desert Surface 8 Control (Panel), @Places/overworld",
-					"showSnipes, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
-				]
+				"access_rules": [ "$canSolve|158076-158085, @Places/overworld" ]
 			},
 			{
 				"name": "Light Room Entry Panel",
@@ -929,10 +928,7 @@
 			},
 			{
 				"name": "Final Hexagonal",
-				"access_rules": [
-					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
-					"showSnipes, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
-				]
+				"access_rules": [ "$canSolve|158111 158113 158114, @Places/desertLaser" ]
 			},
 			{
 				"name": "Final Bent 3",
@@ -1220,7 +1216,9 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"$canSolve|158123, @Places/quarryStoneworks",
-					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld"
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid"
 				]
 			},
 			{
@@ -1244,7 +1242,8 @@
 				"access_rules": [
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
@@ -1253,7 +1252,8 @@
 				"access_rules": [
 					"$isDisabled|1556",
 					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
 				]
 			}
 		],
@@ -2112,7 +2112,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158654, @Places/plates3" ]
+				"access_rules": [
+					"$Warp|Shipwreck Vault",
+					"$canSolve|158654, @Places/plates3"
+				]
 			}
 		],
 		"map_locations": [
@@ -3082,7 +3085,7 @@
 				"visibility_rules": [ "obelisks, $isNotDisabled|211382" ],
 				"access_rules": [ "@Theater/Eclipse EP" ]
 			}
-		
+
 		],
 		"map_locations": [
 			{
@@ -3443,7 +3446,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158663, @Places/overworld" ]
+				"access_rules": [
+					"$Warp|Jungle Vault",
+					"$canSolve|158663, @Places/overworld"
+				]
 			},
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
@@ -3563,8 +3569,9 @@
 				"name": "Green Room Flowers EP",
 				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
-					"$isDisabled|211",
-					"@Places/bunkerLaser"
+					"$isDisabledBy|211",
+					"$Warp|Bunker Green Room",
+					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
 				]
 			},
 			{
@@ -4316,6 +4323,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1897" ],
 				"access_rules": [
 					"$isDisabled|1897",
+					"$Warp|Treehouse Burned House",
 					"@Treehouse Left Side/Left Orange Bridge"
 				]
 			},
@@ -4632,7 +4640,10 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158665, @Places/overworld" ]
+				"access_rules": [
+					"$Warp|Mountainside Vault",
+					"$canSolve|158665, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -4826,7 +4837,10 @@
 		"sections": [
 			{
 				"name": "Back Row",
-				"access_rules": [ "$canSolve|158421-158423, @Places/mountainLayer1" ]
+				"access_rules": [
+					"$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
+					"@Places/mountainLayer1, $canSolve|158421-158423"
+				]
 			}
 		],
 		"map_locations": [
@@ -4845,7 +4859,7 @@
 			{
 				"name": "Near Row",
 				"visibility_rules": [ "$isNotDisabled|40920" ],
-				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2" ]
+				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2Near" ]
 			}
 		],
 		"map_locations": [
@@ -4863,7 +4877,7 @@
 			{
 				"name": "Far Row",
 				"visibility_rules": [ "$isNotDisabled|40914" ],
-				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2, @Places/mountain2FrontStairs" ]
+				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2Far" ]
 			}
 		],
 		"map_locations": [
@@ -4881,7 +4895,7 @@
 			{
 				"name": "Blue Light Bridge",
 				"visibility_rules": [ "$isNotDisabled|40582" ],
-				"access_rules": [ "$canSolve|158431, @Places/mountainLayer2, @Places/mountain2FrontStairs" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Near (Panel), $canSolve|158431, @Places/mountain2FrontStairs" ]
 			}
 		],
 		"map_locations": [
@@ -4899,7 +4913,7 @@
 			{
 				"name": "Orange Light Bridge",
 				"visibility_rules": [ "$isNotDisabled|40664" ],
-				"access_rules": [ "$canSolve|158438, @Places/mountainLayer2, @Places/mountain2BackStairs" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Far (Panel), $canSolve|158438, @Places/mountain2BackStairs" ]
 			}
 		],
 		"map_locations": [
@@ -4937,8 +4951,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer2",
-					"@Places/mountainLayer1, @Places/mountainMeta"
+					"@Places/mountainLayer2Near, @Places/mountainLayer1",
+					"@Places/mountainLayer2Far, @Places/mountainLayer1",
+					"@Places/mountainMeta, @Places/mountainLayer1"
 				]
 			}
 		],
@@ -4959,7 +4974,7 @@
 				"visibility_rules": [ "Discarded, $isNotDisabled|98195" ],
 				"access_rules": [
 					"$canSolve|158613, @Places/mountainElevator",
-					"showSnipes, $canSolve|158613, @Places/mountainLayer2, [@Places/mountainElevator]"
+					"showSnipes, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]"
 				]
 			}
 		],

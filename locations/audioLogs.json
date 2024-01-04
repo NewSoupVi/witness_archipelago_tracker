@@ -362,7 +362,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/bunkerLaser" ]
+				"access_rules": [
+					"$Warp|Bunker Green Room",
+					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
+				]
 			}
 		],
 		"map_locations": [
@@ -602,7 +605,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Mountaintop/Mountain Entry" ]
+				"access_rules": [
+					"@Mountaintop/Mountain Entry",
+					"$Warp|Mountain Floor 1"
+				]
 			}
 		],
 		"map_locations": [
@@ -634,7 +640,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/mountainLayer1" ]
+				"access_rules": [
+					"$Warp|Mountain Floor 1 Back",
+					"@Places/mountainLayer1"
+				]
 			}
 		],
 		"map_locations": [

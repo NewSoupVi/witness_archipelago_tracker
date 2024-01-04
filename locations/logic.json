@@ -6,7 +6,28 @@
 				"name": "overworld"
 			},
 			{
-				"name": "tutorial"
+				"name": "firstHallway",
+				"access_rules": [
+					"$Warp|First Hallway",
+					"First Hallway Door, @Places/firstHallwayRoom"
+				]
+			},
+			{
+				"name": "firstHallwayRoom",
+				"access_rules": [
+					"$Warp|First Hallway Room",
+					"$isNotDoors, $hasPanel|First Hallway Straight (Panel), @Places/firstHallway",
+					"First Hallway Door, @Places/firstHallway",
+					"Tutorial Entrance, @Places/tutorial"
+				]
+			},
+			{
+				"name": "tutorial",
+				"access_rules": [
+					"$Warp|Tutorial",
+					"Tutorial Exit, @Places/overworld",
+					"Tutorial Entrnace, @Places/firstHallwayRoom"
+				]
 			},
 			{
 				"name": "ocean",
@@ -15,6 +36,7 @@
 			{
 				"name": "tutorialOutpostPath",
 				"access_rules": [
+					"$Warp|Tutorial Outpost Path",
 					"$isNotDoors, $canSolve|158005, @Places/tutorial, @Places/overworld",
 					"Outside Tutorial Optional Door, @Places/overworld",
 					"Outside Tutorial Outpost Entry Door, @Places/tutorialOutpostInterior"
@@ -23,6 +45,7 @@
 			{
 				"name": "tutorialOutpostInterior",
 				"access_rules": [
+					"$Warp|Tutorial Outpost",
 					"$isNotDoors, $hasPanel|Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath",
 					"Outside Tutorial Outpost Exit Door, @Places/overworld",
 					"Outside Tutorial Outpost Entry Door, @Places/tutorialOutpostPath"
@@ -31,14 +54,17 @@
 			{
 				"name": "orchardInner",
 				"access_rules": [
+					"$Warp|Orchard Middle",
 					"unrandomized, $isNotDoors, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Middle Gate], @Places/overworld",
-					"Orchard Middle Gate, @Places/overworld"
+					"Orchard Middle Gate, @Places/overworld",
+					"Orchard Final Gate, @Places/orchardHeart"
 				]
 			},
 			{
 				"name": "orchardHeart",
 				"access_rules": [
+					"$Warp|Orchard Heart",
 					"unrandomized, $isNotDoors, @Places/orchardInner",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Final Gate], @Places/ochardInner",
 					"Orchard Final Gate, @Places/orchardInner"
@@ -47,6 +73,7 @@
 			{
 				"name": "glassFactory",
 				"access_rules": [
+					"$Warp|Glass Factory",
 					"$isNotDoors, $hasPanel|Glass Factory Entry (Panel), @Outside Glass Factory/Entry Panel, @Places/overworld",
 					"Glass Factory Entry Door, @Places/overworld",
 					"Glass Factory Back Wall, @Places/ocean"
@@ -55,6 +82,7 @@
 			{
 				"name": "symmetryOuter",
 				"access_rules": [
+					"$Warp|Symmetry Island Lower",
 					"doorsNo, @Inside Glass Factory/Melting, $canSolve|158040",
 					"$isNotDoors, Door to Symmetry Island Lower (Panel), $canSolve|158040",
 					"Symmetry Island Lower Door, @Places/overworld"
@@ -63,6 +91,7 @@
 			{
 				"name": "symmetryInner",
 				"access_rules": [
+					"$Warp|Symmetry Island Upper",
 					"$isNotDoors, $hasPanel|Door to Symmetry Island Upper (Panel), @Symmetry Island/Upper Entry Panel",
 					"Symmetry Island Upper Door, @Places/symmetryOuter"
 				]
@@ -70,6 +99,7 @@
 			{
 				"name": "desertFloodLight",
 				"access_rules": [
+					"$Warp|Desert Floodlight Room",
 					"$isNotDoors, $hasPanel|Desert Light Room Entry (Panel), @Places/overworld",
 					"Desert Door to Light Room, @Places/overworld",
 					"Desert Door to Pond Room, @Places/desertPond"
@@ -78,6 +108,7 @@
 			{
 				"name": "desertPond",
 				"access_rules": [
+					"$Warp|Desert Pond Room",
 					"$isNotDoors, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
 					"Desert Door to Pond Room, @Places/desertFloodLight",
 					"Desert Door to Flood Room, @Places/desertFlood"
@@ -86,6 +117,7 @@
 			{
 				"name": "desertFlood",
 				"access_rules": [
+					"$Warp|Desert Flood Room",
 					"$isNotDoors, $hasPanel|Desert Flood Room Entry (Panel), @Places/desertPond",
 					"Desert Door to Flood Room, @Places/desertPond",
 					"Desert Door to Elevator Room, @Places/desertLaser"
@@ -94,6 +126,7 @@
 			{
 				"name": "desertLaser",
 				"access_rules": [
+					"$Warp|Desert Laser Room",
 					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
 					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
 					"Desert Door to Elevator Room, @Places/desertFlood",
@@ -104,6 +137,7 @@
 			{
 				"name": "quarryBetweenEntries",
 				"access_rules": [
+					"$Warp|Quarry Between Entries",
 					"$isNotDoors, $hasPanel|Quarry Entry 1 (Panel), $canSolve|158118, @Places/overworld",
 					"Quarry Main Entry 1, @Places/overworld",
 					"Quarry Main Entry 2, @Places/quarry"
@@ -112,9 +146,11 @@
 			{
 				"name": "quarry",
 				"access_rules": [
+					"$Warp|Quarry",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
+					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Boat Staircase]",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"showSnipes, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
@@ -129,6 +165,7 @@
 			{
 				"name": "quarryStoneworks",
 				"access_rules": [
+					"$Warp|Quarry Stoneworks",
 					"Quarry Stoneworks Rooftop Shortcut, @Places/overworld",
 					"Quarry Stoneworks Side Door, @Places/quarry",
 					"Quarry Door to Stoneworks, @Places/quarry",
@@ -139,13 +176,16 @@
 			{
 				"name": "quarryStoneworksMid",
 				"access_rules": [
+					"$Warp|Quarry Stoneworks Mid",
 					"$canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks",
-					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks"
+					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
+					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
 				"name": "quarryStoneworksUpstairs",
 				"access_rules": [
+					"$Warp|Quarry Stoneworks Upstairs",
 					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
 					"$canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
@@ -154,11 +194,16 @@
 			},
 			{
 				"name": "quarryBoathouseUpstairsFront",
-				"access_rules": [ "@Logic/boathouseRamp, $canSolve|158148, @Places/quarry" ]
+				"access_rules": [
+					"$Warp|Quarry Boathouse Upstairs Front",
+					"@Logic/boathouseRamp, $canSolve|158148, @Places/quarry",
+					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsBack"
+				]
 			},
 			{
 				"name": "quarryBoathouseUpstairsBack",
 				"access_rules": [
+					"$Warp|Quarry Boathouse Upstairs Back",
 					"$isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
 					"showSnipes, $isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
 					"@Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
@@ -168,6 +213,7 @@
 			{
 				"name": "shadowsFirstSet",
 				"access_rules": [
+					"$Warp|Shadows First Set",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"Shadows Timed Door, @Places/overworld",
@@ -178,6 +224,7 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
+					"$Warp|Shadows Laser",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door]",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
@@ -188,6 +235,7 @@
 			{
 				"name": "maze2",
 				"access_rules": [
+					"$Warp|Keep Maze 2",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 1 (Panel), unrandomized, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 2 Shortcut]",
 					"Keep Hedge Maze 1 Exit Door, @Places/overworld",
@@ -198,6 +246,7 @@
 			{
 				"name": "maze3",
 				"access_rules": [
+					"$Warp|Keep Maze 3",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 2 (Panel), @Places/maze2, unrandomized",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 3 Shortcut]",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze2",
@@ -208,6 +257,7 @@
 			{
 				"name": "maze4",
 				"access_rules": [
+					"$Warp|Keep Maze 4",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 3 (Panel), @Places/maze3, unrandomized",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 4 Shortcut]",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze3",
@@ -222,6 +272,7 @@
 			{
 				"name": "plates3",
 				"access_rules": [
+					"$Warp|Keep Pressure Plates 2",
 					"$isNotDoors, @Pressure Plates 1/Pressure Plates",
 					"Keep Pressure Plates 1 Exit Door, @Places/overworld",
 					"Keep Pressure Plates 3 Exit Door, @Places/plates4"
@@ -230,6 +281,7 @@
 			{
 				"name": "plates4",
 				"access_rules": [
+					"$Warp|Keep Pressure Plates 4",
 					"$isNotDoors, @Pressure Plates 3/Pressure Plates",
 					"Keep Pressure Plates 4 Exit Door, @Places/keepTower",
 					"Keep Shortcut to Shadows, @Places/overworld",
@@ -239,6 +291,7 @@
 			{
 				"name": "keepTower",
 				"access_rules": [
+					"$Warp|Keep Laser",
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4, unrandomized",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Tower Shortcut]",
@@ -249,11 +302,15 @@
 			},
 			{
 				"name": "treehouseDock",
-				"access_rules": [ "@Places/ocean" ]
+				"access_rules": [
+					"$Warp|Treehouse Dock",
+					"@Places/ocean"
+				]
 			},
 			{
 				"name": "treehouseSecond",
 				"access_rules": [
+					"$Warp|Treehouse Between Doors",
 					"$isNotDoors, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/First Door Panel",
 					"Treehouse First Door, @Places/treehouseDock"
 				]
@@ -261,6 +318,7 @@
 			{
 				"name": "treehouseThird",
 				"access_rules": [
+					"$Warp|Treehouse Before Yellow Bridge",
 					"$isNotDoors, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel",
 					"Treehouse Second Door, @Places/treehouseSecond"
 				]
@@ -268,6 +326,7 @@
 			{
 				"name": "treehouseAfterYellowBridge",
 				"access_rules": [
+					"$Warp|Treehouse After Yellow Bridge",
 					"$canSolve|158346-158354, @Places/treehouseThird",
 					"Treehouse Beyond Yellow Bridge Door, @Places/treehouseMain"
 				]
@@ -275,36 +334,51 @@
 			{
 				"name": "treehouseMain",
 				"access_rules": [
+					"$Warp|Treehouse Main",
 					"$isNotDoors, $hasPanel|Treehouse Third Door (Panel), @Treehouse Entrance/Third Door Panel",
 					"Treehouse Beyond Yellow Bridge Door, @Places/treehouseAfterYellowBridge"
 				]
 			},
 			{
 				"name": "treehouseLeft1",
-				"access_rules": [ "@Treehouse Left Side/Purple Bridge 1" ]
+				"access_rules": [
+					"$Warp|Treehouse Second Purple Bridge",
+					"@Treehouse Left Side/Purple Bridge 1"
+				]
 			},
 			{
 				"name": "treehouseLeft2",
-				"access_rules": [ "@Treehouse Left Side/Purple Bridge 2" ]
+				"access_rules": [
+					"$Warp|Treehouse Left Orange Bridge",
+					"@Treehouse Left Side/Purple Bridge 2"
+				]
 			},
 			{
 				"name": "treehouseOutsideLaser",
-				"access_rules": [ "$canSolve|158376-158387, @Places/treehouseLeft2" ]
+				"access_rules": [
+					"$Warp|Treehouse Outside Laser House",
+					"$canSolve|158376-158387, @Places/treehouseLeft2"
+				]
 			},
 			{
 				"name": "treehouseLaserDiscard",
-				"access_rules": [ "@Treehouse Left Side/Left Orange Bridge" ]
+				"access_rules": [
+					"$Warp|Treehouse Behind Laser",
+					"@Treehouse Left Side/Left Orange Bridge"
+				]
 			},
 			{
 				"name": "treehouseLaser",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, @Places/treehouseOutsideLaser",
+					"$Warp|Treehouse Laser",
+					"$isNotDoors, $hasPanel|Treehouse Laser House Door Timer (Panel), $canSolve|158376-158387, $canSolve|158391-158402, @Places/treehouseMain, @Places/treehouseLeft2",
 					"Treehouse Timed Door to Laser House, @Places/treehouseOutsideLaser"
 				]
 			},
 			{
 				"name": "treehouseDrawbridge",
 				"access_rules": [
+					"$Warp|Treehouse Drawbridge",
 					"Treehouse Drawbridge, @Places/overworld",
 					"@Treehouse Right Side/Right Orange Bridge"
 				]
@@ -312,6 +386,7 @@
 			{
 				"name": "swampEntry",
 				"access_rules": [
+					"$Warp|Swamp Entry",
 					"$isNotDoors, $canSolve|158287, $hasPanel|Swamp Entry (Panel), @Places/overworld",
 					"Swamp Entry Door, @Places/overworld",
 					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform"
@@ -320,6 +395,7 @@
 			{
 				"name": "swampPlatform",
 				"access_rules": [
+					"$Warp|Swamp Platform",
 					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampEntry",
 					"Swamp Door to Broken Shapers, @Places/swampBroken",
 					"Swamp Platform Shortcut Door, @Places/swampBack"
@@ -328,6 +404,7 @@
 			{
 				"name": "swampBroken",
 				"access_rules": [
+					"$Warp|Swamp Between Bridged Near",
 					"$isNotDoors, @Swamp Platform Area/Platform Set",
 					"Swamp Door to Broken Shapers, @Places/swampPlatform",
 					"Swamp Door to Rotated Shapers, @Places/swampRotated"
@@ -336,6 +413,7 @@
 			{
 				"name": "swampRotated",
 				"access_rules": [
+					"$Warp|Swamp Between Bridges Far",
 					"$isNotDoors, @Swamp Platform Area/Between Bridges Near Row",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
 					"Swamp Door to Rotated Shapers, @Places/swampBroken",
@@ -345,6 +423,7 @@
 			{
 				"name": "swampBack",
 				"access_rules": [
+					"$Warp|Swamp Back",
 					"@Places/ocean",
 					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, autoElevators",
 					"Swamp Platform Shortcut Door, @Places/swampPlatform",
@@ -355,11 +434,15 @@
 			},
 			{
 				"name": "swampPurple",
-				"access_rules": [ "$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack" ]
+				"access_rules": [
+					"$Warp|Swamp Purple",
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"
+				]
 			},
 			{
 				"name": "swampPurpleUnderwater",
 				"access_rules": [
+					"$Warp|Swamp Purple Underwater",
 					"$isNotDoors, @Swamp Near Boat/Beyond Rotating Bridge, @Places/swampPurple",
 					"Swamp Purple Water Pump, @Places/swampPurple"
 				]
@@ -367,6 +450,7 @@
 			{
 				"name": "swampBlue",
 				"access_rules": [
+					"$Warp|Swamp Blue Underwater",
 					"$isNotDoors, @Places/swampBack, @Swamp Near Boat/Beyond Rotating Bridge",
 					"Swamp Blue Water Pump, @Places/swampBack"
 				]
@@ -374,6 +458,7 @@
 			{
 				"name": "swampCyan",
 				"access_rules": [
+					"$Warp|Swamp Cyan Underwater",
 					"$isNotDoors, @Swamp Blue Underwater Room/Blue Underwater, @Places/swampPlatform",
 					"Swamp Cyan Water Pump, @Places/swampPlatform"
 				]
@@ -381,6 +466,7 @@
 			{
 				"name": "swampRed",
 				"access_rules": [
+					"$Warp|Swamp Red Underwater",
 					"$isNotDoors, @Swamp Cyan Underwater Room/Cyan Underwater, @Places/swampRotated",
 					"Swamp Red Water Pump, @Places/swampRotated",
 					"showSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit, [@Places/swampRotated], [Swamp Red Water Pump]"
@@ -389,6 +475,7 @@
 			{
 				"name": "swampMaze",
 				"access_rules": [
+					"$Warp|Swamp Maze",
 					"$isNotDoors, @Swamp Red Underwater Room/Red Underwater, @Places/swampRed",
 					"Swamp Red Underwater Exit, @Places/swampRed"
 				]
@@ -396,6 +483,7 @@
 			{
 				"name": "swampLaser",
 				"access_rules": [
+					"$Warp|Swamp Laser",
 					"$canSolve|158340, $hasPanel|Swamp Maze Control (Panel), @Places/swampMaze",
 					"Swamp Near Laser Shortcut, @Places/overworld"
 				]
@@ -403,6 +491,7 @@
 			{
 				"name": "windmill",
 				"access_rules": [
+					"$Warp|Windmill",
 					"$isNotDoors, @Windmill/Entry Panel, $hasPanel|Windmill Entry (Panel)",
 					"$isNotDoors, @Places/tunnels",
 					"Town Windmill Door, @Places/overworld",
@@ -413,6 +502,7 @@
 			{
 				"name": "theater",
 				"access_rules": [
+					"$Warp|Theater",
 					"$isNotDoors, $canSolve|158248, $hasPanel|Theater Entry (Panel), @Places/windmill",
 					"Theater Exit Door Left, @Places/overworld",
 					"Theater Exit Door Right, @Places/overworld",
@@ -423,6 +513,7 @@
 			{
 				"name": "mazeRoof",
 				"access_rules": [
+					"$Warp|Town Maze Rooftop",
 					"$isNotDoors, $hasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), @Places/overworld",
 					"Town Maze Staircase, @Places/overworld",
 					"autoElevators, @Places/redRoof"
@@ -430,11 +521,15 @@
 			},
 			{
 				"name": "redRoof",
-				"access_rules": [ "$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof" ]
+				"access_rules": [
+					"$Warp|Town Red Rooftop",
+					"$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof"
+				]
 			},
 			{
 				"name": "woodenRoof",
 				"access_rules": [
+					"$Warp|Town Wooden Rooftop",
 					"$isNotDoors, @Town Wooden Rooftop/Lower Row",
 					"Town Wooden Roof Staircase, @Places/overworld"
 				]
@@ -442,6 +537,7 @@
 			{
 				"name": "townLaser",
 				"access_rules": [
+					"$Warp|Town Laser",
 					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Outside Glass Factory/Rooftop Discard",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard]",
 					"$isNotDoors, unrandomized, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal",
@@ -451,6 +547,7 @@
 			{
 				"name": "RGBHouse",
 				"access_rules": [
+					"$Warp|Town RGB House",
 					"$isNotDoors, @RGB House/Entry Panel, $hasPanel|Town Door to RGB House (Panel)",
 					"Town Tinted Door to RGB House, @Places/overworld"
 				]
@@ -458,6 +555,7 @@
 			{
 				"name": "RGBHouseUpstairs",
 				"access_rules": [
+					"$Warp|RGB House Upstairs",
 					"$isNotDoors, @RGB House/Sound Room",
 					"Town RGB House Staircase, @Places/RGBHouse"
 				]
@@ -474,6 +572,7 @@
 			{
 				"name": "cargoBox",
 				"access_rules": [
+					"$Warp|Town Cargo Box",
 					"$isNotDoors, @Town Cargo Box Area/Entry Panel",
 					"Town Cargo Box Door, @Places/overworld"
 				]
@@ -481,6 +580,7 @@
 			{
 				"name": "monastery",
 				"access_rules": [
+					"$Warp|Monastery",
 					"unrandomized, $isNotDoors, $hasPanel|Monastery Entry Door Left (Panel), $hasPanel|Monastery Entry Door Right (Panel), @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Monastery Inner Door], [Monastery Outer Door], @Places/overworld",
 					"Monastery Inner Door, Monastery Outer Door, @Places/overworld"
@@ -497,6 +597,7 @@
 			{
 				"name": "bunkerAntechamber",
 				"access_rules": [
+					"$Warp|Bunker Antechamber",
 					"$isNotDoors, $hasPanel|Bunker Entry (Panel), @Color Bunker/Entry Panel",
 					"Bunker Entry Door, @Places/overworld",
 					"Bunker Tinted Glass Door, @Places/bunkerTintedRoom"
@@ -505,6 +606,7 @@
 			{
 				"name": "bunkerTintedRoom",
 				"access_rules": [
+					"$Warp|Bunker Glass Room",
 					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
 					"$isNotDoors, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
 					"Bunker Tinted Glass Door, @Places/bunkerAntechamber",
@@ -514,6 +616,7 @@
 			{
 				"name": "bunkerUV",
 				"access_rules": [
+					"$Warp|Bunker UV Room",
 					"$isNotDoors, @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
 					"Bunker Door to Ultraviolet Room, @Places/bunkerTintedRoom",
 					"Bunker Door to Elevator, @Places/bunkerElevatorRoom"
@@ -522,54 +625,87 @@
 			{
 				"name": "bunkerElevatorRoom",
 				"access_rules": [
+					"$Warp|Bunker Elevator Room",
 					"$isNotDoors, @Color Bunker/Ultraviolet Room",
 					"Bunker Door to Elevator, @Places/bunkerUV",
+					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
+				]
+			},
+			{
+				"name": "bunkerElevatorProper",
+				"access_rules": [
+					"$Warp|Bunker Green Room",
+					"@Places/bunkerElevatorRoom",
+					"autoElevators, @Places/overworld",
 					"@Places/bunkerLaser"
 				]
 			},
 			{
 				"name": "bunkerLaser",
 				"access_rules": [
-					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, @Places/overworld",
-					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom"
+					"$Warp|Bunker Laser",
+					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
 				]
 			},
 			{
 				"name": "mountainLayer1",
-				"access_rules": [ "$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
+				"access_rules": [
+					"$Warp|Mountain Floor 1, $hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408",
+					"$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry"
+				]
 			},
 			{
-				"name": "mountainLayer2",
+				"name": "mountainLayer2Near",
 				"access_rules": [
+					"$Warp|Mountain Floor 2",
 					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row",
-					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
+					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1",
+					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Far",
+					"@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Far",
+					"Inside Mountain Second Layer Staircase Near, @Places/mountain2FrontStairs"
+				]
+			},
+			{
+				"name": "mountainLayer2Far",
+				"access_rules": [
+					"$Warp|Mountain Floor 2",
+					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row",
+					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Near",
+					"@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Near",
+					"Inside Mountain Second Layer Staircase Far, @Places/mountain2BackStairs"
 				]
 			},
 			{
 				"name": "mountain2FrontStairs",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Layer 2 Near/Near Row, @Places/mountainLayer2, $hasPanel|Mountain Floor 2 Bridge Near (Panel)",
-					"Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2, $hasPanel|Mountain Floor 2 Bridge Near (Panel)"
+					"$Warp|Mountain Floor 2 Upstairs Near",
+					"$isNotDoors, @Inside Mountain Layer 2 Near/Near Row",
+					"Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2Near"
 				]
 			},
 			{
 				"name": "mountain2BackStairs",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Far/Far Row, @Places/mountain2FrontStairs, $hasPanel|Mountain Floor 2 Bridge Far (Panel)",
-					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs, $hasPanel|Mountain Floor 2 Bridge Far (Panel)"
+					"$Warp|Mountain Floor 2 Far",
+					"$isNotDoors, @Inside Mountain Layer 2 Far/Far Row",
+					"Inside Mountain Second Layer Staircase Far, @Places/mountainLayer2Far"
 				]
 			},
 			{
 				"name": "mountainElevator",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
-					"Inside Mountain Second Layer Exit Door, @Inside Mountain Layer 2 Orange/Orange Light Bridge",
+					"$Warp|Mountain Elevator",
+					"$isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Near",
+					"$isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Far",
+					"Inside Mountain Second Layer Exit Door, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Near",
+					"Inside Mountain Second Layer Exit Door, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Far",
 					"$hasPanel|Mountain Elevator (Panel), $canSolve|158439, @Places/mountainMeta"
 				]
 			},
 			{
 				"name": "mountainMeta",
 				"access_rules": [
+					"$Warp|Mountain Giant Puzzle",
 					"$hasPanel|Mountain Elevator (Panel), $canSolve|158439, @Places/mountainElevator",
 					"Inside Mountain Giant Puzzle Exit Door, @Places/mountainPenultimateRoom"
 				]
@@ -577,6 +713,7 @@
 			{
 				"name": "mountainPenultimateRoom",
 				"access_rules": [
+					"$Warp|Mountain Bottom Floor",
 					"$isNotDoors, @Inside Mountain Bottom Layer Giant/Giant Puzzle",
 					"Inside Mountain Giant Puzzle Exit Door, @Places/mountainMeta",
 					"Inside Mountain Bottom Layer Rock, @Places/cavesAntechamber",
@@ -586,6 +723,7 @@
 			{
 				"name": "mountainFinalRoom",
 				"access_rules": [
+					"$Warp|Mountain Final Room",
 					"$isNotDoors, @Inside Mountain Bottom Layer Door Left/Door to Final Room Left Panel, @Inside Mountain Bottom Layer Door Right/Door to Final Room Right Panel",
 					"Inside Mountain Door to Final Room, @Places/mountainPenultimateRoom"
 				]
@@ -593,6 +731,7 @@
 			{
 				"name": "cavesAntechamber",
 				"access_rules": [
+					"$Warp|Caves Entry Area",
 					"$isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, $isNotDisabled|98210",
 					"showSnipes, $isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, disabledPanelsEnabled, [$isNotDisabled|98210]",
 					"Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
@@ -602,6 +741,7 @@
 			{
 				"name": "caves",
 				"access_rules": [
+					"$Warp|Caves",
 					"Caves Mountain Shortcut, @Places/overworld",
 					"Caves Swamp Shortcut, @Places/overworld",
 					"Caves, @Places/overworld",
@@ -613,6 +753,7 @@
 			{
 				"name": "challengeAntechamber",
 				"access_rules": [
+					"$Warp|Challenge Antechamber",
 					"$isNotDoors, @Caves Lone Pillar/Pillar",
 					"Caves Pillar Door, @Places/caves",
 					"Challenge Entry Door, @Places/challenge"
@@ -621,6 +762,7 @@
 			{
 				"name": "challenge",
 				"access_rules": [
+					"$Warp|Challenge",
 					"$isNotDoors, $canSolve|158477, $hasPanel|Challenge Entry (Panel), @Places/challengeAntechamber",
 					"Challenge Entry Door, @Places/challengeAntechamber",
 					"Challenge Door to Theater Walkway, @Places/tunnels"
@@ -629,6 +771,7 @@
 			{
 				"name": "tunnels",
 				"access_rules": [
+					"$Warp|Tunnels",
 					"$isNotDoors, $canSolve|158518, $hasPanel|Tunnels Entry (Panel), @Places/challenge",
 					"Challenge Door to Theater Walkway, @Places/challenge",
 					"Theater Walkway Door to Town, @Places/overworld",
