@@ -110,6 +110,8 @@
 				"access_rules": [
 					"$Warp|Desert Pond Room",
 					"$isNotDoors, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
+					"showSnipes, $isNotDoors, [$hasPanel|Desert Light Room Light Control (Panel)], @Places/desertFloodLight",
+					"$Foreknowable|3, $isNotDoors, @Places/desertFloodLight",
 					"Desert Door to Pond Room, @Places/desertFloodLight",
 					"Desert Door to Flood Room, @Places/desertFlood"
 				]
