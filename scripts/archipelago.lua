@@ -582,7 +582,7 @@ function laserCounting()
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
-	if lasers[2] and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+	if lasers[2] > 0 and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
@@ -606,6 +606,13 @@ function randomizationChanged()
     require(getLogicFile())
 end
 
+function lasersChanged()
+	laserCount = Tracker:FindObjectForCode("lasers").AcquiredCount
+	if lasers[2] > 0 and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+		laserCount = laserCount - 1
+	end
+	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
+end
 
 -- add AP callbacks
 -- un-/comment as needed
@@ -616,3 +623,4 @@ Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
 
 ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
+ScriptHost:AddWatchForCode("LaserCountChanges", "lasers", lasersChanged)
