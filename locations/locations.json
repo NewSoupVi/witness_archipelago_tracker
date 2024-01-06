@@ -906,8 +906,8 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"showSnipes, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
 				]
 			},
 			{
@@ -2732,8 +2732,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166801" ],
 				"access_rules": [
 					"$isDisabled|166801",
-					"$isNotLaserShuffle, @Desert/Laser, @Places/overworld",
-					"$laser|2, @Places/overworld"
+					"$isNotLaserShuffle, $hasPanel|Town Desert Laser Redirect Control (Panel), @Desert/Laser, @Places/overworld",
+					"$laser|2, $hasPanel|Town Desert Laser Redirect Control (Panel), @Places/overworld"
 				]
 			}
 		],
@@ -5111,7 +5111,7 @@
 			{
 				"name": "Final Elevator: Victory!",
 				"visibility_rules": [ "wonkavator" ],
-				"access_rules": [ "$laserBox|short, @Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right" ]
+				"access_rules": [ "$laserBox|elevator, @Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right" ]
 			}
 		],
 		"map_locations": [
@@ -5668,12 +5668,12 @@
 			{
 				"name": "Challenge Vault",
 				"visibility_rules": [ "Vaults, Short, $isNotDisabled|13675", "Vaults, Long, $isNotDisabled|13675", "Vaults, wonkavator, $isNotDisabled|13675" ],
-				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ]
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge" ]
 			},
 			{
 				"name": "Victory!",
 				"visibility_rules": [ "challengeBox" ],
-				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ]
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge" ]
 			}
 		],
 		"map_locations": [
