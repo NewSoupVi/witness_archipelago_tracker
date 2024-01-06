@@ -574,7 +574,7 @@ function laserCounting()
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
-	if lasers[2] and not hasPanel("Town Desert Laser Redirect Control (Panel)").Active then
+	if lasers[2] and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
