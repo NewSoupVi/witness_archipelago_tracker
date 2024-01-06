@@ -56,7 +56,7 @@ function laserBox(box)
 	elseif box == "long" then
 		return Tracker:ProviderCountForCode("laserLatches")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
 	elseif box == "elevator" then
-		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
+		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
 	elseif box == "challenge" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
 	end
