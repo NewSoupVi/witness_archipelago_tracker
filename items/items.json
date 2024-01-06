@@ -297,7 +297,7 @@
 		"name": "Laser Box Short Requirement",
 		"type": "consumable",
 		"img": "images/mountainShort.png",
-		"max_quantity": 7,
+		"max_quantity": 11,
 		"increment": 1,
 		"decrement": 1,
 		"initial_quantity": 0,
@@ -381,6 +381,18 @@
 		"overlay_background": "#000000",
 		"overlay_font_size": 16,
 		"codes": "lasers"
+	},
+	{
+		"name": "Lasers Activated With Redirect",
+		"type": "consumable",
+		"img": "images/laser.png",
+		"max_quantity": 11,
+		"increment": 1,
+		"decrement": 1,
+		"initial_quantity": 0,
+		"overlay_background": "#000000",
+		"overlay_font_size": 16,
+		"codes": "laserLatches"
 	},
 	{
 		"name": "Doors Setting",
@@ -836,6 +848,13 @@
 		"codes": "Town Cargo Box Entry (Panel)"
 	},
 	{
+		"name": "Town Desert Laser Redirect Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Town Desert Laser Redirect Control (Panel)"
+	},
+	{
 		"name": "Windmill Turn Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -1156,6 +1175,13 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Town Maze Panels"
+	},
+	{
+		"name": "Town Dockside House Panels",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Town Dockside House Panels"
 	},
 	{
 		"name": "Town Windmill & Theater Panels",

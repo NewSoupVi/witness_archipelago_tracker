@@ -124,7 +124,8 @@ doors = {
 		"Quarry Boathouse Ramp Horizontal Control (Panel)", 
 		"Quarry Boathouse Hook Control (Panel)"},
 	["Town Control Panels"] = {"Town Maze Rooftop Bridge (Panel)", 
-		"Town RGB Room RGB Control (Panel)"},
+		"Town RGB Room RGB Control (Panel)",
+		"Town Desert Laser Redirect Control (Panel)"},
 	["Windmill & Theater Control Panels"] = {"Windmill Turn Control (Panel)", 
 		"Theater Video Input (Panel)"},
 	["Bunker Control Panels"] = {"Bunker Elevator Control (Panel)", 
@@ -170,6 +171,8 @@ doors = {
 		"Town Door to Church (Panel)"},
 	["Town Maze Panels"] = {"Town Maze Panel (Drop-Down Staircase) (Panel)", 
 		"Town Maze Rooftop Bridge (Panel)"},
+	["Town Dockside House Panels"] = {"Town Cargo Box Entry (Panel)",
+		"Town Desert Laser Redirect Control (Panel)"},
 	["Town Windmill & Theater Panels"] = {"Windmill Entry (Panel)", 
 		"Windmill Turn Control (Panel)", 
 		"Theater Entry (Panel)", 
@@ -569,8 +572,12 @@ function laserCounting()
 	for k, v in pairs(lasers) do
 		laserCount = laserCount + v
 	end
-	
+
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+	if lasers[2] and not hasPanel("Town Desert Laser Redirect Control (Panel)").Active then
+		laserCount = laserCount - 1
+	end
+	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
 end
 
 function showGoal()

@@ -1903,6 +1903,24 @@
 	},
 
 	{
+		"name": "Town Desert Laser Redirect Control",
+		"visibility_rules": [ "doorsPanel", "doorsMix" ],
+		"access_rules": [ "Town Desert Laser Redirect Control (Panel)" ],
+		"sections": [
+			{
+				"name": "Door"
+			}
+		],
+		"map_locations": [
+			{
+				"map": "doors",
+				"x": 362,
+				"y": 1160
+			}
+		]
+	},
+
+	{
 		"name": "Town Maze Stairs",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
