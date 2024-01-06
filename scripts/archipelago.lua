@@ -615,4 +615,5 @@ Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
 
 ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
-ScriptHost:AddWatchForCode("LaserCountChanges", "lasers", lasersChanged)
+ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
+ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
