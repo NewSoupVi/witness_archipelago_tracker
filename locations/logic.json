@@ -151,6 +151,7 @@
 				"access_rules": [
 					"$Warp|Quarry",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
+					"showSnipes, $isNotDoors, unrandomized, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
 					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, unrandomized, @Places/overworld",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
@@ -225,6 +226,7 @@
 				"access_rules": [
 					"$Warp|Shadows First Set",
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
+					"showSnipes, $isNotDoors, unrandomized, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, unrandomized, @Places/overworld",
 					"Shadows Timed Door, @Places/overworld",
