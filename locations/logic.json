@@ -226,7 +226,7 @@
 				"name": "shadowsLaser",
 				"access_rules": [
 					"$Warp|Shadows Laser",
-					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door]",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
 					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
