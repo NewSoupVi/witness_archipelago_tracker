@@ -353,7 +353,7 @@ function onClear(slot_data)
 
 		local value = SLOT_DATA[k]
 
-		if k == "disable_non_randomized_puzzles" then
+		if k == "disable_non_randomized_puzzles" or k == "shuffle_boat" then
 			value = not value
 		end
 
@@ -372,27 +372,25 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
 			Tracker:FindObjectForCode("Arrows").Active = true
 		elseif k == "shuffle_EPs" then
-			Tracker:FindObjectForCode("epSetting").CurrentStage = value
+			obj.CurrentStage = value
 		elseif k == "EP_difficulty" then
-			Tracker:FindObjectForCode("epDiff").CurrentStage = value
+			obj.CurrentStage = value
 		elseif k == "shuffle_doors" then
-			Tracker:FindObjectForCode("doorsSetting").CurrentStage = value
-			Tracker:FindObjectForCode("doorsSetting").Active = true
+			obj.CurrentStage = value
+			obj.Active = true
 		elseif k == "door_groupings" then
-			Tracker:FindObjectForCode("doorsGrouping").CurrentStage = value
-			Tracker:FindObjectForCode("doorsGrouping").Active = true
+			obj.CurrentStage = value
+			obj.Active = true
 		elseif k == "mountain_lasers" or k == "challenge_lasers" then
 			obj.AcquiredCount = value
 		elseif k == "victory_condition" then
 			obj.Active = true
 			obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
-			Tracker:FindObjectForCode("puzzleRandomization").CurrentStage = value
+			obj.CurrentStage = value
 			require(getLogicFile())
-		elseif k == "shuffle_boat" then
-			Tracker:FindObjectForCode("Boat").Active = not value
 		elseif k == "early_caves" then
-			Tracker:FindObjectForCode("cavesSetting").CurrentStage = value
+			obj.CurrentStage = value
 			if value == 2 then
 				Tracker:FindObjectForCode("Caves Swamp Shortcut").Active = true
 				Tracker:FindObjectForCode("Caves Mountain Shortcut").Active = true
