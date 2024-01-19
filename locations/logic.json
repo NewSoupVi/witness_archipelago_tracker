@@ -218,11 +218,12 @@
 				"name": "quarryBoathouseUpstairsBack",
 				"access_rules": [
 					"$Warp|Quarry Boathouse Upstairs Back",
-					"$isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
-					"showSnipes, $isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
-					"$Snipeable|1, $isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153",
-					"@Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
-					"@Places/quarryBoathouseUpstairsFront, $canSolve|158154, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
+					"$isNotDoors, $canSolve|158149-158153, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Places/quarryBoathouseUpstairsFront",
+					"$isNotDoors, $canSolve|158149-158153, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsFront",
+					"showSnipes, $isNotDoors, $canSolve|158149-158153, [Quarry Boathouse Shortcut], @Places/quarryBoathouseUpstairsFront",
+					"$Snipeable|1, $isNotDoors, $canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
+					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsFront",
+					"Quarry Boathouse First Barrier, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Places/quarryBoathouseUpstairsFront"
 				]
 			},
 			{
