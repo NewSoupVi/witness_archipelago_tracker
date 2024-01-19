@@ -344,7 +344,7 @@
 				"name": "treehouseThird",
 				"access_rules": [
 					"$Warp|Treehouse Before Yellow Bridge",
-					"$isNotDoors, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel",
+					"$isNotDoors, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel, @Places/treehouseSecond",
 					"Treehouse Second Door, @Places/treehouseSecond"
 				]
 			},
@@ -382,7 +382,8 @@
 				"name": "treehouseOutsideLaser",
 				"access_rules": [
 					"$Warp|Treehouse Outside Laser House",
-					"$canSolve|158376-158387, @Places/treehouseLeft2"
+					"$isNotExpert, $canSolve|158376-158390, @Places/treehouseLeft2",
+					"$canSolve|158376-158385, @Places/treehouseLeft2"
 				]
 			},
 			{
@@ -450,9 +451,9 @@
 				"access_rules": [
 					"$Warp|Swamp Back",
 					"@Places/ocean",
-					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, autoElevators",
-					"Swamp Platform Shortcut Door, @Places/swampPlatform",
+					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
 					"$isNotDoors, $hasPanel|Swamp Platform Shortcut (Panel), $canSolve|158317-158318, @Places/swampPlatform",
+					"Swamp Platform Shortcut Door, @Places/swampPlatform",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
 					"@Places/swampPurple"
 				]
@@ -476,7 +477,7 @@
 				"name": "swampBlue",
 				"access_rules": [
 					"$Warp|Swamp Blue Underwater",
-					"$isNotDoors, @Places/swampBack, @Swamp Near Boat/Beyond Rotating Bridge",
+					"$isNotDoors, @Swamp Near Boat/Beyond Rotating Bridge",
 					"Swamp Blue Water Pump, @Places/swampBack"
 				]
 			},
@@ -494,7 +495,7 @@
 					"$Warp|Swamp Red Underwater",
 					"$isNotDoors, @Swamp Cyan Underwater Room/Cyan Underwater, @Places/swampRotated",
 					"Swamp Red Water Pump, @Places/swampRotated",
-					"@Places/swampMaze, Swamp Red Underwater Exit"
+					"Swamp Red Underwater Exit, @Places/swampMaze"
 				]
 			},
 			{
@@ -533,8 +534,7 @@
 					"$isNotDoors, $canSolve|158248, $hasPanel|Theater Entry (Panel), @Places/windmill",
 					"Theater Exit Door Left, @Places/overworld",
 					"Theater Exit Door Right, @Places/overworld",
-					"Theater Entry Door, @Places/windmill",
-					"Theater Entry Door, Theater Walkway Door to Back of Theater, @Places/tunnels"
+					"Theater Entry Door, @Places/windmill"
 				]
 			},
 			{
@@ -575,7 +575,8 @@
 				"name": "RGBHouse",
 				"access_rules": [
 					"$Warp|Town RGB House",
-					"$isNotDoors, @RGB House/Entry Panel, $hasPanel|Town Door to RGB House (Panel)",
+					"$isNotDoors, $isNotExpert, @RGB House/Entry Panel, $hasPanel|Town Door to RGB House (Panel)",
+					"$isNotDoors, Expert, @Town Church/Entry Panel",
 					"Town Tinted Door to RGB House, @Places/overworld"
 				]
 			},
