@@ -1908,7 +1908,7 @@
 		"access_rules": [ "Town Desert Laser Redirect Control (Panel)" ],
 		"sections": [
 			{
-				"name": "Door"
+				"name": "Panel"
 			}
 		],
 		"map_locations": [
