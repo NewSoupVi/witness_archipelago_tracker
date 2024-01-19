@@ -461,7 +461,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Monastery/Left Shutter EP" ]
+				"access_rules": [
+					"unrandomized, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/monastery, $canSolve|158213"
+				]
 			}
 		],
 		"map_locations": [
