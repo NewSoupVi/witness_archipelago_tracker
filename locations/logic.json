@@ -180,8 +180,10 @@
 					"Quarry Stoneworks Side Door, @Places/quarry",
 					"Quarry Door to Stoneworks, @Places/quarry",
 					"$isNotDoors, $hasPanel|Quarry Door to Stoneworks (Panel), @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
-					"showSnipes, $isNotDoors, [$hasPanel|Quarry Door to Stoneworks (Panel)], [@Outside Quarry Stoneworks/Door to Stoneworks Left], [@Outside Quarry Stoneworks/Door to Stoneworks Right], @Places/quarry, @Places/overworld",
-					"$Snipeable|1, $isNotDoors, @Places/quarry, @Places/overworld"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Door], @Places/quarry, @Places/overworld",
+					"$Snipeable|1, $isNotDoors, @Places/quarry, @Places/overworld",
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Rooftop Shortcut], @Places/shadowsFirstSet, @Places/overworld",
+					"$Snipeable|2, $isNotDoors, @Places/shadowsFirstSet, @Places/overworld"
 				]
 			},
 			{
