@@ -193,7 +193,7 @@
 					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
 					"$canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
-					"showSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]"
+					"showSnipes, $isNotDoors, $canSolve|158142, [Quarry Stoneworks Stairs], @Places/quarryStoneworks"
 				]
 			},
 			{
@@ -208,10 +208,11 @@
 				"name": "quarryBoathouseUpstairsBack",
 				"access_rules": [
 					"$Warp|Quarry Boathouse Upstairs Back",
-					"$isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)",
-					"showSnipes, $isNotDoors, @Places/quarryBoathouseUpstairsFront, $canSolve|158149-158153, [$hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)]",
-					"@Places/quarryBoathouseUpstairsFront, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut",
-					"@Places/quarryBoathouseUpstairsFront, $canSolve|158154, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel)"
+					"$isNotDoors, $canSolve|158149-158153, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Places/quarryBoathouseUpstairsFront",
+					"$isNotDoors, $canSolve|158149-158153, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsFront",
+					"showSnipes, $isNotDoors, $canSolve|158149-158153, [Quarry Boathouse Shortcut], @Places/quarryBoathouseUpstairsFront",
+					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsFront",
+					"Quarry Boathouse First Barrier, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Places/quarryBoathouseUpstairsFront"
 				]
 			},
 			{
@@ -230,8 +231,8 @@
 				"name": "shadowsLaser",
 				"access_rules": [
 					"$Warp|Shadows Laser",
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door]",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door], @Places/overworld",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
 					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
 					"showSnipes, [Shadows Laser Room Right Door], Shadows Laser Room Left Door, @Places/overworld"
@@ -242,7 +243,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 2",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 1 (Panel), unrandomized, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 2 Shortcut]",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 1 Exit Door, @Places/overworld",
 					"Keep Hedge Maze 2 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze3"
@@ -253,7 +254,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 3",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 2 (Panel), @Places/maze2, unrandomized",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 3 Shortcut]",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze2",
 					"Keep Hedge Maze 3 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze4"
@@ -264,7 +265,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 4",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 3 (Panel), @Places/maze3, unrandomized",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 4 Shortcut]",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze3",
 					"Keep Hedge Maze 4 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/keepTower"
@@ -298,8 +299,10 @@
 				"access_rules": [
 					"$Warp|Keep Laser",
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates",
-					"$isNotDoors, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4, unrandomized",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Tower Shortcut]",
+					"$isNotDoors, unrandomized, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut], @Places/overworld",
+					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Places/plates3, @Places/overworld",
+					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Places/plates4, @Places/overworld",
 					"Keep Tower Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/maze4",
 					"Keep Pressure Plates 4 Exit Door, @Places/plates4"
@@ -324,7 +327,7 @@
 				"name": "treehouseThird",
 				"access_rules": [
 					"$Warp|Treehouse Before Yellow Bridge",
-					"$isNotDoors, @Places/treehouseSecond, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel",
+					"$isNotDoors, $hasPanel|Treehouse First & Second Doors (Panel), @Treehouse Entrance/Second Door Panel, @Places/treehouseSecond",
 					"Treehouse Second Door, @Places/treehouseSecond"
 				]
 			},
@@ -362,7 +365,8 @@
 				"name": "treehouseOutsideLaser",
 				"access_rules": [
 					"$Warp|Treehouse Outside Laser House",
-					"$canSolve|158376-158387, @Places/treehouseLeft2"
+					"$isNotExpert, $canSolve|158376-158390, @Places/treehouseLeft2",
+					"Expert, $canSolve|158376-158385, @Places/treehouseLeft2",
 				]
 			},
 			{
@@ -430,9 +434,9 @@
 				"access_rules": [
 					"$Warp|Swamp Back",
 					"@Places/ocean",
-					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, autoElevators",
-					"Swamp Platform Shortcut Door, @Places/swampPlatform",
+					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
 					"$isNotDoors, $hasPanel|Swamp Platform Shortcut (Panel), $canSolve|158317-158318, @Places/swampPlatform",
+					"Swamp Platform Shortcut Door, @Places/swampPlatform",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
 					"@Places/swampPurple"
 				]
@@ -456,7 +460,7 @@
 				"name": "swampBlue",
 				"access_rules": [
 					"$Warp|Swamp Blue Underwater",
-					"$isNotDoors, @Places/swampBack, @Swamp Near Boat/Beyond Rotating Bridge",
+					"$isNotDoors, @Swamp Near Boat/Beyond Rotating Bridge",
 					"Swamp Blue Water Pump, @Places/swampBack"
 				]
 			},
@@ -474,7 +478,7 @@
 					"$Warp|Swamp Red Underwater",
 					"$isNotDoors, @Swamp Cyan Underwater Room/Cyan Underwater, @Places/swampRotated",
 					"Swamp Red Water Pump, @Places/swampRotated",
-					"showSnipes, Swamp Near Laser Shortcut, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), Swamp Red Underwater Exit, [@Places/swampRotated], [Swamp Red Water Pump]"
+					"Swamp Red Underwater Exit, @Places/swampMaze"
 				]
 			},
 			{
@@ -482,7 +486,8 @@
 				"access_rules": [
 					"$Warp|Swamp Maze",
 					"$isNotDoors, @Swamp Red Underwater Room/Red Underwater, @Places/swampRed",
-					"Swamp Red Underwater Exit, @Places/swampRed"
+					"Swamp Red Underwater Exit, @Places/swampRed",
+					"showSnipes, $canSolve|158340, $hasPanel|Swamp Maze Control (Panel), @Places/swampLaser, [Swamp Red Underwater Exit], [@Places/swampRed]"
 				]
 			},
 			{
@@ -511,8 +516,7 @@
 					"$isNotDoors, $canSolve|158248, $hasPanel|Theater Entry (Panel), @Places/windmill",
 					"Theater Exit Door Left, @Places/overworld",
 					"Theater Exit Door Right, @Places/overworld",
-					"Theater Entry Door, @Places/windmill",
-					"Theater Entry Door, Theater Walkway Door to Back of Theater, @Places/tunnels"
+					"Theater Entry Door, @Places/windmill"
 				]
 			},
 			{
@@ -553,7 +557,8 @@
 				"name": "RGBHouse",
 				"access_rules": [
 					"$Warp|Town RGB House",
-					"$isNotDoors, @RGB House/Entry Panel, $hasPanel|Town Door to RGB House (Panel)",
+					"$isNotDoors, $isNotExpert, @RGB House/Entry Panel, $hasPanel|Town Door to RGB House (Panel)",
+					"$isNotDoors, Expert, @Town Church/Entry Panel",
 					"Town Tinted Door to RGB House, @Places/overworld"
 				]
 			},
