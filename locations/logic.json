@@ -153,6 +153,7 @@
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
 					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Boat Staircase]",
+					"showSnipes, $isNotDoors, @Places/shadowsFirstSet",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"showSnipes, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
