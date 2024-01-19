@@ -383,9 +383,8 @@
 		"name": "Quarry Elevator",
 		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 		"access_rules": [
-			"doorsPanel, Quarry Elevator (Panel)",
-			"doorsDoor, @Quarry Stoneworks/Control Room Right",
-			"doorsMix, Quarry Elevator (Panel)"
+			"Quarry Elevator (Panel)",
+			"doorsDoor, @Quarry Stoneworks/Control Room Right"
 		],
 		"sections": [
 			{
