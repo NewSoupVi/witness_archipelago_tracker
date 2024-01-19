@@ -243,8 +243,8 @@
 				"name": "shadowsLaser",
 				"access_rules": [
 					"$Warp|Shadows Laser",
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door]",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door], @Places/overworld",
 					"$Snipeable|2, nonRandomizedSnipes, $isNotDoors, unrandomized, @Places/overworld",
 					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
 					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
@@ -258,7 +258,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 2",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 1 (Panel), unrandomized, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 2 Shortcut]",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 1 Exit Door, @Places/overworld",
 					"Keep Hedge Maze 2 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze3"
@@ -269,7 +269,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 3",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 2 (Panel), @Places/maze2, unrandomized",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 3 Shortcut]",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze2",
 					"Keep Hedge Maze 3 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze4"
@@ -280,7 +280,7 @@
 				"access_rules": [
 					"$Warp|Keep Maze 4",
 					"$isNotDoors, $hasPanel|Keep Hedge Maze 3 (Panel), @Places/maze3, unrandomized",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Hedge Maze 4 Shortcut]",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze3",
 					"Keep Hedge Maze 4 Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/keepTower"
@@ -314,8 +314,12 @@
 				"access_rules": [
 					"$Warp|Keep Laser",
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates",
-					"$isNotDoors, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4, unrandomized",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Keep Tower Shortcut]",
+					"$isNotDoors, unrandomized, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut], @Places/overworld",
+					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Places/plates3, @Places/overworld",
+					"$Snipeable|2, $isNotDoors, @Places/plates3, @Places/overworld",
+					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Places/plates4, @Places/overworld",
+					"$Snipeable|1, $isNotDoors, @Places/plates4, @Places/overworld",
 					"Keep Tower Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/maze4",
 					"Keep Pressure Plates 4 Exit Door, @Places/plates4"
