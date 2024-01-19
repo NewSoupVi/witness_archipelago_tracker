@@ -247,6 +247,7 @@
 					"$isNotDoors, unrandomized, $hasPanel|Keep Hedge Maze 4 (Panel), @Places/maze4",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut], @Places/overworld",
 					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Places/plates3, @Places/overworld",
+					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Places/plates4, @Places/overworld",
 					"Keep Tower Shortcut, @Places/overworld",
 					"Keep Hedge Maze 4 Exit Door, @Places/maze4",
 					"Keep Pressure Plates 4 Exit Door, @Places/plates4"
