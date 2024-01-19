@@ -202,8 +202,8 @@
 					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
 					"$canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
-					"showSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142, [@Places/quarryStoneworksMid], [$canSolve|158125-158131], [$hasPanel|Quarry Stoneworks Elevator Controls (Panel)]",
-					"$Snipeable|3, nonRandomizedSnipes, $isNotDoors, @Places/quarryStoneworks, $canSolve|158142"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Stairs], $canSolve|158142, @Places/quarryStoneworks",
+					"$Snipeable|3, nonRandomizedSnipes, $isNotDoors, $canSolve|158142, @Places/quarryStoneworks"
 				]
 			},
 			{
