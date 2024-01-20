@@ -2094,7 +2094,7 @@
 			{
 				"name": "Laser Hedges Snipe",
 				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
-				"access_rules": [ "@Keep Tower/Laser Hedges" ]
+				"access_rules": [ "@Places/maze4" ]
 			},
 			{
 				"name": "Laser Pressure Plates",
