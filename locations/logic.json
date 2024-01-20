@@ -508,7 +508,8 @@
 			{
 				"name": "bunkerAntechamber",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Bunker Entry (Panel), @Color Bunker/Entry Panel",
+					"unrandomized, $isNotDoors, $hasPanel|Bunker Entry (Panel), @Color Bunker/Entry Panel",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Entry Door], @Color Bunker/Entry Panel",
 					"Bunker Entry Door, @Places/overworld",
 					"Bunker Tinted Glass Door, @Places/bunkerTintedRoom"
 				]
@@ -516,8 +517,9 @@
 			{
 				"name": "bunkerTintedRoom",
 				"access_rules": [
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
-					"$isNotDoors, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
+					"unrandomized, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
+					"unrandomized, $isNotDoors, @Color Bunker/Intro Back, $hasPanel|Inside Bunker Door to Bunker Proper (Panel)",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Tinted Glass Door], @Color Bunker/Intro Back",
 					"Bunker Tinted Glass Door, @Places/bunkerAntechamber",
 					"Bunker Door to Ultraviolet Room, @Places/bunkerUV"
 				]
@@ -525,7 +527,8 @@
 			{
 				"name": "bunkerUV",
 				"access_rules": [
-					"$isNotDoors, @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
+					"unrandomized, $isNotDoors, @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Door to Ultraviolet Room], @Places/bunkerTintedRoom, @Color Bunker/Tinted Glass Puzzles",
 					"Bunker Door to Ultraviolet Room, @Places/bunkerTintedRoom",
 					"Bunker Door to Elevator, @Places/bunkerElevatorRoom"
 				]
@@ -533,7 +536,8 @@
 			{
 				"name": "bunkerElevatorRoom",
 				"access_rules": [
-					"$isNotDoors, @Color Bunker/Ultraviolet Room",
+					"unrandomized, $isNotDoors, @Color Bunker/Ultraviolet Room",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Door to Elevator], @Color Bunker/Ultraviolet Room",
 					"Bunker Door to Elevator, @Places/bunkerUV",
 					"@Places/bunkerLaser"
 				]
@@ -541,8 +545,10 @@
 			{
 				"name": "bunkerLaser",
 				"access_rules": [
-					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, @Places/overworld",
-					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom"
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoElevators, @Places/overworld",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom"
 				]
 			},
 			{
