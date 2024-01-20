@@ -3589,7 +3589,7 @@
 				"name": "Green Room Flowers EP",
 				"visibility_rules": [ "eps, $isNotDisabled|211, Unrandomized" ],
 				"access_rules": [
-					"$isDisabledBy|211",
+					"$isDisabled|211",
 					"$Warp|Bunker Green Room",
 					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
 				]
