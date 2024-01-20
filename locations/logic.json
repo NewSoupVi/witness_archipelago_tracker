@@ -366,7 +366,7 @@
 				"access_rules": [
 					"$Warp|Treehouse Outside Laser House",
 					"$isNotExpert, $canSolve|158376-158390, @Places/treehouseLeft2",
-					"Expert, $canSolve|158376-158385, @Places/treehouseLeft2",
+					"Expert, $canSolve|158376-158385, @Places/treehouseLeft2"
 				]
 			},
 			{
