@@ -1383,7 +1383,7 @@
 				"access_rules": [
 					"$canSolve|158149-158153, @Places/quarryBoathouseUpstairsFront",
 					"showSnipes, $canSolve|158149-158153, [@Places/quarryBoathouseUpstairsFront], @Places/quarry",
-					"$Snipeable|1, $canSolve|158149-158153, @Places/quarry",
+					"$Snipeable|1, $canSolve|158149-158153, @Places/quarry"
 				]
 			},
 			{
