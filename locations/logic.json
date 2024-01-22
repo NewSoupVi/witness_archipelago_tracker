@@ -79,6 +79,7 @@
 				"name": "desertPond",
 				"access_rules": [
 					"$isNotDoors, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
+					"showSnipes, $isNotDoors, [$hasPanel|Desert Light Room Light Control (Panel)], @Places/desertFloodLight",
 					"Desert Door to Pond Room, @Places/desertFloodLight",
 					"Desert Door to Flood Room, @Places/desertFlood"
 				]

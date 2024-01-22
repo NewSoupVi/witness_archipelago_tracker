@@ -555,7 +555,7 @@ function laserCounting()
 	for k, v in pairs(lasers) do
 		laserCount = laserCount + v
 	end
-	
+
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
 end
 

@@ -50,14 +50,6 @@ function anyIsNotDisabled(ids)
 	return eval
 end
 
-function laserCount(amount)
-	if tonumber(amount) > 0 then
-		return(Tracker:ProviderCountForCode("lasers") >= tonumber(amount))
-	else
-		return false
-	end
-end
-
 function laserBox(box)
 	if box == "short" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
@@ -68,7 +60,7 @@ end
 
 function hasPanel(panel)
 	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
-	else return Tracker:ProviderCountForCode(panel)
+	else return (Tracker:ProviderCountForCode(panel) > 0)
 	end
 end
 
