@@ -645,7 +645,8 @@
 					"unrandomized, $isNotDoors, @Color Bunker/Ultraviolet Room",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Door to Elevator], @Color Bunker/Ultraviolet Room",
 					"Bunker Door to Elevator, @Places/bunkerUV",
-					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorProper"
 				]
 			},
 			{
