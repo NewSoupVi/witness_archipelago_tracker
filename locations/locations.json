@@ -302,6 +302,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Outside Tutorial Path",
 		"sections": [
@@ -495,6 +496,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Outside Glass Factory",
 		"sections": [
@@ -529,6 +531,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Outside Glass Factory EPs",
 		"sections": [
@@ -3128,6 +3131,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Theater Entry Area",
 		"sections": [
@@ -3145,6 +3149,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Theater Exit Area",
 		"access_rules": [ "@Places/theater" ],
@@ -4952,6 +4957,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 1 Left",
 		"visibility_rules": [ "$isNotDisabled|40555" ],
@@ -4989,6 +4995,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 1 Back",
 		"visibility_rules": [ "$isNotDisabled|40814" ],
@@ -5029,6 +5036,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 2 Far",
 		"sections": [
@@ -5047,6 +5055,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 2 Blue",
 		"sections": [
@@ -5065,6 +5074,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 2 Orange",
 		"sections": [
@@ -5083,6 +5093,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 2 EPs",
 		"sections": [
@@ -5101,6 +5112,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Layer 2 Look Up",
 		"sections": [
@@ -5124,6 +5136,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Elevator",
 		"sections": [
@@ -5146,7 +5159,6 @@
 			}
 		]
 	},
-
 
 	{
 		"name": "Inside Mountain Bottom Layer Giant",
@@ -5247,6 +5259,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Bottom Layer Pillars Left",
 		"sections": [
@@ -5265,6 +5278,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Victory!",
 		"sections": [
@@ -5283,6 +5297,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Inside Mountain Bottom Layer Look Up",
 		"sections": [
@@ -5312,7 +5327,6 @@
 			}
 		]
 	},
-
 
 	{
 		"name": "Inside Mountain Bottom Layer EPs",
@@ -5470,6 +5484,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Entrance",
 		"sections": [
@@ -5513,6 +5528,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves First Floor Grounded",
 		"visibility_rules": [ "$isNotDisabled|207206" ],
@@ -5531,6 +5547,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves First Floor Middle",
 		"visibility_rules": [ "$isNotDisabled|6705" ],
@@ -5549,6 +5566,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves First Floor Right",
 		"visibility_rules": [ "$isNotDisabled|2929" ],
@@ -5567,6 +5585,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Shortcut to Mountain",
 		"visibility_rules": [ "$isNotDisabled|8663" ],
@@ -5585,6 +5604,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Shortcut to Swamp",
 		"visibility_rules": [ "$isNotDisabled|97522" ],
@@ -5622,6 +5642,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Wooden Beams Second",
 		"visibility_rules": [ "$isNotDisabled|166140" ],
@@ -5640,6 +5661,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Wooden Beams Third",
 		"visibility_rules": [ "$isNotDisabled|166375" ],
@@ -5658,6 +5680,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Wooden Beams Fourth",
 		"visibility_rules": [ "$isNotDisabled|166058" ],
@@ -5676,6 +5699,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Upstairs Left - Left",
 		"visibility_rules": [ "$isNotDisabled|41706" ],
@@ -5694,6 +5718,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Upstairs Left Single",
 		"visibility_rules": [ "$isNotDisabled|98233" ],
@@ -5712,6 +5737,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Upstairs Right - Left",
 		"visibility_rules": [ "$isNotDisabled|108" ],
@@ -5730,6 +5756,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Caves Upstairs Right - Right",
 		"visibility_rules": [ "$isNotDisabled|41" ],
@@ -5776,6 +5803,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Challenge Entry Area",
 		"sections": [
@@ -5846,6 +5874,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Tunnels Entry",
 		"sections": [
@@ -5884,7 +5913,6 @@
 		]
 	},
 
-
 	{
 		"name": "Underground Tunnels",
 		"sections": [
@@ -5903,6 +5931,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Tunnels Exit to Theater",
 		"sections": [
@@ -5921,6 +5950,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Tunnels Exit to Town",
 		"visibility_rules": [ "$isNotDisabled|40583" ],
@@ -5939,6 +5969,7 @@
 			}
 		]
 	},
+
 	{
 		"name": "Tunnels Exit to Desert",
 		"sections": [
