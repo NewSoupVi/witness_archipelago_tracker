@@ -66,7 +66,7 @@
 				"access_rules": [
 					"$Warp|Orchard Heart",
 					"unrandomized, $isNotDoors, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Final Gate], @Places/orchardInner",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Final Gate], @Places/overworld",
 					"Orchard Final Gate, @Places/orchardInner"
 				]
 			},
@@ -202,7 +202,7 @@
 					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
 					"$canSolve|158125-158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Stairs], $canSolve|158142, @Places/quarryStoneworks",
+					"showSnipes, $isNotDoors, $canSolve|158142, [Quarry Stoneworks Stairs], @Places/quarryStoneworks",
 					"$Snipeable|3, nonRandomizedSnipes, $isNotDoors, $canSolve|158142, @Places/quarryStoneworks"
 				]
 			},
@@ -386,7 +386,7 @@
 				"access_rules": [
 					"$Warp|Treehouse Outside Laser House",
 					"$isNotExpert, $canSolve|158376-158390, @Places/treehouseLeft2",
-					"$canSolve|158376-158385, @Places/treehouseLeft2"
+					"Expert, $canSolve|158376-158385, @Places/treehouseLeft2"
 				]
 			},
 			{
