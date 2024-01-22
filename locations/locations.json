@@ -1707,7 +1707,7 @@
 			},
 			{
 				"name": "Laser Activation",
-				"visibility_rules": [ "Unrandomized, $isNotLaserShuffle" ],
+				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
 				"access_rules": [ "@Shadows Laser/Laser" ]
 			},
 			{
@@ -3689,7 +3689,7 @@
 			},
 			{
 				"name": "Green Room Flowers EP",
-				"visibility_rules": [ "eps, $isNotDisabled|211, Unrandomized" ],
+				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
 					"$Warp|Bunker Green Room",
@@ -3698,7 +3698,7 @@
 			},
 			{
 				"name": "Tinted Door EP",
-				"visibility_rules": [ "eps, $isNotDisabled|13813, Unrandomized" ],
+				"visibility_rules": [ "eps, $isNotDisabled|13813" ],
 				"access_rules": [
 					"$isDisabled|13813",
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
