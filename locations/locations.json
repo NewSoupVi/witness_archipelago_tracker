@@ -1646,7 +1646,7 @@
 			},
 			{
 				"name": "Laser Activation",
-				"visibility_rules": [ "Unrandomized, $isNotLaserShuffle" ],
+				"visibility_rules": [ "$isNotLaserShuffle, Unrandomized" ],
 				"access_rules": [ "@Shadows Laser/Laser" ]
 			},
 			{
@@ -1765,7 +1765,8 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], @Places/maze2"
 				]
 			}
 		],
@@ -3587,7 +3588,7 @@
 			},
 			{
 				"name": "Green Room Flowers EP",
-				"visibility_rules": [ "eps, $isNotDisabled|211, Unrandomized" ],
+				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
 					"$Warp|Bunker Green Room",
@@ -3596,7 +3597,7 @@
 			},
 			{
 				"name": "Tinted Door EP",
-				"visibility_rules": [ "eps, $isNotDisabled|13813, Unrandomized" ],
+				"visibility_rules": [ "eps, $isNotDisabled|13813" ],
 				"access_rules": [
 					"$isDisabled|13813",
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
