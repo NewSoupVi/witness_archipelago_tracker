@@ -39,8 +39,8 @@
 			{
 				"name": "orchardHeart",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Places/orchardInner",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Final Gate], @Places/ochardInner",
+					"unrandomized, $isNotDoors, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Final Gate], @Places/overworld",
 					"Orchard Final Gate, @Places/orchardInner"
 				]
 			},
