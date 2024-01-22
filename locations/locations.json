@@ -1829,7 +1829,9 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld",
-					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, Keep Hedge Maze 3 Exit Door, @Places/overworld"
+					"$Snipeable|1, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, Keep Hedge Maze 3 Exit Door, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], @Places/maze2",
+					"$Snipeable|2, nonRandomizedSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze2"
 				]
 			}
 		],
