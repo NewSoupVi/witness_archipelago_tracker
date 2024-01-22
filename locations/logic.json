@@ -192,7 +192,8 @@
 			{
 				"name": "maze2",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Keep Hedge Maze 1 (Panel), unrandomized, @Places/overworld",
+					"$isNotDoors, unrandomized, @Hedge Maze 1/Exit Panel",
+					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 1 Exit Door, @Places/overworld",
 					"Keep Hedge Maze 2 Shortcut, @Places/overworld",
@@ -202,7 +203,8 @@
 			{
 				"name": "maze3",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Keep Hedge Maze 2 (Panel), @Places/maze2, unrandomized",
+					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel",
+					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 2 Exit Door, @Places/maze2",
 					"Keep Hedge Maze 3 Shortcut, @Places/overworld",
@@ -212,7 +214,8 @@
 			{
 				"name": "maze4",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Keep Hedge Maze 3 (Panel), @Places/maze3, unrandomized",
+					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel",
+					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/keepTower",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut], @Places/overworld",
 					"Keep Hedge Maze 3 Exit Door, @Places/maze3",
 					"Keep Hedge Maze 4 Shortcut, @Places/overworld",
