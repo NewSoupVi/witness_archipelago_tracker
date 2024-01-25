@@ -83,8 +83,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|6216" ],
 				"access_rules": [
 					"$isDisabled|6216",
-					"@Places/firstHallwayRoom, First Hallway Door",
-					"$isNotDoors, $hasPanel|First Hallway Panel, @Places/firstHallway"
+					"@Places/firstHallwayRoom"
 				]
 			},
 			{
