@@ -2744,7 +2744,7 @@
 				"access_rules": [
 					"$isDisabled|210578",
 					"@Places/townLaser",
-					"showSnipes, @Places/townTower3",
+					"showSnipes, [@Places/townLaser], @Places/townTower3",
 					"$Snipeable|1, @Places/townTower3"
 				]
 			},

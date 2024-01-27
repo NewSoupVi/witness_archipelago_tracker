@@ -590,12 +590,12 @@
 					"$Warp|Town Tower 3",
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower2",
 					"Town Tower Wooden Roof Set Door, @Places/townTower2",
-					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townTower4",
-					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townTower4",
-					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townTower4",
-					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townTower4",
-					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townTower4",
-					"Town Tower Environmental Set Door, @Places/townTower4"
+					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townLaser",
+					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townLaser",
+					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townLaser",
+					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townLaser",
+					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
+					"Town Tower Environmental Set Door, @Places/townLaser"
 				]
 			},
 			{
