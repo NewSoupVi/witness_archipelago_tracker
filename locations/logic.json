@@ -547,13 +547,42 @@
 				]
 			},
 			{
+				"name": "townTower1",
+				"access_rules": [
+					"$isNotDoors, @Town Church/Lattice, @Places/overworld",
+					"Town Tower Lattice Door, @Places/overworld",
+					"$isNotDoors, @Town Red Rooftop/Rooftop Puzzles, @Places/townTower2",
+					"Town Tower Red Roof Set Door, @Places/townTower2"
+				]
+			},
+			{
+				"name": "townTower2",
+				"access_rules": [
+					"$isNotDoors, @Town Red Rooftop/Rooftop Puzzles, @Places/townTower1",
+					"Town Tower Red Roof Set Door, @Places/townTower1",
+					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower3",
+					"Town Tower Wooden Roof Set Door, @Places/townTower3"
+				]
+			},
+			{
+				"name": "townTower3",
+				"access_rules": [
+					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower2",
+					"Town Tower Wooden Roof Set Door, @Places/townTower2",
+					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townLaser",
+					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townLaser",
+					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
+					"Town Tower Environmental Set Door, @Places/townLaser"
+				]
+			},
+			{
 				"name": "townLaser",
 				"access_rules": [
 					"$Warp|Town Laser",
-					"$isNotDoors, $unrandomizedDisabled, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Outside Glass Factory/Rooftop Discard",
-					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard]",
-					"$isNotDoors, unrandomized, @Town Wooden Rooftop/Rooftop Puzzle, @Town Red Rooftop/Rooftop Puzzles, @Town Church/Lattice, @Town Environmental Set/Tall Hexagonal",
-					"Town Tower Red Roof Set Door, Town Tower Lattice Door, Town Tower Environmental Set Door, Town Tower Wooden Roof Set Door"
+					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townTower3",
+					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townTower3",
+					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townTower3",
+					"Town Tower Environmental Set Door, @Places/townTower3"
 				]
 			},
 			{

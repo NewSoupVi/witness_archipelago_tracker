@@ -2658,7 +2658,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210578" ],
 				"access_rules": [
 					"$isDisabled|210578",
-					"@Places/townLaser"
+					"@Places/townLaser",
+					"showSnipes, [@Places/townLaser], @Places/townTower3"
 				]
 			},
 			{
