@@ -708,6 +708,7 @@
 				"name": "bunkerElevatorProper",
 				"access_rules": [
 					"$Warp|Bunker Green Room",
+					"$Warp|Bunker Cyan",
 					"@Places/bunkerElevatorRoom",
 					"autoElevators, @Places/overworld",
 					"@Places/bunkerLaser"
