@@ -2628,7 +2628,11 @@
 		"sections": [
 			{
 				"name": "Lower Row",
-				"access_rules": [ "$canSolve|158235-158239, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158235-158239, @Places/overworld",
+					"showSnipes, $canSolve|158235-158239, [@Places/overworld], @Places/woodenRoof",
+					"$Snipeable|2, $canSolve|158235-158239, [@Places/overworld], @Places/woodenRoof"
+				]
 			},
 			{
 				"name": "Rooftop Puzzle",
