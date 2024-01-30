@@ -295,7 +295,10 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Treehouse Right Side/Green Bridge" ]
+				"access_rules": [
+					"@Treehouse Right Side/Green Bridge",
+					"showSnipes, $canSolve|158369-158372, [@Treehouse Right Side/Green Bridge], @Places/treehouseMain"
+				]
 			}
 		],
 		"map_locations": [
