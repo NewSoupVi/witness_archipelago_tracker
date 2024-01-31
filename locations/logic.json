@@ -718,7 +718,6 @@
 				"name": "mountainLayer2Far",
 				"access_rules": [
 					"$Warp|Mountain Floor 2",
-					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row",
 					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Near",
 					"@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Near",
 					"Inside Mountain Second Layer Staircase Far, @Places/mountain2BackStairs"
