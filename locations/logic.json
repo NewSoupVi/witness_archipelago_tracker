@@ -169,7 +169,8 @@
 					"Quarry Main Entry 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
-					"Quarry Door to Stoneworks, @Places/quarryStoneworks"
+					"Quarry Door to Stoneworks, @Places/quarryStoneworks",
+					"$isNotDoors, @Places/quarryStoneworks"
 				]
 			},
 			{
@@ -182,8 +183,8 @@
 					"$isNotDoors, $hasPanel|Quarry Door to Stoneworks (Panel), @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
 					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Door], @Places/quarry, @Places/overworld",
 					"$Snipeable|1, $isNotDoors, @Places/quarry, @Places/overworld",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Rooftop Shortcut], @Places/shadowsFirstSet, @Places/overworld",
-					"$Snipeable|2, $isNotDoors, @Places/shadowsFirstSet, @Places/overworld"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Rooftop Shortcut], @Places/overworld",
+					"$Snipeable|2, $isNotDoors, @Places/overworld"
 				]
 			},
 			{

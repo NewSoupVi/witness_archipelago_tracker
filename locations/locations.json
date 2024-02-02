@@ -1272,7 +1272,9 @@
 				"access_rules": [
 					"$canSolve|158145, @Places/quarryStoneworks",
 					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]",
-					"$Snipeable|2, $canSolve|158145, @Places/shadowsFirstSet"
+					"$Snipeable|2, $canSolve|158145, @Places/shadowsFirstSet",
+					"showSnipes, $canSolve|158145, @Places/overworld, [@Places/quarryStoneworks]",
+					"$Snipeable|2, $canSolve|158145, @Places/overworld"
 				]
 			},
 			{
