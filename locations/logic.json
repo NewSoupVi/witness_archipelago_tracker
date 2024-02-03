@@ -168,9 +168,9 @@
 					"$Snipeable|2, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"Quarry Main Entry 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, $hasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
+					"$isNotDoors, @Places/quarryStoneworks",
 					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
-					"Quarry Door to Stoneworks, @Places/quarryStoneworks",
-					"$isNotDoors, @Places/quarryStoneworks"
+					"Quarry Door to Stoneworks, @Places/quarryStoneworks"
 				]
 			},
 			{
