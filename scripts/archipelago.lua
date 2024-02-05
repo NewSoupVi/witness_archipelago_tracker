@@ -208,8 +208,10 @@ function dump(o)
 end
 
 function setReply(key, val, old)
-	local separatorIndex, _ = key:find("-")
-	local locationID = tonumber(key:sub(separatorIndex + 1))
+	if key:find("-") then
+		local separatorIndex, _ = key:find("-")
+		local locationID = tonumber(key:sub(separatorIndex + 1))
+	end
 	if key:sub(1, 12) == "WitnessLaser" and val then
 		locationName = LASER_DATASTORAGE_ID[locationID][1]
 		locationTable = LASER_DATASTORAGE_ID[locationID][2]
@@ -253,7 +255,26 @@ function setReply(key, val, old)
 				location.AvailableChestCount = location.AvailableChestCount - 1
 			end
 		end
+
+	elseif(key:sub(1, 18) == "WitnessOpenedDoors" and val) then
+		for k, _ in pairs(val) do
+			if k == "0x1475b" and not Tracker:FindObjectForCode("Discarded").Active then
+				local location = Tracker:FindObjectForCode("@Jungle Discard/Discard")
+				if location then
+					location.AvailableChestCount = location.AvailableChestCount - 1
+				end
+
+			elseif k == "0x2779a" and not Tracker:FindObjectForCode("Discarded").Active then
+				for _, loc in pairs{"@Outside Glass Factory/Rooftop Discard", "@Theater/Discard", "@Tutorial Outpost/Discard"} do
+					local location = Tracker:FindObjectForCode(loc)
+					if location then
+						location.AvailableChestCount = location.AvailableChestCount - 1
+					end
+				end
+			end
+		end
 	end
+
 	laserCounting()
 end
 
@@ -275,6 +296,9 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
+
+	Archipelago:Get({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
 
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
