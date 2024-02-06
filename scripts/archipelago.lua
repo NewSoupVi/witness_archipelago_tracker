@@ -209,8 +209,8 @@ end
 
 function setReply(key, val, old)
 	if key:find("-") then
-		local separatorIndex, _ = key:find("-")
-		local locationID = tonumber(key:sub(separatorIndex + 1))
+		separatorIndex, _ = key:find("-")
+		locationID = tonumber(key:sub(separatorIndex + 1))
 	end
 	if key:sub(1, 12) == "WitnessLaser" and val then
 		locationName = LASER_DATASTORAGE_ID[locationID][1]
