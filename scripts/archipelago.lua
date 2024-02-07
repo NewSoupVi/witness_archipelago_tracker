@@ -274,7 +274,6 @@ function setReply(key, val, old)
 			end
 		end
 	end
-
 	laserCounting()
 end
 
