@@ -206,7 +206,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotDoors" ],
 				"access_rules": [ "$canSolve|158600, @Places/tutorialOutpostInterior" ]
 			},
 			{
@@ -498,7 +498,7 @@
 		"sections": [
 			{
 				"name": "Rooftop Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotDoors" ],
 				"access_rules": [ "$canSolve|158601, @Places/overworld" ]
 			},
 			{
@@ -2930,7 +2930,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotDoors" ],
 				"access_rules": [ "$canSolve|158608, @Places/theater" ]
 			},
 			{
@@ -3278,7 +3278,7 @@
 		"sections": [
 			{
 				"name": "Discard",
-				"visibility_rules": [ "Discarded" ],
+				"visibility_rules": [ "Discarded", "$unrandomizedDisabled, $isNotDoors" ],
 				"access_rules": [ "$canSolve|158609, @Places/overworld" ]
 			}
 		],
