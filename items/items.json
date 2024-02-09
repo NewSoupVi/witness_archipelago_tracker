@@ -534,6 +534,13 @@
 		]
 	},
 	{
+		"name": "Obelisk Keys",
+		"img": "images/epsObelisk.png",
+		"codes": "obeliskKeys",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Automatic Elevators",
 		"img": "images/autoElevators.png",
 		"codes": "autoElevators",
@@ -2129,6 +2136,48 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Tunnels Doors"
+	},
+	{
+		"name": "Desert Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Obelisk Key"
+	},
+	{
+		"name": "Monastery Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Monastery Obelisk Key"
+	},
+	{
+		"name": "Treehouse Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Treehouse Obelisk Key"
+	},
+	{
+		"name": "Mountainside Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Mountainside Obelisk Key"
+	},
+	{
+		"name": "Quarry Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Quarry Obelisk Key"
+	},
+	{
+		"name": "Town Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Town Obelisk Key"
 	},
 	{
 		"name": "Symmetry Laser",

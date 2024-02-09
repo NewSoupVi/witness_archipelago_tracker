@@ -260,8 +260,14 @@ ITEM_MAPPING = {
 	[160155] = {"Swamp Panels", "toggle"},
 	[160160] = {"Mountain Panels", "toggle"},
 	[160165] = {"Caves Panels", "toggle"},
-	[160170] = {"Tunnels Panels", "toggle"}
+	[160170] = {"Tunnels Panels", "toggle"},
 
+	[160200] = {"Desert Obelisk Key", "toggle"},
+	[160201] = {"Monastery Obelisk Key", "toggle"},
+	[160202] = {"Treehouse Obelisk Key", "toggle"},
+	[160203] = {"Mountainside Obelisk Key", "toggle"},
+	[160204] = {"Quarry Obelisk Key", "toggle"},
+	[160205] = {"Town Obelisk Key", "toggle"}
 }
 
 SETTINGS_MAPPING = {
@@ -274,6 +280,7 @@ SETTINGS_MAPPING = {
 	["door_groupings"] = "doorsGrouping",
 	["shuffle_EPs"] = "epSetting",
 	["EP_difficulty"] = "epDiff",
+	["obelisk_keys"] = "obeliskKeys",
 	["shuffle_symbols"] = "Symbols",
 	["victory_condition"] = "hiddenGoal",
 	["mountain_lasers"] = "hiddenShort",
