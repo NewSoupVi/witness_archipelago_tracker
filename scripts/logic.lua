@@ -69,8 +69,8 @@ function hasPanel(panel)
 end
 
 function hasObeliskKey(key)
-	if Tracker:ProviderCountForCode("Obelisk Keys") == 0 then return true
-	else return (Tracker:ProviderCountForCode(string.format(key, " Obelisk Key")) > 0)
+	if Tracker:ProviderCountForCode("obeliskKeys") == 0 then return true
+	else return (Tracker:ProviderCountForCode(string.format("%s %s", key, "Obelisk Key")) > 0)
 	end
 end
 
