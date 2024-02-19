@@ -4068,7 +4068,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15014" ],
 				"access_rules": [
 					"$isDisabled|15014",
-					"$canSolve|158287, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan, $hasObeliskKey|Mountainside",
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan, $hasObeliskKey|Mountainside",
 					"showSnipes, @Places/swampEntry, @Places/swampCyan, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			}
