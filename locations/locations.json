@@ -927,9 +927,7 @@
 					"$Snipeable|1, $Foreknowable|3, $canSolve|158087-158090, @Places/overworld",
 					"showSnipes, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"$Foreknowable|3, $canSolve|158087-158090, @Places/desertFloodLight",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"$Snipeable|1, randomizationVanilla, $canSolve|158087-158090, @Places/overworld",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"$Snipeable|1, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight"
 				]
 			},
