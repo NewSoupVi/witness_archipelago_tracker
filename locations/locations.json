@@ -3110,7 +3110,6 @@
 				"visibility_rules": [ "obelisks, $isNotDisabled|211382" ],
 				"access_rules": [ "@Theater/Eclipse EP" ]
 			}
-
 		],
 		"map_locations": [
 			{
