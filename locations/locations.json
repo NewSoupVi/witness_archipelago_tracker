@@ -2060,7 +2060,8 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"@Places/keepTower",
-					"showSnipes, [@Places/keepTower], @Places/plates3"
+					"showSnipes, [@Places/keepTower], @Places/plates3",
+					"showSnipes, [@Places/keepTpwer], @Places/plates4"
 				]
 			},
 			{
