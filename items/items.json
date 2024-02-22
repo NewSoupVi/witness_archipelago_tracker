@@ -535,7 +535,7 @@
 	},
 	{
 		"name": "Obelisk Keys",
-		"img": "images/epsObelisk.png",
+		"img": "images/obeliskKeys.png",
 		"codes": "obeliskKeys",
 		"type": "toggle",
 		"loop": "true"
