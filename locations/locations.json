@@ -1297,7 +1297,7 @@
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), randomizationVanilla, [@Places/quarry], @Places/overworld, $canSolve|158122"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122"
 				]
 			}
 		],
@@ -3679,11 +3679,17 @@
 			},
 			{
 				"name": "Intro Front",
-				"access_rules": [ "$canSolve|158288-158293, @Places/swampEntry" ]
+				"access_rules": [
+					"$canSolve|158288-158293, @Places/swampEntry",
+					"showSnipes, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld"
+				]
 			},
 			{
 				"name": "Intro Back",
-				"access_rules": [ "$canSolve|158288-158301, @Places/swampEntry" ]
+				"access_rules": [
+					"$canSolve|158288-158301, @Places/swampEntry",
+					"showSnipes, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
+				]
 			}
 		],
 		"map_locations": [
