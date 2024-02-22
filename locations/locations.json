@@ -891,13 +891,21 @@
 		"name": "Desert",
 		"sections": [
 			{
-				"name": "Third Surface Puzzle",
-				"visibility_rules": [ "Desert 3 Extra" ],
-				"access_rules": [ "$canSolve|158076-158078, @Places/overworld" ]
+				"name": "First Surface Puzzle",
+				"visibility_rules": [ "Desert 1 Extra" ],
+				"access_rules": [ "$canSolve|158076, @Places/overworld" ]
+			},
+			{
+				"name": "Second Surface Puzzle",
+				"visibility_rules": [ "Desert 2 Extra" ],
+				"access_rules": [ "$canSolve|158076-158077, @Places/overworld" ]
 			},
 			{
 				"name": "Surface Puzzles",
-				"access_rules": [ "$canSolve|158076-158085, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158076-158085, $hasPanel|Desert Surface 3 Control (Panel), $hasPanel|Desert Surface 8 Control (Panel), @Places/overworld",
+					"showSnipes, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
+				]
 			},
 			{
 				"name": "Light Room Entry Panel",
@@ -930,7 +938,10 @@
 			},
 			{
 				"name": "Final Hexagonal",
-				"access_rules": [ "$canSolve|158111 158113 158114, @Places/desertLaser" ]
+				"access_rules": [
+					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
+					"showSnipes, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
+				]
 			},
 			{
 				"name": "Final Bent 3",
