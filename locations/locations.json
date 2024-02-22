@@ -4903,7 +4903,7 @@
 			{
 				"name": "Blue Light Bridge",
 				"visibility_rules": [ "$isNotDisabled|40582" ],
-				"access_rules": [ "$canSolve|158431, @Places/mountainLayer2, @Places/mountain2FrontStairs" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Near (Panel), $canSolve|158431, @Places/mountain2FrontStairs" ]
 			}
 		],
 		"map_locations": [
@@ -4922,7 +4922,7 @@
 			{
 				"name": "Orange Light Bridge",
 				"visibility_rules": [ "$isNotDisabled|40664" ],
-				"access_rules": [ "$canSolve|158438, @Places/mountainLayer2, @Places/mountain2BackStairs" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Far (Panel), $canSolve|158438, @Places/mountain2BackStairs" ]
 			}
 		],
 		"map_locations": [
