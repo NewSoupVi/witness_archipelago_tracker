@@ -3928,7 +3928,6 @@
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
 					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside",
 					"$Foreknowable|1, autoElevators, $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside",
 					"$Snipeable|2, autoElevators, @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
