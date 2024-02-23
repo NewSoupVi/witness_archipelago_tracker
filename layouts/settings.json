@@ -19,9 +19,8 @@
 							[ "puzzleRandomization", "Symbols", "shuffleLasers" ],
 							[ "cavesSetting", "doorsSetting", "autoElevators" ],
 							[],
-							[ "epSetting", "epDiff", "obeliskKeys" ],
-							[],
-							[ "", "showSnipes" ]
+							[ "epSetting", "", "epDiff" ],
+							[ "", "showSnipes", "" ]
 						]
 					}
 				]
