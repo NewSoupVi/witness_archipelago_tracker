@@ -555,6 +555,13 @@
 		"loop": "true"
 	},
 	{
+		"name": "Clear Junk",
+		"img": "images/clearJunk.png",
+		"codes": "clearJunk",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Puzzle Skips",
 		"type": "consumable",
 		"img": "images/PuzzleSkip.png",
