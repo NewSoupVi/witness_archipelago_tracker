@@ -21,7 +21,7 @@
 							[],
 							[ "epSetting", "epDiff", "obeliskKeys" ],
 							[],
-							[ "", "showSnipes" ]
+							[ "clearJunk", "partialSides", "showSnipes" ]
 						]
 					}
 				]
