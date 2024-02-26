@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.4.4.2",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.2/witness_archipelago_tracker.zip",
+      "sha256": "890422AD5A6AED4A46A1126E124ABA95ED8E2D30C488D47CA27BAD61D86FE770",
+      "changelog": [
+        "Four area reworks. Five more snipes. 12 logic errors. Redesigned settings. Discards with disable-non-randomized. Optionally show only fully-solvable obelisk sides."
+      ]
+    },
+    {
       "package_version": "0.4.4.1a",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.1a/witness_archipelago_tracker.zip",
       "sha256": "73978AADB0508A51F8552466E91FD4B47A0DE3CCAE497E01AC094416364061E3",
@@ -31,7 +39,7 @@
       "changelog": [
         "Logic file loading error fix"
       ]
-    },   
+    },
     {
       "package_version": "0.4.3.1",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3.1/witness_archipelago_tracker.zip",
@@ -39,7 +47,7 @@
       "changelog": [
         "Logic fixes and connection speedups"
       ]
-    },   
+    },
     {
       "package_version": "0.4.3",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3/witness_archipelago_tracker.zip",
@@ -47,7 +55,7 @@
       "changelog": [
         "Updated to be compatible with 0.4.3 changes"
       ]
-    },   
+    },
     {
       "package_version": "0.4.2",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.2/witness_archipelago_tracker.zip",
@@ -55,7 +63,7 @@
       "changelog": [
         "Updated to be compatible with 0.4.2 logic changes"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1.2b",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2b/witness_archipelago_tracker.zip",
@@ -63,7 +71,7 @@
       "changelog": [
         "Broadcast view and items only fix"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1.2",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2/witness_archipelago_tracker.zip",
@@ -71,7 +79,7 @@
       "changelog": [
         "Theater entry fix"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1.1c",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1c/witness_archipelago_tracker.zip",
@@ -79,7 +87,7 @@
       "changelog": [
         "Theater entry fix"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1.1b",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1b/witness_archipelago_tracker.zip",
@@ -87,7 +95,7 @@
       "changelog": [
         "Oops floating location"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1.1a",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1a/witness_archipelago_tracker.zip",
@@ -95,7 +103,7 @@
       "changelog": [
         "Oops floating location"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1.1",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1/witness_archipelago_tracker.zip",
@@ -103,7 +111,7 @@
       "changelog": [
         "Added underground map"
       ]
-    },   
+    },
     {
       "package_version": "0.4.1",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1/witness_archipelago_tracker.zip",
@@ -111,7 +119,7 @@
       "changelog": [
         "Various fixes courtesy of ExemptMedic"
       ]
-    },   
+    },
     {
       "package_version": "0.4.0d",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0d/witness_archipelago_tracker.zip",
@@ -119,7 +127,7 @@
       "changelog": [
         "EP tracking in Obelisks and more fixes to logic"
       ]
-    },    
+    },
     {
       "package_version": "0.4.0c",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0c/witness_archipelago_tracker.zip",
@@ -127,7 +135,7 @@
       "changelog": [
         "More EP fixes"
       ]
-    },    
+    },
     {
       "package_version": "0.4.0b",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0b/witness_archipelago_tracker.zip",
