@@ -19,7 +19,7 @@
 							[ "puzzleRandomization", "Symbols", "shuffleLasers" ],
 							[ "cavesSetting", "doorsSetting", "autoElevators" ],
 							[],
-							[ "epSetting", "", "epDiff" ],
+							[ "epSetting", "epDiff", "partialSides" ],
 							[ "", "showSnipes", "" ]
 						]
 					}
