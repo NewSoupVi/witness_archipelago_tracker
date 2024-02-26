@@ -282,6 +282,7 @@ function setReply(key, val, old)
 				end
 			end
 		end
+
     elseif(key:sub(1,17) == "WitnessDeadChecks") then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 	        for k, _ in pairs(val) do
