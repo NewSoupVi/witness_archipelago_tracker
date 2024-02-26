@@ -626,7 +626,7 @@ function laserCounting()
 	end
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
 end
-	
+
 function showGoal()
 	Tracker:FindObjectForCode("Goal").CurrentStage = Tracker:FindObjectForCode("hiddenGoal").CurrentStage + 1
 	Tracker:FindObjectForCode("boxShort").AcquiredCount = Tracker:FindObjectForCode("hiddenShort").AcquiredCount
