@@ -167,7 +167,11 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/shadowsLaser" ]
+				"access_rules": [
+					"@Places/shadowsLaser",
+					"Shadows Laser Room Right Door, @Places/overworld",
+					"Shadows Laser Room Left Door, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
