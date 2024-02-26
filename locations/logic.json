@@ -417,7 +417,7 @@
 			{
 				"name": "swampBroken",
 				"access_rules": [
-					"$Warp|Swamp Between Bridged Near",
+					"$Warp|Swamp Between Bridges Near",
 					"$isNotDoors, @Swamp Platform Area/Platform Set",
 					"Swamp Door to Broken Shapers, @Places/swampPlatform",
 					"Swamp Door to Rotated Shapers, @Places/swampRotated"

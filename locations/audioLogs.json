@@ -616,8 +616,8 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"@Mountaintop/Mountain Entry",
-					"$Warp|Mountain Floor 1"
+					"$Warp|Mountain Floor 1",
+					"@Mountaintop/Mountain Entry"
 				]
 			}
 		],
