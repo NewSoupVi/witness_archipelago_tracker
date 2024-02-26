@@ -5005,9 +5005,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer2Near, @Places/mountainLayer1, $hasObeliskKey|Mountainside",
-					"@Places/mountainLayer2Far, @Places/mountainLayer1, $hasObeliskKey|Mountainside",
-					"@Places/mountainMeta, @Places/mountainLayer1, $hasObeliskKey|Mountainside"
+					"@Places/mountainLayer1, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1, @Places/mountainMeta, $hasObeliskKey|Mountainside"
 				]
 			}
 		],

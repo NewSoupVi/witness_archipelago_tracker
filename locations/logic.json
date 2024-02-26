@@ -725,6 +725,10 @@
 				]
 			},
 			{
+				"name": "mountainLayer2Far",
+				"access_rules": [ "@Inside Mountain Layer 2 Blue/Blue Light Bridge" ]
+			},
+			{
 				"name": "mountain2FrontStairs",
 				"access_rules": [
 					"$Warp|Mountain Floor 2 Upstairs Near",
