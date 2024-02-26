@@ -4871,7 +4871,7 @@
 			{
 				"name": "Near Row",
 				"visibility_rules": [ "$isNotDisabled|40920" ],
-				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2" ]
+				"access_rules": [ "$canSolve|158426-158430, @Places/mountainLayer2Near" ]
 			}
 		],
 		"map_locations": [
@@ -4890,7 +4890,7 @@
 			{
 				"name": "Far Row",
 				"visibility_rules": [ "$isNotDisabled|40914" ],
-				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2, @Places/mountain2FrontStairs" ]
+				"access_rules": [ "$canSolve|158432-158437, @Places/mountainLayer2Far" ]
 			}
 		],
 		"map_locations": [
@@ -4968,7 +4968,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer2",
+					"@Places/mountainLayer1, @Places/mountainLayer2Near",
+					"@Places/mountainLayer1, @Places/mountainLayer2Far",
 					"@Places/mountainLayer1, @Places/mountainMeta"
 				]
 			}
@@ -4991,7 +4992,7 @@
 				"visibility_rules": [ "Discarded, $isNotDisabled|98195" ],
 				"access_rules": [
 					"$canSolve|158613, @Places/mountainElevator",
-					"showSnipes, $canSolve|158613, @Places/mountainLayer2, [@Places/mountainElevator]"
+					"showSnipes, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]"
 				]
 			}
 		],
