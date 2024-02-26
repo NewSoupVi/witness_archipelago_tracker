@@ -596,24 +596,28 @@
 				"access_rules": [ "$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
 			},
 			{
-				"name": "mountainLayer2",
+				"name": "mountainLayer2Near",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row",
 					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
 				]
 			},
 			{
+				"name": "mountainLayer2Far",
+				"access_rules": [ "@Inside Mountain Layer 2 Blue/Blue Light Bridge" ]
+			},
+			{
 				"name": "mountain2FrontStairs",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Layer 2 Near/Near Row, @Places/mountainLayer2, $hasPanel|Mountain Floor 2 Bridge Near (Panel)",
-					"Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2, $hasPanel|Mountain Floor 2 Bridge Near (Panel)"
+					"$isNotDoors, @Inside Mountain Layer 2 Near/Near Row",
+					"Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2Near"
 				]
 			},
 			{
 				"name": "mountain2BackStairs",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Far/Far Row, @Places/mountain2FrontStairs, $hasPanel|Mountain Floor 2 Bridge Far (Panel)",
-					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, Inside Mountain Second Layer Staircase Far, @Places/mountain2FrontStairs, $hasPanel|Mountain Floor 2 Bridge Far (Panel)"
+					"$isNotDoors, @Inside Mountain Layer 2 Far/Far Row",
+					"Inside Mountain Second Layer Staircase Far, @Places/mountainLayer2Far"
 				]
 			},
 			{
