@@ -329,6 +329,9 @@ function onClear(slot_data)
 	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 
+	Archipelago:Get({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
+
 	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 

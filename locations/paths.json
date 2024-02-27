@@ -1557,7 +1557,7 @@
 	},
 
 	{
-		"name": "Mountain Bottom Floor Pillars Room Entry",
+		"name": "Mountain Bottom Floor Final Room Entry",
 		"visibility_rules": [ "doorsDoor, $isNotDisabled|49473", "doorsMix, $isNotDisabled|49473" ],
 		"access_rules": [ "Inside Mountain Door to Final Room" ],
 		"sections": [
