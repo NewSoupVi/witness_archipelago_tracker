@@ -571,6 +571,8 @@
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower2",
 					"Town Tower Wooden Roof Set Door, @Places/townTower2",
 					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townLaser",
+					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townLaser",
+					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townLaser",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townLaser",
 					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
 					"Town Tower Environmental Set Door, @Places/townLaser"
@@ -581,6 +583,8 @@
 				"access_rules": [
 					"$Warp|Town Laser",
 					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townTower3",
+					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townTower3",
+					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townTower3",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townTower3",
 					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townTower3",
 					"Town Tower Environmental Set Door, @Places/townTower3"
@@ -723,10 +727,6 @@
 					"@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Near",
 					"Inside Mountain Second Layer Staircase Far, @Places/mountain2BackStairs"
 				]
-			},
-			{
-				"name": "mountainLayer2Far",
-				"access_rules": [ "@Inside Mountain Layer 2 Blue/Blue Light Bridge" ]
 			},
 			{
 				"name": "mountain2FrontStairs",
