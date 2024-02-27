@@ -348,6 +348,7 @@ LOCATION_MAPPING = {
 	[159556] = {"@Theater/Door EP"},
 	[159557] = {"@Theater/Flowers EP"},
 	[159558] = {"@Theater/Church EP"},
+
 	[159700] = {"@Desert Obelisk/Side 1"},
 	[159701] = {"@Desert Obelisk/Side 2"},
 	[159702] = {"@Desert Obelisk/Side 3"},

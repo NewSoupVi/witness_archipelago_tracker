@@ -282,7 +282,31 @@ function setReply(key, val, old)
 				end
 			end
 		end
-	end
+
+    elseif(key:sub(1,17) == "WitnessDeadChecks") then
+		if Tracker:FindObjectForCode("clearJunk").Active then
+	        for k, _ in pairs(val) do
+		        local loc = LOCATION_MAPPING[tonumber(k)][1]
+			    if loc then
+				    local location = Tracker:FindObjectForCode(loc)
+					if location then
+						location.AvailableChestCount = location.AvailableChestCount - 1
+						if tonumber(k) > 159699 and tonumber(k) < 159756 then
+							for _, l in pairs(OBELISK_MAPPING[tonumber(k)]) do
+								local loc = EP_DATASTORAGE_IDS[tonumber(l)][1]
+								if loc then
+									local location = Tracker:FindObjectForCode(loc)
+									if location then
+										location.AvailableChestCount = location.AvailableChestCount - 1
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+    end
 	laserCounting()
 end
 
@@ -304,6 +328,9 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
+
+	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)

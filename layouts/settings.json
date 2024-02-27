@@ -20,7 +20,7 @@
 							[ "cavesSetting", "doorsSetting", "autoElevators" ],
 							[],
 							[ "epSetting", "epDiff", "obeliskKeys" ],
-							[],
+							[ "partialSides", "", "clearJunk" ],
 							[ "", "showSnipes", "" ],
 							[ "nonRandomizedSnipes", "snipesDifficulty", "fovSnipes" ],
 							[ "", "Foreknowledge", "" ]
