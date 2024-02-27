@@ -1269,10 +1269,10 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"$canSolve|158145, @Places/quarryStoneworks",
-					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]",
-					"$Snipeable|2, $canSolve|158145, @Places/shadowsFirstSet",
 					"showSnipes, $canSolve|158145, @Places/overworld, [@Places/quarryStoneworks]",
-					"$Snipeable|2, $canSolve|158145, @Places/overworld"
+					"$Snipeable|2, $canSolve|158145, @Places/overworld",
+					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]",
+					"$Snipeable|2, $canSolve|158145, @Places/shadowsFirstSet"
 				]
 			},
 			{
@@ -1355,7 +1355,7 @@
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
-					"randomizationSigma, showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], $canSolve|158122, @Places/overworld",
 					"randomizationSigma, $Snipeable|4, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/overworld"
 				]
 			}
@@ -5124,9 +5124,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer2Near, @Places/mountainLayer1, $hasObeliskKey|Mountainside",
-					"@Places/mountainLayer2Far, @Places/mountainLayer1, $hasObeliskKey|Mountainside",
-					"@Places/mountainMeta, @Places/mountainLayer1, $hasObeliskKey|Mountainside"
+					"@Places/mountainLayer1, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1, @Places/mountainMeta, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
