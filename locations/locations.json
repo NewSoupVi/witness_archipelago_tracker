@@ -3720,7 +3720,10 @@
 			},
 			{
 				"name": "Between Bridges Far Row",
-				"access_rules": [ "$canSolve|158319-158322, @Places/swampRotated, @Swamp Platform Area/Between Bridges Near Row" ]
+				"access_rules": [
+					"$canSolve|158319-158322, @Places/swampRotated, @Swamp Platform Area/Between Bridges Near Row",
+					"showSnipes, $canSolve|158319-158322, @Places/swampRed, [@Places/swampRotated], [@Swamp Platform Area/Between Bridges Near Row]"
+				]
 			}
 		],
 		"map_locations": [
