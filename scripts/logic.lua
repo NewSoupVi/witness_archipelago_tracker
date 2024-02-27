@@ -30,6 +30,26 @@ function longBoxWithoutMountainEntry()
 	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7)
 end
 
+function showPartialSidesOrSolvableSide(side)
+	if Tracker:ProviderCountForCode("partialSides") > 0 then
+		return true
+	end
+	local eval = true
+	for _, k in pairs(OBELISK_MAPPING[tonumber(side)]) do
+		local loc = EP_DATASTORAGE_IDS[tonumber(k)][1]
+		if loc then
+			local location = Tracker:FindObjectForCode(loc)
+			if location then
+				eval = (location.AccessibilityLevel > 4 or Tracker:ProviderCountForCode("showSnipes") > 0 and location.AccessibilityLevel > 3)
+			end
+			if not eval then
+				return eval
+			end
+		end
+	end
+	return eval	
+end
+
 function isDisabled(id)
 	return disabledDict[tonumber(id)]
 end
