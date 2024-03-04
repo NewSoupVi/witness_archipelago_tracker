@@ -283,7 +283,7 @@ function setReply(key, val, old)
 			end
 		end
 
-    elseif(key:sub(1,17) == "WitnessDeadChecks") then
+    elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 	        for k, _ in pairs(val) do
 		        local loc = LOCATION_MAPPING[tonumber(k)][1]
@@ -654,6 +654,12 @@ function lasersChanged()
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
 end
 
+function clearJunkChanged()
+	if Tracker:FindObjectForCode("clearJunk").Active then
+			Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+	end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -665,3 +671,4 @@ Archipelago:AddRetrievedHandler("setReply", setReply)
 ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
 ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
 ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
+ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
