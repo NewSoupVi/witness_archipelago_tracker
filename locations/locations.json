@@ -898,7 +898,8 @@
 				"name": "Surface Puzzles",
 				"access_rules": [
 					"$canSolve|158076-158085, $hasPanel|Desert Surface 3 Control (Panel), $hasPanel|Desert Surface 8 Control (Panel), @Places/overworld",
-					"showSnipes, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
+					"showSnipes, randomizationVanilla, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
 				]
 			},
 			{
@@ -937,7 +938,8 @@
 				"name": "Final Hexagonal",
 				"access_rules": [
 					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
-					"showSnipes, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
+					"showSnipes, randomizationVanilla, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
 				]
 			},
 			{
