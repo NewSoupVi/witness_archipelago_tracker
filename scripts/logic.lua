@@ -6,7 +6,15 @@ function isNotPanelsOnly()
 	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
 end
 
-function isNotExpert(check)
+function isNotVanilla()
+	return (1 - Tracker:ProviderCountForCode("randomizationVanilla") > 0)
+end
+
+function isNotNormal()
+	return (1 - Tracker:ProviderCountForCode("randomizationSigma") > 0)
+end
+
+function isNotExpert()
 	return (1 - Tracker:ProviderCountForCode("Expert") > 0)
 end
 
@@ -24,6 +32,10 @@ end
 
 function unrandomizedDisabledButSolvable()
 	return (unrandomizedDisabled() and Tracker:ProviderCountForCode("disabledPanelsEnabled") > 0)
+end
+
+function isNotDeathLink()
+	return (1 - Tracker:ProviderCountForCode("deathLink") > 0)
 end
 
 function longBoxWithoutMountainEntry()

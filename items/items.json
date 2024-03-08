@@ -213,6 +213,12 @@
 		"loop": "true"
 	},
 	{
+		"name": "Death Link",
+		"codes": "deathLink",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Shuffle Vaults",
 		"type": "toggle",
 		"loop": "true",
