@@ -910,8 +910,10 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
-					"showSnipes, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
 				]
 			},
 			{
@@ -927,7 +929,8 @@
 				"name": "Flood Room Puzzles",
 				"access_rules": [
 					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
-					"showSnipes, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
+					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
 				]
 			},
 			{
