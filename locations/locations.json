@@ -1200,14 +1200,17 @@
 				"access_rules": [
 					"$canSolve|158125-158130, @Places/quarryStoneworksMid",
 					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry",
-					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarryStoneworks"
+					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarryStoneworks",
+					"showSnipes, $isNotNormal, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld",
+					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld"
 				]
 			},
 			{
 				"name": "Upper Row",
 				"access_rules": [
 					"$canSolve|158134-158141, @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"showSnipes, $isNotExpert, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
+					"showSnipes, Expert, $isNotDeathLink, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
 				]
 			},
 			{
@@ -1301,14 +1304,16 @@
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
+					"showSnipes, $isNotExpert, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121",
+					"showSnipes, Expert, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
 				]
 			},
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122"
+					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122"
 				]
 			}
 		],
@@ -1841,12 +1846,10 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13247" ],
 				"access_rules": [
 					"$isDisabled|13247",
-					"Expert, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
-					"randomizationSigma, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"$isNotVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"randomizationVanilla, Keep Pressure Plates 2 Exit Door, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
-					"Expert, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse",
-					"randomizationSigma, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
+					"$isNotVanilla, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -2570,14 +2573,16 @@
 				"name": "RGB Room Left",
 				"access_rules": [
 					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
+					"showSnipes, $isNotNormal, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
 				]
 			},
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
 					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isNotExpert, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
 					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
@@ -3691,14 +3696,16 @@
 				"name": "Intro Front",
 				"access_rules": [
 					"$canSolve|158288-158293, @Places/swampEntry",
-					"showSnipes, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld"
+					"showSnipes, $isNotExpert, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld",
+					"showSnipes, Expert, $isNotDeathLink, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld"
 				]
 			},
 			{
 				"name": "Intro Back",
 				"access_rules": [
 					"$canSolve|158288-158301, @Places/swampEntry",
-					"showSnipes, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
+					"showSnipes, randomizationVanilla, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
 				]
 			}
 		],
