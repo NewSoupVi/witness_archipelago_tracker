@@ -904,7 +904,8 @@
 				"name": "Surface Puzzles",
 				"access_rules": [
 					"$canSolve|158076-158085, $hasPanel|Desert Surface 3 Control (Panel), $hasPanel|Desert Surface 8 Control (Panel), @Places/overworld",
-					"showSnipes, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
+					"showSnipes, randomizationVanilla, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
 				]
 			},
 			{
@@ -916,8 +917,10 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
-					"showSnipes, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
 				]
 			},
 			{
@@ -933,14 +936,16 @@
 				"name": "Flood Room Puzzles",
 				"access_rules": [
 					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
-					"showSnipes, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
+					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
 				]
 			},
 			{
 				"name": "Final Hexagonal",
 				"access_rules": [
 					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
-					"showSnipes, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
+					"showSnipes, randomizationVanilla, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
 				]
 			},
 			{
