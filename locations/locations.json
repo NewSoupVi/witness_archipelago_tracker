@@ -559,7 +559,9 @@
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
 					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
-					"$Snipeable|2, randomizationVanilla, $canSolve|158041-158045, @Places/overworld"
+					"$Snipeable|2, randomizationVanilla, $canSolve|158041-158045, @Places/overworld",
+					"showSnipes, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]",
+					"$Snipeable|4, $canSolve|158041-158045, @Places/ocean"
 				]
 			},
 			{
