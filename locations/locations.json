@@ -26,8 +26,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210223" ],
 				"access_rules": [
 					"$isDisabled|210223",
-					"@Tutorial Gate/Gate Open, @Places/tunnels",
-					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels]"
+					"@Tutorial Gate/Gate Open, @Places/tunnels, $hasObeliskKey|Town",
+					"showSnipes, @Tutorial Gate/Gate Open, [@Places/tunnels], $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -82,7 +82,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|6216" ],
 				"access_rules": [
 					"$isDisabled|6216",
-					"@Places/tutorial"
+					"@Places/tutorial, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -90,7 +90,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210432" ],
 				"access_rules": [
 					"$isDisabled|210432",
-					"@Places/tutorial, $canSolve|158009-158010"
+					"@Places/tutorial, $canSolve|158009-158010, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -98,7 +98,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15622" ],
 				"access_rules": [
 					"$isDisabled|15622",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -148,7 +148,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210224" ],
 				"access_rules": [
 					"$isDisabled|210224",
-					"@Places/tutorial"
+					"@Places/tutorial, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -249,7 +249,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13767" ],
 				"access_rules": [
 					"$isDisabled|13767",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -306,7 +306,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210083" ],
 				"access_rules": [
 					"$isDisabled|210083",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -346,8 +346,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166447" ],
 				"access_rules": [
 					"$isDisabled|166447",
-					"@Places/overworld",
-					"showSnipes, [@Places/overworld], @Places/ocean"
+					"@Places/overworld, $hasObeliskKey|Town",
+					"showSnipes, [@Places/overworld], @Places/ocean, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -355,7 +355,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166455" ],
 				"access_rules": [
 					"$isDisabled|166455",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -400,7 +400,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211031" ],
 				"access_rules": [
 					"$isDisabled|211031",
-					"@Places/ocean",
+					"@Places/ocean, $hasObeliskKey|Town",
 					"epdiffNormal"
 				]
 			},
@@ -409,7 +409,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211065" ],
 				"access_rules": [
 					"$isDisabled|211065",
-					"@Places/ocean",
+					"@Places/ocean, $hasObeliskKey|Town",
 					"epdiffNormal"
 				]
 			},
@@ -418,7 +418,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15385" ],
 				"access_rules": [
 					"$isDisabled|15385",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -511,7 +511,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166794" ],
 				"access_rules": [
 					"$isDisabled|166794",
-					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld, $hasObeliskKey|Desert"
 				]
 			}
 
@@ -587,8 +587,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13159" ],
 				"access_rules": [
 					"$isDisabled|13159",
-					"@Places/symmetryInner",
-					"showSnipes, @Places/symmetryOuter, [@Places/symmetryInner]"
+					"@Places/symmetryInner, $hasObeliskKey|Desert",
+					"showSnipes, @Places/symmetryOuter, [@Places/symmetryInner], $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -596,7 +596,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13099" ],
 				"access_rules": [
 					"$isDisabled|13099",
-					"@Places/symmetryOuter"
+					"@Places/symmetryOuter, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -717,7 +717,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210205" ],
 				"access_rules": [
 					"$isDisabled|210205",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -757,7 +757,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|139492" ],
 				"access_rules": [
 					"$isDisabled|139492",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -765,7 +765,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|139493" ],
 				"access_rules": [
 					"$isDisabled|139493",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -810,7 +810,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1340" ],
 				"access_rules": [
 					"$isDisabled|1340",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -818,7 +818,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1905" ],
 				"access_rules": [
 					"$isDisabled|1905",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -826,7 +826,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210377" ],
 				"access_rules": [
 					"$isDisabled|210377",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -834,7 +834,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210376" ],
 				"access_rules": [
 					"$isDisabled|210376",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -885,13 +885,22 @@
 		"name": "Desert",
 		"sections": [
 			{
-				"name": "Third Surface Puzzle",
-				"visibility_rules": [ "Desert 3 Extra" ],
-				"access_rules": [ "$canSolve|158076-158078, @Places/overworld" ]
+				"name": "First Surface Puzzle",
+				"visibility_rules": [ "Desert 1 Extra" ],
+				"access_rules": [ "$canSolve|158076, @Places/overworld" ]
+			},
+			{
+				"name": "Second Surface Puzzle",
+				"visibility_rules": [ "Desert 2 Extra" ],
+				"access_rules": [ "$canSolve|158076-158077, @Places/overworld" ]
 			},
 			{
 				"name": "Surface Puzzles",
-				"access_rules": [ "$canSolve|158076-158085, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158076-158085, $hasPanel|Desert Surface 3 Control (Panel), $hasPanel|Desert Surface 8 Control (Panel), @Places/overworld",
+					"showSnipes, randomizationVanilla, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
+				]
 			},
 			{
 				"name": "Light Room Entry Panel",
@@ -927,7 +936,11 @@
 			},
 			{
 				"name": "Final Hexagonal",
-				"access_rules": [ "$canSolve|158111 158113 158114, @Places/desertLaser" ]
+				"access_rules": [
+					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
+					"showSnipes, randomizationVanilla, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
+				]
 			},
 			{
 				"name": "Final Bent 3",
@@ -947,7 +960,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|41292" ],
 				"access_rules": [
 					"$isDisabled|41292",
-					"@Places/desertPond"
+					"@Places/desertPond, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -955,7 +968,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|41293" ],
 				"access_rules": [
 					"$isDisabled|41293",
-					"@Places/desertPond"
+					"@Places/desertPond, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -963,7 +976,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210936" ],
 				"access_rules": [
 					"$isDisabled|210936",
-					"@Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)"
+					"@Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel), $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -971,8 +984,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14267" ],
 				"access_rules": [
 					"$isDisabled|14267",
-					"$isNotDoors, @Desert/Laser",
-					"Desert Elevator Door, @Places/desertLaser"
+					"$isNotDoors, @Desert/Laser, $hasObeliskKey|Desert",
+					"Desert Elevator Door, @Places/desertLaser, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -1027,7 +1040,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210105" ],
 				"access_rules": [
 					"$isDisabled|210105",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -1035,7 +1048,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210108" ],
 				"access_rules": [
 					"$isDisabled|210108",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -1043,7 +1056,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|139526" ],
 				"access_rules": [
 					"$isDisabled|139526",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -1093,8 +1106,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|97465" ],
 				"access_rules": [
 					"$isDisabled|97465",
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry",
-					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry"
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry",
+					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1139,7 +1152,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166474" ],
 				"access_rules": [
 					"$isDisabled|166474",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1147,7 +1160,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166476" ],
 				"access_rules": [
 					"$isDisabled|166476",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1242,8 +1255,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1693" ],
 				"access_rules": [
 					"$isDisabled|1693",
-					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1251,8 +1264,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1556" ],
 				"access_rules": [
 					"$isDisabled|1556",
-					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs"
+					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1357,8 +1370,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1526" ],
 				"access_rules": [
 					"$isDisabled|1526",
-					"$isNotDoors, @Places/quarryBoathouseUpstairsBack, $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel)",
-					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel)"
+					"$isNotDoors, @Places/quarryBoathouseUpstairsBack, $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel), $hasObeliskKey|Quarry",
+					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel), $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1366,8 +1379,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|2137" ],
 				"access_rules": [
 					"$isDisabled|2137",
-					"$isNotDoors, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row",
-					"@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut"
+					"$isNotDoors, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
 				]
 			}
 
@@ -1446,7 +1459,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210102" ],
 				"access_rules": [
 					"$isDisabled|210102",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1454,7 +1467,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166351" ],
 				"access_rules": [
 					"$isDisabled|166351",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1462,7 +1475,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166353" ],
 				"access_rules": [
 					"$isDisabled|166353",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1587,7 +1600,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166523" ],
 				"access_rules": [
 					"$isDisabled|166523",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1673,7 +1686,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15991" ],
 				"access_rules": [
 					"$isDisabled|15991",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1681,7 +1694,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15996" ],
 				"access_rules": [
 					"$isDisabled|15996",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1813,7 +1826,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13246" ],
 				"access_rules": [
 					"$isDisabled|13246",
-					"@Pressure Plates 1/Pressure Plates, @Places/keepTower"
+					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -1838,10 +1851,10 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13247" ],
 				"access_rules": [
 					"$isDisabled|13247",
-					"$isNotVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
-					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
-					"randomizationVanilla, Keep Pressure Plates 2 Exit Door, @Pressure Plates 2/Pressure Plates, @Places/keepTower",
-					"$isNotVanilla, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower]"
+					"$isNotVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"randomizationVanilla, Keep Pressure Plates 2 Exit Door, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"$isNotVanilla, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -1866,8 +1879,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13277" ],
 				"access_rules": [
 					"$isDisabled|13277",
-					"$isNotDoors, @Pressure Plates 3/Pressure Plates, @Places/keepTower",
-					"Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower"
+					"$isNotDoors, @Pressure Plates 3/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -1892,7 +1905,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13285" ],
 				"access_rules": [
 					"$isDisabled|13285",
-					"@Pressure Plates 4/Pressure Plates, @Places/keepTower"
+					"@Pressure Plates 4/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -1900,7 +1913,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|6326" ],
 				"access_rules": [
 					"$isDisabled|6326",
-					"@Pressure Plates 4/Pressure Plates, @Places/keepTower"
+					"@Pressure Plates 4/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -2054,7 +2067,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166633" ],
 				"access_rules": [
 					"$isDisabled|166633",
-					"@Places/keepTower"
+					"@Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -2062,7 +2075,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210063" ],
 				"access_rules": [
 					"$isDisabled|210063",
-					"@Places/keepTower"
+					"@Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -2143,7 +2156,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1765" ],
 				"access_rules": [
 					"$isDisabled|1765",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2151,7 +2164,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1766" ],
 				"access_rules": [
 					"$isDisabled|1766",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2159,7 +2172,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1767" ],
 				"access_rules": [
 					"$isDisabled|1767",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2167,7 +2180,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15787" ],
 				"access_rules": [
 					"$isDisabled|15787",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2175,7 +2188,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15788" ],
 				"access_rules": [
 					"$isDisabled|15788",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2183,7 +2196,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15789" ],
 				"access_rules": [
 					"$isDisabled|15789",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2191,7 +2204,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15873" ],
 				"access_rules": [
 					"$isDisabled|15873",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -2310,7 +2323,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13479" ],
 				"access_rules": [
 					"$isDisabled|13479",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2318,7 +2331,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13485" ],
 				"access_rules": [
 					"$isDisabled|13485",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2326,7 +2339,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13487" ],
 				"access_rules": [
 					"$isDisabled|13487",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -2403,8 +2416,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13769" ],
 				"access_rules": [
 					"$isDisabled|13769",
-					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/ocean",
-					"Town Cargo Box Door, @Places/ocean"
+					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/ocean, $hasObeliskKey|Town",
+					"Town Cargo Box Door, @Places/ocean, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2504,7 +2517,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166798" ],
 				"access_rules": [
 					"$isDisabled|166798",
-					"$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof, @Places/overworld"
+					"$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof, @Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2592,8 +2605,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15935" ],
 				"access_rules": [
 					"$isDisabled|15935",
-					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof",
-					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof"
+					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town",
+					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2601,7 +2614,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15936" ],
 				"access_rules": [
 					"$isDisabled|15936",
-					"$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/overworld"
+					"$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2655,8 +2668,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210578" ],
 				"access_rules": [
 					"$isDisabled|210578",
-					"@Places/townLaser",
-					"showSnipes, [@Places/townLaser], @Places/townTower3"
+					"@Places/townLaser, $hasObeliskKey|Quarry",
+					"showSnipes, [@Places/townLaser], @Places/townTower3, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -2664,7 +2677,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14502" ],
 				"access_rules": [
 					"$isDisabled|14502",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2672,7 +2685,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14506" ],
 				"access_rules": [
 					"$isDisabled|14506",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2680,7 +2693,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13109" ],
 				"access_rules": [
 					"$isDisabled|13109",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2688,7 +2701,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13330" ],
 				"access_rules": [
 					"$isDisabled|13330",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2748,8 +2761,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166801" ],
 				"access_rules": [
 					"$isDisabled|166801",
-					"$isNotLaserShuffle, @Desert/Laser, @Places/overworld",
-					"$laser|2, @Places/overworld"
+					"$isNotLaserShuffle, $hasPanel|Town Desert Laser Redirect Control (Panel), @Desert/Laser, @Places/overworld, $hasObeliskKey|Town",
+					"$laser|2, $hasPanel|Town Desert Laser Redirect Control (Panel), @Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2790,7 +2803,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15310" ],
 				"access_rules": [
 					"$isDisabled|15310",
-					"@Places/townLaser"
+					"@Places/townLaser, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2798,7 +2811,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15311" ],
 				"access_rules": [
 					"$isDisabled|15311",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2806,7 +2819,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15313" ],
 				"access_rules": [
 					"$isDisabled|15313",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2860,7 +2873,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14262" ],
 				"access_rules": [
 					"$isDisabled|14262",
-					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld"
+					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -2868,7 +2881,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14258" ],
 				"access_rules": [
 					"$isDisabled|14258",
-					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld"
+					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld, $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -2876,7 +2889,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|247" ],
 				"access_rules": [
 					"$isDisabled|247",
-					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld"
+					"$canSolve|158247, @Places/windmill, $hasPanel|Windmill Turn Control (Panel), @Places/overworld, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -2939,7 +2952,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211497" ],
 				"access_rules": [
 					"$isDisabled|211497",
-					"@Theater/Tutorial Video"
+					"@Theater/Tutorial Video, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2947,7 +2960,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211498" ],
 				"access_rules": [
 					"$isDisabled|211498",
-					"@Theater/Tutorial Video"
+					"@Theater/Tutorial Video, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2955,13 +2968,13 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211488" ],
 				"access_rules": [
 					"$isDisabled|211488",
-					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels",
-					"@Theater/Tutorial Video, Theater Walkway Door to Town",
-					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater",
-					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater",
-					"showSnipes, @Theater/Tutorial Video, Desert Door to Light Room, Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town]",
-					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town]",
-					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town]"
+					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels, $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Theater Walkway Door to Town, $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Desert Door to Light Room, Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2985,7 +2998,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211718" ],
 				"access_rules": [
 					"$isDisabled|211718",
-					"@Theater/Jungle Video"
+					"@Theater/Jungle Video, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -3001,8 +3014,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211382" ],
 				"access_rules": [
 					"$isDisabled|211382",
-					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right",
-					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250"
+					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right, $hasObeliskKey|Town",
+					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -3168,7 +3181,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15036" ],
 				"access_rules": [
 					"$isDisabled|15036",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3176,7 +3189,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15038" ],
 				"access_rules": [
 					"$isDisabled|15038",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3184,7 +3197,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15040" ],
 				"access_rules": [
 					"$isDisabled|15040",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3192,7 +3205,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15044" ],
 				"access_rules": [
 					"$isDisabled|15044",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3200,7 +3213,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15045" ],
 				"access_rules": [
 					"$isDisabled|15045",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3208,7 +3221,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166389" ],
 				"access_rules": [
 					"$isDisabled|166389",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -3291,7 +3304,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166388" ],
 				"access_rules": [
 					"$isDisabled|166388",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -3331,8 +3344,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15330" ],
 				"access_rules": [
 					"$isDisabled|15330",
-					"$isNotDoors, @Monastery/Outside Puzzles",
-					"Monastery Door to Garden, @Places/overworld"
+					"$isNotDoors, @Monastery/Outside Puzzles, $hasObeliskKey|Monastery",
+					"Monastery Door to Garden, @Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3340,7 +3353,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15331" ],
 				"access_rules": [
 					"$isDisabled|15331",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -3412,7 +3425,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13771" ],
 				"access_rules": [
 					"$isDisabled|13771",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3420,7 +3433,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13775" ],
 				"access_rules": [
 					"$isDisabled|13775",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3488,7 +3501,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|41993" ],
 				"access_rules": [
 					"$isDisabled|41993",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -3589,7 +3602,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
-					"@Places/bunkerLaser"
+					"@Places/bunkerLaser, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3597,10 +3610,10 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13813" ],
 				"access_rules": [
 					"$isDisabled|13813",
-					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom",
-					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom",
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber",
-					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber]"
+					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
+					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
+					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber, $hasObeliskKey|Mountainside",
+					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber], $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3645,7 +3658,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15629" ],
 				"access_rules": [
 					"$isDisabled|15629",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3757,7 +3770,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210527" ],
 				"access_rules": [
 					"$isDisabled|210527",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3797,8 +3810,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13827" ],
 				"access_rules": [
 					"$isDisabled|13827",
-					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
+					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3806,8 +3819,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13825" ],
 				"access_rules": [
 					"$isDisabled|13825",
-					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3815,9 +3828,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13790" ],
 				"access_rules": [
 					"$isDisabled|13790",
-					"$isNotAutoElevators, @Places/overworld",
-					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+					"$isNotAutoElevators, @Places/overworld, $hasObeliskKey|Mountainside",
+					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
+					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3825,8 +3838,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14129" ],
 				"access_rules": [
 					"$isDisabled|14129",
-					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel)",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)]"
+					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
+					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3881,8 +3894,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|4189" ],
 				"access_rules": [
 					"$isDisabled|4189",
-					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform",
-					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]"
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform, $hasObeliskKey|Mountainside",
+					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3890,8 +3903,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|41732" ],
 				"access_rules": [
 					"$isDisabled|41732",
-					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform",
-					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]"
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform, $hasObeliskKey|Mountainside",
+					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3936,7 +3949,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|5810" ],
 				"access_rules": [
 					"$isDisabled|5810",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3944,7 +3957,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14030" ],
 				"access_rules": [
 					"$isDisabled|14030",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3993,7 +4006,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15006" ],
 				"access_rules": [
 					"$isDisabled|15006",
-					"@Places/swampPurpleUnderwater"
+					"@Places/swampPurpleUnderwater, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4001,7 +4014,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14995" ],
 				"access_rules": [
 					"$isDisabled|14995",
-					"@Places/swampPurpleUnderwater"
+					"@Places/swampPurpleUnderwater, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4067,8 +4080,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15014" ],
 				"access_rules": [
 					"$isDisabled|15014",
-					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan",
-					"showSnipes, @Places/swampEntry, @Places/swampCyan, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)]"
+					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampCyan, $hasObeliskKey|Mountainside",
+					"showSnipes, @Places/swampEntry, @Places/swampCyan, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4170,7 +4183,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210721" ],
 				"access_rules": [
 					"$isDisabled|210721",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -4264,7 +4277,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|139431" ],
 				"access_rules": [
 					"$isDisabled|139431",
-					"@Treehouse Right Side/Right Orange Bridge, @Treehouse Right Side/Green Bridge"
+					"@Treehouse Right Side/Right Orange Bridge, @Treehouse Right Side/Green Bridge, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -4336,7 +4349,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1341" ],
 				"access_rules": [
 					"$isDisabled|1341",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4344,7 +4357,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1342" ],
 				"access_rules": [
 					"$isDisabled|1342",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4352,7 +4365,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1897" ],
 				"access_rules": [
 					"$isDisabled|1897",
-					"@Treehouse Left Side/Left Orange Bridge"
+					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4360,7 +4373,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|139453" ],
 				"access_rules": [
 					"$isDisabled|139453",
-					"@Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge, @Places/overworld"
+					"@Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge, @Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -4415,7 +4428,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15138" ],
 				"access_rules": [
 					"$isDisabled|15138",
-					"@Places/plates3"
+					"@Places/plates3, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4423,7 +4436,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15139" ],
 				"access_rules": [
 					"$isDisabled|15139",
-					"@Places/plates3"
+					"@Places/plates3, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4431,7 +4444,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15140" ],
 				"access_rules": [
 					"$isDisabled|15140",
-					"@Places/plates3"
+					"@Places/plates3, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4439,7 +4452,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15141" ],
 				"access_rules": [
 					"$isDisabled|15141",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4447,7 +4460,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14969" ],
 				"access_rules": [
 					"$isDisabled|14969",
-					"@Places/plates3"
+					"@Places/plates3, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4455,7 +4468,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166589" ],
 				"access_rules": [
 					"$isDisabled|166589",
-					"@Places/plates3"
+					"@Places/plates3, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4463,7 +4476,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166590" ],
 				"access_rules": [
 					"$isDisabled|166590",
-					"@Places/plates3"
+					"@Places/plates3, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4471,7 +4484,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211087" ],
 				"access_rules": [
 					"$isDisabled|211087",
-					"@Places/plates3, @Places/ocean"
+					"@Places/plates3, @Places/ocean, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4479,7 +4492,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166697" ],
 				"access_rules": [
 					"$isDisabled|166697",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4487,7 +4500,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166698" ],
 				"access_rules": [
 					"$isDisabled|166698",
-					"@Places/ocean"
+					"@Places/ocean, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -4577,7 +4590,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210350" ],
 				"access_rules": [
 					"$isDisabled|210350",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4617,7 +4630,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210181" ],
 				"access_rules": [
 					"$isDisabled|210181",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4625,7 +4638,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15367" ],
 				"access_rules": [
 					"$isDisabled|15367",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4711,7 +4724,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|419" ],
 				"access_rules": [
 					"$isDisabled|419",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4719,7 +4732,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210702" ],
 				"access_rules": [
 					"$isDisabled|210702",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4727,7 +4740,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210632" ],
 				"access_rules": [
 					"$isDisabled|210632",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4735,7 +4748,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210586" ],
 				"access_rules": [
 					"$isDisabled|210586",
-					"@Places/overworld"
+					"@Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4980,9 +4993,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer1, @Places/mountainLayer2Near",
-					"@Places/mountainLayer1, @Places/mountainLayer2Far",
-					"@Places/mountainLayer1, @Places/mountainMeta"
+					"@Places/mountainLayer1, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1, @Places/mountainMeta, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -5142,7 +5155,7 @@
 			{
 				"name": "Final Elevator: Victory!",
 				"visibility_rules": [ "wonkavator" ],
-				"access_rules": [ "$laserBox|short, @Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right" ]
+				"access_rules": [ "$laserBox|elevator, @Places/mountainFinalRoom, @Inside Mountain Bottom Layer Pillars Left/Final Room Pillars Left, @Inside Mountain Bottom Layer Pillars Right/Final Room Pillars Right" ]
 			}
 		],
 		"map_locations": [
@@ -5163,7 +5176,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40286" ],
 				"access_rules": [
 					"$isDisabled|40286",
-					"@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge"
+					"@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -5171,7 +5184,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40285" ],
 				"access_rules": [
 					"$isDisabled|40285",
-					"@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge"
+					"@Places/mountainMeta, @Inside Mountain Layer 2 Blue/Blue Light Bridge, @Inside Mountain Layer 2 Orange/Orange Light Bridge, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -5647,7 +5660,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211324" ],
 				"access_rules": [
 					"$isDisabled|211324",
-					"@Places/caves"
+					"@Places/caves, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -5708,18 +5721,18 @@
 				"visibility_rules": [ "eps, $isNotDisabled|166704" ],
 				"access_rules": [
 					"$isDisabled|166704",
-					"@Places/challenge"
+					"@Places/challenge, $hasObeliskKey|Town"
 				]
 			},
 			{
 				"name": "Challenge Vault",
 				"visibility_rules": [ "Vaults, Short, $isNotDisabled|13675", "Vaults, Long, $isNotDisabled|13675", "Vaults, wonkavator, $isNotDisabled|13675" ],
-				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ]
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge" ]
 			},
 			{
 				"name": "Victory!",
 				"visibility_rules": [ "challengeBox" ],
-				"access_rules": [ "$canSolve|158499-158517, $laserBox|long" ]
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge" ]
 			}
 		],
 		"map_locations": [

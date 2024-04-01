@@ -18,7 +18,8 @@ LOCATION_MAPPING = {
 	[158067] = {"@Symmetry Island/Laser Yellow 3"},
 	[158070] = {"@Symmetry Island/Laser Blue 3"},
 	[158075] = {"@Orchard/Apple Trees Inside Gate"},
-	[158078] = {"@Desert/Third Surface Puzzle"},
+	[158076] = {"@Desert/First Surface Puzzle"},
+	[158077] = {"@Desert/Second Surface Puzzle"},
 	[158084] = {"@Desert/Surface Puzzles"},
 	[158090] = {"@Desert/Light Room Puzzles"},
 	[158095] = {"@Desert/Pond Room Puzzles"},
@@ -347,6 +348,7 @@ LOCATION_MAPPING = {
 	[159556] = {"@Theater/Door EP"},
 	[159557] = {"@Theater/Flowers EP"},
 	[159558] = {"@Theater/Church EP"},
+
 	[159700] = {"@Desert Obelisk/Side 1"},
 	[159701] = {"@Desert Obelisk/Side 2"},
 	[159702] = {"@Desert Obelisk/Side 3"},

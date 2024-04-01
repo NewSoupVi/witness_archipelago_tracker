@@ -59,6 +59,25 @@
 		]
 	},
 	{
+		"name": "Progressive Symmetry",
+		"codes": "ProgressiveSymmetry",
+		"type": "progressive",
+		"allow_disabled": true,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"img": "images/Symmetry.png",
+				"codes": "Symmetry",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/ColoredDots.png",
+				"codes": "ColoredDots",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Colored Dots",
 		"type": "toggle",
 		"loop": "true",
@@ -284,7 +303,7 @@
 		"name": "Laser Box Short Requirement",
 		"type": "consumable",
 		"img": "images/mountainShort.png",
-		"max_quantity": 7,
+		"max_quantity": 11,
 		"increment": 1,
 		"decrement": 1,
 		"initial_quantity": 0,
@@ -368,6 +387,18 @@
 		"overlay_background": "#000000",
 		"overlay_font_size": 16,
 		"codes": "lasers"
+	},
+	{
+		"name": "Lasers Activated With Redirect",
+		"type": "consumable",
+		"img": "images/laser.png",
+		"max_quantity": 11,
+		"increment": 1,
+		"decrement": 1,
+		"initial_quantity": 0,
+		"overlay_background": "#000000",
+		"overlay_font_size": 16,
+		"codes": "laserLatches"
 	},
 	{
 		"name": "Doors Setting",
@@ -509,6 +540,13 @@
 		]
 	},
 	{
+		"name": "Obelisk Keys",
+		"img": "images/obeliskKeys.png",
+		"codes": "obeliskKeys",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Automatic Elevators",
 		"img": "images/autoElevators.png",
 		"codes": "autoElevators",
@@ -519,6 +557,13 @@
 		"name": "Show Snipes",
 		"img": "images/showSnipes.png",
 		"codes": "showSnipes",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
+		"name": "Clear Junk",
+		"img": "images/clearJunk.png",
+		"codes": "clearJunk",
 		"type": "toggle",
 		"loop": "true"
 	},
@@ -548,6 +593,11 @@
 		"codes": "Slowness"
 	},
 	{
+		"name": "Bonks",
+		"type": "consumable",
+		"codes": "Bonk"
+	},
+	{
 		"name": "Power Surges",
 		"type": "consumable",
 		"codes": "PowerSurge"
@@ -563,9 +613,14 @@
 		"codes": "Tutorial 2 Extra"
 	},
 	{
-		"name": "Desert 3 Extra",
+		"name": "Desert 1 Extra",
 		"type": "toggle",
-		"codes": "Desert 3 Extra"
+		"codes": "Desert 1 Extra"
+	},
+	{
+		"name": "Desert 2 Extra",
+		"type": "toggle",
+		"codes": "Desert 2 Extra"
 	},
 	{
 		"name": "Glass Factory Entry (Panel)",
@@ -603,6 +658,20 @@
 		"codes": "Door to Symmetry Island Upper (Panel)"
 	},
 	{
+		"name": "Desert Surface 3 Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Surface 3 Control (Panel)"
+	},
+	{
+		"name": "Desert Surface 8 Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Surface 8 Control (Panel)"
+	},
+	{
 		"name": "Desert Light Room Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -622,6 +691,13 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Desert Flood Room Entry (Panel)"
+	},
+	{
+		"name": "Desert Elevator Room Hexagonal Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Elevator Room Hexagonal Control (Panel)"
 	},
 	{
 		"name": "Desert Flood Room Flood Controls (Panel)",
@@ -797,6 +873,13 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Town Cargo Box Entry (Panel)"
+	},
+	{
+		"name": "Town Desert Laser Redirect Control (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Town Desert Laser Redirect Control (Panel)"
 	},
 	{
 		"name": "Windmill Turn Control (Panel)",
@@ -1119,6 +1202,13 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Town Maze Panels"
+	},
+	{
+		"name": "Town Dockside House Panels",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Town Dockside House Panels"
 	},
 	{
 		"name": "Town Windmill & Theater Panels",
@@ -2066,6 +2156,48 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Tunnels Doors"
+	},
+	{
+		"name": "Desert Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Desert Obelisk Key"
+	},
+	{
+		"name": "Monastery Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Monastery Obelisk Key"
+	},
+	{
+		"name": "Treehouse Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Treehouse Obelisk Key"
+	},
+	{
+		"name": "Mountainside Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Mountainside Obelisk Key"
+	},
+	{
+		"name": "Quarry Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Quarry Obelisk Key"
+	},
+	{
+		"name": "Town Obelisk Key",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Town Obelisk Key"
 	},
 	{
 		"name": "Symmetry Laser",

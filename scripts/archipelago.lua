@@ -113,15 +113,19 @@ doors = {
 		"Theater Walkway Door to Back of Theater", 
 		"Theater Walkway Door to Desert Elevator Room", 
 		"Theater Walkway Door to Town"},
-	["Desert Control Panels"] = {"Desert Flood Room Flood Controls (Panel)", 
-		"Desert Light Room Light Control (Panel)"},
+	["Desert Control Panels"] = {"Desert Surface 3 Control (Panel)",
+		"Desert Surface 8 Control (Panel)",
+		"Desert Flood Room Flood Controls (Panel)", 
+		"Desert Light Room Light Control (Panel)",
+		"Desert Elevator Room Hexagonal Control (Panel)"},
 	["Quarry Stoneworks Control Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)", 
 		"Quarry Stoneworks Elevator Controls (Panel)"},
 	["Quarry Boathouse Control Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)", 
 		"Quarry Boathouse Ramp Horizontal Control (Panel)", 
 		"Quarry Boathouse Hook Control (Panel)"},
 	["Town Control Panels"] = {"Town Maze Rooftop Bridge (Panel)", 
-		"Town RGB Room RGB Control (Panel)"},
+		"Town RGB Room RGB Control (Panel)",
+		"Town Desert Laser Redirect Control (Panel)"},
 	["Windmill & Theater Control Panels"] = {"Windmill Turn Control (Panel)", 
 		"Theater Video Input (Panel)"},
 	["Bunker Control Panels"] = {"Bunker Elevator Control (Panel)", 
@@ -139,10 +143,13 @@ doors = {
 		"Door to Symmetry Island Upper (Panel)"},
 	["Tutorial Outpost Panels"] = {"Tutorial Outpost Entry (Panel)", 
 		"Tutorial Outpost Exit (Panel)"},
-			["Desert Panels"] = {"Desert Light Room Light Control (Panel)", 
-		"Desert Flood Room Flood Controls (Panel)", 
-		"Desert Light Room Entry (Panel)", 
-		"Desert Flood Room Entry (Panel)"},
+			["Desert Panels"] = {"Desert Surface 3 Control (Panel)",
+		"Desert Surface 8 Control (Panel)",
+		"Desert Light Room Light Control (Panel)",
+		"Desert Flood Room Flood Controls (Panel)",
+		"Desert Light Room Entry (Panel)",
+		"Desert Flood Room Entry (Panel)",
+		"Desert Elevator Room Hexagonal Control (Panel)"},
 	["Quarry Outside Panels"] = {"Quarry Entry 1 (Panel)", 
 		"Quarry Entry 2 (Panel)", 
 		"Quarry Elevator (Panel)"},
@@ -164,6 +171,8 @@ doors = {
 		"Town Door to Church (Panel)"},
 	["Town Maze Panels"] = {"Town Maze Panel (Drop-Down Staircase) (Panel)", 
 		"Town Maze Rooftop Bridge (Panel)"},
+	["Town Dockside House Panels"] = {"Town Cargo Box Entry (Panel)",
+		"Town Desert Laser Redirect Control (Panel)"},
 	["Town Windmill & Theater Panels"] = {"Windmill Entry (Panel)", 
 		"Windmill Turn Control (Panel)", 
 		"Theater Entry (Panel)", 
@@ -273,7 +282,31 @@ function setReply(key, val, old)
 				end
 			end
 		end
-	end
+
+    elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
+		if Tracker:FindObjectForCode("clearJunk").Active then
+	        for k, _ in pairs(val) do
+		        local loc = LOCATION_MAPPING[tonumber(k)][1]
+			    if loc then
+				    local location = Tracker:FindObjectForCode(loc)
+					if location then
+						location.AvailableChestCount = location.AvailableChestCount - 1
+						if tonumber(k) > 159699 and tonumber(k) < 159756 then
+							for _, l in pairs(OBELISK_MAPPING[tonumber(k)]) do
+								local loc = EP_DATASTORAGE_IDS[tonumber(l)][1]
+								if loc then
+									local location = Tracker:FindObjectForCode(loc)
+									if location then
+										location.AvailableChestCount = location.AvailableChestCount - 1
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+    end
 	laserCounting()
 end
 
@@ -298,6 +331,9 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
+
+	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
@@ -382,9 +418,8 @@ function onClear(slot_data)
 
 		if k == "shuffle_symbols" and value == false then
 			Tracker:FindObjectForCode("ProgressiveDots").CurrentStage = 2
-			Tracker:FindObjectForCode("ColoredDots").Active = true
+			Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage = 2
 			Tracker:FindObjectForCode("SoundDots").Active = true
-			Tracker:FindObjectForCode("Symmetry").Active = true
 			Tracker:FindObjectForCode("Triangles").Active = true
 			Tracker:FindObjectForCode("Eraser").Active = true
 			Tracker:FindObjectForCode("Shapers").Active = true
@@ -432,7 +467,8 @@ function onClear(slot_data)
 
 	Tracker:FindObjectForCode("Tutorial 1 Extra").Active,
 	Tracker:FindObjectForCode("Tutorial 2 Extra").Active,
-	Tracker:FindObjectForCode("Desert 3 Extra").Active = getExtraLocations()
+	Tracker:FindObjectForCode("Desert 1 Extra").Active,
+	Tracker:FindObjectForCode("Desert 2 Extra").Active = getExtraLocations()
 	-- Dummy item state change so canSolve works properly with 0 items received
 	Tracker:FindObjectForCode("Brain").Active = true
 	Tracker:FindObjectForCode("Brain").Active = false
@@ -442,17 +478,21 @@ end
 function getExtraLocations()
 	local first_tutorial_loc = 158000
 	local second_tutorial_loc = 158001
-	local desert_third_loc = 158078
+	local desert_first_loc = 158076
+	local desert_second_loc = 158077
 	local tutorial_1_enabled = false
 	local tutorial_2_enabled = false
-	local desert_3_enabled = false
+	local desert_1_enabled = false
+	local desert_2_enabled = false
 	for _, i in ipairs(Archipelago.CheckedLocations) do
 		if first_tutorial_loc == i then
 			tutorial_1_enabled = true
 		elseif second_tutorial_loc == i then
 			tutorial_2_enabled = true
-		elseif desert_third_loc == i then
-			desert_3_enabled = true
+		elseif desert_first_loc == i then
+			desert_1_enabled = true
+		elseif desert_second_loc == i then
+			desert_2_enabled = true
 		end
 	end
 	for _, i in ipairs(Archipelago.MissingLocations) do
@@ -460,11 +500,13 @@ function getExtraLocations()
 			tutorial_1_enabled = true
 		elseif second_tutorial_loc == i then
 			tutorial_2_enabled = true
-		elseif desert_third_loc == i then
-			desert_3_enabled = true
+		elseif desert_first_loc == i then
+			desert_1_enabled = true
+		elseif desert_second_loc == i then
+			desert_2_enabled = true
 		end
 	end
-	return tutorial_1_enabled, tutorial_2_enabled, desert_3_enabled
+	return tutorial_1_enabled, tutorial_2_enabled, desert_1_enabled, desert_2_enabled
 end
 
 -- called when an item gets collected
@@ -580,6 +622,10 @@ function laserCounting()
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
+	if lasers[2] > 0 and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+		laserCount = laserCount - 1
+	end
+	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
 end
 
 function showGoal()
@@ -600,6 +646,19 @@ function randomizationChanged()
     require(getLogicFile())
 end
 
+function lasersChanged()
+	laserCount = Tracker:FindObjectForCode("lasers").AcquiredCount
+	if lasers[2] > 0 and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+		laserCount = laserCount - 1
+	end
+	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
+end
+
+function clearJunkChanged()
+	if Tracker:FindObjectForCode("clearJunk").Active then
+			Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+	end
+end
 
 -- add AP callbacks
 -- un-/comment as needed
@@ -610,3 +669,6 @@ Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
 
 ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
+ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
+ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
+ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)

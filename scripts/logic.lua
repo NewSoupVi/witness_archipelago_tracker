@@ -39,7 +39,7 @@ function isNotDeathLink()
 end
 
 function longBoxWithoutMountainEntry()
-	return (Tracker:ProviderCountForCode("boxLong") < 8)
+	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7)
 end
 
 function showPartialSidesOrSolvableSide(side)
@@ -84,8 +84,12 @@ end
 
 function laserBox(box)
 	if box == "short" then
+		return Tracker:ProviderCountForCode("laserLatches")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
+	elseif box == "long" then
+		return Tracker:ProviderCountForCode("laserLatches")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
+	elseif box == "elevator" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
-	else
+	elseif box == "challenge" then
 		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
 	end
 end
@@ -93,6 +97,12 @@ end
 function hasPanel(panel)
 	if Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0 then return true
 	else return (Tracker:ProviderCountForCode(panel) > 0)
+	end
+end
+
+function hasObeliskKey(key)
+	if Tracker:ProviderCountForCode("obeliskKeys") == 0 then return true
+	else return (Tracker:ProviderCountForCode(string.format("%s %s", key, "Obelisk Key")) > 0)
 	end
 end
 
@@ -106,6 +116,10 @@ end
 
 function stars(level)
 	return Tracker:FindObjectForCode("ProgressiveStars").CurrentStage >= tonumber(level)
+end
+
+function symmetry(level)
+	return Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage >= tonumber(level)
 end
 
 function pp2()
@@ -130,8 +144,6 @@ end
 symbolCheck = {
 	["Black/White Squares"] = "BWSquare",
 	["Colored Squares"] = "ColoredSquares",
-	["Symmetry"] = "Symmetry",
-	["Colored Dots"] = "ColoredDots",
 	["Sound Dots"] = "SoundDots",
 	["Shapers"] = "Shapers",
 	["Rotated Shapers"] = "RotatedShapers",
@@ -150,6 +162,10 @@ function hasSymbol(symbol)
 		return stars(1)
 	elseif symbol == "Stars + Same Colored Symbol" then
 		return stars(2)
+	elseif symbol == "Symmetry" then
+		return symmetry(1)
+	elseif symbol == "Colored Dots" then
+		return symmetry(2)
 	elseif symbolCheck[symbol] ~= nil then
 		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
 	else
