@@ -98,8 +98,7 @@
 					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
 					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
 					"Desert Door to Elevator Room, @Places/desertFlood",
-					"$isNotDoors, Desert Elevator Door, @Places/tunnels",
-					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
+					"Desert Elevator Door, @Places/tunnelsDesertElevator"
 				]
 			},
 			{
@@ -693,9 +692,16 @@
 					"$isNotDoors, $canSolve|158518, $hasPanel|Tunnels Entry (Panel), @Places/challenge",
 					"Challenge Door to Theater Walkway, @Places/challenge",
 					"Theater Walkway Door to Town, @Places/overworld",
-					"$isNotDoors, @Desert/Laser, Theater Walkway Door to Desert Elevator Room",
-					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
+					"Theater Walkway Door to Desert Elevator Room, @Places/tunnelsDesertElevator",
 					"Theater Walkway Door to Back of Theater, @Places/windmill"
+				]
+			},
+			{
+				"name": "tunnelsDesertElevator",
+				"access_rules": [
+					"$isNotDoors, @Desert/Laser",
+					"Desert Elevator Door, @Places/desertLaser",
+					"Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
 				]
 			}
 		]
