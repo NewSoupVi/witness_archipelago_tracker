@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.4.5.1",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5.1/witness_archipelago_tracker.zip",
+      "sha256": "E86BCB6A0A418BC1EF2CCA15121A33D10F4A260E88E85A862D0490ED88C8EB3D",
+      "changelog": [
+        "Obelisk Keys and name changes."
+      ]
+    },
+    {
       "package_version": "0.4.5",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5/witness_archipelago_tracker.zip",
       "sha256": "967E3057C4DFF50484405AF13DB0DAF01D3CED33FFF914F745E591047C53B424",
