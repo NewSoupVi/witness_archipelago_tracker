@@ -98,8 +98,7 @@
 					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
 					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
 					"Desert Door to Elevator Room, @Places/desertFlood",
-					"$isNotDoors, Desert Elevator Door, @Places/tunnels",
-					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
+					"Desert Elevator Door, @Places/tunnelsDesertElevator"
 				]
 			},
 			{
@@ -312,7 +311,8 @@
 			{
 				"name": "treehouseLaser",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, @Places/treehouseOutsideLaser",
+					"$isNotDoors, $isNotExpert, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158390, @Places/treehouseLeft2",
+					"$isNotDoors, Expert, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158385, @Places/treehouseLeft2",
 					"Treehouse Timed Door to Laser House, @Places/treehouseOutsideLaser"
 				]
 			},
@@ -693,9 +693,17 @@
 					"$isNotDoors, $canSolve|158518, $hasPanel|Tunnels Entry (Panel), @Places/challenge",
 					"Challenge Door to Theater Walkway, @Places/challenge",
 					"Theater Walkway Door to Town, @Places/overworld",
-					"$isNotDoors, @Desert/Laser, Theater Walkway Door to Desert Elevator Room",
-					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
+					"Theater Walkway Door to Desert Elevator Room, @Places/tunnelsDesertElevator",
 					"Theater Walkway Door to Back of Theater, @Places/windmill"
+				]
+			},
+			{
+				"name": "tunnelsDesertElevator",
+				"access_rules": [
+					"$isNotDoors, @Desert/Laser",
+					"Desert Elevator Door, @Places/desertLaser",
+					"$isNotDoors, @Places/tunnels",
+					"Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
 				]
 			}
 		]
