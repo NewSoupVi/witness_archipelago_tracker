@@ -2161,42 +2161,42 @@
 		"name": "Desert Obelisk Key",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/Door.png",
+		"img": "images/desertObeliskKey.png",
 		"codes": "Desert Obelisk Key"
 	},
 	{
 		"name": "Monastery Obelisk Key",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/Door.png",
+		"img": "images/monasteryObeliskKey.png",
 		"codes": "Monastery Obelisk Key"
 	},
 	{
 		"name": "Treehouse Obelisk Key",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/Door.png",
+		"img": "images/treehouseObeliskKey.png",
 		"codes": "Treehouse Obelisk Key"
 	},
 	{
 		"name": "Mountainside Obelisk Key",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/Door.png",
+		"img": "images/mountainsideObeliskKey.png",
 		"codes": "Mountainside Obelisk Key"
 	},
 	{
 		"name": "Quarry Obelisk Key",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/Door.png",
+		"img": "images/quarryObeliskKey.png",
 		"codes": "Quarry Obelisk Key"
 	},
 	{
 		"name": "Town Obelisk Key",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/Door.png",
+		"img": "images/townObeliskKey.png",
 		"codes": "Town Obelisk Key"
 	},
 	{
