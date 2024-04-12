@@ -44,18 +44,6 @@
 								"type": "layout",
 								"key": "shared_item_grid"
 							}
-						},
-						{
-							"type": "group",
-							"header": "Pinned Locations",
-							"content": {
-								"type": "recentpins",
-								"style": "wrap",
-								"h_alignment": "stretch",
-								"v_alignment": "stretch",
-								"orientation": "vertical",
-								"compact": true
-							}
 						}
 					]
 				}
