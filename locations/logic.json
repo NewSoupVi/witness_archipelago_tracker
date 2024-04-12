@@ -702,6 +702,7 @@
 				"access_rules": [
 					"$isNotDoors, @Desert/Laser",
 					"Desert Elevator Door, @Places/desertLaser",
+					"$isNotDoors, @Places/tunnels",
 					"Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
 				]
 			}
