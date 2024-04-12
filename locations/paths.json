@@ -1557,7 +1557,7 @@
 	},
 
 	{
-		"name": "Mountain Bottom Floor Final Room Entry",
+		"name": "Mountain Bottom Floor Pillars Room Entry",
 		"visibility_rules": [ "doorsDoor, $isNotDisabled|49473", "doorsMix, $isNotDisabled|49473" ],
 		"access_rules": [ "Inside Mountain Door to Final Room" ],
 		"sections": [
@@ -2204,7 +2204,7 @@
 	},
 
 	{
-		"name": "River Monastery Garden Shortcut",
+		"name": "Jungle Monastery Garden Shortcut",
 		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 		"access_rules": [ "River Shortcut to Monastery Garden" ],
 		"sections": [
@@ -2375,7 +2375,7 @@
 	},
 
 	{
-		"name": "Jungle Bamboo Laser Shortcut",
+		"name": "Jungle Laser Shortcut",
 		"visibility_rules": [ "doorsDoor", "doorsMix" ],
 		"access_rules": [ "Jungle Bamboo Shortcut to River" ],
 		"sections": [
