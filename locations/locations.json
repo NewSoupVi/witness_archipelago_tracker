@@ -948,7 +948,10 @@
 			},
 			{
 				"name": "Laser",
-				"access_rules": [ "@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld" ]
+				"access_rules": [
+					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
+					"showSnipes, Desert Elevator Door, [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -2803,7 +2806,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15310" ],
 				"access_rules": [
 					"$isDisabled|15310",
-					"@Places/townLaser, $hasObeliskKey|Town"
+					"@Places/townLaser, $hasObeliskKey|Town",
+					"showSnipes, @Places/overworld, [@Places/townLaser], $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -4314,7 +4318,10 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "@Places/treehouseLaser" ]
+				"access_rules": [
+					"@Places/treehouseLaser",
+					"showSnipes, @Places/treehouseLaserDiscard, [@Places/treehouseLaser]"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -4365,7 +4372,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1897" ],
 				"access_rules": [
 					"$isDisabled|1897",
-					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse"
+					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse",
+					"showSnipes, [@Treehouse Left Side/Left Orange Bridge], @Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
