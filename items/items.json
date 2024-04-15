@@ -558,7 +558,8 @@
 		"img": "images/showSnipes.png",
 		"codes": "showSnipes",
 		"type": "toggle",
-		"loop": "true"
+		"loop": "true",
+		"initial_active_state": "true"
 	},
 	{
 		"name": "Clear Junk",
@@ -572,7 +573,8 @@
 		"img": "images/partialSides.png",
 		"codes": "partialSides",
 		"type": "toggle",
-		"loop": "true"
+		"loop": "true",
+		"initial_active_state": "true"
 	},
 	{
 		"name": "Puzzle Skips",
