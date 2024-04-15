@@ -1826,7 +1826,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13246" ],
 				"access_rules": [
 					"$isDisabled|13246",
-					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
+					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"showSnipes, @Pressure Plates 1/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],
