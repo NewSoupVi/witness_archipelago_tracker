@@ -369,7 +369,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/bunkerLaser" ]
+				"access_rules": [ "@Places/bunkerElevatorControl" ]
 			}
 		],
 		"map_locations": [

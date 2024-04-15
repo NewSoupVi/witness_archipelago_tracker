@@ -33,7 +33,8 @@
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Middle Gate], @Places/overworld",
-					"Orchard Middle Gate, @Places/overworld"
+					"Orchard Middle Gate, @Places/overworld",
+					"Orchard Final Gate, @Places/orchardHeart"
 				]
 			},
 			{
@@ -98,8 +99,7 @@
 					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
 					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
 					"Desert Door to Elevator Room, @Places/desertFlood",
-					"$isNotDoors, Desert Elevator Door, @Places/tunnels",
-					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
+					"Desert Elevator Door, @Places/tunnelsDesertElevator"
 				]
 			},
 			{
@@ -117,7 +117,9 @@
 					"showSnipes, $isNotDoors, unrandomized, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
 					"Quarry Boathouse Boat Staircase, @Places/ocean",
+					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Boat Staircase]",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, [Shadows Barrier to Quarry], @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
 					"showSnipes, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
 					"autoElevators, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
@@ -158,7 +160,10 @@
 			},
 			{
 				"name": "quarryBoathouseUpstairsFront",
-				"access_rules": [ "@Logic/boathouseRamp, $canSolve|158148, @Places/quarry" ]
+				"access_rules": [
+					"@Logic/boathouseRamp, $canSolve|158148, @Places/quarry",
+					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsBack"
+				]
 			},
 			{
 				"name": "quarryBoathouseUpstairsBack",
@@ -312,7 +317,8 @@
 			{
 				"name": "treehouseLaser",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, @Places/treehouseOutsideLaser",
+					"$isNotDoors, $isNotExpert, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158390, @Places/treehouseLeft2",
+					"$isNotDoors, Expert, $hasPanel|Treehouse Laser House Door Timer (Panel), @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158385, @Places/treehouseLeft2",
 					"Treehouse Timed Door to Laser House, @Places/treehouseOutsideLaser"
 				]
 			},
@@ -477,6 +483,8 @@
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower2",
 					"Town Tower Wooden Roof Set Door, @Places/townTower2",
 					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townLaser",
+					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townLaser",
+					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townLaser",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townLaser",
 					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
 					"Town Tower Environmental Set Door, @Places/townLaser"
@@ -486,6 +494,8 @@
 				"name": "townLaser",
 				"access_rules": [
 					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townTower3",
+					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townTower3",
+					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townTower3",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townTower3",
 					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townTower3",
 					"Town Tower Environmental Set Door, @Places/townTower3"
@@ -572,23 +582,24 @@
 					"unrandomized, $isNotDoors, @Color Bunker/Ultraviolet Room",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Door to Elevator], @Color Bunker/Ultraviolet Room",
 					"Bunker Door to Elevator, @Places/bunkerUV",
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorProper"
+					"@Places/bunkerElevatorControl"
 				]
 			},
 			{
-				"name": "bunkerElevatorProper",
+				"name": "bunkerElevatorControl",
 				"access_rules": [
-					"@Places/bunkerElevatorRoom",
-					"autoElevators, @Places/overworld",
-					"@Places/bunkerLaser"
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/overworld",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerLaser",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerLaser"
 				]
 			},
 			{
 				"name": "bunkerLaser",
 				"access_rules": [
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorProper"
+					"@Places/bunkerElevatorControl"
 				]
 			},
 			{
@@ -693,9 +704,17 @@
 					"$isNotDoors, $canSolve|158518, $hasPanel|Tunnels Entry (Panel), @Places/challenge",
 					"Challenge Door to Theater Walkway, @Places/challenge",
 					"Theater Walkway Door to Town, @Places/overworld",
-					"$isNotDoors, @Desert/Laser, Theater Walkway Door to Desert Elevator Room",
-					"Desert Elevator Door, Theater Walkway Door to Desert Elevator Room, @Places/desertLaser",
+					"Theater Walkway Door to Desert Elevator Room, @Places/tunnelsDesertElevator",
 					"Theater Walkway Door to Back of Theater, @Places/windmill"
+				]
+			},
+			{
+				"name": "tunnelsDesertElevator",
+				"access_rules": [
+					"$isNotDoors, @Desert/Laser",
+					"Desert Elevator Door, @Places/desertLaser",
+					"$isNotDoors, @Places/tunnels",
+					"Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
 				]
 			}
 		]

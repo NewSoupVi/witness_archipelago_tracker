@@ -15,9 +15,9 @@
 						"h_alignment": "left",
 						"item_size": "50",
 						"rows": [
-							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Brain", "Goal" ],
-							[ "ProgressiveSymmetry", "SoundDots", "Triangles", "Boat", "", "lasers", "boxShort" ],
-							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Skip", "boxLong" ]
+							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Desert Obelisk Key", "Monastery Obelisk Key", "Brain", "Goal" ],
+							[ "ProgressiveSymmetry", "SoundDots", "Triangles", "Boat", "", "Treehouse Obelisk Key", "Mountainside Obelisk Key", "lasers", "boxShort" ],
+							[ "Shapers", "RotatedShapers", "NegativeShapers", "Eraser", "", "Quarry Obelisk Key", "Town Obelisk Key", "Skip", "boxLong" ]
 						]
 					}
 				]
@@ -43,18 +43,6 @@
 							"content": {
 								"type": "layout",
 								"key": "shared_item_grid"
-							}
-						},
-						{
-							"type": "group",
-							"header": "Pinned Locations",
-							"content": {
-								"type": "recentpins",
-								"style": "wrap",
-								"h_alignment": "stretch",
-								"v_alignment": "stretch",
-								"orientation": "vertical",
-								"compact": true
 							}
 						}
 					]
@@ -125,18 +113,6 @@
 								"h_alignment": "center",
 								"v_alignment": "center",
 								"key": "shared_item_grid"
-							}
-						},
-						{
-							"type": "group",
-							"header": "Pinned Locations",
-							"content": {
-								"type": "recentpins",
-								"style": "wrap",
-								"h_alignment": "stretch",
-								"v_alignment": "stretch",
-								"orientation": "horizontal",
-								"compact": true
 							}
 						}
 					]

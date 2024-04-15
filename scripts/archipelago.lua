@@ -435,6 +435,13 @@ function onClear(slot_data)
 			Tracker:FindObjectForCode("BWSquare").Active = true
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
 			Tracker:FindObjectForCode("Arrows").Active = true
+		elseif k == "obelisk_keys" and value == false then
+			Tracker:FindObjectForCode("Desert Obelisk Key").Active = true
+			Tracker:FindObjectForCode("Monastery Obelisk Key").Active = true
+			Tracker:FindObjectForCode("Treehouse Obelisk Key").Active = true
+			Tracker:FindObjectForCode("Mountainside Obelisk Key").Active = true
+			Tracker:FindObjectForCode("Quarry Obelisk Key").Active = true
+			Tracker:FindObjectForCode("Town Obelisk Key").Active = true
 		elseif k == "shuffle_EPs" then
 			obj.CurrentStage = value
 		elseif k == "EP_difficulty" then

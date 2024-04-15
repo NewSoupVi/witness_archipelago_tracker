@@ -552,7 +552,8 @@
 				"name": "Right 5",
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
-					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]"
+					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
+					"showSnipes, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
 				]
 			},
 			{
@@ -948,7 +949,10 @@
 			},
 			{
 				"name": "Laser",
-				"access_rules": [ "@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld" ]
+				"access_rules": [
+					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
+					"showSnipes, Desert Elevator Door, [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -1231,7 +1235,9 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"$canSolve|158123, @Places/quarryStoneworks",
-					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld"
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
@@ -1240,7 +1246,9 @@
 				"access_rules": [
 					"$canSolve|158145, @Places/quarryStoneworks",
 					"showSnipes, $canSolve|158145, @Places/overworld, [@Places/quarryStoneworks]",
-					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]"
+					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]",
+					"showSnipes, $canSolve|158145, @Places/quarryStoneworksMid, [@Places/quarryStoneworks]",
+					"showSnipes, $canSolve|158145, @Places/quarryStoneworksUpstairs, [@Places/quarryStoneworks]"
 				]
 			},
 			{
@@ -1255,8 +1263,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1693" ],
 				"access_rules": [
 					"$isDisabled|1693",
-					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1264,8 +1272,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1556" ],
 				"access_rules": [
 					"$isDisabled|1556",
-					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1316,9 +1324,9 @@
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
+					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
 				]
 			}
 		],
@@ -1525,9 +1533,9 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188-158190, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188-158190, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188-158190, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]",
+					"showSnipes, $canSolve|158188-158190, @Places/shadowsFirstSet, [Shadows Timed Door]"
 				]
 			},
 			{
@@ -1535,9 +1543,9 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188-158192, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188-158192, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]",
+					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/shadowsFirstSet, [Shadows Timed Door]"
 				]
 			},
 			{
@@ -1545,9 +1553,9 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]",
+					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/shadowsFirstSet, [Shadows Timed Door]"
 				]
 			},
 			{
@@ -1826,7 +1834,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13246" ],
 				"access_rules": [
 					"$isDisabled|13246",
-					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
+					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"showSnipes, $isNotVanilla, @Pressure Plates 1/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -2803,7 +2812,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15310" ],
 				"access_rules": [
 					"$isDisabled|15310",
-					"@Places/townLaser, $hasObeliskKey|Town"
+					"@Places/townLaser, $hasObeliskKey|Town",
+					"showSnipes, @Places/overworld, [@Places/townLaser], $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -3811,7 +3821,7 @@
 				"access_rules": [
 					"$isDisabled|13827",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3820,7 +3830,7 @@
 				"access_rules": [
 					"$isDisabled|13825",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3830,7 +3840,7 @@
 					"$isDisabled|13790",
 					"$isNotAutoElevators, @Places/overworld, $hasObeliskKey|Mountainside",
 					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4314,7 +4324,10 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "@Places/treehouseLaser" ]
+				"access_rules": [
+					"@Places/treehouseLaser",
+					"showSnipes, @Places/treehouseLaserDiscard, [@Places/treehouseLaser]"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -4365,7 +4378,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1897" ],
 				"access_rules": [
 					"$isDisabled|1897",
-					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse"
+					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse",
+					"showSnipes, [@Treehouse Left Side/Left Orange Bridge], @Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
