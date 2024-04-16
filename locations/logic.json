@@ -10,7 +10,9 @@
 			},
 			{
 				"name": "ocean",
-				"access_rules": [ "Boat" ]
+				"access_rules": [
+					"Boat"
+				]
 			},
 			{
 				"name": "tutorialOutpostPath",
@@ -231,7 +233,9 @@
 			},
 			{
 				"name": "plates2",
-				"access_rules": [ "@Places/plates3" ]
+				"access_rules": [
+					"@Places/plates3"
+				]
 			},
 			{
 				"name": "plates3",
@@ -265,7 +269,9 @@
 			},
 			{
 				"name": "treehouseDock",
-				"access_rules": [ "@Places/ocean" ]
+				"access_rules": [
+					"@Places/ocean"
+				]
 			},
 			{
 				"name": "treehouseSecond",
@@ -297,11 +303,15 @@
 			},
 			{
 				"name": "treehouseLeft1",
-				"access_rules": [ "@Treehouse Left Side/Purple Bridge 1" ]
+				"access_rules": [
+					"@Treehouse Left Side/Purple Bridge 1"
+				]
 			},
 			{
 				"name": "treehouseLeft2",
-				"access_rules": [ "@Treehouse Left Side/Purple Bridge 2" ]
+				"access_rules": [
+					"@Treehouse Left Side/Purple Bridge 2"
+				]
 			},
 			{
 				"name": "treehouseOutsideLaser",
@@ -312,7 +322,9 @@
 			},
 			{
 				"name": "treehouseLaserDiscard",
-				"access_rules": [ "@Treehouse Left Side/Left Orange Bridge" ]
+				"access_rules": [
+					"@Treehouse Left Side/Left Orange Bridge"
+				]
 			},
 			{
 				"name": "treehouseLaser",
@@ -375,7 +387,9 @@
 			},
 			{
 				"name": "swampPurple",
-				"access_rules": [ "$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack" ]
+				"access_rules": [
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"
+				]
 			},
 			{
 				"name": "swampPurpleUnderwater",
@@ -450,7 +464,9 @@
 			},
 			{
 				"name": "redRoof",
-				"access_rules": [ "$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof" ]
+				"access_rules": [
+					"$hasPanel|Town Maze Rooftop Bridge (Panel), $canSolve|158229, @Places/mazeRoof"
+				]
 			},
 			{
 				"name": "woodenRoof",
@@ -604,7 +620,9 @@
 			},
 			{
 				"name": "mountainLayer1",
-				"access_rules": [ "$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
+				"access_rules": [
+					"$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry"
+				]
 			},
 			{
 				"name": "mountainLayer2Near",
@@ -615,7 +633,9 @@
 			},
 			{
 				"name": "mountainLayer2Far",
-				"access_rules": [ "@Inside Mountain Layer 2 Blue/Blue Light Bridge" ]
+				"access_rules": [
+					"@Inside Mountain Layer 2 Blue/Blue Light Bridge"
+				]
 			},
 			{
 				"name": "mountain2FrontStairs",
