@@ -98,8 +98,7 @@
 			{
 				"name": "desertLaser",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Desert Flood Room Flood Controls (Panel), @Places/desertFlood",
-					"showSnipes, $isNotDoors, [$hasPanel|Desert Flood Room Flood Controls (Panel)], @Places/desertFlood",
+					"$isNotDoors, @Desert/Flood Room Puzzles",
 					"Desert Door to Elevator Room, @Places/desertFlood",
 					"Desert Elevator Door, @Places/tunnelsDesertElevator"
 				]
