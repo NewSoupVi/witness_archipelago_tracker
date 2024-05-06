@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.4.6",
+      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6/witness_archipelago_tracker.zip",
+      "sha256": "69C6D92516F0F21605D91D35AFDDF997BE4A7DBEE571F403BC39807867D0F0E5",
+      "changelog": [
+        "FOV Snipes, defaults, and name changes."
+      ]
+    },
+    {
       "package_version": "0.4.5.1",
       "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5.1/witness_archipelago_tracker.zip",
       "sha256": "E86BCB6A0A418BC1EF2CCA15121A33D10F4A260E88E85A862D0490ED88C8EB3D",
