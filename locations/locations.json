@@ -1393,8 +1393,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|2137" ],
 				"access_rules": [
 					"$isDisabled|2137",
-					"$isNotDoors, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
-					"@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
+					"$isNotDoors, doorsNo, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"$isNotDoors, doorsDoor, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
 				]
 			}
 
