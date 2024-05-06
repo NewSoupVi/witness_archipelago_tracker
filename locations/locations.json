@@ -1568,8 +1568,7 @@
 				"name": "Entry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158170, @Places/overworld",
-					"Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
 				]
 			},
 			{
@@ -2319,20 +2318,16 @@
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158208, @Places/overworld",
-					"Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
-					"$isNotPanelsOnly, $canSolve|158208, @Places/monastery",
-					"Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158209, @Places/overworld",
-					"Monastery Entry Door Right (Panel), $canSolve|158208, @Places/overworld",
-					"$isNotPanelsOnly, $canSolve|158209, @Places/monastery",
-					"Monastery Entry Door Right (Panel), $canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/monastery"
 				]
 			},
 			{
@@ -3185,7 +3180,7 @@
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158259, @Places/overworld",
+					"$isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
 					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
 				]
 			}
@@ -4297,8 +4292,7 @@
 				"name": "Laser House Door Outside Timer",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158356, @Places/treehouseMain",
-					"Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
+					"$isNotPanelsOnlyOrHasPanel|Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
 				]
 			},
 			{
