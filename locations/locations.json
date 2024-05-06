@@ -502,8 +502,8 @@
 				"name": "Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$canSolve|158027, @Places/overworld",
-					"$canSolve|158027, @Places/glassFactory"
+					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/glassFactory"
 				]
 			},
 			{
@@ -906,12 +906,15 @@
 			{
 				"name": "Light Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Desert/Surface Puzzles, $canSolve|158086, @Places/overworld" ]
+				"access_rules": [
+					"$isNotPanelsOnly, @Desert/Surface Puzzles, $canSolve|158086, @Places/overworld",
+					"Desert Light Room Entry (Panel), $canSolve|158086, @Places/overworld"
+				]
 			},
 			{
 				"name": "Light Room Puzzles",
 				"access_rules": [
-					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
+					"$canSolve|158087-158090, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
@@ -925,7 +928,10 @@
 			{
 				"name": "Flood Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "$canSolve|158091-158095, @Places/desertPond" ]
+				"access_rules": [
+					"$isNotPanelsOnly, @Desert/Pond Room Puzzles, $canSolve|158096, @Places/desertPond",
+					"Desert Flood Room Entry (Panel), $canSolve|158096, @Places/desertPond"
+				]
 			},
 			{
 				"name": "Flood Room Puzzles",
@@ -1561,7 +1567,10 @@
 			{
 				"name": "Entry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "$canSolve|158170, @Places/overworld" ]
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158170, @Places/overworld",
+					"Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
+				]
 			},
 			{
 				"name": "Door to Quarry Timer Panel",
@@ -2310,16 +2319,20 @@
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158208, @Places/overworld",
-					"$canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnly, $canSolve|158208, @Places/overworld",
+					"Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnly, $canSolve|158208, @Places/monastery",
+					"Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158209, @Places/overworld",
-					"$canSolve|158209, @Places/monastery"
+					"$isNotPanelsOnly, $canSolve|158209, @Places/overworld",
+					"Monastery Entry Door Right (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnly, $canSolve|158209, @Places/monastery",
+					"Monastery Entry Door Right (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
@@ -3171,7 +3184,10 @@
 			{
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Places/overworld" ]
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158259, @Places/overworld",
+					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -3555,9 +3571,9 @@
 				"name": "Tinted Room Entry Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"@Color Bunker/Intro Back, @Places/bunkerAntechamber",
-					"Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
+					"@Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
+					"Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerAntechamber",
+					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
 			},
 			{
@@ -4170,10 +4186,6 @@
 		"name": "Treehouse Entrance",
 		"sections": [
 			{
-				"name": "Yellow Bridge",
-				"access_rules": [ "$canSolve|158346-158354, @Places/treehouseThird" ]
-			},
-			{
 				"name": "First Door Panel",
 				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158344, @Places/treehouseDock" ]
 			},
@@ -4183,6 +4195,10 @@
 					"$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
 				]
+			},
+			{
+				"name": "Yellow Bridge",
+				"access_rules": [ "$canSolve|158346-158354, @Places/treehouseThird" ]
 			},
 			{
 				"name": "Third Door Panel",
@@ -4280,7 +4296,10 @@
 			{
 				"name": "Laser House Door Outside Timer",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Places/treehouseMain" ]
+				"access_rules": [
+					"$isNotPanelsOnly, $canSolve|158356, @Places/treehouseMain",
+					"Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
+				]
 			},
 			{
 				"name": "Right Orange Bridge EP",
@@ -4815,7 +4834,7 @@
 		"sections": [
 			{
 				"name": "Pink Light Bridge",
-				"access_rules": [ "@Places/mountainLayer1" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
 			}
 		],
 		"map_locations": [
@@ -5380,7 +5399,7 @@
 			{
 				"name": "Caves Rock Timer Panel",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|210145", "doorsMix, $isNotDisabled|210145" ],
-				"access_rules": [ "@Places/cavesAntechamber" ]
+				"access_rules": [ "$canSolve|158448, @Places/cavesAntechamber" ]
 			}
 
 		],
@@ -5863,7 +5882,7 @@
 			{
 				"name": "Desert Shortcut Panel",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|161597", "doorsMix, $isNotDisabled|161597" ],
-				"access_rules": [ "@Places/tunnels" ]
+				"access_rules": [ "$canSolve|158520, @Places/tunnels" ]
 			}
 		],
 		"map_locations": [
