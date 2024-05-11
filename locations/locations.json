@@ -186,7 +186,9 @@
 		"sections": [
 			{
 				"name": "Vault Box",
-				"access_rules": [ "$canSolve|158650, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158650, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -680,7 +682,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158652, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158652, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -1270,7 +1274,8 @@
 				"access_rules": [
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry"
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1279,7 +1284,8 @@
 				"access_rules": [
 					"$isDisabled|1556",
 					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry"
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -2154,7 +2160,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158654, @Places/plates3" ]
+				"access_rules": [
+					"$canSolve|158654, @Places/plates3"
+				]
 			}
 		],
 		"map_locations": [
@@ -2572,7 +2580,9 @@
 		"sections": [
 			{
 				"name": "Lower Row",
-				"access_rules": [ "$canSolve|158235-158239, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158235-158239, @Places/overworld"
+				]
 			},
 			{
 				"name": "Rooftop Puzzle",
@@ -3498,7 +3508,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158663, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158663, @Places/overworld"
+				]
 			},
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
@@ -4709,7 +4721,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158665, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158665, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -4905,7 +4919,9 @@
 		"sections": [
 			{
 				"name": "Back Row",
-				"access_rules": [ "$canSolve|158421-158423, @Places/mountainLayer1Bridge" ]
+				"access_rules": [
+					"$canSolve|158421-158423, @Places/mountainLayer1Bridge"
+				]
 			}
 		],
 		"map_locations": [
