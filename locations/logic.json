@@ -180,6 +180,7 @@
 				"name": "shadowsFirstSet",
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Shadows First Set/Entry Timer Panel, @Places/overworld",
+					"showSnipes, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"Shadows Timed Door, @Places/overworld",
 					"Shadows Barrier to Ledge, @Places/overworld",
@@ -619,14 +620,20 @@
 			{
 				"name": "mountainLayer1",
 				"access_rules": [
+					"@Mountaintop/Mountain Entry"
+				]
+			},
+			{
+				"name": "mountainLayer1Bridge",
+				"access_rules": [
 					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge"
 				]
 			},
 			{
 				"name": "mountainLayer2Near",
 				"access_rules": [
-					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row, @Places/mountainLayer1",
-					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1"
+					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row, @Places/mountainLayer1Bridge",
+					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1Bridge"
 				]
 			},
 			{
