@@ -3641,7 +3641,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
-                  "$Warp|Bunker Green Room, $hasObeliskKey|Mountainside,",
+					"$Warp|Bunker Green Room, $hasObeliskKey|Mountainside",
 					"@Places/bunkerElevatorControl, $hasObeliskKey|Mountainside"
 				]
 			},
