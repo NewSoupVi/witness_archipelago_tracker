@@ -369,7 +369,9 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/bunkerElevatorControl" ]
+				"access_rules": [
+					"@Places/bunkerElevatorControl"
+				]
 			}
 		],
 		"map_locations": [
@@ -612,7 +614,9 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Mountaintop/Mountain Entry" ]
+				"access_rules": [
+					"@Places/mountainLayer1"
+				]
 			}
 		],
 		"map_locations": [
@@ -628,7 +632,9 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/mountainLayer1Bridge" ]
+				"access_rules": [
+					"@Places/mountainLayer1Bridge"
+				]
 			}
 		],
 		"map_locations": [
