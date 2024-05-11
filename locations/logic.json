@@ -183,7 +183,7 @@
 					"$Warp|Quarry Stoneworks Mid",
 					"$hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158124, @Places/quarryStoneworks",
 					"Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
-                    "Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"
+					"Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{

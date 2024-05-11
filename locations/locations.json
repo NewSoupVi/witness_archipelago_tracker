@@ -1277,7 +1277,7 @@
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
 					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-                    "showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1287,7 +1287,7 @@
 					"$isDisabled|1556",
 					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
 					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-                    "showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -4928,8 +4928,8 @@
 			{
 				"name": "Back Row",
 				"access_rules": [
-                  "$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
-                  "$canSolve|158421-158423, @Places/mountainLayer1Bridge"
+					"$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
+					"$canSolve|158421-158423, @Places/mountainLayer1Bridge"
                 ]
 			}
 		],
