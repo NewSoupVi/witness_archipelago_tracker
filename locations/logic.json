@@ -726,7 +726,7 @@
 					"$Warp|Mountain Floor 2",
 					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row, @Places/mountainLayer1Bridge",
 					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1Bridge",
-                    "@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Far",
+					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountainLayer2Far",
 					"@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Far",
 					"Inside Mountain Second Layer Staircase Near, @Places/mountain2FrontStairs"
 				]
@@ -736,7 +736,7 @@
 				"access_rules": [
 					"$Warp|Mountain Floor 2",
 					"@Inside Mountain Layer 2 Blue/Blue Light Bridge, @Places/mountain2FrontStairs",
-                    "@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Near",
+					"@Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountainLayer2Near",
 					"Inside Mountain Second Layer Staircase Far, @Places/mountain2BackStairs"
 				]
 			},
