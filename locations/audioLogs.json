@@ -628,7 +628,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/mountainLayer1" ]
+				"access_rules": [ "@Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
