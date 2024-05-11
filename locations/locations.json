@@ -4870,7 +4870,7 @@
 			{
 				"name": "Angled Inside Trash",
 				"visibility_rules": [ "$isNotDisabled|40623" ],
-				"access_rules": [ "$canSolve|158424 158425, @Places/mountainLayer1" ]
+				"access_rules": [ "$canSolve|158424 158425, @Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
@@ -4889,7 +4889,7 @@
 		"sections": [
 			{
 				"name": "Left Row",
-				"access_rules": [ "$canSolve|158414-158420, @Places/mountainLayer1" ]
+				"access_rules": [ "$canSolve|158414-158420, @Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
@@ -4908,7 +4908,7 @@
 		"sections": [
 			{
 				"name": "Right Row",
-				"access_rules": [ "$canSolve|158409-158413, @Places/mountainLayer1" ]
+				"access_rules": [ "$canSolve|158409-158413, @Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
@@ -4928,9 +4928,9 @@
 			{
 				"name": "Back Row",
 				"access_rules": [
-					"$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
-					"@Places/mountainLayer1, $canSolve|158421-158423"
-				]
+                  "$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
+                  "$canSolve|158421-158423, @Places/mountainLayer1Bridge"
+                ]
 			}
 		],
 		"map_locations": [
@@ -5046,9 +5046,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer1, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
-					"@Places/mountainLayer1, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
-					"@Places/mountainLayer1, @Places/mountainMeta, $hasObeliskKey|Mountainside"
+					"@Places/mountainLayer1Bridge, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1Bridge, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1Bridge, @Places/mountainMeta, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
