@@ -370,8 +370,8 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-                  "$Warp|Bunker Green Room",
-                  "@Places/bunkerElevatorControl"
+					"$Warp|Bunker Green Room",
+					"@Places/bunkerElevatorControl"
                 ]
 			}
 		],
