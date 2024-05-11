@@ -650,7 +650,9 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [ "@Places/mountainLayer1" ]
+				"access_rules": [
+					"@Places/mountainLayer1"
+				]
 			}
 		],
 		"map_locations": [
