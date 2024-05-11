@@ -4930,7 +4930,7 @@
 				"access_rules": [
 					"$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
 					"$canSolve|158421-158423, @Places/mountainLayer1Bridge"
-                ]
+				]
 			}
 		],
 		"map_locations": [
