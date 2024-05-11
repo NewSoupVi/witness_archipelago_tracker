@@ -3636,7 +3636,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
-					"@Places/bunkerLaser, $hasObeliskKey|Mountainside"
+					"@Places/bunkerElevatorControl, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
