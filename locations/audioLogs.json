@@ -370,9 +370,9 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"$Warp|Bunker Green Room",
-					"$hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorProper"
-				]
+                  "$Warp|Bunker Green Room",
+                  "@Places/bunkerElevatorControl"
+                ]
 			}
 		],
 		"map_locations": [

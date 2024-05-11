@@ -505,8 +505,8 @@
 				"name": "Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$canSolve|158027, @Places/overworld",
-					"$canSolve|158027, @Places/glassFactory"
+					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/glassFactory"
 				]
 			},
 			{
@@ -555,7 +555,8 @@
 				"name": "Right 5",
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
-					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]"
+					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
+					"showSnipes, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
 				]
 			},
 			{
@@ -911,12 +912,15 @@
 			{
 				"name": "Light Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Desert/Surface Puzzles, $canSolve|158086, @Places/overworld" ]
+				"access_rules": [
+					"$isNotPanelsOnly, @Desert/Surface Puzzles, $canSolve|158086, @Places/overworld",
+					"Desert Light Room Entry (Panel), $canSolve|158086, @Places/overworld"
+				]
 			},
 			{
 				"name": "Light Room Puzzles",
 				"access_rules": [
-					"$canSolve|158087-158090, @Places/desertFloodLight, $hasPanel|Desert Light Room Light Control (Panel)",
+					"$canSolve|158087-158090, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
 					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
@@ -930,7 +934,10 @@
 			{
 				"name": "Flood Room Entry Panel",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "$canSolve|158091-158095, @Places/desertPond" ]
+				"access_rules": [
+					"$isNotPanelsOnly, @Desert/Pond Room Puzzles, $canSolve|158096, @Places/desertPond",
+					"Desert Flood Room Entry (Panel), $canSolve|158096, @Places/desertPond"
+				]
 			},
 			{
 				"name": "Flood Room Puzzles",
@@ -954,7 +961,10 @@
 			},
 			{
 				"name": "Laser",
-				"access_rules": [ "@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld" ]
+				"access_rules": [
+					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
+					"showSnipes, Desert Elevator Door, [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -1238,8 +1248,8 @@
 				"access_rules": [
 					"$canSolve|158123, @Places/quarryStoneworks",
 					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/overworld",
-					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid"
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksMid",
+					"showSnipes, $canSolve|158123, [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
@@ -1248,7 +1258,9 @@
 				"access_rules": [
 					"$canSolve|158145, @Places/quarryStoneworks",
 					"showSnipes, $canSolve|158145, @Places/overworld, [@Places/quarryStoneworks]",
-					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]"
+					"showSnipes, $canSolve|158145, @Places/shadowsFirstSet, [@Places/quarryStoneworks]",
+					"showSnipes, $canSolve|158145, @Places/quarryStoneworksMid, [@Places/quarryStoneworks]",
+					"showSnipes, $canSolve|158145, @Places/quarryStoneworksUpstairs, [@Places/quarryStoneworks]"
 				]
 			},
 			{
@@ -1263,9 +1275,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1693" ],
 				"access_rules": [
 					"$isDisabled|1693",
-					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
-					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+                    "showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1273,9 +1285,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1556" ],
 				"access_rules": [
 					"$isDisabled|1556",
-					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry",
-					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+                    "showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1326,9 +1338,9 @@
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158122",
-					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158122"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
+					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
 				]
 			}
 		],
@@ -1389,8 +1401,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|2137" ],
 				"access_rules": [
 					"$isDisabled|2137",
-					"$isNotDoors, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
-					"@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
+					"$isNotDoors, doorsNo, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"$isNotDoors, doorsDoor, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
 				]
 			}
 
@@ -1535,9 +1548,9 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188-158190, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188-158190, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188-158190, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]",
+					"showSnipes, $canSolve|158188-158190, @Places/shadowsFirstSet, [Shadows Timed Door]"
 				]
 			},
 			{
@@ -1545,9 +1558,9 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188-158192, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188-158192, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]",
+					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/shadowsFirstSet, [Shadows Timed Door]"
 				]
 			},
 			{
@@ -1555,15 +1568,17 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [$hasPanel|Shadows Door Timer (Panel)], [@Places/shadowsFirstSet]",
 					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, Shadows Timed Door",
-					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]"
+					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]",
+					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/shadowsFirstSet, [Shadows Timed Door]"
 				]
 			},
 			{
 				"name": "Entry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [ "$canSolve|158170, @Places/overworld" ]
+				"access_rules": [
+					"$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
+				]
 			},
 			{
 				"name": "Door to Quarry Timer Panel",
@@ -1836,7 +1851,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13246" ],
 				"access_rules": [
 					"$isDisabled|13246",
-					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
+					"@Pressure Plates 1/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"showSnipes, $isNotVanilla, @Pressure Plates 1/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -2314,16 +2330,16 @@
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158208, @Places/overworld",
-					"$canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158209, @Places/overworld",
-					"$canSolve|158209, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/monastery"
 				]
 			},
 			{
@@ -2819,7 +2835,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15310" ],
 				"access_rules": [
 					"$isDisabled|15310",
-					"@Places/townLaser, $hasObeliskKey|Town"
+					"@Places/townLaser, $hasObeliskKey|Town",
+					"showSnipes, @Places/overworld, [@Places/townLaser], $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -3177,7 +3194,10 @@
 			{
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Places/overworld" ]
+				"access_rules": [
+					"$isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
+					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -3466,12 +3486,12 @@
 		"name": "Jungle Bamboo EPs",
 		"sections": [
 			{
-				"name": "Bamboo CCW EP (River Side 6)",
+				"name": "Bamboo CCW EP (Mountainside Side 6)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159735, $isNotDisabled|13771" ],
 				"access_rules": [ "@Jungle Bamboo/Bamboo CCW EP" ]
 			},
 			{
-				"name": "Bamboo CW EP (River Side 6)",
+				"name": "Bamboo CW EP (Mountainside Side 6)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159735, $isNotDisabled|13775" ],
 				"access_rules": [ "@Jungle Bamboo/Bamboo CW EP" ]
 			}
@@ -3564,9 +3584,9 @@
 				"name": "Tinted Room Entry Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"@Color Bunker/Intro Back, @Places/bunkerAntechamber",
-					"Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), @Places/overworld, [@Places/bunkerAntechamber]"
+					"@Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
+					"Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerAntechamber",
+					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
 			},
 			{
@@ -3650,12 +3670,12 @@
 		"name": "Color Bunker EPs",
 		"sections": [
 			{
-				"name": "Green Room Flowers EP (River Side 2)",
+				"name": "Green Room Flowers EP (Mountainside Side 2)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159731, $isNotDisabled|211" ],
 				"access_rules": [ "@Color Bunker/Green Room Flowers EP" ]
 			},
 			{
-				"name": "Tinted Door EP (River Side 2)",
+				"name": "Tinted Door EP (Mountainside Side 2)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159731, $isNotDisabled|13813" ],
 				"access_rules": [ "@Color Bunker/Tinted Door EP" ]
 			}
@@ -3695,7 +3715,7 @@
 		"name": "Ocean Outside Bunker EPs",
 		"sections": [
 			{
-				"name": "Boat Bunker Yellow Line EP (River Side 3)",
+				"name": "Boat Bunker Yellow Line EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|15629" ],
 				"access_rules": [ "@Ocean Outside Bunker/Boat Bunker Yellow Line EP" ]
 			}
@@ -3807,7 +3827,7 @@
 		"name": "Swamp Near Boat EPs",
 		"sections": [
 			{
-				"name": "Swamp Boat EP (River Side 4)",
+				"name": "Swamp Boat EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|210527" ],
 				"access_rules": [ "@Swamp Near Boat/Swamp Boat EP" ]
 			}
@@ -3831,7 +3851,7 @@
 				"access_rules": [
 					"$isDisabled|13827",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3840,7 +3860,7 @@
 				"access_rules": [
 					"$isDisabled|13825",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3850,7 +3870,7 @@
 					"$isDisabled|13790",
 					"$isNotAutoElevators, @Places/overworld, $hasObeliskKey|Mountainside",
 					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3876,22 +3896,22 @@
 		"name": "Swamp Purple Sand EPs",
 		"sections": [
 			{
-				"name": "Purple Sand Middle EP (River Side 3)",
+				"name": "Purple Sand Middle EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|13827" ],
 				"access_rules": [ "@Swamp Purple Sand/Purple Sand Middle EP" ]
 			},
 			{
-				"name": "Purple Sand Top EP (River Side 3)",
+				"name": "Purple Sand Top EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|13825" ],
 				"access_rules": [ "@Swamp Purple Sand/Purple Sand Top EP" ]
 			},
 			{
-				"name": "Purple Sand Bottom EP (River Side 3)",
+				"name": "Purple Sand Bottom EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|13790" ],
 				"access_rules": [ "@Swamp Purple Sand/Purple Sand Bottom EP" ]
 			},
 			{
-				"name": "Long Bridge Slide EP (River Side 4)",
+				"name": "Long Bridge Slide EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|14129" ],
 				"access_rules": [ "@Swamp Purple Sand/Long Bridge Slide EP" ]
 			}
@@ -3941,12 +3961,12 @@
 		"name": "Swamp Sliding Bridge EPs",
 		"sections": [
 			{
-				"name": "Sliding Bridge Left EP (River Side 5)",
+				"name": "Sliding Bridge Left EP (Mountainside Side 5)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159734, $isNotDisabled|4189" ],
 				"access_rules": [ "@Swamp Sliding Bridge/Sliding Bridge Left EP" ]
 			},
 			{
-				"name": "Sliding Bridge Right EP (River Side 5)",
+				"name": "Sliding Bridge Right EP (Mountainside Side 5)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159734, $isNotDisabled|41732" ],
 				"access_rules": [ "@Swamp Sliding Bridge/Sliding Bridge Right EP" ]
 			}
@@ -3994,12 +4014,12 @@
 		"name": "Swamp Rotating Bridge EPs",
 		"sections": [
 			{
-				"name": "Rotating Bridge CCW EP (River Side 4)",
+				"name": "Rotating Bridge CCW EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|5810" ],
 				"access_rules": [ "@Swamp Rotating Bridge/Rotating Bridge CCW EP" ]
 			},
 			{
-				"name": "Rotating Bridge CW EP (River Side 4)",
+				"name": "Rotating Bridge CW EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|14030" ],
 				"access_rules": [ "@Swamp Rotating Bridge/Rotating Bridge CW EP" ]
 			}
@@ -4051,12 +4071,12 @@
 		"name": "Swamp Purple Underwater EPs",
 		"sections": [
 			{
-				"name": "Purple Underwater Right EP (River Side 4)",
+				"name": "Purple Underwater Right EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|15006" ],
 				"access_rules": [ "@Swamp Purple Underwater/Purple Underwater Right EP" ]
 			},
 			{
-				"name": "Purple Underwater Left EP (River Side 4)",
+				"name": "Purple Underwater Left EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|14995" ],
 				"access_rules": [ "@Swamp Purple Underwater/Purple Underwater Left EP" ]
 			}
@@ -4118,7 +4138,7 @@
 		"name": "Swamp Cyan Underwater Room EPs",
 		"sections": [
 			{
-				"name": "Underwater Sliding Bridge EP (River Side 5)",
+				"name": "Underwater Sliding Bridge EP (Mountainside Side 5)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159734, $isNotDisabled|15014" ],
 				"access_rules": [ "@Swamp Cyan Underwater Room/Underwater Sliding Bridge EP" ]
 			}
@@ -4180,10 +4200,6 @@
 		"name": "Treehouse Entrance",
 		"sections": [
 			{
-				"name": "Yellow Bridge",
-				"access_rules": [ "$canSolve|158346-158354, @Places/treehouseThird" ]
-			},
-			{
 				"name": "First Door Panel",
 				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158344, @Places/treehouseDock" ]
 			},
@@ -4193,6 +4209,10 @@
 					"$isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, @Places/treehouseSecond",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Treehouse First & Second Doors (Panel), $canSolve|158345, [@Places/treehouseSecond], @Places/treehouseDock"
 				]
+			},
+			{
+				"name": "Yellow Bridge",
+				"access_rules": [ "$canSolve|158346-158354, @Places/treehouseThird" ]
 			},
 			{
 				"name": "Third Door Panel",
@@ -4290,7 +4310,9 @@
 			{
 				"name": "Laser House Door Outside Timer",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "@Places/treehouseMain" ]
+				"access_rules": [
+					"$isNotPanelsOnlyOrHasPanel|Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
+				]
 			},
 			{
 				"name": "Right Orange Bridge EP",
@@ -4334,7 +4356,10 @@
 		"sections": [
 			{
 				"name": "Laser",
-				"access_rules": [ "@Places/treehouseLaser" ]
+				"access_rules": [
+					"@Places/treehouseLaser",
+					"showSnipes, @Places/treehouseLaserDiscard, [@Places/treehouseLaser]"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -4386,7 +4411,8 @@
 				"access_rules": [
 					"$isDisabled|1897",
 					"$Warp|Treehouse Burned House, $hasObeliskKey|Treehouse",
-					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse"
+					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse",
+					"showSnipes, [@Treehouse Left Side/Left Orange Bridge], @Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4628,7 +4654,7 @@
 		"name": "Mountainside Discard EPs",
 		"sections": [
 			{
-				"name": "Cloud Cycle EP (River Side 1)",
+				"name": "Cloud Cycle EP (Mountainside Side 1)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159730, $isNotDisabled|210350" ],
 				"access_rules": [ "@Mountainside Discard/Cloud Cycle EP" ]
 			}
@@ -4676,12 +4702,12 @@
 		"name": "Mountainside Path EPs",
 		"sections": [
 			{
-				"name": "Bush EP (River Side 3)",
+				"name": "Bush EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|210181" ],
 				"access_rules": [ "@Mountainside Path/Bush EP" ]
 			},
 			{
-				"name": "Mountainside Apparent River EP (River Side 4)",
+				"name": "Mountainside Apparent River EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|15367" ],
 				"access_rules": [ "@Mountainside Path/Mountainside Apparent River EP" ]
 			}
@@ -4789,22 +4815,22 @@
 		"name": "Mountaintop EPs",
 		"sections": [
 			{
-				"name": "River EP (River Side 1)",
+				"name": "River EP (Mountainside Side 1)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159730, $isNotDisabled|419" ],
 				"access_rules": [ "@Mountaintop/River EP" ]
 			},
 			{
-				"name": "Arch Black EP (River Side 3)",
+				"name": "Arch Black EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|210702" ],
 				"access_rules": [ "@Mountaintop/Arch Black EP" ]
 			},
 			{
-				"name": "Arch White Right EP (River Side 3)",
+				"name": "Arch White Right EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|210632" ],
 				"access_rules": [ "@Mountaintop/Arch White Right EP" ]
 			},
 			{
-				"name": "Arch White Left EP (River Side 3)",
+				"name": "Arch White Left EP (Mountainside Side 3)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159732, $isNotDisabled|210586" ],
 				"access_rules": [ "@Mountaintop/Arch White Left EP" ]
 			}
@@ -4825,7 +4851,7 @@
 		"sections": [
 			{
 				"name": "Pink Light Bridge",
-				"access_rules": [ "@Places/mountainLayer1" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
 			}
 		],
 		"map_locations": [
@@ -4997,7 +5023,7 @@
 		"name": "Inside Mountain Layer 2 EPs",
 		"sections": [
 			{
-				"name": "Pink Bridge EP (River Side 2)",
+				"name": "Pink Bridge EP (Mountainside Side 2)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159731, $isNotDisabled|40291" ],
 				"access_rules": [ "@Inside Mountain Layer 2 Look Up/Pink Bridge EP" ]
 			}
@@ -5229,12 +5255,12 @@
 		"name": "Inside Mountain Bottom Layer EPs",
 		"sections": [
 			{
-				"name": "Blue Bridge EP (River Side 2)",
+				"name": "Blue Bridge EP (Mountainside Side 2)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159731, $isNotDisabled|40286" ],
 				"access_rules": [ "@Inside Mountain Bottom Layer Look Up/Blue Bridge EP" ]
 			},
 			{
-				"name": "Yellow Bridge EP (River Side 2)",
+				"name": "Yellow Bridge EP (Mountainside Side 2)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159731, $isNotDisabled|40285" ],
 				"access_rules": [ "@Inside Mountain Bottom Layer Look Up/Yellow Bridge EP" ]
 			}
@@ -5393,7 +5419,7 @@
 			{
 				"name": "Caves Rock Timer Panel",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|210145", "doorsMix, $isNotDisabled|210145" ],
-				"access_rules": [ "@Places/cavesAntechamber" ]
+				"access_rules": [ "$canSolve|158448, @Places/cavesAntechamber" ]
 			}
 
 		],
@@ -5724,7 +5750,7 @@
 		"name": "Caves Lone Pillar EPs",
 		"sections": [
 			{
-				"name": "Caves Skylight EP (River Side 5)",
+				"name": "Caves Skylight EP (Mountainside Side 5)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159734, $isNotDisabled|211324" ],
 				"access_rules": [ "@Caves Lone Pillar/Caves Skylight EP" ]
 			}
@@ -5876,7 +5902,7 @@
 			{
 				"name": "Desert Shortcut Panel",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|161597", "doorsMix, $isNotDisabled|161597" ],
-				"access_rules": [ "@Places/tunnels" ]
+				"access_rules": [ "$canSolve|158520, @Places/tunnels" ]
 			}
 		],
 		"map_locations": [
@@ -6014,7 +6040,7 @@
 	},
 
 	{
-		"name": "River Obelisk",
+		"name": "Mountainside Obelisk",
 		"sections": [
 			{
 				"name": "Side 1",
