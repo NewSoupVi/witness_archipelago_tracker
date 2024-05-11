@@ -372,7 +372,7 @@
 				"access_rules": [
 					"$Warp|Bunker Green Room",
 					"@Places/bunkerElevatorControl"
-                ]
+				]
 			}
 		],
 		"map_locations": [
@@ -616,7 +616,7 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-                    "$Warp|Mountain Floor 1",
+					"$Warp|Mountain Floor 1",
 					"@Places/mountainLayer1"
 				]
 			}
