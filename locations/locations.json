@@ -186,7 +186,9 @@
 		"sections": [
 			{
 				"name": "Vault Box",
-				"access_rules": [ "$canSolve|158650, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158650, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -680,7 +682,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158652, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158652, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -1270,7 +1274,8 @@
 				"access_rules": [
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry"
+					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1279,7 +1284,8 @@
 				"access_rules": [
 					"$isDisabled|1556",
 					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry"
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1393,8 +1399,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|2137" ],
 				"access_rules": [
 					"$isDisabled|2137",
-					"$isNotDoors, @Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
-					"@Logic/boathouseRamp, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
+					"$isNotDoors, doorsNo, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"$isNotDoors, doorsDoor, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), @Quarry Boathouse/Front Row, $hasObeliskKey|Quarry",
+					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, $canSolve|158154, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
 				]
 			}
 
@@ -1568,8 +1575,7 @@
 				"name": "Entry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158170, @Places/overworld",
-					"Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
 				]
 			},
 			{
@@ -2154,7 +2160,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158654, @Places/plates3" ]
+				"access_rules": [
+					"$canSolve|158654, @Places/plates3"
+				]
 			}
 		],
 		"map_locations": [
@@ -2319,20 +2327,16 @@
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158208, @Places/overworld",
-					"Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
-					"$isNotPanelsOnly, $canSolve|158208, @Places/monastery",
-					"Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158209, @Places/overworld",
-					"Monastery Entry Door Right (Panel), $canSolve|158208, @Places/overworld",
-					"$isNotPanelsOnly, $canSolve|158209, @Places/monastery",
-					"Monastery Entry Door Right (Panel), $canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/monastery"
 				]
 			},
 			{
@@ -2576,7 +2580,9 @@
 		"sections": [
 			{
 				"name": "Lower Row",
-				"access_rules": [ "$canSolve|158235-158239, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158235-158239, @Places/overworld"
+				]
 			},
 			{
 				"name": "Rooftop Puzzle",
@@ -3185,7 +3191,7 @@
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158259, @Places/overworld",
+					"$isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
 					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
 				]
 			}
@@ -3502,7 +3508,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158663, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158663, @Places/overworld"
+				]
 			},
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
@@ -3628,7 +3636,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
-					"@Places/bunkerLaser, $hasObeliskKey|Mountainside"
+					"@Places/bunkerElevatorControl, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4297,8 +4305,7 @@
 				"name": "Laser House Door Outside Timer",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $canSolve|158356, @Places/treehouseMain",
-					"Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
+					"$isNotPanelsOnlyOrHasPanel|Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
 				]
 			},
 			{
@@ -4714,7 +4721,9 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [ "$canSolve|158665, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158665, @Places/overworld"
+				]
 			}
 		],
 		"map_locations": [
@@ -4853,7 +4862,7 @@
 			{
 				"name": "Angled Inside Trash",
 				"visibility_rules": [ "$isNotDisabled|40623" ],
-				"access_rules": [ "$canSolve|158424 158425, @Places/mountainLayer1" ]
+				"access_rules": [ "$canSolve|158424 158425, @Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
@@ -4872,7 +4881,7 @@
 		"sections": [
 			{
 				"name": "Left Row",
-				"access_rules": [ "$canSolve|158414-158420, @Places/mountainLayer1" ]
+				"access_rules": [ "$canSolve|158414-158420, @Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
@@ -4891,7 +4900,7 @@
 		"sections": [
 			{
 				"name": "Right Row",
-				"access_rules": [ "$canSolve|158409-158413, @Places/mountainLayer1" ]
+				"access_rules": [ "$canSolve|158409-158413, @Places/mountainLayer1Bridge" ]
 			}
 		],
 		"map_locations": [
@@ -4910,7 +4919,9 @@
 		"sections": [
 			{
 				"name": "Back Row",
-				"access_rules": [ "$canSolve|158421-158423, @Places/mountainLayer1" ]
+				"access_rules": [
+					"$canSolve|158421-158423, @Places/mountainLayer1Bridge"
+				]
 			}
 		],
 		"map_locations": [
@@ -5026,9 +5037,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|40291" ],
 				"access_rules": [
 					"$isDisabled|40291",
-					"@Places/mountainLayer1, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
-					"@Places/mountainLayer1, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
-					"@Places/mountainLayer1, @Places/mountainMeta, $hasObeliskKey|Mountainside"
+					"@Places/mountainLayer1Bridge, @Places/mountainLayer2Near, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1Bridge, @Places/mountainLayer2Far, $hasObeliskKey|Mountainside",
+					"@Places/mountainLayer1Bridge, @Places/mountainMeta, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
