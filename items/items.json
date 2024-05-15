@@ -190,6 +190,11 @@
 				"img": "images/randomizationVanilla.png",
 				"codes": "randomizationVanilla",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/varietyText.png",
+				"codes": "Variety",
+				"inherit_codes": false
 			}
 		]
 	},
@@ -296,6 +301,11 @@
 				"img": "images/mountainLong.png",
 				"codes": "Long",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/panelHunt.png",
+				"codes": "panelHunt",
+				"inherit_codes": false
 			}
 		]
 	},
@@ -348,6 +358,11 @@
 			{
 				"img": "images/mountainLong.png",
 				"codes": "hiddenLongGoal",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/panelHunt.png",
+				"codes": "hiddenPanelHunt",
 				"inherit_codes": false
 			}
 		]

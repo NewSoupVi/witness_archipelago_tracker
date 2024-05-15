@@ -296,5 +296,4 @@ SETTINGS_MAPPING = {
 	["elevators_come_to_you"] = "autoElevators",
 	["disabled_entities"] = "disabledPanels",
 	["death_link"] = "deathLink",
-
 }
