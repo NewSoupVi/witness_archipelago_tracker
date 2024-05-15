@@ -15,7 +15,7 @@ function isNotNormalNorVariety()
 end
 
 function isNormalOrVariety()
-    return (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety") > 0)
+	return (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety") > 0)
 end
 
 function isNotExpert()
@@ -43,7 +43,7 @@ function isNotDeathLink()
 end
 
 function isNotPanelHunt()
-    return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
+	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
 end
 
 function longBoxWithoutMountainEntry()
@@ -187,7 +187,7 @@ function getLogicFile()
 	elseif Tracker:ProviderCountForCode("randomizationSigma") == 1 then
 		return "WitnessLogic"
 	elseif Tracker:ProviderCountForCode("Variety") == 1 then
-        return "WitnessLogicVariety"
+		return "WitnessLogicVariety"
 	elseif Tracker:ProviderCountForCode("randomizationVanilla") == 1 then
 		return "WitnessLogicVanilla"
 	end
