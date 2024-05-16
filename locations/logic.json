@@ -341,7 +341,7 @@
 				"name": "treehouseAfterYellowBridge",
 				"access_rules": [
 					"$Warp|Treehouse After Yellow Bridge",
-					"$isNotDoors, @Treehouse Entrance/Yellow Bridge, @Places/treehouseThird",
+					"@Treehouse Entrance/Yellow Bridge, @Places/treehouseThird",
 					"Treehouse Beyond Yellow Bridge Door, @Places/treehouseMain"
 				]
 			},
