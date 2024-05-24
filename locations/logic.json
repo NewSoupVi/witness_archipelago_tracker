@@ -222,7 +222,7 @@
 				"access_rules": [
 					"$Warp|Shadows First Set",
 					"$isNotDoors, unrandomized, @Shadows First Set/Entry Timer Panel, @Places/overworld",
-					"showSnipes, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
+					"$isNotDoors, showSnipes, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"Shadows Timed Door, @Places/overworld",
 					"Shadows Barrier to Ledge, @Places/overworld",
