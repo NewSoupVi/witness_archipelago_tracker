@@ -2416,10 +2416,10 @@
 	},
 
 	{
-		"name": "Town",
+		"name": "Doggie",
 		"sections": [
 			{
-				"name": "Doggie",
+				"name": "",
 				"visibility_rules": ["dogSkip"],
 				"access_rules": [ "@Places/overworld" ]
 			}
