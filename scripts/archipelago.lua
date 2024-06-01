@@ -471,6 +471,8 @@ function onClear(slot_data)
 			for num, id in pairs(value) do
 				disabledDict[id] = true
 			end
+        elseif k == "shuffle_dog" then
+            obj.CurrentStage = value
 		else
 			obj.Active = value
 		end

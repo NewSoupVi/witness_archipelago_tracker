@@ -2419,7 +2419,8 @@
 		"name": "Town",
 		"sections": [
 			{
-				"name": "Pet the Dog",
+				"name": "Doggie",
+				"visibility_rules": ["dogSkip"],
 				"access_rules": [ "@Places/overworld" ]
 			}
 		],
@@ -2429,6 +2430,25 @@
 				"x": 509,
 				"y": 1126,
 				"size": 15
+			}
+		]
+	},
+
+	{
+		"name": "Town",
+		"sections": [
+			{
+				"name": "Pet the Dog",
+				"visibility_rules": ["dogOn"],
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "fullmap",
+				"x": 509,
+				"y": 1126,
+				"size": 30
 			}
 		]
 	},

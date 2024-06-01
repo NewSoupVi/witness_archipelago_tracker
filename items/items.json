@@ -218,6 +218,27 @@
 		"loop": "true"
 	},
 	{
+		"name": "Shuffle Dog",
+		"codes": "shuffleDog",
+		"type": "progressive",
+		"allow_disabled": true,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"codes": "dogOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "dogSkip",
+				"inherit_codes": false
+			},
+			{
+				"codes": "dogOn",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Death Link",
 		"codes": "deathLink",
 		"type": "toggle",
