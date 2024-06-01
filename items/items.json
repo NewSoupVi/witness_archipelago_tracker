@@ -110,7 +110,7 @@
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/NegativeShapers.png",
-		"disabled_img": "images/NegativeGreyed.PNG",
+		"disabled_img": "images/NegativeGreyed.png",
 		"codes": "NegativeShapers"
 	},
 	{
@@ -222,7 +222,7 @@
 		"name": "Shuffle Vaults",
 		"type": "toggle",
 		"loop": "true",
-		"img": "images/VaultsText.PNG",
+		"img": "images/VaultsText.png",
 		"codes": "Vaults"
 	},
 	{
