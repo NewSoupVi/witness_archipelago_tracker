@@ -279,6 +279,7 @@ SETTINGS_MAPPING = {
 	["disable_non_randomized_puzzles"] = "Unrandomized",
 	["shuffle_vault_boxes"] = "Vaults",
 	["shuffle_postgame"] = "Postgame",
+	["panel_hunt_postgame"] = "PanelHuntPostgame",
 	["shuffle_discarded_panels"] = "Discarded",
 	["early_caves"] = "cavesSetting",
 	["shuffle_doors"] = "doorsSetting",

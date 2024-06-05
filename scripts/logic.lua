@@ -51,7 +51,7 @@ function isNotPanelHunt()
 end
 
 function longBoxWithoutMountainEntry()
-	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7)
+	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7 or Tracker:ProviderCountForCode("panelHunt") + Tracker:ProviderCountForCode("shortboxOff") > 1 and Tracker:ProviderCountForCode("boxLong") > 7)
 end
 
 function showPartialSidesOrSolvableSide(side)
