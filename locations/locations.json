@@ -16,9 +16,17 @@
 			},
 			{
 				"name": "Gate Open",
+				"visibility_rules": [ "$isNotPanelHunt" ],
 				"access_rules": [
 					"$isNotExpert, @Places/tutorial, $canSolve|158002-158007",
 					"Expert, @Places/tutorial, $canSolve|158002 158003 158004 158007"
+				]
+			},
+			{
+				"name": "Panel Hunt: Victory!",
+				"visibility_rules": [ "panelHunt" ],
+				"access_rules": [
+					"{}"
 				]
 			},
 			{
@@ -1222,8 +1230,8 @@
 					"$canSolve|158125-158130, @Places/quarryStoneworksMid",
 					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry",
 					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarryStoneworks",
-					"showSnipes, $isNotNormal, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld",
-					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld"
+					"showSnipes, $isNotNormalNorVariety, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld"
 				]
 			},
 			{
@@ -1266,8 +1274,8 @@
 			{
 				"name": "Stairs Control Panel",
 				"access_rules": [
-					"$canSolve|158142, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Stairs (Panel), $canSolve|158142, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Stairs (Panel), $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
 				]
 			},
 			{
@@ -2610,8 +2618,8 @@
 				"name": "RGB Room Left",
 				"access_rules": [
 					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isNotNormal, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
+					"showSnipes, $isNotNormalNorVariety, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
 				]
 			},
 			{
@@ -2619,7 +2627,7 @@
 				"access_rules": [
 					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
 					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
@@ -3520,7 +3528,7 @@
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158267, @Places/overworld" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Jungle Monastery Garden Shortcut (Panel), $canSolve|158267, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -4184,7 +4192,7 @@
 			},
 			{
 				"name": "Shortcut Panels",
-				"access_rules": [ "$canSolve|158341-158342" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Swamp Laser Shortcut (Panel), $canSolve|158341-158342" ]
 			}
 		],
 		"map_locations": [
@@ -5070,7 +5078,7 @@
 				"visibility_rules": [ "Discarded, $isNotDisabled|98195" ],
 				"access_rules": [
 					"$canSolve|158613, @Places/mountainElevator",
-					"showSnipes, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]"
+					"showSnipes, $isNotVariety, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]"
 				]
 			}
 		],
@@ -5515,7 +5523,7 @@
 		"sections": [
 			{
 				"name": "Shortcut to Mountain Panel",
-				"access_rules": [ "$canSolve|158449, @Places/caves" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves" ]
 			}
 		],
 		"map_locations": [
@@ -5534,7 +5542,7 @@
 		"sections": [
 			{
 				"name": "Shortcut to Swamp Panel",
-				"access_rules": [ "$canSolve|158450, @Places/caves" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves" ]
 			}
 		],
 		"map_locations": [

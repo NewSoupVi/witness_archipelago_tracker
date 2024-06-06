@@ -480,8 +480,11 @@
 
 	{
 		"name": "Quarry Stoneworks Stairs",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
-		"access_rules": [ "Quarry Stoneworks Stairs" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+		"access_rules": [
+			"doorsPanel, Quarry Stoneworks Stairs (Panel)",
+			"Quarry Stoneworks Stairs"
+		],
 		"sections": [
 			{
 				"name": "Door"
@@ -1265,8 +1268,11 @@
 
 	{
 		"name": "Swamp Laser Shortcut",
-		"visibility_rules": [ "doorsDoor", "doorsMix" ],
-		"access_rules": [ "Swamp Near Laser Shortcut" ],
+		"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+		"access_rules": [
+			"doorsPanel, Swamp Laser Shortcut (Panel)",
+			"Swamp Near Laser Shortcut"
+		],
 		"sections": [
 			{
 				"name": "Door"
@@ -1337,8 +1343,9 @@
 
 	{
 		"name": "Caves Mountain Shortcut",
-		"visibility_rules": [ "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|186175", "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
 		"access_rules": [
+			"doorsPanel, Caves Mountain Shortcut (Panel)",
 			"Caves",
 			"Caves Mountain Shortcut"
 		],
@@ -1358,8 +1365,9 @@
 
 	{
 		"name": "Caves Swamp Shortcut",
-		"visibility_rules": [ "doorsDoor, $isNotDisabled|186457", "doorsMix, $isNotDisabled|186457", "Caves", "cavesPool" ],
+		"visibility_rules": [ "doorsPanel, $isNotDisabled|186457", "doorsDoor, $isNotDisabled|186457", "doorsMix, $isNotDisabled|186457", "Caves", "cavesPool" ],
 		"access_rules": [
+			"doorsPanel, Caves Swamp Shortcut (Panel)",
 			"Caves",
 			"Caves Swamp Shortcut"
 		],
@@ -2205,8 +2213,11 @@
 
 	{
 		"name": "Jungle Monastery Garden Shortcut",
-		"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-		"access_rules": [ "River Shortcut to Monastery Garden" ],
+		"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+		"access_rules": [
+			"doorsPanel, Jungle Monastery Garden Shortcut (Panel)",
+			"River Shortcut to Monastery Garden"
+		],
 		"sections": [
 			{
 				"name": "Door"

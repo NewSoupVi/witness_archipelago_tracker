@@ -155,7 +155,8 @@ doors = {
 		"Quarry Elevator (Panel)"},
 	["Quarry Stoneworks Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)", 
 		"Quarry Stoneworks Elevator Controls (Panel)", 
-		"Quarry Door to Stoneworks (Panel)"},
+		"Quarry Door to Stoneworks (Panel)",
+		"Quarry Stoneworks Stairs (Panel)"},
 	["Quarry Boathouse Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)", 
 		"Quarry Boathouse Ramp Horizontal Control (Panel)", 
 		"Quarry Boathouse Hook Control (Panel)"},
@@ -166,6 +167,8 @@ doors = {
 	["Monastery Panels"] = {"Monastery Entry Door Left (Panel)", 
 		"Monastery Entry Door Right (Panel)", 
 		"Monastery Shutter Control (Panel)"},
+	["Jungle Panels"] = {"Jungle Monastery Garden Shortcut (Panel)",
+		"Jungle Popup Wall (Panel)"},
 	["Town Church & RGB House Panels"] = {"Town Door to RGB House (Panel)", 
 		"Town RGB Room RGB Control (Panel)", 
 		"Town Door to Church (Panel)"},
@@ -191,14 +194,17 @@ doors = {
 		"Swamp Sliding Bridge (Panel)", 
 		"Swamp Rotating Bridge (Panel)", 
 		"Swamp Long Bridge (Panel)", 
-		"Swamp Maze Control (Panel)"},
+		"Swamp Maze Control (Panel)",
+		"Swamp Laser Shortcut (Panel)"},
 	["Mountain Panels"] = {"Mountain Floor 1 Bridge (Panel)", 
 		"Mountain Floor 2 Bridge Near (Panel)", 
 		"Mountain Floor 2 Bridge Far (Panel)", 
 		"Mountain Elevator (Panel)"},
 	["Caves Panels"] = {"Caves Entry (Panel)", 
 		"Challenge Entry (Panel)", 
-		"Caves Elevator (Panel)"},
+		"Caves Elevator (Panel)",
+		"Caves Mountain Shortcut (Panel)",
+		"Caves Swamp Shortcut (Panel)"},
 	["Tunnels Panels"] = {"Tunnels Entry (Panel)", 
 		"Tunnels Town Shortcut (Panel)"}
 }
@@ -451,6 +457,9 @@ function onClear(slot_data)
 		elseif k == "victory_condition" then
 			obj.Active = true
 			obj.CurrentStage = value
+		elseif k == "panel_hunt_postgame" then
+            obj.Active = true
+            obj.CurrentStage = value
 		elseif k == "puzzle_randomization" then
 			obj.CurrentStage = value
 			require(getLogicFile())

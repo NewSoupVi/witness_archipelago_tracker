@@ -190,6 +190,11 @@
 				"img": "images/randomizationVanilla.png",
 				"codes": "randomizationVanilla",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/varietyText.png",
+				"codes": "Variety",
+				"inherit_codes": false
 			}
 		]
 	},
@@ -264,6 +269,31 @@
 		"loop": "true"
 	},
 	{
+		"name": "Panel Hunt Postgame",
+		"codes": "PanelHuntPostgame",
+		"type": "progressive",
+		"allow_disabled": false,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"codes": "nothingOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "shortboxOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "longboxOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "everythingOff",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Shuffle Symbols",
 		"img": "images/SymbolsText.png",
 		"codes": "Symbols",
@@ -295,6 +325,11 @@
 			{
 				"img": "images/mountainLong.png",
 				"codes": "Long",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/panelHunt.png",
+				"codes": "panelHunt",
 				"inherit_codes": false
 			}
 		]
@@ -348,6 +383,11 @@
 			{
 				"img": "images/mountainLong.png",
 				"codes": "hiddenLongGoal",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/panelHunt.png",
+				"codes": "hiddenPanelHunt",
 				"inherit_codes": false
 			}
 		]
@@ -751,6 +791,13 @@
 		"codes": "Quarry Stoneworks Elevator Controls (Panel)"
 	},
 	{
+		"name": "Quarry Stoneworks Stairs (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Quarry Stoneworks Stairs (Panel)"
+	},
+	{
 		"name": "Quarry Boathouse Ramp Height Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -947,6 +994,13 @@
 		"codes": "Jungle Popup Wall (Panel)"
 	},
 	{
+		"name": "Jungle Monastery Garden Shortcut (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Jungle Monastery Garden Shortcut (Panel)"
+	},
+	{
 		"name": "Bunker Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -1017,6 +1071,13 @@
 		"codes": "Swamp Maze Control (Panel)"
 	},
 	{
+		"name": "Swamp Laser Shortcut (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Swamp Laser Shortcut (Panel)"
+	},
+	{
 		"name": "Mountain Floor 1 Bridge (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -1057,6 +1118,20 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Caves Elevator (Panel)"
+	},
+	{
+		"name": "Caves Mountain Shortcut (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Caves Mountain Shortcut (Panel)"
+	},
+	{
+		"name": "Caves Swamp Shortcut (Panel)",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Caves Swamp Shortcut (Panel)"
 	},
 	{
 		"name": "Challenge Entry (Panel)",
@@ -1190,6 +1265,13 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"codes": "Monastery Panels"
+	},
+	{
+		"name": "Jungle Panels",
+		"type": "toggle",
+		"loop": "true",
+		"img": "images/Door.png",
+		"codes": "Jungle Panels"
 	},
 	{
 		"name": "Town Church & RGB House Panels",

@@ -10,8 +10,16 @@ function isNotVanilla()
 	return (1 - Tracker:ProviderCountForCode("randomizationVanilla") > 0)
 end
 
-function isNotNormal()
-	return (1 - Tracker:ProviderCountForCode("randomizationSigma") > 0)
+function isNotVariety()
+    return (1 - Tracker:ProviderCountForCode("Variety") > 0)
+end
+
+function isNotNormalNorVariety()
+	return (1 - (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety")) > 0)
+end
+
+function isNormalOrVariety()
+	return (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety") > 0)
 end
 
 function isNotExpert()
@@ -38,8 +46,12 @@ function isNotDeathLink()
 	return (1 - Tracker:ProviderCountForCode("deathLink") > 0)
 end
 
+function isNotPanelHunt()
+	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
+end
+
 function longBoxWithoutMountainEntry()
-	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7)
+	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7 or Tracker:ProviderCountForCode("panelHunt") + Tracker:ProviderCountForCode("shortboxOff") > 1 and Tracker:ProviderCountForCode("boxLong") > 7)
 end
 
 function showPartialSidesOrSolvableSide(side)
@@ -184,7 +196,9 @@ function getLogicFile()
 		return "WitnessLogicExpert"
 	elseif Tracker:ProviderCountForCode("randomizationSigma") == 1 then
 		return "WitnessLogic"
-	else
+	elseif Tracker:ProviderCountForCode("Variety") == 1 then
+		return "WitnessLogicVariety"
+	elseif Tracker:ProviderCountForCode("randomizationVanilla") == 1 then
 		return "WitnessLogicVanilla"
 	end
 end
