@@ -290,6 +290,31 @@
 		"loop": "true"
 	},
 	{
+		"name": "Panel Hunt Postgame",
+		"codes": "PanelHuntPostgame",
+		"type": "progressive",
+		"allow_disabled": false,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"codes": "nothingOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "shortboxOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "longboxOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "everythingOff",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Shuffle Symbols",
 		"img": "images/SymbolsText.png",
 		"codes": "Symbols",

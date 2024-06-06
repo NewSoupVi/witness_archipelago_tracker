@@ -651,7 +651,7 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"@Places/mountainLayer1"
+					"@Places/mountainLayer1Bridge"
 				]
 			}
 		],
