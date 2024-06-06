@@ -654,7 +654,7 @@
 				"name": "Audio Log",
 				"access_rules": [
 					"$Warp|Mountain Floor 1 Back",
-					"@Places/mountainLayer1"
+					"@Places/mountainLayer1Bridge"
 				]
 			}
 		],
