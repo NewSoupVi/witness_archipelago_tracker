@@ -263,7 +263,6 @@
 	},
 	{
 		"name": "Shuffle Postgame",
-		"img": "images/Postgame.png",
 		"codes": "postGame",
 		"type": "toggle",
 		"loop": "true"
