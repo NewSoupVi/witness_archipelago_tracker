@@ -3095,15 +3095,14 @@
 
 	{
 		"name": "Theater Exit Area",
-		"access_rules": [ "@Places/theater" ],
 		"sections": [
 			{
 				"name": "Exit Door Left",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Exit (Panel), $canSolve|158249" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Exit (Panel), $canSolve|158249, @Places/theater" ]
 			},
 			{
 				"name": "Exit Door Right",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Exit (Panel), $canSolve|158250" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Theater Exit (Panel), $canSolve|158250, @Places/theater" ]
 			}
 
 		],
@@ -3158,17 +3157,16 @@
 
 	{
 		"name": "Jungle Sound Waves Puzzles",
-		"access_rules": [ "@Places/overworld" ],
 		"sections": [
 			{
 				"name": "Set 1",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158252-158254" ]
+				"access_rules": [ "$canSolve|158252-158254, @Places/overworld" ]
 			},
 			{
 				"name": "Set 2",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158255-158258" ]
+				"access_rules": [ "$canSolve|158255-158258, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -4166,10 +4164,10 @@
 
 	{
 		"name": "Swamp Laser",
-		"access_rules": [ "@Places/swampLaser" ],
 		"sections": [
 			{
-				"name": "Laser"
+				"name": "Laser",
+				"access_rules": [ "@Places/swampLaser" ]
 			},
 			{
 				"name": "Laser Activation",
@@ -4178,7 +4176,7 @@
 			},
 			{
 				"name": "Shortcut Panels",
-				"access_rules": [ "$canSolve|158341-158342" ]
+				"access_rules": [ "$canSolve|158341-158342, @Places/swampLaser" ]
 			}
 		],
 		"map_locations": [
@@ -5758,7 +5756,6 @@
 
 	{
 		"name": "Mountain Challenge Area",
-		"access_rules": [ "@Places/challenge" ],
 		"sections": [
 			{
 				"name": "Challenge Water EP",
@@ -5771,12 +5768,12 @@
 			{
 				"name": "Challenge Vault",
 				"visibility_rules": [ "Vaults, Short, $isNotDisabled|13675", "Vaults, Long, $isNotDisabled|13675", "Vaults, wonkavator, $isNotDisabled|13675" ],
-				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge" ]
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge, @Places/challenge" ]
 			},
 			{
 				"name": "Victory!",
 				"visibility_rules": [ "challengeBox" ],
-				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge" ]
+				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge, @Places/challenge" ]
 			}
 		],
 		"map_locations": [
