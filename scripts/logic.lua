@@ -2,6 +2,10 @@ function isNotDoors()
 	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsPanel") > 0) 
 end
 
+function isNotPanels()
+	return (Tracker:ProviderCountForCode("doorsNo") + Tracker:ProviderCountForCode("doorsDoor") > 0)
+end
+
 function isNotPanelsOnly()
 	return (1 - Tracker:ProviderCountForCode("doorsPanel") > 0)
 end
