@@ -162,8 +162,7 @@
 			{
 				"name": "quarryBoathouseUpstairsFront",
 				"access_rules": [
-					"doorsNo, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, @Places/quarry",
-					"doorsDoor, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, @Places/quarry",
+					"$isNotPanels, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, @Places/quarry",
 					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, @Places/quarry",
 					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsBack"
 				]
