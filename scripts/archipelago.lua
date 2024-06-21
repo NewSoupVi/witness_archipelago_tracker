@@ -289,6 +289,13 @@ function setReply(key, val, old)
 			end
 		end
 
+	elseif(key:sub(1, 23) == "WitnessHuntEntityStatus" and val) then
+		local count = 0
+		for _, _ in pairs(val) do
+			count = count + 1
+		end
+		Tracker:FindObjectForCode("panelHunt").AcquiredCount = count
+
     elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 	        for k, _ in pairs(val) do
@@ -337,6 +344,9 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
+
+	Archipelago:Get({"WitnessHuntEntityStatus" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessHuntEntityStatus" .. Archipelago.PlayerNumber})
 
 	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
@@ -487,6 +497,11 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("Tutorial 2 Extra").Active,
 	Tracker:FindObjectForCode("Desert 1 Extra").Active,
 	Tracker:FindObjectForCode("Desert 2 Extra").Active = getExtraLocations()
+
+	if Tracker:FindObjectForCode("hiddenGoal").CurrentStage == 4 then
+		Tracker:FindObjectForCode("Goal").CurrentStage = 5
+	end
+
 	-- Dummy item state change so canSolve works properly with 0 items received
 	Tracker:FindObjectForCode("Brain").Active = true
 	Tracker:FindObjectForCode("Brain").Active = false
