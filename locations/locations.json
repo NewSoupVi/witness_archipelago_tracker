@@ -5784,7 +5784,7 @@
 			},
 			{
 				"name": "Challenge Vault",
-				"visibility_rules": [ "Vaults, Short, $isNotDisabled|13675", "Vaults, Long, $isNotDisabled|13675", "Vaults, wonkavator, $isNotDisabled|13675" ],
+				"visibility_rules": [ "Vaults, Short, $isNotDisabled|13675", "Vaults, Long, $isNotDisabled|13675", "Vaults, wonkavator, $isNotDisabled|13675", "Vaults, panelHunt, $isNotDisabled|13675" ],
 				"access_rules": [ "$canSolve|158499-158517, $laserBox|challenge, @Places/challenge" ]
 			},
 			{
