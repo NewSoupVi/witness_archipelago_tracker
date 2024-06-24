@@ -54,6 +54,10 @@ function isNotPanelHunt()
 	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
 end
 
+function canPanelHuntGoal()
+    return Tracker:FindObjectForCode("panelHunt").AcquiredCount >= Tracker:FindObjectForCode("panelHuntRequired").AcquiredCount
+end
+
 function longBoxWithoutMountainEntry()
 	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7 or Tracker:ProviderCountForCode("panelHunt") + Tracker:ProviderCountForCode("shortboxOff") > 1 and Tracker:ProviderCountForCode("boxLong") > 7)
 end

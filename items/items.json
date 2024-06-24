@@ -290,7 +290,7 @@
 	},
 	{
 		"name": "Panel Hunt Postgame",
-		"codes": "PanelHuntPostgame",
+		"codes": "panelHuntPostgame",
 		"type": "progressive",
 		"allow_disabled": false,
 		"initial_stage_idx": 0,
@@ -312,6 +312,11 @@
 				"inherit_codes": false
 			}
 		]
+	},
+	{
+		"name": "Panel Hunt Required",
+		"codes": "panelHuntRequired",
+		"type": "toggle"
 	},
 	{
 		"name": "Shuffle Symbols",

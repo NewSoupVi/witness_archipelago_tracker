@@ -478,6 +478,8 @@ function onClear(slot_data)
 		elseif k == "panel_hunt_postgame" then
             obj.Active = true
             obj.CurrentStage = value
+        elseif k == "panel_hunt_required_absolute" then
+            obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
 			obj.CurrentStage = value
 			require(getLogicFile())
