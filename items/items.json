@@ -221,7 +221,7 @@
 		"name": "Shuffle Dog",
 		"codes": "shuffleDog",
 		"type": "progressive",
-		"allow_disabled": true,
+		"allow_disabled": false,
 		"initial_stage_idx": 0,
 		"stages": [
 			{

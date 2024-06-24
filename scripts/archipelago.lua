@@ -646,6 +646,19 @@ function onLocation(location_id, location_name)
 	if location_name == "Mountaintop River Shape" then
 		showGoal()
 	end
+
+	if location_name == "Town Pet the Dog" then
+		local dog_1 = Tracker:FindObjectForCode("@Doggie/")
+		if dog_1 then
+			dog_1.AvailableChestCount = dog_1.AvailableChestCount - 1
+		end
+
+		local dog_2 = Tracker:FindObjectForCode("@Town/Pet the Dog")
+		if dog_2 then
+			dog_2.AvailableChestCount = dog_2.AvailableChestCount - 1
+		end
+	end
+
 end
 
 
