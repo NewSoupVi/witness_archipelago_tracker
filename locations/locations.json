@@ -1593,9 +1593,9 @@
 				"name": "Door to Quarry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158187, @Places/shadowsFirstSet",
-					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/overworld",
-					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/quarry"
+					"$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158187, @Places/shadowsFirstSet",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158187, [@Places/shadowsFirstSet], @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158187, [@Places/shadowsFirstSet], @Places/quarry"
 				]
 			}
 		],
