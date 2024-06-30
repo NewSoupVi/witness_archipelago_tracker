@@ -555,7 +555,8 @@
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
 					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
-					"showSnipes, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
+					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]",
+					"showSnipes, $isNotDeathLink, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
 				]
 			},
 			{
@@ -1475,7 +1476,7 @@
 				"name": "Door 2",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
+					"showSnipes, $isNotDoors, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
 				]
 			},
 			{
