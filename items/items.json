@@ -331,6 +331,8 @@
 		"type": "progressive",
 		"allow_disabled": true,
 		"initial_stage_idx": 0,
+		"overlay_background": "#000000",
+		"overlay_font_size": 16,
 		"stages": [
 			{
 				"img": "images/wonkavator.png",
