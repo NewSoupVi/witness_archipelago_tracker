@@ -296,7 +296,7 @@ function setReply(key, val, old)
 		end
 		Tracker:FindObjectForCode("panelHunt").AcquiredCount = count
 
-    elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
+	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
 				local loc = LOCATION_MAPPING[tonumber(k)][1]
@@ -476,10 +476,10 @@ function onClear(slot_data)
 			obj.Active = true
 			obj.CurrentStage = value
 		elseif k == "panel_hunt_postgame" then
-            obj.Active = true
-            obj.CurrentStage = value
-        elseif k == "panel_hunt_required_absolute" then
-            obj.AcquiredCount = value
+			obj.Active = true
+			obj.CurrentStage = value
+		elseif k == "panel_hunt_required_absolute" then
+			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
 			obj.CurrentStage = value
 			require(getLogicFile())
@@ -494,8 +494,8 @@ function onClear(slot_data)
 			for num, id in pairs(value) do
 				disabledDict[id] = true
 			end
-        elseif k == "shuffle_dog" then
-            obj.CurrentStage = value
+		elseif k == "shuffle_dog" then
+			obj.CurrentStage = value
 		else
 			obj.Active = value
 		end

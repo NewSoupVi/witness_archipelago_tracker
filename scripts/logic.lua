@@ -15,7 +15,7 @@ function isNotVanilla()
 end
 
 function isNotVariety()
-    return (1 - Tracker:ProviderCountForCode("Variety") > 0)
+	return (1 - Tracker:ProviderCountForCode("Variety") > 0)
 end
 
 function isNotNormalNorVariety()
@@ -55,7 +55,7 @@ function isNotPanelHunt()
 end
 
 function canPanelHuntGoal()
-    return Tracker:FindObjectForCode("panelHunt").AcquiredCount >= Tracker:FindObjectForCode("panelHuntRequired").AcquiredCount
+	return Tracker:FindObjectForCode("panelHunt").AcquiredCount >= Tracker:FindObjectForCode("panelHuntRequired").AcquiredCount
 end
 
 function longBoxWithoutMountainEntry()
