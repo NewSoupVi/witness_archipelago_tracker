@@ -26,7 +26,7 @@
 				"name": "Panel Hunt: Victory!",
 				"visibility_rules": [ "panelHunt" ],
 				"access_rules": [
-					"{}"
+					"$canPanelHuntGoal"
 				]
 			},
 			{
@@ -564,7 +564,8 @@
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
 					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
-					"showSnipes, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
+					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]",
+					"showSnipes, $isNotDeathLink, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
 				]
 			},
 			{
@@ -1409,8 +1410,11 @@
 				"visibility_rules": [ "eps, $isNotDisabled|2137" ],
 				"access_rules": [
 					"$isDisabled|2137",
-					"$isNotPanels, @Quarry Boathouse/Intro Right, @Quarry Boathouse/Intro Left, $canSolve|158148, @Quarry Boathouse/Front Row, $canSolve|158154, $hasObeliskKey|Quarry",
-					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, @Quarry Boathouse/Front Row, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
+					"doorsNo, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, @Quarry Boathouse/Front Row, $canSolve|158154, $hasObeliskKey|Quarry",
+					"doorsNo, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier, $canSolve|158154, $hasObeliskKey|Quarry",
+					"doorsDoor, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $canSolve|158154, $hasObeliskKey|Quarry",
+					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
+					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, @Quarry Boathouse/Front Row, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
 					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
 				]
 			}
@@ -1482,7 +1486,7 @@
 				"name": "Door 2",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/quarryBetweenEntries",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
+					"showSnipes, $isNotDoors, $isNotPanelsOnlyOrHasPanel|Quarry Entry 2 (Panel), $canSolve|158119, @Places/overworld, [@Places/quarryBetweenEntries]"
 				]
 			},
 			{
@@ -1592,9 +1596,9 @@
 				"name": "Door to Quarry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$canSolve|158187, @Places/shadowsFirstSet",
-					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/overworld",
-					"showSnipes, $canSolve|158187, [@Places/shadowsFirstSet], @Places/quarry"
+					"$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158187, @Places/shadowsFirstSet",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158187, [@Places/shadowsFirstSet], @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158187, [@Places/shadowsFirstSet], @Places/quarry"
 				]
 			}
 		],
@@ -2419,10 +2423,11 @@
 	},
 
 	{
-		"name": "Town",
+		"name": "Doggie",
 		"sections": [
 			{
-				"name": "Pet the Dog",
+				"name": "",
+				"visibility_rules": ["dogSkip"],
 				"access_rules": [ "@Places/overworld" ]
 			}
 		],
@@ -2432,6 +2437,25 @@
 				"x": 509,
 				"y": 1126,
 				"size": 15
+			}
+		]
+	},
+
+	{
+		"name": "Town",
+		"sections": [
+			{
+				"name": "Pet the Dog",
+				"visibility_rules": ["dogOn"],
+				"access_rules": [ "@Places/overworld" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "fullmap",
+				"x": 509,
+				"y": 1126,
+				"size": 30
 			}
 		]
 	},

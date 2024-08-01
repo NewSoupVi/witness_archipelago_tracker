@@ -1,5 +1,5 @@
 ITEM_MAPPING = {
-    [158000] = {"Dots", "toggle"},
+	[158000] = {"Dots", "toggle"},
 	[158001] = {"ColoredDots", "toggle"},
 	[158005] = {"SoundDots", "toggle"},
 	[158010] = {"Symmetry", "toggle"},
@@ -16,13 +16,14 @@ ITEM_MAPPING = {
 	[158200] = {"ProgressiveDots", "progressive"},
 	[158210] = {"ProgressiveSymmetry", "progressive"},
 	[158260] = {"ProgressiveStars", "progressive"},
+
 	[158500] = {"SpeedBoost", "consumable"},
 	[158510] = {"Skip", "consumable"},
 	[158600] = {"Slowness", "consumable"},
 	[158610] = {"PowerSurge", "consumable"},
 	[158615] = {"Bonk", "consumable"},
 	[158650] = {"Brain", "toggle"},
-	
+
 	[159100] = {"Glass Factory Entry (Panel)", "toggle"},
 	[159101] = {"Tutorial Outpost Entry (Panel)", "toggle"},
 	[159102] = {"Tutorial Outpost Exit (Panel)", "toggle"},
@@ -207,7 +208,6 @@ ITEM_MAPPING = {
 	[159867] = {"Theater Walkway Door to Desert Elevator Room", "toggle"},
 	[159870] = {"Theater Walkway Door to Town", "toggle"},
 
-
 	[159903] = {"Outside Tutorial Outpost Doors", "toggle"},
 	[159904] = {"Glass Factory Doors", "toggle"},
 	[159906] = {"Symmetry Island Doors", "toggle"},
@@ -279,7 +279,8 @@ SETTINGS_MAPPING = {
 	["disable_non_randomized_puzzles"] = "Unrandomized",
 	["shuffle_vault_boxes"] = "Vaults",
 	["shuffle_postgame"] = "Postgame",
-	["panel_hunt_postgame"] = "PanelHuntPostgame",
+	["panel_hunt_postgame"] = "panelHuntPostgame",
+	["panel_hunt_required_absolute"] = "panelHuntRequired",
 	["shuffle_discarded_panels"] = "Discarded",
 	["early_caves"] = "cavesSetting",
 	["shuffle_doors"] = "doorsSetting",
@@ -297,4 +298,5 @@ SETTINGS_MAPPING = {
 	["elevators_come_to_you"] = "autoElevators",
 	["disabled_entities"] = "disabledPanels",
 	["death_link"] = "deathLink",
+	["shuffle_dog"] = "shuffleDog",
 }

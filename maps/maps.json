@@ -1,20 +1,20 @@
 [
-  {
-    "name": "fullmap",
-    "location_size": 30,
-    "location_border_thickness": 5,
-    "img": "images/WitnessMapWithUnderground.png"
-  },
-  {
-    "name": "doors",
-    "location_size": 15,
-    "location_border_thickness": 5,
-    "img": "images/WitnessMapMetro.png"
-  },
-  {
-    "name": "audioLogs",
-    "location_size": 15,
-    "location_border_thickness": 5,
-    "img": "images/WitnessMapWithUnderground.png"
-  }
+	{
+		"name": "fullmap",
+		"location_size": 30,
+		"location_border_thickness": 5,
+		"img": "images/WitnessMapWithUnderground.png"
+	},
+	{
+		"name": "doors",
+		"location_size": 15,
+		"location_border_thickness": 5,
+		"img": "images/WitnessMapMetro.png"
+	},
+	{
+		"name": "audioLogs",
+		"location_size": 15,
+		"location_border_thickness": 5,
+		"img": "images/WitnessMapWithUnderground.png"
+	}
 ]
