@@ -3597,7 +3597,10 @@
 			{
 				"name": "Intro Back",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158269-158277, @Places/bunkerAntechamber" ]
+				"access_rules": [
+					"$canSolve|158269-158277, @Places/bunkerAntechamber",
+					"showSnipes, $canSolve|158269-158277, @Places/bunkerElevatorRoom"
+				]
 			},
 			{
 				"name": "Tinted Glass Puzzles",
