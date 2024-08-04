@@ -3630,7 +3630,10 @@
 			{
 				"name": "Intro Back",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158269-158277, @Places/bunkerAntechamber" ]
+				"access_rules": [
+					"$canSolve|158269-158277, @Places/bunkerAntechamber",
+					"showSnipes, $canSolve|158269-158277, @Places/bunkerElevatorRoom"
+				]
 			},
 			{
 				"name": "Tinted Glass Puzzles",
@@ -5835,7 +5838,8 @@
 				"visibility_rules": [ "$isNotDisabled|14772" ],
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, @Places/challenge",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Challenge Door to Theater Walkway, @Places/theater"
+					"showSnipes, $isNotVariety, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Challenge Door to Theater Walkway, @Places/theater",
+					"showSnipes, $isNotExpert, $isNotVariety, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Challenge Door to Theater Walkway, @Places/overworld"
 				]
 			}
 		],
