@@ -16,16 +16,16 @@ currentlyClearing = false
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
 doors = {
-	["Outside Tutorial Outpost Doors"] = {"Outside Tutorial Optional Door", 
-		"Outside Tutorial Outpost Entry Door", 
-		"Outside Tutorial Outpost Exit Door"},
-	["Glass Factory Doors"] = {"Glass Factory Entry Door", 
-		"Glass Factory Back Wall"},
-	["Symmetry Island Doors"] = {"Symmetry Island Lower Door", 
-		"Symmetry Island Upper Door"},
-	["Orchard Gates"] = {"Orchard Middle Gate", 
-		"Orchard Final Gate"},
-	["Desert Doors"] = {"Desert Door to Light Room", 
+	["Outside Tutorial Outpost Doors"] = {"Outside Tutorial Outpost Path (Door)",
+		"Outside Tutorial Outpost Entry (Door)",
+		"Outside Tutorial Outpost Exit (Door)"},
+	["Glass Factory Doors"] = {"Glass Factory Entry (Door)",
+		"Glass Factory Back Wall (Door)"},
+	["Symmetry Island Doors"] = {"Symmetry Island Lower (Door)",
+		"Symmetry Island Upper (Door)"},
+	["Orchard Gates"] = {"Orchard First Gate (Door)",
+		"Orchard Second Gate (Door)"},
+	["Desert Doors"] = {"Desert Light Room Entry (Door)",
 		"Desert Door to Pond Room", 
 		"Desert Door to Flood Room", 
 		"Desert Door to Elevator Room", 
@@ -116,7 +116,7 @@ doors = {
 	["Desert Control Panels"] = {"Desert Surface 3 Control (Panel)",
 		"Desert Surface 8 Control (Panel)",
 		"Desert Flood Room Flood Controls (Panel)", 
-		"Desert Light Room Light Control (Panel)",
+		"Desert Light Control (Panel)",
 		"Desert Elevator Room Hexagonal Control (Panel)"},
 	["Quarry Stoneworks Control Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)", 
 		"Quarry Stoneworks Elevator Controls (Panel)"},
@@ -139,13 +139,13 @@ doors = {
 		"Mountain Floor 2 Bridge Far (Panel)", 
 		"Mountain Elevator (Panel)", 
 		"Caves Elevator (Panel)"},
-	["Symmetry Island Panels"] = {"Door to Symmetry Island Lower (Panel)", 
-		"Door to Symmetry Island Upper (Panel)"},
-	["Tutorial Outpost Panels"] = {"Tutorial Outpost Entry (Panel)", 
-		"Tutorial Outpost Exit (Panel)"},
+	["Symmetry Island Panels"] = {"Symmetry Island Lower (Panel)",
+		"Symmetry Island Upper (Panel)"},
+	["Outside Tutorial Outpost Panels"] = {"Outside Tutorial Outpost Entry (Panel)",
+		"Outside Tutorial Outpost Exit (Panel)"},
 			["Desert Panels"] = {"Desert Surface 3 Control (Panel)",
 		"Desert Surface 8 Control (Panel)",
-		"Desert Light Room Light Control (Panel)",
+		"Desert Light Control (Panel)",
 		"Desert Flood Room Flood Controls (Panel)",
 		"Desert Light Room Entry (Panel)",
 		"Desert Flood Room Entry (Panel)",
@@ -334,7 +334,6 @@ function onClear(slot_data)
 	end
 
 	for AudioLogID, _ in pairs(AUDIO_LOG_DATASTORAGE_IDS) do
-
 		Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
 		Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
 	end
@@ -716,6 +715,16 @@ function clearJunkChanged()
 	end
 end
 
+function loc_checked(section)
+	local locID = section.FullID
+	itemName = string.match(locID, "[^/]+/([^/]+)")
+	for _, item in ipairs(PATH_IDS) do
+		if itemName == item then
+			Tracker:FindObjectForCode(itemName).Active = Tracker:FindObjectForCode("@"..locID).AvailableChestCount == 0
+		end
+	end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -728,3 +737,5 @@ ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", random
 ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
 ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
+
+ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", function(section) loc_checked(section) end)

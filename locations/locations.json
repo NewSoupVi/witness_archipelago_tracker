@@ -218,11 +218,11 @@
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Outside Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath" ]
 			},
 			{
 				"name": "Exit Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Outside Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior" ]
 			}
 		],
 		"map_locations": [
@@ -587,12 +587,12 @@
 				"name": "Lower Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
-					"Door to Symmetry Island Lower (Panel), $canSolve|158040, @Places/overworld"
+					"Symmetry Island Lower (Panel), $canSolve|158040, @Places/overworld"
 				]
 			},
 			{
 				"name": "Upper Entry Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Door to Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7" ]
 			},
 			{
 				"name": "Glass Factory Black Line EP",
@@ -927,11 +927,11 @@
 			{
 				"name": "Light Room Puzzles",
 				"access_rules": [
-					"$canSolve|158087-158090, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"$canSolve|158087-158090, $hasPanel|Desert Light Control (Panel), @Places/desertFloodLight",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]"
 				]
 			},
 			{
@@ -3033,7 +3033,7 @@
 					"@Theater/Tutorial Video, Theater Walkway Door to Town, $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
-					"showSnipes, @Theater/Tutorial Video, Desert Door to Light Room, Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town"
 				]

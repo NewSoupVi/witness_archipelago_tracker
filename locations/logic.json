@@ -18,62 +18,62 @@
 				"name": "tutorialOutpostPath",
 				"access_rules": [
 					"$isNotDoors, @Tutorial Gate/Back Left, @Places/overworld",
-					"Outside Tutorial Optional Door, @Places/overworld",
-					"Outside Tutorial Outpost Entry Door, @Places/tutorialOutpostInterior"
+					"Outside Tutorial Outpost Path (Door), @Places/overworld",
+					"Outside Tutorial Outpost Entry (Door), @Places/tutorialOutpostInterior"
 				]
 			},
 			{
 				"name": "tutorialOutpostInterior",
 				"access_rules": [
 					"$isNotDoors, @Tutorial Outpost/Entry Panel, @Places/tutorialOutpostPath",
-					"Outside Tutorial Outpost Entry Door, @Places/tutorialOutpostPath",
-					"Outside Tutorial Outpost Exit Door, @Places/overworld"
+					"Outside Tutorial Outpost Entry (Door), @Places/tutorialOutpostPath",
+					"Outside Tutorial Outpost Exit (Door), @Places/overworld"
 				]
 			},
 			{
 				"name": "orchardInner",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Orchard/Apple Trees Outside Gate, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Outside Gate, [Orchard Middle Gate], @Places/overworld",
-					"Orchard Middle Gate, @Places/overworld",
-					"Orchard Final Gate, @Places/orchardHeart"
+					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Outside Gate, [Orchard First Gate (Door)], @Places/overworld",
+					"Orchard First Gate (Door), @Places/overworld",
+					"Orchard Second Gate (Door), @Places/orchardHeart"
 				]
 			},
 			{
 				"name": "orchardHeart",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Orchard/Apple Trees Inside Gate, @Places/orchardInner",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Inside Gate, [Orchard Final Gate], @Places/orchardInner",
-					"Orchard Final Gate, @Places/orchardInner"
+					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Inside Gate, [Orchard Second Gate (Door)], @Places/orchardInner",
+					"Orchard Second Gate (Door), @Places/orchardInner"
 				]
 			},
 			{
 				"name": "glassFactory",
 				"access_rules": [
 					"$isNotDoors, @Outside Glass Factory/Entry Panel, @Places/overworld",
-					"Glass Factory Entry Door, @Places/overworld",
-					"Glass Factory Back Wall, @Places/ocean"
+					"Glass Factory Entry (Door), @Places/overworld",
+					"Glass Factory Back Wall (Door), @Places/ocean"
 				]
 			},
 			{
 				"name": "symmetryOuter",
 				"access_rules": [
 					"$isNotDoors, @Symmetry Island/Lower Entry Panel, @Places/overworld",
-					"Symmetry Island Lower Door, @Places/overworld"
+					"Symmetry Island Lower (Door), @Places/overworld"
 				]
 			},
 			{
 				"name": "symmetryInner",
 				"access_rules": [
 					"$isNotDoors, @Symmetry Island/Upper Entry Panel, @Places/symmetryOuter",
-					"Symmetry Island Upper Door, @Places/symmetryOuter"
+					"Symmetry Island Upper (Door), @Places/symmetryOuter"
 				]
 			},
 			{
 				"name": "desertFloodLight",
 				"access_rules": [
 					"$isNotDoors, @Desert/Light Room Entry Panel, @Places/overworld",
-					"Desert Door to Light Room, @Places/overworld",
+					"Desert Light Room Entry (Door), @Places/overworld",
 					"Desert Door to Pond Room, @Places/desertPond"
 				]
 			},

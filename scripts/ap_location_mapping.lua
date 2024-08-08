@@ -626,3 +626,27 @@ LASER_DATASTORAGE_ID = {
 	[97381] = {"@Monastery/Laser Activation",{6, "@Desert Discard/Discard", "@Treehouse Right Side/Green Bridge Discard"}},
 	[98739] = {"@Shadows Laser/Laser Activation",{4, "@Shipwreck Discard/Discard", "@Town Red Rooftop/Discard"}}
 }
+
+PATH_IDS = {
+	"Tutorial Main Gate",
+	"Orchard First Gate (Door)",
+	"Orchard Second Gate (Door)",
+	"Outside Tutorial Outpost Exit (Panel)",
+	"Outside Tutorial Outpost Exit (Door)",
+	"Outside Tutorial Outpost Path (Door)",
+	"Outside Tutorial Outpost Entry (Panel)",
+	"Outside Tutorial Outpost Entry (Door)",
+	"Glass Factory Entry (Panel)",
+	"Glass Factory Entry (Door)",
+	"Glass Factory Back Wall (Door)",
+	"Symmetry Island Lower (Panel)",
+	"Symmetry Island Lower (Door)",
+	"Symmetry Island Upper (Panel)",
+	"Symmetry Island Upper (Door)",
+	"Desert Surface 3 Control (Panel)",
+	"Desert Surface 8 Control (Panel)",
+	"Desert Light Room Entry (Panel)",
+	"Desert Light Room Entry (Door)",
+	"Desert Light Control (Panel)"
+
+}
