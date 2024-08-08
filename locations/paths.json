@@ -400,7 +400,7 @@
 				],
 				"sections": [
 					{
-						"name": "Desert Doors"
+						"name": "Desert Doors & Elevator"
 					}
 				],
 				"map_locations": [
@@ -434,12 +434,15 @@
 			},
 
 			{
-				"name": "Desert Pond Room Entry",
+				"name": "Desert Pond Room Entry (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Desert Door to Pond Room" ],
+				"access_rules": [
+					"{Desert Pond Room Entry (Door)}",
+					"Desert Pond Room Entry (Door), @Places/desertFloodLight"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Desert Doors & Elevator"
 					}
 				],
 				"map_locations": [
@@ -452,15 +455,17 @@
 			},
 
 			{
-				"name": "Desert Flood Room Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Desert Flood Room Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Desert Flood Room Entry (Panel)",
-					"Desert Door to Flood Room"
+					"{Desert Flood Room Entry (Panel)}",
+					"$canSolve|158096, Desert Flood Room Entry (Panel), @Places/desertPond",
+					"{Desert Flood Room Entry (Door)}",
+					"Desert Flood Room Entry (Door), @Places/desertPond"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Desert Panels"
 					}
 				],
 				"map_locations": [
@@ -473,12 +478,36 @@
 			},
 
 			{
-				"name": "Desert Flood Controls",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Desert Flood Room Flood Controls (Panel)" ],
+				"name": "Desert Flood Room Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Desert Flood Room Entry (Door)}",
+					"Desert Flood Room Entry (Door), @Places/desertPond"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Desert Doors & Elevator"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 78,
+						"y": 74
+					}
+				]
+			},
+
+			{
+				"name": "Desert Flood Controls (Panel)",
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
+				"access_rules": [
+					"{Desert Flood Controls (Panel)}",
+					"$canSolve|158097, Desert Flood Controls (Panel), @Places/desertFlood"
+				],
+				"sections": [
+					{
+						"name": "Desert Panels"
 					}
 				],
 				"map_locations": [
@@ -491,12 +520,15 @@
 			},
 
 			{
-				"name": "Desert Elevator Room Entry",
+				"name": "Desert Elevator Room Entry (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Desert Door to Elevator Room" ],
+				"access_rules": [
+					"{Desert Elevator Room Entry (Door)}",
+					"Desert Elevator Room Entry (Door), @Places/desertFlood"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Desert Doors & Elevator"
 					}
 				],
 				"map_locations": [
@@ -509,12 +541,15 @@
 			},
 
 			{
-				"name": "Desert Elevator Room Hexagonal Control",
+				"name": "Desert Elevator Room Hexagonal Control (Panel)",
 				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Desert Elevator Room Hexagonal Control (Panel)" ],
+				"access_rules": [
+					"{Desert Elevator Room Hexagonal Control (Panel)}",
+					"$canSolve|158113, Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Desert Panels"
 					}
 				],
 				"map_locations": [
@@ -527,12 +562,15 @@
 			},
 
 			{
-				"name": "Desert Elevator",
+				"name": "Desert Elevator (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Desert Elevator Door" ],
+				"access_rules": [
+					"{Desert Elevator (Door)}",
+					"Desert Elevator (Door), @Places/desertLaser"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Desert Doors & Elevator"
 					}
 				],
 				"map_locations": [
@@ -545,15 +583,19 @@
 			},
 
 			{
-				"name": "Quarry Elevator",
+				"name": "Quarry Elevator Control (Panel)",
 				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"Quarry Elevator (Panel)",
-					"doorsDoor, @Quarry Stoneworks/Control Room Right"
+					"{Quarry Elevator Control (Panel)}",
+					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
+					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
+					"showSnipes, [autoElevators], $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
+					"doorsDoor, autoElevators, $canSolve|158120, @Quarry Stoneworks/Control Room Right, @Places/overworld",
+					"showSnipes, doorsDoors [autoElevators], $canSolve|158120, @Quarry Stoneworks/Control Room Right, @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Elevator"
+						"name": "Quarry Outside Panels"
 					}
 				],
 				"map_locations": [

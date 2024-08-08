@@ -780,12 +780,12 @@
 		"codes": "Desert Elevator Room Hexagonal Control (Panel)"
 	},
 	{
-		"name": "Desert Flood Room Flood Controls (Panel)",
+		"name": "Desert Flood Controls (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Desert Flood Room Flood Controls (Panel)"
+		"codes": "Desert Flood Controls (Panel)"
 	},
 	{
 		"name": "Quarry Entry 1 (Panel)",
@@ -804,12 +804,12 @@
 		"codes": "Quarry Entry 2 (Panel)"
 	},
 	{
-		"name": "Quarry Elevator (Panel)",
+		"name": "Quarry Elevator Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Elevator (Panel)"
+		"codes": "Quarry Elevator Control (Panel)"
 	},
 	{
 		"name": "Quarry Door to Stoneworks (Panel)",
@@ -1557,36 +1557,36 @@
 		"codes": "Desert Light Room Entry (Door)"
 	},
 	{
-		"name": "Desert Door to Pond Room",
+		"name": "Desert Pond Room Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Desert Door to Pond Room"
+		"codes": "Desert Pond Room Entry (Door)"
 	},
 	{
-		"name": "Desert Door to Flood Room",
+		"name": "Desert Flood Room Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Desert Door to Flood Room"
+		"codes": "Desert Flood Room Entry (Door)"
 	},
 	{
-		"name": "Desert Door to Elevator Room",
+		"name": "Desert Elevator Room Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Desert Door to Elevator Room"
+		"codes": "Desert Elevator Room Entry (Door)"
 	},
 	{
-		"name": "Desert Elevator Door",
+		"name": "Desert Elevator (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Desert Elevator Door"
+		"codes": "Desert Elevator (Door)"
 	},
 	{
 		"name": "Quarry Main Entry 1",

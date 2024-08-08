@@ -647,6 +647,14 @@ PATH_IDS = {
 	"Desert Surface 8 Control (Panel)",
 	"Desert Light Room Entry (Panel)",
 	"Desert Light Room Entry (Door)",
-	"Desert Light Control (Panel)"
+	"Desert Light Control (Panel)",
+	"Desert Pond Room Entry (Door)",
+	"Desert Flood Room Entry (Panel)",
+	"Desert Flood Room Entry (Door)",
+	"Desert Flood Controls (Panel)",
+	"Desert Elevator Room Entry (Door)",
+	"Desert Elevator Room Hexagonal Control (Panel)",
+	"Desert Elevator (Door)",
+	"Quarry Elevator Control (Panel)"
 
 }

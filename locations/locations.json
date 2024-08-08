@@ -949,9 +949,9 @@
 			{
 				"name": "Flood Room Puzzles",
 				"access_rules": [
-					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
-					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
+					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Controls (Panel)",
+					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]"
 				]
 			},
 			{
@@ -970,7 +970,7 @@
 				"name": "Laser",
 				"access_rules": [
 					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
-					"showSnipes, Desert Elevator Door, [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
+					"showSnipes, Desert Elevator (Door), [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
 				]
 			},
 			{
@@ -999,7 +999,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210936" ],
 				"access_rules": [
 					"$isDisabled|210936",
-					"@Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel), $hasObeliskKey|Desert"
+					"@Places/desertFlood, $hasPanel|Desert Flood Controls (Panel), $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -1008,7 +1008,7 @@
 				"access_rules": [
 					"$isDisabled|14267",
 					"$isNotDoors, @Desert/Laser, $hasObeliskKey|Desert",
-					"Desert Elevator Door, @Places/desertLaser, $hasObeliskKey|Desert"
+					"Desert Elevator (Door), @Places/desertLaser, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -1129,8 +1129,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|97465" ],
 				"access_rules": [
 					"$isDisabled|97465",
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry",
-					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry"
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry",
+					"Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -3033,7 +3033,7 @@
 					"@Theater/Tutorial Video, Theater Walkway Door to Town, $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
-					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Pond Room Entry (Door), Desert Flood Room Entry (Door), Desert Elevator Room Entry (Door), Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town"
 				]

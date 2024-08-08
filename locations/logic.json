@@ -74,31 +74,31 @@
 				"access_rules": [
 					"$isNotDoors, @Desert/Light Room Entry Panel, @Places/overworld",
 					"Desert Light Room Entry (Door), @Places/overworld",
-					"Desert Door to Pond Room, @Places/desertPond"
+					"Desert Pond Room Entry (Door), @Places/desertPond"
 				]
 			},
 			{
 				"name": "desertPond",
 				"access_rules": [
 					"$isNotDoors, @Desert/Light Room Puzzles, @Places/desertFloodLight",
-					"Desert Door to Pond Room, @Places/desertFloodLight",
-					"Desert Door to Flood Room, @Places/desertFlood"
+					"Desert Pond Room Entry (Door), @Places/desertFloodLight",
+					"Desert Flood Room Entry (Door), @Places/desertFlood"
 				]
 			},
 			{
 				"name": "desertFlood",
 				"access_rules": [
 					"$isNotDoors, @Desert/Flood Room Entry Panel, @Places/desertPond",
-					"Desert Door to Flood Room, @Places/desertPond",
-					"Desert Door to Elevator Room, @Places/desertLaser"
+					"Desert Flood Room Entry (Door), @Places/desertPond",
+					"Desert Elevator Room Entry (Door), @Places/desertLaser"
 				]
 			},
 			{
 				"name": "desertLaser",
 				"access_rules": [
 					"$isNotDoors, @Desert/Flood Room Puzzles, @Places/desertFlood",
-					"Desert Door to Elevator Room, @Places/desertFlood",
-					"Desert Elevator Door, @Places/tunnelsDesertElevator"
+					"Desert Elevator Room Entry (Door), @Places/desertFlood",
+					"Desert Elevator (Door), @Places/tunnelsDesertElevator"
 				]
 			},
 			{
@@ -120,10 +120,10 @@
 					"showSnipes, $isNotDoors, @Places/shadowsFirstSet",
 					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
 					"showSnipes, $isNotDoors, [Shadows Barrier to Quarry], @Places/shadowsFirstSet",
-					"autoElevators, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
-					"autoElevators, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
+					"autoElevators, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
+					"showSnipes, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
+					"autoElevators, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
+					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
 					"Quarry Main Entry 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, @Quarry Entrance/Door 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, @Places/quarryStoneworks",
@@ -738,7 +738,7 @@
 				"name": "tunnelsDesertElevator",
 				"access_rules": [
 					"$isNotDoors, @Desert/Laser, @Places/desertLaser",
-					"Desert Elevator Door, @Places/desertLaser",
+					"Desert Elevator (Door), @Places/desertLaser",
 					"$isNotDoors, @Tunnels Exit to Desert/Desert Shortcut Panel, @Places/tunnels",
 					"Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
 				]
