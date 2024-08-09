@@ -1148,12 +1148,12 @@
 		"codes": "Swamp Long Bridge (Panel)"
 	},
 	{
-		"name": "Swamp Maze Control (Panel)",
+		"name": "Swamp Maze Controls (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Maze Control (Panel)"
+		"codes": "Swamp Maze Controls (Panel)"
 	},
 	{
 		"name": "Swamp Laser Shortcut (Panel)",
@@ -1164,36 +1164,36 @@
 		"codes": "Swamp Laser Shortcut (Panel)"
 	},
 	{
-		"name": "Mountain Floor 1 Bridge (Panel)",
+		"name": "Mountain Floor 1 Light Bridge (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Mountain Floor 1 Bridge (Panel)"
+		"codes": "Mountain Floor 1 Light Bridge (Panel)"
 	},
 	{
-		"name": "Mountain Floor 2 Bridge Near (Panel)",
+		"name": "Mountain Floor 2 Light Bridge Near (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Mountain Floor 2 Bridge Near (Panel)"
+		"codes": "Mountain Floor 2 Light Bridge Near (Panel)"
 	},
 	{
-		"name": "Mountain Floor 2 Bridge Far (Panel)",
+		"name": "Mountain Floor 2 Light Bridge Far (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Mountain Floor 2 Bridge Far (Panel)"
+		"codes": "Mountain Floor 2 Light Bridge Far (Panel)"
 	},
 	{
-		"name": "Mountain Elevator (Panel)",
+		"name": "Mountain Floor 2 Elevator Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Mountain Elevator (Panel)"
+		"codes": "Mountain Floor 2 Elevator Control (Panel)"
 	},
 	{
 		"name": "Caves Entry (Panel)",
@@ -1204,12 +1204,12 @@
 		"codes": "Caves Entry (Panel)"
 	},
 	{
-		"name": "Caves Elevator (Panel)",
+		"name": "Caves Elevator Controls (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Caves Elevator (Panel)"
+		"codes": "Caves Elevator Controls (Panel)"
 	},
 	{
 		"name": "Caves Mountain Shortcut (Panel)",
@@ -2005,84 +2005,84 @@
 		"codes": "Bunker Door to Elevator"
 	},
 	{
-		"name": "Swamp Entry Door",
+		"name": "Swamp Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Entry Door"
+		"codes": "Swamp Entry (Door)"
 	},
 	{
-		"name": "Swamp Door to Broken Shapers",
+		"name": "Swamp Between Bridges First Door",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Door to Broken Shapers"
+		"codes": "Swamp Between Bridges First Door"
 	},
 	{
-		"name": "Swamp Platform Shortcut Door",
+		"name": "Swamp Platform Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Platform Shortcut Door"
+		"codes": "Swamp Platform Shortcut (Door)"
 	},
 	{
-		"name": "Swamp Cyan Water Pump",
+		"name": "Swamp Cyan Water Pump (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Cyan Water Pump"
+		"codes": "Swamp Cyan Water Pump (Door)"
 	},
 	{
-		"name": "Swamp Door to Rotated Shapers",
+		"name": "Swamp Between Bridges Second Door",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Door to Rotated Shapers"
+		"codes": "Swamp Between Bridges Second Door"
 	},
 	{
-		"name": "Swamp Red Water Pump",
+		"name": "Swamp Red Water Pump (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Red Water Pump"
+		"codes": "Swamp Red Water Pump (Door)"
 	},
 	{
-		"name": "Swamp Red Underwater Exit",
+		"name": "Swamp Red Underwater Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Red Underwater Exit"
+		"codes": "Swamp Red Underwater Exit (Door)"
 	},
 	{
-		"name": "Swamp Blue Water Pump",
+		"name": "Swamp Blue Water Pump (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Blue Water Pump"
+		"codes": "Swamp Blue Water Pump (Door)"
 	},
 	{
-		"name": "Swamp Purple Water Pump",
+		"name": "Swamp Purple Water Pump (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Purple Water Pump"
+		"codes": "Swamp Purple Water Pump (Door)"
 	},
 	{
-		"name": "Swamp Near Laser Shortcut",
+		"name": "Swamp Laser Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Near Laser Shortcut"
+		"codes": "Swamp Laser Shortcut (Door)"
 	},
 	{
 		"name": "Treehouse First (Door)",
@@ -2125,68 +2125,68 @@
 		"codes": "Treehouse Laser House Entry (Door)"
 	},
 	{
-		"name": "Inside Mountain First Layer Exit Door",
+		"name": "Mountain Floor 1 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain First Layer Exit Door"
+		"codes": "Mountain Floor 1 Exit (Door)"
 	},
 	{
-		"name": "Inside Mountain Second Layer Staircase Near",
+		"name": "Mountain Floor 2 Staircase Near (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Second Layer Staircase Near"
+		"codes": "Mountain Floor 2 Staircase Near (Door)"
 	},
 	{
-		"name": "Inside Mountain Second Layer Exit Door",
+		"name": "Mountain Floor 2 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Second Layer Exit Door"
+		"codes": "Mountain Floor 2 Exit (Door)"
 	},
 	{
-		"name": "Inside Mountain Second Layer Staircase Far",
+		"name": "Mountain Floor 2 Staircase Far (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Second Layer Staircase Far"
+		"codes": "Mountain Floor 2 Staircase Far (Door)"
 	},
 	{
-		"name": "Inside Mountain Giant Puzzle Exit Door",
+		"name": "Mountain Bottom Floor Giant Puzzle Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Giant Puzzle Exit Door"
+		"codes": "Mountain Bottom Floor Giant Puzzle Exit (Door)"
 	},
 	{
-		"name": "Inside Mountain Door to Final Room",
+		"name": "Mountain Bottom Floor Pillars Room Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Door to Final Room"
+		"codes": "Mountain Bottom Floor Pillars Room Entry (Door)"
 	},
 	{
-		"name": "Inside Mountain Bottom Layer Rock",
+		"name": "Mountain Bottom Floor Rock (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Bottom Layer Rock"
+		"codes": "Mountain Bottom Floor Rock (Door)"
 	},
 	{
-		"name": "Inside Mountain Door to Secret Area",
+		"name": "Caves Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Mountain Door to Secret Area"
+		"codes": "Caves Entry (Door)"
 	},
 	{
 		"name": "Caves Pillar Door",
@@ -2197,60 +2197,60 @@
 		"codes": "Caves Pillar Door"
 	},
 	{
-		"name": "Caves Swamp Shortcut",
+		"name": "Caves Swamp Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Caves Swamp Shortcut"
+		"codes": "Caves Swamp Shortcut (Door)"
 	},
 	{
-		"name": "Caves Mountain Shortcut",
+		"name": "Caves Mountain Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Caves Mountain Shortcut"
+		"codes": "Caves Mountain Shortcut (Door)"
 	},
 	{
-		"name": "Challenge Entry Door",
+		"name": "Challenge Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Challenge Entry Door"
+		"codes": "Challenge Entry (Door)"
 	},
 	{
-		"name": "Challenge Door to Theater Walkway",
+		"name": "Tunnels Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Challenge Door to Theater Walkway"
+		"codes": "Tunnels Entry (Door)"
 	},
 	{
-		"name": "Theater Walkway Door to Back of Theater",
+		"name": "Tunnels Theater Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Theater Walkway Door to Back of Theater"
+		"codes": "Tunnels Theater Shortcut (Door)"
 	},
 	{
-		"name": "Theater Walkway Door to Desert Elevator Room",
+		"name": "Tunnels Desert Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Theater Walkway Door to Desert Elevator Room"
+		"codes": "Tunnels Desert Shortcut (Door)"
 	},
 	{
-		"name": "Theater Walkway Door to Town",
+		"name": "Tunnels Town Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Theater Walkway Door to Town"
+		"codes": "Tunnels Town Shortcut (Door)"
 	},
 
 	{

@@ -346,7 +346,7 @@
 				"name": "swampEntry",
 				"access_rules": [
 					"$isNotDoors, @Swamp Entry Area/Entry Panel, @Places/overworld",
-					"Swamp Entry Door, @Places/overworld",
+					"Swamp Entry (Door), @Places/overworld",
 					"$hasPanel|Swamp Sliding Bridge (Panel), $canSolve|158302, @Places/swampPlatform"
 				]
 			},
@@ -354,16 +354,16 @@
 				"name": "swampPlatform",
 				"access_rules": [
 					"$hasPanel|Swamp Sliding Bridge (Panel), $canSolve|158302, @Places/swampEntry",
-					"Swamp Door to Broken Shapers, @Places/swampBroken",
-					"Swamp Platform Shortcut Door, @Places/swampBack"
+					"Swamp Between Bridges First Door, @Places/swampBroken",
+					"Swamp Platform Shortcut (Door), @Places/swampBack"
 				]
 			},
 			{
 				"name": "swampBroken",
 				"access_rules": [
 					"$isNotDoors, @Swamp Platform Area/Platform Set, @Places/swampPlatform",
-					"Swamp Door to Broken Shapers, @Places/swampPlatform",
-					"Swamp Door to Rotated Shapers, @Places/swampRotated"
+					"Swamp Between Bridges First Door, @Places/swampPlatform",
+					"Swamp Between Bridges Second Door, @Places/swampRotated"
 				]
 			},
 			{
@@ -371,8 +371,8 @@
 				"access_rules": [
 					"$isNotDoors, @Swamp Platform Area/Between Bridges Near Row, @Places/swampBroken",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
-					"Swamp Door to Rotated Shapers, @Places/swampBroken",
-					"Swamp Red Water Pump, @Places/swampRed"
+					"Swamp Between Bridges Second Door, @Places/swampBroken",
+					"Swamp Red Water Pump (Door), @Places/swampRed"
 				]
 			},
 			{
@@ -381,7 +381,7 @@
 					"@Places/ocean",
 					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
 					"$isNotDoors, @Swamp Platform Area/Shortcut Panels, @Places/swampPlatform",
-					"Swamp Platform Shortcut Door, @Places/swampPlatform",
+					"Swamp Platform Shortcut (Door), @Places/swampPlatform",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
 					"@Places/swampPurple"
 				]
@@ -396,44 +396,44 @@
 				"name": "swampPurpleUnderwater",
 				"access_rules": [
 					"$isNotDoors, @Swamp Near Boat/Beyond Rotating Bridge, @Places/swampPurple",
-					"Swamp Purple Water Pump, @Places/swampPurple"
+					"Swamp Purple Water Pump (Door), @Places/swampPurple"
 				]
 			},
 			{
 				"name": "swampBlue",
 				"access_rules": [
 					"$isNotDoors, @Swamp Near Boat/Beyond Rotating Bridge, @Places/swampBack",
-					"Swamp Blue Water Pump, @Places/swampBack"
+					"Swamp Blue Water Pump (Door), @Places/swampBack"
 				]
 			},
 			{
 				"name": "swampCyan",
 				"access_rules": [
 					"$isNotDoors, @Swamp Blue Underwater Room/Blue Underwater, @Places/swampPlatform",
-					"Swamp Cyan Water Pump, @Places/swampPlatform"
+					"Swamp Cyan Water Pump (Door), @Places/swampPlatform"
 				]
 			},
 			{
 				"name": "swampRed",
 				"access_rules": [
 					"$isNotDoors, @Swamp Cyan Underwater Room/Cyan Underwater, @Places/swampRotated",
-					"Swamp Red Water Pump, @Places/swampRotated",
-					"Swamp Red Underwater Exit, @Places/swampMaze"
+					"Swamp Red Water Pump (Door), @Places/swampRotated",
+					"Swamp Red Underwater Exit (Door), @Places/swampMaze"
 				]
 			},
 			{
 				"name": "swampMaze",
 				"access_rules": [
 					"$isNotDoors, @Swamp Red Underwater Room/Red Underwater, @Places/swampRed",
-					"Swamp Red Underwater Exit, @Places/swampRed",
-					"showSnipes, $hasPanel|Swamp Maze Control (Panel), $canSolve|158340, @Places/swampLaser, [Swamp Red Underwater Exit], [@Places/swampRed]"
+					"Swamp Red Underwater Exit (Door), @Places/swampRed",
+					"showSnipes, $hasPanel|Swamp Maze Controls (Panel), $canSolve|158340, @Places/swampLaser, [Swamp Red Underwater Exit (Door)], [@Places/swampRed]"
 				]
 			},
 			{
 				"name": "swampLaser",
 				"access_rules": [
-					"$hasPanel|Swamp Maze Control (Panel), $canSolve|158340, @Places/swampMaze",
-					"Swamp Near Laser Shortcut, @Places/overworld"
+					"$hasPanel|Swamp Maze Controls (Panel), $canSolve|158340, @Places/swampMaze",
+					"Swamp Laser Shortcut (Door), @Places/overworld"
 				]
 			},
 			{
@@ -442,7 +442,7 @@
 					"$isNotDoors, @Windmill/Entry Panel, @Places/overworld",
 					"Town Windmill Door, @Places/overworld",
 					"$isNotDoors, @Tunnels Exit to Theater/Theater Shortcut Panel, @Places/tunnels",
-					"Theater Walkway Door to Back of Theater, @Places/tunnels",
+					"Tunnels Theater Shortcut (Door), @Places/tunnels",
 					"Theater Entry Door, @Places/theater"
 				]
 			},
@@ -634,7 +634,7 @@
 				"name": "mountainLayer2Near",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Layer 1 Trash/Angled Inside Trash, @Inside Mountain Layer 1 Left/Left Row, @Inside Mountain Layer 1 Right/Right Row, @Inside Mountain Layer 1 Back/Back Row, @Places/mountainLayer1Bridge",
-					"Inside Mountain First Layer Exit Door, @Places/mountainLayer1Bridge"
+					"Mountain Floor 1 Exit (Door), @Places/mountainLayer1Bridge"
 				]
 			},
 			{
@@ -647,45 +647,45 @@
 				"name": "mountain2FrontStairs",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Layer 2 Near/Near Row, @Places/mountainLayer2Near",
-					"Inside Mountain Second Layer Staircase Near, @Places/mountainLayer2Near"
+					"Mountain Floor 2 Staircase Near (Door), @Places/mountainLayer2Near"
 				]
 			},
 			{
 				"name": "mountain2BackStairs",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Layer 2 Far/Far Row, @Places/mountainLayer2Far",
-					"Inside Mountain Second Layer Staircase Far, @Places/mountainLayer2Far"
+					"Mountain Floor 2 Staircase Far (Door), @Places/mountainLayer2Far"
 				]
 			},
 			{
 				"name": "mountainElevator",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountain2BackStairs",
-					"Inside Mountain Second Layer Exit Door, @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountain2BackStairs",
-					"$hasPanel|Mountain Elevator (Panel), $canSolve|158439, @Places/mountainMeta"
+					"Mountain Floor 2 Exit (Door), @Inside Mountain Layer 2 Orange/Orange Light Bridge, @Places/mountain2BackStairs",
+					"$hasPanel|Mountain Floor 2 Elevator Control (Panel), $canSolve|158439, @Places/mountainMeta"
 				]
 			},
 			{
 				"name": "mountainMeta",
 				"access_rules": [
-					"$hasPanel|Mountain Elevator (Panel), $canSolve|158439, @Places/mountainElevator",
-					"Inside Mountain Giant Puzzle Exit Door, @Places/mountainPenultimateRoom"
+					"$hasPanel|Mountain Floor 2 Elevator Control (Panel), $canSolve|158439, @Places/mountainElevator",
+					"Mountain Bottom Floor Giant Puzzle Exit (Door), @Places/mountainPenultimateRoom"
 				]
 			},
 			{
 				"name": "mountainPenultimateRoom",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Bottom Layer Giant/Giant Puzzle, @Places/mountainMeta",
-					"Inside Mountain Giant Puzzle Exit Door, @Places/mountainMeta",
+					"Mountain Bottom Floor Giant Puzzle Exit (Door), @Places/mountainMeta",
 					"$isNotDoors, @Caves Entrance/Caves Rock Timer Panel, @Places/cavesAntechamber",
-					"Inside Mountain Bottom Layer Rock, @Places/cavesAntechamber"
+					"Mountain Bottom Floor Rock (Door), @Places/cavesAntechamber"
 				]
 			},
 			{
 				"name": "mountainFinalRoom",
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Bottom Layer Door Left/Door to Final Room Left Panel, @Inside Mountain Bottom Layer Door Right/Door to Final Room Right Panel, @Places/mountainPenultimateRoom",
-					"Inside Mountain Door to Final Room, @Places/mountainPenultimateRoom"
+					"Mountain Bottom Floor Pillars Room Entry (Door), @Places/mountainPenultimateRoom"
 				]
 			},
 			{
@@ -693,18 +693,18 @@
 				"access_rules": [
 					"$isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom, $isNotDisabled|98210",
 					"showSnipes, $isNotDoors, @Inside Mountain Bottom Layer Statue/Statue Discard, @Places/mountainPenultimateRoom, disabledPanelsEnabled, [$isNotDisabled|98210]",
-					"Inside Mountain Bottom Layer Rock, @Places/mountainPenultimateRoom",
-					"Inside Mountain Door to Secret Area, @Places/caves"
+					"Mountain Bottom Floor Rock (Door), @Places/mountainPenultimateRoom",
+					"Caves Entry (Door), @Places/caves"
 				]
 			},
 			{
 				"name": "caves",
 				"access_rules": [
-					"Caves Mountain Shortcut, @Places/overworld",
-					"Caves Swamp Shortcut, @Places/overworld",
+					"Caves Mountain Shortcut (Door), @Places/overworld",
+					"Caves Swamp Shortcut (Door), @Places/overworld",
 					"Caves, @Places/overworld",
 					"$isNotDoors, @Caves Entrance/Entry Panel, @Places/cavesAntechamber",
-					"Inside Mountain Door to Secret Area, @Places/cavesAntechamber",
+					"Caves Entry (Door), @Places/cavesAntechamber",
 					"Caves Pillar Door, @Places/challengeAntechamber"
 				]
 			},
@@ -713,25 +713,25 @@
 				"access_rules": [
 					"$isNotDoors, @Caves Lone Pillar/Pillar, @Places/caves",
 					"Caves Pillar Door, @Places/caves",
-					"Challenge Entry Door, @Places/challenge"
+					"Challenge Entry (Door), @Places/challenge"
 				]
 			},
 			{
 				"name": "challenge",
 				"access_rules": [
 					"$isNotDoors, @Challenge Entry Area/Entry Panel, @Places/challengeAntechamber",
-					"Challenge Entry Door, @Places/challengeAntechamber",
-					"Challenge Door to Theater Walkway, @Places/tunnels"
+					"Challenge Entry (Door), @Places/challengeAntechamber",
+					"Tunnels Entry (Door), @Places/tunnels"
 				]
 			},
 			{
 				"name": "tunnels",
 				"access_rules": [
 					"$isNotDoors, @Tunnels Entry/Door to Tunnels Panel, @Places/challenge",
-					"Challenge Door to Theater Walkway, @Places/challenge",
-					"Theater Walkway Door to Town, @Places/overworld",
-					"Theater Walkway Door to Desert Elevator Room, @Places/tunnelsDesertElevator",
-					"Theater Walkway Door to Back of Theater, @Places/windmill"
+					"Tunnels Entry (Door), @Places/challenge",
+					"Tunnels Town Shortcut (Door), @Places/overworld",
+					"Tunnels Desert Shortcut (Door), @Places/tunnelsDesertElevator",
+					"Tunnels Theater Shortcut (Door), @Places/windmill"
 				]
 			},
 			{
@@ -740,7 +740,7 @@
 					"$isNotDoors, @Desert/Laser, @Places/desertLaser",
 					"Desert Elevator (Door), @Places/desertLaser",
 					"$isNotDoors, @Tunnels Exit to Desert/Desert Shortcut Panel, @Places/tunnels",
-					"Theater Walkway Door to Desert Elevator Room, @Places/tunnels"
+					"Tunnels Desert Shortcut (Door), @Places/tunnels"
 				]
 			}
 		]

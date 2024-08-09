@@ -1694,15 +1694,17 @@
 			},
 
 			{
-				"name": "Swamp Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Swamp Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Swamp Entry (Panel)",
-					"Swamp Entry Door"
+					"{Swamp Entry (Panel)}",
+					"$canSolve|158287, Swamp Entry (Panel), @Places/overworld",
+					"{Swamp Entry (Door)}",
+					"Swamp Entry (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Panels"
 					}
 				],
 				"map_locations": [
@@ -1715,12 +1717,37 @@
 			},
 
 			{
-				"name": "Swamp Sliding Bridge Panel",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Swamp Sliding Bridge (Panel)" ],
+				"name": "Swamp Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Swamp Entry (Door)}",
+					"Swamp Entry (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Swamp Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 928,
+						"y": 649
+					}
+				]
+			},
+
+			{
+				"name": "Swamp Sliding Bridge (Panel)",
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
+				"access_rules": [
+					"{Swamp Sliding Bridge (Panel)}",
+					"$canSolve|158302, Swamp Sliding Bridge (Panel), @Places/swampEntry",
+					"$canSolve|158302, Swamp Sliding Bridge (Panel), @Places/swampCyan"
+				],
+				"sections": [
+					{
+						"name": "Swamp Panels"
 					}
 				],
 				"map_locations": [
@@ -1733,12 +1760,15 @@
 			},
 
 			{
-				"name": "Swamp Cyan Water Pump",
+				"name": "Swamp Cyan Water Pump (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Cyan Water Pump" ],
+				"access_rules": [
+					"{Swamp Cyan Water Pump (Door)}",
+					"Swamp Cyan Water Pump (Door), @Places/swampPlatform"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Water Pumps"
 					}
 				],
 				"map_locations": [
@@ -1751,12 +1781,15 @@
 			},
 
 			{
-				"name": "Swamp Red Water Pump",
+				"name": "Swamp Red Water Pump (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Red Water Pump" ],
+				"access_rules": [
+					"{Swamp Red Water Pump (Door)}",
+					"Swamp Red Water Pump (Door), @Places/swampRotated"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Water Pumps"
 					}
 				],
 				"map_locations": [
@@ -1769,12 +1802,15 @@
 			},
 
 			{
-				"name": "Swamp Blue Water Pump",
+				"name": "Swamp Blue Water Pump (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Blue Water Pump" ],
+				"access_rules": [
+					"{Swamp Blue Water Pump (Door)}",
+					"Swamp Blue Water Pump (Door), @Places/swampBack"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Water Pumps"
 					}
 				],
 				"map_locations": [
@@ -1787,12 +1823,15 @@
 			},
 
 			{
-				"name": "Swamp Purple Water Pump",
+				"name": "Swamp Purple Water Pump (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Purple Water Pump" ],
+				"access_rules": [
+					"{Swamp Purple Water Pump (Door)}",
+					"Swamp Purple Water Pump (Door), @Places/swampPurple"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Water Pumps"
 					}
 				],
 				"map_locations": [
@@ -1807,10 +1846,13 @@
 			{
 				"name": "Swamp Between Bridges First Door",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Door to Broken Shapers" ],
+				"access_rules": [
+					"{Swamp Between Bridges First Door}",
+					"Swamp Between Bridges First Door, @Places/swampBroken"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Doors"
 					}
 				],
 				"map_locations": [
@@ -1825,10 +1867,13 @@
 			{
 				"name": "Swamp Between Bridges Second Door",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Door to Rotated Shapers" ],
+				"access_rules": [
+					"{Swamp Between Bridges Second Door}",
+					"Swamp Between Bridges Second Door, @Places/swampRotated"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Doors"
 					}
 				],
 				"map_locations": [
@@ -1841,12 +1886,15 @@
 			},
 
 			{
-				"name": "Swamp Rotating Bridge Panel",
+				"name": "Swamp Rotating Bridge (Panel)",
 				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Swamp Rotating Bridge (Panel)" ],
+				"access_rules": [
+					"{Swamp Rotating Bridge (Panel)}",
+					"$canSolve|158327, Swamp Rotating Bridge (Panel), @Places/swampRotated"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Swamp Panels"
 					}
 				],
 				"map_locations": [
@@ -1859,15 +1907,38 @@
 			},
 
 			{
-				"name": "Swamp Platform Shortcut",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Swamp Platform Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Swamp Platform Shortcut (Panel)",
-					"Swamp Platform Shortcut Door"
+					"{Swamp Platform Shortcut (Panel)}",
+					"$canSolve|158317-158318, Swamp Platform Shortcut (Panel), @Places/swampPlatform",
+					"{Swamp Platform Shortcut (Door)}",
+					"Swamp Platform Shortcut (Door), @Places/swampPlatform"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Panels"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 1153,
+						"y": 533
+					}
+				]
+			},
+
+			{
+				"name": "Swamp Platform Shortcut",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Swamp Platform Shortcut (Door)}",
+					"Swamp Platform Shortcut (Door), @Places/swampPlatform"
+				],
+				"sections": [
+					{
+						"name": "Swamp Shortcuts"
 					}
 				],
 				"map_locations": [
@@ -1881,14 +1952,16 @@
 
 			{
 				"name": "Swamp Laser Shortcut",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Swamp Laser Shortcut (Panel)",
-					"Swamp Near Laser Shortcut"
+					"{Swamp Laser Shortcut (Panel)}",
+					"$canSolve|158341-158342, Swamp Laser Shortcut (Panel), @Places/swampLaser",
+					"{Swamp Laser Shortcut (Door)}",
+					"Swamp Laser Shortcut (Door), @Places/swampLaser"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Panels"
 					}
 				],
 				"map_locations": [
@@ -1901,12 +1974,36 @@
 			},
 
 			{
-				"name": "Swamp Red Underwater Exit",
+				"name": "Swamp Laser Shortcut",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Swamp Red Underwater Exit" ],
+				"access_rules": [
+					"{Swamp Laser Shortcut (Door)}",
+					"Swamp Laser Shortcut (Door), @Places/swampLaser"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Swamp Shortcuts"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 1024,
+						"y": 750
+					}
+				]
+			},
+
+			{
+				"name": "Swamp Red Underwater Exit (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Swamp Red Underwater Exit (Door)}",
+					"Swamp Red Underwater Exit (Door), @Places/swampRed"
+				],
+				"sections": [
+					{
+						"name": "Swamp Water Pumps"
 					}
 				],
 				"map_locations": [
@@ -1919,12 +2016,15 @@
 			},
 
 			{
-				"name": "Swamp Maze Control",
+				"name": "Swamp Maze Controls (Panel)",
 				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Swamp Maze Control (Panel)" ],
+				"access_rules": [
+					"{Swamp Maze Controls (Panel)}",
+					"$canSolve|158340, $canSolve|158112, Swamp Maze Controls (Panel), @Places/swampMaze"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Swamp Panels"
 					}
 				],
 				"map_locations": [
@@ -1937,12 +2037,15 @@
 			},
 
 			{
-				"name": "Swamp Long Bridge",
+				"name": "Swamp Long Bridge (Panel)",
 				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Swamp Long Bridge (Panel)" ],
+				"access_rules": [
+					"{Swamp Long Bridge (Panel)}",
+					"$canSolve|158339, Swamp Long Bridge (Panel), @Places/swampBack"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Swamp Panels"
 					}
 				],
 				"map_locations": [
@@ -1955,16 +2058,17 @@
 			},
 
 			{
-				"name": "Caves Mountain Shortcut",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|186175", "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
+				"name": "Caves Mountain Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|186175" ],
 				"access_rules": [
-					"doorsPanel, Caves Mountain Shortcut (Panel)",
-					"Caves",
-					"Caves Mountain Shortcut"
+					"{Caves Mountain Shortcut (Panel)}",
+					"$canSolve|158449, Caves Mountain Shortcut (Panel), @Places/caves",
+					"{Caves Mountain Shortcut (Door)}",
+					"Caves Mountain Shortcut (Door), @Places/caves"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Caves Panels"
 					}
 				],
 				"map_locations": [
@@ -1977,16 +2081,61 @@
 			},
 
 			{
-				"name": "Caves Swamp Shortcut",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|186457", "doorsDoor, $isNotDisabled|186457", "doorsMix, $isNotDisabled|186457", "Caves", "cavesPool" ],
+				"name": "Caves Mountain Shortcut (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
 				"access_rules": [
-					"doorsPanel, Caves Swamp Shortcut (Panel)",
 					"Caves",
-					"Caves Swamp Shortcut"
+					"{Caves Mountain Shortcut (Door)}",
+					"Caves Mountain Shortcut (Door), @Places/caves"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Caves Shortcuts"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 931,
+						"y": 870
+					}
+				]
+			},
+
+			{
+				"name": "Caves Swamp Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|186457" ],
+				"access_rules": [
+					"{Caves Swamp Shortcut (Panel)}",
+					"$canSolve|158450, Caves Swamp Shortcut (Panel), @Places/caves",
+					"{Caves Swamp Shortcut (Door)}",
+					"Caves Swamp Shortcut (Door), @Places/caves"
+				],
+				"sections": [
+					{
+						"name": "Caves Panels"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 990,
+						"y": 913
+					}
+				]
+			},
+
+			{
+				"name": "Caves Swamp Shortcut (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|186457", "doorsMix, $isNotDisabled|186457", "Caves", "cavesPool" ],
+				"access_rules": [
+					"Caves",
+					"{Caves Swamp Shortcut (Door)}",
+					"Caves Swamp Shortcut (Door), @Places/caves"
+				],
+				"sections": [
+					{
+						"name": "Caves Shortcuts"
 					}
 				],
 				"map_locations": [
@@ -2016,12 +2165,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 1 Light Bridge",
+				"name": "Mountain Floor 1 Light Bridge (Panel)",
 				"visibility_rules": [ "doorsPanel, $isNotDisabled|40505", "doorsMix, $isNotDisabled|40505" ],
-				"access_rules": [ "Mountain Floor 1 Bridge (Panel)" ],
+				"access_rules": [
+					"{Mountain Floor 1 Light Bridge (Panel)}",
+					"$canSolve|158408, Mountain Floor 1 Light Bridge (Panel), @Places/mountainLayer1"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Mountain Panels"
 					}
 				],
 				"map_locations": [
@@ -2034,12 +2186,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 1 Exit",
+				"name": "Mountain Floor 1 Exit (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|40532", "doorsMix, $isNotDisabled|40532" ],
-				"access_rules": [ "Inside Mountain First Layer Exit Door" ],
+				"access_rules": [
+					"{Mountain Floor 1 Exit (Door)}",
+					"Mountain Floor 1 Exit (Door), @Places/mountainLayer1Bridge"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Floor 1 & 2 Doors"
 					}
 				],
 				"map_locations": [
@@ -2052,12 +2207,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 2 Light Bridge Near",
+				"name": "Mountain Floor 2 Light Bridge Near (Panel)",
 				"visibility_rules": [ "doorsPanel, $isNotDisabled|40582", "doorsMix, $isNotDisabled|40582" ],
-				"access_rules": [ "Mountain Floor 2 Bridge Near (Panel)" ],
+				"access_rules": [
+					"{Mountain Floor 2 Light Bridge Near (Panel)}",
+					"$canSolve|158431, Mountain Floor 2 Light Bridge Near (Panel), @Places/mountain2FrontStairs"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Mountain Panels"
 					}
 				],
 				"map_locations": [
@@ -2070,12 +2228,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 2 Staircase Near",
+				"name": "Mountain Floor 2 Staircase Near (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|40955", "doorsMix, $isNotDisabled|40955" ],
-				"access_rules": [ "Inside Mountain Second Layer Staircase Near" ],
+				"access_rules": [
+					"{Mountain Floor 2 Staircase Near (Door)}",
+					"Mountain Floor 2 Staircase Near (Door), @Places/mountainLayer2Near"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Floor 1 & 2 Doors"
 					}
 				],
 				"map_locations": [
@@ -2088,12 +2249,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 2 Light Bridge Far",
+				"name": "Mountain Floor 2 Light Bridge Far (Panel)",
 				"visibility_rules": [ "doorsPanel, $isNotDisabled|40664", "doorsMix, $isNotDisabled|40664" ],
-				"access_rules": [ "Mountain Floor 2 Bridge Far (Panel)" ],
+				"access_rules": [
+					"{Mountain Floor 2 Light Bridge Far (Panel)}",
+					"$canSolve|158438, Mountain Floor 2 Light Bridge Far (Panel), @Places/mountain2BackStairs"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Mountain Panels"
 					}
 				],
 				"map_locations": [
@@ -2106,12 +2270,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 2 Staircase Far",
+				"name": "Mountain Floor 2 Staircase Far (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|40455", "doorsMix, $isNotDisabled|40455" ],
-				"access_rules": [ "Inside Mountain Second Layer Staircase Far" ],
+				"access_rules": [
+					"Mountain Floor 2 Staircase Far (Door)",
+					"Mountain Floor 2 Staircase Far (Door), @Places/mountainLayer2Far"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Floor 1 & 2 Doors"
 					}
 				],
 				"map_locations": [
@@ -2124,12 +2291,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 2 Exit",
+				"name": "Mountain Floor 2 Exit (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|40669", "doorsMix, $isNotDisabled|40669" ],
-				"access_rules": [ "Inside Mountain Second Layer Exit Door" ],
+				"access_rules": [
+					"{Mountain Floor 2 Exit (Door)}",
+					"Mountain Floor 2 Exit (Door), @Places/mountainElevator"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Floor 1 & 2 Doors"
 					}
 				],
 				"map_locations": [
@@ -2142,12 +2312,15 @@
 			},
 
 			{
-				"name": "Mountain Floor 2 Elevator",
+				"name": "Mountain Floor 2 Elevator Control (Panel)",
 				"visibility_rules": [ "doorsPanel, $isNotDisabled|40683", "doorsMix, $isNotDisabled|40683" ],
-				"access_rules": [ "Mountain Elevator (Panel)" ],
+				"access_rules": [
+					"{Mountain Floor 2 Elevator Control (Panel)}",
+					"$canSolve|158439, Mountain Floor 2 Elevator Control (Panel), @Places/mountainElevator"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Mountain Panels"
 					}
 				],
 				"map_locations": [
@@ -2160,12 +2333,15 @@
 			},
 
 			{
-				"name": "Mountain Bottom Floor Giant Puzzle Exit",
+				"name": "Mountain Bottom Floor Giant Puzzle Exit (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|40841", "doorsMix, $isNotDisabled|40841" ],
-				"access_rules": [ "Inside Mountain Giant Puzzle Exit Door" ],
+				"access_rules": [
+					"{Mountain Bottom Floor Giant Puzzle Exit (Door)}",
+					"Mountain Bottom Floor Giant Puzzle Exit (Door), @Places/mountainMeta"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Bottom Floor Doors"
 					}
 				],
 				"map_locations": [
@@ -2178,12 +2354,15 @@
 			},
 
 			{
-				"name": "Mountain Bottom Floor Pillars Room Entry",
+				"name": "Mountain Bottom Floor Pillars Room Entry (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|49473", "doorsMix, $isNotDisabled|49473" ],
-				"access_rules": [ "Inside Mountain Door to Final Room" ],
+				"access_rules": [
+					"{Mountain Bottom Floor Pillars Room Entry (Door)}",
+					"Mountain Bottom Floor Pillars Room Entry (Door), @Places/mountainPenultimateRoom"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Bottom Floor Doors"
 					}
 				],
 				"map_locations": [
@@ -2196,12 +2375,15 @@
 			},
 
 			{
-				"name": "Mountain Bottom Floor Rock",
+				"name": "Mountain Bottom Floor Rock (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|98099", "doorsMix, $isNotDisabled|98099" ],
-				"access_rules": [ "Inside Mountain Bottom Layer Rock" ],
+				"access_rules": [
+					"{Mountain Bottom Floor Rock (Door)}",
+					"Mountain Bottom Floor Rock (Door), @Places/mountainPenultimateRoom"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Mountain Bottom Floor Doors"
 					}
 				],
 				"map_locations": [
@@ -2214,15 +2396,17 @@
 			},
 
 			{
-				"name": "Caves Entry",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|4088", "doorsDoor, $isNotDisabled|186237", "doorsMix, $isNotDisabled|186237" ],
+				"name": "Caves Entry (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|4088" ],
 				"access_rules": [
-					"doorsPanel, Caves Entry (Panel)",
-					"Inside Mountain Door to Secret Area"
+					"{Caves Entry (Panel)}",
+					"$canSolve|158447, Caves Entry (Panel), @Places/cavesAntechamber",
+					"{Caves Entry (Door)}",
+					"Caves Entry (Door), @Places/cavesAntechamber"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Caves Panels"
 					}
 				],
 				"map_locations": [
@@ -2235,12 +2419,36 @@
 			},
 
 			{
-				"name": "Caves Elevator Control",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|210347", "doorsMix, $isNotDisabled|210347" ],
-				"access_rules": [ "Caves Elevator (Panel)" ],
+				"name": "Caves Entry (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|186237", "doorsMix, $isNotDisabled|186237" ],
+				"access_rules": [
+					"{Caves Entry (Door)}",
+					"Caves Entry (Door), @Places/cavesAntechamber"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Caves Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 1070,
+						"y": 1111
+					}
+				]
+			},
+
+			{
+				"name": "Caves Elevator Controls (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|210347", "doorsMix, $isNotDisabled|210347" ],
+				"access_rules": [
+					"{Caves Elevator Controls (Panel)}",
+					"$canSolve|158451-158453, Caves Elevator Controls (Panel), @Places/caves"
+				],
+				"sections": [
+					{
+						"name": "Caves Panels"
 					}
 				],
 				"map_locations": [
@@ -2254,15 +2462,17 @@
 			},
 
 			{
-				"name": "Challenge Entry",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|41326", "doorsDoor, $isNotDisabled|41370", "doorsMix, $isNotDisabled|41370" ],
+				"name": "Challenge Entry (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|41326" ],
 				"access_rules": [
-					"doorsPanel, Challenge Entry (Panel)",
-					"Challenge Entry Door"
+					"{Challenge Entry (Panel)}",
+					"$canSolve|158477, Challenge Entry (Panel), @Places/challengeAntechamber",
+					"{Challenge Entry (Door)}",
+					"Challenge Entry (Door), @Places/challengeAntechamber"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Caves Panels"
 					}
 				],
 				"map_locations": [
@@ -2275,12 +2485,36 @@
 			},
 
 			{
-				"name": "Caves Pillar",
-				"visibility_rules": [ "doorsDoor, $isNotDisabled|6565", "doorsMix, $isNotDisabled|6565" ],
-				"access_rules": [ "Caves Pillar Door" ],
+				"name": "Challenge Entry (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|41370", "doorsMix, $isNotDisabled|41370" ],
+				"access_rules": [
+					"{Challenge Entry (Door)}",
+					"Challenge Entry (Door), @Places/challengeAntechamber"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Caves Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 828,
+						"y": 867
+					}
+				]
+			},
+
+			{
+				"name": "Caves Pillar Door",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|6565", "doorsMix, $isNotDisabled|6565" ],
+				"access_rules": [
+					"{Caves Pillar Door}",
+					"Caves Pillar Door, @Places/caves"
+				],
+				"sections": [
+					{
+						"name": "Caves Doors"
 					}
 				],
 				"map_locations": [
@@ -2293,15 +2527,17 @@
 			},
 
 			{
-				"name": "Challenge Tunnels Entry",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|14772", "doorsDoor, $isNotDisabled|13450", "doorsMix, $isNotDisabled|13450" ],
+				"name": "Tunnels Entry (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|14772" ],
 				"access_rules": [
-					"doorsPanel, Tunnels Entry (Panel)",
-					"Challenge Door to Theater Walkway"
+					"{Tunnels Entry (Panel)}",
+					"$canSolve|158518, Tunnels Entry (Panel), @Places/challenge",
+					"{Tunnels Entry (Door)}",
+					"Tunnels Entry (Door), @Places/challenge"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Tunnels Panels"
 					}
 				],
 				"map_locations": [
@@ -2314,15 +2550,38 @@
 			},
 
 			{
-				"name": "Tunnels Town Shortcut",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|40581", "doorsDoor, $isNotDisabled|40583", "doorsMix, $isNotDisabled|40583" ],
+				"name": "Tunnels Entry (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|13450", "doorsMix, $isNotDisabled|13450" ],
 				"access_rules": [
-					"doorsPanel, Tunnels Town Shortcut (Panel)",
-					"Theater Walkway Door to Town"
+					"{Tunnels Entry (Door)}",
+					"Tunnels Entry (Door), @Places/challenge"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Tunnels Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 670,
+						"y": 791
+					}
+				]
+			},
+
+			{
+				"name": "Tunnels Town Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel, $isNotDisabled|40581" ],
+				"access_rules": [
+					"{Tunnels Town Shortcut (Panel)}",
+					"$canSolve|158521, Tunnels Town Shortcut (Panel), @Places/tunnels",
+					"{Tunnels Town Shortcut (Door)}",
+					"Tunnels Town Shortcut (Door), @Places/tunnels"
+				],
+				"sections": [
+					{
+						"name": "Tunnels Panels"
 					}
 				],
 				"map_locations": [
@@ -2335,12 +2594,36 @@
 			},
 
 			{
-				"name": "Tunnels Desert Shortcut",
-				"visibility_rules": [ "doorsDoor, $isNotDisabled|160355", "doorsMix, $isNotDisabled|160355" ],
-				"access_rules": [ "Theater Walkway Door to Desert Elevator Room" ],
+				"name": "Tunnels Town Shortcut (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|40583", "doorsMix, $isNotDisabled|40583" ],
+				"access_rules": [
+					"{Tunnels Town Shortcut (Door)}",
+					"Tunnels Town Shortcut (Door), @Places/tunnels"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Tunnels Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 611,
+						"y": 868
+					}
+				]
+			},
+
+			{
+				"name": "Tunnels Desert Shortcut (Door)",
+				"visibility_rules": [ "doorsDoor, $isNotDisabled|160355", "doorsMix, $isNotDisabled|160355" ],
+				"access_rules": [
+					"{Tunnels Desert Shortcut (Door)}",
+					"Tunnels Desert Shortcut (Door), @Places/tunnels"
+				],
+				"sections": [
+					{
+						"name": "Tunnels Doors"
 					}
 				],
 				"map_locations": [
@@ -2353,12 +2636,15 @@
 			},
 
 			{
-				"name": "Tunnels Theater Shortcut",
+				"name": "Tunnels Theater Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|161593", "doorsMix, $isNotDisabled|161593" ],
-				"access_rules": [ "Theater Walkway Door to Back of Theater" ],
+				"access_rules": [
+					"{Tunnels Theater Shortcut (Door)}",
+					"Tunnels Theater Shortcut (Door), @Places/tunnels"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Tunnels Doors"
 					}
 				],
 				"map_locations": [
