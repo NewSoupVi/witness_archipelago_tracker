@@ -723,7 +723,7 @@ PATH_IDS = {
 	"Swamp Red Underwater Exit (Door)",
 	"Swamp Maze Controls (Panel)",
 	"Swamp Long Bridge (Panel)",
-	"Caves Mountain Shortcut (Panel)"
+	"Caves Mountain Shortcut (Panel)",
 	"Caves Mountain Shortcut (Door)",
 	"Caves Swamp Shortcut (Panel)",
 	"Caves Swamp Shortcut (Door)",

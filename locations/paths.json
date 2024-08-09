@@ -1951,7 +1951,7 @@
 			},
 
 			{
-				"name": "Swamp Laser Shortcut",
+				"name": "Swamp Laser Shortcut (Panel)",
 				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
 					"{Swamp Laser Shortcut (Panel)}",
@@ -1974,7 +1974,7 @@
 			},
 
 			{
-				"name": "Swamp Laser Shortcut",
+				"name": "Swamp Laser Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Swamp Laser Shortcut (Door)}",
