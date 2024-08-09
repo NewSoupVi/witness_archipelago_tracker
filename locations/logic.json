@@ -553,8 +553,8 @@
 				"name": "monastery",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Monastery/Entry Panel Left, @Monastery/Entry Panel Right, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Monastery Inner Door], [Monastery Outer Door], @Places/overworld",
-					"Monastery Inner Door, Monastery Outer Door, @Places/overworld"
+					"showSnipes, $unrandomizedDisabledButSolvable, [Monastery Entry Inner (Door)], [Monastery Entry Outer (Door)], @Places/overworld",
+					"Monastery Entry Inner (Door), Monastery Entry Outer (Door), @Places/overworld"
 				]
 			},
 			{
@@ -562,15 +562,15 @@
 				"access_rules": [
 					"$isNotDoors, $unrandomizedDisabled, @Jungle Discard/Discard, @Places/overworld",
 					"$isNotDoors, @Jungle Popup Wall/Popup Wall Control, @Places/overworld",
-					"Jungle Popup Wall, @Places/overworld"
+					"Jungle Popup Wall (Door), @Places/overworld"
 				]
 			},
 			{
 				"name": "bunkerAntechamber",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Color Bunker/Entry Panel, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Entry Door], @Color Bunker/Entry Panel, @Places/overworld",
-					"Bunker Entry Door, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Entry (Door)], @Color Bunker/Entry Panel, @Places/overworld",
+					"Bunker Entry (Door), @Places/overworld",
 					"Bunker Tinted Glass Door, @Places/bunkerTintedRoom"
 				]
 			},
@@ -580,24 +580,24 @@
 					"unrandomized, $isNotDoors, @Color Bunker/Tinted Room Entry Panel, @Places/bunkerAntechamber",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Tinted Glass Door], @Color Bunker/Tinted Room Entry Panel, @Places/bunkerAntechamber",
 					"Bunker Tinted Glass Door, @Places/bunkerAntechamber",
-					"Bunker Door to Ultraviolet Room, @Places/bunkerUV"
+					"Bunker UV Room Entry (Door), @Places/bunkerUV"
 				]
 			},
 			{
 				"name": "bunkerUV",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Color Bunker/Tinted Glass Puzzles, @Places/bunkerTintedRoom",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Door to Ultraviolet Room], @Color Bunker/Tinted Glass Puzzles, @Places/bunkerTintedRoom",
-					"Bunker Door to Ultraviolet Room, @Places/bunkerTintedRoom",
-					"Bunker Door to Elevator, @Places/bunkerElevatorRoom"
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker UV Room Entry (Door)], @Color Bunker/Tinted Glass Puzzles, @Places/bunkerTintedRoom",
+					"Bunker UV Room Entry (Door), @Places/bunkerTintedRoom",
+					"Bunker Elevator Room Entry (Door), @Places/bunkerElevatorRoom"
 				]
 			},
 			{
 				"name": "bunkerElevatorRoom",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Color Bunker/Ultraviolet Room, @Places/bunkerUV",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Door to Elevator], @Color Bunker/Ultraviolet Room, @Places/bunkerUV",
-					"Bunker Door to Elevator, @Places/bunkerUV",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Room Entry (Door)], @Color Bunker/Ultraviolet Room, @Places/bunkerUV",
+					"Bunker Elevator Room Entry (Door), @Places/bunkerUV",
 					"@Places/bunkerElevatorControl"
 				]
 			},

@@ -773,6 +773,24 @@ PATH_IDS = {
 	"Town Church Entry (Panel)",
 	"Town Church Entry (Door)",
 	"Town RGB Control (Panel)",
-	"Town RGB House Stairs (Door)"
-
+	"Town RGB House Stairs (Door)",
+	"Monastery Entry Right (Panel)",
+	"Monastery Entry Outer (Door)"
+	"Monastery Entry Left (Panel)",
+	"Monastery Entry Inner (Door)",
+	"Monastery Shutters Control (Panel)",
+	"Monastery Garden Entry (Door)",
+	"Jungle Monastery Garden Shortcut (Panel)",
+	"Jungle Monastery Garden Shortcut (Door)",
+	"Jungle Popup Wall (Panel)",
+	"Jungle Popup Wall (Door)",
+	"Jungle Laser Shortcut (Door)",
+	"Bunker Entry (Panel)",
+	"Bunker Entry (Door)",
+	"Bunker Tinted Glass Door (Panel)",
+	"Bunker Tinted Glass Door",
+	"Bunker UV Room Entry (Door)",
+	"Bunker UV Room Drop-Down Door Controls (Panel)",
+	"Bunker Elevator Room Entry (Door)",
+	"Bunker Elevator Control (Panel)"
 }

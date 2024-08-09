@@ -908,28 +908,28 @@
 		"codes": "Keep Hedge Maze 4 (Panel)"
 	},
 	{
-		"name": "Monastery Entry Door Left (Panel)",
+		"name": "Monastery Entry Left (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Entry Door Left (Panel)"
+		"codes": "Monastery Entry Left (Panel)"
 	},
 	{
-		"name": "Monastery Entry Door Right (Panel)",
+		"name": "Monastery Entry Right (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Entry Door Right (Panel)"
+		"codes": "Monastery Entry Right (Panel)"
 	},
 	{
-		"name": "Monastery Shutter Control (Panel)",
+		"name": "Monastery Shutters Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Shutter Control (Panel)"
+		"codes": "Monastery Shutters Control (Panel)"
 	},
 	{
 		"name": "Town RGB House Entry (Panel)",
@@ -1084,20 +1084,20 @@
 		"codes": "Bunker Entry (Panel)"
 	},
 	{
-		"name": "Inside Bunker Door to Bunker Proper (Panel)",
+		"name": "Bunker Tinted Glass Door (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Inside Bunker Door to Bunker Proper (Panel)"
+		"codes": "Bunker Tinted Glass Door (Panel)"
 	},
 	{
-		"name": "Bunker UV Room Drop-Down Door Control (Panel)",
+		"name": "Bunker UV Room Drop-Down Door Controls (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Bunker UV Room Drop-Down Door Control (Panel)"
+		"codes": "Bunker UV Room Drop-Down Door Controls (Panel)"
 	},
 	{
 		"name": "Bunker Elevator Control (Panel)",
@@ -1805,36 +1805,36 @@
 		"codes": "Keep Tower Shortcut (Door)"
 	},
 	{
-		"name": "Monastery Shortcut",
+		"name": "Monastery Laser Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Shortcut"
+		"codes": "Monastery Laser Shortcut (Door)"
 	},
 	{
-		"name": "Monastery Inner Door",
+		"name": "Monastery Entry Inner (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Inner Door"
+		"codes": "Monastery Entry Inner (Door)"
 	},
 	{
-		"name": "Monastery Outer Door",
+		"name": "Monastery Entry Outer (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Outer Door"
+		"codes": "Monastery Entry Outer (Door)"
 	},
 	{
-		"name": "Monastery Door to Garden",
+		"name": "Monastery Garden Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Monastery Door to Garden"
+		"codes": "Monastery Garden Entry (Door)"
 	},
 	{
 		"name": "Town Cargo Box Entry (Door)",
@@ -1949,36 +1949,36 @@
 		"codes": "Theater Exit Right (Door)"
 	},
 	{
-		"name": "Jungle Bamboo Shortcut to River",
+		"name": "Jungle Laser Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Jungle Bamboo Shortcut to River"
+		"codes": "Jungle Laser Shortcut (Door)"
 	},
 	{
-		"name": "Jungle Popup Wall",
+		"name": "Jungle Popup Wall (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Jungle Popup Wall"
+		"codes": "Jungle Popup Wall (Door)"
 	},
 	{
-		"name": "River Shortcut to Monastery Garden",
+		"name": "Jungle Monastery Garden Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "River Shortcut to Monastery Garden"
+		"codes": "Jungle Monastery Garden Shortcut (Door)"
 	},
 	{
-		"name": "Bunker Entry Door",
+		"name": "Bunker Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Bunker Entry Door"
+		"codes": "Bunker Entry (Door)"
 	},
 	{
 		"name": "Bunker Tinted Glass Door",
@@ -1989,20 +1989,20 @@
 		"codes": "Bunker Tinted Glass Door"
 	},
 	{
-		"name": "Bunker Door to Ultraviolet Room",
+		"name": "Bunker UV Room Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Bunker Door to Ultraviolet Room"
+		"codes": "Bunker UV Room Entry (Door)"
 	},
 	{
-		"name": "Bunker Door to Elevator",
+		"name": "Bunker Elevator Room Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Bunker Door to Elevator"
+		"codes": "Bunker Elevator Room Entry (Door)"
 	},
 	{
 		"name": "Swamp Entry (Door)",

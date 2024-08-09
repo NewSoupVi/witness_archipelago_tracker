@@ -2311,8 +2311,8 @@
 				"name": "Outside Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
-					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]"
+					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)",
+					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutters Control (Panel)]"
 				]
 			},
 			{
@@ -2339,16 +2339,16 @@
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Left (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Left (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/overworld",
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Right (Panel), $canSolve|158209, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Right (Panel), $canSolve|158209, @Places/monastery"
 				]
 			},
 			{
@@ -2361,7 +2361,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13479" ],
 				"access_rules": [
 					"$isDisabled|13479",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2369,7 +2369,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13485" ],
 				"access_rules": [
 					"$isDisabled|13485",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2377,7 +2377,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13487" ],
 				"access_rules": [
 					"$isDisabled|13487",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -3407,7 +3407,7 @@
 				"access_rules": [
 					"$isDisabled|15330",
 					"$isNotDoors, @Monastery/Outside Puzzles, $hasObeliskKey|Monastery",
-					"Monastery Door to Garden, @Places/overworld, $hasObeliskKey|Monastery"
+					"Monastery Garden Entry (Door), @Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3610,8 +3610,8 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"@Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
-					"Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerAntechamber",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
+					"Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/bunkerAntechamber",
+					"showSnipes, Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
 			},
 			{
@@ -3638,15 +3638,15 @@
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/bunkerTintedRoom",
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/overworld, [@Places/bunkerTintedRoom]",
 					"doorsNo, $canSolve|158279-158281, @Color Bunker/Intro Back",
-					"$isNotDoors, $canSolve|158279-158281, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber"
+					"$isNotDoors, $canSolve|158279-158281, Bunker Tinted Glass Door (Panel), @Places/bunkerAntechamber"
 				]
 			},
 			{
 				"name": "Ultraviolet Room",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel)",
-					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]"
+					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Controls (Panel)",
+					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Controls (Panel)]"
 				]
 			},
 			{
@@ -3679,8 +3679,8 @@
 					"$isDisabled|13813",
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
 					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber, $hasObeliskKey|Mountainside",
-					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber], $hasObeliskKey|Mountainside"
+					"$isNotDoors, Bunker Tinted Glass Door (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber, $hasObeliskKey|Mountainside",
+					"showSnipes, $isNotDoors, Bunker Tinted Glass Door (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber], $hasObeliskKey|Mountainside"
 				]
 			}
 		],

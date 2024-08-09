@@ -2152,7 +2152,7 @@
 				"visibility_rules": [ "never" ],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Gate"
 					}
 				],
 				"map_locations": [
@@ -2774,7 +2774,7 @@
 				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Windmill & Theater Panels"
 					}
 				],
 				"map_locations": [
@@ -3223,15 +3223,17 @@
 			},
 
 			{
-				"name": "Monastery Entry Outer",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"name": "Monastery Entry Right (Panel)",
+				"visibility_rules": [ "doorsPanel, Unrandomized" ],
 				"access_rules": [
-					"doorsPanel, Monastery Entry Door Right (Panel)",
-					"Monastery Outer Door"
+					"{Monastery Entry Right (Panel)}",
+					"$canSolve|158209, Monastery Entry Right (Panel)",
+					"{Monastery Entry Outer (Door)}",
+					"Monastery Entry Outer (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Monastery Panels"
 					}
 				],
 				"map_locations": [
@@ -3244,15 +3246,38 @@
 			},
 
 			{
-				"name": "Monastery Entry Inner",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"name": "Monastery Entry Outer (Door)",
+				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
-					"doorsPanel, Monastery Entry Door Left (Panel)",
-					"Monastery Inner Door"
+					"{Monastery Entry Outer (Door)}",
+					"Monastery Entry Outer (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Monastery Entry Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 595,
+						"y": 1110
+					}
+				]
+			},
+
+			{
+				"name": "Monastery Entry Left (Panel)",
+				"visibility_rules": [ "doorsPanel, Unrandomized" ],
+				"access_rules": [
+					"{Monastery Entry Left (Panel)}",
+					"$canSolve|158208, Monastery Entry Left (Panel), @Places/overworld",
+					"{Monastery Entry Inner (Door)}",
+					"Monastery Entry Inner (Door), @Places/overworld"
+				],
+				"sections": [
+					{
+						"name": "Monastery Panels"
 					}
 				],
 				"map_locations": [
@@ -3265,12 +3290,36 @@
 			},
 
 			{
-				"name": "Monastery Shutter Control",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Monastery Shutter Control (Panel)" ],
+				"name": "Monastery Entry Inner (Door)",
+				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"access_rules": [
+					"{Monastery Entry Inner (Door)}",
+					"Monastery Entry Inner (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Monastery Entry Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 575,
+						"y": 1130
+					}
+				]
+			},
+
+			{
+				"name": "Monastery Shutters Control (Panel)",
+				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
+				"access_rules": [
+					"{Monastery Shutters Control (Panel)}",
+					"$canSolve|158213, Monastery Shutters Control (Panel), @Places/monastery"
+				],
+				"sections": [
+					{
+						"name": "Monastery Panels"
 					}
 				],
 				"map_locations": [
@@ -3283,12 +3332,15 @@
 			},
 
 			{
-				"name": "Monastery Garden Entry",
+				"name": "Monastery Garden Entry (Door)",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Monastery Door to Garden" ],
+				"access_rules": [
+					"{Monastery Garden Entry (Door)}",
+					"Monastery Garden Entry (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Monastery Shortcuts"
 					}
 				],
 				"map_locations": [
@@ -3301,15 +3353,17 @@
 			},
 
 			{
-				"name": "Jungle Monastery Garden Shortcut",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"name": "Jungle Monastery Garden Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel, Unrandomized" ],
 				"access_rules": [
-					"doorsPanel, Jungle Monastery Garden Shortcut (Panel)",
-					"River Shortcut to Monastery Garden"
+					"{Jungle Monastery Garden Shortcut (Panel)}",
+					"$canSolve|158267, Jungle Monastery Garden Shortcut (Panel), @Places/overworld",
+					"{Jungle Monastery Garden Shortcut (Door)}",
+					"Jungle Monastery Garden Shortcut (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Jungle Panels"
 					}
 				],
 				"map_locations": [
@@ -3322,15 +3376,38 @@
 			},
 
 			{
-				"name": "Jungle Popup wall",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Jungle Monastery Garden Shortcut (Door)",
+				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
-					"doorsPanel, Jungle Popup Wall (Panel)",
-					"Jungle Popup Wall"
+					"{Jungle Monastery Garden Shortcut (Door)}",
+					"Jungle Monastery Garden Shortcut (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Monastery Shortcuts"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 668,
+						"y": 1101
+					}
+				]
+			},
+
+			{
+				"name": "Jungle Popup Wall (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
+				"access_rules": [
+					"{Jungle Popup Wall (Panel)}",
+					"$canSolve|158259, Jungle Popup Wall (Panel), @Places/overworld",
+					"{Jungle Popup Wall (Door)}",
+					"Jungle Popup Wall (Door), @Places/overworld"
+				],
+				"sections": [
+					{
+						"name": "Jungle Panels"
 					}
 				],
 				"map_locations": [
@@ -3343,15 +3420,38 @@
 			},
 
 			{
-				"name": "Bunker Entry",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"name": "Jungle Popup Wall (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"doorsPanel, Bunker Entry (Panel)",
-					"Bunker Entry Door"
+					"{Jungle Popup Wall (Door)}",
+					"Jungle Popup Wall (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Jungle Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 754,
+						"y": 1152
+					}
+				]
+			},
+
+			{
+				"name": "Bunker Entry (Panel)",
+				"visibility_rules": [ "doorsPanel, Unrandomized" ],
+				"access_rules": [
+					"{Bunker Entry (Panel)}",
+					"$canSolve|158268, Bunker Entry (Panel), @Places/overworld",
+					"{Bunker Entry (Door)}",
+					"Bunker Entry (Door), @Places/overworld"
+				],
+				"sections": [
+					{
+						"name": "Bunker Panels"
 					}
 				],
 				"map_locations": [
@@ -3364,15 +3464,38 @@
 			},
 
 			{
-				"name": "Bunker Tinted Glass",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"name": "Bunker Entry",
+				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
-					"doorsPanel, Inside Bunker Door to Bunker Proper (Panel)",
-					"Bunker Tinted Glass Door"
+					"{Bunker Entry (Door)}",
+					"Bunker Entry (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Bunker Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 771,
+						"y": 1052
+					}
+				]
+			},
+
+			{
+				"name": "Bunker Tinted Glass Door (Panel)",
+				"visibility_rules": [ "doorsPanel, Unrandomized" ],
+				"access_rules": [
+					"{Bunker Tinted Glass Door (Panel)}",
+					"$canSolve|158278, Bunker Tinted Glass Door (Panel), @Places/bunkerAntechamber",
+					"{Bunker Tinted Glass Door}",
+					"Bunker Tinted Glass Door, @Places/bunkerAntechamber"
+				],
+				"sections": [
+					{
+						"name": "Bunker Panels"
 					}
 				],
 				"map_locations": [
@@ -3385,12 +3508,36 @@
 			},
 
 			{
-				"name": "Bunker UV Room Entry",
+				"name": "Bunker Tinted Glass Door",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Bunker Door to Ultraviolet Room" ],
+				"access_rules": [
+					"{Bunker Tinted Glass Door}",
+					"Bunker Tinted Glass Door, @Places/bunkerAntechamber"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Bunker Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 844,
+						"y": 1091
+					}
+				]
+			},
+
+			{
+				"name": "Bunker UV Room Entry (Door)",
+				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
+				"access_rules": [
+					"{Bunker UV Room Entry (Door)}",
+					"Bunker UV Room Entry (Door), @Places/bunkerTintedRoom"
+				],
+				"sections": [
+					{
+						"name": "Bunker Doors"
 					}
 				],
 				"map_locations": [
@@ -3403,12 +3550,15 @@
 			},
 
 			{
-				"name": "Bunker Drop-Down Door Controls",
+				"name": "Bunker UV Room Drop-Down Door Controls (Panel)",
 				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Bunker UV Room Drop-Down Door Control (Panel)" ],
+				"access_rules": [
+					"{Bunker UV Room Drop-Down Door Controls (Panel)}",
+					"$canSolve|158282-158283, Bunker UV Room Drop-Down Door Controls (Panel), @Places/bunkerUV"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Bunker Panels"
 					}
 				],
 				"map_locations": [
@@ -3421,12 +3571,15 @@
 			},
 
 			{
-				"name": "Bunker Elevator Room Entry",
+				"name": "Bunker Elevator Room Entry (Door)",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Bunker Door to Elevator" ],
+				"access_rules": [
+					"{Bunker Elevator Room Entry (Door)}",
+					"Bunker Elevator Room Entry (Door), @Places/bunkerUV"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Bunker Doors"
 					}
 				],
 				"map_locations": [
@@ -3439,12 +3592,15 @@
 			},
 
 			{
-				"name": "Bunker Elevator Control",
+				"name": "Bunker Elevator Control (Panel)",
 				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Bunker Elevator Control (Panel)" ],
+				"access_rules": [
+					"{Bunker Elevator Control (Panel)}",
+					"$canSolve|158286, Bunker Elevator Control (Panel), @Places/bunkerElevatorControl"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Bunker Panels"
 					}
 				],
 				"map_locations": [
@@ -3457,12 +3613,15 @@
 			},
 
 			{
-				"name": "Monastery Laser Shortcut",
+				"name": "Monastery Laser Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
-				"access_rules": [ "Monastery Shortcut" ],
+				"access_rules": [
+					"{Monastery Laser Shortcut (Door)}",
+					"Monastery Laser Shortcut (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Monastery Shortcuts"
 					}
 				],
 				"map_locations": [
@@ -3475,12 +3634,15 @@
 			},
 
 			{
-				"name": "Jungle Laser Shortcut",
+				"name": "Jungle Laser Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Jungle Bamboo Shortcut to River" ],
+				"access_rules": [
+					"{Jungle Laser Shortcut (Door)}",
+					"Jungle Laser Shortcut (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Jungle Doors"
 					}
 				],
 				"map_locations": [
