@@ -2475,7 +2475,7 @@
 				"access_rules": [
 					"$isDisabled|13769",
 					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/ocean, $hasObeliskKey|Town",
-					"Town Cargo Box Door, @Places/ocean, $hasObeliskKey|Town"
+					"Town Cargo Box Entry (Door), @Places/ocean, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2538,10 +2538,10 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"$isNotPanelsOnlyOrHasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
-					"Town Door to Church (Panel), Expert, $canSolve|158226, @Places/overworld",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
+					"Town Church Entry (Panel), Expert, $canSolve|158226, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
 				]
 			}
 		],
@@ -2568,7 +2568,7 @@
 			},
 			{
 				"name": "Maze Stair Control",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $canSolve|158228, @Places/overworld" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Maze Stairs (Panel), $canSolve|158228, @Places/overworld" ]
 			},
 			{
 				"name": "Bridge Underside EP",
@@ -2637,24 +2637,24 @@
 			{
 				"name": "RGB Room Left",
 				"access_rules": [
-					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isNotNormalNorVariety, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
+					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, $isNotNormalNorVariety, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs"
 				]
 			},
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
-					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Door to RGB House (Panel), $canSolve|158225, @Places/overworld" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town RGB House Entry (Panel), $canSolve|158225, @Places/overworld" ]
 			},
 			{
 				"name": "Sound Room",
@@ -2665,8 +2665,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15935" ],
 				"access_rules": [
 					"$isDisabled|15935",
-					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town",
-					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town"
+					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town",
+					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2674,7 +2674,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15936" ],
 				"access_rules": [
 					"$isDisabled|15936",
-					"$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/overworld, $hasObeliskKey|Town"
+					"$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Control (Panel), @Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -3031,8 +3031,8 @@
 					"$isDisabled|211488",
 					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels, $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Tunnels Town Shortcut (Door), $hasObeliskKey|Town",
-					"@Theater/Tutorial Video, Theater Entry Door, Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
-					"@Theater/Tutorial Video, Town Windmill Door, Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Theater Entry (Door), Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Windmill Entry (Door), Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Pond Room Entry (Door), Desert Flood Room Entry (Door), Desert Elevator Room Entry (Door), Tunnels Desert Shortcut (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut (Door), Caves Pillar Door, Challenge Entry (Door), Tunnels Entry (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut (Door), Caves Pillar Door, Challenge Entry (Door), Tunnels Entry (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town"
@@ -3075,7 +3075,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211382" ],
 				"access_rules": [
 					"$isDisabled|211382",
-					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right, $hasObeliskKey|Town",
+					"@Theater/Challenge Video, Theater Exit Left (Door), Theater Exit Right (Door), $hasObeliskKey|Town",
 					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250, $hasObeliskKey|Town"
 				]
 			},

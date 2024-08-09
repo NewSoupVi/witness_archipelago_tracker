@@ -932,36 +932,36 @@
 		"codes": "Monastery Shutter Control (Panel)"
 	},
 	{
-		"name": "Town Door to RGB House (Panel)",
+		"name": "Town RGB House Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Door to RGB House (Panel)"
+		"codes": "Town RGB House Entry (Panel)"
 	},
 	{
-		"name": "Town RGB Room RGB Control (Panel)",
+		"name": "Town RGB Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town RGB Room RGB Control (Panel)"
+		"codes": "Town RGB Control (Panel)"
 	},
 	{
-		"name": "Town Door to Church (Panel)",
+		"name": "Town Church Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Door to Church (Panel)"
+		"codes": "Town Church Entry (Panel)"
 	},
 	{
-		"name": "Town Maze Panel (Drop-Down Staircase) (Panel)",
+		"name": "Town Maze Stairs (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Maze Panel (Drop-Down Staircase) (Panel)"
+		"codes": "Town Maze Stairs (Panel)"
 	},
 	{
 		"name": "Town Maze Rooftop Bridge (Panel)",
@@ -1837,116 +1837,116 @@
 		"codes": "Monastery Door to Garden"
 	},
 	{
-		"name": "Town Cargo Box Door",
+		"name": "Town Cargo Box Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Cargo Box Door"
+		"codes": "Town Cargo Box Entry (Door)"
 	},
 	{
-		"name": "Town Wooden Roof Staircase",
+		"name": "Town Wooden Roof Stairs (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Wooden Roof Staircase"
+		"codes": "Town Wooden Roof Stairs (Door)"
 	},
 	{
-		"name": "Town Tinted Door to RGB House",
+		"name": "Town RGB House Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Tinted Door to RGB House"
+		"codes": "Town RGB House Entry (Door)"
 	},
 	{
-		"name": "Town Door to Church",
+		"name": "Town Church Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Door to Church"
+		"codes": "Town Church Entry (Door)"
 	},
 	{
-		"name": "Town Maze Staircase",
+		"name": "Town Maze Stairs (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Maze Staircase"
+		"codes": "Town Maze Stairs (Door)"
 	},
 	{
-		"name": "Town Windmill Door",
+		"name": "Windmill Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Windmill Door"
+		"codes": "Windmill Entry (Door)"
 	},
 	{
-		"name": "Town RGB House Staircase",
+		"name": "Town RGB House Stairs (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town RGB House Staircase"
+		"codes": "Town RGB House Stairs (Door)"
 	},
 	{
-		"name": "Town Tower Red Roof Set Door",
+		"name": "Town Tower Second (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Tower Red Roof Set Door"
+		"codes": "Town Tower Second (Door)"
 	},
 	{
-		"name": "Town Tower Lattice Door",
+		"name": "Town Tower First (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Tower Lattice Door"
+		"codes": "Town Tower First (Door)"
 	},
 	{
-		"name": "Town Tower Environmental Set Door",
+		"name": "Town Tower Fourth (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Tower Environmental Set Door"
+		"codes": "Town Tower Fourth (Door)"
 	},
 	{
-		"name": "Town Tower Wooden Roof Set Door",
+		"name": "Town Tower Third (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Tower Wooden Roof Set Door"
+		"codes": "Town Tower Third (Door)"
 	},
 	{
-		"name": "Theater Entry Door",
+		"name": "Theater Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Theater Entry Door"
+		"codes": "Theater Entry (Door)"
 	},
 	{
-		"name": "Theater Exit Door Left",
+		"name": "Theater Exit Left (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Theater Exit Door Left"
+		"codes": "Theater Exit Left (Door)"
 	},
 	{
-		"name": "Theater Exit Door Right",
+		"name": "Theater Exit Right (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Theater Exit Door Right"
+		"codes": "Theater Exit Right (Door)"
 	},
 	{
 		"name": "Jungle Bamboo Shortcut to River",

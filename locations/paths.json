@@ -2657,15 +2657,17 @@
 			},
 
 			{
-				"name": "Town Windmill Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Windmill Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Windmill Entry (Panel)",
-					"Town Windmill Door"
+					"{Windmill Entry (Panel)}",
+					"$canSolve|158241, Windmill Entry (Panel), @Places/overworld",
+					"{Windmill Entry (Door)}",
+					"Windmill Entry (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Windmill & Theater Panels"
 					}
 				],
 				"map_locations": [
@@ -2678,12 +2680,36 @@
 			},
 
 			{
-				"name": "Windmill Turn Control",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Windmill Turn Control (Panel)" ],
+				"name": "Windmill Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Windmill Entry (Door)}",
+					"Windmill Entry (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Windmill & Theater Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 555,
+						"y": 953
+					}
+				]
+			},
+
+			{
+				"name": "Windmill Turn Control (Panel)",
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
+				"access_rules": [
+					"{Windmill Turn Control (Panel)}",
+					"$canSolve|158247, Windmill Turn Control (Panel), @Places/windmill"
+				],
+				"sections": [
+					{
+						"name": "Windmill & Theater Panels"
 					}
 				],
 				"map_locations": [
@@ -2696,15 +2722,17 @@
 			},
 
 			{
-				"name": "Theater Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Theater Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Theater Entry (Panel)",
-					"Theater Entry Door"
+					"{Theater Entry (Panel)}",
+					"$canSolve|158248, Theater Entry (Panel), @Places/windmill",
+					"{Theater Entry (Door)}",
+					"Theater Entry (Door), @Places/windmill"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Windmill & Theater Panels"
 					}
 				],
 				"map_locations": [
@@ -2717,9 +2745,33 @@
 			},
 
 			{
-				"name": "Theater Video Input",
+				"name": "Theater Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Theater Entry (Door)}",
+					"Theater Entry (Door), @Places/windmill"
+				],
+				"sections": [
+					{
+						"name": "Windmill & Theater Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 489,
+						"y": 947
+					}
+				]
+			},
+
+			{
+				"name": "Theater Video Input (Panel)",
 				"visibility_rules": [ "doorsPanel, Unrandomized, Vaults", "doorsMix, Unrandomized, Vaults" ],
-				"access_rules": [ "Theater Video Input (Panel)" ],
+				"access_rules": [
+					"{Theater Video Input (Panel)}",
+					"$canSolve|158656, Theater Video Input (Panel), @Places/theater"
+				],
 				"sections": [
 					{
 						"name": "Panel"
@@ -2736,12 +2788,20 @@
 			},
 
 			{
-				"name": "Theater Exit",
+				"name": "Theater Exit (Panel)",
 				"visibility_rules": [ "doorsPanel" ],
-				"access_rules": [ "Theater Exit (Panel)" ],
+				"access_rules": [
+					"{Theater Exit (Panel)}",
+					"$canSolve|158249, Theater Exit (Panel), @Places/theater",
+					"$canSolve|158250, Theater Exit (Panel), @Places/theater",
+					"{Theater Exit Left (Door)}",
+					"Theater Exit Left (Door), @Places/theater",
+					"{Theater Exit Right (Door)}",
+					"Theater Exit Right (Door), @Places/theater"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Windmill & Theater Panels"
 					}
 				],
 				"map_locations": [
@@ -2754,12 +2814,15 @@
 			},
 
 			{
-				"name": "Theater Exit Left",
+				"name": "Theater Exit Left (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Theater Exit Door Left" ],
+				"access_rules": [
+					"{Theater Exit Left (Door)}",
+					"Theater Exit Left (Door), @Places/theater"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Windmill & Theater Doors"
 					}
 				],
 				"map_locations": [
@@ -2772,12 +2835,15 @@
 			},
 
 			{
-				"name": "Theater Exit Right",
+				"name": "Theater Exit Right (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Theater Exit Door Right" ],
+				"access_rules": [
+					"{Theater Exit Right (Door)}",
+					"Theater Exit Right (Door), @Places/theater"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Windmill & Theater Doors"
 					}
 				],
 				"map_locations": [
@@ -2790,15 +2856,17 @@
 			},
 
 			{
-				"name": "Town Cargo Box Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Town Cargo Box Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Town Cargo Box Entry (Panel)",
-					"Town Cargo Box Door"
+					"{Town Cargo Box Entry (Panel)}",
+					"$canSolve|158219, Town Cargo Box Entry (Panel), @Places/overworld",
+					"{Town Cargo Box Entry (Door)}",
+					"Town Cargo Box Entry (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Dockside House Panels"
 					}
 				],
 				"map_locations": [
@@ -2811,12 +2879,36 @@
 			},
 
 			{
-				"name": "Town Desert Laser Redirect Control",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Town Desert Laser Redirect Control (Panel)" ],
+				"name": "Town Cargo Box Entry",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Town Cargo Box Entry (Door)}",
+					"Town Cargo Box Entry (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Town Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 408,
+						"y": 1051
+					}
+				]
+			},
+
+			{
+				"name": "Town Desert Laser Redirect Control (Panel)",
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
+				"access_rules": [
+					"{Town Desert Laser Redirect Control (Panel)}",
+					"$canSolve|158707, Town Desert Laser Redirect Control (Panel), @Places/overworld"
+				],
+				"sections": [
+					{
+						"name": "Town Dockside House Panels"
 					}
 				],
 				"map_locations": [
@@ -2829,15 +2921,17 @@
 			},
 
 			{
-				"name": "Town Maze Stairs",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Town Maze Stairs (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Town Maze Panel (Drop-Down Staircase) (Panel)",
-					"Town Maze Staircase"
+					"{Town Maze Stairs (Panel)}",
+					"$canSolve|158228, Town Maze Stairs (Panel), @Places/overworld",
+					"{Town Maze Stairs (Door)}",
+					"Town Maze Stairs (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Maze Panels"
 					}
 				],
 				"map_locations": [
@@ -2850,12 +2944,36 @@
 			},
 
 			{
-				"name": "Town Maze Rooftop Bridge",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Town Maze Rooftop Bridge (Panel)" ],
+				"name": "Town Maze Stairs (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Town Maze Stairs (Door)}",
+					"Town Maze Stairs (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Town Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 398,
+						"y": 1091
+					}
+				]
+			},
+
+			{
+				"name": "Town Maze Rooftop Bridge (Panel)",
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
+				"access_rules": [
+					"{Town Maze Rooftop Bridge (Panel)}",
+					"$canSolve|158229, Town Maze Rooftop Bridge (Panel), @Places/mazeRoof"
+				],
+				"sections": [
+					{
+						"name": "Town Maze Panels"
 					}
 				],
 				"map_locations": [
@@ -2868,12 +2986,15 @@
 			},
 
 			{
-				"name": "Town Wooden Roof Stairs",
+				"name": "Town Wooden Roof Stairs (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Town Wooden Roof Staircase" ],
+				"access_rules": [
+					"{Town Wooden Roof Stairs (Door)}",
+					"Town Wooden Roof Stairs (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Doors"
+						"name": "Town Doors"
 					}
 				],
 				"map_locations": [
@@ -2886,12 +3007,15 @@
 			},
 
 			{
-				"name": "Town Tower First Door",
+				"name": "Town Tower First (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Town Tower Lattice Door" ],
+				"access_rules": [
+					"{Town Tower First (Door)}",
+					"Town Tower First (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Tower Doors"
 					}
 				],
 				"map_locations": [
@@ -2904,12 +3028,15 @@
 			},
 
 			{
-				"name": "Town Tower Second Door",
+				"name": "Town Tower Second (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Town Tower Red Roof Set Door" ],
+				"access_rules": [
+					"{Town Tower Second (Door)}",
+					"Town Tower Second (Door), @Places/townTower1"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Tower Doors"
 					}
 				],
 				"map_locations": [
@@ -2922,12 +3049,15 @@
 			},
 
 			{
-				"name": "Town Tower Third Door",
+				"name": "Town Tower Third (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Town Tower Wooden Roof Set Door" ],
+				"access_rules": [
+					"{Town Tower Third (Door)}",
+					"Town Tower Third (Door), @Places/townTower2"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Tower Doors"
 					}
 				],
 				"map_locations": [
@@ -2940,12 +3070,15 @@
 			},
 
 			{
-				"name": "Town Tower Fourth Door",
+				"name": "Town Tower Fourth (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Town Tower Environmental Set Door" ],
+				"access_rules": [
+					"{Town Tower Fourth (Door)}",
+					"Town Tower Fourth (Door), @Places/townTower3"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Tower Doors"
 					}
 				],
 				"map_locations": [
@@ -2958,15 +3091,18 @@
 			},
 
 			{
-				"name": "Town RGB House Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Town RGB House Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Town Door to RGB House (Panel)",
-					"Town Tinted Door to RGB House"
+					"{Town RGB House Entry (Panel)}",
+					"$canSolve|158225, Town RGB House Entry (Panel)}, @Places/overworld",
+					"showSnipes, $canSolve|158225, Town RGB House Entry (Panel)}, [@Places/overworld], @Places/RGBHouse",
+					"{Town RGB House Entry (Door)}",
+					"Town RGB House Entry (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Church & RGB House Panels"
 					}
 				],
 				"map_locations": [
@@ -2979,15 +3115,40 @@
 			},
 
 			{
-				"name": "Town Church Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Town RGB House Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"doorsPanel, Town Door to Church (Panel)",
-					"Town Door to Church"
+					"{Town RGB House Entry (Door)}",
+					"Town RGB House Entry (Door), @Places/overworld"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 334,
+						"y": 1229
+					}
+				]
+			},
+
+			{
+				"name": "Town Church Entry (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
+				"access_rules": [
+					"{Town Church Entry (Panel)}",
+					"$isNotExpert, $canSolve|158226, Town Church Entry (Panel), @Places/overworld, @Places/RGBHouse",
+					"showSnipes, $isNotExpert, $canSolve|158226, Town Church Entry (Panel), @Places/overworld, [@Places/RGBHouse]",
+					"Expert, $canSolve|158226, Town Church Entry (Panel), @Places/overworld",
+					"{Town Church Entry (Door)}",
+					"Town Church Entry (Door), @Places/overworld"
+				],
+				"sections": [
+					{
+						"name": "Town Church & RGB House Panels"
 					}
 				],
 				"map_locations": [
@@ -3000,12 +3161,36 @@
 			},
 
 			{
-				"name": "Town RGB Control",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
-				"access_rules": [ "Town RGB Room RGB Control (Panel)" ],
+				"name": "Town Church Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Town Church Entry (Door)}",
+					"Town Church Entry (Door), @Places/overworld"
+				],
 				"sections": [
 					{
-						"name": "Panel"
+						"name": "Town Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 264,
+						"y": 1213
+					}
+				]
+			},
+
+			{
+				"name": "Town RGB Control (Panel)",
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
+				"access_rules": [
+					"{Town RGB Control (Panel)}",
+					"$canSolve|158244, Town RGB Control (Panel), @Places/RGBHouseUpstairs"
+				],
+				"sections": [
+					{
+						"name": "Town Church & RGB House Panels"
 					}
 				],
 				"map_locations": [
@@ -3017,12 +3202,15 @@
 				]
 			},
 			{
-				"name": "Town RGB House Stairs",
+				"name": "Town RGB House Stairs (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [ "Town RGB House Staircase" ],
+				"access_rules": [
+					"{Town RGB House Stairs (Door)}",
+					"Town RGB House Stairs (Door), @Places/RBGHouse"
+				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Town Doors"
 					}
 				],
 				"map_locations": [

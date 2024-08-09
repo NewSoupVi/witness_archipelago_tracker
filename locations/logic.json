@@ -440,26 +440,26 @@
 				"name": "windmill",
 				"access_rules": [
 					"$isNotDoors, @Windmill/Entry Panel, @Places/overworld",
-					"Town Windmill Door, @Places/overworld",
+					"Windmill Entry (Door), @Places/overworld",
 					"$isNotDoors, @Tunnels Exit to Theater/Theater Shortcut Panel, @Places/tunnels",
 					"Tunnels Theater Shortcut (Door), @Places/tunnels",
-					"Theater Entry Door, @Places/theater"
+					"Theater Entry (Door), @Places/theater"
 				]
 			},
 			{
 				"name": "theater",
 				"access_rules": [
 					"$isNotDoors, @Theater Entry Area/Entry Panel, @Places/windmill",
-					"Theater Entry Door, @Places/windmill",
-					"Theater Exit Door Left, @Places/overworld",
-					"Theater Exit Door Right, @Places/overworld"
+					"Theater Entry (Door), @Places/windmill",
+					"Theater Exit Left (Door), @Places/overworld",
+					"Theater Exit Right (Door), @Places/overworld"
 				]
 			},
 			{
 				"name": "mazeRoof",
 				"access_rules": [
 					"$isNotDoors, @Town Red Rooftop/Maze Stair Control, @Places/overworld",
-					"Town Maze Staircase, @Places/overworld",
+					"Town Maze Stairs (Door), @Places/overworld",
 					"autoElevators, @Places/redRoof"
 				]
 			},
@@ -473,38 +473,38 @@
 				"name": "woodenRoof",
 				"access_rules": [
 					"$isNotDoors, @Town Wooden Rooftop/Lower Row, @Places/overworld",
-					"Town Wooden Roof Staircase, @Places/overworld"
+					"Town Wooden Roof Stairs (Door), @Places/overworld"
 				]
 			},
 			{
 				"name": "townTower1",
 				"access_rules": [
 					"$isNotDoors, @Town Church/Lattice, @Places/overworld",
-					"Town Tower Lattice Door, @Places/overworld",
+					"Town Tower First (Door), @Places/overworld",
 					"$isNotDoors, @Town Red Rooftop/Rooftop Puzzles, @Places/townTower2",
-					"Town Tower Red Roof Set Door, @Places/townTower2"
+					"Town Tower Second (Door), @Places/townTower2"
 				]
 			},
 			{
 				"name": "townTower2",
 				"access_rules": [
 					"$isNotDoors, @Town Red Rooftop/Rooftop Puzzles, @Places/townTower1",
-					"Town Tower Red Roof Set Door, @Places/townTower1",
+					"Town Tower Second (Door), @Places/townTower1",
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower3",
-					"Town Tower Wooden Roof Set Door, @Places/townTower3"
+					"Town Tower Third (Door), @Places/townTower3"
 				]
 			},
 			{
 				"name": "townTower3",
 				"access_rules": [
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower2",
-					"Town Tower Wooden Roof Set Door, @Places/townTower2",
+					"Town Tower Third (Door), @Places/townTower2",
 					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townLaser",
 					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townLaser",
 					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townLaser",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townLaser",
 					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
-					"Town Tower Environmental Set Door, @Places/townLaser"
+					"Town Tower Fourth (Door), @Places/townLaser"
 				]
 			},
 			{
@@ -515,7 +515,7 @@
 					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townTower3",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townTower3",
 					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townTower3",
-					"Town Tower Environmental Set Door, @Places/townTower3"
+					"Town Tower Fourth (Door), @Places/townTower3"
 				]
 			},
 			{
@@ -523,14 +523,14 @@
 				"access_rules": [
 					"$isNotDoors, $isNotExpert, @RGB House/Entry Panel, @Places/overworld",
 					"$isNotDoors, Expert, @Town Church/Entry Panel, @Places/overworld",
-					"Town Tinted Door to RGB House, @Places/overworld"
+					"Town RGB House Entry (Door), @Places/overworld"
 				]
 			},
 			{
 				"name": "RGBHouseUpstairs",
 				"access_rules": [
 					"$isNotDoors, @RGB House/Sound Room, @Places/RGBHouse",
-					"Town RGB House Staircase, @Places/RGBHouse"
+					"Town RGB House Stairs (Door), @Places/RGBHouse"
 				]
 			},
 			{
@@ -538,15 +538,15 @@
 				"access_rules": [
 					"$isNotDoors, $isNotExpert, @Town Church/Entry Panel, @Places/overworld",
 					"$isNotDoors, Expert, @RGB House/RGB Room Right, @Places/overworld",
-					"Town Door to Church, @Places/overworld",
-					"showSnipes, randomizationVanilla, [Town Door to Church], @Places/overworld"
+					"Town Church Entry (Door), @Places/overworld",
+					"showSnipes, randomizationVanilla, [Town Church Entry (Door)], @Places/overworld"
 				]
 			},
 			{
 				"name": "cargoBox",
 				"access_rules": [
 					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/overworld",
-					"Town Cargo Box Door, @Places/overworld"
+					"Town Cargo Box Entry (Door), @Places/overworld"
 				]
 			},
 			{
