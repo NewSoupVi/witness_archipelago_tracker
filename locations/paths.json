@@ -700,7 +700,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Entry 2 (Door)}",
-					"Quarry Entry 2 (Door), @Places/overworld"
+					"Quarry Entry 2 (Door), @Places/quarryBetweenEntries"
 				],
 				"sections": [
 					{
