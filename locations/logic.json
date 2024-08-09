@@ -276,28 +276,28 @@
 				"name": "treehouseSecond",
 				"access_rules": [
 					"$isNotDoors, @Treehouse Entrance/First Door Panel, @Places/treehouseDock",
-					"Treehouse First Door, @Places/treehouseDock"
+					"Treehouse First (Door), @Places/treehouseDock"
 				]
 			},
 			{
 				"name": "treehouseThird",
 				"access_rules": [
 					"$isNotDoors, @Treehouse Entrance/Second Door Panel, @Places/treehouseSecond",
-					"Treehouse Second Door, @Places/treehouseSecond"
+					"Treehouse Second (Door), @Places/treehouseSecond"
 				]
 			},
 			{
 				"name": "treehouseAfterYellowBridge",
 				"access_rules": [
 					"@Treehouse Entrance/Yellow Bridge, @Places/treehouseThird",
-					"Treehouse Beyond Yellow Bridge Door, @Places/treehouseMain"
+					"Treehouse Third (Door), @Places/treehouseMain"
 				]
 			},
 			{
 				"name": "treehouseMain",
 				"access_rules": [
 					"$isNotDoors, @Treehouse Entrance/Third Door Panel, @Places/treehouseAfterYellowBridge",
-					"Treehouse Beyond Yellow Bridge Door, @Places/treehouseAfterYellowBridge"
+					"Treehouse Third (Door), @Places/treehouseAfterYellowBridge"
 				]
 			},
 			{
@@ -332,7 +332,7 @@
 					"$isNotDoors, $isNotExpert, @Treehouse Right Side/Laser House Door Outside Timer, @Treehouse Right Side/Right Orange Bridge, @Treehouse Left Side/Left Orange Bridge, @Places/treehouseMain",
 					"$isNotDoors, Expert, @Treehouse Right Side/Laser House Door Outside Timer, @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158385, @Places/treehouseLeft2",
 					"$isNotDoors, Expert, @Treehouse Right Side/Laser House Door Outside Timer, @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158385, @Places/treehouseMain",
-					"Treehouse Timed Door to Laser House, @Places/treehouseOutsideLaser"
+					"Treehouse Laser House Entry (Door), @Places/treehouseOutsideLaser"
 				]
 			},
 			{

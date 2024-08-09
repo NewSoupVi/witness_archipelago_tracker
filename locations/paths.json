@@ -1492,15 +1492,43 @@
 			},
 
 			{
-				"name": "Treehouse First Door",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Treehouse First & Second Doors (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Treehouse First & Second Doors (Panel)",
-					"Treehouse First Door"
+					"{Treehouse First & Second Doors (Panel)}",
+					"$canSolve|158344-158345, Treehouse First & Second Doors (Panel), @Places/treehouseDock",
+					"{Treehouse First (Door), Treehouse Second (Door)}",
+					"Treehouse First (Door), Treehouse Second (Door), @Places/treehouseDock"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Treehouse Panels"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 1270,
+						"y": 491
+					},
+					{
+						"map": "doors",
+						"x": 1230,
+						"y": 491
+					}
+				]
+			},
+
+			{
+				"name": "Treehouse First (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Treehouse First (Door)}",
+					"Treehouse First (Door), @Places/treehouseDock"
+				],
+				"sections": [
+					{
+						"name": "Treehouse Entry Doors"
 					}
 				],
 				"map_locations": [
@@ -1513,15 +1541,15 @@
 			},
 
 			{
-				"name": "Treehouse Second Door",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Treehouse Second (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"doorsPanel, Treehouse First & Second Doors (Panel)",
-					"Treehouse Second Door"
+					"{Treehouse Second (Door)}",
+					"Treehouse Second (Door), @Places/treehouseSecond"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Treehouse Entry Doors"
 					}
 				],
 				"map_locations": [
@@ -1534,15 +1562,17 @@
 			},
 
 			{
-				"name": "Treehouse Third Door",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Treehouse Third Door (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
-					"doorsPanel, Treehouse Third Door (Panel)",
-					"Treehouse Beyond Yellow Bridge Door"
+					"{Treehouse Third Door (Panel)}",
+					"$canSolve|158355, Treehouse Third Door (Panel), @Places/treehouseAfterYellowBridge",
+					"{Treehouse Third (Door)}",
+					"Treehouse Third (Door), @Places/treehouseAfterYellowBridge"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Treehouse Panels"
 					}
 				],
 				"map_locations": [
@@ -1555,15 +1585,38 @@
 			},
 
 			{
-				"name": "Treehouse Laser House Entry",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Treehouse Third (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"doorsPanel, Treehouse Laser House Door Timer (Panel)",
-					"Treehouse Timed Door to Laser House"
+					"{Treehouse Third (Door)}",
+					"Treehouse Third (Door), @Places/treehouseAfterYellowBridge"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Treehouse Lower Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 1180,
+						"y": 491
+					}
+				]
+			},
+
+			{
+				"name": "Treehouse Laser House Door Timer (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
+				"access_rules": [
+					"{Treehouse Laser House Door Timer (Panel)}",
+					"$canSolve|158356, Treehouse Laser House Door Timer (Panel), @Places/treehouseMain, @Places/treehouseOutsideLaser",
+					"{Treehouse Laser House Entry (Door)}",
+					"Treehouse Laser House Entry (Door), @Places/treehouseOutsideLaser"
+				],
+				"sections": [
+					{
+						"name": "Treehouse Panels"
 					}
 				],
 				"map_locations": [
@@ -1576,15 +1629,59 @@
 			},
 
 			{
-				"name": "Treehouse Drawbridge",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"name": "Treehouse Laser House Entry (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"doorsPanel, Treehouse Drawbridge (Panel)",
-					"Treehouse Drawbridge"
+					"{Treehouse Laser House Entry (Door)}",
+					"Treehouse Laser House Entry (Door), @Places/treehouseOutsideLaser"
 				],
 				"sections": [
 					{
-						"name": "Door"
+						"name": "Treehouse Upper Doors"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 947,
+						"y": 513
+					}
+				]
+			},
+
+			{
+				"name": "Treehouse Drawbridge (Panel)",
+				"visibility_rules": [ "doorsPanel" ],
+				"access_rules": [
+					"{Treehouse Drawbridge (Panel)}",
+					"$canSolve|158404, Treehouse Drawbridge (Panel), @Places/treehouseDrawbridge",
+					"{Treehouse Drawbridge}",
+					"Treehouse Drawbridge, @Places/treehouseDrawbridge"
+				],
+				"sections": [
+					{
+						"name": "Treehouse Panels"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 876,
+						"y": 491
+					}
+				]
+			},
+
+			{
+				"name": "Treehouse Drawbridge (Door)",
+				"visibility_rules": [ "doorsDoor", "doorsMix" ],
+				"access_rules": [
+					"{Treehouse Drawbridge}",
+					"Treehouse Drawbridge, @Places/treehouseDrawbridge"
+				],
+				"sections": [
+					{
+						"name": "Treehouse Upper Doors"
 					}
 				],
 				"map_locations": [

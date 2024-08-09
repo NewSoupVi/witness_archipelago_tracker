@@ -697,6 +697,15 @@ PATH_IDS = {
 	"Keep Hedge Maze 2 Shortcut (Door)",
 	"Keep Hedge Maze 3 Shortcut (Door)",
 	"Keep Hedge Maze 4 Shortcut (Door)",
+	"Treehouse First & Second Doors (Panel)",
+	"Treehouse First (Door)",
+	"Treehouse Second (Door)",
+	"Treehouse Third Door (Panel)",
+	"Treehouse Third (Door)",
+	"Treehouse Laser House Door Timer (Panel)",
+	"Treehouse Laser House Entry (Door)",
+	"Treehouse Drawbridge (Panel)",
+	"Treehouse Drawbridge (Door)",
 	""
 
 }

@@ -2085,28 +2085,28 @@
 		"codes": "Swamp Near Laser Shortcut"
 	},
 	{
-		"name": "Treehouse First Door",
+		"name": "Treehouse First (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Treehouse First Door"
+		"codes": "Treehouse First (Door)"
 	},
 	{
-		"name": "Treehouse Second Door",
+		"name": "Treehouse Second (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Treehouse Second Door"
+		"codes": "Treehouse Second (Door)"
 	},
 	{
-		"name": "Treehouse Beyond Yellow Bridge Door",
+		"name": "Treehouse Third (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Treehouse Beyond Yellow Bridge Door"
+		"codes": "Treehouse Third (Door)"
 	},
 	{
 		"name": "Treehouse Drawbridge",
@@ -2117,12 +2117,12 @@
 		"codes": "Treehouse Drawbridge"
 	},
 	{
-		"name": "Treehouse Timed Door to Laser House",
+		"name": "Treehouse Laser House Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Treehouse Timed Door to Laser House"
+		"codes": "Treehouse Laser House Entry (Door)"
 	},
 	{
 		"name": "Inside Mountain First Layer Exit Door",
