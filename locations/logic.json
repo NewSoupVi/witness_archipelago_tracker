@@ -146,15 +146,15 @@
 				"name": "quarryStoneworksMid",
 				"access_rules": [
 					"$hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158124, @Places/quarryStoneworks",
-					"Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
-					"Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"
+					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
+					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
 				"name": "quarryStoneworksUpstairs",
 				"access_rules": [
-					"Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
-					"@Quarry Stoneworks/Lower Row, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworksMid",
+					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
+					"@Quarry Stoneworks/Lower Row, $hasPanel|Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs (Door), @Places/quarryStoneworks",
 					"showSnipes, $isNotDoors, @Quarry Stoneworks/Stairs Control Panel, [Quarry Stoneworks Stairs (Door)], @Places/quarryStoneworks"
 				]

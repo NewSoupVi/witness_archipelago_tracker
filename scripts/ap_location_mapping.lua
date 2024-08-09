@@ -751,6 +751,7 @@ PATH_IDS = {
 	"Tunnels Theater Shortcut (Door)",
 	"Windmill Entry (Panel)",
 	"Windmill Entry (Door)",
+	"Windmill Turn Control (Panel)",
 	"Theater Entry (Panel)",
 	"Theater Entry (Door)",
 	"Theater Video Input (Panel)",
@@ -775,7 +776,7 @@ PATH_IDS = {
 	"Town RGB Control (Panel)",
 	"Town RGB House Stairs (Door)",
 	"Monastery Entry Right (Panel)",
-	"Monastery Entry Outer (Door)"
+	"Monastery Entry Outer (Door)",
 	"Monastery Entry Left (Panel)",
 	"Monastery Entry Inner (Door)",
 	"Monastery Shutters Control (Panel)",

@@ -828,12 +828,12 @@
 		"codes": "Quarry Stoneworks Ramp Controls (Panel)"
 	},
 	{
-		"name": "Quarry Stoneworks Elevator Controls (Panel)",
+		"name": "Quarry Stoneworks Lift Controls (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Stoneworks Elevator Controls (Panel)"
+		"codes": "Quarry Stoneworks Lift Controls (Panel)"
 	},
 	{
 		"name": "Quarry Stoneworks Stairs (Panel)",

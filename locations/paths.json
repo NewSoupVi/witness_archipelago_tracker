@@ -68,7 +68,7 @@
 				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
 					"{Outside Tutorial Outpost Exit (Panel)}",
-					"$canSolve|158012, Tutorial Outpost Exit (Panel), @Places/tutorialOutpostInterior",
+					"$canSolve|158012, Outside Tutorial Outpost Exit (Panel), @Places/tutorialOutpostInterior",
 					"{Outside Tutorial Outpost Exit (Door)}",
 					"Outside Tutorial Outpost Exit (Door), @Places/tutorialOutpostInterior"
 				],
@@ -809,10 +809,10 @@
 				"name": "Quarry Stoneworks Lift Controls (Panel)",
 				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
-					"{Quarry Stoneworks Ramp Controls (Panel)}",
-					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworks",
-					"$canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158131, Quarry Stoneworks Elevator Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksMid"
+					"{Quarry Stoneworks Lift Controls (Panel)}",
+					"$canSolve|158131, Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworks",
+					"$canSolve|158131, Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworksUpstairs",
+					"showSnipes, $canSolve|158131, Quarry Stoneworks Lift Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksMid"
 				],
 				"sections": [
 					{
@@ -3095,7 +3095,7 @@
 				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
 					"{Town RGB House Entry (Panel)}",
-					"$canSolve|158225, Town RGB House Entry (Panel)}, @Places/overworld",
+					"$canSolve|158225, Town RGB House Entry (Panel), @Places/overworld",
 					"showSnipes, $canSolve|158225, Town RGB House Entry (Panel)}, [@Places/overworld], @Places/RGBHouse",
 					"{Town RGB House Entry (Door)}",
 					"Town RGB House Entry (Door), @Places/overworld"

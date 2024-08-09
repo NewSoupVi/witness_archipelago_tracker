@@ -1292,8 +1292,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1556" ],
 				"access_rules": [
 					"$isDisabled|1556",
-					"Quarry Stoneworks Side Exit (Door), $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"Quarry Stoneworks Side Exit (Door), $canSolve|158131, $hasPanel|Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
 					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
