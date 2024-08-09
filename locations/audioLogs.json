@@ -169,8 +169,8 @@
 				"name": "Audio Log",
 				"access_rules": [
 					"@Places/shadowsLaser",
-					"Shadows Laser Room Right Door, @Places/overworld",
-					"Shadows Laser Room Left Door, @Places/overworld"
+					"Shadows Laser Entry Right (Door), @Places/overworld",
+					"Shadows Laser Entry Left (Door), @Places/overworld"
 				]
 			}
 		],

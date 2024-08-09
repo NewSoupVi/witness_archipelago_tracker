@@ -812,12 +812,12 @@
 		"codes": "Quarry Elevator Control (Panel)"
 	},
 	{
-		"name": "Quarry Door to Stoneworks (Panel)",
+		"name": "Quarry Stoneworks Entry (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Door to Stoneworks (Panel)"
+		"codes": "Quarry Stoneworks Entry (Panel)"
 	},
 	{
 		"name": "Quarry Stoneworks Ramp Controls (Panel)",
@@ -1589,76 +1589,76 @@
 		"codes": "Desert Elevator (Door)"
 	},
 	{
-		"name": "Quarry Main Entry 1",
+		"name": "Quarry Entry 1 (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Main Entry 1"
+		"codes": "Quarry Entry 1 (Door)"
 	},
 	{
-		"name": "Quarry Main Entry 2",
+		"name": "Quarry Entry 2 (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Main Entry 2"
+		"codes": "Quarry Entry 2 (Door)"
 	},
 	{
-		"name": "Quarry Door to Stoneworks",
+		"name": "Quarry Stoneworks Entry (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Door to Stoneworks"
+		"codes": "Quarry Stoneworks Entry (Door)"
 	},
 	{
-		"name": "Quarry Stoneworks Side Door",
+		"name": "Quarry Stoneworks Side Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Stoneworks Side Door"
+		"codes": "Quarry Stoneworks Side Exit (Door)"
 	},
 	{
-		"name": "Quarry Stoneworks Rooftop Shortcut",
+		"name": "Quarry Stoneworks Roof Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Stoneworks Rooftop Shortcut"
+		"codes": "Quarry Stoneworks Roof Exit (Door)"
 	},
 	{
-		"name": "Quarry Stoneworks Stairs",
+		"name": "Quarry Stoneworks Stairs (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Stoneworks Stairs"
+		"codes": "Quarry Stoneworks Stairs (Door)"
 	},
 	{
-		"name": "Quarry Boathouse Boat Staircase",
+		"name": "Quarry Boathouse Dock (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Boathouse Boat Staircase"
+		"codes": "Quarry Boathouse Dock (Door)"
 	},
 	{
-		"name": "Quarry Boathouse First Barrier",
+		"name": "Quarry Boathouse First Barrier (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Boathouse First Barrier"
+		"codes": "Quarry Boathouse First Barrier (Door)"
 	},
 	{
-		"name": "Quarry Boathouse Shortcut",
+		"name": "Quarry Boathouse Second Barrier (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Quarry Boathouse Shortcut"
+		"codes": "Quarry Boathouse Second Barrier (Door)"
 	},
 	{
 		"name": "Shadows Timed Door",
@@ -1669,140 +1669,140 @@
 		"codes": "Shadows Timed Door"
 	},
 	{
-		"name": "Shadows Laser Room Right Door",
+		"name": "Shadows Laser Entry Right (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Shadows Laser Room Right Door"
+		"codes": "Shadows Laser Entry Right (Door)"
 	},
 	{
-		"name": "Shadows Laser Room Left Door",
+		"name": "Shadows Laser Entry Left (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Shadows Laser Room Left Door"
+		"codes": "Shadows Laser Entry Left (Door)"
 	},
 	{
-		"name": "Shadows Barrier to Quarry",
+		"name": "Shadows Quarry Barrier (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Shadows Barrier to Quarry"
+		"codes": "Shadows Quarry Barrier (Door)"
 	},
 	{
-		"name": "Shadows Barrier to Ledge",
+		"name": "Shadows Ledge Barrier (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Shadows Barrier to Ledge"
+		"codes": "Shadows Ledge Barrier (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 1 Exit Door",
+		"name": "Keep Hedge Maze 1 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 1 Exit Door"
+		"codes": "Keep Hedge Maze 1 Exit (Door)"
 	},
 	{
-		"name": "Keep Pressure Plates 1 Exit Door",
+		"name": "Keep Pressure Plates 1 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Pressure Plates 1 Exit Door"
+		"codes": "Keep Pressure Plates 1 Exit (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 2 Shortcut",
+		"name": "Keep Hedge Maze 2 Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 2 Shortcut"
+		"codes": "Keep Hedge Maze 2 Shortcut (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 2 Exit Door",
+		"name": "Keep Hedge Maze 2 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 2 Exit Door"
+		"codes": "Keep Hedge Maze 2 Exit (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 3 Shortcut",
+		"name": "Keep Hedge Maze 3 Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 3 Shortcut"
+		"codes": "Keep Hedge Maze 3 Shortcut (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 3 Exit Door",
+		"name": "Keep Hedge Maze 3 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 3 Exit Door"
+		"codes": "Keep Hedge Maze 3 Exit (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 4 Shortcut",
+		"name": "Keep Hedge Maze 4 Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 4 Shortcut"
+		"codes": "Keep Hedge Maze 4 Shortcut (Door)"
 	},
 	{
-		"name": "Keep Hedge Maze 4 Exit Door",
+		"name": "Keep Hedge Maze 4 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Hedge Maze 4 Exit Door"
+		"codes": "Keep Hedge Maze 4 Exit (Door)"
 	},
 	{
-		"name": "Keep Pressure Plates 2 Exit Door",
+		"name": "Keep Pressure Plates 2 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Pressure Plates 2 Exit Door"
+		"codes": "Keep Pressure Plates 2 Exit (Door)"
 	},
 	{
-		"name": "Keep Pressure Plates 3 Exit Door",
+		"name": "Keep Pressure Plates 3 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Pressure Plates 3 Exit Door"
+		"codes": "Keep Pressure Plates 3 Exit (Door)"
 	},
 	{
-		"name": "Keep Pressure Plates 4 Exit Door",
+		"name": "Keep Pressure Plates 4 Exit (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Pressure Plates 4 Exit Door"
+		"codes": "Keep Pressure Plates 4 Exit (Door)"
 	},
 	{
-		"name": "Keep Shortcut to Shadows",
+		"name": "Keep Shadows Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Shortcut to Shadows"
+		"codes": "Keep Shadows Shortcut (Door)"
 	},
 	{
-		"name": "Keep Tower Shortcut",
+		"name": "Keep Tower Shortcut (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Keep Tower Shortcut"
+		"codes": "Keep Tower Shortcut (Door)"
 	},
 	{
 		"name": "Monastery Shortcut",

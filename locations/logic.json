@@ -105,8 +105,8 @@
 				"name": "quarryBetweenEntries",
 				"access_rules": [
 					"$isNotDoors, @Quarry Entrance/Door 1, @Places/overworld",
-					"Quarry Main Entry 1, @Places/overworld",
-					"Quarry Main Entry 2, @Places/quarry"
+					"Quarry Entry 1 (Door), @Places/overworld",
+					"Quarry Entry 2 (Door), @Places/quarry"
 				]
 			},
 			{
@@ -114,32 +114,32 @@
 				"access_rules": [
 					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
 					"showSnipes, $isNotDoors, unrandomized, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
-					"Quarry Boathouse Boat Staircase, @Places/ocean",
-					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Boat Staircase]",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
+					"Quarry Boathouse Dock (Door), @Places/ocean",
+					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Dock (Door)]",
 					"showSnipes, $isNotDoors, @Places/shadowsFirstSet",
-					"Shadows Barrier to Quarry, @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, [Shadows Barrier to Quarry], @Places/shadowsFirstSet",
+					"Shadows Quarry Barrier (Door), @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, [Shadows Quarry Barrier (Door)], @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
+					"showSnipes, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
 					"autoElevators, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Boat Staircase], [@Places/ocean]",
-					"Quarry Main Entry 2, @Places/quarryBetweenEntries",
+					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
+					"Quarry Entry 2 (Door), @Places/quarryBetweenEntries",
 					"$isNotDoors, @Quarry Entrance/Door 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, @Places/quarryStoneworks",
-					"Quarry Stoneworks Side Door, @Places/quarryStoneworks",
-					"Quarry Door to Stoneworks, @Places/quarryStoneworks"
+					"Quarry Stoneworks Side Exit (Door), @Places/quarryStoneworks",
+					"Quarry Stoneworks Entry (Door), @Places/quarryStoneworks"
 				]
 			},
 			{
 				"name": "quarryStoneworks",
 				"access_rules": [
-					"Quarry Stoneworks Rooftop Shortcut, @Places/overworld",
-					"Quarry Stoneworks Side Door, @Places/quarry",
-					"Quarry Door to Stoneworks, @Places/quarry",
+					"Quarry Stoneworks Roof Exit (Door), @Places/overworld",
+					"Quarry Stoneworks Side Exit (Door), @Places/quarry",
+					"Quarry Stoneworks Entry (Door), @Places/quarry",
 					"$isNotDoors, @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Door], @Places/quarry, @Places/overworld",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Rooftop Shortcut], @Places/overworld"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Exit (Door)], @Places/quarry, @Places/overworld",
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Places/overworld"
 				]
 			},
 			{
@@ -155,8 +155,8 @@
 				"access_rules": [
 					"Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
 					"@Quarry Stoneworks/Lower Row, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), $canSolve|158131, @Places/quarryStoneworksMid",
-					"Quarry Stoneworks Stairs, @Places/quarryStoneworks",
-					"showSnipes, $isNotDoors, @Quarry Stoneworks/Stairs Control Panel, [Quarry Stoneworks Stairs], @Places/quarryStoneworks"
+					"Quarry Stoneworks Stairs (Door), @Places/quarryStoneworks",
+					"showSnipes, $isNotDoors, @Quarry Stoneworks/Stairs Control Panel, [Quarry Stoneworks Stairs (Door)], @Places/quarryStoneworks"
 				]
 			},
 			{
@@ -164,17 +164,17 @@
 				"access_rules": [
 					"$isNotPanels, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, @Places/quarry",
 					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, @Places/quarry",
-					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsBack"
+					"Quarry Boathouse First Barrier (Door), Quarry Boathouse Second Barrier (Door), @Places/quarryBoathouseUpstairsBack"
 				]
 			},
 			{
 				"name": "quarryBoathouseUpstairsBack",
 				"access_rules": [
 					"$isNotDoors, @Quarry Boathouse/Front Row, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, @Places/quarryBoathouseUpstairsFront",
-					"$isNotDoors, @Quarry Boathouse/Front Row, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsFront",
-					"showSnipes, $isNotDoors, @Quarry Boathouse/Front Row, [Quarry Boathouse Shortcut], @Places/quarryBoathouseUpstairsFront",
-					"Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, @Places/quarryBoathouseUpstairsFront",
-					"Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, @Places/quarryBoathouseUpstairsFront"
+					"$isNotDoors, @Quarry Boathouse/Front Row, Quarry Boathouse Second Barrier (Door), @Places/quarryBoathouseUpstairsFront",
+					"showSnipes, $isNotDoors, @Quarry Boathouse/Front Row, [Quarry Boathouse Second Barrier (Door)], @Places/quarryBoathouseUpstairsFront",
+					"Quarry Boathouse First Barrier (Door), Quarry Boathouse Second Barrier (Door), @Places/quarryBoathouseUpstairsFront",
+					"Quarry Boathouse First Barrier (Door), $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, @Places/quarryBoathouseUpstairsFront"
 				]
 			},
 			{
@@ -184,18 +184,18 @@
 					"showSnipes, $isNotDoors, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"Shadows Timed Door, @Places/overworld",
-					"Shadows Barrier to Ledge, @Places/overworld",
-					"Shadows Barrier to Quarry, @Places/quarry"
+					"Shadows Ledge Barrier (Door), @Places/overworld",
+					"Shadows Quarry Barrier (Door), @Places/quarry"
 				]
 			},
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Room Right Door], [Shadows Laser Room Left Door], @Places/overworld",
-					"Shadows Laser Room Right Door, Shadows Laser Room Left Door, @Places/overworld",
-					"showSnipes, Shadows Laser Room Right Door, [Shadows Laser Room Left Door], @Places/overworld",
-					"showSnipes, [Shadows Laser Room Right Door], Shadows Laser Room Left Door, @Places/overworld"
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
+					"Shadows Laser Entry Right (Door), Shadows Laser Entry Left (Door), @Places/overworld",
+					"showSnipes, Shadows Laser Entry Right (Door), [Shadows Laser Entry Left (Door)], @Places/overworld",
+					"showSnipes, [Shadows Laser Entry Right (Door)], Shadows Laser Entry Left (Door), @Places/overworld"
 				]
 			},
 			{
@@ -203,10 +203,10 @@
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Hedge Maze 1/Exit Panel, @Places/overworld",
 					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut], @Places/overworld",
-					"Keep Hedge Maze 1 Exit Door, @Places/overworld",
-					"Keep Hedge Maze 2 Shortcut, @Places/overworld",
-					"Keep Hedge Maze 2 Exit Door, @Places/maze3"
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut (Door)], @Places/overworld",
+					"Keep Hedge Maze 1 Exit (Door), @Places/overworld",
+					"Keep Hedge Maze 2 Shortcut (Door), @Places/overworld",
+					"Keep Hedge Maze 2 Exit (Door), @Places/maze3"
 				]
 			},
 			{
@@ -214,10 +214,10 @@
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel, @Places/overworld",
 					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut], @Places/overworld",
-					"Keep Hedge Maze 2 Exit Door, @Places/maze2",
-					"Keep Hedge Maze 3 Shortcut, @Places/overworld",
-					"Keep Hedge Maze 3 Exit Door, @Places/maze4"
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut (Door)], @Places/overworld",
+					"Keep Hedge Maze 2 Exit (Door), @Places/maze2",
+					"Keep Hedge Maze 3 Shortcut (Door), @Places/overworld",
+					"Keep Hedge Maze 3 Exit (Door), @Places/maze4"
 				]
 			},
 			{
@@ -225,10 +225,10 @@
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel, @Places/overworld",
 					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/keepTower",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut], @Places/overworld",
-					"Keep Hedge Maze 3 Exit Door, @Places/maze3",
-					"Keep Hedge Maze 4 Shortcut, @Places/overworld",
-					"Keep Hedge Maze 4 Exit Door, @Places/keepTower"
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut (Door)], @Places/overworld",
+					"Keep Hedge Maze 3 Exit (Door), @Places/maze3",
+					"Keep Hedge Maze 4 Shortcut (Door), @Places/overworld",
+					"Keep Hedge Maze 4 Exit (Door), @Places/keepTower"
 				]
 			},
 			{
@@ -241,29 +241,29 @@
 				"name": "plates3",
 				"access_rules": [
 					"$isNotDoors, @Pressure Plates 1/Pressure Plates, @Places/overworld",
-					"Keep Pressure Plates 1 Exit Door, @Places/overworld",
-					"Keep Pressure Plates 3 Exit Door, @Places/plates4"
+					"Keep Pressure Plates 1 Exit (Door), @Places/overworld",
+					"Keep Pressure Plates 3 Exit (Door), @Places/plates4"
 				]
 			},
 			{
 				"name": "plates4",
 				"access_rules": [
 					"$isNotDoors, @Pressure Plates 3/Pressure Plates, @Places/plates3",
-					"Keep Pressure Plates 4 Exit Door, @Places/keepTower",
-					"Keep Shortcut to Shadows, @Places/overworld",
-					"Keep Pressure Plates 3 Exit Door, @Places/plates3"
+					"Keep Pressure Plates 4 Exit (Door), @Places/keepTower",
+					"Keep Shadows Shortcut (Door), @Places/overworld",
+					"Keep Pressure Plates 3 Exit (Door), @Places/plates3"
 				]
 			},
 			{
 				"name": "keepTower",
 				"access_rules": [
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates, @Places/plates4",
-					"Keep Pressure Plates 4 Exit Door, @Places/plates4",
+					"Keep Pressure Plates 4 Exit (Door), @Places/plates4",
 					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/maze4",
-					"Keep Hedge Maze 4 Exit Door, @Places/maze4",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut], @Places/overworld",
-					"showSnipes, $isNotDoors, [Keep Tower Shortcut], @Keep Tower/Shortcut Panel, @Places/overworld",
-					"Keep Tower Shortcut, @Places/overworld"
+					"Keep Hedge Maze 4 Exit (Door), @Places/maze4",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut (Door)], @Places/overworld",
+					"showSnipes, $isNotDoors, [Keep Tower Shortcut (Door)], @Keep Tower/Shortcut Panel, @Places/overworld",
+					"Keep Tower Shortcut (Door), @Places/overworld"
 				]
 			},
 			{
