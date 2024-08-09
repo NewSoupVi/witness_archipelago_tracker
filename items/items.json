@@ -2109,12 +2109,12 @@
 		"codes": "Treehouse Third (Door)"
 	},
 	{
-		"name": "Treehouse Drawbridge",
+		"name": "Treehouse Drawbridge (Door)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Treehouse Drawbridge"
+		"codes": "Treehouse Drawbridge (Door)"
 	},
 	{
 		"name": "Treehouse Laser House Entry (Door)",

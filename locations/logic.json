@@ -338,7 +338,7 @@
 			{
 				"name": "treehouseDrawbridge",
 				"access_rules": [
-					"Treehouse Drawbridge, @Places/overworld",
+					"Treehouse Drawbridge (Door), @Places/overworld",
 					"@Treehouse Right Side/Right Orange Bridge, @Places/treehouseMain"
 				]
 			},

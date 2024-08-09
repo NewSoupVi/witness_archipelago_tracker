@@ -96,7 +96,7 @@ doors = {
 		"Treehouse Second (Door)",
 		"Treehouse Third (Door)"},
 	["Treehouse Upper Doors"] = {"Treehouse Laser House Entry (Door)",
-		"Treehouse Drawbridge"},
+		"Treehouse Drawbridge (Door)"},
 	["Mountain Floor 1 & 2 Doors"] = {"Mountain Floor 1 Exit (Door)",
 		"Mountain Floor 2 Staircase Near (Door)",
 		"Mountain Floor 2 Staircase Far (Door)",

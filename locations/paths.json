@@ -584,14 +584,14 @@
 
 			{
 				"name": "Quarry Elevator Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsDoor", "doorsMix" ],
+				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
 					"{Quarry Elevator Control (Panel)}",
 					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
-					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
 					"showSnipes, [autoElevators], $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
-					"doorsDoor, autoElevators, $canSolve|158120, @Quarry Stoneworks/Control Room Right, @Places/overworld",
-					"showSnipes, doorsDoors [autoElevators], $canSolve|158120, @Quarry Stoneworks/Control Room Right, @Places/overworld"
+					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
+					"showSnipes, [autoElevators], $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
+					"$canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld, @Places/quarry"
 				],
 				"sections": [
 					{
@@ -677,9 +677,9 @@
 				"visibility_rules": [ "doorsPanel" ],
 				"access_rules": [
 					"{Quarry Entry 2 (Panel)}",
-					"$canSolve|158119, Quarry Entry 2 (Panel), @Places/overworld",
+					"$canSolve|158119, Quarry Entry 2 (Panel), @Places/quarryBetweenEntries",
 					"{Quarry Entry 2 (Door)}",
-					"Quarry Entry 2 (Door), @Places/overworld"
+					"Quarry Entry 2 (Door), @Places/quarryBetweenEntries"
 				],
 				"sections": [
 					{
@@ -877,7 +877,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Boathouse Dock (Door)}",
-					"{Quarry Boathouse Dock (Door)}, @Places/quarry"
+					"Quarry Boathouse Dock (Door), @Places/quarry"
 				],
 				"sections": [
 					{
@@ -1190,7 +1190,7 @@
 			},
 
 			{
-				"name": "Keep Pressure plates 3 Exit (Door)",
+				"name": "Keep Pressure Plates 3 Exit (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Keep Pressure Plates 3 Exit (Door)}",
@@ -1301,9 +1301,9 @@
 				"visibility_rules": [ "doorsPanel, Unrandomized" ],
 				"access_rules": [
 					"{Keep Hedge Maze 2 (Panel)}",
-					"$canSolve|158194, Keep Hedge Maze 2 (Panel), @Places/overworld",
+					"$canSolve|158194, Keep Hedge Maze 2 (Panel), @Places/maze2",
 					"{Keep Hedge Maze 2 Exit (Door)}",
-					"Keep Hedge Maze 2 Exit (Door), @Places/overworld"
+					"Keep Hedge Maze 2 Exit (Door), @Places/maze2"
 				],
 				"sections": [
 					{
@@ -1324,7 +1324,7 @@
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
 					"{Keep Hedge Maze 2 Exit (Door)}",
-					"Keep Hedge Maze 2 Exit (Door), @Places/overworld"
+					"Keep Hedge Maze 2 Exit (Door), @Places/maze2"
 				],
 				"sections": [
 					{
@@ -1345,9 +1345,9 @@
 				"visibility_rules": [ "doorsPanel, Unrandomized" ],
 				"access_rules": [
 					"{Keep Hedge Maze 3 (Panel)}",
-					"$canSolve|158195, Keep Hedge Maze 3 (Panel), @Places/overworld",
+					"$canSolve|158195, Keep Hedge Maze 3 (Panel), @Places/maze3",
 					"{Keep Hedge Maze 3 Exit (Door)}",
-					"Keep Hedge Maze 3 Exit (Door), @Places/overworld"
+					"Keep Hedge Maze 3 Exit (Door), @Places/maze3"
 				],
 				"sections": [
 					{
@@ -1368,7 +1368,7 @@
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
 					"{Keep Hedge Maze 3 Exit (Door)}",
-					"Keep Hedge Maze 3 Exit (Door), @Places/overworld"
+					"Keep Hedge Maze 3 Exit (Door), @Places/maze3"
 				],
 				"sections": [
 					{
@@ -1389,9 +1389,9 @@
 				"visibility_rules": [ "doorsPanel, Unrandomized" ],
 				"access_rules": [
 					"{Keep Hedge Maze 4 (Panel)}",
-					"$canSolve|158196, Keep Hedge Maze 4 (Panel), @Places/overworld",
+					"$canSolve|158196, Keep Hedge Maze 4 (Panel), @Places/maze4",
 					"{Keep Hedge Maze 4 Exit (Door)}",
-					"Keep Hedge Maze 4 Exit (Door), @Places/overworld"
+					"Keep Hedge Maze 4 Exit (Door), @Places/maze4"
 				],
 				"sections": [
 					{
@@ -1412,7 +1412,7 @@
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
 					"{Keep Hedge Maze 4 Exit (Door)}",
-					"Keep Hedge Maze 4 Exit (Door), @Places/overworld"
+					"Keep Hedge Maze 4 Exit (Door), @Places/maze4"
 				],
 				"sections": [
 					{
@@ -1655,8 +1655,8 @@
 				"access_rules": [
 					"{Treehouse Drawbridge (Panel)}",
 					"$canSolve|158404, Treehouse Drawbridge (Panel), @Places/treehouseDrawbridge",
-					"{Treehouse Drawbridge}",
-					"Treehouse Drawbridge, @Places/treehouseDrawbridge"
+					"{Treehouse Drawbridge (Door)}",
+					"Treehouse Drawbridge (Door), @Places/treehouseDrawbridge"
 				],
 				"sections": [
 					{
@@ -1676,8 +1676,8 @@
 				"name": "Treehouse Drawbridge (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"{Treehouse Drawbridge}",
-					"Treehouse Drawbridge, @Places/treehouseDrawbridge"
+					"{Treehouse Drawbridge (Door)}",
+					"Treehouse Drawbridge (Door), @Places/treehouseDrawbridge"
 				],
 				"sections": [
 					{
@@ -1930,7 +1930,7 @@
 			},
 
 			{
-				"name": "Swamp Platform Shortcut",
+				"name": "Swamp Platform Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Swamp Platform Shortcut (Door)}",
@@ -2879,7 +2879,7 @@
 			},
 
 			{
-				"name": "Town Cargo Box Entry",
+				"name": "Town Cargo Box Entry (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Town Cargo Box Entry (Door)}",
@@ -3206,7 +3206,7 @@
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"{Town RGB House Stairs (Door)}",
-					"Town RGB House Stairs (Door), @Places/RBGHouse"
+					"Town RGB House Stairs (Door), @Places/RGBHouse"
 				],
 				"sections": [
 					{
@@ -3464,7 +3464,7 @@
 			},
 
 			{
-				"name": "Bunker Entry",
+				"name": "Bunker Entry (Door)",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
 					"{Bunker Entry (Door)}",
