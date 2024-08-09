@@ -584,7 +584,7 @@
 
 			{
 				"name": "Quarry Elevator Control (Panel)",
-				"visibility_rules": [ "doorsPanel" ],
+				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Elevator Control (Panel)}",
 					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
