@@ -345,7 +345,7 @@
 			{
 				"name": "swampEntry",
 				"access_rules": [
-					"$isNotDoors, @Swamp Entry Area/Entry Panel, @Places/overworld",
+					"$isNotDoors, @Swamp Entry/Entry Panel, @Places/overworld",
 					"Swamp Entry (Door), @Places/overworld",
 					"$hasPanel|Swamp Sliding Bridge (Panel), $canSolve|158302, @Places/swampPlatform"
 				]
@@ -361,7 +361,7 @@
 			{
 				"name": "swampBroken",
 				"access_rules": [
-					"$isNotDoors, @Swamp Platform Area/Platform Set, @Places/swampPlatform",
+					"$isNotDoors, @Swamp Platform/Platform Set, @Places/swampPlatform",
 					"Swamp Between Bridges First Door, @Places/swampPlatform",
 					"Swamp Between Bridges Second Door, @Places/swampRotated"
 				]
@@ -369,7 +369,7 @@
 			{
 				"name": "swampRotated",
 				"access_rules": [
-					"$isNotDoors, @Swamp Platform Area/Between Bridges Near Row, @Places/swampBroken",
+					"$isNotDoors, @Swamp Platform/Between Bridges Near Row, @Places/swampBroken",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
 					"Swamp Between Bridges Second Door, @Places/swampBroken",
 					"Swamp Red Water Pump (Door), @Places/swampRed"
@@ -380,7 +380,7 @@
 				"access_rules": [
 					"@Places/ocean",
 					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
-					"$isNotDoors, @Swamp Platform Area/Shortcut Panels, @Places/swampPlatform",
+					"$isNotDoors, @Swamp Platform/Shortcut Panels, @Places/swampPlatform",
 					"Swamp Platform Shortcut (Door), @Places/swampPlatform",
 					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
 					"@Places/swampPurple"
@@ -449,7 +449,7 @@
 			{
 				"name": "theater",
 				"access_rules": [
-					"$isNotDoors, @Theater Entry Area/Entry Panel, @Places/windmill",
+					"$isNotDoors, @Theater Entry/Entry Panel, @Places/windmill",
 					"Theater Entry (Door), @Places/windmill",
 					"Theater Exit Left (Door), @Places/overworld",
 					"Theater Exit Right (Door), @Places/overworld"
@@ -545,7 +545,7 @@
 			{
 				"name": "cargoBox",
 				"access_rules": [
-					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/overworld",
+					"$isNotDoors, @Town Cargo Box/Entry Panel, @Places/overworld",
 					"Town Cargo Box Entry (Door), @Places/overworld"
 				]
 			},
@@ -719,7 +719,7 @@
 			{
 				"name": "challenge",
 				"access_rules": [
-					"$isNotDoors, @Challenge Entry Area/Entry Panel, @Places/challengeAntechamber",
+					"$isNotDoors, @Challenge Entry/Entry Panel, @Places/challengeAntechamber",
 					"Challenge Entry (Door), @Places/challengeAntechamber",
 					"Tunnels Entry (Door), @Places/tunnels"
 				]

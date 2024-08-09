@@ -80,7 +80,7 @@
 		]
 	},
 	{
-		"name": "Symmetry Island Lower Area",
+		"name": "Symmetry Island Lower",
 		"sections": [
 			{
 				"name": "Audio Log",
@@ -96,7 +96,7 @@
 		]
 	},
 	{
-		"name": "Symmetry Island Upper Area",
+		"name": "Symmetry Island Upper",
 		"sections": [
 			{
 				"name": "Audio Log",
@@ -760,7 +760,7 @@
 		]
 	},
 	{
-		"name": "Caves Mountain Shortcut Area",
+		"name": "Caves Mountain Shortcut",
 		"sections": [
 			{
 				"name": "Audio Log",
@@ -792,7 +792,7 @@
 		]
 	},
 	{
-		"name": "Tunnels Town Shortcut Area",
+		"name": "Tunnels Town Shortcut",
 		"sections": [
 			{
 				"name": "Audio Log",

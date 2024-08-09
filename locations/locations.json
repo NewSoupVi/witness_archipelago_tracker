@@ -2458,7 +2458,7 @@
 	},
 
 	{
-		"name": "Town Cargo Box Area",
+		"name": "Town Cargo Box",
 		"sections": [
 			{
 				"name": "Discard",
@@ -2474,7 +2474,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13769" ],
 				"access_rules": [
 					"$isDisabled|13769",
-					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/ocean, $hasObeliskKey|Town",
+					"$isNotDoors, @Town Cargo Box/Entry Panel, @Places/ocean, $hasObeliskKey|Town",
 					"Town Cargo Box Entry (Door), @Places/ocean, $hasObeliskKey|Town"
 				]
 			}
@@ -2494,7 +2494,7 @@
 			{
 				"name": "Boat Cargo Box EP (Town Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159753, $isNotDisabled|13769" ],
-				"access_rules": [ "@Town Cargo Box Area/Boat Cargo Box EP" ]
+				"access_rules": [ "@Town Cargo Box/Boat Cargo Box EP" ]
 			}
 		],
 		"map_locations": [
@@ -3066,8 +3066,8 @@
 				"name": "Challenge Video",
 				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabled|13641" ],
 				"access_rules": [
-					"@Mountain Challenge Area/Challenge Vault, $hasPanel|Theater Video Input (Panel), @Places/theater",
-					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel), @Places/theater"
+					"@Challenge/Challenge Vault, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Challenge/Challenge Vault], $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
@@ -3108,7 +3108,7 @@
 	},
 
 	{
-		"name": "Theater Entry Area",
+		"name": "Theater Entry",
 		"sections": [
 			{
 				"name": "Entry Panel",
@@ -3126,7 +3126,7 @@
 	},
 
 	{
-		"name": "Theater Exit Area",
+		"name": "Theater Exit",
 		"sections": [
 			{
 				"name": "Exit Door Left",
@@ -3758,7 +3758,7 @@
 	},
 
 	{
-		"name": "Swamp Entry Area",
+		"name": "Swamp Entry",
 		"sections": [
 			{
 				"name": "Entry Panel",
@@ -3791,7 +3791,7 @@
 	},
 
 	{
-		"name": "Swamp Platform Area",
+		"name": "Swamp Platform",
 		"sections": [
 			{
 				"name": "Platform Set",
@@ -3804,15 +3804,15 @@
 			{
 				"name": "Between Bridges Near Row",
 				"access_rules": [
-					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform Area/Platform Set",
-					"showSnipes, $isNotPanelHunt, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform Area/Platform Set"
+					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform/Platform Set",
+					"showSnipes, $isNotPanelHunt, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform/Platform Set"
 				]
 			},
 			{
 				"name": "Between Bridges Far Row",
 				"access_rules": [
-					"$canSolve|158319-158322, @Places/swampRotated, @Swamp Platform Area/Between Bridges Near Row",
-					"showSnipes, $canSolve|158319-158322, [@Places/swampRotated], @Places/swampRed, @Swamp Platform Area/Between Bridges Near Row"
+					"$canSolve|158319-158322, @Places/swampRotated, @Swamp Platform/Between Bridges Near Row",
+					"showSnipes, $canSolve|158319-158322, [@Places/swampRotated], @Places/swampRed, @Swamp Platform/Between Bridges Near Row"
 				]
 			}
 		],
@@ -3830,7 +3830,7 @@
 		"sections": [
 			{
 				"name": "Beyond Rotating Bridge",
-				"access_rules": [ "$canSolve|158329-158332, @Places/swampBack, @Swamp Platform Area/Between Bridges Far Row" ]
+				"access_rules": [ "$canSolve|158329-158332, @Places/swampBack, @Swamp Platform/Between Bridges Far Row" ]
 			},
 			{
 				"name": "Swamp Boat EP",
@@ -5752,7 +5752,7 @@
 	},
 
 	{
-		"name": "Challenge Entry Area",
+		"name": "Challenge Entry",
 		"sections": [
 			{
 				"name": "Entry Panel",
@@ -5790,7 +5790,7 @@
 	},
 
 	{
-		"name": "Mountain Challenge Area",
+		"name": "Challenge",
 		"sections": [
 			{
 				"name": "Challenge Water EP",
@@ -5845,12 +5845,12 @@
 	},
 
 	{
-		"name": "Mountain Challenge Area EPs",
+		"name": "Challenge EPs",
 		"sections": [
 			{
 				"name": "Challenge Water EP (Town Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159753, $isNotDisabled|166704" ],
-				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP" ]
+				"access_rules": [ "@Challenge/Challenge Water EP" ]
 			}
 		],
 		"map_locations": [
@@ -6165,7 +6165,7 @@
 			{
 				"name": "Side 4",
 				"visibility_rules": [ "obelisks, $anyIsNotDisabled|166704 13769" ],
-				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP, @Town Cargo Box Area/Boat Cargo Box EP" ]
+				"access_rules": [ "@Challenge/Challenge Water EP, @Town Cargo Box/Boat Cargo Box EP" ]
 			},
 			{
 				"name": "Side 5",
