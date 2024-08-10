@@ -793,7 +793,7 @@ PATH_IDS = {
 	"Bunker Tinted Glass Door (Panel)",
 	"Bunker Tinted Glass Door",
 	"Bunker UV Room Entry (Door)",
-	"Bunker UV Room Drop-Down Door Controls (Panel)",
+	"Bunker Drop-Down Door Controls (Panel)",
 	"Bunker Elevator Room Entry (Door)",
 	"Bunker Elevator Control (Panel)"
 }

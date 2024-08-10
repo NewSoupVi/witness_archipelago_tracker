@@ -3645,8 +3645,8 @@
 				"name": "Ultraviolet Room",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Controls (Panel)",
-					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Controls (Panel)]"
+					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker Drop-Down Door Controls (Panel)",
+					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker Drop-Down Door Controls (Panel)]"
 				]
 			},
 			{

@@ -1092,12 +1092,12 @@
 		"codes": "Bunker Tinted Glass Door (Panel)"
 	},
 	{
-		"name": "Bunker UV Room Drop-Down Door Controls (Panel)",
+		"name": "Bunker Drop-Down Door Controls (Panel)",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Bunker UV Room Drop-Down Door Controls (Panel)"
+		"codes": "Bunker Drop-Down Door Controls (Panel)"
 	},
 	{
 		"name": "Bunker Elevator Control (Panel)",

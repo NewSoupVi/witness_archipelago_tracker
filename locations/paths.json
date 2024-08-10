@@ -328,14 +328,18 @@
 
 			{
 				"name": "Desert Surface 3 Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Desert Surface 3 Control (Panel)}",
 					"Desert Surface 3 Control (Panel), @Places/overworld"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Desert Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Desert Control Panels"
 					}
 				],
 				"map_locations": [
@@ -349,14 +353,18 @@
 
 			{
 				"name": "Desert Surface 8 Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Desert Surface 8 Control (Panel)}",
 					"Desert Surface 8 Control (Panel), Desert Surface 3 Control (Panel), @Places/overworld"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanels" ],
 						"name": "Desert Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Desert Control Panels"
 					}
 				],
 				"map_locations": [
@@ -414,14 +422,18 @@
 
 			{
 				"name": "Desert Light Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Desert Light Control (Panel)}",
 					"$canSolve|158087, Desert Light Control (Panel), @Places/desertFloodLight"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Desert Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Desert Control Panels"
 					}
 				],
 				"map_locations": [
@@ -500,14 +512,18 @@
 
 			{
 				"name": "Desert Flood Controls (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Desert Flood Controls (Panel)}",
 					"$canSolve|158097, Desert Flood Controls (Panel), @Places/desertFlood"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Desert Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Desert Control Panels"
 					}
 				],
 				"map_locations": [
@@ -542,14 +558,18 @@
 
 			{
 				"name": "Desert Elevator Room Hexagonal Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Desert Elevator Room Hexagonal Control (Panel)}",
 					"$canSolve|158113, Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Desert Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Desert Control Panels"
 					}
 				],
 				"map_locations": [
@@ -584,7 +604,6 @@
 
 			{
 				"name": "Quarry Elevator Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Elevator Control (Panel)}",
 					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
@@ -595,7 +614,12 @@
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Quarry Outside Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Quarry Elevator Control (Panel)"
 					}
 				],
 				"map_locations": [
@@ -784,7 +808,6 @@
 
 			{
 				"name": "Quarry Stoneworks Ramp Controls (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Stoneworks Ramp Controls (Panel)}",
 					"$canSolve|158124, Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworks",
@@ -793,7 +816,12 @@
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Quarry Stoneworks Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Quarry Stoneworks Control Panels"
 					}
 				],
 				"map_locations": [
@@ -807,7 +835,6 @@
 
 			{
 				"name": "Quarry Stoneworks Lift Controls (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Stoneworks Lift Controls (Panel)}",
 					"$canSolve|158131, Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworks",
@@ -816,7 +843,12 @@
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Quarry Stoneworks Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Quarry Stoneworks Control Panels"
 					}
 				],
 				"map_locations": [
@@ -895,14 +927,18 @@
 
 			{
 				"name": "Quarry Boathouse Ramp Height Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Boathouse Ramp Height Control (Panel)}",
 					"$canSolve|158148, Quarry Boathouse Ramp Height Control (Panel), @Places/quarry"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Quarry Boathouse Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Quarry Boathouse Control Panels"
 					}
 				],
 				"map_locations": [
@@ -916,14 +952,18 @@
 
 			{
 				"name": "Quarry Boathouse Ramp Horizontal Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Boathouse Ramp Horizontal Control (Panel)}",
 					"$canSolve|158154, Quarry Boathouse Ramp Horizontal Control (Panel), @Places/quarryBoathouseUpstairsBack"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Quarry Boathouse Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Quarry Boathouse Control Panels"
 					}
 				],
 				"map_locations": [
@@ -937,14 +977,18 @@
 
 			{
 				"name": "Quarry Boathouse Hook Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Quarry Boathouse Hook Control (Panel)}",
 					"$canSolve|158165, Quarry Boathouse Hook Control (Panel), @Places/quarryBoathouseUpstairsBack"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Quarry Boathouse Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Quarry Boathouse Control Panels"
 					}
 				],
 				"map_locations": [
@@ -1739,7 +1783,6 @@
 
 			{
 				"name": "Swamp Sliding Bridge (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Swamp Sliding Bridge (Panel)}",
 					"$canSolve|158302, Swamp Sliding Bridge (Panel), @Places/swampEntry",
@@ -1747,7 +1790,12 @@
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Swamp Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Swamp Control Panels"
 					}
 				],
 				"map_locations": [
@@ -1887,14 +1935,18 @@
 
 			{
 				"name": "Swamp Rotating Bridge (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Swamp Rotating Bridge (Panel)}",
 					"$canSolve|158327, Swamp Rotating Bridge (Panel), @Places/swampRotated"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Swamp Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Swamp Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2017,14 +2069,18 @@
 
 			{
 				"name": "Swamp Maze Controls (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Swamp Maze Controls (Panel)}",
 					"$canSolve|158340, $canSolve|158112, Swamp Maze Controls (Panel), @Places/swampMaze"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Swamp Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Swamp Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2038,14 +2094,18 @@
 
 			{
 				"name": "Swamp Long Bridge (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Swamp Long Bridge (Panel)}",
 					"$canSolve|158339, Swamp Long Bridge (Panel), @Places/swampBack"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Swamp Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Swamp Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2166,14 +2226,18 @@
 
 			{
 				"name": "Mountain Floor 1 Light Bridge (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|40505", "doorsMix, $isNotDisabled|40505" ],
 				"access_rules": [
 					"{Mountain Floor 1 Light Bridge (Panel)}",
 					"$canSolve|158408, Mountain Floor 1 Light Bridge (Panel), @Places/mountainLayer1"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, $isNotDisabled|40505" ],
 						"name": "Mountain Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, $isNotDisabled|40505" ],
+						"name": "Mountain & Caves Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2208,14 +2272,18 @@
 
 			{
 				"name": "Mountain Floor 2 Light Bridge Near (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|40582", "doorsMix, $isNotDisabled|40582" ],
 				"access_rules": [
 					"{Mountain Floor 2 Light Bridge Near (Panel)}",
 					"$canSolve|158431, Mountain Floor 2 Light Bridge Near (Panel), @Places/mountain2FrontStairs"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, $isNotDisabled|40582" ],
 						"name": "Mountain Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, $isNotDisabled|40582" ],
+						"name": "Mountain & Caves Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2250,14 +2318,18 @@
 
 			{
 				"name": "Mountain Floor 2 Light Bridge Far (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|40664", "doorsMix, $isNotDisabled|40664" ],
 				"access_rules": [
 					"{Mountain Floor 2 Light Bridge Far (Panel)}",
 					"$canSolve|158438, Mountain Floor 2 Light Bridge Far (Panel), @Places/mountain2BackStairs"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, $isNotDisabled|40664" ],
 						"name": "Mountain Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, $isNotDisabled|40664" ],
+						"name": "Mountain & Caves Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2313,14 +2385,18 @@
 
 			{
 				"name": "Mountain Floor 2 Elevator Control (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|40683", "doorsMix, $isNotDisabled|40683" ],
 				"access_rules": [
 					"{Mountain Floor 2 Elevator Control (Panel)}",
 					"$canSolve|158439, Mountain Floor 2 Elevator Control (Panel), @Places/mountainElevator"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, $isNotDisabled|40683" ],
 						"name": "Mountain Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, $isNotDisabled|40683" ],
+						"name": "Mountain & Caves Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2441,14 +2517,18 @@
 
 			{
 				"name": "Caves Elevator Controls (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|210347", "doorsMix, $isNotDisabled|210347" ],
 				"access_rules": [
 					"{Caves Elevator Controls (Panel)}",
 					"$canSolve|158451-158453, Caves Elevator Controls (Panel), @Places/caves"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, $isNotDisabled|210347" ],
 						"name": "Caves Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, $isNotDisabled|210347" ],
+						"name": "Mountain & Caves Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2702,14 +2782,18 @@
 
 			{
 				"name": "Windmill Turn Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Windmill Turn Control (Panel)}",
 					"$canSolve|158247, Windmill Turn Control (Panel), @Places/windmill"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Windmill & Theater Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Windmill & Theater Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2767,14 +2851,18 @@
 
 			{
 				"name": "Theater Video Input (Panel)",
-				"visibility_rules": [ "doorsPanel, Unrandomized, Vaults", "doorsMix, Unrandomized, Vaults" ],
 				"access_rules": [
 					"{Theater Video Input (Panel)}",
 					"$canSolve|158656, Theater Video Input (Panel), @Places/theater"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, Unrandomized, Vaults" ],
 						"name": "Windmill & Theater Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, Unrandomized, Vaults" ],
+						"name": "Windmill & Theater Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2901,14 +2989,18 @@
 
 			{
 				"name": "Town Desert Laser Redirect Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Town Desert Laser Redirect Control (Panel)}",
 					"$canSolve|158707, Town Desert Laser Redirect Control (Panel), @Places/overworld"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Town Dockside House Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Town Control Panels"
 					}
 				],
 				"map_locations": [
@@ -2966,14 +3058,18 @@
 
 			{
 				"name": "Town Maze Rooftop Bridge (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Town Maze Rooftop Bridge (Panel)}",
 					"$canSolve|158229, Town Maze Rooftop Bridge (Panel), @Places/mazeRoof"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Town Maze Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Town Control Panels"
 					}
 				],
 				"map_locations": [
@@ -3183,14 +3279,18 @@
 
 			{
 				"name": "Town RGB Control (Panel)",
-				"visibility_rules": [ "doorsPanel", "doorsMix" ],
 				"access_rules": [
 					"{Town RGB Control (Panel)}",
 					"$canSolve|158244, Town RGB Control (Panel), @Places/RGBHouseUpstairs"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Town Church & RGB House Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix" ],
+						"name": "Town Control Panels"
 					}
 				],
 				"map_locations": [
@@ -3312,14 +3412,18 @@
 
 			{
 				"name": "Monastery Shutters Control (Panel)",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
 					"{Monastery Shutters Control (Panel)}",
 					"$canSolve|158213, Monastery Shutters Control (Panel), @Places/monastery"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, Unrandomized" ],
 						"name": "Monastery Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, Unrandomized" ],
+						"name": "Monastery Shutters Control (Panel)"
 					}
 				],
 				"map_locations": [
@@ -3550,15 +3654,19 @@
 			},
 
 			{
-				"name": "Bunker UV Room Drop-Down Door Controls (Panel)",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
+				"name": "Bunker Drop-Down Door Controls (Panel)",
 				"access_rules": [
-					"{Bunker UV Room Drop-Down Door Controls (Panel)}",
-					"$canSolve|158282-158283, Bunker UV Room Drop-Down Door Controls (Panel), @Places/bunkerUV"
+					"{Bunker Drop-Down Door Controls (Panel)}",
+					"$canSolve|158282-158283, Bunker Drop-Down Door Controls (Panel), @Places/bunkerUV"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, Unrandomized" ],
 						"name": "Bunker Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, Unrandomized" ],
+						"name": "Bunker Control Panels"
 					}
 				],
 				"map_locations": [
@@ -3593,14 +3701,18 @@
 
 			{
 				"name": "Bunker Elevator Control (Panel)",
-				"visibility_rules": [ "doorsPanel, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [
 					"{Bunker Elevator Control (Panel)}",
 					"$canSolve|158286, Bunker Elevator Control (Panel), @Places/bunkerElevatorControl"
 				],
 				"sections": [
 					{
+						"visibility_rules": [ "doorsPanel, Unrandomized" ],
 						"name": "Bunker Panels"
+					},
+					{
+						"visibility_rules": [ "doorsMix, Unrandomized" ],
+						"name": "Bunker Control Panels"
 					}
 				],
 				"map_locations": [
