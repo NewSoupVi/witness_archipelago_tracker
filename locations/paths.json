@@ -702,6 +702,7 @@
 				"access_rules": [
 					"{Quarry Entry 2 (Panel)}",
 					"$canSolve|158119, Quarry Entry 2 (Panel), @Places/quarryBetweenEntries",
+					"showSnipes, $canSolve|158119, Quarry Entry 2 (Panel), [@Places/quarryBetweenEntries], @Places/overworld",
 					"{Quarry Entry 2 (Door)}",
 					"Quarry Entry 2 (Door), @Places/quarryBetweenEntries"
 				],
@@ -1699,6 +1700,7 @@
 				"access_rules": [
 					"{Treehouse Drawbridge (Panel)}",
 					"$canSolve|158404, Treehouse Drawbridge (Panel), @Places/treehouseDrawbridge",
+					"showSnipes, $canSolve|158404, Treehouse Drawbridge (Panel), [@Places/treehouseDrawbridge], @Places/overworld",
 					"{Treehouse Drawbridge (Door)}",
 					"Treehouse Drawbridge (Door), @Places/treehouseDrawbridge"
 				],
@@ -2345,7 +2347,7 @@
 				"name": "Mountain Floor 2 Staircase Far (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|40455", "doorsMix, $isNotDisabled|40455" ],
 				"access_rules": [
-					"Mountain Floor 2 Staircase Far (Door)",
+					"{Mountain Floor 2 Staircase Far (Door)}",
 					"Mountain Floor 2 Staircase Far (Door), @Places/mountainLayer2Far"
 				],
 				"sections": [
