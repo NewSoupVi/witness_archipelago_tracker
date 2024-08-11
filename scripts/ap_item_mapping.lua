@@ -256,6 +256,7 @@ ITEM_MAPPING = {
 	[160120] = {"Quarry Boathouse Panels", "toggle"},
 	[160122] = {"Keep Hedge Maze Panels", "toggle"},
 	[160125] = {"Monastery Panels", "toggle"},
+	[160127] = {"Jungle Panels", "toggle"},
 	[160130] = {"Town Church & RGB House Panels", "toggle"},
 	[160135] = {"Town Maze Panels", "toggle"},
 	[160137] = {"Town Dockside House Panels", "toggle"},
