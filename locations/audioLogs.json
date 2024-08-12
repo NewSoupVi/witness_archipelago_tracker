@@ -80,7 +80,7 @@
 		]
 	},
 	{
-		"name": "Symmetry Island Lower Area",
+		"name": "Symmetry Island Lower",
 		"sections": [
 			{
 				"name": "Audio Log",
@@ -96,7 +96,7 @@
 		]
 	},
 	{
-		"name": "Symmetry Island Upper Area",
+		"name": "Symmetry Island Upper",
 		"sections": [
 			{
 				"name": "Audio Log",
@@ -169,8 +169,8 @@
 				"name": "Audio Log",
 				"access_rules": [
 					"@Places/shadowsLaser",
-					"Shadows Laser Room Right Door, @Places/overworld",
-					"Shadows Laser Room Left Door, @Places/overworld"
+					"Shadows Laser Entry Right (Door), @Places/overworld",
+					"Shadows Laser Entry Left (Door), @Places/overworld"
 				]
 			}
 		],
@@ -469,7 +469,7 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"unrandomized, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
+					"unrandomized, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/monastery, $canSolve|158213"
 				]
 			}
@@ -763,7 +763,7 @@
 		]
 	},
 	{
-		"name": "Caves Mountain Shortcut Area",
+		"name": "Caves Mountain Shortcut",
 		"sections": [
 			{
 				"name": "Audio Log",
@@ -795,7 +795,7 @@
 		]
 	},
 	{
-		"name": "Tunnels Town Shortcut Area",
+		"name": "Tunnels Town Shortcut",
 		"sections": [
 			{
 				"name": "Audio Log",

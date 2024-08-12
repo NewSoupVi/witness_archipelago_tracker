@@ -219,11 +219,11 @@
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Outside Tutorial Outpost Entry (Panel), $canSolve|158011, @Places/tutorialOutpostPath" ]
 			},
 			{
 				"name": "Exit Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Outside Tutorial Outpost Exit (Panel), $canSolve|158012, @Places/tutorialOutpostInterior" ]
 			}
 		],
 		"map_locations": [
@@ -588,12 +588,12 @@
 				"name": "Lower Entry Panel",
 				"access_rules": [
 					"$isNotPanelsOnly, $canSolve|158040, @Inside Glass Factory/Melting, @Places/overworld",
-					"Door to Symmetry Island Lower (Panel), $canSolve|158040, @Places/overworld"
+					"Symmetry Island Lower (Panel), $canSolve|158040, @Places/overworld"
 				]
 			},
 			{
 				"name": "Upper Entry Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Door to Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Symmetry Island Upper (Panel), $canSolve|158064, @Symmetry Island/Left 7" ]
 			},
 			{
 				"name": "Glass Factory Black Line EP",
@@ -929,11 +929,11 @@
 			{
 				"name": "Light Room Puzzles",
 				"access_rules": [
-					"$canSolve|158087-158090, $hasPanel|Desert Light Room Light Control (Panel), @Places/desertFloodLight",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Room Light Control (Panel)]"
+					"$canSolve|158087-158090, $hasPanel|Desert Light Control (Panel), @Places/desertFloodLight",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]"
 				]
 			},
 			{
@@ -951,9 +951,9 @@
 			{
 				"name": "Flood Room Puzzles",
 				"access_rules": [
-					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel)",
-					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Room Flood Controls (Panel)]"
+					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Controls (Panel)",
+					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]"
 				]
 			},
 			{
@@ -972,7 +972,7 @@
 				"name": "Laser",
 				"access_rules": [
 					"@Desert/Final Hexagonal, @Desert/Final Bent 3, @Places/overworld",
-					"showSnipes, Desert Elevator Door, [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
+					"showSnipes, Desert Elevator (Door), [@Desert/Final Hexagonal], [@Desert/Final Bent 3], @Places/overworld"
 				]
 			},
 			{
@@ -1001,7 +1001,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|210936" ],
 				"access_rules": [
 					"$isDisabled|210936",
-					"@Places/desertFlood, $hasPanel|Desert Flood Room Flood Controls (Panel), $hasObeliskKey|Desert"
+					"@Places/desertFlood, $hasPanel|Desert Flood Controls (Panel), $hasObeliskKey|Desert"
 				]
 			},
 			{
@@ -1010,7 +1010,7 @@
 				"access_rules": [
 					"$isDisabled|14267",
 					"$isNotDoors, @Desert/Laser, $hasObeliskKey|Desert",
-					"Desert Elevator Door, @Places/desertLaser, $hasObeliskKey|Desert"
+					"Desert Elevator (Door), @Places/desertLaser, $hasObeliskKey|Desert"
 				]
 			}
 		],
@@ -1131,8 +1131,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|97465" ],
 				"access_rules": [
 					"$isDisabled|97465",
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry",
-					"Quarry Elevator (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry"
+					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry",
+					"Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1284,7 +1284,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1693" ],
 				"access_rules": [
 					"$isDisabled|1693",
-					"Quarry Stoneworks Side Door, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"Quarry Stoneworks Side Exit (Door), $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
 					"$isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
 					"showSnipes, $isNotDoors, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
@@ -1294,8 +1294,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1556" ],
 				"access_rules": [
 					"$isDisabled|1556",
-					"Quarry Stoneworks Side Door, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Elevator Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"Quarry Stoneworks Side Exit (Door), $canSolve|158131, $hasPanel|Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
+					"$isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Lift Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
 					"showSnipes, $isNotDoors, $canSolve|158131, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), [@Places/quarryStoneworks], @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
 				]
 			}
@@ -1339,17 +1339,17 @@
 			{
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), @Places/quarry, $canSolve|158121",
-					"showSnipes, $isNotExpert, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121",
-					"showSnipes, Expert, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), @Places/quarry, $canSolve|158121",
+					"showSnipes, $isNotExpert, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121",
+					"showSnipes, Expert, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
 				]
 			},
 			{
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, @Places/quarry",
-					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Door to Stoneworks (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, @Places/quarry",
+					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld",
+					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
 				]
 			}
 		],
@@ -1402,7 +1402,7 @@
 				"access_rules": [
 					"$isDisabled|1526",
 					"$isNotDoors, @Places/quarryBoathouseUpstairsBack, $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel), $hasObeliskKey|Quarry",
-					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Shortcut, $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel), $hasObeliskKey|Quarry"
+					"@Places/quarryBoathouseUpstairsBack, Quarry Boathouse Second Barrier (Door), $canSolve|158165, $hasPanel|Quarry Boathouse Hook Control (Panel), $hasObeliskKey|Quarry"
 				]
 			},
 			{
@@ -1411,11 +1411,11 @@
 				"access_rules": [
 					"$isDisabled|2137",
 					"doorsNo, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, @Quarry Boathouse/Front Row, $canSolve|158154, $hasObeliskKey|Quarry",
-					"doorsNo, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier, $canSolve|158154, $hasObeliskKey|Quarry",
-					"doorsDoor, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier, Quarry Boathouse Shortcut, $canSolve|158154, $hasObeliskKey|Quarry",
-					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
+					"doorsNo, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier (Door), $canSolve|158154, $hasObeliskKey|Quarry",
+					"doorsDoor, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier (Door), Quarry Boathouse Second Barrier (Door), $canSolve|158154, $hasObeliskKey|Quarry",
+					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier (Door), $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
 					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, @Quarry Boathouse/Front Row, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
-					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, Quarry Boathouse Shortcut, $hasObeliskKey|Quarry"
+					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier (Door), $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, Quarry Boathouse Second Barrier (Door), $hasObeliskKey|Quarry"
 				]
 			}
 
@@ -1795,7 +1795,7 @@
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, @Places/maze2",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], @Places/maze3",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit Door, @Places/overworld"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 2 (Panel), $canSolve|158194, [@Places/maze2], Keep Hedge Maze 2 Exit (Door), @Places/overworld"
 				]
 			}
 		],
@@ -1816,7 +1816,7 @@
 				"name": "Exit Panel",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, @Places/maze3",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit Door, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], Keep Hedge Maze 3 Exit (Door), @Places/overworld",
 					"showSnipes, $isNotPanelsOnlyOrHasPanel|Keep Hedge Maze 3 (Panel), $canSolve|158195, [@Places/maze3], @Places/maze2"
 				]
 			}
@@ -1891,7 +1891,7 @@
 					"$isDisabled|13247",
 					"$isNotVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
-					"randomizationVanilla, Keep Pressure Plates 2 Exit Door, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
+					"randomizationVanilla, Keep Pressure Plates 2 Exit (Door), @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"$isNotVanilla, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
@@ -1918,7 +1918,7 @@
 				"access_rules": [
 					"$isDisabled|13277",
 					"$isNotDoors, @Pressure Plates 3/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
-					"Keep Pressure Plates 3 Exit Door, @Pressure Plates 3/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
+					"Keep Pressure Plates 3 Exit (Door), @Pressure Plates 3/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -2314,8 +2314,8 @@
 				"name": "Outside Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
-					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]"
+					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)",
+					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutters Control (Panel)]"
 				]
 			},
 			{
@@ -2342,16 +2342,16 @@
 				"name": "Entry Panel Left",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/overworld",
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Left (Panel), $canSolve|158208, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Left (Panel), $canSolve|158208, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Left (Panel), $canSolve|158208, @Places/monastery"
 				]
 			},
 			{
 				"name": "Entry Panel Right",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/overworld",
-					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Door Right (Panel), $canSolve|158209, @Places/monastery"
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Right (Panel), $canSolve|158209, @Places/overworld",
+					"$isNotPanelsOnlyOrHasPanel|Monastery Entry Right (Panel), $canSolve|158209, @Places/monastery"
 				]
 			},
 			{
@@ -2364,7 +2364,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13479" ],
 				"access_rules": [
 					"$isDisabled|13479",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2372,7 +2372,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13485" ],
 				"access_rules": [
 					"$isDisabled|13485",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2380,7 +2380,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13487" ],
 				"access_rules": [
 					"$isDisabled|13487",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -2461,7 +2461,7 @@
 	},
 
 	{
-		"name": "Town Cargo Box Area",
+		"name": "Town Cargo Box",
 		"sections": [
 			{
 				"name": "Discard",
@@ -2477,8 +2477,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13769" ],
 				"access_rules": [
 					"$isDisabled|13769",
-					"$isNotDoors, @Town Cargo Box Area/Entry Panel, @Places/ocean, $hasObeliskKey|Town",
-					"Town Cargo Box Door, @Places/ocean, $hasObeliskKey|Town"
+					"$isNotDoors, @Town Cargo Box/Entry Panel, @Places/ocean, $hasObeliskKey|Town",
+					"Town Cargo Box Entry (Door), @Places/ocean, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -2497,7 +2497,7 @@
 			{
 				"name": "Boat Cargo Box EP (Town Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159753, $isNotDisabled|13769" ],
-				"access_rules": [ "@Town Cargo Box Area/Boat Cargo Box EP" ]
+				"access_rules": [ "@Town Cargo Box/Boat Cargo Box EP" ]
 			}
 		],
 		"map_locations": [
@@ -2541,10 +2541,10 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"$isNotPanelsOnlyOrHasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
-					"Town Door to Church (Panel), Expert, $canSolve|158226, @Places/overworld",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
+					"Town Church Entry (Panel), Expert, $canSolve|158226, @Places/overworld",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
 				]
 			}
 		],
@@ -2571,7 +2571,7 @@
 			},
 			{
 				"name": "Maze Stair Control",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Maze Panel (Drop-Down Staircase) (Panel), $canSolve|158228, @Places/overworld" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Maze Stairs (Panel), $canSolve|158228, @Places/overworld" ]
 			},
 			{
 				"name": "Bridge Underside EP",
@@ -2641,24 +2641,24 @@
 			{
 				"name": "RGB Room Left",
 				"access_rules": [
-					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isNotNormalNorVariety, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs"
+					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, $isNotNormalNorVariety, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs"
 				]
 			},
 			{
 				"name": "RGB Room Right",
 				"access_rules": [
-					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Room RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Room RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
+					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
+					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
 			},
 			{
 				"name": "Entry Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town Door to RGB House (Panel), $canSolve|158225, @Places/overworld" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Town RGB House Entry (Panel), $canSolve|158225, @Places/overworld" ]
 			},
 			{
 				"name": "Sound Room",
@@ -2669,8 +2669,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15935" ],
 				"access_rules": [
 					"$isDisabled|15935",
-					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town",
-					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town"
+					"$isNotExpert, $canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town",
+					"Expert, $canSolve|158244-158246, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Control (Panel), @Places/mazeRoof, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -2678,7 +2678,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|15936" ],
 				"access_rules": [
 					"$isDisabled|15936",
-					"$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Room RGB Control (Panel), @Places/overworld, $hasObeliskKey|Town"
+					"$canSolve|158244, @Places/RGBHouseUpstairs, $hasPanel|Town RGB Control (Panel), @Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],
@@ -3034,12 +3034,12 @@
 				"access_rules": [
 					"$isDisabled|211488",
 					"$isNotDoors, @Theater/Tutorial Video, @Places/tunnels, $hasObeliskKey|Town",
-					"@Theater/Tutorial Video, Theater Walkway Door to Town, $hasObeliskKey|Town",
-					"@Theater/Tutorial Video, Theater Entry Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
-					"@Theater/Tutorial Video, Town Windmill Door, Theater Walkway Door to Back of Theater, $hasObeliskKey|Town",
-					"showSnipes, @Theater/Tutorial Video, Desert Door to Light Room, Desert Door to Pond Room, Desert Door to Flood Room, Desert Door to Elevator Room, Theater Walkway Door to Desert Elevator Room, [Theater Walkway Door to Town], $hasObeliskKey|Town",
-					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town",
-					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut, Caves Pillar Door, Challenge Entry Door, Challenge Door to Theater Walkway, [Theater Walkway Door to Town], $hasObeliskKey|Town"
+					"@Theater/Tutorial Video, Tunnels Town Shortcut (Door), $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Theater Entry (Door), Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
+					"@Theater/Tutorial Video, Windmill Entry (Door), Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Pond Room Entry (Door), Desert Flood Room Entry (Door), Desert Elevator Room Entry (Door), Tunnels Desert Shortcut (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut (Door), Caves Pillar Door, Challenge Entry (Door), Tunnels Entry (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut (Door), Caves Pillar Door, Challenge Entry (Door), Tunnels Entry (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -3070,8 +3070,8 @@
 				"name": "Challenge Video",
 				"visibility_rules": [ "Unrandomized, Vaults, $isNotDisabled|13641" ],
 				"access_rules": [
-					"@Mountain Challenge Area/Challenge Vault, $hasPanel|Theater Video Input (Panel), @Places/theater",
-					"showSnipes, [@Mountain Challenge Area/Challenge Vault], $hasPanel|Theater Video Input (Panel), @Places/theater"
+					"@Challenge/Challenge Vault, $hasPanel|Theater Video Input (Panel), @Places/theater",
+					"showSnipes, [@Challenge/Challenge Vault], $hasPanel|Theater Video Input (Panel), @Places/theater"
 				]
 			},
 			{
@@ -3079,7 +3079,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211382" ],
 				"access_rules": [
 					"$isDisabled|211382",
-					"@Theater/Challenge Video, Theater Exit Door Left, Theater Exit Door Right, $hasObeliskKey|Town",
+					"@Theater/Challenge Video, Theater Exit Left (Door), Theater Exit Right (Door), $hasObeliskKey|Town",
 					"$isNotDoors, $hasPanel|Theater Exit (Panel), @Theater/Challenge Video, $canSolve|158249-158250, $hasObeliskKey|Town"
 				]
 			},
@@ -3112,7 +3112,7 @@
 	},
 
 	{
-		"name": "Theater Entry Area",
+		"name": "Theater Entry",
 		"sections": [
 			{
 				"name": "Entry Panel",
@@ -3130,7 +3130,7 @@
 	},
 
 	{
-		"name": "Theater Exit Area",
+		"name": "Theater Exit",
 		"sections": [
 			{
 				"name": "Exit Door Left",
@@ -3411,7 +3411,7 @@
 				"access_rules": [
 					"$isDisabled|15330",
 					"$isNotDoors, @Monastery/Outside Puzzles, $hasObeliskKey|Monastery",
-					"Monastery Door to Garden, @Places/overworld, $hasObeliskKey|Monastery"
+					"Monastery Garden Entry (Door), @Places/overworld, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -3615,8 +3615,8 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"@Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
-					"Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerAntechamber",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
+					"Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/bunkerAntechamber",
+					"showSnipes, Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
 			},
 			{
@@ -3643,15 +3643,15 @@
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/bunkerTintedRoom",
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/overworld, [@Places/bunkerTintedRoom]",
 					"doorsNo, $canSolve|158279-158281, @Color Bunker/Intro Back",
-					"$isNotDoors, $canSolve|158279-158281, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerAntechamber"
+					"$isNotDoors, $canSolve|158279-158281, Bunker Tinted Glass Door (Panel), @Places/bunkerAntechamber"
 				]
 			},
 			{
 				"name": "Ultraviolet Room",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker UV Room Drop-Down Door Control (Panel)",
-					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker UV Room Drop-Down Door Control (Panel)]"
+					"$canSolve|158284-158285, @Places/bunkerUV, $hasPanel|Bunker Drop-Down Door Controls (Panel)",
+					"showSnipes, $canSolve|158284-158285, @Places/bunkerUV, [$hasPanel|Bunker Drop-Down Door Controls (Panel)]"
 				]
 			},
 			{
@@ -3685,8 +3685,8 @@
 					"$isDisabled|13813",
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
 					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber, $hasObeliskKey|Mountainside",
-					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber], $hasObeliskKey|Mountainside"
+					"$isNotDoors, Bunker Tinted Glass Door (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber, $hasObeliskKey|Mountainside",
+					"showSnipes, $isNotDoors, Bunker Tinted Glass Door (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber], $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3764,7 +3764,7 @@
 	},
 
 	{
-		"name": "Swamp Entry Area",
+		"name": "Swamp Entry",
 		"sections": [
 			{
 				"name": "Entry Panel",
@@ -3797,7 +3797,7 @@
 	},
 
 	{
-		"name": "Swamp Platform Area",
+		"name": "Swamp Platform",
 		"sections": [
 			{
 				"name": "Platform Set",
@@ -3810,15 +3810,15 @@
 			{
 				"name": "Between Bridges Near Row",
 				"access_rules": [
-					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform Area/Platform Set",
-					"showSnipes, $isNotPanelHunt, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform Area/Platform Set"
+					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform/Platform Set",
+					"showSnipes, $isNotPanelHunt, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform/Platform Set"
 				]
 			},
 			{
 				"name": "Between Bridges Far Row",
 				"access_rules": [
-					"$canSolve|158319-158322, @Places/swampRotated, @Swamp Platform Area/Between Bridges Near Row",
-					"showSnipes, $canSolve|158319-158322, [@Places/swampRotated], @Places/swampRed, @Swamp Platform Area/Between Bridges Near Row"
+					"$canSolve|158319-158322, @Places/swampRotated, @Swamp Platform/Between Bridges Near Row",
+					"showSnipes, $canSolve|158319-158322, [@Places/swampRotated], @Places/swampRed, @Swamp Platform/Between Bridges Near Row"
 				]
 			}
 		],
@@ -3836,7 +3836,7 @@
 		"sections": [
 			{
 				"name": "Beyond Rotating Bridge",
-				"access_rules": [ "$canSolve|158329-158332, @Places/swampBack, @Swamp Platform Area/Between Bridges Far Row" ]
+				"access_rules": [ "$canSolve|158329-158332, @Places/swampBack, @Swamp Platform/Between Bridges Far Row" ]
 			},
 			{
 				"name": "Swamp Boat EP",
@@ -4884,7 +4884,7 @@
 		"sections": [
 			{
 				"name": "Pink Light Bridge",
-				"access_rules": [ "$hasPanel|Mountain Floor 1 Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 1 Light Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
 			}
 		],
 		"map_locations": [
@@ -5020,7 +5020,7 @@
 			{
 				"name": "Blue Light Bridge",
 				"visibility_rules": [ "$isNotDisabled|40582" ],
-				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Near (Panel), $canSolve|158431, @Places/mountain2FrontStairs" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Light Bridge Near (Panel), $canSolve|158431, @Places/mountain2FrontStairs" ]
 			}
 		],
 		"map_locations": [
@@ -5039,7 +5039,7 @@
 			{
 				"name": "Orange Light Bridge",
 				"visibility_rules": [ "$isNotDisabled|40664" ],
-				"access_rules": [ "$hasPanel|Mountain Floor 2 Bridge Far (Panel), $canSolve|158438, @Places/mountain2BackStairs" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 2 Light Bridge Far (Panel), $canSolve|158438, @Places/mountain2BackStairs" ]
 			}
 		],
 		"map_locations": [
@@ -5761,7 +5761,7 @@
 	},
 
 	{
-		"name": "Challenge Entry Area",
+		"name": "Challenge Entry",
 		"sections": [
 			{
 				"name": "Entry Panel",
@@ -5799,7 +5799,7 @@
 	},
 
 	{
-		"name": "Mountain Challenge Area",
+		"name": "Challenge",
 		"sections": [
 			{
 				"name": "Challenge Water EP",
@@ -5838,8 +5838,8 @@
 				"visibility_rules": [ "$isNotDisabled|14772" ],
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, @Places/challenge",
-					"showSnipes, $isNotVariety, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Challenge Door to Theater Walkway, @Places/theater",
-					"showSnipes, $isNotExpert, $isNotVariety, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Challenge Door to Theater Walkway, @Places/overworld"
+					"showSnipes, $isNotVariety, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Tunnels Entry (Door), @Places/theater",
+					"showSnipes, $isNotExpert, $isNotVariety, $isNotPanelsOnlyOrHasPanel|Tunnels Entry (Panel), $canSolve|158518, [@Places/challenge], Tunnels Entry (Door), @Places/overworld"
 				]
 			}
 		],
@@ -5854,12 +5854,12 @@
 	},
 
 	{
-		"name": "Mountain Challenge Area EPs",
+		"name": "Challenge EPs",
 		"sections": [
 			{
 				"name": "Challenge Water EP (Town Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159753, $isNotDisabled|166704" ],
-				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP" ]
+				"access_rules": [ "@Challenge/Challenge Water EP" ]
 			}
 		],
 		"map_locations": [
@@ -6174,7 +6174,7 @@
 			{
 				"name": "Side 4",
 				"visibility_rules": [ "obelisks, $anyIsNotDisabled|166704 13769" ],
-				"access_rules": [ "@Mountain Challenge Area/Challenge Water EP, @Town Cargo Box Area/Boat Cargo Box EP" ]
+				"access_rules": [ "@Challenge/Challenge Water EP, @Town Cargo Box/Boat Cargo Box EP" ]
 			},
 			{
 				"name": "Side 5",
