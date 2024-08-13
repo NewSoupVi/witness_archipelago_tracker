@@ -3632,7 +3632,7 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158269-158277, @Places/bunkerAntechamber",
-					"showSnipes, $canSolve|158269-158277, @Places/bunkerElevatorRoom"
+					"showSnipes, $canSolve|158269-158277, [@Places/bunkerAntechamber], @Places/bunkerElevatorRoom"
 				]
 			},
 			{
@@ -5103,7 +5103,7 @@
 				"visibility_rules": [ "Discarded, $isNotDisabled|98195" ],
 				"access_rules": [
 					"$canSolve|158613, @Places/mountainElevator",
-					"showSnipes, $isNotVariety, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]"
+					"showSnipes, $canSolve|158613, @Places/mountainLayer2Near, [@Places/mountainElevator]"
 				]
 			}
 		],
