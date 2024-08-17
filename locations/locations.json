@@ -5539,7 +5539,10 @@
 		"sections": [
 			{
 				"name": "Shortcut to Mountain Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves" ]
+				"access_rules": [
+					"$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves",
+					"cavesPool, $canSolve|158449, @Places/caves"
+				]
 			}
 		],
 		"map_locations": [
@@ -5558,7 +5561,10 @@
 		"sections": [
 			{
 				"name": "Shortcut to Swamp Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves" ]
+				"access_rules": [
+					"$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves",
+					"cavesPool, $canSolve|158450, @Places/caves"
+				]
 			}
 		],
 		"map_locations": [
