@@ -18,6 +18,10 @@ function isNotVariety()
 	return (1 - Tracker:ProviderCountForCode("Variety") > 0)
 end
 
+function isVanillaOrVariety()
+    return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("Variety") > 0)
+end
+
 function isNotNormalNorVariety()
 	return (1 - (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety")) > 0)
 end
