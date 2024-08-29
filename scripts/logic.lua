@@ -198,8 +198,11 @@ function hasSymbol(symbol)
 		return symmetry(2)
 	elseif symbolCheck[symbol] ~= nil then
 		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
-	else
+	elseif symbol == "True" then
 		return true
+	else
+		print("Invalid Symbol:", symbol)
+		return false
 	end
 end
 
