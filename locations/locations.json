@@ -2650,8 +2650,8 @@
 				"name": "RGB Room Right",
 				"access_rules": [
 					"$isNotExpert, $canSolve|158246, $canSolve|158244, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, randomizationVanilla, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
-					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isVanillaOrVariety, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, randomizationSigma, $isNotDeathLink, $canSolve|158246, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
 					"Expert, $canSolve|158244-158246, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
 					"showSnipes, Expert, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], $canSolve|158245-158246, @Places/RGBHouseUpstairs"
 				]
@@ -5548,7 +5548,10 @@
 		"sections": [
 			{
 				"name": "Shortcut to Mountain Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves" ]
+				"access_rules": [
+					"$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves",
+					"cavesPool, $canSolve|158449, @Places/caves"
+				]
 			}
 		],
 		"map_locations": [
@@ -5567,7 +5570,10 @@
 		"sections": [
 			{
 				"name": "Shortcut to Swamp Panel",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves" ]
+				"access_rules": [
+					"$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves",
+					"cavesPool, $canSolve|158450, @Places/caves"
+				]
 			}
 		],
 		"map_locations": [
