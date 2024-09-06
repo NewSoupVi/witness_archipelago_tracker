@@ -3581,7 +3581,7 @@
 				"name": "Tinted Room Entry Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"@Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
+					"$isNotPanelsOnly, @Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
 					"Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerAntechamber",
 					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
 				]
