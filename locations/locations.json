@@ -2515,7 +2515,7 @@
 					"Town Tinted Door to RGB House, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Door to Church (Panel), Expert, $canSolve|158226, @Places/overworld",
-					"showSnipes, $hasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town Tinted Door to RGB House]"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town Tinted Door to RGB House]"
 				]
 			}
 		],
