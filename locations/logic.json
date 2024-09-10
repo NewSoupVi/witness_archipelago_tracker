@@ -138,8 +138,8 @@
 					"Quarry Stoneworks Side Exit (Door), @Places/quarry",
 					"Quarry Stoneworks Entry (Door), @Places/quarry",
 					"$isNotDoors, @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Exit (Door)], @Places/quarry, @Places/overworld",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Places/overworld"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Exit (Door)], @Quarry Stoneworks/Side Exit Panel, @Places/overworld",
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Quarry Stoneworks/Roof Exit Panel, @Places/overworld"
 				]
 			},
 			{
