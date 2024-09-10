@@ -1228,7 +1228,7 @@
 			{
 				"name": "Upper Row",
 				"access_rules": [
-					"$canSolve|158134-158141, @Places/quarryStoneworks, @Places/quarryStoneworksUpstairs",
+					"$canSolve|158134-158141, @Places/quarryStoneworksUpstairs",
 					"showSnipes, $isNotExpert, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
 					"showSnipes, Expert, $isNotDeathLink, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
 				]
@@ -1549,7 +1549,7 @@
 				"name": "Shadows Intro 3",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotDoors, $canSolve|158188-158190, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"$isNotDoors, $canSolve|158188-158190, @Shadows First Set/Entry Timer Panel, @Places/overworld",
 					"$canSolve|158188-158190, @Places/overworld, Shadows Timed Door",
 					"showSnipes, $canSolve|158188-158190, @Places/overworld, [Shadows Timed Door]",
 					"showSnipes, $canSolve|158188-158190, @Places/shadowsFirstSet, [Shadows Timed Door]"
@@ -1559,7 +1559,7 @@
 				"name": "Shadows Intro 5",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
-					"$isNotDoors, $canSolve|158188-158192, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"$isNotDoors, $canSolve|158188-158192, @Shadows First Set/Entry Timer Panel, @Places/overworld",
 					"$canSolve|158188-158192, @Places/overworld, Shadows Timed Door",
 					"showSnipes, $canSolve|158188-158192, @Places/overworld, [Shadows Timed Door]",
 					"showSnipes, $isNotDoors, $canSolve|158188-158192, @Places/shadowsFirstSet, [Shadows Timed Door]"
@@ -1569,7 +1569,7 @@
 				"name": "Shadows Intro 8",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, $hasPanel|Shadows Door Timer (Panel), @Places/shadowsFirstSet",
+					"$isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Shadows First Set/Entry Timer Panel, @Places/overworld",
 					"$canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, Shadows Timed Door",
 					"showSnipes, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/overworld, [Shadows Timed Door]",
 					"showSnipes, $isNotDoors, $canSolve|158188 158189 158190 158191 158192 158171 158172 158173, @Places/shadowsFirstSet, [Shadows Timed Door]"
@@ -2304,7 +2304,8 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)",
-					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]"
+					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutter Control (Panel)]",
+					"showSnipes, $canSolve|158210-158212, [@Places/overworld], @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
 				]
 			},
 			{
@@ -2510,10 +2511,11 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @Places/RGBHouse",
+					"$isNotDoors, $hasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @RGBHouse/Entry Panel",
+					"Town Tinted Door to RGB House, $hasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Door to Church (Panel), Expert, $canSolve|158226, @Places/overworld",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [@Places/RGBHouse]"
+					"showSnipes, $hasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town Tinted Door to RGB House]"
 				]
 			}
 		],
@@ -3583,7 +3585,8 @@
 				"access_rules": [
 					"$isNotPanelsOnly, @Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
 					"Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerAntechamber",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]"
+					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]",
+					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerElevatorRoom, [@Places/bunkerAntechamber]"
 				]
 			},
 			{
@@ -3598,8 +3601,8 @@
 				"name": "Intro Back",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158269-158277, @Places/bunkerAntechamber",
-					"showSnipes, $canSolve|158269-158277, [@Places/bunkerAntechamber], @Places/bunkerElevatorRoom"
+					"@Color Bunker/Intro Left, $canSolve|158274-158277, @Places/bunkerAntechamber",
+					"showSnipes, @Color Bunker/Intro Left, $canSolve|158269-158277, [@Places/bunkerAntechamber], @Places/bunkerElevatorRoom"
 				]
 			},
 			{
@@ -3650,9 +3653,7 @@
 				"access_rules": [
 					"$isDisabled|13813",
 					"Bunker Tinted Glass Door, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
-					"doorsNo, @Color Bunker/Intro Back, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside",
-					"$isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/bunkerAntechamber, $hasObeliskKey|Mountainside",
-					"showSnipes, $isNotDoors, Inside Bunker Door to Bunker Proper (Panel), @Places/bunkerElevatorRoom, @Places/overworld, [@Places/bunkerAntechamber], $hasObeliskKey|Mountainside"
+					"$isNotDoors, @Color Bunker/Tinted Room Entry Panel, @Places/bunkerElevatorRoom, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
