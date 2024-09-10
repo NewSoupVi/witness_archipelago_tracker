@@ -3612,6 +3612,7 @@
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
 				"access_rules": [
 					"$isNotPanelsOnly, @Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
+					"showSnipes, $isNotPanelsOnly, @Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerElevatorRoom, [@Places/bunkerAntechamber]",
 					"Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/bunkerAntechamber",
 					"showSnipes, Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]",
 					"showSnipes, Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/bunkerElevatorRoom, [@Places/bunkerAntechamber]"
