@@ -3640,8 +3640,7 @@
 					"$canSolve|158279-158281, Bunker Tinted Glass Door, @Places/bunkerTintedRoom",
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/bunkerTintedRoom",
 					"showSnipes, $canSolve|158279-158281, [Bunker Tinted Glass Door], @Places/overworld, [@Places/bunkerTintedRoom]",
-					"doorsNo, $canSolve|158279-158281, @Color Bunker/Intro Back",
-					"$isNotDoors, $canSolve|158279-158281, Bunker Tinted Glass Door (Panel), @Places/bunkerAntechamber"
+					"$isNotDoors, @Color Bunker/Tinted Room Entry Panel, $canSolve|158279-158281, @Places/bunkerTintedRoom"
 				]
 			},
 			{
