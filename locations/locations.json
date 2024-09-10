@@ -2313,7 +2313,7 @@
 				"access_rules": [
 					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)",
 					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutters Control (Panel)]",
-					"showSnipes, $canSolve|158210-158212, [@Places/overworld], @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutter Control (Panel)"
+					"showSnipes, $canSolve|158210-158212, [@Places/overworld], @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)"
 				]
 			},
 			{
@@ -2540,10 +2540,10 @@
 				"name": "Entry Panel",
 				"access_rules": [
 					"$isNotDoors, $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @RGBHouse/Entry Panel",
-					"Town Tinted Door to RGB House, $hasPanel|Town Door to Church (Panel), $isNotExpert, $canSolve|158226, @Places/overworld",
+					"Town RGB House Entry (Door), $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Church Entry (Panel), Expert, $canSolve|158226, @Places/overworld",
-					"showSnipes, $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town Tinted Door to RGB House]"
+					"showSnipes, $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town RGB House Entry (Door)]"
 				]
 			}
 		],
@@ -3614,7 +3614,7 @@
 					"$isNotPanelsOnly, @Color Bunker/Intro Back, $canSolve|158278, @Places/bunkerAntechamber",
 					"Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/bunkerAntechamber",
 					"showSnipes, Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/overworld, [@Places/bunkerAntechamber]",
-					"showSnipes, Inside Bunker Door to Bunker Proper (Panel), $canSolve|158278, @Places/bunkerElevatorRoom, [@Places/bunkerAntechamber]"
+					"showSnipes, Bunker Tinted Glass Door (Panel), $canSolve|158278, @Places/bunkerElevatorRoom, [@Places/bunkerAntechamber]"
 				]
 			},
 			{
