@@ -2539,7 +2539,7 @@
 			{
 				"name": "Entry Panel",
 				"access_rules": [
-					"$isNotDoors, $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @RGBHouse/Entry Panel",
+					"$isNotDoors, $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town RGB House Entry (Door), $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Church Entry (Panel), Expert, $canSolve|158226, @Places/overworld",
