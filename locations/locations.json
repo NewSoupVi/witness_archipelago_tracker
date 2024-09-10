@@ -2543,7 +2543,7 @@
 					"Town RGB House Entry (Door), $isNotPanelsOnlyOrHasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld",
 					"$isNotPanelsOnly, Expert, $canSolve|158226, @Places/overworld, @RGB House/Entry Panel",
 					"Town Church Entry (Panel), Expert, $canSolve|158226, @Places/overworld",
-					"showSnipes, $hasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town RGB House Entry (Door)]"
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Town Church Entry (Panel), $isNotExpert, $canSolve|158226, @Places/overworld, [Town RGB House Entry (Door)]"
 				]
 			}
 		],
