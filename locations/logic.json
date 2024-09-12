@@ -191,7 +191,7 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
 					"Shadows Laser Entry Right (Door), Shadows Laser Entry Left (Door), @Places/overworld",
 					"showSnipes, Shadows Laser Entry Right (Door), [Shadows Laser Entry Left (Door)], @Places/overworld",
@@ -621,13 +621,13 @@
 			{
 				"name": "mountainLayer1",
 				"access_rules": [
-					"@Mountaintop/Mountain Entry"
+					"@Mountaintop/Mountain Entry, @Places/overworld"
 				]
 			},
 			{
 				"name": "mountainLayer1Bridge",
 				"access_rules": [
-					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge"
+					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
 				]
 			},
 			{

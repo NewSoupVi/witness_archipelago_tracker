@@ -4877,7 +4877,7 @@
 		"sections": [
 			{
 				"name": "Pink Light Bridge",
-				"access_rules": [ "$hasPanel|Mountain Floor 1 Light Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry" ]
+				"access_rules": [ "$hasPanel|Mountain Floor 1 Light Bridge (Panel), $canSolve|158408, @Mountaintop/Mountain Entry, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
