@@ -4791,7 +4791,10 @@
 			{
 				"name": "Mountain Entry",
 				"visibility_rules": [ "$isNotDisabled|97332" ],
-				"access_rules": [ "$canSolve|158407, $laserBox|short, @Places/overworld" ]
+				"access_rules": [
+					"$canSolve|158407, $laserBox|short, @Places/overworld, $isNotDisabled|97332",
+					"showSnipes, $canSolve|158407, $laserBox|short, @Places/overworld, disabledPanelsEnabled, [$isNotDisabled|97332]"
+				]
 			},
 			{
 				"name": "River EP",
