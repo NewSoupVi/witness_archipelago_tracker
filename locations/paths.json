@@ -763,30 +763,6 @@
 			},
 
 			{
-				"name": "Quarry Stoneworks Stairs (Panel)",
-				"visibility_rules": [ "doorsPanel" ],
-				"access_rules": [
-					"{Quarry Stoneworks Stairs (Panel)}",
-					"$canSolve|158142, Quarry Stoneworks Stairs (Panel), @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158142, Quarry Stoneworks Stairs (Panel), [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks",
-					"{Quarry Stoneworks Stairs (Door)}",
-					"Quarry Stoneworks Stairs (Door), @Places/quarryStoneworksUpstairs"
-				],
-				"sections": [
-					{
-						"name": "Quarry Stoneworks Panels"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "doors",
-						"x": 621,
-						"y": 313
-					}
-				]
-			},
-
-			{
 				"name": "Quarry Stoneworks Stairs (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
@@ -2005,29 +1981,6 @@
 			},
 
 			{
-				"name": "Swamp Laser Shortcut (Panel)",
-				"visibility_rules": [ "doorsPanel" ],
-				"access_rules": [
-					"{Swamp Laser Shortcut (Panel)}",
-					"$canSolve|158341-158342, Swamp Laser Shortcut (Panel), @Places/swampLaser",
-					"{Swamp Laser Shortcut (Door)}",
-					"Swamp Laser Shortcut (Door), @Places/swampLaser"
-				],
-				"sections": [
-					{
-						"name": "Swamp Panels"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "doors",
-						"x": 1024,
-						"y": 750
-					}
-				]
-			},
-
-			{
 				"name": "Swamp Laser Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
@@ -2120,29 +2073,6 @@
 			},
 
 			{
-				"name": "Caves Mountain Shortcut (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|186175" ],
-				"access_rules": [
-					"{Caves Mountain Shortcut (Panel)}",
-					"$canSolve|158449, Caves Mountain Shortcut (Panel), @Places/caves",
-					"{Caves Mountain Shortcut (Door)}",
-					"Caves Mountain Shortcut (Door), @Places/caves"
-				],
-				"sections": [
-					{
-						"name": "Caves Panels"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "doors",
-						"x": 931,
-						"y": 870
-					}
-				]
-			},
-
-			{
 				"name": "Caves Mountain Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
 				"access_rules": [
@@ -2160,29 +2090,6 @@
 						"map": "doors",
 						"x": 931,
 						"y": 870
-					}
-				]
-			},
-
-			{
-				"name": "Caves Swamp Shortcut (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|186457" ],
-				"access_rules": [
-					"{Caves Swamp Shortcut (Panel)}",
-					"$canSolve|158450, Caves Swamp Shortcut (Panel), @Places/caves",
-					"{Caves Swamp Shortcut (Door)}",
-					"Caves Swamp Shortcut (Door), @Places/caves"
-				],
-				"sections": [
-					{
-						"name": "Caves Panels"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "doors",
-						"x": 990,
-						"y": 913
 					}
 				]
 			},
@@ -3452,29 +3359,6 @@
 						"map": "doors",
 						"x": 668,
 						"y": 1081
-					}
-				]
-			},
-
-			{
-				"name": "Jungle Monastery Garden Shortcut (Panel)",
-				"visibility_rules": [ "doorsPanel, Unrandomized" ],
-				"access_rules": [
-					"{Jungle Monastery Garden Shortcut (Panel)}",
-					"$canSolve|158267, Jungle Monastery Garden Shortcut (Panel), @Places/overworld",
-					"{Jungle Monastery Garden Shortcut (Door)}",
-					"Jungle Monastery Garden Shortcut (Door), @Places/overworld"
-				],
-				"sections": [
-					{
-						"name": "Jungle Panels"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "doors",
-						"x": 668,
-						"y": 1094
 					}
 				]
 			},
