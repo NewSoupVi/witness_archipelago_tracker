@@ -2073,6 +2073,29 @@
 			},
 
 			{
+				"name": "Caves Mountain Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel, cavesNo, $isNotDisabled|186175" ],
+				"access_rules": [
+					"{Caves Mountain Shortcut (Panel)}",
+					"$canSolve|158449, Caves Mountain Shortcut (Panel), @Places/caves",
+					"{Caves Mountain Shortcut (Door)}",
+					"Caves Mountain Shortcut (Door), @Places/caves"
+				],
+				"sections": [
+					{
+						"name": "Caves Panels"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 931,
+						"y": 870
+					}
+				]
+			},
+
+			{
 				"name": "Caves Mountain Shortcut (Door)",
 				"visibility_rules": [ "doorsDoor, $isNotDisabled|186175", "doorsMix, $isNotDisabled|186175", "Caves", "cavesPool" ],
 				"access_rules": [
@@ -2090,6 +2113,29 @@
 						"map": "doors",
 						"x": 931,
 						"y": 870
+					}
+				]
+			},
+
+			{
+				"name": "Caves Swamp Shortcut (Panel)",
+				"visibility_rules": [ "doorsPanel, cavesNo, $isNotDisabled|186457" ],
+				"access_rules": [
+					"{Caves Swamp Shortcut (Panel)}",
+					"$canSolve|158450, Caves Swamp Shortcut (Panel), @Places/caves",
+					"{Caves Swamp Shortcut (Door)}",
+					"Caves Swamp Shortcut (Door), @Places/caves"
+				],
+				"sections": [
+					{
+						"name": "Caves Panels"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "doors",
+						"x": 990,
+						"y": 913
 					}
 				]
 			},
