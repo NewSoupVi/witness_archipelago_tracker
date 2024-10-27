@@ -2121,7 +2121,7 @@
 
 			{
 				"name": "Caves Mountain Shortcut (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|186175" ],
+				"visibility_rules": [ "doorsPanel, cavesNo, $isNotDisabled|186175" ],
 				"access_rules": [
 					"{Caves Mountain Shortcut (Panel)}",
 					"$canSolve|158449, Caves Mountain Shortcut (Panel), @Places/caves",
@@ -2166,7 +2166,7 @@
 
 			{
 				"name": "Caves Swamp Shortcut (Panel)",
-				"visibility_rules": [ "doorsPanel, $isNotDisabled|186457" ],
+				"visibility_rules": [ "doorsPanel, cavesNo, $isNotDisabled|186457" ],
 				"access_rules": [
 					"{Caves Swamp Shortcut (Panel)}",
 					"$canSolve|158450, Caves Swamp Shortcut (Panel), @Places/caves",

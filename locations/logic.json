@@ -173,8 +173,8 @@
 					"Quarry Stoneworks Side Exit (Door), @Places/quarry",
 					"Quarry Stoneworks Entry (Door), @Places/quarry",
 					"$isNotDoors, @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Exit (Door)], @Places/quarry, @Places/overworld",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Places/overworld"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Exit (Door)], @Quarry Stoneworks/Side Exit Panel, @Places/overworld",
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Quarry Stoneworks/Roof Exit Panel, @Places/overworld"
 				]
 			},
 			{
@@ -232,7 +232,7 @@
 				"name": "shadowsLaser",
 				"access_rules": [
 					"$Warp|Shadows Laser",
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
 					"Shadows Laser Entry Right (Door), Shadows Laser Entry Left (Door), @Places/overworld",
 					"showSnipes, Shadows Laser Entry Right (Door), [Shadows Laser Entry Left (Door)], @Places/overworld",
@@ -710,13 +710,13 @@
 			{
 				"name": "mountainLayer1",
 				"access_rules": [
-					"@Mountaintop/Mountain Entry"
+					"@Mountaintop/Mountain Entry, @Places/overworld"
 				]
 			},
 			{
 				"name": "mountainLayer1Bridge",
 				"access_rules": [
-					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge"
+					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
 				]
 			},
 			{
