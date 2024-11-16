@@ -291,6 +291,7 @@ function setReply(key, val, old)
 			count = count + 1
 		end
 		Tracker:FindObjectForCode("panelHunt"):SetOverlay(tostring(count))
+		Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
