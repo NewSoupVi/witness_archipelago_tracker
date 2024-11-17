@@ -1271,8 +1271,8 @@
 			{
 				"name": "Stairs Control Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Stairs (Panel), $canSolve|158142, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Stairs (Panel), $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"$canSolve|158142, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
 				]
 			},
 			{
@@ -3543,7 +3543,7 @@
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Jungle Monastery Garden Shortcut (Panel), $canSolve|158267, @Places/overworld" ]
+				"access_rules": [ "$canSolve|158267, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -4208,7 +4208,7 @@
 			},
 			{
 				"name": "Shortcut Panels",
-				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Swamp Laser Shortcut (Panel), $canSolve|158341-158342, @Places/swampLaser" ]
+				"access_rules": [ "$canSolve|158341-158342, @Places/swampLaser" ]
 			}
 		],
 		"map_locations": [
@@ -5540,7 +5540,7 @@
 			{
 				"name": "Shortcut to Mountain Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves",
+					"$canSolve|158449, @Places/caves",
 					"cavesPool, $canSolve|158449, @Places/caves"
 				]
 			}
@@ -5562,7 +5562,7 @@
 			{
 				"name": "Shortcut to Swamp Panel",
 				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves",
+					"$canSolve|158450, @Places/caves",
 					"cavesPool, $canSolve|158450, @Places/caves"
 				]
 			}

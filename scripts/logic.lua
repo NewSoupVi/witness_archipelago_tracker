@@ -55,7 +55,7 @@ function isNotDeathLink()
 end
 
 function isNotPanelHunt()
-	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
+	return (1 - Tracker:ProviderCountForCode("panelHuntCount") > 0)
 end
 
 function canPanelHuntGoal()
