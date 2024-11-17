@@ -228,8 +228,8 @@
 		"map_locations": [
 			{
 				"map": "fullmap",
-				"x": 414,
-				"y": 1357
+				"x": 489,
+				"y": 1186
 			}
 		]
 	},
@@ -410,8 +410,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211031" ],
 				"access_rules": [
 					"$isDisabled|211031",
-					"@Places/ocean, $hasObeliskKey|Town",
-					"epdiffNormal"
+					"@Places/ocean, $hasObeliskKey|Town"
 				]
 			},
 			{
@@ -419,8 +418,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211065" ],
 				"access_rules": [
 					"$isDisabled|211065",
-					"@Places/ocean, $hasObeliskKey|Town",
-					"epdiffNormal"
+					"@Places/ocean, $hasObeliskKey|Town"
 				]
 			},
 			{

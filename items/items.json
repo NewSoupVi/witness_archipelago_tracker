@@ -362,6 +362,11 @@
 		]
 	},
 	{
+		"name": "Panel Hunt Count",
+		"type": "consumable",
+		"codes": "panelHuntCount"
+	},
+	{
 		"name": "Laser Box Short Requirement",
 		"type": "consumable",
 		"img": "images/mountainShort.png",
