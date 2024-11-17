@@ -1,6 +1,22 @@
 {
 	"versions": [
 		{
+			"package_version": "0.5.0.2",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.2/witness_archipelago_tracker.zip",
+			"sha256": "5B38F2CC4601C51E58B67B514263B83546A4E442B65D2478494D5391CBC445D7",
+			"changelog": [
+				"Hotfix"
+			]
+		},
+		{
+			"package_version": "0.5.0.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.1/witness_archipelago_tracker.zip",
+			"sha256": "7C0CFB617BDFC0209F6E9ED0F8D6CC1C403145704868609A347DC0145B930705",
+			"changelog": [
+				"Snipes, EP fixes, Town/Bunker rework, etc."
+			]
+		},
+		{
 			"package_version": "0.5.0.0",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.0/witness_archipelago_tracker.zip",
 			"sha256": "1A22D09772651773669413EF80AD66F68EE43A3D4C9C668EE059CF5337E06060",
@@ -202,4 +218,3 @@
 		}
 	]
 }
-	

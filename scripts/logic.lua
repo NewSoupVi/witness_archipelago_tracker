@@ -55,11 +55,11 @@ function isNotDeathLink()
 end
 
 function isNotPanelHunt()
-	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
+	return (1 - Tracker:ProviderCountForCode("panelHuntCount") > 0)
 end
 
 function canPanelHuntGoal()
-	return Tracker:FindObjectForCode("panelHunt").AcquiredCount >= Tracker:FindObjectForCode("panelHuntRequired").AcquiredCount
+	return Tracker:FindObjectForCode("panelHuntCount").AcquiredCount >= Tracker:FindObjectForCode("panelHuntRequired").AcquiredCount
 end
 
 function longBoxWithoutMountainEntry()
