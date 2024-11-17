@@ -34,8 +34,7 @@ doors = {
 		"Quarry Entry 2 (Door)"},
 	["Quarry Stoneworks Doors"] = {"Quarry Stoneworks Entry (Door)",
 		"Quarry Stoneworks Side Exit (Door)",
-		"Quarry Stoneworks Roof Exit (Door)",
-		"Quarry Stoneworks Stairs (Door)"},
+		"Quarry Stoneworks Roof Exit (Door)"},
 	["Quarry Boathouse Doors"] = {"Quarry Boathouse Dock (Door)",
 		"Quarry Boathouse First Barrier (Door)",
 		"Quarry Boathouse Second Barrier (Door)"},
@@ -194,17 +193,14 @@ doors = {
 		"Swamp Sliding Bridge (Panel)", 
 		"Swamp Rotating Bridge (Panel)", 
 		"Swamp Long Bridge (Panel)", 
-		"Swamp Maze Controls (Panel)",
-		"Swamp Laser Shortcut (Panel)"},
+		"Swamp Maze Controls (Panel)"},
 	["Mountain Panels"] = {"Mountain Floor 1 Light Bridge (Panel)",
 		"Mountain Floor 2 Light Bridge Near (Panel)",
 		"Mountain Floor 2 Light Bridge Far (Panel)",
 		"Mountain Floor 2 Elevator Control (Panel)"},
 	["Caves Panels"] = {"Caves Entry (Panel)", 
 		"Challenge Entry (Panel)", 
-		"Caves Elevator Controls (Panel)",
-		"Caves Mountain Shortcut (Panel)",
-		"Caves Swamp Shortcut (Panel)"},
+		"Caves Elevator Controls (Panel)"},
 	["Tunnels Panels"] = {"Tunnels Entry (Panel)", 
 		"Tunnels Town Shortcut (Panel)"}
 }
@@ -295,6 +291,7 @@ function setReply(key, val, old)
 			count = count + 1
 		end
 		Tracker:FindObjectForCode("panelHunt"):SetOverlay(tostring(count))
+		Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
