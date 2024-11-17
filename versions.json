@@ -1,221 +1,221 @@
 {
-  "versions": [
-    {
-      "package_version": "0.5.0.2",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.2/witness_archipelago_tracker.zip",
-      "sha256": "5B38F2CC4601C51E58B67B514263B83546A4E442B65D2478494D5391CBC445D7",
-      "changelog": [
-        "Hotfix"
-      ]
-    },
-    {
-      "package_version": "0.5.0.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.1/witness_archipelago_tracker.zip",
-      "sha256": "7C0CFB617BDFC0209F6E9ED0F8D6CC1C403145704868609A347DC0145B930705",
-      "changelog": [
-        "Snipes, EP fixes, Town/Bunker rework, etc."
-      ]
-    },
-    {
-      "package_version": "0.5.0.0",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.0/witness_archipelago_tracker.zip",
-      "sha256": "1A22D09772651773669413EF80AD66F68EE43A3D4C9C668EE059CF5337E06060",
-      "changelog": [
-        "0.5.0 parity"
-      ]
-    },
-    {
-      "package_version": "0.4.6.2",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6.2/witness_archipelago_tracker.zip",
-      "sha256": "CBC44B3886BC5A783D4ACC33B691AC99E811258CA054974149AE2E3A4D6D7CDF",
-      "changelog": [
-        "Small logic fixes."
-      ]
-    },
-    {
-      "package_version": "0.4.6.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6.1/witness_archipelago_tracker.zip",
-      "sha256": "C722C1791969CD811F3BD0F433B8C83B87AE5EDB6D25228B4AA70E9BB8A5717E",
-      "changelog": [
-        "Complete logic rewrite, small logic fixes."
-      ]
-    },
-    {
-      "package_version": "0.4.6",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6/witness_archipelago_tracker.zip",
-      "sha256": "69C6D92516F0F21605D91D35AFDDF997BE4A7DBEE571F403BC39807867D0F0E5",
-      "changelog": [
-        "FOV Snipes, defaults, and name changes."
-      ]
-    },
-    {
-      "package_version": "0.4.5.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5.1/witness_archipelago_tracker.zip",
-      "sha256": "E86BCB6A0A418BC1EF2CCA15121A33D10F4A260E88E85A862D0490ED88C8EB3D",
-      "changelog": [
-        "Obelisk Keys and name changes."
-      ]
-    },
-    {
-      "package_version": "0.4.5",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5/witness_archipelago_tracker.zip",
-      "sha256": "967E3057C4DFF50484405AF13DB0DAF01D3CED33FFF914F745E591047C53B424",
-      "changelog": [
-        "Lots of 0.4.5 changes."
-      ]
-    },
-    {
-      "package_version": "0.4.4.2",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.2/witness_archipelago_tracker.zip",
-      "sha256": "890422AD5A6AED4A46A1126E124ABA95ED8E2D30C488D47CA27BAD61D86FE770",
-      "changelog": [
-        "Four area reworks. Five more snipes. 12 logic errors. Redesigned settings. Discards with disable-non-randomized. Optionally show only fully-solvable obelisk sides."
-      ]
-    },
-    {
-      "package_version": "0.4.4.1a",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.1a/witness_archipelago_tracker.zip",
-      "sha256": "73978AADB0508A51F8552466E91FD4B47A0DE3CCAE497E01AC094416364061E3",
-      "changelog": [
-        "Hotfix for Keep Laser."
-      ]
-    },
-    {
-      "package_version": "0.4.4.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.1/witness_archipelago_tracker.zip",
-      "sha256": "F5533D9456093587D2E799B67A811C76579B579AFBC96CA619E891DAD041BCB7",
-      "changelog": [
-        "Fixing Expert and Audio Log errors. Adding in more snipes."
-      ]
-    },
-    {
-      "package_version": "0.4.4",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4/witness_archipelago_tracker.zip",
-      "sha256": "21560B5229DCE02BA8FEE561FD0146E8095408F2A583B04DEAFF13C428A9CF97",
-      "changelog": [
-        "Updating to match 0.4.4 changes"
-      ]
-    },
-    {
-      "package_version": "0.4.3.1a",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3.1a/witness_archipelago_tracker.zip",
-      "sha256": "7FD90DAF602B19CA62426C09875E6E8D61408D0AA698FBF9AD1D76824E67742A",
-      "changelog": [
-        "Logic file loading error fix"
-      ]
-    },
-    {
-      "package_version": "0.4.3.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3.1/witness_archipelago_tracker.zip",
-      "sha256": "975B5C63BBC9D1DD1D5B7C877D93B9604637E6D3A1A6BCEB5EDCFA95C70D7D75",
-      "changelog": [
-        "Logic fixes and connection speedups"
-      ]
-    },
-    {
-      "package_version": "0.4.3",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3/witness_archipelago_tracker.zip",
-      "sha256": "0DA3A7465C060AFC81F99C417704779FF6B0B1BBC3749ED5DBA807807A729A76",
-      "changelog": [
-        "Updated to be compatible with 0.4.3 changes"
-      ]
-    },
-    {
-      "package_version": "0.4.2",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.2/witness_archipelago_tracker.zip",
-      "sha256": "7B3279949E42F866EF66E4ABB05865A66327615012C45A17155C37D07ED763F2",
-      "changelog": [
-        "Updated to be compatible with 0.4.2 logic changes"
-      ]
-    },
-    {
-      "package_version": "0.4.1.2b",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2b/witness_archipelago_tracker.zip",
-      "sha256": "2B21E7CA5A625774D8FC5CD7458D12135A2801E510FAFF6E4A352B9F24DA8591",
-      "changelog": [
-        "Broadcast view and items only fix"
-      ]
-    },
-    {
-      "package_version": "0.4.1.2",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2/witness_archipelago_tracker.zip",
-      "sha256": "78D0007CB6F551347894C9F2B168462220FF58F1FBFF97AA322956161CF2CD34",
-      "changelog": [
-        "Theater entry fix"
-      ]
-    },
-    {
-      "package_version": "0.4.1.1c",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1c/witness_archipelago_tracker.zip",
-      "sha256": "1C5E88B6D6485CD9E39488DC231730B6187F070A34FB9F7F736A5CE5BB8B5C63",
-      "changelog": [
-        "Theater entry fix"
-      ]
-    },
-    {
-      "package_version": "0.4.1.1b",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1b/witness_archipelago_tracker.zip",
-      "sha256": "DC7033D1CFDCA6B30806E5AA0C412AC456BE002689CACE24AF8927F975ADDB3B",
-      "changelog": [
-        "Oops floating location"
-      ]
-    },
-    {
-      "package_version": "0.4.1.1a",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1a/witness_archipelago_tracker.zip",
-      "sha256": "57F9C352EEDA55EF2EB872A9C7695A362EBDCCE15764F99F20277320CD7ED245",
-      "changelog": [
-        "Oops floating location"
-      ]
-    },
-    {
-      "package_version": "0.4.1.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1/witness_archipelago_tracker.zip",
-      "sha256": "03CE875B250B367F1721E0B6DC2532BC70B3679ABA429AD6FF6830A7F488D6D5",
-      "changelog": [
-        "Added underground map"
-      ]
-    },
-    {
-      "package_version": "0.4.1",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1/witness_archipelago_tracker.zip",
-      "sha256": "FD0220C74171E52FFB7D66319BF9A7B2077F30227D5D00D236840516C79F713F",
-      "changelog": [
-        "Various fixes courtesy of ExemptMedic"
-      ]
-    },
-    {
-      "package_version": "0.4.0d",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0d/witness_archipelago_tracker.zip",
-      "sha256": "11E850057EAEEE73E71729916D4D854F1817DE8AA3BA42350F40DAC67586E7D0",
-      "changelog": [
-        "EP tracking in Obelisks and more fixes to logic"
-      ]
-    },
-    {
-      "package_version": "0.4.0c",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0c/witness_archipelago_tracker.zip",
-      "sha256": "6C709D1B335828DBC296B11E08DC707291B77F3381A705DE4F8517DF098DDD1E",
-      "changelog": [
-        "More EP fixes"
-      ]
-    },
-    {
-      "package_version": "0.4.0b",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0b/witness_archipelago_tracker.zip",
-      "sha256": "1FF2AFCC80CE32658E2E2FF0C13D1314B61BA4FA19CDC2472636E98882B6B9DD",
-      "changelog": [
-        "Fixed some EP tracking"
-      ]
-    },
-    {
-      "package_version": "0.4.0a",
-      "download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0a/witness_archipelago_tracker.zip",
-      "sha256": "2493610A2CF2F53E961BBB0D31D1D6F2786BC32E58AB6702ABDEE3D6C1B53BB3",
-      "changelog": [
-        "Added auto update"
-      ]
-    }
-  ]
+	"versions": [
+		{
+			"package_version": "0.5.0.2",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.2/witness_archipelago_tracker.zip",
+			"sha256": "5B38F2CC4601C51E58B67B514263B83546A4E442B65D2478494D5391CBC445D7",
+			"changelog": [
+				"Hotfix"
+			]
+		},
+		{
+			"package_version": "0.5.0.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.1/witness_archipelago_tracker.zip",
+			"sha256": "7C0CFB617BDFC0209F6E9ED0F8D6CC1C403145704868609A347DC0145B930705",
+			"changelog": [
+				"Snipes, EP fixes, Town/Bunker rework, etc."
+			]
+		},
+		{
+			"package_version": "0.5.0.0",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.0/witness_archipelago_tracker.zip",
+			"sha256": "1A22D09772651773669413EF80AD66F68EE43A3D4C9C668EE059CF5337E06060",
+			"changelog": [
+				"0.5.0 parity"
+			]
+		},
+		{
+			"package_version": "0.4.6.2",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6.2/witness_archipelago_tracker.zip",
+			"sha256": "CBC44B3886BC5A783D4ACC33B691AC99E811258CA054974149AE2E3A4D6D7CDF",
+			"changelog": [
+				"Small logic fixes."
+			]
+		},
+		{
+			"package_version": "0.4.6.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6.1/witness_archipelago_tracker.zip",
+			"sha256": "C722C1791969CD811F3BD0F433B8C83B87AE5EDB6D25228B4AA70E9BB8A5717E",
+			"changelog": [
+				"Complete logic rewrite, small logic fixes."
+			]
+		},
+		{
+			"package_version": "0.4.6",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.6/witness_archipelago_tracker.zip",
+			"sha256": "69C6D92516F0F21605D91D35AFDDF997BE4A7DBEE571F403BC39807867D0F0E5",
+			"changelog": [
+				"FOV Snipes, defaults, and name changes."
+			]
+		},
+		{
+			"package_version": "0.4.5.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5.1/witness_archipelago_tracker.zip",
+			"sha256": "E86BCB6A0A418BC1EF2CCA15121A33D10F4A260E88E85A862D0490ED88C8EB3D",
+			"changelog": [
+				"Obelisk Keys and name changes."
+			]
+		},
+		{
+			"package_version": "0.4.5",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.5/witness_archipelago_tracker.zip",
+			"sha256": "967E3057C4DFF50484405AF13DB0DAF01D3CED33FFF914F745E591047C53B424",
+			"changelog": [
+				"Lots of 0.4.5 changes."
+			]
+		},
+		{
+			"package_version": "0.4.4.2",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.2/witness_archipelago_tracker.zip",
+			"sha256": "890422AD5A6AED4A46A1126E124ABA95ED8E2D30C488D47CA27BAD61D86FE770",
+			"changelog": [
+				"Four area reworks. Five more snipes. 12 logic errors. Redesigned settings. Discards with disable-non-randomized. Optionally show only fully-solvable obelisk sides."
+			]
+		},
+		{
+			"package_version": "0.4.4.1a",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.1a/witness_archipelago_tracker.zip",
+			"sha256": "73978AADB0508A51F8552466E91FD4B47A0DE3CCAE497E01AC094416364061E3",
+			"changelog": [
+				"Hotfix for Keep Laser."
+			]
+		},
+		{
+			"package_version": "0.4.4.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4.1/witness_archipelago_tracker.zip",
+			"sha256": "F5533D9456093587D2E799B67A811C76579B579AFBC96CA619E891DAD041BCB7",
+			"changelog": [
+				"Fixing Expert and Audio Log errors. Adding in more snipes."
+			]
+		},
+		{
+			"package_version": "0.4.4",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.4/witness_archipelago_tracker.zip",
+			"sha256": "21560B5229DCE02BA8FEE561FD0146E8095408F2A583B04DEAFF13C428A9CF97",
+			"changelog": [
+				"Updating to match 0.4.4 changes"
+			]
+		},
+		{
+			"package_version": "0.4.3.1a",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3.1a/witness_archipelago_tracker.zip",
+			"sha256": "7FD90DAF602B19CA62426C09875E6E8D61408D0AA698FBF9AD1D76824E67742A",
+			"changelog": [
+				"Logic file loading error fix"
+			]
+		},
+		{
+			"package_version": "0.4.3.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3.1/witness_archipelago_tracker.zip",
+			"sha256": "975B5C63BBC9D1DD1D5B7C877D93B9604637E6D3A1A6BCEB5EDCFA95C70D7D75",
+			"changelog": [
+				"Logic fixes and connection speedups"
+			]
+		},
+		{
+			"package_version": "0.4.3",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.3/witness_archipelago_tracker.zip",
+			"sha256": "0DA3A7465C060AFC81F99C417704779FF6B0B1BBC3749ED5DBA807807A729A76",
+			"changelog": [
+				"Updated to be compatible with 0.4.3 changes"
+			]
+		},
+		{
+			"package_version": "0.4.2",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.2/witness_archipelago_tracker.zip",
+			"sha256": "7B3279949E42F866EF66E4ABB05865A66327615012C45A17155C37D07ED763F2",
+			"changelog": [
+				"Updated to be compatible with 0.4.2 logic changes"
+			]
+		},
+		{
+			"package_version": "0.4.1.2b",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2b/witness_archipelago_tracker.zip",
+			"sha256": "2B21E7CA5A625774D8FC5CD7458D12135A2801E510FAFF6E4A352B9F24DA8591",
+			"changelog": [
+				"Broadcast view and items only fix"
+			]
+		},
+		{
+			"package_version": "0.4.1.2",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.2/witness_archipelago_tracker.zip",
+			"sha256": "78D0007CB6F551347894C9F2B168462220FF58F1FBFF97AA322956161CF2CD34",
+			"changelog": [
+				"Theater entry fix"
+			]
+		},
+		{
+			"package_version": "0.4.1.1c",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1c/witness_archipelago_tracker.zip",
+			"sha256": "1C5E88B6D6485CD9E39488DC231730B6187F070A34FB9F7F736A5CE5BB8B5C63",
+			"changelog": [
+				"Theater entry fix"
+			]
+		},
+		{
+			"package_version": "0.4.1.1b",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1b/witness_archipelago_tracker.zip",
+			"sha256": "DC7033D1CFDCA6B30806E5AA0C412AC456BE002689CACE24AF8927F975ADDB3B",
+			"changelog": [
+				"Oops floating location"
+			]
+		},
+		{
+			"package_version": "0.4.1.1a",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1a/witness_archipelago_tracker.zip",
+			"sha256": "57F9C352EEDA55EF2EB872A9C7695A362EBDCCE15764F99F20277320CD7ED245",
+			"changelog": [
+				"Oops floating location"
+			]
+		},
+		{
+			"package_version": "0.4.1.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1.1/witness_archipelago_tracker.zip",
+			"sha256": "03CE875B250B367F1721E0B6DC2532BC70B3679ABA429AD6FF6830A7F488D6D5",
+			"changelog": [
+				"Added underground map"
+			]
+		},
+		{
+			"package_version": "0.4.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.1/witness_archipelago_tracker.zip",
+			"sha256": "FD0220C74171E52FFB7D66319BF9A7B2077F30227D5D00D236840516C79F713F",
+			"changelog": [
+				"Various fixes courtesy of ExemptMedic"
+			]
+		},
+		{
+			"package_version": "0.4.0d",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0d/witness_archipelago_tracker.zip",
+			"sha256": "11E850057EAEEE73E71729916D4D854F1817DE8AA3BA42350F40DAC67586E7D0",
+			"changelog": [
+				"EP tracking in Obelisks and more fixes to logic"
+			]
+		},
+		{
+			"package_version": "0.4.0c",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0c/witness_archipelago_tracker.zip",
+			"sha256": "6C709D1B335828DBC296B11E08DC707291B77F3381A705DE4F8517DF098DDD1E",
+			"changelog": [
+				"More EP fixes"
+			]
+		},
+		{
+			"package_version": "0.4.0b",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0b/witness_archipelago_tracker.zip",
+			"sha256": "1FF2AFCC80CE32658E2E2FF0C13D1314B61BA4FA19CDC2472636E98882B6B9DD",
+			"changelog": [
+				"Fixed some EP tracking"
+			]
+		},
+		{
+			"package_version": "0.4.0a",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.4.0a/witness_archipelago_tracker.zip",
+			"sha256": "2493610A2CF2F53E961BBB0D31D1D6F2786BC32E58AB6702ABDEE3D6C1B53BB3",
+			"changelog": [
+				"Added auto update"
+			]
+		}
+	]
 }
 	
