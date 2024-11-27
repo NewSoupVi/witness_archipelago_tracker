@@ -359,7 +359,7 @@
 				],
 				"sections": [
 					{
-						"visibility_rules": [ "doorsPanels" ],
+						"visibility_rules": [ "doorsPanel" ],
 						"name": "Desert Panels"
 					},
 					{
