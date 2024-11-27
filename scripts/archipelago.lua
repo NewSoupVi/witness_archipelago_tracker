@@ -194,7 +194,7 @@ doors = {
 		"Swamp Rotating Bridge (Panel)",
 		"Swamp Long Bridge (Panel)",
 		"Swamp Maze Controls (Panel)",
-    "Swamp Laser Shortcut (Panel)"},
+		"Swamp Laser Shortcut (Panel)"},
 	["Mountain Panels"] = {"Mountain Floor 1 Light Bridge (Panel)",
 		"Mountain Floor 2 Light Bridge Near (Panel)",
 		"Mountain Floor 2 Light Bridge Far (Panel)",
