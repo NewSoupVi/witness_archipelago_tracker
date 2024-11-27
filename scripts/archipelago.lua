@@ -286,12 +286,14 @@ function setReply(key, val, old)
 		end
 
 	elseif(key:sub(1, 23) == "WitnessHuntEntityStatus" and val) then
-		local count = 0
-		for _, _ in pairs(val) do
-			count = count + 1
+		if Tracker:FindObjectForCode("panelHunt").CurrentStage == 4 then
+			local count = 0
+			for _, _ in pairs(val) do
+				count = count + 1
+			end
+			Tracker:FindObjectForCode("panelHunt"):SetOverlay(tostring(count))
+			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
-		Tracker:FindObjectForCode("panelHunt"):SetOverlay(tostring(count))
-		Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
