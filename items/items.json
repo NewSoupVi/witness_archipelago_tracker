@@ -849,13 +849,6 @@
 		"codes": "Quarry Stoneworks Stairs (Panel)"
 	},
 	{
-		"name": "Quarry Stoneworks Stairs (Panel)",
-		"type": "toggle",
-		"loop": "true",
-		"img": "images/Door.png",
-		"codes": "Quarry Stoneworks Stairs (Panel)"
-	},
-	{
 		"name": "Quarry Boathouse Ramp Height Control (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -1175,14 +1168,6 @@
 		"codes": "Swamp Laser Shortcut (Panel)"
 	},
 	{
-		"name": "Mountain Floor 1 Bridge (Panel)",
-		"type": "toggle",
-		"loop": "true",
-		"img": "images/Door.png",
-		"disabled_img": "images/disabledDoor.png",
-		"codes": "Swamp Laser Shortcut (Panel)"
-	},
-	{
 		"name": "Mountain Floor 1 Light Bridge (Panel)",
 		"type": "toggle",
 		"loop": "true",
@@ -1244,20 +1229,6 @@
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Caves Swamp Shortcut (Panel)"
-	},
-	{
-		"name": "Caves Mountain Shortcut (Panel)",
-		"type": "toggle",
-		"loop": "true",
-		"img": "images/Door.png",
-		"codes": "Caves Mountain Shortcut (Panel)"
-	},
-	{
-		"name": "Caves Swamp Shortcut (Panel)",
-		"type": "toggle",
-		"loop": "true",
-		"img": "images/Door.png",
 		"codes": "Caves Swamp Shortcut (Panel)"
 	},
 	{
