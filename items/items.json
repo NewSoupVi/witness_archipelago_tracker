@@ -1165,6 +1165,7 @@
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
+		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Laser Shortcut (Panel)"
 	},
 	{
