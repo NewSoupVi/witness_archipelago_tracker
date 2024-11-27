@@ -14,8 +14,20 @@ function isNotVanilla()
 	return (1 - Tracker:ProviderCountForCode("randomizationVanilla") > 0)
 end
 
-function isNotNormal()
-	return (1 - Tracker:ProviderCountForCode("randomizationSigma") > 0)
+function isNotVariety()
+	return (1 - Tracker:ProviderCountForCode("Variety") > 0)
+end
+
+function isVanillaOrVariety()
+	return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("Variety") > 0)
+end
+
+function isNotNormalNorVariety()
+	return (1 - (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety")) > 0)
+end
+
+function isNormalOrVariety()
+	return (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety") > 0)
 end
 
 function isNotExpert()
@@ -42,8 +54,16 @@ function isNotDeathLink()
 	return (1 - Tracker:ProviderCountForCode("deathLink") > 0)
 end
 
+function isNotPanelHunt()
+	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
+end
+
+function canPanelHuntGoal()
+	return Tracker:FindObjectForCode("panelHuntCount").AcquiredCount >= Tracker:FindObjectForCode("panelHuntRequired").AcquiredCount
+end
+
 function longBoxWithoutMountainEntry()
-	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7)
+	return (Tracker:ProviderCountForCode("boxLong") < 8 or Tracker:ProviderCountForCode("boxShort") > 7 or Tracker:ProviderCountForCode("panelHunt") + Tracker:ProviderCountForCode("shortboxOff") > 1 and Tracker:ProviderCountForCode("boxLong") > 7)
 end
 
 function showPartialSidesOrSolvableSide(side)
@@ -130,18 +150,18 @@ function pp2()
 	
 	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
 	(
-	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit Door") == 1 and
-	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit Door") == 1 and
-	(Tracker:ProviderCountForCode("Keep Shortcut to Shadows") == 1 or
-	(Tracker:ProviderCountForCode("Keep Pressure Plates 4 Exit Door") == 1 and
-	(Tracker:ProviderCountForCode("Keep Tower Shortcut") == 1 or
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 4 Exit Door") == 1 and
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 4 Shortcut") == 1 or
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Exit Door") == 1 and
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Shortcut") == 1 or
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Exit Door") == 1 and
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Shortcut") == 1 or
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit Door") == 1))))))))))))
+	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit (Door)") == 1 and
+	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit (Door)") == 1 and
+	(Tracker:ProviderCountForCode("Keep Shadows Shortcut (Door)") == 1 or
+	(Tracker:ProviderCountForCode("Keep Pressure Plates 4 Exit (Door)") == 1 and
+	(Tracker:ProviderCountForCode("Keep Tower Shortcut (Door)") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 4 Exit (Door)") == 1 and
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 4 Shortcut (Door)") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Exit (Door)") == 1 and
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Shortcut (Door)") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Exit (Door)") == 1 and
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Shortcut (Door)") == 1 or
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit (Door)") == 1))))))))))))
 
 end
 
@@ -172,8 +192,11 @@ function hasSymbol(symbol)
 		return symmetry(2)
 	elseif symbolCheck[symbol] ~= nil then
 		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
-	else
+	elseif symbol == "True" then
 		return true
+	else
+		print("Invalid Symbol:", symbol)
+		return false
 	end
 end
 
@@ -182,7 +205,9 @@ function getLogicFile()
 		return "WitnessLogicExpert"
 	elseif Tracker:ProviderCountForCode("randomizationSigma") == 1 then
 		return "WitnessLogic"
-	else
+	elseif Tracker:ProviderCountForCode("Variety") == 1 then
+		return "WitnessLogicVariety"
+	elseif Tracker:ProviderCountForCode("randomizationVanilla") == 1 then
 		return "WitnessLogicVanilla"
 	end
 end
