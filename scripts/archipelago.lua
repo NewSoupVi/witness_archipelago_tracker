@@ -289,7 +289,7 @@ function setReply(key, val, old)
 		end
 
 	elseif(key:sub(1, 23) == "WitnessHuntEntityStatus" and val) then
-		if Tracker:FindObjectForCode("panelHunt").CurrentStage == 4 then
+		if Tracker:FindObjectForCode("panelHunt").CurrentStage == 5 then
 			local count = 0
 			for _, _ in pairs(val) do
 				count = count + 1
