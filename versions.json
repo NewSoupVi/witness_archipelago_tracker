@@ -1,6 +1,22 @@
 {
 	"versions": [
 		{
+			"package_version": "0.5.1.1",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.1/witness_archipelago_tracker.zip",
+			"sha256": "B26CA921E98D859B804AFCB93E491820A6DD19FDE2DB788ABC768859000ACB27",
+			"changelog": [
+				"PanelHunt Icon and Fixes"
+			]
+		},
+		{
+			"package_version": "0.5.1.0",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.0/witness_archipelago_tracker.zip",
+			"sha256": "32391B008CBC10BA6A347A3A13EEA44D694F43CED90D8DA9D87D31A040E6B118",
+			"changelog": [
+				"0.5.1 Updates"
+			]
+		},
+		{
 			"package_version": "0.5.0.2",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.0.2/witness_archipelago_tracker.zip",
 			"sha256": "5B38F2CC4601C51E58B67B514263B83546A4E442B65D2478494D5391CBC445D7",
