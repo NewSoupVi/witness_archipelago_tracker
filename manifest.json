@@ -18,5 +18,6 @@
 		 ]
 		}
 	},
-	"versions_url": "https://raw.githubusercontent.com/NewSoupVi/witness_archipelago_tracker/main/versions.json"
+	"versions_url": "https://raw.githubusercontent.com/NewSoupVi/witness_archipelago_tracker/main/versions.json",
+	"min_poptracker_version": "0.27.0"
 }
