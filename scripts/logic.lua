@@ -106,15 +106,27 @@ function anyIsNotDisabled(ids)
 	return eval
 end
 
+function hasAllLasers()
+	return Tracker:ProviderCountForCode("lasers") >= 11
+end
+
+function hasAllLasersAndRedirect()
+	return Tracker:ProviderCountForCode("laserLatches") >= 11
+end
+
 function laserBox(box)
 	if box == "short" then
-		return Tracker:ProviderCountForCode("laserLatches")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
+		return (hasAllLasersAndRedirect()
+		or Tracker:ProviderCountForCode("laserLatches") >= Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0)
 	elseif box == "long" then
-		return Tracker:ProviderCountForCode("laserLatches")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
+		return (hasAllLasersAndRedirect()
+		or Tracker:ProviderCountForCode("laserLatches") >= Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0)
 	elseif box == "elevator" then
-		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0
+		return (hasAllLasers()
+		or Tracker:ProviderCountForCode("lasers") >= Tracker:ProviderCountForCode("boxShort") and Tracker:ProviderCountForCode("boxShort") > 0)
 	elseif box == "challenge" then
-		return Tracker:ProviderCountForCode("lasers")>=Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0
+		return (hasAllLasers()
+		or Tracker:ProviderCountForCode("lasers") >= Tracker:ProviderCountForCode("boxLong") and Tracker:ProviderCountForCode("boxLong") > 0)
 	end
 end
 

@@ -2820,7 +2820,8 @@
 				"access_rules": [
 					"$isDisabled|166801",
 					"$isNotLaserShuffle, $hasPanel|Town Desert Laser Redirect Control (Panel), @Desert/Laser, @Places/overworld, $hasObeliskKey|Town",
-					"$laser|2, $hasPanel|Town Desert Laser Redirect Control (Panel), @Places/overworld, $hasObeliskKey|Town"
+					"$laser|2, $hasPanel|Town Desert Laser Redirect Control (Panel), @Places/overworld, $hasObeliskKey|Town",
+					"$hasAllLasersAndRedirect, @Places/overworld, $hasObeliskKey|Town"
 				]
 			}
 		],

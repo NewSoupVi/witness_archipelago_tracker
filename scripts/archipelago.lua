@@ -676,7 +676,7 @@ function laserCounting()
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
-	if lasers[2] > 0 and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+	if (lasers[2] > 0 or laserCount == 11) and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
@@ -702,7 +702,7 @@ end
 
 function lasersChanged()
 	laserCount = Tracker:FindObjectForCode("lasers").AcquiredCount
-	if lasers[2] > 0 and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+	if (lasers[2] > 0 or laserCount == 11) and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
