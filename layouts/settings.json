@@ -2,28 +2,21 @@
 	"settings_popup": {
 		"type": "array",
 		"orientation": "horizontal",
-		"margin": "0,0",
+		"margin": "0,25",
 		"content": [
 			{
-				"type": "array",
-				"orientation": "horizontal",
-				"margin": "0,25",
-				"content": [
-					{
-						"type": "itemgrid",
-						"item_margin": "2,-25",
-						"h_alignment": "left",
-						"item_size": "400,95",
-						"rows": [
-							[ "Unrandomized", "Vaults", "Discarded" ],
-							[ "puzzleRandomization", "Symbols", "shuffleLasers" ],
-							[ "cavesSetting", "doorsSetting", "autoElevators" ],
-							[],
-							[ "epSetting", "epDiff", "obeliskKeys" ],
-							[],
-							[ "clearJunk", "partialSides", "showSnipes" ]
-						]
-					}
+				"type": "itemgrid",
+				"item_margin": "2,-25",
+				"h_alignment": "left",
+				"item_size": "400,95",
+				"rows": [
+					[ "Unrandomized", "Vaults", "Discarded" ],
+					[ "puzzleRandomization", "Symbols", "shuffleLasers" ],
+					[ "cavesSetting", "doorsSetting", "autoElevators" ],
+					[],
+					[ "epSetting", "epDiff", "obeliskKeys" ],
+					[],
+					[ "clearJunk", "partialSides", "showSnipes" ]
 				]
 			}
 		]
