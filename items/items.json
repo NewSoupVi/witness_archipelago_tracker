@@ -626,6 +626,34 @@
 		"loop": "true"
 	},
 	{
+		"name": "Automatic Quarry Elevator",
+		"img": "images/autoQuarryElevator.png",
+		"codes": "autoQuarryElevator",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
+		"name": "Automatic Swamp Long Bridge",
+		"img": "images/autoSwampLongBridge.png",
+		"codes": "autoSwampLongBridge",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
+		"name": "Automatic Bunker Elevator",
+		"img": "images/autoBunkerElevator.png",
+		"codes": "autoBunkerElevator",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
+		"name": "Automatic Town Maze Bridge",
+		"img": "images/autoTownMazeBridge.png",
+		"codes": "autoTownMazeBridge",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Show Snipes",
 		"img": "images/showSnipes.png",
 		"codes": "showSnipes",

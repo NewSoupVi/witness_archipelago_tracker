@@ -606,10 +606,10 @@
 				"name": "Quarry Elevator Control (Panel)",
 				"access_rules": [
 					"{Quarry Elevator Control (Panel)}",
-					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
-					"showSnipes, [autoElevators], $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
-					"autoElevators, $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
-					"showSnipes, [autoElevators], $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
+					"autoQuarryElevator, $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
+					"showSnipes, [autoQuarryElevator], $canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld",
+					"autoQuarryElevator, $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
+					"showSnipes, [autoQuarryElevator], $canSolve|158120, Quarry Elevator Control (Panel), @Places/quarry",
 					"$canSolve|158120, Quarry Elevator Control (Panel), @Places/overworld, @Places/quarry"
 				],
 				"sections": [

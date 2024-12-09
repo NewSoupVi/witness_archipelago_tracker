@@ -497,6 +497,18 @@ function onClear(slot_data)
 			end
 		elseif k == "shuffle_dog" then
 			obj.CurrentStage = value
+		elseif k == "elevators_come_to_you" then
+			for _, mover in ipairs(value) do
+				if mover == "Quarry Elevator" then
+					Tracker:FindObjectForCode("autoQuarryElevator").Active = true
+				elseif mover == "Swamp Long Bridge" then
+					Tracker:FindObjectForCode("autoSwampLongBridge").Active = true
+				elseif mover == "Bunker Elevator" then
+					Tracker:FindObjectForCode("autoBunkerElevator").Active = true
+				elseif mover == "Town Maze Bridge" then
+					Tracker:FindObjectForCode("autoTownMazeBridge").Active = true
+				end
+			end
 		else
 			obj.Active = value
 		end

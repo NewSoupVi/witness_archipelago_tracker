@@ -3876,7 +3876,7 @@
 				"access_rules": [
 					"$isDisabled|13827",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3885,7 +3885,7 @@
 				"access_rules": [
 					"$isDisabled|13825",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3893,9 +3893,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13790" ],
 				"access_rules": [
 					"$isDisabled|13790",
-					"$isNotAutoElevators, @Places/overworld, $hasObeliskKey|Mountainside",
-					"autoElevators, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"$isNotAutoSwampLongBridge, @Places/overworld, $hasObeliskKey|Mountainside",
+					"autoSwampLongBridge, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
+					"showSnipes, autoSwampLongBridge, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3904,7 +3904,7 @@
 				"access_rules": [
 					"$isDisabled|14129",
 					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
 				]
 			}
 		],
