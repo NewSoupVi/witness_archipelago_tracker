@@ -214,6 +214,7 @@
 	{
 		"name": "Disabled Panels Enabled",
 		"codes": "disabledPanelsEnabled",
+		"img": "images/DisabledPanelsEnabled.png",
 		"type": "toggle",
 		"loop": "true"
 	},
@@ -226,14 +227,17 @@
 		"stages": [
 			{
 				"codes": "dogOff",
+				"img": "images/DogOff.png",
 				"inherit_codes": false
 			},
 			{
 				"codes": "dogSkip",
+				"img": "images/DogSkip.png",
 				"inherit_codes": false
 			},
 			{
 				"codes": "dogOn",
+				"img": "images/DogOn.png",
 				"inherit_codes": false
 			}
 		]
@@ -241,6 +245,7 @@
 	{
 		"name": "Death Link",
 		"codes": "deathLink",
+		"img": "images/DeathLink.png",
 		"type": "toggle",
 		"loop": "true"
 	},
@@ -510,51 +515,16 @@
 		"loop": true,
 		"stages": [
 			{
-				"img": "images/doorsComplexText.png",
-				"codes": "doorsComplex",
+				"img": "images/DoorsIndividual.png",
+				"codes": "doorsIndividual",
 				"inherit_codes": false
 			},
 			{
-				"img": "images/doorsSimpleText.png",
-				"codes": "doorsSimple",
+				"img": "images/DoorsRegional.png",
+				"codes": "doorsRegional",
 				"inherit_codes": false
 			}
 		]
-	},
-	{
-		"name": "Doors Unshuffled",
-		"img": "images/doorsNoText.png",
-		"codes": "DeprecateddoorsNo",
-		"type": "toggle",
-		"loop": "true"
-	},
-	{
-		"name": "Panel Power Shuffled",
-		"img": "images/doorsPanelText.png",
-		"codes": "DeprecateddoorsPanel",
-		"type": "toggle",
-		"loop": "true"
-	},
-	{
-		"name": "Doors Simple",
-		"img": "images/doorsSimpleText.png",
-		"codes": "DeprecateddoorsSimple",
-		"type": "toggle",
-		"loop": "true"
-	},
-	{
-		"name": "Doors Complex",
-		"img": "images/doorsComplexText.png",
-		"codes": "DeprecateddoorsComplex",
-		"type": "toggle",
-		"loop": "true"
-	},
-	{
-		"name": "Doors Max",
-		"img": "images/doorsMaxText.png",
-		"codes": "DeprecateddoorsMax",
-		"type": "toggle",
-		"loop": "true"
 	},
 	{
 		"name": "Shuffle Lasers",

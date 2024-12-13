@@ -12,11 +12,13 @@
 				"rows": [
 					[ "Unrandomized", "Vaults", "Discarded" ],
 					[ "puzzleRandomization", "Symbols", "shuffleLasers" ],
-					[ "cavesSetting", "doorsSetting", "autoElevators" ],
+					[ "doorsSetting", "", "cavesSetting" ],
+					[ "doorsGrouping", "shuffleDog", "autoElevators" ],
 					[],
 					[ "epSetting", "epDiff", "obeliskKeys" ],
 					[],
-					[ "clearJunk", "partialSides", "showSnipes" ]
+					[ "clearJunk", "partialSides", "showSnipes" ],
+					[ "deathLink", "", "disabledPanelsEnabled" ]
 				]
 			}
 		]
