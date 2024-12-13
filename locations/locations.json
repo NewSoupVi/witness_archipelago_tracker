@@ -1408,7 +1408,7 @@
 					"doorsDoor, @Quarry Boathouse/Intro Left, @Quarry Boathouse/Intro Right, $canSolve|158148, Quarry Boathouse First Barrier (Door), Quarry Boathouse Second Barrier (Door), $canSolve|158154, $hasObeliskKey|Quarry",
 					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier (Door), $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
 					"$isNotDoors, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, @Quarry Boathouse/Front Row, $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, $hasObeliskKey|Quarry",
-					"Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier (Door), $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, Quarry Boathouse Second Barrier (Door), $hasObeliskKey|Quarry"
+					"@Places/quarry, Quarry Boathouse Ramp Height Control (Panel), $canSolve|158148, Quarry Boathouse First Barrier (Door), $hasPanel|Quarry Boathouse Ramp Horizontal Control (Panel), $canSolve|158154, Quarry Boathouse Second Barrier (Door), $hasObeliskKey|Quarry"
 				]
 			}
 
