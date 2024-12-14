@@ -1415,12 +1415,12 @@
 		"codes": "Town Dockside House Panels"
 	},
 	{
-		"name": "Town Windmill & Theater Panels",
+		"name": "Windmill & Theater Panels",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Town Windmill & Theater Panels"
+		"codes": "Windmill & Theater Panels"
 	},
 	{
 		"name": "Treehouse Panels",
@@ -2289,12 +2289,12 @@
 		"codes": "Orchard Gates"
 	},
 	{
-		"name": "Desert Doors",
+		"name": "Desert Doors & Elevator",
 		"type": "toggle",
 		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
-		"codes": "Desert Doors"
+		"codes": "Desert Doors & Elevator"
 	},
 	{
 		"name": "Quarry Entry Doors",
