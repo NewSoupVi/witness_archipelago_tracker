@@ -16,196 +16,310 @@ currentlyClearing = false
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
 doors = {
-	["Outside Tutorial Outpost Doors"] = {"Outside Tutorial Outpost Path (Door)",
+	["Outside Tutorial Outpost Doors"] = {
+		"Outside Tutorial Outpost Path (Door)",
 		"Outside Tutorial Outpost Entry (Door)",
-		"Outside Tutorial Outpost Exit (Door)"},
-	["Glass Factory Doors"] = {"Glass Factory Entry (Door)",
-		"Glass Factory Back Wall (Door)"},
-	["Symmetry Island Doors"] = {"Symmetry Island Lower (Door)",
-		"Symmetry Island Upper (Door)"},
-	["Orchard Gates"] = {"Orchard First Gate (Door)",
-		"Orchard Second Gate (Door)"},
-	["Desert Doors"] = {"Desert Light Room Entry (Door)",
+		"Outside Tutorial Outpost Exit (Door)"
+	},
+	["Glass Factory Doors"] = {
+		"Glass Factory Entry (Door)",
+		"Glass Factory Back Wall (Door)"
+	},
+	["Symmetry Island Doors"] = {
+		"Symmetry Island Lower (Door)",
+		"Symmetry Island Upper (Door)"
+	},
+	["Orchard Gates"] = {
+		"Orchard First Gate (Door)",
+		"Orchard Second Gate (Door)"
+	},
+	["Desert Doors & Elevator"] = {
+		"Desert Light Room Entry (Door)",
 		"Desert Pond Room Entry (Door)",
 		"Desert Flood Room Entry (Door)",
 		"Desert Elevator Room Entry (Door)",
-		"Desert Elevator (Door)"},
-	["Quarry Entry Doors"] = {"Quarry Entry 1 (Door)",
-		"Quarry Entry 2 (Door)"},
-	["Quarry Stoneworks Doors"] = {"Quarry Stoneworks Entry (Door)",
+		"Desert Elevator (Door)"
+	},
+	["Quarry Entry Doors"] = {
+		"Quarry Entry 1 (Door)",
+		"Quarry Entry 2 (Door)"
+	},
+	["Quarry Stoneworks Doors"] = {
+		"Quarry Stoneworks Entry (Door)",
 		"Quarry Stoneworks Side Exit (Door)",
-		"Quarry Stoneworks Roof Exit (Door)"},
-	["Quarry Boathouse Doors"] = {"Quarry Boathouse Dock (Door)",
+		"Quarry Stoneworks Roof Exit (Door)",
+		"Quarry Stoneworks Stairs (Door)"
+	},
+	["Quarry Boathouse Doors"] = {
+		"Quarry Boathouse Dock (Door)",
 		"Quarry Boathouse First Barrier (Door)",
-		"Quarry Boathouse Second Barrier (Door)"},
-	["Shadows Laser Room Doors"] = {"Shadows Laser Entry Right (Door)",
-		"Shadows Laser Entry Left (Door)"},
-	["Shadows Lower Doors"] = {"Shadows Timed Door",
+		"Quarry Boathouse Second Barrier (Door)"
+	},
+	["Shadows Laser Room Doors"] = {
+		"Shadows Laser Entry Right (Door)",
+		"Shadows Laser Entry Left (Door)"
+	},
+	["Shadows Lower Doors"] = {
+		"Shadows Timed Door",
 		"Shadows Quarry Barrier (Door)",
-		"Shadows Ledge Barrier (Door)"},
-	["Keep Hedge Maze Doors"] = {"Keep Hedge Maze 1 Exit (Door)",
+		"Shadows Ledge Barrier (Door)"
+	},
+	["Keep Hedge Maze Doors"] = {
+		"Keep Hedge Maze 1 Exit (Door)",
 		"Keep Hedge Maze 2 Shortcut (Door)",
 		"Keep Hedge Maze 2 Exit (Door)",
 		"Keep Hedge Maze 3 Shortcut (Door)",
 		"Keep Hedge Maze 3 Exit (Door)",
 		"Keep Hedge Maze 4 Shortcut (Door)",
-		"Keep Hedge Maze 4 Exit (Door)"},
-	["Keep Pressure Plates Doors"] = {"Keep Pressure Plates 1 Exit (Door)",
+		"Keep Hedge Maze 4 Exit (Door)"
+	},
+	["Keep Pressure Plates Doors"] = {
+		"Keep Pressure Plates 1 Exit (Door)",
 		"Keep Pressure Plates 2 Exit (Door)",
 		"Keep Pressure Plates 3 Exit (Door)",
-		"Keep Pressure Plates 4 Exit (Door)"},
-	["Keep Shortcuts"] = {"Keep Shadows Shortcut (Door)",
-		"Keep Tower Shortcut (Door)"},
-	["Monastery Entry Doors"] = {"Monastery Entry Inner (Door)",
-		"Monastery Entry Outer (Door)"},
-	["Monastery Shortcuts"] = {"Monastery Laser Shortcut (Door)",
+		"Keep Pressure Plates 4 Exit (Door)"
+	},
+	["Keep Shortcuts"] = {
+		"Keep Shadows Shortcut (Door)",
+		"Keep Tower Shortcut (Door)"
+	},
+	["Monastery Entry Doors"] = {
+		"Monastery Entry Inner (Door)",
+		"Monastery Entry Outer (Door)"
+	},
+	["Monastery Shortcuts"] = {
+		"Monastery Laser Shortcut (Door)",
 		"Monastery Garden Entry (Door)",
-		"Jungle Monastery Garden Shortcut (Door)"},
-	["Town Doors"] = {"Town Cargo Box Entry (Door)",
+		"Jungle Monastery Garden Shortcut (Door)"
+	},
+	["Town Doors"] = {
+		"Town Cargo Box Entry (Door)",
 		"Town Wooden Roof Stairs (Door)",
 		"Town RGB House Entry (Door)",
 		"Town Church Entry (Door)",
 		"Town Maze Stairs (Door)",
-		"Town RGB House Stairs (Door)"},
-	["Town Tower Doors"] = {"Town Tower Second (Door)",
+		"Town RGB House Stairs (Door)"
+	},
+	["Town Tower Doors"] = {
+		"Town Tower Second (Door)",
 		"Town Tower First (Door)",
 		"Town Tower Fourth (Door)",
-		"Town Tower Third (Door)"},
-	["Windmill & Theater Doors"] = {"Windmill Entry (Door)",
+		"Town Tower Third (Door)"
+	},
+	["Windmill & Theater Doors"] = {
+		"Windmill Entry (Door)",
 		"Theater Entry (Door)",
 		"Theater Exit Left (Door)",
-		"Theater Exit Right (Door)"},
-	["Jungle Doors"] = {"Jungle Laser Shortcut (Door)",
-		"Jungle Popup Wall (Door)"},
-	["Bunker Doors"] = {"Bunker Entry (Door)",
+		"Theater Exit Right (Door)"
+	},
+	["Jungle Doors"] = {
+		"Jungle Laser Shortcut (Door)",
+		"Jungle Popup Wall (Door)"
+	},
+	["Bunker Doors"] = {
+		"Bunker Entry (Door)",
 		"Bunker Tinted Glass Door",
 		"Bunker UV Room Entry (Door)",
-		"Bunker Elevator Room Entry (Door)"},
-	["Swamp Doors"] = {"Swamp Entry (Door)",
+		"Bunker Elevator Room Entry (Door)"
+	},
+	["Swamp Doors"] = {
+		"Swamp Entry (Door)",
 		"Swamp Between Bridges First Door",
-		"Swamp Between Bridges Second Door"},
-	["Swamp Shortcuts"] = {"Swamp Platform Shortcut (Door)",
-		"Swamp Laser Shortcut (Door)"},
-	["Swamp Water Pumps"] = {"Swamp Red Underwater Exit (Door)",
+		"Swamp Between Bridges Second Door"
+	},
+	["Swamp Shortcuts"] = {
+		"Swamp Platform Shortcut (Door)",
+		"Swamp Laser Shortcut (Door)"
+	},
+	["Swamp Water Pumps"] = {
+		"Swamp Red Underwater Exit (Door)",
 		"Swamp Cyan Water Pump (Door)",
 		"Swamp Red Water Pump (Door)",
 		"Swamp Blue Water Pump (Door)",
-		"Swamp Purple Water Pump (Door)"},
-	["Treehouse Entry Doors"] = {"Treehouse First (Door)",
+		"Swamp Purple Water Pump (Door)"
+	},
+	["Treehouse Entry Doors"] = {
+		"Treehouse First (Door)",
 		"Treehouse Second (Door)",
-		"Treehouse Third (Door)"},
-	["Treehouse Upper Doors"] = {"Treehouse Laser House Entry (Door)",
-		"Treehouse Drawbridge (Door)"},
-	["Mountain Floor 1 & 2 Doors"] = {"Mountain Floor 1 Exit (Door)",
+		"Treehouse Third (Door)"
+	},
+	["Treehouse Upper Doors"] = {
+		"Treehouse Laser House Entry (Door)",
+		"Treehouse Drawbridge (Door)"
+	},
+	["Mountain Floor 1 & 2 Doors"] = {
+		"Mountain Floor 1 Exit (Door)",
 		"Mountain Floor 2 Staircase Near (Door)",
 		"Mountain Floor 2 Staircase Far (Door)",
-		"Mountain Floor 2 Exit (Door)"},
-	["Mountain Bottom Floor Doors"] = {"Mountain Bottom Floor Rock (Door)",
+		"Mountain Floor 2 Exit (Door)"
+	},
+	["Mountain Bottom Floor Doors"] = {
+		"Mountain Bottom Floor Rock (Door)",
 		"Mountain Bottom Floor Giant Puzzle Exit (Door)",
-		"Mountain Bottom Floor Pillars Room Entry (Door)"},
-	["Caves Doors"] = {"Caves Entry (Door)",
+		"Mountain Bottom Floor Pillars Room Entry (Door)"
+	},
+	["Caves Doors"] = {
+		"Caves Entry (Door)",
 		"Caves Pillar Door",
-		"Challenge Entry (Door)"},
-	["Caves Shortcuts"] = {"Caves Swamp Shortcut (Door)",
-		"Caves Mountain Shortcut (Door)"},
-	["Tunnels Doors"] = {"Tunnels Entry (Door)",
+		"Challenge Entry (Door)"
+	},
+	["Caves Shortcuts"] = {
+		"Caves Swamp Shortcut (Door)",
+		"Caves Mountain Shortcut (Door)"
+	},
+	["Tunnels Doors"] = {
+		"Tunnels Entry (Door)",
 		"Tunnels Theater Shortcut (Door)",
 		"Tunnels Desert Shortcut (Door)",
-		"Tunnels Town Shortcut (Door)"},
-	["Desert Control Panels"] = {"Desert Surface 3 Control (Panel)",
+		"Tunnels Town Shortcut (Door)"
+	},
+	["Desert Control Panels"] = {
+		"Desert Surface 3 Control (Panel)",
 		"Desert Surface 8 Control (Panel)",
 		"Desert Flood Controls (Panel)",
 		"Desert Light Control (Panel)",
-		"Desert Elevator Room Hexagonal Control (Panel)"},
-	["Quarry Stoneworks Control Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)",
-		"Quarry Stoneworks Lift Controls (Panel)"},
-	["Quarry Boathouse Control Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)",
+		"Desert Elevator Room Hexagonal Control (Panel)"
+	},
+	["Quarry Stoneworks Control Panels"] = {
+		"Quarry Stoneworks Ramp Controls (Panel)",
+		"Quarry Stoneworks Lift Controls (Panel)"
+	},
+	["Quarry Boathouse Control Panels"] = {
+		"Quarry Boathouse Ramp Height Control (Panel)",
 		"Quarry Boathouse Ramp Horizontal Control (Panel)",
-		"Quarry Boathouse Hook Control (Panel)"},
-	["Town Control Panels"] = {"Town Maze Rooftop Bridge (Panel)",
+		"Quarry Boathouse Hook Control (Panel)"
+	},
+	["Town Control Panels"] = {
+		"Town Maze Rooftop Bridge (Panel)",
 		"Town RGB Control (Panel)",
-		"Town Desert Laser Redirect Control (Panel)"},
-	["Windmill & Theater Control Panels"] = {"Windmill Turn Control (Panel)",
-		"Theater Video Input (Panel)"},
-	["Bunker Control Panels"] = {"Bunker Elevator Control (Panel)",
-		"Bunker Drop-Down Door Controls (Panel)"},
-	["Swamp Control Panels"] = {"Swamp Sliding Bridge (Panel)",
+		"Town Desert Laser Redirect Control (Panel)"
+	},
+	["Windmill & Theater Control Panels"] = {
+		"Windmill Turn Control (Panel)",
+		"Theater Video Input (Panel)"
+	},
+	["Bunker Control Panels"] = {
+		"Bunker Elevator Control (Panel)",
+		"Bunker Drop-Down Door Controls (Panel)"
+	},
+	["Swamp Control Panels"] = {
+		"Swamp Sliding Bridge (Panel)",
 		"Swamp Rotating Bridge (Panel)",
 		"Swamp Long Bridge (Panel)",
-		"Swamp Maze Controls (Panel)"},
-	["Mountain & Caves Control Panels"] = {"Mountain Floor 1 Light Bridge (Panel)",
+		"Swamp Maze Controls (Panel)"
+	},
+	["Mountain & Caves Control Panels"] = {
+		"Mountain Floor 1 Light Bridge (Panel)",
 		"Mountain Floor 2 Light Bridge Near (Panel)",
 		"Mountain Floor 2 Light Bridge Far (Panel)",
 		"Mountain Floor 2 Elevator Control (Panel)",
-		"Caves Elevator Controls (Panel)"},
-	["Symmetry Island Panels"] = {"Symmetry Island Lower (Panel)",
-		"Symmetry Island Upper (Panel)"},
-	["Outside Tutorial Outpost Panels"] = {"Outside Tutorial Outpost Entry (Panel)",
-		"Outside Tutorial Outpost Exit (Panel)"},
-			["Desert Panels"] = {"Desert Surface 3 Control (Panel)",
+		"Caves Elevator Controls (Panel)"
+	},
+	["Symmetry Island Panels"] = {
+		"Symmetry Island Lower (Panel)",
+		"Symmetry Island Upper (Panel)"
+	},
+	["Outside Tutorial Outpost Panels"] = {
+		"Outside Tutorial Outpost Entry (Panel)",
+		"Outside Tutorial Outpost Exit (Panel)"
+	},
+	["Desert Panels"] = {
+		"Desert Surface 3 Control (Panel)",
 		"Desert Surface 8 Control (Panel)",
 		"Desert Light Control (Panel)",
 		"Desert Flood Controls (Panel)",
 		"Desert Light Room Entry (Panel)",
 		"Desert Flood Room Entry (Panel)",
-		"Desert Elevator Room Hexagonal Control (Panel)"},
-	["Quarry Outside Panels"] = {"Quarry Entry 1 (Panel)",
+		"Desert Elevator Room Hexagonal Control (Panel)"
+	},
+	["Quarry Outside Panels"] = {
+		"Quarry Entry 1 (Panel)",
 		"Quarry Entry 2 (Panel)",
-		"Quarry Elevator Control (Panel)"},
-	["Quarry Stoneworks Panels"] = {"Quarry Stoneworks Ramp Controls (Panel)",
+		"Quarry Elevator Control (Panel)"
+	},
+	["Quarry Stoneworks Panels"] = {
+		"Quarry Stoneworks Ramp Controls (Panel)",
 		"Quarry Stoneworks Lift Controls (Panel)",
 		"Quarry Stoneworks Entry (Panel)",
-		"Quarry Stoneworks Stairs (Panel)"},
-	["Quarry Boathouse Panels"] = {"Quarry Boathouse Ramp Height Control (Panel)",
+		"Quarry Stoneworks Stairs (Panel)"
+	},
+	["Quarry Boathouse Panels"] = {
+		"Quarry Boathouse Ramp Height Control (Panel)",
 		"Quarry Boathouse Ramp Horizontal Control (Panel)",
-		"Quarry Boathouse Hook Control (Panel)"},
-	["Keep Hedge Maze Panels"] = {"Keep Hedge Maze 1 (Panel)",
+		"Quarry Boathouse Hook Control (Panel)"
+	},
+	["Keep Hedge Maze Panels"] = {
+		"Keep Hedge Maze 1 (Panel)",
 		"Keep Hedge Maze 2 (Panel)",
 		"Keep Hedge Maze 3 (Panel)",
-		"Keep Hedge Maze 4 (Panel)"},
-	["Monastery Panels"] = {"Monastery Entry Left (Panel)",
+		"Keep Hedge Maze 4 (Panel)"
+	},
+	["Monastery Panels"] = {
+		"Monastery Entry Left (Panel)",
 		"Monastery Entry Right (Panel)",
-		"Monastery Shutters Control (Panel)"},
-	["Jungle Panels"] = {"Jungle Monastery Garden Shortcut (Panel)",
-		"Jungle Popup Wall (Panel)"},
-	["Town Church & RGB House Panels"] = {"Town RGB House Entry (Panel)",
+		"Monastery Shutters Control (Panel)"
+	},
+	["Jungle Panels"] = {
+		"Jungle Monastery Garden Shortcut (Panel)",
+		"Jungle Popup Wall (Panel)"
+	},
+	["Town Church & RGB House Panels"] = {
+		"Town RGB House Entry (Panel)",
 		"Town RGB Control (Panel)",
-		"Town Church Entry (Panel)"},
-	["Town Maze Panels"] = {"Town Maze Stairs (Panel)",
-		"Town Maze Rooftop Bridge (Panel)"},
-	["Town Dockside House Panels"] = {"Town Cargo Box Entry (Panel)",
-		"Town Desert Laser Redirect Control (Panel)"},
-	["Town Windmill & Theater Panels"] = {"Windmill Entry (Panel)",
+		"Town Church Entry (Panel)"
+	},
+	["Town Maze Panels"] = {
+		"Town Maze Stairs (Panel)",
+		"Town Maze Rooftop Bridge (Panel)"
+	},
+	["Town Dockside House Panels"] = {
+		"Town Cargo Box Entry (Panel)",
+		"Town Desert Laser Redirect Control (Panel)"
+	},
+	["Windmill & Theater Panels"] = {
+		"Windmill Entry (Panel)",
 		"Windmill Turn Control (Panel)",
 		"Theater Entry (Panel)",
 		"Theater Video Input (Panel)",
-		"Theater Exit (Panel)"},
-	["Treehouse Panels"] = {"Treehouse First & Second Doors (Panel)",
+		"Theater Exit (Panel)"
+	},
+	["Treehouse Panels"] = {
+		"Treehouse First & Second Doors (Panel)",
 		"Treehouse Third Door (Panel)",
 		"Treehouse Laser House Door Timer (Panel)",
-		"Treehouse Drawbridge (Panel)"},
-	["Bunker Panels"] = {"Bunker Entry (Panel)",
+		"Treehouse Drawbridge (Panel)"
+	},
+	["Bunker Panels"] = {
+		"Bunker Entry (Panel)",
 		"Bunker Tinted Glass Door (Panel)",
 		"Bunker Drop-Down Door Controls (Panel)",
-		"Bunker Elevator Control (Panel)"},
-	["Swamp Panels"] = {"Swamp Entry (Panel)",
+		"Bunker Elevator Control (Panel)"
+	},
+	["Swamp Panels"] = {
+		"Swamp Entry (Panel)",
 		"Swamp Platform Shortcut (Panel)",
 		"Swamp Sliding Bridge (Panel)",
 		"Swamp Rotating Bridge (Panel)",
 		"Swamp Long Bridge (Panel)",
 		"Swamp Maze Controls (Panel)",
-		"Swamp Laser Shortcut (Panel)"},
+		"Swamp Laser Shortcut (Panel)"
+	},
 	["Mountain Panels"] = {"Mountain Floor 1 Light Bridge (Panel)",
 		"Mountain Floor 2 Light Bridge Near (Panel)",
 		"Mountain Floor 2 Light Bridge Far (Panel)",
-		"Mountain Floor 2 Elevator Control (Panel)"},
-	["Caves Panels"] = {"Caves Entry (Panel)",
+		"Mountain Floor 2 Elevator Control (Panel)"
+	},
+	["Caves Panels"] = {
+		"Caves Entry (Panel)",
 		"Challenge Entry (Panel)",
 		"Caves Elevator Controls (Panel)",
 		"Caves Mountain Shortcut (Panel)",
-		"Caves Swamp Shortcut (Panel)"},
-	["Tunnels Panels"] = {"Tunnels Entry (Panel)",
-		"Tunnels Town Shortcut (Panel)"}
+		"Caves Swamp Shortcut (Panel)"
+	},
+	["Tunnels Panels"] = {
+		"Tunnels Entry (Panel)",
+		"Tunnels Town Shortcut (Panel)"
+	}
 }
 
 function dump(o)
