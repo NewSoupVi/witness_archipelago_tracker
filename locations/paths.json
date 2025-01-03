@@ -355,6 +355,7 @@
 				"name": "Desert Surface 8 Control (Panel)",
 				"access_rules": [
 					"{Desert Surface 8 Control (Panel)}",
+					"showSnipes, $deathAvoidableOrUnimportant, Desert Surface 8 Control (Panel), [Desert Surface 3 Control (Panel)], @Places/overworld",
 					"Desert Surface 8 Control (Panel), Desert Surface 3 Control (Panel), @Places/overworld"
 				],
 				"sections": [

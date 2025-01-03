@@ -54,6 +54,10 @@ function isNotDeathLink()
 	return (1 - Tracker:ProviderCountForCode("deathLink") > 0)
 end
 
+function deathAvoidableOrUnimportant()
+    return isNotDeathLink() or (Tracker:ProviderCountForCode("randomizationVanilla") > 0)
+end
+
 function isNotPanelHunt()
 	return (1 - Tracker:ProviderCountForCode("panelHunt") > 0)
 end
