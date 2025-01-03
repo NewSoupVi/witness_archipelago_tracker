@@ -627,6 +627,7 @@ LASER_DATASTORAGE_ID = {
 	[98739] = {"@Shadows Laser/Laser Activation",{4, "@Shipwreck Discard/Discard", "@Town Red Rooftop/Discard"}}
 }
 
+-- This isn't used for anything now :(
 PATH_IDS = {
 	"Tutorial Main Gate",
 	"Orchard First Gate (Door)",
