@@ -38,8 +38,8 @@ function isNotLaserShuffle()
 	return (1 - Tracker:ProviderCountForCode("shuffleLasers") > 0)
 end
 
-function isNotAutoElevators()
-	return (1 - Tracker:ProviderCountForCode("autoElevators") > 0)
+function isNotAutoSwampLongBridge()
+	return (1 - Tracker:ProviderCountForCode("autoSwampLongBridge") > 0)
 end
 
 function unrandomizedDisabled()
