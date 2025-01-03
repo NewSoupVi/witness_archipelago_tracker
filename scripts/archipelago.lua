@@ -304,7 +304,8 @@ doors = {
 		"Swamp Maze Controls (Panel)",
 		"Swamp Laser Shortcut (Panel)"
 	},
-	["Mountain Panels"] = {"Mountain Floor 1 Light Bridge (Panel)",
+	["Mountain Panels"] = {
+		"Mountain Floor 1 Light Bridge (Panel)",
 		"Mountain Floor 2 Light Bridge Near (Panel)",
 		"Mountain Floor 2 Light Bridge Far (Panel)",
 		"Mountain Floor 2 Elevator Control (Panel)"
@@ -790,8 +791,6 @@ function onLocation(location_id, location_name)
 
 end
 
-
-
 function doorsRegional(item_name)
 	for _, door in pairs(doors[item_name]) do
 		Tracker:FindObjectForCode(door).Active = true
@@ -845,12 +844,11 @@ end
 
 function loc_checked(section)
 	local locID = section.FullID
+	if locID:sub(1, 6) ~= "Paths/" then
+	    return
+    end
 	itemName = string.match(locID, "[^/]+/([^/]+)")
-	for _, item in ipairs(PATH_IDS) do
-		if itemName == item then
-			Tracker:FindObjectForCode(itemName).Active = Tracker:FindObjectForCode("@"..locID).AvailableChestCount == 0
-		end
-	end
+	Tracker:FindObjectForCode(itemName).Active = Tracker:FindObjectForCode("@"..locID).AvailableChestCount == 0
 end
 
 -- add AP callbacks

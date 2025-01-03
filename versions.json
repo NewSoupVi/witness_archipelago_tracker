@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "0.5.1.3",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.3/witness_archipelago_tracker.zip",
+			"sha256": "CFA9759A103C0E5DEDAC5FE25C34D72C9286CB3683C2A0F0C848F7BB949E4E79",
+			"changelog": [
+				"Quarry Stoneworks Stairs + Name Fixes"
+			]
+		},
+		{
 			"package_version": "0.5.1.2",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.2/witness_archipelago_tracker.zip",
 			"sha256": "A4E02705DF3787CA4448480672DD834936964D3F283236E67F53AC7AEB12F608",

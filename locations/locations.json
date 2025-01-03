@@ -562,8 +562,7 @@
 				"access_rules": [
 					"$canSolve|158041-158045, @Places/symmetryOuter",
 					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/overworld, [@Places/symmetryOuter]",
-					"showSnipes, randomizationVanilla, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]",
-					"showSnipes, $isNotDeathLink, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
+					"showSnipes, $deathAvoidableOrUnimportant, $canSolve|158041-158045, @Places/ocean, [@Places/symmetryOuter]"
 				]
 			},
 			{
@@ -912,8 +911,7 @@
 				"name": "Surface Puzzles",
 				"access_rules": [
 					"$canSolve|158076-158085, $hasPanel|Desert Surface 3 Control (Panel), $hasPanel|Desert Surface 8 Control (Panel), @Places/overworld",
-					"showSnipes, randomizationVanilla, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
+					"showSnipes, $deathAvoidableOrUnimportant, $canSolve|158076-158085, [$hasPanel|Desert Surface 3 Control (Panel)], [$hasPanel|Desert Surface 8 Control (Panel)], @Places/overworld"
 				]
 			},
 			{
@@ -928,10 +926,8 @@
 				"name": "Light Room Puzzles",
 				"access_rules": [
 					"$canSolve|158087-158090, $hasPanel|Desert Light Control (Panel), @Places/desertFloodLight",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
-					"showSnipes, randomizationVanilla, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]"
+					"showSnipes, $deathAvoidableOrUnimportant, $canSolve|158087-158090, @Places/overworld, [@Places/desertFloodLight], [$hasPanel|Desert Light Control (Panel)]",
+					"showSnipes, $deathAvoidableOrUnimportant, $canSolve|158087-158090, @Places/desertFloodLight, [$hasPanel|Desert Light Control (Panel)]"
 				]
 			},
 			{
@@ -950,16 +946,14 @@
 				"name": "Flood Room Puzzles",
 				"access_rules": [
 					"$canSolve|158105-158110, @Places/desertFlood, $hasPanel|Desert Flood Controls (Panel)",
-					"showSnipes, randomizationVanilla, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]"
+					"showSnipes, $deathAvoidableOrUnimportant, $canSolve|158105-158110, @Places/desertFlood, [$hasPanel|Desert Flood Controls (Panel)]"
 				]
 			},
 			{
 				"name": "Final Hexagonal",
 				"access_rules": [
 					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
-					"showSnipes, randomizationVanilla, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
+					"showSnipes, $deathAvoidableOrUnimportant, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser",0
 				]
 			},
 			{
@@ -1343,8 +1337,7 @@
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, @Places/quarry",
-					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld",
-					"showSnipes, $isNotVanilla, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
+					"showSnipes, $deathAvoidableOrUnimportant, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
 				]
 			}
 		],
@@ -3780,8 +3773,7 @@
 				"name": "Intro Back",
 				"access_rules": [
 					"$canSolve|158288-158301, @Places/swampEntry",
-					"showSnipes, $isNotPanelHunt, randomizationVanilla, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze",
-					"showSnipes, $isNotPanelHunt, $isNotVanilla, $isNotDeathLink, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
+					"showSnipes, $isNotPanelHunt, $deathAvoidableOrUnimportant, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
 				]
 			}
 		],
