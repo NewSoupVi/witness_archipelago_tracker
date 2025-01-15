@@ -23,7 +23,7 @@ function isNotExpert()
 end
 
 function isVanillaOrNormal()
-    return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("randomizationSigma") > 0)
+	return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("randomizationSigma") > 0)
 end
 
 function isVanillaOrVariety()
@@ -39,7 +39,7 @@ function isNormalOrVariety()
 end
 
 function isVarietyOrExpert()
-    return (Tracker:ProviderCountForCode("Variety") + Tracker:ProviderCountForCode("Expert") > 0)
+	return (Tracker:ProviderCountForCode("Variety") + Tracker:ProviderCountForCode("Expert") > 0)
 end
 
 function isNotLaserShuffle()
@@ -63,7 +63,7 @@ function isNotDeathLink()
 end
 
 function deathAvoidableOrUnimportant()
-    return isNotDeathLink() or (Tracker:ProviderCountForCode("randomizationVanilla") > 0)
+	return isNotDeathLink() or (Tracker:ProviderCountForCode("randomizationVanilla") > 0)
 end
 
 function isNotPanelHunt()

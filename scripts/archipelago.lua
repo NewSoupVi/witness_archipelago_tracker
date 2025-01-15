@@ -830,8 +830,8 @@ end
 function loc_checked(section)
 	local locID = section.FullID
 	if locID:sub(1, 6) ~= "Paths/" then
-	    return
-    end
+		return
+	end
 	itemName = string.match(locID, "[^/]+/([^/]+)")
 	Tracker:FindObjectForCode(itemName).Active = Tracker:FindObjectForCode("@"..locID).AvailableChestCount == 0
 end
