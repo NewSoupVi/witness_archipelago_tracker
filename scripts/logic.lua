@@ -18,20 +18,28 @@ function isNotVariety()
 	return (1 - Tracker:ProviderCountForCode("Variety") > 0)
 end
 
+function isNotExpert()
+	return (1 - Tracker:ProviderCountForCode("Expert") > 0)
+end
+
+function isVanillaOrNormal()
+    return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("randomizationSigma") > 0)
+end
+
 function isVanillaOrVariety()
 	return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("Variety") > 0)
 end
 
-function isNotNormalNorVariety()
-	return (1 - (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety")) > 0)
+function isVanillaOrExpert()
+	return (Tracker:ProviderCountForCode("randomizationVanilla") + Tracker:ProviderCountForCode("Expert") > 0)
 end
 
 function isNormalOrVariety()
 	return (Tracker:ProviderCountForCode("randomizationSigma") + Tracker:ProviderCountForCode("Variety") > 0)
 end
 
-function isNotExpert()
-	return (1 - Tracker:ProviderCountForCode("Expert") > 0)
+function isVarietyOrExpert()
+    return (Tracker:ProviderCountForCode("Variety") + Tracker:ProviderCountForCode("Expert") > 0)
 end
 
 function isNotLaserShuffle()

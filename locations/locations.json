@@ -1221,7 +1221,7 @@
 					"$canSolve|158125-158130, @Places/quarryStoneworksMid",
 					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarry",
 					"showSnipes, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/quarryStoneworks",
-					"showSnipes, $isNotNormalNorVariety, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld",
+					"showSnipes, $isVanillaOrExpert, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld",
 					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158125-158130, [@Places/quarryStoneworksMid], @Places/overworld"
 				]
 			},
@@ -1327,8 +1327,8 @@
 				"name": "Door to Stoneworks Left",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), @Places/quarry, $canSolve|158121",
-					"showSnipes, $isNotExpert, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121",
-					"showSnipes, Expert, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
+					"showSnipes, $isVanillaOrNormal, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121",
+					"showSnipes, $isVarietyOrExpert, $isNotDeathLink, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), [@Places/quarry], @Places/overworld, $canSolve|158121"
 				]
 			},
 			{
@@ -2629,7 +2629,7 @@
 				"name": "RGB Room Left",
 				"access_rules": [
 					"$canSolve|158245, $canSolve|158244, $hasPanel|Town RGB Control (Panel), @Places/RGBHouseUpstairs",
-					"showSnipes, $isNotNormalNorVariety, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
+					"showSnipes, $isVanillaOrExpert, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs",
 					"showSnipes, $isNormalOrVariety, $isNotDeathLink, $canSolve|158245, [$canSolve|158244], [$hasPanel|Town RGB Control (Panel)], @Places/RGBHouseUpstairs"
 				]
 			},
