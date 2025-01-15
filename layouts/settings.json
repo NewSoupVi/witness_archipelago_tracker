@@ -12,8 +12,9 @@
 				"rows": [
 					[ "Unrandomized", "Vaults", "Discarded" ],
 					[ "puzzleRandomization", "Symbols", "shuffleLasers" ],
-					[ "doorsSetting", "", "cavesSetting" ],
-					[ "doorsGrouping", "shuffleDog", "autoElevators" ],
+					[ "doorsSetting", "doorsGrouping", "cavesSetting" ],
+					[ "", "shuffleDog", "" ],
+					[ "autoQuarryElevator", "autoSwampLongBridge", "autoBunkerElevator" ],
 					[],
 					[ "epSetting", "epDiff", "obeliskKeys" ],
 					[],
