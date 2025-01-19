@@ -232,13 +232,13 @@ end
 
 function getLogicFile()
 	if Tracker:ProviderCountForCode("Expert") == 1 then
-		return "WitnessLogicExpert"
+		return "scripts/WitnessLogicExpert.lua"
 	elseif Tracker:ProviderCountForCode("randomizationSigma") == 1 then
-		return "WitnessLogic"
+		return "scripts/WitnessLogic.lua"
 	elseif Tracker:ProviderCountForCode("Variety") == 1 then
-		return "WitnessLogicVariety"
+		return "scripts/WitnessLogicVariety.lua"
 	elseif Tracker:ProviderCountForCode("randomizationVanilla") == 1 then
-		return "WitnessLogicVanilla"
+		return "scripts/WitnessLogicVanilla.lua"
 	end
 end
 
@@ -255,7 +255,7 @@ function parseIds(ids)
 	end
 end
 
-require(getLogicFile())
+ScriptHost:LoadScript(getLogicFile())
 function canSolve(ids)
 	if Tracker:ProviderCountForCode("Symbols") == 0 or isClearing() then
 		return true
