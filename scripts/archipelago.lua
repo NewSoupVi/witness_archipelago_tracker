@@ -595,7 +595,7 @@ function onClear(slot_data)
 			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
 			obj.CurrentStage = value
-			require(getLogicFile())
+			ScriptHost:LoadScript(getLogicFile())
 		elseif k == "early_caves" then
 			obj.CurrentStage = value
 			if value == 2 then
@@ -810,7 +810,7 @@ function isClearing()
 end
 
 function randomizationChanged()
-	require(getLogicFile())
+	ScriptHost:LoadScript(getLogicFile())
 end
 
 function lasersChanged()
