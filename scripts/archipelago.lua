@@ -11,7 +11,6 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
-currentlyClearing = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -441,7 +440,7 @@ function setReply(key, val, old)
 end
 
 function onClear(slot_data)
-	currentlyClearing = true
+	Tracker.BulkUpdate = true
 
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -629,7 +628,7 @@ function onClear(slot_data)
 		end
 	end
 
-	currentlyClearing = false
+	Tracker.BulkUpdate = false
 
 	Tracker:FindObjectForCode("Tutorial 1 Extra").Active,
 	Tracker:FindObjectForCode("Tutorial 2 Extra").Active,
@@ -818,10 +817,6 @@ end
 
 function laser(num)
 	return (lasers[tonumber(num)] > 0)
-end
-
-function isClearing()
-	return currentlyClearing
 end
 
 function randomizationChanged()

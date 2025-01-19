@@ -257,7 +257,7 @@ end
 
 ScriptHost:LoadScript(getLogicFile())
 function canSolve(ids)
-	if Tracker:ProviderCountForCode("Symbols") == 0 or isClearing() then
+	if Tracker:ProviderCountForCode("Symbols") == 0 then
 		return true
 	end
 	ids = parseIds(ids)
