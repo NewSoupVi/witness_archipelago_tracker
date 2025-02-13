@@ -1337,7 +1337,7 @@
 				"name": "Door to Stoneworks Right",
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, @Places/quarry",
-					"showSnipes, $deathAvoidableOrUnimportant, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
+					"showSnipes, randomizationVanilla, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Entry (Panel), $canSolve|158122, [@Places/quarry], @Places/overworld"
 				]
 			}
 		],
