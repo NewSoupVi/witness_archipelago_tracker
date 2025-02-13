@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "0.5.1.4",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.4/witness_archipelago_tracker.zip",
+			"sha256": "93E10F23491E8933C85C9731C9DEC3AB80EB356D3430AFA9F6574E6069FEEFEF",
+			"changelog": [
+				"DeathLink and Latest PopTracker"
+			]
+		},
+		{
 			"package_version": "0.5.1.3",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.3/witness_archipelago_tracker.zip",
 			"sha256": "CFA9759A103C0E5DEDAC5FE25C34D72C9286CB3683C2A0F0C848F7BB949E4E79",
