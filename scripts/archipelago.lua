@@ -412,7 +412,7 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
-    elseif(key:sub(1, 16) == "WitnessEasterEggStatus") then
+	elseif(key:sub(1, 16) == "WitnessEasterEggStatus") then
 		for id, _ in pairs(val) do
 			local locationName = EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1]
 			if locationName then
@@ -608,8 +608,8 @@ function onClear(slot_data)
 			obj.Active = true
 			obj.CurrentStage = value
 		elseif k == "easter_egg_hunt" then
-            obj.Active = true
-            obj.CurrentStage = value
+			obj.Active = true
+			obj.CurrentStage = value
 		elseif k == "panel_hunt_required_absolute" then
 			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
@@ -657,8 +657,7 @@ function onClear(slot_data)
 	end
 
 	-- Dummy item state change so canSolve works properly with 0 items received
-	Tracker:FindObjectForCode("Brain").Active = true
-	Tracker:FindObjectForCode("Brain").Active = false
+	Tracker:FindObjectForCode("Dummy").Active = not Tracker:FindObjectForCode("Dummy").Active
 
 end
 
@@ -856,6 +855,9 @@ end
 
 function loc_checked(section)
 	local locID = section.FullID
+	if locID:sub(1, 5) == "Eggs/" then
+		Tracker:FindObjectForCode("Dummy").Active = not Tracker:FindObjectForCode("Dummy").Active
+	end
 	if locID:sub(1, 6) ~= "Paths/" then
 		return
 	end
