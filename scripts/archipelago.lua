@@ -412,6 +412,17 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
+    elseif(key:sub(1, 16) == "WitnessEasterEggStatus") then
+		for id, _ in pairs(val) do
+			local locationName = EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1]
+			if locationName then
+				local location = Tracker:FindObjectForCode(locationName)
+				if location then
+					location.AvailableChestCount = location.AvailableChestCount - 1
+				end
+			end
+		end
+
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
@@ -465,6 +476,9 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+
+	Archipelago:Get({"WitnessEasterEggStatus" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessEasterEggStatus" .. Archipelago.PlayerNumber})
 
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
@@ -593,6 +607,9 @@ function onClear(slot_data)
 		elseif k == "panel_hunt_postgame" then
 			obj.Active = true
 			obj.CurrentStage = value
+		elseif k == "easter_egg_hunt" then
+            obj.Active = true
+            obj.CurrentStage = value
 		elseif k == "panel_hunt_required_absolute" then
 			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then

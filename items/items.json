@@ -243,6 +243,35 @@
 		]
 	},
 	{
+		"name": "Easter Egg Hunt Difficulty",
+		"codes": "eggHuntDifficulty",
+		"type": "progressive",
+		"allow_disabled": false,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"codes": "easyEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "normalEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "hardEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "veryHardEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "expertEggs",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Death Link",
 		"codes": "deathLink",
 		"img": "images/DeathLink.png",

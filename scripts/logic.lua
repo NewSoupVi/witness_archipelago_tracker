@@ -158,6 +158,42 @@ function isNotPanelsOnlyOrHasPanel(panel)
 	return isNotPanelsOnly() or hasPanel(panel)
 end
 
+function eggs(number)
+    count = 0
+    for key, val in pairs(EASTER_EGG_DATASTORAGE_IDS) do
+        local locationName = val[1]
+        if locationName then
+            local location = Tracker:FindObjectForCode(locationName)
+            if location then
+                if (location.AccessibilityLevel > 4 or Tracker:ProviderCountForCode("showSnipes") > 0 and location.AccessibilityLevel > 3) then
+                    count = count + 1
+                end
+            end
+        end
+    end
+    if count == 120 then
+        return true
+    elseif (Tracker:ProviderCountForCode("easyEggs") > 1) then
+        return count * 3 / 8 >= tonumber(number)
+    elseif (Tracker:ProviderCountForCode("normalEggs") > 1) then
+        return count * 3 / 6 >= tonumber(number)
+    elseif (Tracker:ProviderCountForCode("hardEggs") > 1) then
+        return count * 4 / 6 >= tonumber(number)
+    elseif (Tracker:ProviderCountForCode("veryHardEggs") > 1) then
+        return count * 4 / 5 >= tonumber(number)
+    else -- expertEggs
+        return count >= tonumber(number)
+    end
+end
+
+function eggloc(number)
+    if (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 1) then
+        return number % 3 == 0
+    else
+        return number % 4 == 0
+    end
+end
+
 function dots(level)
 	return Tracker:FindObjectForCode("ProgressiveDots").CurrentStage >= tonumber(level)
 end

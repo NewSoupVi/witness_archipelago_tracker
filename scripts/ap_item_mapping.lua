@@ -300,4 +300,5 @@ SETTINGS_MAPPING = {
 	["disabled_entities"] = "disabledPanels",
 	["death_link"] = "deathLink",
 	["shuffle_dog"] = "shuffleDog",
+	["easter_egg_hunt"] = "eggHuntDifficulty",
 }
