@@ -167,11 +167,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [
-					"@Places/shadowsLaser",
-					"Shadows Laser Entry Right (Door), @Places/overworld",
-					"Shadows Laser Entry Left (Door), @Places/overworld"
-				]
+				"access_rules": [ "@Places/shadowsLaser" ]
 			}
 		],
 		"map_locations": [
@@ -300,8 +296,8 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"@Treehouse Right Side/Green Bridge",
-					"showSnipes, $canSolve|158369-158372, [@Treehouse Right Side/Green Bridge], @Places/treehouseMain"
+					"@Places/treehouseGreenBridgeRight",
+					"showSnipes, $canSolve|158369-158372, [@Places/treehouseGreenBridgeRight], @Places/treehouseMain"
 				]
 			}
 		],
@@ -369,9 +365,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [
-					"@Places/bunkerElevatorControl"
-				]
+				"access_rules": [ "@Places/bunkerGreenRoom" ]
 			}
 		],
 		"map_locations": [
@@ -468,8 +462,8 @@
 			{
 				"name": "Audio Log",
 				"access_rules": [
-					"unrandomized, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/monastery, $canSolve|158213"
+					"unrandomized, @Places/monasteryShutters",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/monasteryShutters"
 				]
 			}
 		],
@@ -614,9 +608,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [
-					"@Places/mountainLayer1"
-				]
+				"access_rules": [ "@Places/mountainLayer1" ]
 			}
 		],
 		"map_locations": [
@@ -632,9 +624,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [
-					"@Places/mountainLayer1Bridge"
-				]
+				"access_rules": [ "@Places/mountainLayer1Trash" ]
 			}
 		],
 		"map_locations": [
@@ -650,9 +640,7 @@
 		"sections": [
 			{
 				"name": "Audio Log",
-				"access_rules": [
-					"@Places/mountainLayer1Bridge"
-				]
+				"access_rules": [ "@Places/mountainLayer1Back" ]
 			}
 		],
 		"map_locations": [
@@ -776,7 +764,7 @@
 		]
 	},
 	{
-		"name": "Challenge Area",
+		"name": "Challenge Region",
 		"sections": [
 			{
 				"name": "Audio Log",

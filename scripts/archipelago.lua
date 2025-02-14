@@ -344,19 +344,13 @@ function setReply(key, val, old)
 		lasers[locationTable[1]]=1
 
 		local location = Tracker:FindObjectForCode(locationName)
-		if location then
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
+		location.AvailableChestCount = location.AvailableChestCount - 1
 		if locationTable[2] ~= nil then
 			if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
 				local location = Tracker:FindObjectForCode(locationTable[2])
-				if location then
-					location.AvailableChestCount = location.AvailableChestCount - 1
-				end
+				location.AvailableChestCount = location.AvailableChestCount - 1
 				local location = Tracker:FindObjectForCode(locationTable[3])
-				if location then
-					location.AvailableChestCount = location.AvailableChestCount - 1
-				end
+				location.AvailableChestCount = location.AvailableChestCount - 1
 			end
 		end
 
@@ -364,37 +358,23 @@ function setReply(key, val, old)
 		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
 
 	elseif(key:sub(1, 15) == "WitnessAudioLog" and val) then
-		local locationName = AUDIO_LOG_DATASTORAGE_IDS[locationID][1]
-		if locationName then
-			local location = Tracker:FindObjectForCode(locationName)
-			if location then
-				location.AvailableChestCount = location.AvailableChestCount - 1
-			end
-		end
+		local location = Tracker:FindObjectForCode(AUDIO_LOG_DATASTORAGE_IDS[locationID][1])
+        location.AvailableChestCount = location.AvailableChestCount - 1
 
 	elseif(key:sub(1, 9) == "WitnessEP" and val) then
-		local locationName = EP_DATASTORAGE_IDS[locationID][1]
-		if locationName then
-			local location = Tracker:FindObjectForCode(locationName)
-			if location then
-				location.AvailableChestCount = location.AvailableChestCount - 1
-			end
-		end
+		local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[locationID][1])
+        location.AvailableChestCount = location.AvailableChestCount - 1
 
 	elseif(key:sub(1, 18) == "WitnessOpenedDoors" and val) then
 		for k, _ in pairs(val) do
 			if k == "0x1475b" and not Tracker:FindObjectForCode("Discarded").Active then
 				local location = Tracker:FindObjectForCode("@Jungle Discard/Discard")
-				if location then
-					location.AvailableChestCount = location.AvailableChestCount - 1
-				end
+                location.AvailableChestCount = location.AvailableChestCount - 1
 
 			elseif k == "0x2779a" and not Tracker:FindObjectForCode("Discarded").Active then
 				for _, loc in pairs{"@Outside Glass Factory/Rooftop Discard", "@Theater/Discard", "@Tutorial Outpost/Discard"} do
 					local location = Tracker:FindObjectForCode(loc)
-					if location then
-						location.AvailableChestCount = location.AvailableChestCount - 1
-					end
+                    location.AvailableChestCount = location.AvailableChestCount - 1
 				end
 			end
 		end
@@ -412,25 +392,15 @@ function setReply(key, val, old)
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
-				local loc = LOCATION_MAPPING[tonumber(k)][1]
-				if loc then
-					local location = Tracker:FindObjectForCode(loc)
-					if location then
-						location.AvailableChestCount = location.AvailableChestCount - 1
-						if tonumber(k) > 159699 and tonumber(k) < 159756 then
-							for _, l in pairs(OBELISK_MAPPING[tonumber(k)]) do
-								local loc = EP_DATASTORAGE_IDS[tonumber(l)][1]
-								if loc then
-									local location = Tracker:FindObjectForCode(loc)
-									if location then
-										location.AvailableChestCount = location.AvailableChestCount - 1
-									end
-								end
-							end
-						end
-					end
-				end
-			end
+				local location = Tracker:FindObjectForCode(LOCATION_MAPPING[tonumber(k)][1])
+                location.AvailableChestCount = location.AvailableChestCount - 1
+                if tonumber(k) > 159699 and tonumber(k) < 159756 then
+                    for _, l in pairs(OBELISK_MAPPING[tonumber(k)]) do
+                        local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(l)][1])
+                        location.AvailableChestCount = location.AvailableChestCount - 1
+                    end
+                end
+            end
 		end
 	end
 	laserCounting()

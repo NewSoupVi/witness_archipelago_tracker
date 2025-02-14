@@ -609,7 +609,7 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[246069] = {"@Caves Blue Tunnel/Audio Log"},
 	[211145] = {"@Caves Mountain Shortcut/Audio Log"},
 	[211159] = {"@Caves Stairwell/Audio Log"},
-	[211137] = {"@Challenge Area/Audio Log"},
+	[211137] = {"@Challenge Region/Audio Log"},
 	[211146] = {"@Caves Upstairs/Audio Log"}
 }
 
