@@ -159,27 +159,26 @@ function isNotPanelsOnlyOrHasPanel(panel)
 end
 
 function eggs(number)
+	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+		return false
+	end
     count = 0
+    local showSnipes = (Tracker:ProviderCountForCode("showSnipes") > 0)
     for key, val in pairs(EASTER_EGG_DATASTORAGE_IDS) do
-        local locationName = val[1]
-        if locationName then
-            local location = Tracker:FindObjectForCode(locationName)
-            if location then
-                if (location.AccessibilityLevel > 4 or Tracker:ProviderCountForCode("showSnipes") > 0 and location.AccessibilityLevel > 3) then
-                    count = count + 1
-                end
-            end
+        local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
+        if (locationAccessibility > 4 or showSnipes and locationAccessibility > 3) then
+            count = count + 1
         end
     end
     if count == 120 then
         return true
-    elseif (Tracker:ProviderCountForCode("easyEggs") > 1) then
+    elseif (Tracker:ProviderCountForCode("easyEggs") > 0) then
         return count * 3 / 8 >= tonumber(number)
-    elseif (Tracker:ProviderCountForCode("normalEggs") > 1) then
+    elseif (Tracker:ProviderCountForCode("normalEggs") > 0) then
         return count * 3 / 6 >= tonumber(number)
-    elseif (Tracker:ProviderCountForCode("hardEggs") > 1) then
+    elseif (Tracker:ProviderCountForCode("hardEggs") > 0) then
         return count * 4 / 6 >= tonumber(number)
-    elseif (Tracker:ProviderCountForCode("veryHardEggs") > 1) then
+    elseif (Tracker:ProviderCountForCode("veryHardEggs") > 0) then
         return count * 4 / 5 >= tonumber(number)
     else -- expertEggs
         return count >= tonumber(number)
@@ -187,7 +186,9 @@ function eggs(number)
 end
 
 function eggloc(number)
-    if (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 1) then
+	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+		return false
+    elseif (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 0) then
         return number % 3 == 0
     else
         return number % 4 == 0

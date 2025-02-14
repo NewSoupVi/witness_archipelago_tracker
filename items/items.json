@@ -250,6 +250,10 @@
 		"initial_stage_idx": 0,
 		"stages": [
 			{
+				"codes": "eggsOff",
+				"inherit_codes": false
+			},
+			{
 				"codes": "easyEggs",
 				"inherit_codes": false
 			},
