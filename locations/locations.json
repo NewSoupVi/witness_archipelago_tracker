@@ -1682,7 +1682,11 @@
 			{
 				"name": "Laser",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158703, @Places/shadowsLaser" ]
+				"access_rules": [
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
+					"Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), @Places/overworld"
+				]
 			},
 			{
 				"name": "Laser Activation",
@@ -1692,7 +1696,7 @@
 			{
 				"name": "Laser Snipe",
 				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
-				"access_rules": [ "@Shadows Laser/Laser" ]
+				"access_rules": [ "@Places/shadowsLaser" ]
 			}
 		],
 		"map_locations": [
@@ -2303,9 +2307,9 @@
 				"name": "Outside Puzzles",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$canSolve|158210-158212, @Places/overworld, @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)",
-					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monastery], [$canSolve|158213], [$hasPanel|Monastery Shutters Control (Panel)]",
-					"showSnipes, $canSolve|158210-158212, [@Places/overworld], @Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel)"
+					"$canSolve|158210-158212, @Places/overworld, @Places/monasteryShutters",
+					"showSnipes, $canSolve|158210-158212, @Places/overworld, [@Places/monasteryShutters]",
+					"showSnipes, $canSolve|158210-158212, [@Places/overworld], @Places/monasteryShutters"
 				]
 			},
 			{
@@ -2354,7 +2358,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13479" ],
 				"access_rules": [
 					"$isDisabled|13479",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monasteryShutters, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2362,7 +2366,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13485" ],
 				"access_rules": [
 					"$isDisabled|13485",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monasteryShutters, $hasObeliskKey|Monastery"
 				]
 			},
 			{
@@ -2370,7 +2374,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13487" ],
 				"access_rules": [
 					"$isDisabled|13487",
-					"@Places/monastery, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), $hasObeliskKey|Monastery"
+					"@Places/monasteryShutters, $hasObeliskKey|Monastery"
 				]
 			}
 		],
@@ -3667,8 +3671,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|211" ],
 				"access_rules": [
 					"$isDisabled|211",
-					"$Warp|Bunker Green Room, $hasObeliskKey|Mountainside",
-					"@Places/bunkerElevatorControl, $hasObeliskKey|Mountainside"
+					"@Places/bunkerGreenRoom, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4342,7 +4345,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|139431" ],
 				"access_rules": [
 					"$isDisabled|139431",
-					"@Treehouse Right Side/Right Orange Bridge, @Treehouse Right Side/Green Bridge, $hasObeliskKey|Treehouse"
+					"@Treehouse Right Side/Right Orange Bridge, @Places/treehouseGreenHouse, $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -4433,9 +4436,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|1897" ],
 				"access_rules": [
 					"$isDisabled|1897",
-					"$Warp|Treehouse Burned House, $hasObeliskKey|Treehouse",
-					"@Treehouse Left Side/Left Orange Bridge, $hasObeliskKey|Treehouse",
-					"showSnipes, [@Treehouse Left Side/Left Orange Bridge], @Places/overworld, $hasObeliskKey|Treehouse"
+					"@Places/treehouseBurnedHouse, $hasObeliskKey|Treehouse",
+					"showSnipes, [@Places/treehouseBurnedHouse], @Places/overworld, $hasObeliskKey|Treehouse"
 				]
 			},
 			{
@@ -4954,8 +4956,7 @@
 			{
 				"name": "Back Row",
 				"access_rules": [
-					"$Warp|Mountain Floor 1 Back, $canSolve|158421-158423",
-					"$canSolve|158421-158423, @Places/mountainLayer1Bridge"
+					"$canSolve|158421-158423, @Places/mountainLayer1Back"
 				]
 			}
 		],

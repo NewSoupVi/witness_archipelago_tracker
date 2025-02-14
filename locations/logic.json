@@ -125,6 +125,12 @@
 				]
 			},
 			{
+				"name": "desertFloodDrained",
+				"access_rules": [
+					"$hasPanel|Desert Flood Controls (Panel), @Places/desertFlood"
+				]
+			},
+			{
 				"name": "desertLaser",
 				"access_rules": [
 					"$Warp|Desert Laser Room",
@@ -234,9 +240,8 @@
 					"$Warp|Shadows Laser",
 					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
-					"Shadows Laser Entry Right (Door), Shadows Laser Entry Left (Door), @Places/overworld",
-					"showSnipes, Shadows Laser Entry Right (Door), [Shadows Laser Entry Left (Door)], @Places/overworld",
-					"showSnipes, [Shadows Laser Entry Right (Door)], Shadows Laser Entry Left (Door), @Places/overworld"
+					"Shadows Laser Entry Left (Door), @Places/overworld",
+					"Shadows Laser Entry Right (Door), @Places/overworld"
 				]
 			},
 			{
@@ -382,6 +387,12 @@
 				]
 			},
 			{
+				"name": "treehouseBurnedHouse",
+				"access_rules": [
+					"@Treehouse Left Side/Left Orange Bridge, @Places/treehouseLeft2"
+				]
+			},
+			{
 				"name": "treehouseLaser",
 				"access_rules": [
 					"$Warp|Treehouse Laser",
@@ -390,6 +401,24 @@
 					"$isNotDoors, Expert, @Treehouse Right Side/Laser House Door Outside Timer, @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158385, @Places/treehouseLeft2",
 					"$isNotDoors, Expert, @Treehouse Right Side/Laser House Door Outside Timer, @Treehouse Right Side/Right Orange Bridge, $canSolve|158376-158385, @Places/treehouseMain",
 					"Treehouse Laser House Entry (Door), @Places/treehouseOutsideLaser"
+				]
+			},
+			{
+				"name": "treehouseEPHouse",
+				"access_rules": [
+					"@Treehouse Right Side/Green Bridge, @Places/treehouseMain"
+				]
+			},
+			{
+				"name": "treehouseGreenHouse",
+				"access_rules": [
+					"@Treehouse Right Side/Green Bridge, @Places/treehouseMain"
+				]
+			},
+			{
+				"name": "treehouseGreenBridgeRight",
+				"access_rules": [
+					"@Treehouse Right Side/Green Bridge, @Places/treehouseMain"
 				]
 			},
 			{
@@ -638,6 +667,24 @@
 				]
 			},
 			{
+				"name": "monasteryShutters",
+				"access_rules": [
+					"unrandomized, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), @Places/monastery",
+					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/monastery"
+				]
+			},
+			{
+				"name": "monasteryGarden",
+				"access_rules": [
+					"$isNotDoors, @Between Jungle and Monastery/Rhombic Avoid to Monastery Garden Panel, @Places/overworld",
+					"Jungle Monastery Garden Shortcut (Door), @Places/overworld",
+					"$isNotDoors, @Monastery/Outside Puzzles, @Places/overworld",
+					"Monastery Garden Entry (Door), @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Monastery Garden Entry (Door)], @Places/overworld"
+				]
+			},
+			{
 				"name": "junglePopup",
 				"access_rules": [
 					"$isNotDoors, $unrandomizedDisabled, @Jungle Discard/Discard, @Places/overworld",
@@ -696,8 +743,24 @@
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/overworld",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerBlueRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerLaser",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerLaser"
+				]
+			},
+			{
+				"name": "bunkerGreenRoom",
+				"access_rules": [
+					"@Places/bunkerElevatorControl"
+				]
+			},
+			{
+				"name": "bunkerBlueRoom",
+				"access_rules": [
+					"@Places/bunkerElevatorControl"
 				]
 			},
 			{
@@ -708,6 +771,16 @@
 				]
 			},
 			{
+				"name": "bunkerUnderElevator",
+				"access_rules": [
+					"@Places/bunkerElevatorControl",
+					"@Places/bunkerElevatorRoom, @Places/bunkerLaser",
+					"@Places/bunkerElevatorRoom, @Places/bunkerGreenRoom",
+					"@Places/bunkerElevatorRoom, @Places/bunkerBlueRoom",
+					"autoBunkerElevator, @Places/bunkerElevatorRoom, @Places/overworld"
+				]
+			},
+			{
 				"name": "mountainLayer1",
 				"access_rules": [
 					"@Mountaintop/Mountain Entry, @Places/overworld"
@@ -715,6 +788,18 @@
 			},
 			{
 				"name": "mountainLayer1Bridge",
+				"access_rules": [
+					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
+				]
+			},
+			{
+				"name": "mountainLayer1Trash",
+				"access_rules": [
+					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
+				]
+			},
+			{
+				"name": "mountainLayer1Back",
 				"access_rules": [
 					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
 				]
@@ -850,6 +935,48 @@
 					"Desert Elevator (Door), @Places/desertLaser",
 					"$isNotDoors, @Tunnels Exit to Desert/Desert Shortcut Panel, @Places/tunnels",
 					"Tunnels Desert Shortcut (Door), @Places/tunnels"
+				]
+			},
+			{
+				"name": "desertVault",
+				"access_rules": [
+					"Vaults, @Desert Vault/Vault Box, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, @Desert Vault/Vault Box, @Places/overworld"
+				]
+			},
+			{
+				"name": "tutorialVault",
+				"access_rules": [
+					"Vaults, @Outside Tutorial Vault/Vault Box, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, @Outside Tutorial Vault/Vault Box, @Places/overworld"
+				]
+			},
+			{
+				"name": "shipwreckVault",
+				"access_rules": [
+					"Vaults, @Shipwreck Vault/Vault Box, @Places/plates3",
+					"showSnipes, [Vaults], disabledPanelsEnabled, @Shipwreck Vault/Vault Box, @Places/plates3"
+				]
+			},
+			{
+				"name": "mountainsideVault",
+				"access_rules": [
+					"Vaults, @Mountainside Vault/Vault Box, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, @Mountainside Vault/Vault Box, @Places/overworld"
+				]
+			},
+			{
+				"name": "jungleVault",
+				"access_rules": [
+					"Vaults, Between Jungle and Monastery/Vault Box, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, Between Jungle and Monastery/Vault Box, @Places/overworld"
+				]
+			},
+			{
+				"name": "challengeVault",
+				"access_rules": [
+					"Vaults, @Challenge/Challenge Vault, @Places/challenge",
+					"showSnipes, [Vaults], disabledPanelsEnabled, @Challenge/Challenge Vault, @Places/challenge"
 				]
 			}
 		]

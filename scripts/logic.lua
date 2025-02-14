@@ -83,16 +83,12 @@ function showPartialSidesOrSolvableSide(side)
 		return true
 	end
 	local eval = true
+	local showSnipes = Tracker:ProviderCountForCode("showSnipes") > 0
 	for _, k in pairs(OBELISK_MAPPING[tonumber(side)]) do
-		local loc = EP_DATASTORAGE_IDS[tonumber(k)][1]
-		if loc then
-			local location = Tracker:FindObjectForCode(loc)
-			if location then
-				eval = (location.AccessibilityLevel > 4 or Tracker:ProviderCountForCode("showSnipes") > 0 and location.AccessibilityLevel > 3)
-			end
-			if not eval then
-				return eval
-			end
+		local locationAccessibility = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(k)][1]).AccessibilityLevel
+		eval = (locationAccessibility == AccessibilityLevel.Normal or showSnipes and locationAccessibility == AccessibilityLevel.SequenceBreak)
+		if not eval then
+			return eval
 		end
 	end
 	return eval	
