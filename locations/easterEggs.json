@@ -677,12 +677,20 @@
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974928" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [
+							"@Places/overworld",
+							"showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
+							"showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
+						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974929" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [
+							"@Places/overworld",
+							"showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
+							"showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
+						]
 					},
 					{
 						"name": "Egg 4",
@@ -703,7 +711,8 @@
 						"visibility_rules": [ "$isNotDisabled|974932" ],
 						"access_rules": [
 							"@Places/bunkerGreenRoom",
-							"showSnipes, [@Places/bunkerElevatorControl], @Places/overworld"
+							"showSnipes, [@Places/bunkerGreenRoom], @Places/overworld",
+							"showSnipes, [@Places/bunkerGreenRoom], @Places/bunkerBlueRoom"
 						]
 					}
 				],
