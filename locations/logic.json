@@ -742,10 +742,10 @@
 			{
 				"name": "bunkerElevatorControl",
 				"access_rules": [
-					"$Warp|Bunker Green Room, unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286",
-					"showSnipes, $Warp|Bunker Green Room, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286",
-					"$Warp|Bunker Cyan Room, unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286",
-					"showSnipes, $Warp|Bunker Cyan Room, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
+					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerBlueRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
