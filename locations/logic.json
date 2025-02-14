@@ -688,7 +688,7 @@
 					"@Places/bunkerElevatorRoom, @Places/bunkerLaser",
 					"@Places/bunkerElevatorRoom, @Places/bunkerGreenRoom",
 					"@Places/bunkerElevatorRoom, @Places/bunkerBlueRoom",
-					"autoElevators, @Places/bunkerElevatorRoom, @Places/overworld"
+					"autoBunkerElevator, @Places/bunkerElevatorRoom, @Places/overworld"
 				]
 			},
 			{
