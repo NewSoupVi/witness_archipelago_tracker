@@ -986,8 +986,8 @@
 				"name": "jungleVault",
 				"access_rules": [
 					"$Warp|Jungle Vault",
-					"Vaults, Between Jungle and Monastery/Vault Box, @Places/overworld",
-					"showSnipes, [Vaults], disabledPanelsEnabled, Between Jungle and Monastery/Vault Box, @Places/overworld"
+					"Vaults, @Between Jungle and Monastery/Vault Box, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, @Between Jungle and Monastery/Vault Box, @Places/overworld"
 				]
 			},
 			{
