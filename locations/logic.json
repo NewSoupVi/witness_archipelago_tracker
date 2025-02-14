@@ -389,6 +389,7 @@
 			{
 				"name": "treehouseBurnedHouse",
 				"access_rules": [
+					"$Warp|Treehouse Burned House",
 					"@Treehouse Left Side/Left Orange Bridge, @Places/treehouseLeft2"
 				]
 			},
@@ -406,12 +407,14 @@
 			{
 				"name": "treehouseEPHouse",
 				"access_rules": [
+					"$Warp|Treehouse EP House",
 					"@Treehouse Right Side/Green Bridge, @Places/treehouseMain"
 				]
 			},
 			{
 				"name": "treehouseGreenHouse",
 				"access_rules": [
+					"$Warp|Treehouse Green House",
 					"@Treehouse Right Side/Green Bridge, @Places/treehouseMain"
 				]
 			},
@@ -583,6 +586,7 @@
 			{
 				"name": "townTower1",
 				"access_rules": [
+					"$Warp|Town Tower 1",
 					"$isNotDoors, @Town Church/Lattice, @Places/overworld",
 					"Town Tower First (Door), @Places/overworld",
 					"$isNotDoors, @Town Red Rooftop/Rooftop Puzzles, @Places/townTower2",
@@ -592,6 +596,7 @@
 			{
 				"name": "townTower2",
 				"access_rules": [
+					"$Warp|Town Tower 2",
 					"$isNotDoors, @Town Red Rooftop/Rooftop Puzzles, @Places/townTower1",
 					"Town Tower Second (Door), @Places/townTower1",
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower3",
@@ -601,6 +606,7 @@
 			{
 				"name": "townTower3",
 				"access_rules": [
+					"$Warp|Town Tower 3",
 					"$isNotDoors, @Town Wooden Rooftop/Rooftop Puzzle, @Places/townTower2",
 					"Town Tower Third (Door), @Places/townTower2",
 					"$isNotDoors, $unrandomizedDisabled, @Outside Glass Factory/Rooftop Discard, @Places/townLaser",
@@ -677,6 +683,7 @@
 			{
 				"name": "monasteryGarden",
 				"access_rules": [
+					"$Warp|Monastery Garden",
 					"$isNotDoors, @Between Jungle and Monastery/Rhombic Avoid to Monastery Garden Panel, @Places/overworld",
 					"Jungle Monastery Garden Shortcut (Door), @Places/overworld",
 					"$isNotDoors, @Monastery/Outside Puzzles, @Places/overworld",
@@ -754,12 +761,14 @@
 			{
 				"name": "bunkerGreenRoom",
 				"access_rules": [
+					"$Warp|Bunker Green Room",
 					"@Places/bunkerElevatorControl"
 				]
 			},
 			{
 				"name": "bunkerBlueRoom",
 				"access_rules": [
+					"$Warp|Bunker Blue Room",
 					"@Places/bunkerElevatorControl"
 				]
 			},
@@ -783,6 +792,7 @@
 			{
 				"name": "mountainLayer1",
 				"access_rules": [
+					"$Warp|Mountain Floor 1",
 					"@Mountaintop/Mountain Entry, @Places/overworld"
 				]
 			},
@@ -795,12 +805,14 @@
 			{
 				"name": "mountainLayer1Trash",
 				"access_rules": [
+					"$Warp|Mountain Floor 1 Trash",
 					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
 				]
 			},
 			{
 				"name": "mountainLayer1Back",
 				"access_rules": [
+					"$Warp|Mountain Floor 1 Back",
 					"@Inside Mountain Layer 1 Bridge/Pink Light Bridge, @Places/mountainLayer1"
 				]
 			},
@@ -931,6 +943,7 @@
 			{
 				"name": "tunnelsDesertElevator",
 				"access_rules": [
+					"$Warp|Tunnels Desert Elevator",
 					"$isNotDoors, @Desert/Laser, @Places/desertLaser",
 					"Desert Elevator (Door), @Places/desertLaser",
 					"$isNotDoors, @Tunnels Exit to Desert/Desert Shortcut Panel, @Places/tunnels",
@@ -940,6 +953,7 @@
 			{
 				"name": "desertVault",
 				"access_rules": [
+					"$Warp|Desert Vault",
 					"Vaults, @Desert Vault/Vault Box, @Places/overworld",
 					"showSnipes, [Vaults], disabledPanelsEnabled, @Desert Vault/Vault Box, @Places/overworld"
 				]
@@ -947,6 +961,7 @@
 			{
 				"name": "tutorialVault",
 				"access_rules": [
+					"$Warp|Tutorial Vault",
 					"Vaults, @Outside Tutorial Vault/Vault Box, @Places/overworld",
 					"showSnipes, [Vaults], disabledPanelsEnabled, @Outside Tutorial Vault/Vault Box, @Places/overworld"
 				]
@@ -954,6 +969,7 @@
 			{
 				"name": "shipwreckVault",
 				"access_rules": [
+					"$Warp|Shipwreck Vault",
 					"Vaults, @Shipwreck Vault/Vault Box, @Places/plates3",
 					"showSnipes, [Vaults], disabledPanelsEnabled, @Shipwreck Vault/Vault Box, @Places/plates3"
 				]
@@ -961,6 +977,7 @@
 			{
 				"name": "mountainsideVault",
 				"access_rules": [
+					"$Warp|Mountainside Vault",
 					"Vaults, @Mountainside Vault/Vault Box, @Places/overworld",
 					"showSnipes, [Vaults], disabledPanelsEnabled, @Mountainside Vault/Vault Box, @Places/overworld"
 				]
@@ -968,6 +985,7 @@
 			{
 				"name": "jungleVault",
 				"access_rules": [
+					"$Warp|Jungle Vault",
 					"Vaults, Between Jungle and Monastery/Vault Box, @Places/overworld",
 					"showSnipes, [Vaults], disabledPanelsEnabled, Between Jungle and Monastery/Vault Box, @Places/overworld"
 				]
@@ -975,6 +993,7 @@
 			{
 				"name": "challengeVault",
 				"access_rules": [
+					"$Warp|Challenge Vault",
 					"Vaults, @Challenge/Challenge Vault, @Places/challenge",
 					"showSnipes, [Vaults], disabledPanelsEnabled, @Challenge/Challenge Vault, @Places/challenge"
 				]
