@@ -392,7 +392,7 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
-	elseif(key:sub(1, 16) == "WitnessEasterEggStatus") then
+	elseif(key:sub(1, 22) == "WitnessEasterEggStatus") then
 		for id, _ in pairs(val) do
 			local locationName = EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1]
 			if locationName then
