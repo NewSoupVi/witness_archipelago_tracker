@@ -392,7 +392,7 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
-	elseif(key:sub(1, 22) == "WitnessEasterEggStatus") then
+	elseif(key:sub(1, 22) == "WitnessEasterEggStatus" and val) then
 		for id, _ in pairs(val) do
 			local locationName = EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1]
 			if locationName then
@@ -592,10 +592,15 @@ function onClear(slot_data)
 				Tracker:FindObjectForCode("Caves Mountain Shortcut (Door)").Active = true
 			end
 		elseif k == "disabled_entities" then
+            local eggTotal = 120
 			disabledDict = {}
 			for num, id in pairs(value) do
 				disabledDict[id] = true
+				if id >= 974848 and id <= 974967 then
+                    eggTotal = eggTotal - 1
+                end
 			end
+            Tracker:FindObjectForCode("eggTotal").AcquiredCount = eggTotal
 		elseif k == "shuffle_dog" then
 			obj.CurrentStage = value
 		elseif k == "elevators_come_to_you" then

@@ -282,6 +282,11 @@
 		]
 	},
 	{
+		"name": "Easter Egg Total",
+		"type": "consumable",
+		"codes": "eggTotal"
+	},
+	{
 		"name": "Death Link",
 		"codes": "deathLink",
 		"img": "images/DeathLink.png",
