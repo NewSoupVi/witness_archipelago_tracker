@@ -395,13 +395,8 @@ function setReply(key, val, old)
 
 	elseif(key:sub(1, 22) == "WitnessEasterEggStatus" and val) then
 		for id, _ in pairs(val) do
-			local locationName = EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1]
-			if locationName then
-				local location = Tracker:FindObjectForCode(locationName)
-				if location then
-					location.AvailableChestCount = location.AvailableChestCount - 1
-				end
-			end
+			local location = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
