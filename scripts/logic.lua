@@ -206,7 +206,7 @@ function eggloc(number)
 	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
 		return false
 	elseif tonumber(number) > Tracker:FindObjectForCode("eggTotal").AcquiredCount then
-        return false
+		return false
 	elseif (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 0) then
 		return tonumber(number) % 3 == 0
 	else
