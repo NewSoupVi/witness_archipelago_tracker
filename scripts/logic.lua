@@ -187,7 +187,7 @@ function eggs(number)
 			countWithSnipes = countWithSnipes + 1
 		end
 	end
-	if count >= Tracker:FindObjectForCode("eggTotal").AcquiredCount then
+	if count >= EGG_TOTAL then
 		if count >= requiredCount then
 			return AccessibilityLevel.Normal
 		end
@@ -205,7 +205,7 @@ end
 function eggloc(number)
 	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
 		return false
-	elseif tonumber(number) > Tracker:FindObjectForCode("eggTotal").AcquiredCount then
+	elseif tonumber(number) > EGG_TOTAL then
 		return false
 	elseif (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 0) then
 		return tonumber(number) % 3 == 0

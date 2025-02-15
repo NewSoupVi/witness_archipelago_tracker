@@ -11,6 +11,7 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
+EGG_TOTAL = 120
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -592,15 +593,13 @@ function onClear(slot_data)
 				Tracker:FindObjectForCode("Caves Mountain Shortcut (Door)").Active = true
 			end
 		elseif k == "disabled_entities" then
-			local eggTotal = 120
 			disabledDict = {}
 			for num, id in pairs(value) do
 				disabledDict[id] = true
 				if id >= 974848 and id <= 974967 then
-					eggTotal = eggTotal - 1
+					EGG_TOTAL = EGG_TOTAL - 1
 				end
 			end
-			Tracker:FindObjectForCode("eggTotal").AcquiredCount = eggTotal
 		elseif k == "shuffle_dog" then
 			obj.CurrentStage = value
 		elseif k == "elevators_come_to_you" then
