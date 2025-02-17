@@ -827,7 +827,8 @@ end
 function loc_checked(section)
 	local locID = section.FullID
 	if locID:sub(1, 5) == "Eggs/" then
-		Tracker:FindObjectForCode("Dummy").Active = not Tracker:FindObjectForCode("Dummy").Active
+        local dummy_item = Tracker:FindObjectForCode("Dummy")
+	    dummy_item.Active = not dummy_item.Active
 	end
 	if locID:sub(1, 6) ~= "Paths/" then
 		return
