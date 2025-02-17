@@ -419,6 +419,7 @@ end
 function onClear(slot_data)
 	Tracker.BulkUpdate = true
 
+	EGG_TOTAL = 120
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
 	for LaserID, _ in pairs(LASER_DATASTORAGE_ID) do

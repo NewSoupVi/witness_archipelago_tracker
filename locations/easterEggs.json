@@ -8,7 +8,7 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974848" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974848, @Places/overworld" ]
 					}
 				],
 				"map_locations": [
@@ -25,55 +25,55 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974849" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974849, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974850" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974850, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974851" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974851, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974852" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974852, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974853" ],
 						"access_rules": [
-							"@Places/tutorialOutpostPath",
-							"showSnipes, [@Places/tutorialOutpostPath], @Places/tutorialOutpostInterior"
+							"$isNotDisabled|974853, @Places/tutorialOutpostPath",
+							"$isNotDisabled|974853, showSnipes, [@Places/tutorialOutpostPath], @Places/tutorialOutpostInterior"
 						]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974854" ],
 						"access_rules": [
-							"@Places/tutorialOutpostInterior",
-							"showSnipes, [@Places/tutorialOutpostInterior], @Places/tutorialOutpostPath"
+							"$isNotDisabled|974854, @Places/tutorialOutpostInterior",
+							"$isNotDisabled|974854, showSnipes, [@Places/tutorialOutpostInterior], @Places/tutorialOutpostPath"
 						]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974855" ],
 						"access_rules": [
-							"@Places/orchardInner",
-							"showSnipes, [@Places/orchardInner], @Places/overworld",
-							"showSnipes, [@Places/orchardInner], @Places/windmill",
-							"showSnipes, [@Places/orchardInner], @Places/orchardHeart"
+							"$isNotDisabled|974855, @Places/orchardInner",
+							"$isNotDisabled|974855, showSnipes, [@Places/orchardInner], @Places/overworld",
+							"$isNotDisabled|974855, showSnipes, [@Places/orchardInner], @Places/windmill",
+							"$isNotDisabled|974855, showSnipes, [@Places/orchardInner], @Places/orchardHeart"
 						]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974856" ],
 						"access_rules": [
-							"@Places/orchardHeart",
-							"showSnipes, [@Places/orchardHeart], @Places/orchardInner"
+							"$isNotDisabled|974856, @Places/orchardHeart",
+							"$isNotDisabled|974856, showSnipes, [@Places/orchardHeart], @Places/orchardInner"
 						]
 					}
 				],
@@ -91,14 +91,14 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974857" ],
-						"access_rules": [ "@Places/glassFactory" ]
+						"access_rules": [ "$isNotDisabled|974857, @Places/glassFactory" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974858" ],
 						"access_rules": [
-							"@Places/glassFactory",
-							"showSnipes, [@Places/glassFactory], @Places/overworld"
+							"$isNotDisabled|974858, @Places/glassFactory",
+							"$isNotDisabled|974858, showSnipes, [@Places/glassFactory], @Places/overworld"
 						]
 					}
 				],
@@ -116,17 +116,17 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974859" ],
-						"access_rules": [ "@Places/symmetryOuter" ]
+						"access_rules": [ "$isNotDisabled|974859, @Places/symmetryOuter" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974860" ],
-						"access_rules": [ "@Places/symmetryOuter" ]
+						"access_rules": [ "$isNotDisabled|974860, @Places/symmetryOuter" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974861" ],
-						"access_rules": [ "@Places/symmetryInner" ]
+						"access_rules": [ "$isNotDisabled|974861, @Places/symmetryInner" ]
 					}
 				],
 				"map_locations": [
@@ -143,66 +143,66 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974862" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974862, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974863" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974863, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974864" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974864, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974865" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974865, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974866" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974866, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974867" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974867, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974868" ],
 						"access_rules": [
-							"@Places/desertVault",
-							"showSnipes, [@Places/desertVault], @Places/overworld"
+							"$isNotDisabled|974868, @Places/desertVault",
+							"$isNotDisabled|974868, showSnipes, [@Places/desertVault], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974869" ],
-						"access_rules": [ "@Places/desertPond" ]
+						"access_rules": [ "$isNotDisabled|974869, @Places/desertPond" ]
 					},
 					{
 						"name": "Egg 9",
 						"visibility_rules": [ "$isNotDisabled|974870" ],
 						"access_rules": [
-							"@Places/desertPond",
-							"showSnipes, [@Places/desertPond], @Places/desertFlood"
+							"$isNotDisabled|974870, @Places/desertPond",
+							"$isNotDisabled|974870, showSnipes, [@Places/desertPond], @Places/desertFlood"
 						]
 					},
 					{
 						"name": "Egg 10",
 						"visibility_rules": [ "$isNotDisabled|974871" ],
 						"access_rules": [
-							"@Places/desertFloodDrained",
-							"showSnipes, [@Places/desertFloodDrained], @Places/desertFlood"
+							"$isNotDisabled|974871, @Places/desertFloodDrained",
+							"$isNotDisabled|974871, showSnipes, [@Places/desertFloodDrained], @Places/desertFlood"
 						]
 					},
 					{
 						"name": "Egg 11",
 						"visibility_rules": [ "$isNotDisabled|974872" ],
-						"access_rules": [ "@Places/desertLaser" ]
+						"access_rules": [ "$isNotDisabled|974872, @Places/desertLaser" ]
 					}
 				],
 				"map_locations": [
@@ -219,76 +219,76 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974873" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974873, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974874" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974874, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974875" ],
-						"access_rules": [ "@Places/quarry" ]
+						"access_rules": [ "$isNotDisabled|974875, @Places/quarry" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974876" ],
-						"access_rules": [ "@Places/quarry" ]
+						"access_rules": [ "$isNotDisabled|974876, @Places/quarry" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974877" ],
-						"access_rules": [ "@Places/quarry" ]
+						"access_rules": [ "$isNotDisabled|974877, @Places/quarry" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974878" ],
 						"access_rules": [
-							"@Places/quarry",
-							"showSnipes, [@Places/quarry], @Places/quarryStoneworks",
-							"showSnipes, [@Places/quarry], @Places/quarryStoneworksUpstairs"
+							"$isNotDisabled|974878, @Places/quarry",
+							"$isNotDisabled|974878, showSnipes, [@Places/quarry], @Places/quarryStoneworks",
+							"$isNotDisabled|974878, showSnipes, [@Places/quarry], @Places/quarryStoneworksUpstairs"
 						]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974879" ],
 						"access_rules": [
-							"@Places/quarry",
-							"showSnipes, [@Places/quarry], @Places/quarryStoneworks",
-							"showSnipes, [@Places/quarry], @Places/quarryStoneworksUpstairs"
+							"$isNotDisabled|974879, @Places/quarry",
+							"$isNotDisabled|974879, showSnipes, [@Places/quarry], @Places/quarryStoneworks",
+							"$isNotDisabled|974879, showSnipes, [@Places/quarry], @Places/quarryStoneworksUpstairs"
 						]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974880" ],
-						"access_rules": [ "@Places/quarry" ]
+						"access_rules": [ "$isNotDisabled|974880, @Places/quarry" ]
 					},
 					{
 						"name": "Egg 9",
 						"visibility_rules": [ "$isNotDisabled|974881" ],
 						"access_rules": [
-							"@Places/quarry",
-							"showSnipes, [@Places/quarry], @Places/overworld",
-							"showSnipes, [@Places/quarry], @Places/quarryBoathouseUpstairsFront"
+							"$isNotDisabled|974881, @Places/quarry",
+							"$isNotDisabled|974881, showSnipes, [@Places/quarry], @Places/overworld",
+							"$isNotDisabled|974881, showSnipes, [@Places/quarry], @Places/quarryBoathouseUpstairsFront"
 						]
 					},
 					{
 						"name": "Egg 10",
 						"visibility_rules": [ "$isNotDisabled|974882" ],
 						"access_rules": [
-							"@Places/quarryStoneworksUpstairs",
-							"showSnipes, [@Places/quarryStoneworksUpstairs], @Places/overworld",
-							"showSnipes, [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks"
+							"$isNotDisabled|974882, @Places/quarryStoneworksUpstairs",
+							"$isNotDisabled|974882, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/overworld",
+							"$isNotDisabled|974882, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks"
 						]
 					},
 					{
 						"name": "Egg 11",
 						"visibility_rules": [ "$isNotDisabled|974883" ],
 						"access_rules": [
-							"@Places/quarryStoneworksUpstairs",
-							"showSnipes, [@Places/quarryStoneworksUpstairs], @Places/overworld",
-							"showSnipes, [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks"
+							"$isNotDisabled|974883, @Places/quarryStoneworksUpstairs",
+							"$isNotDisabled|974883, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/overworld",
+							"$isNotDisabled|974883, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks"
 						]
 					}
 				],
@@ -307,26 +307,26 @@
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974884" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/shadowsLaser"
+							"$isNotDisabled|974884, @Places/overworld",
+							"$isNotDisabled|974884, showSnipes, [@Places/overworld], @Places/shadowsLaser"
 						]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974885" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974885, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974886" ],
-						"access_rules": [ "@Places/shadowsFirstSet" ]
+						"access_rules": [ "$isNotDisabled|974886, @Places/shadowsFirstSet" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974887" ],
 						"access_rules": [
-							"@Places/shadowsLaser",
-							"showSnipes, [@Places/shadowsLaser], @Places/overworld"
+							"$isNotDisabled|974887, @Places/shadowsLaser",
+							"$isNotDisabled|974887, showSnipes, [@Places/shadowsLaser], @Places/overworld"
 						]
 					}
 				],
@@ -344,68 +344,68 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974888" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974888, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974889" ],
 						"access_rules": [
-							"@Places/maze3",
-							"showSnipes, [@Places/maze3], @Places/overworld",
-							"showSnipes, [@Places/maze3], @Places/maze2"
+							"$isNotDisabled|974889, @Places/maze3",
+							"$isNotDisabled|974889, showSnipes, [@Places/maze3], @Places/overworld",
+							"$isNotDisabled|974889, showSnipes, [@Places/maze3], @Places/maze2"
 						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974890" ],
 						"access_rules": [
-							"@Places/maze3",
-							"showSnipes, [@Places/maze3], @Places/overworld"
+							"$isNotDisabled|974890, @Places/maze3",
+							"$isNotDisabled|974890, showSnipes, [@Places/maze3], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974891" ],
 						"access_rules": [
-							"@Places/maze3",
-							"showSnipes, [@Places/maze3], @Places/overworld"
+							"$isNotDisabled|974891, @Places/maze3",
+							"$isNotDisabled|974891, showSnipes, [@Places/maze3], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974892" ],
-						"access_rules": [ "@Places/plates2" ]
+						"access_rules": [ "$isNotDisabled|974892, @Places/plates2" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974893" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974893, @Places/plates3" ]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974894" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974894, @Places/plates3" ]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974895" ],
 						"access_rules": [
-							"@Places/plates4",
-							"showSnipes [@Places/plates4], @Places/overworld"
+							"$isNotDisabled|974895, @Places/plates4",
+							"$isNotDisabled|974895, showSnipes [@Places/plates4], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 9",
 						"visibility_rules": [ "$isNotDisabled|974896" ],
 						"access_rules": [
-							"@Places/keepTower",
-							"showSnipes, [@Places/keepTower], @Places/overworld"
+							"$isNotDisabled|974896, @Places/keepTower",
+							"$isNotDisabled|974896, showSnipes, [@Places/keepTower], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 10",
 						"visibility_rules": [ "$isNotDisabled|974897" ],
-						"access_rules": [ "@Places/keepTower" ]
+						"access_rules": [ "$isNotDisabled|974897, @Places/keepTower" ]
 					}
 				],
 				"map_locations": [
@@ -422,27 +422,27 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974898" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974898, @Places/plates3" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974899" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974899, @Places/plates3" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974900" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974900, @Places/plates3" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974901" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974901, @Places/plates3" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974902" ],
-						"access_rules": [ "@Places/plates3" ]
+						"access_rules": [ "$isNotDisabled|974902, @Places/plates3" ]
 					}
 				],
 				"map_locations": [
@@ -459,23 +459,23 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974903" ],
-						"access_rules": [ "@Places/monastery" ]
+						"access_rules": [ "$isNotDisabled|974903, @Places/monastery" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974904" ],
 						"access_rules": [
-							"@Places/monasteryShutters",
-							"showSnipes, [@Places/monasteryShutters], @Places/overworld",
-							"showSnipes, [@Places/monasteryShutters], @Places/monastery"
+							"$isNotDisabled|974904, @Places/monasteryShutters",
+							"$isNotDisabled|974904, showSnipes, [@Places/monasteryShutters], @Places/overworld",
+							"$isNotDisabled|974904, showSnipes, [@Places/monasteryShutters], @Places/monastery"
 						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974905" ],
 						"access_rules": [
-							"@Places/monasteryGarden",
-							"showSnipes, [@Places/monasteryGarden], @Places/overworld"
+							"$isNotDisabled|974905, @Places/monasteryGarden",
+							"$isNotDisabled|974905, showSnipes, [@Places/monasteryGarden], @Places/overworld"
 						]
 					}
 				],
@@ -493,67 +493,67 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974906" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974906, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974907" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/mazeRoof"
+							"$isNotDisabled|974907, @Places/overworld",
+							"$isNotDisabled|974907, showSnipes, [@Places/overworld], @Places/mazeRoof"
 						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974908" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974908, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974909" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/tunnels"
+							"$isNotDisabled|974909, @Places/overworld",
+							"$isNotDisabled|974909, showSnipes, [@Places/overworld], @Places/tunnels"
 						]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974910" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974910, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974911" ],
 						"access_rules": [
-							"@Places/RGBHouse",
-							"showSnipes, [@Places/RGBHouse], @Places/overworld",
-							"showSnipes, [@Places/RGBHouse], [@Places/RGBHouseUpstairs]"
+							"$isNotDisabled|974911, @Places/RGBHouse",
+							"$isNotDisabled|974911, showSnipes, [@Places/RGBHouse], @Places/overworld",
+							"$isNotDisabled|974911, showSnipes, [@Places/RGBHouse], [@Places/RGBHouseUpstairs]"
 						]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974912" ],
 						"access_rules": [
-							"@Places/RGBHouse",
-							"showSnipes, [@Places/RGBHouse], @Places/overworld"
+							"$isNotDisabled|974912, @Places/RGBHouse",
+							"$isNotDisabled|974912, showSnipes, [@Places/RGBHouse], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974913" ],
 						"access_rules": [
-							"@Places/woodenRoof",
-							"showSnipes [@Places/woodenRoof], @Places/overworld",
-							"showSnipes [@Places/woodenRoof], @Places/tunnels"
+							"$isNotDisabled|974913, @Places/woodenRoof",
+							"$isNotDisabled|974913, showSnipes [@Places/woodenRoof], @Places/overworld",
+							"$isNotDisabled|974913, showSnipes [@Places/woodenRoof], @Places/tunnels"
 						]
 					},
 					{
 						"name": "Egg 9",
 						"visibility_rules": [ "$isNotDisabled|974914" ],
 						"access_rules": [
-							"@Places/townLaser",
-							"showSnipes, [@Places/townLaser], @Places/townTower3",
-							"showSnipes, [@Places/townLaser], @Places/townTower2"
+							"$isNotDisabled|974914, @Places/townLaser",
+							"$isNotDisabled|974914, showSnipes, [@Places/townLaser], @Places/townTower3",
+							"$isNotDisabled|974914, showSnipes, [@Places/townLaser], @Places/townTower2"
 						]
 					}
 				],
@@ -572,22 +572,22 @@
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974915" ],
 						"access_rules": [
-							"@Places/windmill",
-							"showSnipes, [@Places/windmill], @Places/overworld",
-							"showSnipes, [@Places/windmill], @Places/orchardInner"
+							"$isNotDisabled|974915, @Places/windmill",
+							"$isNotDisabled|974915, showSnipes, [@Places/windmill], @Places/overworld",
+							"$isNotDisabled|974915, showSnipes, [@Places/windmill], @Places/orchardInner"
 						]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974916" ],
-						"access_rules": [ "@Places/windmill" ]
+						"access_rules": [ "$isNotDisabled|974916, @Places/windmill" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974917" ],
 						"access_rules": [
-							"@Places/theater",
-							"showSnipes, [@Places/theater], @Places/windmill"
+							"$isNotDisabled|974917, @Places/theater",
+							"$isNotDisabled|974917, showSnipes, [@Places/theater], @Places/windmill"
 						]
 					}
 				],
@@ -605,52 +605,52 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974918" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974918, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974919" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974919, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974920" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974920, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974921" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974921, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974922" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974922, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974923" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974923, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974924" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974924, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974925" ],
 						"access_rules": [
-							"@Places/junglePopup",
-							"showSnipes, [@Places/junglePopup], @Places/overworld"
+							"$isNotDisabled|974925, @Places/junglePopup",
+							"$isNotDisabled|974925, showSnipes, [@Places/junglePopup], @Places/overworld"
 						]
 					},
 					{
 						"name": "Egg 9",
 						"visibility_rules": [ "$isNotDisabled|974926" ],
 						"access_rules": [
-							"@Places/jungleVault",
-							"showSnipes, [@Places/jungleVault], @Places/overworld"
+							"$isNotDisabled|974926, @Places/jungleVault",
+							"$isNotDisabled|974926, showSnipes, [@Places/jungleVault], @Places/overworld"
 						]
 					}
 				],
@@ -669,50 +669,50 @@
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974927" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/bunkerAntechamber",
-							"showSnipes, [@Places/overworld], @Places/bunkerTintedRoom"
+							"$isNotDisabled|974927, @Places/overworld",
+							"$isNotDisabled|974927, showSnipes, [@Places/overworld], @Places/bunkerAntechamber",
+							"$isNotDisabled|974927, showSnipes, [@Places/overworld], @Places/bunkerTintedRoom"
 						]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974928" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
-							"showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
+							"$isNotDisabled|974928, @Places/overworld",
+							"$isNotDisabled|974928, showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
+							"$isNotDisabled|974928, showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
 						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974929" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
-							"showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
+							"$isNotDisabled|974929, @Places/overworld",
+							"$isNotDisabled|974929, showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
+							"$isNotDisabled|974929, showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
 						]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974930" ],
 						"access_rules": [
-							"@Places/bunkerTintedRoom",
-							"showSnipes, [@Places/bunkerTintedRoom], @Places/bunkerAntechamber",
-							"showSnipes, [@Places/bunkerTintedRoom], @Places/bunkerUV"
+							"$isNotDisabled|974930, @Places/bunkerTintedRoom",
+							"$isNotDisabled|974930, showSnipes, [@Places/bunkerTintedRoom], @Places/bunkerAntechamber",
+							"$isNotDisabled|974930, showSnipes, [@Places/bunkerTintedRoom], @Places/bunkerUV"
 						]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974931" ],
-						"access_rules": [ "@Places/bunkerUnderElevator" ]
+						"access_rules": [ "$isNotDisabled|974931, @Places/bunkerUnderElevator" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974932" ],
 						"access_rules": [
-							"@Places/bunkerGreenRoom",
-							"showSnipes, [@Places/bunkerGreenRoom], @Places/overworld",
-							"showSnipes, [@Places/bunkerGreenRoom], @Places/bunkerBlueRoom"
+							"$isNotDisabled|974932, @Places/bunkerGreenRoom",
+							"$isNotDisabled|974932, showSnipes, [@Places/bunkerGreenRoom], @Places/overworld",
+							"$isNotDisabled|974932, showSnipes, [@Places/bunkerGreenRoom], @Places/bunkerBlueRoom"
 						]
 					}
 				],
@@ -730,45 +730,45 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974933" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974933, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974934" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974934, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974935" ],
-						"access_rules": [ "@Places/swampEntry" ]
+						"access_rules": [ "$isNotDisabled|974935, @Places/swampEntry" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974936" ],
 						"access_rules": [
-							"@Places/swampPlatform",
-							"showSnipes, [@Places/swampPlatform], @Places/swampCyan"
+							"$isNotDisabled|974936, @Places/swampPlatform",
+							"$isNotDisabled|974936, showSnipes, [@Places/swampPlatform], @Places/swampCyan"
 						]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974937" ],
 						"access_rules": [
-							"@Places/swampCyan",
-							"showSnipes, [@Places/swampCyan], @Places/swampPlatform"
+							"$isNotDisabled|974937, @Places/swampCyan",
+							"$isNotDisabled|974937, showSnipes, [@Places/swampCyan], @Places/swampPlatform"
 						]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974938" ],
-						"access_rules": [ "@Places/swampBack" ]
+						"access_rules": [ "$isNotDisabled|974938, @Places/swampBack" ]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974939" ],
 						"access_rules": [
-							"@Places/swampLaser",
-							"showSnipes, [@Places/swampLaser], @Places/swampMaze"
+							"$isNotDisabled|974939, @Places/swampLaser",
+							"$isNotDisabled|974939, showSnipes, [@Places/swampLaser], @Places/swampMaze"
 						]
 					}
 				],
@@ -786,64 +786,64 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974940" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974940, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974941" ],
 						"access_rules": [
-							"@Places/treehouseThird",
-							"showSnipes, [@Places/treehouseThird], @Places/treehouseSecond"
+							"$isNotDisabled|974941, @Places/treehouseThird",
+							"$isNotDisabled|974941, showSnipes, [@Places/treehouseThird], @Places/treehouseSecond"
 						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974942" ],
-						"access_rules": [ "@Places/treehouseMain" ]
+						"access_rules": [ "$isNotDisabled|974942, @Places/treehouseMain" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974943" ],
-						"access_rules": [ "@Places/treehouseMain" ]
+						"access_rules": [ "$isNotDisabled|974943, @Places/treehouseMain" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974944" ],
-						"access_rules": [ "@Places/treehouseLeft1" ]
+						"access_rules": [ "$isNotDisabled|974944, @Places/treehouseLeft1" ]
 					},
 					{
 						"name": "Egg 6",
 						"visibility_rules": [ "$isNotDisabled|974945" ],
 						"access_rules": [
-							"@Places/treehouseGreenHouse",
-							"showSnipes, [@Places/treehouseGreenHouse], @Places/treehouseMain",
-							"showSnipes, [@Places/treehouseGreenHouse], @Places/treehouseEPHouse"
+							"$isNotDisabled|974945, @Places/treehouseGreenHouse",
+							"$isNotDisabled|974945, showSnipes, [@Places/treehouseGreenHouse], @Places/treehouseMain",
+							"$isNotDisabled|974945, showSnipes, [@Places/treehouseGreenHouse], @Places/treehouseEPHouse"
 						]
 					},
 					{
 						"name": "Egg 7",
 						"visibility_rules": [ "$isNotDisabled|974946" ],
 						"access_rules": [
-							"@Places/treehouseLaserDiscard",
-							"showSnipes, [@Places/treehouseLaserDiscard], @Places/treehouseLaser",
-							"showSnipes, [@Places/treehouseLaserDiscard], @Places/treehouseOutsideLaser",
-							"showSnipes, [@Places/treehouseLaserDiscard], $canSolve|158376-158382, @Places/treehouseLeft2"
+							"$isNotDisabled|974946, @Places/treehouseLaserDiscard",
+							"$isNotDisabled|974946, showSnipes, [@Places/treehouseLaserDiscard], @Places/treehouseLaser",
+							"$isNotDisabled|974946, showSnipes, [@Places/treehouseLaserDiscard], @Places/treehouseOutsideLaser",
+							"$isNotDisabled|974946, showSnipes, [@Places/treehouseLaserDiscard], $canSolve|158376-158382, @Places/treehouseLeft2"
 						]
 					},
 					{
 						"name": "Egg 8",
 						"visibility_rules": [ "$isNotDisabled|974947" ],
 						"access_rules": [
-							"@Places/treehouseBurnedHouse",
-							"showSnipes, [@Places/treehouseBurnedHouse], $canSolve|158376-158388, @Places/treehouseLeft2"
+							"$isNotDisabled|974947, @Places/treehouseBurnedHouse",
+							"$isNotDisabled|974947, showSnipes, [@Places/treehouseBurnedHouse], $canSolve|158376-158388, @Places/treehouseLeft2"
 						]
 					},
 					{
 						"name": "Egg 9",
 						"visibility_rules": [ "$isNotDisabled|974948" ],
 						"access_rules": [
-							"@Places/treehouseDrawbridge",
-							"showSnipes, [@Places/treehouseDrawbridge], $canSolve|158391-158395, @Places/treehouseMain"
+							"$isNotDisabled|974948, @Places/treehouseDrawbridge",
+							"$isNotDisabled|974948, showSnipes, [@Places/treehouseDrawbridge], $canSolve|158391-158395, @Places/treehouseMain"
 						]
 					}
 				],
@@ -861,30 +861,30 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974949" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974949, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974950" ],
 						"access_rules": [
-							"@Places/overworld",
-							"showSnipes, [@Places/overworld], @Places/mountainLayer1Bridge"
+							"$isNotDisabled|974950, @Places/overworld",
+							"$isNotDisabled|974950, showSnipes, [@Places/overworld], @Places/mountainLayer1Bridge"
 						]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974951" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974951, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974952" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974952, @Places/overworld" ]
 					},
 					{
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974953" ],
-						"access_rules": [ "@Places/overworld" ]
+						"access_rules": [ "$isNotDisabled|974953, @Places/overworld" ]
 					}
 				],
 				"map_locations": [
@@ -901,22 +901,22 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974954" ],
-						"access_rules": [ "@Places/mountainLayer1Bridge" ]
+						"access_rules": [ "$isNotDisabled|974954, @Places/mountainLayer1Bridge" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974955" ],
-						"access_rules": [ "@Places/mountainLayer1Bridge" ]
+						"access_rules": [ "$isNotDisabled|974955, @Places/mountainLayer1Bridge" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974956" ],
-						"access_rules": [ "@Places/mountainLayer2Near" ]
+						"access_rules": [ "$isNotDisabled|974956, @Places/mountainLayer2Near" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974957" ],
-						"access_rules": [ "@Places/mountainFinalRoom" ]
+						"access_rules": [ "$isNotDisabled|974957, @Places/mountainFinalRoom" ]
 					}
 				],
 				"map_locations": [
@@ -934,27 +934,27 @@
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974958" ],
 						"access_rules": [
-							"@Places/cavesAntechamber",
-							"@Places/caves",
-							"showSnipes, [@Places/cavesAntechamber], @Places/mountainMeta"
+							"$isNotDisabled|974958, @Places/cavesAntechamber",
+							"$isNotDisabled|974958, @Places/caves",
+							"$isNotDisabled|974958, showSnipes, [@Places/cavesAntechamber], @Places/mountainMeta"
 						]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974959" ],
-						"access_rules": [ "@Places/caves" ]
+						"access_rules": [ "$isNotDisabled|974959, @Places/caves" ]
 					},
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974960" ],
-						"access_rules": [ "@Places/caves" ]
+						"access_rules": [ "$isNotDisabled|974960, @Places/caves" ]
 					},
 					{
 						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974961" ],
 						"access_rules": [
-							"@Places/challengeAntechamber",
-							"showSnipes, [@Places/challengeAntechamber], @Places/challenge"
+							"$isNotDisabled|974961, @Places/challengeAntechamber",
+							"$isNotDisabled|974961, showSnipes, [@Places/challengeAntechamber], @Places/challenge"
 						]
 					}
 				],
@@ -972,12 +972,12 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974962" ],
-						"access_rules": [ "@Places/challenge" ]
+						"access_rules": [ "$isNotDisabled|974962, @Places/challenge" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974963" ],
-						"access_rules": [ "@Places/challenge" ]
+						"access_rules": [ "$isNotDisabled|974963, @Places/challenge" ]
 					}
 				],
 				"map_locations": [
@@ -994,15 +994,15 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974964" ],
-						"access_rules": [ "@Places/tunnels" ]
+						"access_rules": [ "$isNotDisabled|974964, @Places/tunnels" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974965" ],
 						"access_rules": [
-							"@Places/tunnels",
-							"showSnipes, [@Places/tunnels], @Places/theater",
-							"showSnipes, [@Places/tunnels], @Places/challenge"
+							"$isNotDisabled|974965, @Places/tunnels",
+							"$isNotDisabled|974965, showSnipes, [@Places/tunnels], @Places/theater",
+							"$isNotDisabled|974965, showSnipes, [@Places/tunnels], @Places/challenge"
 						]
 					}
 				],
@@ -1020,12 +1020,12 @@
 					{
 						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974966" ],
-						"access_rules": [ "@Places/ocean" ]
+						"access_rules": [ "$isNotDisabled|974966, @Places/ocean" ]
 					},
 					{
 						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974967" ],
-						"access_rules": [ "@Places/ocean" ]
+						"access_rules": [ "$isNotDisabled|974967, @Places/ocean" ]
 					}
 				],
 				"map_locations": [
