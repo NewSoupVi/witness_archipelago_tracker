@@ -12,6 +12,8 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
 EGG_TOTAL = 120
+EGG_STEP = 0
+RECEIVED_EGGS = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -398,6 +400,10 @@ function setReply(key, val, old)
 			local location = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
+		RECEIVED_EGGS = true
+
+		local dummy_item = Tracker:FindObjectForCode("Dummy")
+		dummy_item.Active = not dummy_item.Active
 
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
@@ -420,6 +426,7 @@ function onClear(slot_data)
 	Tracker.BulkUpdate = true
 
 	EGG_TOTAL = 120
+	RECEIVED_EGGS = false
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
 	for LaserID, _ in pairs(LASER_DATASTORAGE_ID) do
@@ -577,6 +584,11 @@ function onClear(slot_data)
 		elseif k == "easter_egg_hunt" then
 			obj.Active = true
 			obj.CurrentStage = value
+			if value >= 3 then -- hard/very_hard/expert eggs
+				EGG_STEP = 4
+			elseif value >= 1 then -- easy/normal eggs
+				EGG_STEP = 3
+			end
 		elseif k == "panel_hunt_required_absolute" then
 			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
@@ -826,9 +838,9 @@ end
 
 function loc_checked(section)
 	local locID = section.FullID
-	if locID:sub(1, 5) == "Eggs/" then
-        local dummy_item = Tracker:FindObjectForCode("Dummy")
-	    dummy_item.Active = not dummy_item.Active
+	if locID:sub(1, 5) == "Eggs/" and RECEIVED_EGGS then
+		local dummy_item = Tracker:FindObjectForCode("Dummy")
+		dummy_item.Active = not dummy_item.Active
 	end
 	if locID:sub(1, 6) ~= "Paths/" then
 		return
