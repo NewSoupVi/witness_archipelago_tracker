@@ -1,0 +1,1785 @@
+[
+	{
+		"name": "Eggs",
+		"children": [
+			{
+				"name": "Tutorial (Inside) Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974848" ],
+						"access_rules": [ "$isNotDisabled|974848, @Places/overworld" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 384,
+						"y": 1290
+					}
+				]
+			},
+			{
+				"name": "Tutorial (Outside) Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974849" ],
+						"access_rules": [ "$isNotDisabled|974849, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974850" ],
+						"access_rules": [ "$isNotDisabled|974850, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974851" ],
+						"access_rules": [ "$isNotDisabled|974851, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974852" ],
+						"access_rules": [ "$isNotDisabled|974852, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974853" ],
+						"access_rules": [
+							"$isNotDisabled|974853, @Places/tutorialOutpostPath",
+							"$isNotDisabled|974853, showSnipes, [@Places/tutorialOutpostPath], @Places/tutorialOutpostInterior"
+						]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974854" ],
+						"access_rules": [
+							"$isNotDisabled|974854, @Places/tutorialOutpostInterior",
+							"$isNotDisabled|974854, showSnipes, [@Places/tutorialOutpostInterior], @Places/tutorialOutpostPath"
+						]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974855" ],
+						"access_rules": [
+							"$isNotDisabled|974855, @Places/orchardInner",
+							"$isNotDisabled|974855, showSnipes, [@Places/orchardInner], @Places/overworld",
+							"$isNotDisabled|974855, showSnipes, [@Places/orchardInner], @Places/windmill",
+							"$isNotDisabled|974855, showSnipes, [@Places/orchardInner], @Places/orchardHeart"
+						]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974856" ],
+						"access_rules": [
+							"$isNotDisabled|974856, @Places/orchardHeart",
+							"$isNotDisabled|974856, showSnipes, [@Places/orchardHeart], @Places/orchardInner"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 410,
+						"y": 950
+					}
+				]
+			},
+			{
+				"name": "Glass Factory Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974857" ],
+						"access_rules": [ "$isNotDisabled|974857, @Places/glassFactory" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974858" ],
+						"access_rules": [
+							"$isNotDisabled|974858, @Places/glassFactory",
+							"$isNotDisabled|974858, showSnipes, [@Places/glassFactory], @Places/overworld"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 222,
+						"y": 927
+					}
+				]
+			},
+			{
+				"name": "Symmetry Island Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974859" ],
+						"access_rules": [ "$isNotDisabled|974859, @Places/symmetryOuter" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974860" ],
+						"access_rules": [ "$isNotDisabled|974860, @Places/symmetryOuter" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974861" ],
+						"access_rules": [ "$isNotDisabled|974861, @Places/symmetryInner" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 220,
+						"y": 700
+					}
+				]
+			},
+			{
+				"name": "Desert Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974862" ],
+						"access_rules": [ "$isNotDisabled|974862, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974863" ],
+						"access_rules": [ "$isNotDisabled|974863, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974864" ],
+						"access_rules": [ "$isNotDisabled|974864, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974865" ],
+						"access_rules": [ "$isNotDisabled|974865, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974866" ],
+						"access_rules": [ "$isNotDisabled|974866, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974867" ],
+						"access_rules": [ "$isNotDisabled|974867, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974868" ],
+						"access_rules": [
+							"$isNotDisabled|974868, @Places/desertVault",
+							"$isNotDisabled|974868, showSnipes, [@Places/desertVault], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974869" ],
+						"access_rules": [ "$isNotDisabled|974869, @Places/desertPond" ]
+					},
+					{
+						"name": "Egg 9",
+						"visibility_rules": [ "$isNotDisabled|974870" ],
+						"access_rules": [
+							"$isNotDisabled|974870, @Places/desertPond",
+							"$isNotDisabled|974870, showSnipes, [@Places/desertPond], @Places/desertFlood"
+						]
+					},
+					{
+						"name": "Egg 10",
+						"visibility_rules": [ "$isNotDisabled|974871" ],
+						"access_rules": [
+							"$isNotDisabled|974871, @Places/desertFloodDrained",
+							"$isNotDisabled|974871, showSnipes, [@Places/desertFloodDrained], @Places/desertFlood"
+						]
+					},
+					{
+						"name": "Egg 11",
+						"visibility_rules": [ "$isNotDisabled|974872" ],
+						"access_rules": [ "$isNotDisabled|974872, @Places/desertLaser" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 286,
+						"y": 299
+					}
+				]
+			},
+			{
+				"name": "Quarry Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974873" ],
+						"access_rules": [ "$isNotDisabled|974873, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974874" ],
+						"access_rules": [ "$isNotDisabled|974874, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974875" ],
+						"access_rules": [ "$isNotDisabled|974875, @Places/quarry" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974876" ],
+						"access_rules": [ "$isNotDisabled|974876, @Places/quarry" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974877" ],
+						"access_rules": [ "$isNotDisabled|974877, @Places/quarry" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974878" ],
+						"access_rules": [
+							"$isNotDisabled|974878, @Places/quarry",
+							"$isNotDisabled|974878, showSnipes, [@Places/quarry], @Places/quarryStoneworks",
+							"$isNotDisabled|974878, showSnipes, [@Places/quarry], @Places/quarryStoneworksUpstairs"
+						]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974879" ],
+						"access_rules": [
+							"$isNotDisabled|974879, @Places/quarry",
+							"$isNotDisabled|974879, showSnipes, [@Places/quarry], @Places/quarryStoneworks",
+							"$isNotDisabled|974879, showSnipes, [@Places/quarry], @Places/quarryStoneworksUpstairs"
+						]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974880" ],
+						"access_rules": [ "$isNotDisabled|974880, @Places/quarry" ]
+					},
+					{
+						"name": "Egg 9",
+						"visibility_rules": [ "$isNotDisabled|974881" ],
+						"access_rules": [
+							"$isNotDisabled|974881, @Places/quarry",
+							"$isNotDisabled|974881, showSnipes, [@Places/quarry], @Places/overworld",
+							"$isNotDisabled|974881, showSnipes, [@Places/quarry], @Places/quarryBoathouseUpstairsFront"
+						]
+					},
+					{
+						"name": "Egg 10",
+						"visibility_rules": [ "$isNotDisabled|974882" ],
+						"access_rules": [
+							"$isNotDisabled|974882, @Places/quarryStoneworksUpstairs",
+							"$isNotDisabled|974882, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/overworld",
+							"$isNotDisabled|974882, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks"
+						]
+					},
+					{
+						"name": "Egg 11",
+						"visibility_rules": [ "$isNotDisabled|974883" ],
+						"access_rules": [
+							"$isNotDisabled|974883, @Places/quarryStoneworksUpstairs",
+							"$isNotDisabled|974883, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/overworld",
+							"$isNotDisabled|974883, showSnipes, [@Places/quarryStoneworksUpstairs], @Places/quarryStoneworks"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 712,
+						"y": 325
+					}
+				]
+			},
+			{
+				"name": "Shadows Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974884" ],
+						"access_rules": [
+							"$isNotDisabled|974884, @Places/overworld",
+							"$isNotDisabled|974884, showSnipes, [@Places/overworld], @Places/shadowsLaser"
+						]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974885" ],
+						"access_rules": [ "$isNotDisabled|974885, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974886" ],
+						"access_rules": [ "$isNotDisabled|974886, @Places/shadowsFirstSet" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974887" ],
+						"access_rules": [
+							"$isNotDisabled|974887, @Places/shadowsLaser",
+							"$isNotDisabled|974887, showSnipes, [@Places/shadowsLaser], @Places/overworld"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 860,
+						"y": 375
+					}
+				]
+			},
+			{
+				"name": "Keep Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974888" ],
+						"access_rules": [ "$isNotDisabled|974888, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974889" ],
+						"access_rules": [
+							"$isNotDisabled|974889, @Places/maze3",
+							"$isNotDisabled|974889, showSnipes, [@Places/maze3], @Places/overworld",
+							"$isNotDisabled|974889, showSnipes, [@Places/maze3], @Places/maze2"
+						]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974890" ],
+						"access_rules": [
+							"$isNotDisabled|974890, @Places/maze3",
+							"$isNotDisabled|974890, showSnipes, [@Places/maze3], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974891" ],
+						"access_rules": [
+							"$isNotDisabled|974891, @Places/maze3",
+							"$isNotDisabled|974891, showSnipes, [@Places/maze3], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974892" ],
+						"access_rules": [ "$isNotDisabled|974892, @Places/plates2" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974893" ],
+						"access_rules": [ "$isNotDisabled|974893, @Places/plates3" ]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974894" ],
+						"access_rules": [ "$isNotDisabled|974894, @Places/plates3" ]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974895" ],
+						"access_rules": [
+							"$isNotDisabled|974895, @Places/plates4",
+							"$isNotDisabled|974895, showSnipes [@Places/plates4], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 9",
+						"visibility_rules": [ "$isNotDisabled|974896" ],
+						"access_rules": [
+							"$isNotDisabled|974896, @Places/keepTower",
+							"$isNotDisabled|974896, showSnipes, [@Places/keepTower], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 10",
+						"visibility_rules": [ "$isNotDisabled|974897" ],
+						"access_rules": [ "$isNotDisabled|974897, @Places/keepTower" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1015,
+						"y": 382
+					}
+				]
+			},
+			{
+				"name": "Shipwreck Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974898" ],
+						"access_rules": [ "$isNotDisabled|974898, @Places/plates3" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974899" ],
+						"access_rules": [ "$isNotDisabled|974899, @Places/plates3" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974900" ],
+						"access_rules": [ "$isNotDisabled|974900, @Places/plates3" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974901" ],
+						"access_rules": [ "$isNotDisabled|974901, @Places/plates3" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974902" ],
+						"access_rules": [ "$isNotDisabled|974902, @Places/plates3" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1262,
+						"y": 163
+					}
+				]
+			},
+			{
+				"name": "Monastery Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974903" ],
+						"access_rules": [ "$isNotDisabled|974903, @Places/monastery" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974904" ],
+						"access_rules": [
+							"$isNotDisabled|974904, @Places/monasteryShutters",
+							"$isNotDisabled|974904, showSnipes, [@Places/monasteryShutters], @Places/overworld",
+							"$isNotDisabled|974904, showSnipes, [@Places/monasteryShutters], @Places/monastery"
+						]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974905" ],
+						"access_rules": [
+							"$isNotDisabled|974905, @Places/monasteryGarden",
+							"$isNotDisabled|974905, showSnipes, [@Places/monasteryGarden], @Places/overworld"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 901,
+						"y": 931
+					}
+				]
+			},
+			{
+				"name": "Town Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974906" ],
+						"access_rules": [ "$isNotDisabled|974906, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974907" ],
+						"access_rules": [
+							"$isNotDisabled|974907, @Places/overworld",
+							"$isNotDisabled|974907, showSnipes, [@Places/overworld], @Places/mazeRoof"
+						]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974908" ],
+						"access_rules": [ "$isNotDisabled|974908, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974909" ],
+						"access_rules": [
+							"$isNotDisabled|974909, @Places/overworld",
+							"$isNotDisabled|974909, showSnipes, [@Places/overworld], @Places/tunnels"
+						]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974910" ],
+						"access_rules": [ "$isNotDisabled|974910, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974911" ],
+						"access_rules": [
+							"$isNotDisabled|974911, @Places/RGBHouse",
+							"$isNotDisabled|974911, showSnipes, [@Places/RGBHouse], @Places/overworld",
+							"$isNotDisabled|974911, showSnipes, [@Places/RGBHouse], [@Places/RGBHouseUpstairs]"
+						]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974912" ],
+						"access_rules": [
+							"$isNotDisabled|974912, @Places/RGBHouse",
+							"$isNotDisabled|974912, showSnipes, [@Places/RGBHouse], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974913" ],
+						"access_rules": [
+							"$isNotDisabled|974913, @Places/woodenRoof",
+							"$isNotDisabled|974913, showSnipes [@Places/woodenRoof], @Places/overworld",
+							"$isNotDisabled|974913, showSnipes [@Places/woodenRoof], @Places/tunnels"
+						]
+					},
+					{
+						"name": "Egg 9",
+						"visibility_rules": [ "$isNotDisabled|974914" ],
+						"access_rules": [
+							"$isNotDisabled|974914, @Places/townLaser",
+							"$isNotDisabled|974914, showSnipes, [@Places/townLaser], @Places/townTower3",
+							"$isNotDisabled|974914, showSnipes, [@Places/townLaser], @Places/townTower2"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 719,
+						"y": 859
+					}
+				]
+			},
+			{
+				"name": "Windmill & Theater Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974915" ],
+						"access_rules": [
+							"$isNotDisabled|974915, @Places/windmill",
+							"$isNotDisabled|974915, showSnipes, [@Places/windmill], @Places/overworld",
+							"$isNotDisabled|974915, showSnipes, [@Places/windmill], @Places/orchardInner"
+						]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974916" ],
+						"access_rules": [ "$isNotDisabled|974916, @Places/windmill" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974917" ],
+						"access_rules": [
+							"$isNotDisabled|974917, @Places/theater",
+							"$isNotDisabled|974917, showSnipes, [@Places/theater], @Places/windmill"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1843,
+						"y": 1354
+					}
+				]
+			},
+			{
+				"name": "Jungle Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974918" ],
+						"access_rules": [ "$isNotDisabled|974918, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974919" ],
+						"access_rules": [ "$isNotDisabled|974919, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974920" ],
+						"access_rules": [ "$isNotDisabled|974920, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974921" ],
+						"access_rules": [ "$isNotDisabled|974921, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974922" ],
+						"access_rules": [ "$isNotDisabled|974922, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974923" ],
+						"access_rules": [ "$isNotDisabled|974923, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974924" ],
+						"access_rules": [ "$isNotDisabled|974924, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974925" ],
+						"access_rules": [
+							"$isNotDisabled|974925, @Places/junglePopup",
+							"$isNotDisabled|974925, showSnipes, [@Places/junglePopup], @Places/overworld"
+						]
+					},
+					{
+						"name": "Egg 9",
+						"visibility_rules": [ "$isNotDisabled|974926" ],
+						"access_rules": [
+							"$isNotDisabled|974926, @Places/jungleVault",
+							"$isNotDisabled|974926, showSnipes, [@Places/jungleVault], @Places/overworld"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 971,
+						"y": 1116
+					}
+				]
+			},
+			{
+				"name": "Bunker Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974927" ],
+						"access_rules": [
+							"$isNotDisabled|974927, @Places/overworld",
+							"$isNotDisabled|974927, showSnipes, [@Places/overworld], @Places/bunkerAntechamber",
+							"$isNotDisabled|974927, showSnipes, [@Places/overworld], @Places/bunkerTintedRoom"
+						]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974928" ],
+						"access_rules": [
+							"$isNotDisabled|974928, @Places/overworld",
+							"$isNotDisabled|974928, showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
+							"$isNotDisabled|974928, showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
+						]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974929" ],
+						"access_rules": [
+							"$isNotDisabled|974929, @Places/overworld",
+							"$isNotDisabled|974929, showSnipes, [@Places/overworld], @Places/bunkerGreenRoom",
+							"$isNotDisabled|974929, showSnipes, [@Places/overworld], @Places/bunkerBlueRoom"
+						]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974930" ],
+						"access_rules": [
+							"$isNotDisabled|974930, @Places/bunkerTintedRoom",
+							"$isNotDisabled|974930, showSnipes, [@Places/bunkerTintedRoom], @Places/bunkerAntechamber",
+							"$isNotDisabled|974930, showSnipes, [@Places/bunkerTintedRoom], @Places/bunkerUV"
+						]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974931" ],
+						"access_rules": [ "$isNotDisabled|974931, @Places/bunkerUnderElevator" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974932" ],
+						"access_rules": [
+							"$isNotDisabled|974932, @Places/bunkerGreenRoom",
+							"$isNotDisabled|974932, showSnipes, [@Places/bunkerGreenRoom], @Places/overworld",
+							"$isNotDisabled|974932, showSnipes, [@Places/bunkerGreenRoom], @Places/bunkerBlueRoom"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1370,
+						"y": 1130
+					}
+				]
+			},
+			{
+				"name": "Swamp Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974933" ],
+						"access_rules": [ "$isNotDisabled|974933, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974934" ],
+						"access_rules": [ "$isNotDisabled|974934, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974935" ],
+						"access_rules": [ "$isNotDisabled|974935, @Places/swampEntry" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974936" ],
+						"access_rules": [
+							"$isNotDisabled|974936, @Places/swampPlatform",
+							"$isNotDisabled|974936, showSnipes, [@Places/swampPlatform], @Places/swampCyan"
+						]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974937" ],
+						"access_rules": [
+							"$isNotDisabled|974937, @Places/swampCyan",
+							"$isNotDisabled|974937, showSnipes, [@Places/swampCyan], @Places/swampPlatform"
+						]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974938" ],
+						"access_rules": [ "$isNotDisabled|974938, @Places/swampBack" ]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974939" ],
+						"access_rules": [
+							"$isNotDisabled|974939, @Places/swampLaser",
+							"$isNotDisabled|974939, showSnipes, [@Places/swampLaser], @Places/swampMaze"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1273,
+						"y": 713
+					}
+				]
+			},
+			{
+				"name": "Treehouse Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974940" ],
+						"access_rules": [ "$isNotDisabled|974940, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974941" ],
+						"access_rules": [
+							"$isNotDisabled|974941, @Places/treehouseThird",
+							"$isNotDisabled|974941, showSnipes, [@Places/treehouseThird], @Places/treehouseSecond"
+						]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974942" ],
+						"access_rules": [ "$isNotDisabled|974942, @Places/treehouseMain" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974943" ],
+						"access_rules": [ "$isNotDisabled|974943, @Places/treehouseMain" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974944" ],
+						"access_rules": [ "$isNotDisabled|974944, @Places/treehouseLeft1" ]
+					},
+					{
+						"name": "Egg 6",
+						"visibility_rules": [ "$isNotDisabled|974945" ],
+						"access_rules": [
+							"$isNotDisabled|974945, @Places/treehouseGreenHouse",
+							"$isNotDisabled|974945, showSnipes, [@Places/treehouseGreenHouse], @Places/treehouseMain",
+							"$isNotDisabled|974945, showSnipes, [@Places/treehouseGreenHouse], @Places/treehouseEPHouse"
+						]
+					},
+					{
+						"name": "Egg 7",
+						"visibility_rules": [ "$isNotDisabled|974946" ],
+						"access_rules": [
+							"$isNotDisabled|974946, @Places/treehouseLaserDiscard",
+							"$isNotDisabled|974946, showSnipes, [@Places/treehouseLaserDiscard], @Places/treehouseLaser",
+							"$isNotDisabled|974946, showSnipes, [@Places/treehouseLaserDiscard], @Places/treehouseOutsideLaser",
+							"$isNotDisabled|974946, showSnipes, [@Places/treehouseLaserDiscard], $canSolve|158376-158382, @Places/treehouseLeft2"
+						]
+					},
+					{
+						"name": "Egg 8",
+						"visibility_rules": [ "$isNotDisabled|974947" ],
+						"access_rules": [
+							"$isNotDisabled|974947, @Places/treehouseBurnedHouse",
+							"$isNotDisabled|974947, showSnipes, [@Places/treehouseBurnedHouse], $canSolve|158376-158388, @Places/treehouseLeft2"
+						]
+					},
+					{
+						"name": "Egg 9",
+						"visibility_rules": [ "$isNotDisabled|974948" ],
+						"access_rules": [
+							"$isNotDisabled|974948, @Places/treehouseDrawbridge",
+							"$isNotDisabled|974948, showSnipes, [@Places/treehouseDrawbridge], $canSolve|158391-158395, @Places/treehouseMain"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1295,
+						"y": 373
+					}
+				]
+			},
+			{
+				"name": "Mountain (Outside) Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974949" ],
+						"access_rules": [ "$isNotDisabled|974949, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974950" ],
+						"access_rules": [
+							"$isNotDisabled|974950, @Places/overworld",
+							"$isNotDisabled|974950, showSnipes, [@Places/overworld], @Places/mountainLayer1Bridge"
+						]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974951" ],
+						"access_rules": [ "$isNotDisabled|974951, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974952" ],
+						"access_rules": [ "$isNotDisabled|974952, @Places/overworld" ]
+					},
+					{
+						"name": "Egg 5",
+						"visibility_rules": [ "$isNotDisabled|974953" ],
+						"access_rules": [ "$isNotDisabled|974953, @Places/overworld" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1332,
+						"y": 982
+					}
+				]
+			},
+			{
+				"name": "Mountain (Inside) Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974954" ],
+						"access_rules": [ "$isNotDisabled|974954, @Places/mountainLayer1Bridge" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974955" ],
+						"access_rules": [ "$isNotDisabled|974955, @Places/mountainLayer1Bridge" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974956" ],
+						"access_rules": [ "$isNotDisabled|974956, @Places/mountainLayer2Near" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974957" ],
+						"access_rules": [ "$isNotDisabled|974957, @Places/mountainFinalRoom" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1899,
+						"y": 229
+					}
+				]
+			},
+			{
+				"name": "Caves Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974958" ],
+						"access_rules": [
+							"$isNotDisabled|974958, @Places/cavesAntechamber",
+							"$isNotDisabled|974958, @Places/caves",
+							"$isNotDisabled|974958, showSnipes, [@Places/cavesAntechamber], @Places/mountainMeta"
+						]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974959" ],
+						"access_rules": [ "$isNotDisabled|974959, @Places/caves" ]
+					},
+					{
+						"name": "Egg 3",
+						"visibility_rules": [ "$isNotDisabled|974960" ],
+						"access_rules": [ "$isNotDisabled|974960, @Places/caves" ]
+					},
+					{
+						"name": "Egg 4",
+						"visibility_rules": [ "$isNotDisabled|974961" ],
+						"access_rules": [
+							"$isNotDisabled|974961, @Places/challengeAntechamber",
+							"$isNotDisabled|974961, showSnipes, [@Places/challengeAntechamber], @Places/challenge"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1810,
+						"y": 753
+					}
+				]
+			},
+			{
+				"name": "Challenge Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974962" ],
+						"access_rules": [ "$isNotDisabled|974962, @Places/challenge" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974963" ],
+						"access_rules": [ "$isNotDisabled|974963, @Places/challenge" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1838,
+						"y": 1041
+					}
+				]
+			},
+			{
+				"name": "Tunnels Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974964" ],
+						"access_rules": [ "$isNotDisabled|974964, @Places/tunnels" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974965" ],
+						"access_rules": [
+							"$isNotDisabled|974965, @Places/tunnels",
+							"$isNotDisabled|974965, showSnipes, [@Places/tunnels], @Places/theater",
+							"$isNotDisabled|974965, showSnipes, [@Places/tunnels], @Places/challenge"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 1841,
+						"y": 1161
+					}
+				]
+			},
+			{
+				"name": "Boat Area",
+				"sections": [
+					{
+						"name": "Egg 1",
+						"visibility_rules": [ "$isNotDisabled|974966" ],
+						"access_rules": [ "$isNotDisabled|974966, @Places/ocean" ]
+					},
+					{
+						"name": "Egg 2",
+						"visibility_rules": [ "$isNotDisabled|974967" ],
+						"access_rules": [ "$isNotDisabled|974967, @Places/ocean" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 654,
+						"y": 1105
+					}
+				]
+			},
+			{
+				"name": "Eggs 1-10",
+				"sections": [
+					{
+						"name": "1 Egg Collected",
+						"visibility_rules": [ "$eggloc|1" ],
+						"access_rules": [ "^$eggs|1" ]
+					},
+					{
+						"name": "2 Eggs Collected",
+						"visibility_rules": [ "$eggloc|2" ],
+						"access_rules": [ "^$eggs|2" ]
+					},
+					{
+						"name": "3 Eggs Collected",
+						"visibility_rules": [ "$eggloc|3" ],
+						"access_rules": [ "^$eggs|3" ]
+					},
+					{
+						"name": "4 Eggs Collected",
+						"visibility_rules": [ "$eggloc|4" ],
+						"access_rules": [ "^$eggs|4" ]
+					},
+					{
+						"name": "5 Eggs Collected",
+						"visibility_rules": [ "$eggloc|5" ],
+						"access_rules": [ "^$eggs|5" ]
+					},
+					{
+						"name": "6 Eggs Collected",
+						"visibility_rules": [ "$eggloc|6" ],
+						"access_rules": [ "^$eggs|6" ]
+					},
+					{
+						"name": "7 Eggs Collected",
+						"visibility_rules": [ "$eggloc|7" ],
+						"access_rules": [ "^$eggs|7" ]
+					},
+					{
+						"name": "8 Eggs Collected",
+						"visibility_rules": [ "$eggloc|8" ],
+						"access_rules": [ "^$eggs|8" ]
+					},
+					{
+						"name": "9 Eggs Collected",
+						"visibility_rules": [ "$eggloc|9" ],
+						"access_rules": [ "^$eggs|9" ]
+					},
+					{
+						"name": "10 Eggs Collected",
+						"visibility_rules": [ "$eggloc|10" ],
+						"access_rules": [ "^$eggs|10" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 30,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 11-20",
+				"sections": [
+					{
+						"name": "11 Eggs Collected",
+						"visibility_rules": [ "$eggloc|11" ],
+						"access_rules": [ "^$eggs|11" ]
+					},
+					{
+						"name": "12 Eggs Collected",
+						"visibility_rules": [ "$eggloc|12" ],
+						"access_rules": [ "^$eggs|12" ]
+					},
+					{
+						"name": "13 Eggs Collected",
+						"visibility_rules": [ "$eggloc|13" ],
+						"access_rules": [ "^$eggs|13" ]
+					},
+					{
+						"name": "14 Eggs Collected",
+						"visibility_rules": [ "$eggloc|14" ],
+						"access_rules": [ "^$eggs|14" ]
+					},
+					{
+						"name": "15 Eggs Collected",
+						"visibility_rules": [ "$eggloc|15" ],
+						"access_rules": [ "^$eggs|15" ]
+					},
+					{
+						"name": "16 Eggs Collected",
+						"visibility_rules": [ "$eggloc|16" ],
+						"access_rules": [ "^$eggs|16" ]
+					},
+					{
+						"name": "17 Eggs Collected",
+						"visibility_rules": [ "$eggloc|17" ],
+						"access_rules": [ "^$eggs|17" ]
+					},
+					{
+						"name": "18 Eggs Collected",
+						"visibility_rules": [ "$eggloc|18" ],
+						"access_rules": [ "^$eggs|18" ]
+					},
+					{
+						"name": "19 Eggs Collected",
+						"visibility_rules": [ "$eggloc|19" ],
+						"access_rules": [ "^$eggs|19" ]
+					},
+					{
+						"name": "20 Eggs Collected",
+						"visibility_rules": [ "$eggloc|20" ],
+						"access_rules": [ "^$eggs|20" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 90,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 21-30",
+				"sections": [
+					{
+						"name": "21 Eggs Collected",
+						"visibility_rules": [ "$eggloc|21" ],
+						"access_rules": [ "^$eggs|21" ]
+					},
+					{
+						"name": "22 Eggs Collected",
+						"visibility_rules": [ "$eggloc|22" ],
+						"access_rules": [ "^$eggs|22" ]
+					},
+					{
+						"name": "23 Eggs Collected",
+						"visibility_rules": [ "$eggloc|23" ],
+						"access_rules": [ "^$eggs|23" ]
+					},
+					{
+						"name": "24 Eggs Collected",
+						"visibility_rules": [ "$eggloc|24" ],
+						"access_rules": [ "^$eggs|24" ]
+					},
+					{
+						"name": "25 Eggs Collected",
+						"visibility_rules": [ "$eggloc|25" ],
+						"access_rules": [ "^$eggs|25" ]
+					},
+					{
+						"name": "26 Eggs Collected",
+						"visibility_rules": [ "$eggloc|26" ],
+						"access_rules": [ "^$eggs|26" ]
+					},
+					{
+						"name": "27 Eggs Collected",
+						"visibility_rules": [ "$eggloc|27" ],
+						"access_rules": [ "^$eggs|27" ]
+					},
+					{
+						"name": "28 Eggs Collected",
+						"visibility_rules": [ "$eggloc|28" ],
+						"access_rules": [ "^$eggs|28" ]
+					},
+					{
+						"name": "29 Eggs Collected",
+						"visibility_rules": [ "$eggloc|29" ],
+						"access_rules": [ "^$eggs|29" ]
+					},
+					{
+						"name": "30 Eggs Collected",
+						"visibility_rules": [ "$eggloc|30" ],
+						"access_rules": [ "^$eggs|30" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 150,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 31-40",
+				"sections": [
+					{
+						"name": "31 Eggs Collected",
+						"visibility_rules": [ "$eggloc|31" ],
+						"access_rules": [ "^$eggs|31" ]
+					},
+					{
+						"name": "32 Eggs Collected",
+						"visibility_rules": [ "$eggloc|32" ],
+						"access_rules": [ "^$eggs|32" ]
+					},
+					{
+						"name": "33 Eggs Collected",
+						"visibility_rules": [ "$eggloc|33" ],
+						"access_rules": [ "^$eggs|33" ]
+					},
+					{
+						"name": "34 Eggs Collected",
+						"visibility_rules": [ "$eggloc|34" ],
+						"access_rules": [ "^$eggs|34" ]
+					},
+					{
+						"name": "35 Eggs Collected",
+						"visibility_rules": [ "$eggloc|35" ],
+						"access_rules": [ "^$eggs|35" ]
+					},
+					{
+						"name": "36 Eggs Collected",
+						"visibility_rules": [ "$eggloc|36" ],
+						"access_rules": [ "^$eggs|36" ]
+					},
+					{
+						"name": "37 Eggs Collected",
+						"visibility_rules": [ "$eggloc|37" ],
+						"access_rules": [ "^$eggs|37" ]
+					},
+					{
+						"name": "38 Eggs Collected",
+						"visibility_rules": [ "$eggloc|38" ],
+						"access_rules": [ "^$eggs|38" ]
+					},
+					{
+						"name": "39 Eggs Collected",
+						"visibility_rules": [ "$eggloc|39" ],
+						"access_rules": [ "^$eggs|39" ]
+					},
+					{
+						"name": "40 Eggs Collected",
+						"visibility_rules": [ "$eggloc|40" ],
+						"access_rules": [ "^$eggs|40" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 210,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 41-50",
+				"sections": [
+					{
+						"name": "41 Eggs Collected",
+						"visibility_rules": [ "$eggloc|41" ],
+						"access_rules": [ "^$eggs|41" ]
+					},
+					{
+						"name": "42 Eggs Collected",
+						"visibility_rules": [ "$eggloc|42" ],
+						"access_rules": [ "^$eggs|42" ]
+					},
+					{
+						"name": "43 Eggs Collected",
+						"visibility_rules": [ "$eggloc|43" ],
+						"access_rules": [ "^$eggs|43" ]
+					},
+					{
+						"name": "44 Eggs Collected",
+						"visibility_rules": [ "$eggloc|44" ],
+						"access_rules": [ "^$eggs|44" ]
+					},
+					{
+						"name": "45 Eggs Collected",
+						"visibility_rules": [ "$eggloc|45" ],
+						"access_rules": [ "^$eggs|45" ]
+					},
+					{
+						"name": "46 Eggs Collected",
+						"visibility_rules": [ "$eggloc|46" ],
+						"access_rules": [ "^$eggs|46" ]
+					},
+					{
+						"name": "47 Eggs Collected",
+						"visibility_rules": [ "$eggloc|47" ],
+						"access_rules": [ "^$eggs|47" ]
+					},
+					{
+						"name": "48 Eggs Collected",
+						"visibility_rules": [ "$eggloc|48" ],
+						"access_rules": [ "^$eggs|48" ]
+					},
+					{
+						"name": "49 Eggs Collected",
+						"visibility_rules": [ "$eggloc|49" ],
+						"access_rules": [ "^$eggs|49" ]
+					},
+					{
+						"name": "50 Eggs Collected",
+						"visibility_rules": [ "$eggloc|50" ],
+						"access_rules": [ "^$eggs|50" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 270,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 51-60",
+				"sections": [
+					{
+						"name": "51 Eggs Collected",
+						"visibility_rules": [ "$eggloc|51" ],
+						"access_rules": [ "^$eggs|51" ]
+					},
+					{
+						"name": "52 Eggs Collected",
+						"visibility_rules": [ "$eggloc|52" ],
+						"access_rules": [ "^$eggs|52" ]
+					},
+					{
+						"name": "53 Eggs Collected",
+						"visibility_rules": [ "$eggloc|53" ],
+						"access_rules": [ "^$eggs|53" ]
+					},
+					{
+						"name": "54 Eggs Collected",
+						"visibility_rules": [ "$eggloc|54" ],
+						"access_rules": [ "^$eggs|54" ]
+					},
+					{
+						"name": "55 Eggs Collected",
+						"visibility_rules": [ "$eggloc|55" ],
+						"access_rules": [ "^$eggs|55" ]
+					},
+					{
+						"name": "56 Eggs Collected",
+						"visibility_rules": [ "$eggloc|56" ],
+						"access_rules": [ "^$eggs|56" ]
+					},
+					{
+						"name": "57 Eggs Collected",
+						"visibility_rules": [ "$eggloc|57" ],
+						"access_rules": [ "^$eggs|57" ]
+					},
+					{
+						"name": "58 Eggs Collected",
+						"visibility_rules": [ "$eggloc|58" ],
+						"access_rules": [ "^$eggs|58" ]
+					},
+					{
+						"name": "59 Eggs Collected",
+						"visibility_rules": [ "$eggloc|59" ],
+						"access_rules": [ "^$eggs|59" ]
+					},
+					{
+						"name": "60 Eggs Collected",
+						"visibility_rules": [ "$eggloc|60" ],
+						"access_rules": [ "^$eggs|60" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 330,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 61-70",
+				"sections": [
+					{
+						"name": "61 Eggs Collected",
+						"visibility_rules": [ "$eggloc|61" ],
+						"access_rules": [ "^$eggs|61" ]
+					},
+					{
+						"name": "62 Eggs Collected",
+						"visibility_rules": [ "$eggloc|62" ],
+						"access_rules": [ "^$eggs|62" ]
+					},
+					{
+						"name": "63 Eggs Collected",
+						"visibility_rules": [ "$eggloc|63" ],
+						"access_rules": [ "^$eggs|63" ]
+					},
+					{
+						"name": "64 Eggs Collected",
+						"visibility_rules": [ "$eggloc|64" ],
+						"access_rules": [ "^$eggs|64" ]
+					},
+					{
+						"name": "65 Eggs Collected",
+						"visibility_rules": [ "$eggloc|65" ],
+						"access_rules": [ "^$eggs|65" ]
+					},
+					{
+						"name": "66 Eggs Collected",
+						"visibility_rules": [ "$eggloc|66" ],
+						"access_rules": [ "^$eggs|66" ]
+					},
+					{
+						"name": "67 Eggs Collected",
+						"visibility_rules": [ "$eggloc|67" ],
+						"access_rules": [ "^$eggs|67" ]
+					},
+					{
+						"name": "68 Eggs Collected",
+						"visibility_rules": [ "$eggloc|68" ],
+						"access_rules": [ "^$eggs|68" ]
+					},
+					{
+						"name": "69 Eggs Collected",
+						"visibility_rules": [ "$eggloc|69" ],
+						"access_rules": [ "^$eggs|69" ]
+					},
+					{
+						"name": "70 Eggs Collected",
+						"visibility_rules": [ "$eggloc|70" ],
+						"access_rules": [ "^$eggs|70" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 390,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 71-80",
+				"sections": [
+					{
+						"name": "71 Eggs Collected",
+						"visibility_rules": [ "$eggloc|71" ],
+						"access_rules": [ "^$eggs|71" ]
+					},
+					{
+						"name": "72 Eggs Collected",
+						"visibility_rules": [ "$eggloc|72" ],
+						"access_rules": [ "^$eggs|72" ]
+					},
+					{
+						"name": "73 Eggs Collected",
+						"visibility_rules": [ "$eggloc|73" ],
+						"access_rules": [ "^$eggs|73" ]
+					},
+					{
+						"name": "74 Eggs Collected",
+						"visibility_rules": [ "$eggloc|74" ],
+						"access_rules": [ "^$eggs|74" ]
+					},
+					{
+						"name": "75 Eggs Collected",
+						"visibility_rules": [ "$eggloc|75" ],
+						"access_rules": [ "^$eggs|75" ]
+					},
+					{
+						"name": "76 Eggs Collected",
+						"visibility_rules": [ "$eggloc|76" ],
+						"access_rules": [ "^$eggs|76" ]
+					},
+					{
+						"name": "77 Eggs Collected",
+						"visibility_rules": [ "$eggloc|77" ],
+						"access_rules": [ "^$eggs|77" ]
+					},
+					{
+						"name": "78 Eggs Collected",
+						"visibility_rules": [ "$eggloc|78" ],
+						"access_rules": [ "^$eggs|78" ]
+					},
+					{
+						"name": "79 Eggs Collected",
+						"visibility_rules": [ "$eggloc|79" ],
+						"access_rules": [ "^$eggs|79" ]
+					},
+					{
+						"name": "80 Eggs Collected",
+						"visibility_rules": [ "$eggloc|80" ],
+						"access_rules": [ "^$eggs|80" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 450,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 81-90",
+				"sections": [
+					{
+						"name": "81 Eggs Collected",
+						"visibility_rules": [ "$eggloc|81" ],
+						"access_rules": [ "^$eggs|81" ]
+					},
+					{
+						"name": "82 Eggs Collected",
+						"visibility_rules": [ "$eggloc|82" ],
+						"access_rules": [ "^$eggs|82" ]
+					},
+					{
+						"name": "83 Eggs Collected",
+						"visibility_rules": [ "$eggloc|83" ],
+						"access_rules": [ "^$eggs|83" ]
+					},
+					{
+						"name": "84 Eggs Collected",
+						"visibility_rules": [ "$eggloc|84" ],
+						"access_rules": [ "^$eggs|84" ]
+					},
+					{
+						"name": "85 Eggs Collected",
+						"visibility_rules": [ "$eggloc|85" ],
+						"access_rules": [ "^$eggs|85" ]
+					},
+					{
+						"name": "86 Eggs Collected",
+						"visibility_rules": [ "$eggloc|86" ],
+						"access_rules": [ "^$eggs|86" ]
+					},
+					{
+						"name": "87 Eggs Collected",
+						"visibility_rules": [ "$eggloc|87" ],
+						"access_rules": [ "^$eggs|87" ]
+					},
+					{
+						"name": "88 Eggs Collected",
+						"visibility_rules": [ "$eggloc|88" ],
+						"access_rules": [ "^$eggs|88" ]
+					},
+					{
+						"name": "89 Eggs Collected",
+						"visibility_rules": [ "$eggloc|89" ],
+						"access_rules": [ "^$eggs|89" ]
+					},
+					{
+						"name": "90 Eggs Collected",
+						"visibility_rules": [ "$eggloc|90" ],
+						"access_rules": [ "^$eggs|90" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 510,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 91-100",
+				"sections": [
+					{
+						"name": "91 Eggs Collected",
+						"visibility_rules": [ "$eggloc|91" ],
+						"access_rules": [ "^$eggs|91" ]
+					},
+					{
+						"name": "92 Eggs Collected",
+						"visibility_rules": [ "$eggloc|92" ],
+						"access_rules": [ "^$eggs|92" ]
+					},
+					{
+						"name": "93 Eggs Collected",
+						"visibility_rules": [ "$eggloc|93" ],
+						"access_rules": [ "^$eggs|93" ]
+					},
+					{
+						"name": "94 Eggs Collected",
+						"visibility_rules": [ "$eggloc|94" ],
+						"access_rules": [ "^$eggs|94" ]
+					},
+					{
+						"name": "95 Eggs Collected",
+						"visibility_rules": [ "$eggloc|95" ],
+						"access_rules": [ "^$eggs|95" ]
+					},
+					{
+						"name": "96 Eggs Collected",
+						"visibility_rules": [ "$eggloc|96" ],
+						"access_rules": [ "^$eggs|96" ]
+					},
+					{
+						"name": "97 Eggs Collected",
+						"visibility_rules": [ "$eggloc|97" ],
+						"access_rules": [ "^$eggs|97" ]
+					},
+					{
+						"name": "98 Eggs Collected",
+						"visibility_rules": [ "$eggloc|98" ],
+						"access_rules": [ "^$eggs|98" ]
+					},
+					{
+						"name": "99 Eggs Collected",
+						"visibility_rules": [ "$eggloc|99" ],
+						"access_rules": [ "^$eggs|99" ]
+					},
+					{
+						"name": "100 Eggs Collected",
+						"visibility_rules": [ "$eggloc|100" ],
+						"access_rules": [ "^$eggs|100" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 570,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 101-110",
+				"sections": [
+					{
+						"name": "101 Eggs Collected",
+						"visibility_rules": [ "$eggloc|101" ],
+						"access_rules": [ "^$eggs|101" ]
+					},
+					{
+						"name": "102 Eggs Collected",
+						"visibility_rules": [ "$eggloc|102" ],
+						"access_rules": [ "^$eggs|102" ]
+					},
+					{
+						"name": "103 Eggs Collected",
+						"visibility_rules": [ "$eggloc|103" ],
+						"access_rules": [ "^$eggs|103" ]
+					},
+					{
+						"name": "104 Eggs Collected",
+						"visibility_rules": [ "$eggloc|104" ],
+						"access_rules": [ "^$eggs|104" ]
+					},
+					{
+						"name": "105 Eggs Collected",
+						"visibility_rules": [ "$eggloc|105" ],
+						"access_rules": [ "^$eggs|105" ]
+					},
+					{
+						"name": "106 Eggs Collected",
+						"visibility_rules": [ "$eggloc|106" ],
+						"access_rules": [ "^$eggs|106" ]
+					},
+					{
+						"name": "107 Eggs Collected",
+						"visibility_rules": [ "$eggloc|107" ],
+						"access_rules": [ "^$eggs|107" ]
+					},
+					{
+						"name": "108 Eggs Collected",
+						"visibility_rules": [ "$eggloc|108" ],
+						"access_rules": [ "^$eggs|108" ]
+					},
+					{
+						"name": "109 Eggs Collected",
+						"visibility_rules": [ "$eggloc|109" ],
+						"access_rules": [ "^$eggs|109" ]
+					},
+					{
+						"name": "110 Eggs Collected",
+						"visibility_rules": [ "$eggloc|110" ],
+						"access_rules": [ "^$eggs|110" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 630,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Eggs 111-120",
+				"sections": [
+					{
+						"name": "111 Eggs Collected",
+						"visibility_rules": [ "$eggloc|111" ],
+						"access_rules": [ "^$eggs|111" ]
+					},
+					{
+						"name": "112 Eggs Collected",
+						"visibility_rules": [ "$eggloc|112" ],
+						"access_rules": [ "^$eggs|112" ]
+					},
+					{
+						"name": "113 Eggs Collected",
+						"visibility_rules": [ "$eggloc|113" ],
+						"access_rules": [ "^$eggs|113" ]
+					},
+					{
+						"name": "114 Eggs Collected",
+						"visibility_rules": [ "$eggloc|114" ],
+						"access_rules": [ "^$eggs|114" ]
+					},
+					{
+						"name": "115 Eggs Collected",
+						"visibility_rules": [ "$eggloc|115" ],
+						"access_rules": [ "^$eggs|115" ]
+					},
+					{
+						"name": "116 Eggs Collected",
+						"visibility_rules": [ "$eggloc|116" ],
+						"access_rules": [ "^$eggs|116" ]
+					},
+					{
+						"name": "117 Eggs Collected",
+						"visibility_rules": [ "$eggloc|117" ],
+						"access_rules": [ "^$eggs|117" ]
+					},
+					{
+						"name": "118 Eggs Collected",
+						"visibility_rules": [ "$eggloc|118" ],
+						"access_rules": [ "^$eggs|118" ]
+					},
+					{
+						"name": "119 Eggs Collected",
+						"visibility_rules": [ "$eggloc|119" ],
+						"access_rules": [ "^$eggs|119" ]
+					},
+					{
+						"name": "120 Eggs Collected",
+						"visibility_rules": [ "$eggloc|120" ],
+						"access_rules": [ "^$eggs|120" ]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "easterEggs",
+						"x": 690,
+						"y": 0
+					}
+				]
+			}
+		]
+	}
+]

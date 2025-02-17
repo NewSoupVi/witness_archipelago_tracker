@@ -11,6 +11,7 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
+EGG_TOTAL = 120
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -392,6 +393,12 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
+	elseif(key:sub(1, 22) == "WitnessEasterEggStatus" and val) then
+		for id, _ in pairs(val) do
+			local location = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
+
 	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
@@ -412,6 +419,7 @@ end
 function onClear(slot_data)
 	Tracker.BulkUpdate = true
 
+	EGG_TOTAL = 120
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
 	for LaserID, _ in pairs(LASER_DATASTORAGE_ID) do
@@ -435,6 +443,9 @@ function onClear(slot_data)
 
 	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+
+	Archipelago:Get({"WitnessEasterEggStatus" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessEasterEggStatus" .. Archipelago.PlayerNumber})
 
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
@@ -563,6 +574,9 @@ function onClear(slot_data)
 		elseif k == "panel_hunt_postgame" then
 			obj.Active = true
 			obj.CurrentStage = value
+		elseif k == "easter_egg_hunt" then
+			obj.Active = true
+			obj.CurrentStage = value
 		elseif k == "panel_hunt_required_absolute" then
 			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
@@ -578,6 +592,9 @@ function onClear(slot_data)
 			disabledDict = {}
 			for num, id in pairs(value) do
 				disabledDict[id] = true
+				if id >= 974848 and id <= 974967 then
+					EGG_TOTAL = EGG_TOTAL - 1
+				end
 			end
 		elseif k == "shuffle_dog" then
 			obj.CurrentStage = value
@@ -610,8 +627,8 @@ function onClear(slot_data)
 	end
 
 	-- Dummy item state change so canSolve works properly with 0 items received
-	Tracker:FindObjectForCode("Brain").Active = true
-	Tracker:FindObjectForCode("Brain").Active = false
+	local dummy_item = Tracker:FindObjectForCode("Dummy")
+	dummy_item.Active = not dummy_item.Active
 
 end
 
@@ -809,6 +826,9 @@ end
 
 function loc_checked(section)
 	local locID = section.FullID
+	if locID:sub(1, 5) == "Eggs/" then
+		Tracker:FindObjectForCode("Dummy").Active = not Tracker:FindObjectForCode("Dummy").Active
+	end
 	if locID:sub(1, 6) ~= "Paths/" then
 		return
 	end

@@ -170,6 +170,12 @@
 		"codes": "Brain"
 	},
 	{
+		"name": "Dummy Item",
+		"type": "toggle",
+		"loop": "true",
+		"codes": "Dummy"
+	},
+	{
 		"name": "Puzzle Randomization",
 		"codes": "puzzleRandomization",
 		"type": "progressive",
@@ -238,6 +244,39 @@
 			{
 				"codes": "dogOn",
 				"img": "images/DogOn.png",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Easter Egg Hunt Difficulty",
+		"codes": "eggHuntDifficulty",
+		"type": "progressive",
+		"allow_disabled": false,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"codes": "eggsOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "easyEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "normalEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "hardEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "veryHardEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "expertEggs",
 				"inherit_codes": false
 			}
 		]

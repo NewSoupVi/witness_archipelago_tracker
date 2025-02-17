@@ -154,6 +154,66 @@ function isNotPanelsOnlyOrHasPanel(panel)
 	return isNotPanelsOnly() or hasPanel(panel)
 end
 
+function eggs(number)
+	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+		return false
+	end
+	local count = 0
+	local countWithSnipes = 0
+	local requiredCount = 0
+	local showSnipes = (Tracker:ProviderCountForCode("showSnipes") > 0)
+
+	if (Tracker:ProviderCountForCode("easyEggs") > 0) then
+		requiredCount = tonumber(number) * 8 / 3
+	elseif (Tracker:ProviderCountForCode("normalEggs") > 0) then
+		requiredCount = tonumber(number) * 6 / 3
+	elseif (Tracker:ProviderCountForCode("hardEggs") > 0) then
+		requiredCount = tonumber(number) * 6 / 4
+	elseif (Tracker:ProviderCountForCode("veryHardEggs") > 0) then
+		requiredCount = tonumber(number) * 5 / 4
+	else -- expertEggs
+		requiredCount = tonumber(number)
+	end
+
+	for key, val in pairs(EASTER_EGG_DATASTORAGE_IDS) do
+		local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
+		if (locationAccessibility == AccessibilityLevel.Normal or locationAccessibility == AccessibilityLevel.Cleared) then
+			count = count + 1
+			if count >= requiredCount then
+				return AccessibilityLevel.Normal
+			end
+			countWithSnipes = countWithSnipes + 1
+		elseif (showSnipes and locationAccessibility == AccessibilityLevel.SequenceBreak) then
+			countWithSnipes = countWithSnipes + 1
+		end
+	end
+	if count >= EGG_TOTAL then
+		if count >= requiredCount then
+			return AccessibilityLevel.Normal
+		end
+		return AccessibilityLevel.SequenceBreak
+	end
+	if count >= requiredCount then
+		return AccessibilityLevel.Normal
+	end
+	if countWithSnipes >= tonumber(number) then
+		return AccessibilityLevel.SequenceBreak
+	end
+	return AccessibilityLevel.None
+end
+
+function eggloc(number)
+	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+		return false
+	elseif tonumber(number) > EGG_TOTAL then
+		return false
+	elseif (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 0) then
+		return tonumber(number) % 3 == 0
+	else
+		return tonumber(number) % 4 == 0
+	end
+end
+
 function Warp(location)
 	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then return true
 	else return false

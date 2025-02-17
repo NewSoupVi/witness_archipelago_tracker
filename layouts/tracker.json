@@ -156,6 +156,15 @@
 									"audioLogs"
 								]
 							}
+						},
+						{
+							"title": "Easter Eggs",
+							"content": {
+								"type": "map",
+								"maps": [
+									"easterEggs"
+								]
+							}
 						}
 					]
 				}
