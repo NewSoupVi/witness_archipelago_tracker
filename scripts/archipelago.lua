@@ -814,4 +814,4 @@ ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
 ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
 
-ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", function(section) loc_checked(section) end)
+ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)
