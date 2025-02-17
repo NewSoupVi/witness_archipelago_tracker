@@ -595,8 +595,8 @@ function onClear(slot_data)
 	end
 
 	-- Dummy item state change so canSolve works properly with 0 items received
-	Tracker:FindObjectForCode("Brain").Active = true
-	Tracker:FindObjectForCode("Brain").Active = false
+	local dummy_item = Tracker:FindObjectForCode("Dummy")
+	dummy_item.Active = not dummy_item.Active
 
 end
 

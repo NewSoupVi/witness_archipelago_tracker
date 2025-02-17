@@ -170,6 +170,12 @@
 		"codes": "Brain"
 	},
 	{
+		"name": "Dummy Item",
+		"type": "toggle",
+		"loop": "true",
+		"codes": "Dummy"
+	},
+	{
 		"name": "Puzzle Randomization",
 		"codes": "puzzleRandomization",
 		"type": "progressive",
