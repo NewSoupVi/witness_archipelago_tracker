@@ -353,6 +353,10 @@ function setReply(key, val, old)
 				location.AvailableChestCount = location.AvailableChestCount - 1
 			end
 		end
+		if locationTable[4] ~= nil then
+			local location = Tracker:FindObjectForCode(locationTable[4])
+			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
 
 	elseif(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
 		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
