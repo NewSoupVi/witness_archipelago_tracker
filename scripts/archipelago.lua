@@ -344,7 +344,7 @@ function setReply(key, val, old)
 		locationName = LASER_DATASTORAGE_ID[locationID][1]
 		locationTable = LASER_DATASTORAGE_ID[locationID][2]
 
-		lasers[locationTable[1]]=1
+		lasers[locationTable[1]] = 1
 
 		local location = Tracker:FindObjectForCode(locationName)
 		location.AvailableChestCount = location.AvailableChestCount - 1
@@ -355,6 +355,10 @@ function setReply(key, val, old)
 				local location = Tracker:FindObjectForCode(locationTable[3])
 				location.AvailableChestCount = location.AvailableChestCount - 1
 			end
+		end
+		if locationTable[4] ~= nil then
+			local location = Tracker:FindObjectForCode(locationTable[4])
+			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 
 	elseif(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
@@ -829,4 +833,4 @@ ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
 ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
 
-ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", function(section) loc_checked(section) end)
+ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)
