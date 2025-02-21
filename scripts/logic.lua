@@ -203,15 +203,10 @@ function eggs(number)
 end
 
 function eggloc(number)
-	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+	if (Tracker:ProviderCountForCode("eggsOff") > 0 or tonumber(number) > EGG_TOTAL) then
 		return false
-	elseif tonumber(number) > EGG_TOTAL then
-		return false
-	elseif (Tracker:ProviderCountForCode("easyEggs") + Tracker:ProviderCountForCode("normalEggs") > 0) then
-		return tonumber(number) % 3 == 0
-	else
-		return tonumber(number) % 4 == 0
 	end
+	return tonumber(number) % EGG_STEP == 0
 end
 
 function Warp(location)

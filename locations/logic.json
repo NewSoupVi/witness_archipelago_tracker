@@ -953,41 +953,41 @@
 			{
 				"name": "desertVault",
 				"access_rules": [
-					"$Warp|Desert Vault",
-					"Vaults, @Desert Vault/Vault Box, @Places/overworld",
-					"showSnipes, [Vaults], disabledPanelsEnabled, @Desert Vault/Vault Box, @Places/overworld"
+                    "$Warp|Desert Vault",
+					"Vaults, $canSolve|158652, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, $canSolve|158652, @Places/overworld"
 				]
 			},
 			{
 				"name": "tutorialVault",
 				"access_rules": [
-					"$Warp|Tutorial Vault",
-					"Vaults, @Outside Tutorial Vault/Vault Box, @Places/overworld",
-					"showSnipes, [Vaults], disabledPanelsEnabled, @Outside Tutorial Vault/Vault Box, @Places/overworld"
+                    "$Warp|Tutorial Vault",
+					"Vaults, $canSolve|158650, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, $canSolve|158650, @Places/overworld"
 				]
 			},
 			{
 				"name": "shipwreckVault",
 				"access_rules": [
-					"$Warp|Shipwreck Vault",
-					"Vaults, @Shipwreck Vault/Vault Box, @Places/plates3",
-					"showSnipes, [Vaults], disabledPanelsEnabled, @Shipwreck Vault/Vault Box, @Places/plates3"
+                    "$Warp|Shipwreck Vault",
+					"Vaults, $canSolve|158654, @Places/plates3",
+					"showSnipes, [Vaults], disabledPanelsEnabled, $canSolve|158654, @Places/plates3"
 				]
 			},
 			{
 				"name": "mountainsideVault",
 				"access_rules": [
-					"$Warp|Mountainside Vault",
-					"Vaults, @Mountainside Vault/Vault Box, @Places/overworld",
-					"showSnipes, [Vaults], disabledPanelsEnabled, @Mountainside Vault/Vault Box, @Places/overworld"
+                    "$Warp|Mountainside Vault",
+					"Vaults, $canSolve|158665, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, $canSolve|158665, @Places/overworld"
 				]
 			},
 			{
 				"name": "jungleVault",
 				"access_rules": [
-					"$Warp|Jungle Vault",
-					"Vaults, @Between Jungle and Monastery/Vault Box, @Places/overworld",
-					"showSnipes, [Vaults], disabledPanelsEnabled, @Between Jungle and Monastery/Vault Box, @Places/overworld"
+                    "$Warp|Jungle Vault",
+					"Vaults, $canSolve|158663, @Places/overworld",
+					"showSnipes, [Vaults], disabledPanelsEnabled, $canSolve|158663, @Places/overworld"
 				]
 			},
 			{
