@@ -341,7 +341,7 @@ function setReply(key, val, old)
 		locationName = LASER_DATASTORAGE_ID[locationID][1]
 		locationTable = LASER_DATASTORAGE_ID[locationID][2]
 
-		lasers[locationTable[1]]=1
+		lasers[locationTable[1]] = 1
 
 		local location = Tracker:FindObjectForCode(locationName)
 		location.AvailableChestCount = location.AvailableChestCount - 1

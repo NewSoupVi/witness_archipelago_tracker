@@ -25,9 +25,7 @@
 			{
 				"name": "Panel Hunt: Victory!",
 				"visibility_rules": [ "panelHunt" ],
-				"access_rules": [
-					"$canPanelHuntGoal"
-				]
+				"access_rules": [ "$canPanelHuntGoal" ]
 			},
 			{
 				"name": "Gate EP",
@@ -190,13 +188,11 @@
 
 	{
 		"name": "Outside Tutorial Vault",
-		"visibility_rules": [ "Vaults" ],
 		"sections": [
 			{
 				"name": "Vault Box",
-				"access_rules": [
-					"$canSolve|158650, @Places/overworld"
-				]
+				"visibility_rules": [ "Vaults" ],
+				"access_rules": [ "@Places/tutorialVault" ]
 			}
 		],
 		"map_locations": [
@@ -470,22 +466,27 @@
 
 	{
 		"name": "Inside Glass Factory",
-		"access_rules": [
-			"@Places/glassFactory",
-			"showSnipes, @Places/overworld, [@Places/glassFactory]"
-		],
 		"sections": [
 			{
 				"name": "Back Wall",
-				"access_rules": [ "$canSolve|158028-158032" ]
+				"access_rules": [
+					"$canSolve|158028-158032, @Places/glassFactory",
+					"showSnipes, $canSolve|158028-158032, [@Places/glassFactory], @Places/overworld"
+				]
 			},
 			{
 				"name": "Front",
-				"access_rules": [ "@Inside Glass Factory/Back Wall, $canSolve|158033-158035" ]
+				"access_rules": [
+					"@Inside Glass Factory/Back Wall, $canSolve|158033-158035, @Places/glassFactory",
+					"showSnipes, @Inside Glass Factory/Back Wall, $canSolve|158033-158035, [@Places/glassFactory], @Places/overworld"
+				]
 			},
 			{
 				"name": "Melting",
-				"access_rules": [ "@Inside Glass Factory/Front, $canSolve|158036-158038" ]
+				"access_rules": [
+					"@Inside Glass Factory/Front, $canSolve|158036-158038, @Places/glassFactory",
+					"showSnipes, @Inside Glass Factory/Front, $canSolve|158036-158038, [@Places/glassFactory], @Places/overworld"
+				]
 			}
 
 		],
@@ -688,9 +689,7 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [
-					"$canSolve|158652, @Places/overworld"
-				]
+				"access_rules": [ "@Places/desertVault" ]
 			}
 		],
 		"map_locations": [
@@ -1575,9 +1574,7 @@
 			{
 				"name": "Entry Timer Panel",
 				"visibility_rules": [ "Unrandomized, doorsDoor", "Unrandomized, doorsMix" ],
-				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Shadows Door Timer (Panel), $canSolve|158170, @Places/overworld" ]
 			},
 			{
 				"name": "Door to Quarry Timer Panel",
@@ -2165,9 +2162,7 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [
-					"$canSolve|158654, @Places/plates3"
-				]
+				"access_rules": [ "@Places/shipwreckVault" ]
 			}
 		],
 		"map_locations": [
@@ -2418,7 +2413,7 @@
 		"sections": [
 			{
 				"name": "",
-				"visibility_rules": ["dogSkip"],
+				"visibility_rules": [ "dogSkip" ],
 				"access_rules": [ "@Places/overworld" ]
 			}
 		],
@@ -2437,7 +2432,7 @@
 		"sections": [
 			{
 				"name": "Pet the Dog",
-				"visibility_rules": ["dogOn"],
+				"visibility_rules": [ "dogOn" ],
 				"access_rules": [ "@Places/overworld" ]
 			}
 		],
@@ -2608,7 +2603,8 @@
 			{
 				"name": "Lower Row",
 				"access_rules": [
-					"$canSolve|158235-158239, @Places/overworld"
+					"$canSolve|158235-158239, @Places/overworld",
+					"showSnipes, $canSolve|158235-158239, [@Places/overworld], @Places/woodenRoof"
 				]
 			},
 			{
@@ -3534,9 +3530,7 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [
-					"$canSolve|158663, @Places/overworld"
-				]
+				"access_rules": [ "@Places/jungleVault" ]
 			},
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
@@ -4331,9 +4325,7 @@
 			{
 				"name": "Laser House Door Outside Timer",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
-				"access_rules": [
-					"$isNotPanelsOnlyOrHasPanel|Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain"
-				]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Treehouse Laser House Door Timer (Panel), $canSolve|158356, @Places/treehouseMain" ]
 			},
 			{
 				"name": "Right Orange Bridge EP",
@@ -4748,9 +4740,7 @@
 			{
 				"name": "Vault Box",
 				"visibility_rules": [ "Vaults" ],
-				"access_rules": [
-					"$canSolve|158665, @Places/overworld"
-				]
+				"access_rules": [ "@Places/mountainsideVault" ]
 			}
 		],
 		"map_locations": [
@@ -4949,9 +4939,7 @@
 		"sections": [
 			{
 				"name": "Back Row",
-				"access_rules": [
-					"$canSolve|158421-158423, @Places/mountainLayer1Back"
-				]
+				"access_rules": [ "$canSolve|158421-158423, @Places/mountainLayer1Back" ]
 			}
 		],
 		"map_locations": [
