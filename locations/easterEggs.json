@@ -600,7 +600,7 @@
 				]
 			},
 			{
-				"name": "Jungle Area",
+				"name": "Southern Peninsula Area",
 				"sections": [
 					{
 						"name": "Egg 1",
@@ -626,19 +626,31 @@
 						"name": "Egg 5",
 						"visibility_rules": [ "$isNotDisabled|974922" ],
 						"access_rules": [ "$isNotDisabled|974922, @Places/overworld" ]
-					},
+					}
+				],
+				"map_locations": [
 					{
-						"name": "Egg 6",
+						"map": "easterEggs",
+						"x": 777,
+						"y": 1295
+					}
+				]
+			},
+			{
+				"name": "Jungle Area",
+				"sections": [
+					{
+						"name": "Egg 1",
 						"visibility_rules": [ "$isNotDisabled|974923" ],
 						"access_rules": [ "$isNotDisabled|974923, @Places/overworld" ]
 					},
 					{
-						"name": "Egg 7",
+						"name": "Egg 2",
 						"visibility_rules": [ "$isNotDisabled|974924" ],
 						"access_rules": [ "$isNotDisabled|974924, @Places/overworld" ]
 					},
 					{
-						"name": "Egg 8",
+						"name": "Egg 3",
 						"visibility_rules": [ "$isNotDisabled|974925" ],
 						"access_rules": [
 							"$isNotDisabled|974925, @Places/junglePopup",
@@ -646,7 +658,7 @@
 						]
 					},
 					{
-						"name": "Egg 9",
+						"name": "Egg 4",
 						"visibility_rules": [ "$isNotDisabled|974926" ],
 						"access_rules": [
 							"$isNotDisabled|974926, @Places/jungleVault",
