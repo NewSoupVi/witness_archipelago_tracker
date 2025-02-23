@@ -333,13 +333,16 @@ function dump(o)
 end
 
 function setReply(key, val, old)
+	-- Remove eventually
 	if key:find("-") then
 		separatorIndex, _ = key:find("-")
 		locationID = tonumber(key:sub(separatorIndex + 1))
 	end
+
+	-- Remove eventually
 	if key:sub(1, 12) == "WitnessLaser" and val then
-		locationName = LASER_DATASTORAGE_ID[locationID][1]
-		locationTable = LASER_DATASTORAGE_ID[locationID][2]
+		locationName = LASER_DATASTORAGE_IDS[locationID][1]
+		locationTable = LASER_DATASTORAGE_IDS[locationID][2]
 
 		lasers[locationTable[1]] = 1
 
@@ -358,18 +361,55 @@ function setReply(key, val, old)
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
 
+	elseif(key == "WitnessActivatedLasers" .. Archipelago.PlayerNumber and val) then
+		for laserID, _ in pairs(val) do
+			locationName = LASER_DATASTORAGE_IDS[tonumber(laserID)][1]
+			locationTable = LASER_DATASTORAGE_IDS[tonumber(laserID)][2]
+	
+			lasers[locationTable[1]] = 1
+	
+			local location = Tracker:FindObjectForCode(locationName)
+			location.AvailableChestCount = location.AvailableChestCount - 1
+			if locationTable[2] ~= nil then
+				if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
+					local location = Tracker:FindObjectForCode(locationTable[2])
+					location.AvailableChestCount = location.AvailableChestCount - 1
+					local location = Tracker:FindObjectForCode(locationTable[3])
+					location.AvailableChestCount = location.AvailableChestCount - 1
+				end
+			end
+			if locationTable[4] ~= nil then
+				local location = Tracker:FindObjectForCode(locationTable[4])
+				location.AvailableChestCount = location.AvailableChestCount - 1
+			end
+		end
+
 	elseif(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
 		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
 
+	-- Remove eventually
 	elseif(key:sub(1, 15) == "WitnessAudioLog" and val) then
 		local location = Tracker:FindObjectForCode(AUDIO_LOG_DATASTORAGE_IDS[locationID][1])
 		location.AvailableChestCount = location.AvailableChestCount - 1
 
+	elseif(key == "WitnessActivatedAudioLogs" .. Archipelago.PlayerNumber and val) then
+		for logID, _ in pairs(val) do
+			local location = Tracker:FindObjectForCode(AUDIO_LOG_DATASTORAGE_IDS[tonumber(logID)][1])
+			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
+
+	-- Remove eventually
 	elseif(key:sub(1, 9) == "WitnessEP" and val) then
 		local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[locationID][1])
 		location.AvailableChestCount = location.AvailableChestCount - 1
 
-	elseif(key:sub(1, 18) == "WitnessOpenedDoors" and val) then
+	elseif(key == "WitnessSolvedEPs" .. Archipelago.PlayerNumber and val) then
+		for EPID, _ in pairs(val) do
+			local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(EPID)][1])
+			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
+
+	elseif(key == "WitnessOpenedDoors" .. Archipelago.PlayerNumber and val) then
 		for k, _ in pairs(val) do
 			if k == "0x1475b" and not Tracker:FindObjectForCode("Discarded").Active then
 				local location = Tracker:FindObjectForCode("@Jungle Discard/Discard")
@@ -383,7 +423,10 @@ function setReply(key, val, old)
 			end
 		end
 
-	elseif(key:sub(1, 23) == "WitnessHuntEntityStatus" and val) then
+	elseif(key == "WitnessUnlockedWarps" .. Archipelago.PlayerNumber and val) then
+		-- implement later
+
+	elseif(key == "WitnessHuntEntityStatus" .. Archipelago.PlayerNumber and val) then
 		if Tracker:FindObjectForCode("panelHunt").CurrentStage == 5 then
 			local count = 0
 			for _, _ in pairs(val) do
@@ -393,7 +436,7 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
-	elseif(key:sub(1,17) == "WitnessDeadChecks" and val) then
+	elseif(key == "WitnessDeadChecks" .. Archipelago.PlayerNumber and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
 				local location = Tracker:FindObjectForCode(LOCATION_MAPPING[tonumber(k)][1])
@@ -415,15 +458,25 @@ function onClear(slot_data)
 
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
-	for LaserID, _ in pairs(LASER_DATASTORAGE_ID) do
+	for LaserID, _ in pairs(LASER_DATASTORAGE_IDS) do
 		Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
 		Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
 	end
 
+	-- Remove eventually
 	for AudioLogID, _ in pairs(AUDIO_LOG_DATASTORAGE_IDS) do
 		Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
 		Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
 	end
+
+	Archipelago:Get({"WitnessActivatedLasers" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessActivatedLasers" .. Archipelago.PlayerNumber})
+
+	Archipelago:Get({"WitnessSolvedEPs" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessSolvedEPs" .. Archipelago.PlayerNumber})
+
+	Archipelago:Get({"WitnessActivatedAudioLogs" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessActivatedAudioLogs" .. Archipelago.PlayerNumber})
 
 	Archipelago:Get({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
 	Archipelago:SetNotify({"WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled"})
@@ -431,12 +484,16 @@ function onClear(slot_data)
 	Archipelago:Get({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessOpenedDoors" .. Archipelago.PlayerNumber})
 
+	Archipelago:Get({"WitnessUnlockedWarps" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessUnlockedWarps" .. Archipelago.PlayerNumber})
+
 	Archipelago:Get({"WitnessHuntEntityStatus" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessHuntEntityStatus" .. Archipelago.PlayerNumber})
 
 	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 
+	-- Remove eventually
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -701,8 +758,8 @@ function onItem(index, item_id, item_name, player_number)
 		end
 	end
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
-		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
+		print(string.format("local items: %s", dump(LOCAL_ITEMS)))
+		print(string.format("global items: %s", dump(GLOBAL_ITEMS)))
 	end
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
 		-- add snes interface functions here for local item tracking
