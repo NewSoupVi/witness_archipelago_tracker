@@ -613,7 +613,7 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[211146] = {"@Caves Upstairs/Audio Log"}
 }
 
-LASER_DATASTORAGE_ID = {
+LASER_DATASTORAGE_IDS = {
 	[628] = {"@Jungle Laser/Laser Activation", {8}},
 	[1289] = {"@Symmetry Island/Laser Activation", {1}},
 	[3062] = {"@Swamp Laser/Laser Activation", {10}},
