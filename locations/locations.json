@@ -1880,7 +1880,7 @@
 					"$isNotVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"randomizationVanilla, Keep Pressure Plates 2 Exit (Door), @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
-					"$isNotVanilla, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
+					"showSnipes, $isNotVanilla, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],

@@ -118,18 +118,17 @@
 			{
 				"name": "quarry",
 				"access_rules": [
-					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
-					"showSnipes, $isNotDoors, unrandomized, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
+					"$isNotDoors, unrandomized, @Shadows First Set/Entry Timer Panel, @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/shadowsFirstSet",
+					"unrandomized, Shadows Timed Door, @Places/shadowsFirstSet",
+					"showSnipes, $unrandomizedDisabledButSolvable, @Places/shadowsFirstSet, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
 					"Quarry Boathouse Dock (Door), @Places/ocean",
-					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Dock (Door)]",
-					"showSnipes, $isNotDoors, @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, [Quarry Boathouse Dock (Door)], @Places/overworld, @Places/ocean",
 					"Shadows Quarry Barrier (Door), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, [Shadows Quarry Barrier (Door)], @Places/shadowsFirstSet",
 					"autoElevators, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
 					"showSnipes, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
-					"autoElevators, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
+					"autoElevators, $isNotPanels, @Quarry Stoneworks/Control Room Right, $canSolve|158120, @Places/overworld",
+					"showSnipes, [autoElevators], $isNotPanels, @Quarry Stoneworks/Control Room Right, $canSolve|158120, @Places/overworld",
 					"Quarry Entry 2 (Door), @Places/quarryBetweenEntries",
 					"$isNotDoors, @Quarry Entrance/Door 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, @Places/quarryStoneworks",
@@ -160,7 +159,7 @@
 				"name": "quarryStoneworksUpstairs",
 				"access_rules": [
 					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
-					"@Quarry Stoneworks/Lower Row, $hasPanel|Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksMid",
+					"$isNotPanels, @Quarry Stoneworks/Lower Row, $canSolve|158131, @Places/quarryStoneworks",
 					"Quarry Stoneworks Stairs (Door), @Places/quarryStoneworks",
 					"showSnipes, $isNotDoors, @Quarry Stoneworks/Stairs Control Panel, [Quarry Stoneworks Stairs (Door)], @Places/quarryStoneworks"
 				]
@@ -590,7 +589,6 @@
 				"name": "monasteryShutters",
 				"access_rules": [
 					"unrandomized, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), @Places/monastery",
-					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/monastery"
 				]
 			},
