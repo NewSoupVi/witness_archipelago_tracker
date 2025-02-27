@@ -1120,8 +1120,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|97465" ],
 				"access_rules": [
 					"$isDisabled|97465",
-					"@Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry",
-					"Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, @Places/quarry, $hasObeliskKey|Quarry"
+					"@Places/quarryElevatorControl, $hasObeliskKey|Quarry"
 				]
 			}
 		],
@@ -1880,7 +1879,7 @@
 					"$isNotVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"$isNotDoors, randomizationVanilla, @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
 					"randomizationVanilla, Keep Pressure Plates 2 Exit (Door), @Pressure Plates 2/Pressure Plates, @Places/keepTower, $hasObeliskKey|Treehouse",
-					"$isNotVanilla, showSnipes, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
+					"showSnipes, $isNotVanilla, @Pressure Plates 2/Pressure Plates, [@Places/keepTower], $hasObeliskKey|Treehouse"
 				]
 			}
 		],
@@ -3190,7 +3189,7 @@
 			{
 				"name": "Set 2",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158255-158258, @Places/overworld" ]
+				"access_rules": [ "@Jungle Sound Waves Puzzles/Set 1, $canSolve|158255-158258, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -3213,7 +3212,8 @@
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
+					"$isNotPanelsOnly, $unrandomizedDisabled, $canSolve|158259, @Places/overworld",
+					"$isNotPanelsOnly, Unrandomized, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
 					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
 				]
 			}
@@ -3865,8 +3865,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13827" ],
 				"access_rules": [
 					"$isDisabled|13827",
-					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoSwampLongBridge, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3874,8 +3874,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13825" ],
 				"access_rules": [
 					"$isDisabled|13825",
-					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoSwampLongBridge, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, $hasObeliskKey|Mountainside"
+					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3884,8 +3884,8 @@
 				"access_rules": [
 					"$isDisabled|13790",
 					"$isNotAutoSwampLongBridge, @Places/overworld, $hasObeliskKey|Mountainside",
-					"autoSwampLongBridge, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoSwampLongBridge, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3893,8 +3893,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14129" ],
 				"access_rules": [
 					"$isDisabled|14129",
-					"@Places/swampBack, $canSolve|158339, $hasPanel|Swamp Long Bridge (Panel), $hasObeliskKey|Mountainside",
-					"showSnipes, autoSwampLongBridge, @Places/swampBack, [$canSolve|158339], [$hasPanel|Swamp Long Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -3949,8 +3949,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|4189" ],
 				"access_rules": [
 					"$isDisabled|4189",
-					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform, $hasObeliskKey|Mountainside",
-					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"@Places/swampSlidingBridgeControl, $hasObeliskKey|Mountainside",
+					"showSnipes, [@Places/swampSlidingBridgeControl], @Places/swampEntry, @Places/swampPlatform, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3958,8 +3958,8 @@
 				"visibility_rules": [ "eps, $isNotDisabled|41732" ],
 				"access_rules": [
 					"$isDisabled|41732",
-					"$canSolve|158302, $hasPanel|Swamp Sliding Bridge (Panel), @Places/swampPlatform, $hasObeliskKey|Mountainside",
-					"showSnipes, @Places/swampEntry, @Places/swampPlatform, [$canSolve|158302], [$hasPanel|Swamp Sliding Bridge (Panel)], $hasObeliskKey|Mountainside"
+					"@Places/swampSlidingBridgeControl, $hasObeliskKey|Mountainside",
+					"showSnipes, [@Places/swampSlidingBridgeControl], @Places/swampEntry, @Places/swampPlatform, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4004,7 +4004,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|5810" ],
 				"access_rules": [
 					"$isDisabled|5810",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"@Places/swampRotatingBridgeControl, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -4012,7 +4012,7 @@
 				"visibility_rules": [ "eps, $isNotDisabled|14030" ],
 				"access_rules": [
 					"$isDisabled|14030",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"@Places/swampRotatingBridgeControl, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
