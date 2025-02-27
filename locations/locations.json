@@ -3189,7 +3189,7 @@
 			{
 				"name": "Set 2",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158255-158258, @Places/overworld" ]
+				"access_rules": [ "@Jungle Sound Waves Puzzles/Set 1, $canSolve|158255-158258, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -3212,7 +3212,8 @@
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
+					"$isNotPanelsOnly, $unrandomizedDisabled, $canSolve|158259, @Places/overworld",
+					"$isNotPanelsOnly, Unrandomized, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
 					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
 				]
 			}
