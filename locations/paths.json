@@ -1409,7 +1409,7 @@
 				]
 			},
 
-						{
+			{
 				"name": "Keep Hedge Maze 3 Exit (Door)",
 				"visibility_rules": [ "doorsDoor, Unrandomized", "doorsMix, Unrandomized" ],
 				"access_rules": [

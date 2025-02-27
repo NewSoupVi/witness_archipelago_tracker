@@ -368,9 +368,9 @@ function setReply(key, val, old)
 		for laserID, _ in pairs(val) do
 			locationName = LASER_DATASTORAGE_IDS[tonumber(laserID)][1]
 			locationTable = LASER_DATASTORAGE_IDS[tonumber(laserID)][2]
-	
+
 			lasers[locationTable[1]] = 1
-	
+
 			local location = Tracker:FindObjectForCode(locationName)
 			location.AvailableChestCount = location.AvailableChestCount - 1
 			if locationTable[2] ~= nil then
@@ -461,6 +461,7 @@ function onClear(slot_data)
 
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
+	-- Remove eventually
 	for LaserID, _ in pairs(LASER_DATASTORAGE_IDS) do
 		Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
 		Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
@@ -500,7 +501,7 @@ function onClear(slot_data)
 	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
 		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-				print(string.format("onClear: setting up tracking for EP: " .. datastorageString))
+			print(string.format("onClear: setting up tracking for EP: " .. datastorageString))
 		end
 		Archipelago:Get({datastorageString})
 		Archipelago:SetNotify({datastorageString})
@@ -819,6 +820,12 @@ function onLocation(location_id, location_name)
 		end
 	end
 
+	if location_id > 159699 and location_id < 159756 then
+		for _, l in pairs(OBELISK_MAPPING[location_id]) do
+			local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(l)][1])
+			location.AvailableChestCount = location.AvailableChestCount - 1
+		end
+	end
 end
 
 function doorsRegional(item_name)
@@ -864,7 +871,7 @@ end
 
 function clearJunkChanged()
 	if Tracker:FindObjectForCode("clearJunk").Active then
-			Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
+		Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	end
 end
 

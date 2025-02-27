@@ -116,20 +116,32 @@
 				]
 			},
 			{
+				"name": "quarryElevator",
+				"access_rules": [
+					"@Places/overworld, @Places/quarry",
+					"autoElevators, @Places/overworld",
+					"autoElevators, @Places/quarry",
+					"showSnipes, @Places/overworld, [@Places/quarry]"
+				]
+			},
+			{
+				"name": "quarryElevatorControl",
+				"access_rules": [
+					"Quarry Elevator Control (Panel), $canSolve|158120, @Places/quarryElevator",
+					"$isNotPanels, @Quarry Stoneworks/Control Room Right, $canSolve|158120, @Places/quarryElevator"
+				]
+			},
+			{
 				"name": "quarry",
 				"access_rules": [
-					"$isNotDoors, unrandomized, $hasPanel|Shadows Door Timer (Panel), @Places/overworld",
-					"showSnipes, $isNotDoors, unrandomized, [$hasPanel|Shadows Door Timer (Panel)], @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
+					"$isNotDoors, unrandomized, @Shadows First Set/Entry Timer Panel, @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/shadowsFirstSet",
+					"unrandomized, Shadows Timed Door, @Places/shadowsFirstSet",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Quarry Barrier (Door)], @Places/shadowsFirstSet",
 					"Quarry Boathouse Dock (Door), @Places/ocean",
-					"showSnipes, $isNotDoors, @Places/ocean, [Quarry Boathouse Dock (Door)]",
-					"showSnipes, $isNotDoors, @Places/shadowsFirstSet",
+					"showSnipes, $isNotDoors, [Quarry Boathouse Dock (Door)], @Places/overworld, @Places/ocean",
 					"Shadows Quarry Barrier (Door), @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, [Shadows Quarry Barrier (Door)], @Places/shadowsFirstSet",
-					"autoQuarryElevator, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
-					"autoQuarryElevator, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld",
-					"showSnipes, @Quarry Stoneworks/Control Room Right, $hasPanel|Quarry Elevator Control (Panel), $canSolve|158120, @Places/overworld, [Quarry Boathouse Dock (Door)], [@Places/ocean]",
+					"@Places/quarryElevatorControl",
 					"Quarry Entry 2 (Door), @Places/quarryBetweenEntries",
 					"$isNotDoors, @Quarry Entrance/Door 2, @Places/quarryBetweenEntries",
 					"$isNotDoors, @Places/quarryStoneworks",
@@ -145,24 +157,34 @@
 					"Quarry Stoneworks Entry (Door), @Places/quarry",
 					"$isNotDoors, @Outside Quarry Stoneworks/Door to Stoneworks Left, @Outside Quarry Stoneworks/Door to Stoneworks Right, @Places/quarry",
 					"showSnipes, $isNotDoors, [Quarry Stoneworks Side Exit (Door)], @Quarry Stoneworks/Side Exit Panel, @Places/overworld",
-					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Quarry Stoneworks/Roof Exit Panel, @Places/overworld"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Roof Exit (Door)], @Quarry Stoneworks/Roof Exit Panel, @Places/overworld",
+					"@Places/quarryStoneworksLiftControl"
 				]
 			},
 			{
 				"name": "quarryStoneworksMid",
 				"access_rules": [
 					"$hasPanel|Quarry Stoneworks Ramp Controls (Panel), $canSolve|158124, @Places/quarryStoneworks",
+					"@Places/quarryStoneworksLiftControl"
+				]
+			},
+			{
+				"name": "quarryStoneworksLiftControl",
+				"access_rules": [
 					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
-					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs"
+					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksMid",
+					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksUpstairs",
+					"$isNotPanels, @Quarry Stoneworks/Lower Row, $canSolve|158131, @Places/quarryStoneworks",
+					"$isNotPanels, @Quarry Stoneworks/Lower Row, $canSolve|158131, @Places/quarryStoneworksMid",
+					"$isNotPanels, @Quarry Stoneworks/Lower Row, $canSolve|158131, @Places/quarryStoneworksUpstairs"
 				]
 			},
 			{
 				"name": "quarryStoneworksUpstairs",
 				"access_rules": [
-					"Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworks",
-					"@Quarry Stoneworks/Lower Row, $hasPanel|Quarry Stoneworks Lift Controls (Panel), $canSolve|158131, @Places/quarryStoneworksMid",
 					"Quarry Stoneworks Stairs (Door), @Places/quarryStoneworks",
-					"showSnipes, $isNotDoors, @Quarry Stoneworks/Stairs Control Panel, [Quarry Stoneworks Stairs (Door)], @Places/quarryStoneworks"
+					"showSnipes, $isNotDoors, [Quarry Stoneworks Stairs (Door)], @Quarry Stoneworks/Stairs Control Panel, @Places/quarryStoneworks",
+					"@Places/quarryStoneworksLiftControl"
 				]
 			},
 			{
@@ -376,15 +398,23 @@
 				"access_rules": [
 					"$isNotDoors, @Swamp Entry/Entry Panel, @Places/overworld",
 					"Swamp Entry (Door), @Places/overworld",
+					"@Places/swampSlidingBridgeControl"
+				]
+			},
+			{
+				"name": "swampSlidingBridgeControl",
+				"access_rules": [
+					"$hasPanel|Swamp Sliding Bridge (Panel), $canSolve|158302, @Places/swampEntry",
 					"$hasPanel|Swamp Sliding Bridge (Panel), $canSolve|158302, @Places/swampPlatform"
 				]
 			},
 			{
 				"name": "swampPlatform",
 				"access_rules": [
-					"$hasPanel|Swamp Sliding Bridge (Panel), $canSolve|158302, @Places/swampEntry",
+					"@Places/swampSlidingBridgeControl",
 					"Swamp Between Bridges First Door, @Places/swampBroken",
-					"Swamp Platform Shortcut (Door), @Places/swampBack"
+					"Swamp Platform Shortcut (Door), @Places/swampBack",
+					"Swamp Cyan Water Pump (Door), @Places/swampCyan"
 				]
 			},
 			{
@@ -399,26 +429,44 @@
 				"name": "swampRotated",
 				"access_rules": [
 					"$isNotDoors, @Swamp Platform/Between Bridges Near Row, @Places/swampBroken",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+					"@Places/swampRotatingBridgeControl",
 					"Swamp Between Bridges Second Door, @Places/swampBroken",
 					"Swamp Red Water Pump (Door), @Places/swampRed"
+				]
+			},
+			{
+				"name": "swampRotatingBridgeControl",
+				"access_rules": [
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack",
+					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampPurple"
 				]
 			},
 			{
 				"name": "swampBack",
 				"access_rules": [
 					"@Places/ocean",
-					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
+					"@Places/swampLongBridgeControl",
 					"$isNotDoors, @Swamp Platform/Shortcut Panels, @Places/swampPlatform",
 					"Swamp Platform Shortcut (Door), @Places/swampPlatform",
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampRotated",
-					"@Places/swampPurple"
+					"@Places/swampRotatingBridgeControl",
+					"@Places/swampPurple",
+					"Swamp Blue Water Pump (Door), @Places/swampBlue"
+				]
+			},
+			{
+				"name": "swampLongBridgeControl",
+				"access_rules": [
+					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
+					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
+					"showSnipes, [autoElevators], $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack"
 				]
 			},
 			{
 				"name": "swampPurple",
 				"access_rules": [
-					"$hasPanel|Swamp Rotating Bridge (Panel), $canSolve|158327, @Places/swampBack"
+					"@Places/swampRotatingBridgeControl",
+					"Swamp Purple Water Pump (Door), @Places/swampPurpleUnderwater"
 				]
 			},
 			{
@@ -590,7 +638,6 @@
 				"name": "monasteryShutters",
 				"access_rules": [
 					"unrandomized, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), @Places/monastery",
-					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/monastery"
 				]
 			},
@@ -654,7 +701,7 @@
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoElevators, @Places/overworld",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
