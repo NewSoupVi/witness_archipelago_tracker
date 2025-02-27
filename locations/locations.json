@@ -1263,8 +1263,8 @@
 			{
 				"name": "Stairs Control Panel",
 				"access_rules": [
-					"$canSolve|158142, @Places/quarryStoneworksUpstairs",
-					"showSnipes, $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"$isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Stairs (Panel), $canSolve|158142, @Places/quarryStoneworksUpstairs",
+					"showSnipes, $isNotPanelsOnlyOrHasPanel|Quarry Stoneworks Stairs (Panel), $canSolve|158142, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
 				]
 			},
 			{
@@ -3535,7 +3535,7 @@
 			{
 				"name": "Rhombic Avoid to Monastery Garden Panel",
 				"visibility_rules": [ "Unrandomized" ],
-				"access_rules": [ "$canSolve|158267, @Places/overworld" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Jungle Monastery Garden Shortcut (Panel), $canSolve|158267, @Places/overworld" ]
 			}
 		],
 		"map_locations": [
@@ -3866,7 +3866,7 @@
 				"access_rules": [
 					"$isDisabled|13827",
 					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3875,7 +3875,7 @@
 				"access_rules": [
 					"$isDisabled|13825",
 					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [@Places/swampLongBridgeControl], @Places/overworld, $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3883,9 +3883,9 @@
 				"visibility_rules": [ "eps, $isNotDisabled|13790" ],
 				"access_rules": [
 					"$isDisabled|13790",
-					"$isNotAutoElevators, @Places/overworld, $hasObeliskKey|Mountainside",
+					"$isNotAutoSwampLongBridge, @Places/overworld, $hasObeliskKey|Mountainside",
 					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			},
 			{
@@ -3894,7 +3894,7 @@
 				"access_rules": [
 					"$isDisabled|14129",
 					"@Places/swampLongBridgeControl, $hasObeliskKey|Mountainside",
-					"showSnipes, autoElevators, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
+					"showSnipes, autoSwampLongBridge, [@Places/swampLongBridgeControl], @Places/overworld, @Places/swampBack, $hasObeliskKey|Mountainside"
 				]
 			}
 		],
@@ -4199,7 +4199,7 @@
 			},
 			{
 				"name": "Shortcut Panels",
-				"access_rules": [ "$canSolve|158341-158342, @Places/swampLaser" ]
+				"access_rules": [ "$isNotPanelsOnlyOrHasPanel|Swamp Laser Shortcut (Panel), $canSolve|158341-158342, @Places/swampLaser" ]
 			}
 		],
 		"map_locations": [
@@ -5525,7 +5525,7 @@
 			{
 				"name": "Shortcut to Mountain Panel",
 				"access_rules": [
-					"$canSolve|158449, @Places/caves",
+					"$isNotPanelsOnlyOrHasPanel|Caves Mountain Shortcut (Panel), $canSolve|158449, @Places/caves",
 					"cavesPool, $canSolve|158449, @Places/caves"
 				]
 			}
@@ -5547,7 +5547,7 @@
 			{
 				"name": "Shortcut to Swamp Panel",
 				"access_rules": [
-					"$canSolve|158450, @Places/caves",
+					"$isNotPanelsOnlyOrHasPanel|Caves Swamp Shortcut (Panel), $canSolve|158450, @Places/caves",
 					"cavesPool, $canSolve|158450, @Places/caves"
 				]
 			}
