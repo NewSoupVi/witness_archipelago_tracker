@@ -119,8 +119,8 @@
 				"name": "quarryElevator",
 				"access_rules": [
 					"@Places/overworld, @Places/quarry",
-					"autoElevators, @Places/overworld",
-					"autoElevators, @Places/quarry",
+					"autoQuarryElevator, @Places/overworld",
+					"autoQuarryElevator, @Places/quarry",
 					"showSnipes, @Places/overworld, [@Places/quarry]"
 				]
 			},
@@ -457,9 +457,9 @@
 			{
 				"name": "swampLongBridgeControl",
 				"access_rules": [
-					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
-					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
-					"showSnipes, [autoElevators], $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack"
+					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
+					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
+					"showSnipes, [autoSwampLongBridge], $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack"
 				]
 			},
 			{
@@ -701,7 +701,7 @@
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoElevators, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoBunkerElevator, @Places/overworld",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
 					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
