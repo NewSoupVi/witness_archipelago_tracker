@@ -176,15 +176,17 @@ function eggs(number)
 	end
 
 	for key, val in pairs(EASTER_EGG_DATASTORAGE_IDS) do
-		local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
-		if locationAccessibility == AccessibilityLevel.Normal then
-			count = count + 1
-			if count >= requiredCount then
-				return AccessibilityLevel.Normal
+		if isNotDisabled(key) then
+			local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
+			if (locationAccessibility == AccessibilityLevel.Normal or locationAccessibility == AccessibilityLevel.Cleared) then
+				count = count + 1
+				if count >= requiredCount then
+					return AccessibilityLevel.Normal
+				end
+				countWithSnipes = countWithSnipes + 1
+			elseif (showSnipes and locationAccessibility == AccessibilityLevel.SequenceBreak) then
+				countWithSnipes = countWithSnipes + 1
 			end
-			countWithSnipes = countWithSnipes + 1
-		elseif (showSnipes and locationAccessibility == AccessibilityLevel.SequenceBreak) then
-			countWithSnipes = countWithSnipes + 1
 		end
 	end
 	if count >= EGG_TOTAL then
