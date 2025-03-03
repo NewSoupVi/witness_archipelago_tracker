@@ -212,7 +212,7 @@ function eggloc(number)
 end
 
 function isNotExtremeEggs()
-	return (1 - Tracker:ProviderCountForCode("extremeEggs") > 0)
+	return (1 - (Tracker:ProviderCountForCode("extremeEggs") + Tracker:ProviderCountForCode("eggsOff")) > 0)
 end
 
 function eggGroupAccess(region, total)
