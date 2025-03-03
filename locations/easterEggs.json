@@ -7,7 +7,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Tutorial (Inside)|1" ]
 					},
 					{
@@ -29,7 +29,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Tutorial (Outside)|8" ]
 					},
 					{
@@ -100,7 +100,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Glass Factory|2" ]
 					},
 					{
@@ -130,7 +130,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Symmetry Island|3" ]
 					},
 					{
@@ -162,7 +162,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Desert|11" ]
 					},
 					{
@@ -243,7 +243,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Quarry|11" ]
 					},
 					{
@@ -335,7 +335,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Shadows|4" ]
 					},
 					{
@@ -378,7 +378,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Keep|10" ]
 					},
 					{
@@ -461,7 +461,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Shipwreck|5" ]
 					},
 					{
@@ -503,7 +503,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Monastery|3" ]
 					},
 					{
@@ -542,7 +542,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Town|9" ]
 					},
 					{
@@ -625,7 +625,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Windmill & Theater|3" ]
 					},
 					{
@@ -664,7 +664,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Southern Peninsula|5" ]
 					},
 					{
@@ -706,7 +706,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Jungle|4" ]
 					},
 					{
@@ -749,7 +749,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Bunker|6" ]
 					},
 					{
@@ -816,7 +816,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Swamp|7" ]
 					},
 					{
@@ -877,7 +877,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Treehouse|9" ]
 					},
 					{
@@ -957,7 +957,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Mountain (Outside)|5" ]
 					},
 					{
@@ -1002,7 +1002,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Mountain (Inside)|4" ]
 					},
 					{
@@ -1039,7 +1039,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Caves|4" ]
 					},
 					{
@@ -1083,7 +1083,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Challenge|2" ]
 					},
 					{
@@ -1110,7 +1110,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Tunnels|2" ]
 					},
 					{
@@ -1141,7 +1141,7 @@
 				"sections": [
 					{
 						"name": "Eggs",
-						"visibility_rules": [ "$isNotExtremeEggs" ],
+						"visibility_rules": [ "$isNormalHardOrVeryHardEggs" ],
 						"access_rules": [ "^$eggGroupAccess|Boat|2" ]
 					},
 					{

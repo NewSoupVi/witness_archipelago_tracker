@@ -211,8 +211,8 @@ function eggloc(number)
 	return tonumber(number) % EGG_STEP == 0
 end
 
-function isNotExtremeEggs()
-	return (1 - (Tracker:ProviderCountForCode("extremeEggs") + Tracker:ProviderCountForCode("eggsOff")) > 0)
+function isNormalHardOrVeryHardEggs()
+	return (Tracker:ProviderCountForCode("normalEggs") + Tracker:ProviderCountForCode("hardEggs") + Tracker:ProviderCountForCode("veryHardEggs") > 0)
 end
 
 function eggGroupAccess(region, total)
