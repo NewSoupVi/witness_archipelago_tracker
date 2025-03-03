@@ -12,7 +12,7 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
 EGG_TOTAL = 120
-EGG_STEP = 0
+EGG_STEP = 4
 RECEIVED_EGGS = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
@@ -406,8 +406,8 @@ function setReply(key, val, old)
 
 	elseif(key == "WitnessEasterEggStatus" .. Archipelago.PlayerNumber and val) then
 		for id, _ in pairs(val) do
-			local location = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
-			location.AvailableChestCount = location.AvailableChestCount - 1
+			local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+			eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
 		end
 		RECEIVED_EGGS = true
 
@@ -608,6 +608,8 @@ function onClear(slot_data)
 				disabledDict[id] = true
 				if id >= 974848 and id <= 974967 then
 					EGG_TOTAL = EGG_TOTAL - 1
+					local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+					eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
 				end
 			end
 		elseif k == "shuffle_dog" then

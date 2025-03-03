@@ -171,13 +171,13 @@ function eggs(number)
 		requiredCount = tonumber(number) * 6 / 4
 	elseif (Tracker:ProviderCountForCode("veryHardEggs") > 0) then
 		requiredCount = tonumber(number) * 5 / 4
-	else -- expertEggs
+	else -- extremeEggs
 		requiredCount = tonumber(number)
 	end
 
 	for key, val in pairs(EASTER_EGG_DATASTORAGE_IDS) do
 		local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
-		if (locationAccessibility == AccessibilityLevel.Normal or locationAccessibility == AccessibilityLevel.Cleared) then
+		if locationAccessibility == AccessibilityLevel.Normal then
 			count = count + 1
 			if count >= requiredCount then
 				return AccessibilityLevel.Normal
@@ -207,6 +207,38 @@ function eggloc(number)
 		return false
 	end
 	return tonumber(number) % EGG_STEP == 0
+end
+
+function isNotExtremeEggs()
+	return (1 - Tracker:ProviderCountForCode("extremeEggs") > 0)
+end
+
+function eggGroupAccess(region, total)
+	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+		return AccessibilityLevel.Cleared
+	end
+	local snipe = false
+	local inaccessible = false
+	for eggNumber = 1, total do
+		local accessibility = Tracker:FindObjectForCode("@" .. region .. " Area/Egg " .. eggNumber).AccessibilityLevel
+		if accessibility == AccessibilityLevel.Normal then
+			return AccessibilityLevel.Normal
+		end
+		if accessibility == AccessibilityLevel.SequenceBreak then
+			snipe = true
+		elseif accessibility == AccessibilityLevel.None then
+			inaccessible = true
+		end
+	end
+	if snipe == true then
+		return AccessibilityLevel.SequenceBreak
+	end
+	if inaccessible == true then
+		return AccessibilityLevel.None
+	end
+	local eggGroup = Tracker:FindObjectForCode("@" .. region .. " Area/Eggs")
+	eggGroup.AvailableChestCount = eggGroup.AvailableChestCount - 1
+	return AccessibilityLevel.Cleared
 end
 
 function dots(level)
