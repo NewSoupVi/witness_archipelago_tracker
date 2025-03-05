@@ -460,7 +460,8 @@
 				"access_rules": [
 					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
 					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
-					"showSnipes, [autoElevators], $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack"
+					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, @Places/swampBack",
+					"showSnipes, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, [@Places/overworld], @Places/swampBack"
 				]
 			},
 			{
