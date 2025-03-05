@@ -1222,6 +1222,11 @@
 						"map": "easterEggs",
 						"x": 30,
 						"y": 0
+					},
+					{
+						"map": "fullmap",
+						"x": 30,
+						"y": 0
 					}
 				]
 			},
@@ -1282,6 +1287,11 @@
 				"map_locations": [
 					{
 						"map": "easterEggs",
+						"x": 90,
+						"y": 0
+					},
+					{
+						"map": "fullmap",
 						"x": 90,
 						"y": 0
 					}
@@ -1346,6 +1356,11 @@
 						"map": "easterEggs",
 						"x": 150,
 						"y": 0
+					},
+					{
+						"map": "fullmap",
+						"x": 150,
+						"y": 0
 					}
 				]
 			},
@@ -1406,6 +1421,11 @@
 				"map_locations": [
 					{
 						"map": "easterEggs",
+						"x": 210,
+						"y": 0
+					},
+					{
+						"map": "fullmap",
 						"x": 210,
 						"y": 0
 					}
@@ -1470,6 +1490,11 @@
 						"map": "easterEggs",
 						"x": 270,
 						"y": 0
+					},
+					{
+						"map": "fullmap",
+						"x": 270,
+						"y": 0
 					}
 				]
 			},
@@ -1530,6 +1555,11 @@
 				"map_locations": [
 					{
 						"map": "easterEggs",
+						"x": 330,
+						"y": 0
+					},
+					{
+						"map": "fullmap",
 						"x": 330,
 						"y": 0
 					}
@@ -1594,6 +1624,11 @@
 						"map": "easterEggs",
 						"x": 390,
 						"y": 0
+					},
+					{
+						"map": "fullmap",
+						"x": 390,
+						"y": 0
 					}
 				]
 			},
@@ -1654,6 +1689,11 @@
 				"map_locations": [
 					{
 						"map": "easterEggs",
+						"x": 450,
+						"y": 0
+					},
+					{
+						"map": "fullmap",
 						"x": 450,
 						"y": 0
 					}
@@ -1718,6 +1758,11 @@
 						"map": "easterEggs",
 						"x": 510,
 						"y": 0
+					},
+					{
+						"map": "fullmap",
+						"x": 510,
+						"y": 0
 					}
 				]
 			},
@@ -1778,6 +1823,11 @@
 				"map_locations": [
 					{
 						"map": "easterEggs",
+						"x": 570,
+						"y": 0
+					},
+					{
+						"map": "fullmap",
 						"x": 570,
 						"y": 0
 					}
@@ -1842,6 +1892,11 @@
 						"map": "easterEggs",
 						"x": 630,
 						"y": 0
+					},
+					{
+						"map": "fullmap",
+						"x": 630,
+						"y": 0
 					}
 				]
 			},
@@ -1902,6 +1957,11 @@
 				"map_locations": [
 					{
 						"map": "easterEggs",
+						"x": 690,
+						"y": 0
+					},
+					{
+						"map": "fullmap",
 						"x": 690,
 						"y": 0
 					}
