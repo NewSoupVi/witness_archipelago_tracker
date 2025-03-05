@@ -1273,7 +1273,8 @@
 				"access_rules": [
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Exit (Door), $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, @Quarry Stoneworks/Side Exit Panel, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"				]
+					"$isNotDoors, @Quarry Stoneworks/Side Exit Panel, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+				]
 			},
 			{
 				"name": "Stoneworks Lift EP",
@@ -1677,9 +1678,10 @@
 				"name": "Laser",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
-					"Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), @Places/overworld"
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, $canSolve|158703, @Places/overworld",
+					"showSnipes, $isNotDoors, [@Shadows Northern Set/Shadows Far], [@Shadows Southern Set/Shadows Near], $canSolve|158703, @Places/overworld",
+					"unrandomized, Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), $canSolve|158703, @Places/overworld",
+					"showSnipes, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], $canSolve|158703, @Places/shadowsLaser"
 				]
 			},
 			{

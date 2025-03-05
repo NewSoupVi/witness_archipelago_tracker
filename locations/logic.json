@@ -34,7 +34,7 @@
 				"name": "orchardInner",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Orchard/Apple Trees Outside Gate, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Outside Gate, [Orchard First Gate (Door)], @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard First Gate (Door)], @Places/overworld",
 					"Orchard First Gate (Door), @Places/overworld",
 					"Orchard Second Gate (Door), @Places/orchardHeart"
 				]
@@ -43,7 +43,7 @@
 				"name": "orchardHeart",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Orchard/Apple Trees Inside Gate, @Places/orchardInner",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Inside Gate, [Orchard Second Gate (Door)], @Places/orchardInner",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Second Gate (Door)], @Places/orchardInner, @Places/overworld",
 					"Orchard Second Gate (Door), @Places/orchardInner"
 				]
 			},
@@ -219,8 +219,9 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Places/overworld",
+					"$isNotDoors, unrandomized, @Shadows Southern Set/Shadows Near, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Left (Door)], @Places/overworld",
 					"Shadows Laser Entry Left (Door), @Places/overworld",
 					"Shadows Laser Entry Right (Door), @Places/overworld"
 				]
@@ -241,7 +242,7 @@
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel, @Places/overworld",
 					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut (Door)], @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut (Door)], @Places/maze2",
 					"Keep Hedge Maze 2 Exit (Door), @Places/maze2",
 					"Keep Hedge Maze 3 Shortcut (Door), @Places/overworld",
 					"Keep Hedge Maze 3 Exit (Door), @Places/maze4"
@@ -252,7 +253,7 @@
 				"access_rules": [
 					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel, @Places/overworld",
 					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/keepTower",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut (Door)], @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut (Door)], @Places/maze3",
 					"Keep Hedge Maze 3 Exit (Door), @Places/maze3",
 					"Keep Hedge Maze 4 Shortcut (Door), @Places/overworld",
 					"Keep Hedge Maze 4 Exit (Door), @Places/keepTower"
@@ -288,7 +289,7 @@
 					"Keep Pressure Plates 4 Exit (Door), @Places/plates4",
 					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/maze4",
 					"Keep Hedge Maze 4 Exit (Door), @Places/maze4",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut (Door)], @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut (Door)], @Places/maze4",
 					"showSnipes, $isNotDoors, [Keep Tower Shortcut (Door)], @Keep Tower/Shortcut Panel, @Places/overworld",
 					"Keep Tower Shortcut (Door), @Places/overworld"
 				]
@@ -663,7 +664,7 @@
 				"name": "bunkerAntechamber",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Color Bunker/Entry Panel, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Entry (Door)], @Color Bunker/Entry Panel, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Entry (Door)], $canSolve|158268, @Places/overworld",
 					"Bunker Entry (Door), @Places/overworld",
 					"Bunker Tinted Glass Door, @Places/bunkerTintedRoom"
 				]
@@ -672,7 +673,7 @@
 				"name": "bunkerTintedRoom",
 				"access_rules": [
 					"unrandomized, $isNotDoors, @Color Bunker/Tinted Room Entry Panel, @Places/bunkerAntechamber",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Tinted Glass Door], @Color Bunker/Tinted Room Entry Panel, @Places/bunkerAntechamber",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Tinted Glass Door], $canSolve|158269-158278, @Places/bunkerAntechamber",
 					"Bunker Tinted Glass Door, @Places/bunkerAntechamber",
 					"Bunker UV Room Entry (Door), @Places/bunkerUV"
 				]
@@ -835,7 +836,8 @@
 					"Caves Mountain Shortcut (Door), @Places/overworld",
 					"Caves Swamp Shortcut (Door), @Places/overworld",
 					"Caves, @Places/overworld",
-					"$isNotDoors, @Caves Entrance/Entry Panel, @Places/cavesAntechamber",
+					"$isNotDoors, @Caves Entrance/Entry Panel, @Places/cavesAntechamber, $isNotDisabled|4088",
+					"showSnipes, $isNotDoors, @Caves Entrance/Entry Panel, @Places/cavesAntechamber, disabledPanelsEnabled, [$isNotDisabled|4088]",
 					"Caves Entry (Door), @Places/cavesAntechamber",
 					"Caves Pillar Door, @Places/challengeAntechamber"
 				]
