@@ -219,8 +219,9 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
+					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Places/overworld",
+					"$isNotDoors, unrandomized, @Shadows Southern Set/Shadows Near, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Left (Door)], @Places/overworld",
 					"Shadows Laser Entry Left (Door), @Places/overworld",
 					"Shadows Laser Entry Right (Door), @Places/overworld"
 				]
