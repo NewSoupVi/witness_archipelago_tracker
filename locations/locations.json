@@ -1273,7 +1273,8 @@
 				"access_rules": [
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Exit (Door), $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, @Quarry Stoneworks/Side Exit Panel, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"				]
+					"$isNotDoors, @Quarry Stoneworks/Side Exit Panel, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+				]
 			},
 			{
 				"name": "Stoneworks Lift EP",
