@@ -1691,7 +1691,7 @@
 			},
 			{
 				"name": "Laser Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Places/shadowsLaser" ]
 			}
 		],
@@ -2060,7 +2060,7 @@
 			},
 			{
 				"name": "Laser Hedges Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Places/maze4" ]
 			},
 			{
@@ -2322,7 +2322,7 @@
 			},
 			{
 				"name": "Laser Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Monastery/Laser" ]
 			},
 			{
@@ -3654,7 +3654,7 @@
 			},
 			{
 				"name": "Laser Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Color Bunker/Laser" ]
 			},
 			{
