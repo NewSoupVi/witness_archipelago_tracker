@@ -1678,9 +1678,9 @@
 				"name": "Laser",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, $canSolve|158703, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, $canSolve|158703, @Places/overworld",
 					"showSnipes, $isNotDoors, [@Shadows Northern Set/Shadows Far], [@Shadows Southern Set/Shadows Near], $canSolve|158703, @Places/overworld",
-					"unrandomized, Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), $canSolve|158703, @Places/overworld",
+					"Unrandomized, Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), $canSolve|158703, @Places/overworld",
 					"showSnipes, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], $canSolve|158703, @Places/shadowsLaser"
 				]
 			},
@@ -2076,7 +2076,7 @@
 				"name": "Laser Activation",
 				"visibility_rules": [ "$isNotLaserShuffle" ],
 				"access_rules": [
-					"@Keep Tower/Laser Hedges, Unrandomized",
+					"Unrandomized, @Keep Tower/Laser Hedges",
 					"@Keep Tower/Laser Pressure Plates"
 				]
 			},
@@ -3214,8 +3214,8 @@
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $unrandomizedDisabled, $canSolve|158259, @Places/overworld",
-					"$isNotPanelsOnly, Unrandomized, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
+					"$unrandomizedDisabled, $isNotPanelsOnly, $canSolve|158259, @Places/overworld",
+					"Unrandomized, $isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
 					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
 				]
 			}
