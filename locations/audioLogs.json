@@ -791,5 +791,62 @@
 				"y": 1213
 			}
 		]
+	},
+	{
+		"name": "Easter Egg Logs",
+		"sections": [
+			{
+				"name": "1",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "2",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "3",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "4",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "5",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "6",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "7",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "8",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "9",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "10",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "11",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "12",
+				"visibility_rules": [ "never" ]
+			},
+			{
+				"name": "13",
+				"visibility_rules": [ "never" ]
+			}
+		]
 	}
 ]

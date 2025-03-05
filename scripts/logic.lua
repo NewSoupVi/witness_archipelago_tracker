@@ -91,7 +91,7 @@ function showPartialSidesOrSolvableSide(side)
 			return eval
 		end
 	end
-	return eval	
+	return eval
 end
 
 function isDisabled(id)
@@ -256,7 +256,6 @@ function symmetry(level)
 end
 
 function pp2()
-	
 	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
 	(
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit (Door)") == 1 and
@@ -271,7 +270,6 @@ function pp2()
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Exit (Door)") == 1 and
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Shortcut (Door)") == 1 or
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit (Door)") == 1))))))))))))
-
 end
 
 symbolCheck = {

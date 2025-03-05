@@ -731,21 +731,21 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[211145] = {"@Caves Mountain Shortcut/Audio Log"},
 	[211159] = {"@Caves Stairwell/Audio Log"},
 	[211137] = {"@Challenge Region/Audio Log"},
-	[211146] = {"@Caves Upstairs/Audio Log"}
+	[211146] = {"@Caves Upstairs/Audio Log"},
 
-	-- [211120] = {"Easter Egg IDK"},
-	-- [211127] = {"Easter Egg IDK"},
-	-- [211117] = {"Easter Egg IDK"},
-	-- [211109] = {"Easter Egg IDK"},
-	-- [211118] = {"Easter Egg IDK"},
-	-- [211119] = {"Easter Egg IDK"},
-	-- [211111] = {"Easter Egg IDK"},
-	-- [211107] = {"Easter Egg IDK"},
-	-- [211108] = {"Easter Egg IDK"},
-	-- [246024] = {"Easter Egg IDK"},
-	-- [211183] = {"Easter Egg IDK"},
-	-- [210661] = {"Easter Egg IDK"},
-	-- [211110] = {"Easter Egg IDK"},
+	[211120] = {"@Easter Egg Logs/1"},
+	[211127] = {"@Easter Egg Logs/2"},
+	[211117] = {"@Easter Egg Logs/3"},
+	[211109] = {"@Easter Egg Logs/4"},
+	[211118] = {"@Easter Egg Logs/5"},
+	[211119] = {"@Easter Egg Logs/6"},
+	[211111] = {"@Easter Egg Logs/7"},
+	[211107] = {"@Easter Egg Logs/8"},
+	[211108] = {"@Easter Egg Logs/9"},
+	[246024] = {"@Easter Egg Logs/10"},
+	[211183] = {"@Easter Egg Logs/11"},
+	[210661] = {"@Easter Egg Logs/12"},
+	[211110] = {"@Easter Egg Logs/13"}
 }
 
 LASER_DATASTORAGE_IDS = {
