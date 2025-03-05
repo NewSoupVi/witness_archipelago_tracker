@@ -732,6 +732,20 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[211159] = {"@Caves Stairwell/Audio Log"},
 	[211137] = {"@Challenge Region/Audio Log"},
 	[211146] = {"@Caves Upstairs/Audio Log"}
+
+	-- [211120] = {"Easter Egg IDK"},
+	-- [211127] = {"Easter Egg IDK"},
+	-- [211117] = {"Easter Egg IDK"},
+	-- [211109] = {"Easter Egg IDK"},
+	-- [211118] = {"Easter Egg IDK"},
+	-- [211119] = {"Easter Egg IDK"},
+	-- [211111] = {"Easter Egg IDK"},
+	-- [211107] = {"Easter Egg IDK"},
+	-- [211108] = {"Easter Egg IDK"},
+	-- [246024] = {"Easter Egg IDK"},
+	-- [211183] = {"Easter Egg IDK"},
+	-- [210661] = {"Easter Egg IDK"},
+	-- [211110] = {"Easter Egg IDK"},
 }
 
 LASER_DATASTORAGE_IDS = {
@@ -891,6 +905,8 @@ EASTER_EGG_DATASTORAGE_IDS = {
 
 	[974966] = {"@Boat Area/Egg 1"},
 	[974967] = {"@Boat Area/Egg 2"}
+
+	-- [975103] = {"Secret"}
 }
 
 -- This isn't used for anything now :(

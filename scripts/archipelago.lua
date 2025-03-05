@@ -406,8 +406,10 @@ function setReply(key, val, old)
 
 	elseif(key == "WitnessEasterEggStatus" .. Archipelago.PlayerNumber and val) then
 		for id, _ in pairs(val) do
-			local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
-			eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
+			if tonumber(id) ~= 975103 then
+				local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+				eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
+			end
 		end
 		RECEIVED_EGGS = true
 
