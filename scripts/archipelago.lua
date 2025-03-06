@@ -12,7 +12,7 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
 EGG_TOTAL = 120
-EGG_STEP = 0
+EGG_STEP = 4
 RECEIVED_EGGS = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
@@ -406,8 +406,10 @@ function setReply(key, val, old)
 
 	elseif(key == "WitnessEasterEggStatus" .. Archipelago.PlayerNumber and val) then
 		for id, _ in pairs(val) do
-			local location = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
-			location.AvailableChestCount = location.AvailableChestCount - 1
+			if tonumber(id) ~= 975103 then
+				local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+				eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
+			end
 		end
 		RECEIVED_EGGS = true
 
@@ -608,6 +610,8 @@ function onClear(slot_data)
 				disabledDict[id] = true
 				if id >= 974848 and id <= 974967 then
 					EGG_TOTAL = EGG_TOTAL - 1
+					local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+					eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
 				end
 			end
 		elseif k == "shuffle_dog" then
@@ -779,14 +783,10 @@ function onLocation(location_id, location_name)
 
 	if location_name == "Town Pet the Dog" then
 		local dog_1 = Tracker:FindObjectForCode("@Doggie/")
-		if dog_1 then
-			dog_1.AvailableChestCount = dog_1.AvailableChestCount - 1
-		end
+		dog_1.AvailableChestCount = dog_1.AvailableChestCount - 1
 
 		local dog_2 = Tracker:FindObjectForCode("@Town/Pet the Dog")
-		if dog_2 then
-			dog_2.AvailableChestCount = dog_2.AvailableChestCount - 1
-		end
+		dog_2.AvailableChestCount = dog_2.AvailableChestCount - 1
 	end
 
 	if location_id > 159699 and location_id < 159756 then

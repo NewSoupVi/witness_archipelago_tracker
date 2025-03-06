@@ -276,7 +276,7 @@
 				"inherit_codes": false
 			},
 			{
-				"codes": "expertEggs",
+				"codes": "extremeEggs",
 				"inherit_codes": false
 			}
 		]
@@ -659,6 +659,13 @@
 		"name": "Automatic Town Maze Bridge",
 		"img": "images/autoTownMazeBridge.png",
 		"codes": "autoTownMazeBridge",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
+		"name": "Warps Enabled",
+		"img": "images/warpsEnabled.png",
+		"codes": "Warps",
 		"type": "toggle",
 		"loop": "true"
 	},

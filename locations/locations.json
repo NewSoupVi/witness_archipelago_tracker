@@ -1273,7 +1273,8 @@
 				"access_rules": [
 					"$isDisabled|1693",
 					"Quarry Stoneworks Side Exit (Door), $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, @Places/quarryStoneworks, $hasObeliskKey|Quarry",
-					"$isNotDoors, @Quarry Stoneworks/Side Exit Panel, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"				]
+					"$isNotDoors, @Quarry Stoneworks/Side Exit Panel, $canSolve|158124, $hasPanel|Quarry Stoneworks Ramp Controls (Panel), @Places/quarryStoneworksUpstairs, $hasObeliskKey|Quarry"
+				]
 			},
 			{
 				"name": "Stoneworks Lift EP",
@@ -1677,9 +1678,10 @@
 				"name": "Laser",
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], @Places/overworld",
-					"Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), @Places/overworld"
+					"Unrandomized, $isNotDoors, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, $canSolve|158703, @Places/overworld",
+					"showSnipes, $isNotDoors, [@Shadows Northern Set/Shadows Far], [@Shadows Southern Set/Shadows Near], $canSolve|158703, @Places/overworld",
+					"Unrandomized, Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), $canSolve|158703, @Places/overworld",
+					"showSnipes, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], $canSolve|158703, @Places/shadowsLaser"
 				]
 			},
 			{
@@ -1689,7 +1691,7 @@
 			},
 			{
 				"name": "Laser Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Places/shadowsLaser" ]
 			}
 		],
@@ -1869,7 +1871,12 @@
 		"sections": [
 			{
 				"name": "Pressure Plates",
-				"access_rules": [ "$canSolve|158200, $pp2, @Places/plates2" ]
+				"access_rules": [
+					"$isNotExpert, $canSolve|158200, @Places/plates2",
+					"$isNotDoors, Expert, $canSolve|158198 158200 158202, @Places/plates2",
+					"Expert, $canSolve|158200, $expertPP2, @Places/plates2",
+					"showSnipes, Expert, $canSolve|158200, [$expertPP2], Warps, @Places/plates2"
+				]
 			},
 			{
 				"name": "Pressure Plates 2 EP",
@@ -2058,7 +2065,7 @@
 			},
 			{
 				"name": "Laser Hedges Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Places/maze4" ]
 			},
 			{
@@ -2074,7 +2081,7 @@
 				"name": "Laser Activation",
 				"visibility_rules": [ "$isNotLaserShuffle" ],
 				"access_rules": [
-					"@Keep Tower/Laser Hedges, Unrandomized",
+					"Unrandomized, @Keep Tower/Laser Hedges",
 					"@Keep Tower/Laser Pressure Plates"
 				]
 			},
@@ -2320,7 +2327,7 @@
 			},
 			{
 				"name": "Laser Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Monastery/Laser" ]
 			},
 			{
@@ -3212,8 +3219,8 @@
 				"name": "Popup Wall Control",
 				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
-					"$isNotPanelsOnly, $unrandomizedDisabled, $canSolve|158259, @Places/overworld",
-					"$isNotPanelsOnly, Unrandomized, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
+					"$unrandomizedDisabled, $isNotPanelsOnly, $canSolve|158259, @Places/overworld",
+					"Unrandomized, $isNotPanelsOnly, @Jungle Sound Waves Puzzles/Set 2, $canSolve|158259, @Places/overworld",
 					"Jungle Popup Wall (Panel), $canSolve|158259, @Places/overworld"
 				]
 			}
@@ -3652,7 +3659,7 @@
 			},
 			{
 				"name": "Laser Snipe",
-				"visibility_rules": [ "$unrandomizedDisabledButSolvable, $isNotLaserShuffle, showSnipes" ],
+				"visibility_rules": [ "showSnipes, $unrandomizedDisabledButSolvable, $isNotLaserShuffle" ],
 				"access_rules": [ "@Color Bunker/Laser" ]
 			},
 			{

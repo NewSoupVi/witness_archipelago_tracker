@@ -91,7 +91,7 @@ function showPartialSidesOrSolvableSide(side)
 			return eval
 		end
 	end
-	return eval	
+	return eval
 end
 
 function isDisabled(id)
@@ -171,20 +171,22 @@ function eggs(number)
 		requiredCount = tonumber(number) * 6 / 4
 	elseif (Tracker:ProviderCountForCode("veryHardEggs") > 0) then
 		requiredCount = tonumber(number) * 5 / 4
-	else -- expertEggs
+	else -- extremeEggs
 		requiredCount = tonumber(number)
 	end
 
 	for key, val in pairs(EASTER_EGG_DATASTORAGE_IDS) do
-		local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
-		if (locationAccessibility == AccessibilityLevel.Normal or locationAccessibility == AccessibilityLevel.Cleared) then
-			count = count + 1
-			if count >= requiredCount then
-				return AccessibilityLevel.Normal
+		if isNotDisabled(key) then
+			local locationAccessibility = Tracker:FindObjectForCode(val[1]).AccessibilityLevel
+			if (locationAccessibility == AccessibilityLevel.Normal or locationAccessibility == AccessibilityLevel.Cleared) then
+				count = count + 1
+				if count >= requiredCount then
+					return AccessibilityLevel.Normal
+				end
+				countWithSnipes = countWithSnipes + 1
+			elseif (showSnipes and locationAccessibility == AccessibilityLevel.SequenceBreak) then
+				countWithSnipes = countWithSnipes + 1
 			end
-			countWithSnipes = countWithSnipes + 1
-		elseif (showSnipes and locationAccessibility == AccessibilityLevel.SequenceBreak) then
-			countWithSnipes = countWithSnipes + 1
 		end
 	end
 	if count >= EGG_TOTAL then
@@ -209,6 +211,38 @@ function eggloc(number)
 	return tonumber(number) % EGG_STEP == 0
 end
 
+function isNormalHardOrVeryHardEggs()
+	return (Tracker:ProviderCountForCode("normalEggs") + Tracker:ProviderCountForCode("hardEggs") + Tracker:ProviderCountForCode("veryHardEggs") > 0)
+end
+
+function eggGroupAccess(region, total)
+	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+		return AccessibilityLevel.Cleared
+	end
+	local snipe = false
+	local inaccessible = false
+	for eggNumber = 1, total do
+		local accessibility = Tracker:FindObjectForCode("@" .. region .. " Area/Egg " .. eggNumber).AccessibilityLevel
+		if accessibility == AccessibilityLevel.Normal then
+			return AccessibilityLevel.Normal
+		end
+		if accessibility == AccessibilityLevel.SequenceBreak then
+			snipe = true
+		elseif accessibility == AccessibilityLevel.None then
+			inaccessible = true
+		end
+	end
+	if snipe == true then
+		return AccessibilityLevel.SequenceBreak
+	end
+	if inaccessible == true then
+		return AccessibilityLevel.None
+	end
+	local eggGroup = Tracker:FindObjectForCode("@" .. region .. " Area/Eggs")
+	eggGroup.AvailableChestCount = eggGroup.AvailableChestCount - 1
+	return AccessibilityLevel.Cleared
+end
+
 function Warp(location)
 	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then return true
 	else return false
@@ -227,10 +261,8 @@ function symmetry(level)
 	return Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage >= tonumber(level)
 end
 
-function pp2()
-	
-	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
-	(
+function expertPP2()
+	return (
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit (Door)") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit (Door)") == 1 and
 	(Tracker:ProviderCountForCode("Keep Shadows Shortcut (Door)") == 1 or
@@ -242,8 +274,8 @@ function pp2()
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Shortcut (Door)") == 1 or
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Exit (Door)") == 1 and
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Shortcut (Door)") == 1 or
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit (Door)") == 1))))))))))))
-
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit (Door)") == 1))))))))))
+	)
 end
 
 symbolCheck = {
