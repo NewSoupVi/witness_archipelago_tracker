@@ -293,6 +293,7 @@ SETTINGS_MAPPING = {
 	["puzzle_randomization"] = "puzzleRandomization",
 	["shuffle_boat"] = "Boat",
 	["elevators_come_to_you"] = "autoElevators",
+	["unlockable_warps"] = "Warps",
 	["disabled_entities"] = "disabledPanels",
 	["death_link"] = "deathLink",
 	["shuffle_dog"] = "shuffleDog",
