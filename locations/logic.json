@@ -58,7 +58,7 @@
 				"access_rules": [
 					"$Warp|Orchard Middle",
 					"Unrandomized, $isNotDoors, @Orchard/Apple Trees Outside Gate, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Outside Gate, [Orchard First Gate (Door)], @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard First Gate (Door)], @Places/overworld",
 					"Orchard First Gate (Door), @Places/overworld",
 					"Orchard Second Gate (Door), @Places/orchardHeart"
 				]
@@ -68,7 +68,7 @@
 				"access_rules": [
 					"$Warp|Orchard Heart",
 					"Unrandomized, $isNotDoors, @Orchard/Apple Trees Inside Gate, @Places/orchardInner",
-					"showSnipes, $unrandomizedDisabledButSolvable, @Orchard/Apple Trees Inside Gate, [Orchard Second Gate (Door)], @Places/orchardInner, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Second Gate (Door)], @Places/orchardInner, @Places/overworld",
 					"Orchard Second Gate (Door), @Places/orchardInner"
 				]
 			},
@@ -167,8 +167,8 @@
 			{
 				"name": "quarry",
 				"access_rules": [
-					"Unrandomized, $Warp|Quarry",
-					"$isNotDoors, @Shadows First Set/Entry Timer Panel, @Places/shadowsFirstSet",
+					"$Warp|Quarry",
+					"Unrandomized, $isNotDoors, @Shadows First Set/Entry Timer Panel, @Places/shadowsFirstSet",
 					"showSnipes, Unrandomized, $isNotDoors, [@Shadows First Set/Entry Timer Panel], @Places/shadowsFirstSet",
 					"Unrandomized, Shadows Timed Door, @Places/shadowsFirstSet",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Quarry Barrier (Door)], @Places/shadowsFirstSet",
@@ -247,8 +247,8 @@
 			{
 				"name": "shadowsFirstSet",
 				"access_rules": [
-					"Unrandomized, $Warp|Shadows First Set",
-					"$isNotDoors, @Shadows First Set/Entry Timer Panel, @Places/overworld",
+					"$Warp|Shadows First Set",
+					"Unrandomized, $isNotDoors, @Shadows First Set/Entry Timer Panel, @Places/overworld",
 					"showSnipes, Unrandomized, $isNotDoors, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"Shadows Timed Door, @Places/overworld",
@@ -259,8 +259,8 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"Unrandomized, $Warp|Shadows Laser",
-					"$isNotDoors, @Shadows Northern Set/Shadows Far, @Places/overworld",
+					"$Warp|Shadows Laser",
+					"Unrandomized, $isNotDoors, @Shadows Northern Set/Shadows Far, @Places/overworld",
 					"Unrandomized, $isNotDoors, @Shadows Southern Set/Shadows Near, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Left (Door)], @Places/overworld",
 					"Shadows Laser Entry Left (Door), @Places/overworld",
@@ -270,8 +270,8 @@
 			{
 				"name": "maze2",
 				"access_rules": [
-					"Unrandomized, $Warp|Keep Maze 2",
-					"$isNotDoors, @Hedge Maze 1/Exit Panel, @Places/overworld",
+					"$Warp|Keep Maze 2",
+					"Unrandomized, $isNotDoors, @Hedge Maze 1/Exit Panel, @Places/overworld",
 					"Unrandomized, $isNotDoors, @Hedge Maze 2/Exit Panel, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut (Door)], @Places/overworld",
 					"Keep Hedge Maze 1 Exit (Door), @Places/overworld",
@@ -282,8 +282,8 @@
 			{
 				"name": "maze3",
 				"access_rules": [
-					"Unrandomized, $Warp|Keep Maze 3",
-					"$isNotDoors, @Hedge Maze 2/Exit Panel, @Places/overworld",
+					"$Warp|Keep Maze 3",
+					"Unrandomized, $isNotDoors, @Hedge Maze 2/Exit Panel, @Places/overworld",
 					"Unrandomized, $isNotDoors, @Hedge Maze 3/Exit Panel, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut (Door)], @Places/maze2",
 					"Keep Hedge Maze 2 Exit (Door), @Places/maze2",
@@ -294,8 +294,8 @@
 			{
 				"name": "maze4",
 				"access_rules": [
-					"Unrandomized, $Warp|Keep Maze 4",
-					"$isNotDoors, @Hedge Maze 3/Exit Panel, @Places/overworld",
+					"$Warp|Keep Maze 4",
+					"Unrandomized, $isNotDoors, @Hedge Maze 3/Exit Panel, @Places/overworld",
 					"Unrandomized, $isNotDoors, @Hedge Maze 4/Exit Panel, @Places/keepTower",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut (Door)], @Places/maze3",
 					"Keep Hedge Maze 3 Exit (Door), @Places/maze3",
@@ -791,10 +791,6 @@
 			{
 				"name": "bunkerElevatorControl",
 				"access_rules": [
-					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
-					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerBlueRoom",
 					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
 					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
