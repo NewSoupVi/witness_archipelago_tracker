@@ -630,6 +630,13 @@
 		"loop": "true"
 	},
 	{
+		"name": "Warps Enabled",
+		"img": "images/warpsEnabled.png",
+		"codes": "Warps",
+		"type": "toggle",
+		"loop": "true"
+	},
+	{
 		"name": "Show Snipes",
 		"img": "images/showSnipes.png",
 		"codes": "showSnipes",
