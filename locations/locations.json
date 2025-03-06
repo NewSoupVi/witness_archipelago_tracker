@@ -1874,7 +1874,7 @@
 				"access_rules": [
 					"$isNotExpert, $canSolve|158200, @Places/plates2",
 					"$isNotDoors, Expert, $canSolve|158198 158200 158202, @Places/plates2",
-					"Expert, $canSolve|158200, @Places/plates2, $expertPP2",
+					"Expert, $canSolve|158200, $expertPP2, @Places/plates2",
 					"showSnipes, Expert, $canSolve|158200, [$expertPP2], Warps, @Places/plates2"
 				]
 			},
