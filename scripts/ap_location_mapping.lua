@@ -611,7 +611,7 @@ AUDIO_LOG_DATASTORAGE_IDS = {
 	[211159] = {"@Caves Stairwell/Audio Log"},
 	[211137] = {"@Challenge Region/Audio Log"},
 	[211146] = {"@Caves Upstairs/Audio Log"},
-	
+
 	[211120] = {"@Easter Egg Logs/1"},
 	[211127] = {"@Easter Egg Logs/2"},
 	[211117] = {"@Easter Egg Logs/3"},

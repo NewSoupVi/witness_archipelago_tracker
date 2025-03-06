@@ -33,7 +33,7 @@
 			{
 				"name": "orchardInner",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Orchard/Apple Trees Outside Gate, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Orchard/Apple Trees Outside Gate, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard First Gate (Door)], @Places/overworld",
 					"Orchard First Gate (Door), @Places/overworld",
 					"Orchard Second Gate (Door), @Places/orchardHeart"
@@ -42,7 +42,7 @@
 			{
 				"name": "orchardHeart",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Orchard/Apple Trees Inside Gate, @Places/orchardInner",
+					"Unrandomized, $isNotDoors, @Orchard/Apple Trees Inside Gate, @Places/orchardInner",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Orchard Second Gate (Door)], @Places/orchardInner, @Places/overworld",
 					"Orchard Second Gate (Door), @Places/orchardInner"
 				]
@@ -134,9 +134,9 @@
 			{
 				"name": "quarry",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows First Set/Entry Timer Panel, @Places/shadowsFirstSet",
-					"showSnipes, $isNotDoors, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/shadowsFirstSet",
-					"unrandomized, Shadows Timed Door, @Places/shadowsFirstSet",
+					"Unrandomized, $isNotDoors, @Shadows First Set/Entry Timer Panel, @Places/shadowsFirstSet",
+					"showSnipes, Unrandomized, $isNotDoors, [@Shadows First Set/Entry Timer Panel], @Places/shadowsFirstSet",
+					"Unrandomized, Shadows Timed Door, @Places/shadowsFirstSet",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Quarry Barrier (Door)], @Places/shadowsFirstSet",
 					"Quarry Boathouse Dock (Door), @Places/ocean",
 					"showSnipes, $isNotDoors, [Quarry Boathouse Dock (Door)], @Places/overworld, @Places/ocean",
@@ -208,8 +208,8 @@
 			{
 				"name": "shadowsFirstSet",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows First Set/Entry Timer Panel, @Places/overworld",
-					"showSnipes, $isNotDoors, unrandomized, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
+					"Unrandomized, $isNotDoors, @Shadows First Set/Entry Timer Panel, @Places/overworld",
+					"showSnipes, Unrandomized, $isNotDoors, [@Shadows First Set/Entry Timer Panel], @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, @Places/overworld, [Shadows Timed Door]",
 					"Shadows Timed Door, @Places/overworld",
 					"Shadows Ledge Barrier (Door), @Places/overworld",
@@ -219,8 +219,8 @@
 			{
 				"name": "shadowsLaser",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Shadows Northern Set/Shadows Far, @Places/overworld",
-					"$isNotDoors, unrandomized, @Shadows Southern Set/Shadows Near, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Shadows Northern Set/Shadows Far, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Shadows Southern Set/Shadows Near, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Shadows Laser Entry Left (Door)], @Places/overworld",
 					"Shadows Laser Entry Left (Door), @Places/overworld",
 					"Shadows Laser Entry Right (Door), @Places/overworld"
@@ -229,8 +229,8 @@
 			{
 				"name": "maze2",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Hedge Maze 1/Exit Panel, @Places/overworld",
-					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Hedge Maze 1/Exit Panel, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Hedge Maze 2/Exit Panel, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 2 Shortcut (Door)], @Places/overworld",
 					"Keep Hedge Maze 1 Exit (Door), @Places/overworld",
 					"Keep Hedge Maze 2 Shortcut (Door), @Places/overworld",
@@ -240,8 +240,8 @@
 			{
 				"name": "maze3",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Hedge Maze 2/Exit Panel, @Places/overworld",
-					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Hedge Maze 2/Exit Panel, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Hedge Maze 3/Exit Panel, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 3 Shortcut (Door)], @Places/maze2",
 					"Keep Hedge Maze 2 Exit (Door), @Places/maze2",
 					"Keep Hedge Maze 3 Shortcut (Door), @Places/overworld",
@@ -251,8 +251,8 @@
 			{
 				"name": "maze4",
 				"access_rules": [
-					"$isNotDoors, unrandomized, @Hedge Maze 3/Exit Panel, @Places/overworld",
-					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/keepTower",
+					"Unrandomized, $isNotDoors, @Hedge Maze 3/Exit Panel, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Hedge Maze 4/Exit Panel, @Places/keepTower",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Hedge Maze 4 Shortcut (Door)], @Places/maze3",
 					"Keep Hedge Maze 3 Exit (Door), @Places/maze3",
 					"Keep Hedge Maze 4 Shortcut (Door), @Places/overworld",
@@ -287,7 +287,7 @@
 				"access_rules": [
 					"$isNotDoors, @Pressure Plates 4/Pressure Plates, @Places/plates4",
 					"Keep Pressure Plates 4 Exit (Door), @Places/plates4",
-					"$isNotDoors, unrandomized, @Hedge Maze 4/Exit Panel, @Places/maze4",
+					"Unrandomized, $isNotDoors, @Hedge Maze 4/Exit Panel, @Places/maze4",
 					"Keep Hedge Maze 4 Exit (Door), @Places/maze4",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Keep Tower Shortcut (Door)], @Places/maze4",
 					"showSnipes, $isNotDoors, [Keep Tower Shortcut (Door)], @Keep Tower/Shortcut Panel, @Places/overworld",
@@ -460,6 +460,7 @@
 				"access_rules": [
 					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
 					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
+					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, @Places/swampBack",
 					"showSnipes, [autoSwampLongBridge], $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack"
 				]
 			},
@@ -581,7 +582,7 @@
 					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townLaser",
 					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townLaser",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townLaser",
-					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
+					"Unrandomized, $isNotDoors, @Town Environmental Set/Tall Hexagonal, @Places/townLaser",
 					"Town Tower Fourth (Door), @Places/townLaser"
 				]
 			},
@@ -592,7 +593,7 @@
 					"$isNotDoors, $unrandomizedDisabled, @Tutorial Outpost/Discard, @Places/townTower3",
 					"$isNotDoors, $unrandomizedDisabled, @Theater/Discard, @Places/townTower3",
 					"showSnipes, $isNotDoors, $unrandomizedDisabledButSolvable, @Town Environmental Set/Tall Hexagonal, [@Outside Glass Factory/Rooftop Discard], @Places/townTower3",
-					"$isNotDoors, unrandomized, @Town Environmental Set/Tall Hexagonal, @Places/townTower3",
+					"Unrandomized, $isNotDoors, @Town Environmental Set/Tall Hexagonal, @Places/townTower3",
 					"Town Tower Fourth (Door), @Places/townTower3"
 				]
 			},
@@ -630,7 +631,7 @@
 			{
 				"name": "monastery",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Monastery/Entry Panel Left, @Monastery/Entry Panel Right, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Monastery/Entry Panel Left, @Monastery/Entry Panel Right, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Monastery Entry Inner (Door)], [Monastery Entry Outer (Door)], @Places/overworld",
 					"Monastery Entry Inner (Door), Monastery Entry Outer (Door), @Places/overworld"
 				]
@@ -638,7 +639,7 @@
 			{
 				"name": "monasteryShutters",
 				"access_rules": [
-					"unrandomized, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), @Places/monastery",
+					"Unrandomized, $canSolve|158213, $hasPanel|Monastery Shutters Control (Panel), @Places/monastery",
 					"showSnipes, $unrandomizedDisabledButSolvable, $canSolve|158213, [$hasPanel|Monastery Shutters Control (Panel)], @Places/monastery"
 				]
 			},
@@ -663,7 +664,7 @@
 			{
 				"name": "bunkerAntechamber",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Color Bunker/Entry Panel, @Places/overworld",
+					"Unrandomized, $isNotDoors, @Color Bunker/Entry Panel, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Entry (Door)], $canSolve|158268, @Places/overworld",
 					"Bunker Entry (Door), @Places/overworld",
 					"Bunker Tinted Glass Door, @Places/bunkerTintedRoom"
@@ -672,7 +673,7 @@
 			{
 				"name": "bunkerTintedRoom",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Color Bunker/Tinted Room Entry Panel, @Places/bunkerAntechamber",
+					"Unrandomized, $isNotDoors, @Color Bunker/Tinted Room Entry Panel, @Places/bunkerAntechamber",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Tinted Glass Door], $canSolve|158269-158278, @Places/bunkerAntechamber",
 					"Bunker Tinted Glass Door, @Places/bunkerAntechamber",
 					"Bunker UV Room Entry (Door), @Places/bunkerUV"
@@ -681,7 +682,7 @@
 			{
 				"name": "bunkerUV",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Color Bunker/Tinted Glass Puzzles, @Places/bunkerTintedRoom",
+					"Unrandomized, $isNotDoors, @Color Bunker/Tinted Glass Puzzles, @Places/bunkerTintedRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker UV Room Entry (Door)], @Color Bunker/Tinted Glass Puzzles, @Places/bunkerTintedRoom",
 					"Bunker UV Room Entry (Door), @Places/bunkerTintedRoom",
 					"Bunker Elevator Room Entry (Door), @Places/bunkerElevatorRoom"
@@ -690,7 +691,7 @@
 			{
 				"name": "bunkerElevatorRoom",
 				"access_rules": [
-					"unrandomized, $isNotDoors, @Color Bunker/Ultraviolet Room, @Places/bunkerUV",
+					"Unrandomized, $isNotDoors, @Color Bunker/Ultraviolet Room, @Places/bunkerUV",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Room Entry (Door)], @Color Bunker/Ultraviolet Room, @Places/bunkerUV",
 					"Bunker Elevator Room Entry (Door), @Places/bunkerUV",
 					"@Places/bunkerElevatorControl"
@@ -699,15 +700,15 @@
 			{
 				"name": "bunkerElevatorControl",
 				"access_rules": [
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
+					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
+					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoBunkerElevator, @Places/overworld",
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
+					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
+					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerBlueRoom",
-					"unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerLaser",
+					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerLaser",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerLaser"
 				]
 			},
