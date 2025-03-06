@@ -19,7 +19,7 @@
 					[ "epSetting", "epDiff", "obeliskKeys" ],
 					[],
 					[ "clearJunk", "partialSides", "showSnipes" ],
-					[ "deathLink", "", "disabledPanelsEnabled" ]
+					[ "deathLink", "Warps", "disabledPanelsEnabled" ]
 				]
 			}
 		]
