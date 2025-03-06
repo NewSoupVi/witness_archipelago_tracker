@@ -166,9 +166,8 @@ function symmetry(level)
 	return Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage >= tonumber(level)
 end
 
-function pp2()
-	return (isNotExpert() or (isNotDoors() and canSolve("158198 158200 158202 158204")) or
-	(
+function expertPP2()
+	return (
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit (Door)") == 1 and
 	Tracker:ProviderCountForCode("Keep Pressure Plates 3 Exit (Door)") == 1 and
 	(Tracker:ProviderCountForCode("Keep Shadows Shortcut (Door)") == 1 or
@@ -180,7 +179,8 @@ function pp2()
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 3 Shortcut (Door)") == 1 or
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Exit (Door)") == 1 and
 	(Tracker:ProviderCountForCode("Keep Hedge Maze 2 Shortcut (Door)") == 1 or
-	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit (Door)") == 1))))))))))))
+	(Tracker:ProviderCountForCode("Keep Hedge Maze 1 Exit (Door)") == 1))))))))))
+	)
 end
 
 symbolCheck = {
