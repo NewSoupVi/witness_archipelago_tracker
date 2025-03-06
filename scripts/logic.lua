@@ -244,9 +244,10 @@ function eggGroupAccess(region, total)
 end
 
 function Warp(location)
-	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then return true
-	else return false
+	if location == "First Hallway" or location == "First Hallway Room" or location == "Tutorial" then
+		return true
 	end
+	return false
 end
 
 function dots(level)
