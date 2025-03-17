@@ -1,6 +1,38 @@
 {
 	"versions": [
 		{
+			"package_version": "0.5.1.777",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.777/witness_archipelago_tracker.zip",
+			"sha256": "8EBC6957E00E2E0833D0311751B365AC97C47153541E1294096D668745187F73",
+			"changelog": [
+				"The Numbers Still Mean Nothing..."
+			]
+		},
+		{
+			"package_version": "0.5.1.65",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.65/witness_archipelago_tracker.zip",
+			"sha256": "B0695FA9074EAC17D42CAC6A53E186D041557AF84E74EB999D81E5D058313B38",
+			"changelog": [
+				"The Numbers Mean Nothing!"
+			]
+		},
+		{
+			"package_version": "0.5.1.60",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.60/witness_archipelago_tracker.zip",
+			"sha256": "8AC4E5E565311EF3548EB735ED84A8907ACE5B69FF7B849D54F75591942FF7C8",
+			"changelog": [
+				"Hotfix"
+			]
+		},
+		{
+			"package_version": "0.5.1.6",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.6/witness_archipelago_tracker.zip",
+			"sha256": "0C9EC60F60152F3EB044F5192ECCEC044D7DE66BF7C4694EAB3913DC6E2B878D",
+			"changelog": [
+				"Small Things. Probably Broke Stuff."
+			]
+		},
+		{
 			"package_version": "0.5.1.51",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.51/witness_archipelago_tracker.zip",
 			"sha256": "ADFAB3E6813032FEC09F98B3C62D744F4F54328F30477F0BF589D818CB95AEAD",
