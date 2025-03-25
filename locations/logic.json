@@ -119,8 +119,8 @@
 				"name": "quarryElevator",
 				"access_rules": [
 					"@Places/overworld, @Places/quarry",
-					"autoElevators, @Places/overworld",
-					"autoElevators, @Places/quarry",
+					"autoQuarryElevator, @Places/overworld",
+					"autoQuarryElevator, @Places/quarry",
 					"showSnipes, @Places/overworld, [@Places/quarry]"
 				]
 			},
@@ -457,10 +457,10 @@
 			{
 				"name": "swampLongBridgeControl",
 				"access_rules": [
-					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
-					"autoElevators, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
+					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld",
+					"autoSwampLongBridge, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack",
 					"$hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/overworld, @Places/swampBack",
-					"showSnipes, $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, [@Places/overworld], @Places/swampBack"
+					"showSnipes, [autoSwampLongBridge], $hasPanel|Swamp Long Bridge (Panel), $canSolve|158339, @Places/swampBack"
 				]
 			},
 			{
@@ -538,7 +538,7 @@
 				"access_rules": [
 					"$isNotDoors, @Town Red Rooftop/Maze Stair Control, @Places/overworld",
 					"Town Maze Stairs (Door), @Places/overworld",
-					"autoElevators, @Places/redRoof"
+					"autoTownMazeBridge, @Places/redRoof"
 				]
 			},
 			{
@@ -701,8 +701,8 @@
 				"access_rules": [
 					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerElevatorRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerElevatorRoom",
-					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoElevators, @Places/overworld",
-					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoElevators, @Places/overworld",
+					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, autoBunkerElevator, @Places/overworld",
+					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, autoBunkerElevator, @Places/overworld",
 					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerGreenRoom",
 					"showSnipes, $unrandomizedDisabledButSolvable, [Bunker Elevator Control (Panel)], $canSolve|158286, @Places/bunkerGreenRoom",
 					"Unrandomized, $hasPanel|Bunker Elevator Control (Panel), $canSolve|158286, @Places/bunkerBlueRoom",
@@ -736,7 +736,7 @@
 					"@Places/bunkerElevatorRoom, @Places/bunkerLaser",
 					"@Places/bunkerElevatorRoom, @Places/bunkerGreenRoom",
 					"@Places/bunkerElevatorRoom, @Places/bunkerBlueRoom",
-					"autoElevators, @Places/bunkerElevatorRoom, @Places/overworld"
+					"autoBunkerElevator, @Places/bunkerElevatorRoom, @Places/overworld"
 				]
 			},
 			{

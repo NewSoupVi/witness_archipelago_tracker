@@ -300,7 +300,8 @@ doors = {
 		"Swamp Sliding Bridge (Panel)",
 		"Swamp Rotating Bridge (Panel)",
 		"Swamp Long Bridge (Panel)",
-		"Swamp Maze Controls (Panel)"
+		"Swamp Maze Controls (Panel)",
+		"Swamp Laser Shortcut (Panel)"
 	},
 	["Mountain Panels"] = {
 		"Mountain Floor 1 Light Bridge (Panel)",
@@ -311,7 +312,9 @@ doors = {
 	["Caves Panels"] = {
 		"Caves Entry (Panel)",
 		"Challenge Entry (Panel)",
-		"Caves Elevator Controls (Panel)"
+		"Caves Elevator Controls (Panel)",
+		"Caves Mountain Shortcut (Panel)",
+		"Caves Swamp Shortcut (Panel)"
 	},
 	["Tunnels Panels"] = {
 		"Tunnels Entry (Panel)",
@@ -640,6 +643,18 @@ function onClear(slot_data)
 			end
 		elseif k == "shuffle_dog" then
 			obj.CurrentStage = value
+		elseif k == "elevators_come_to_you" then
+			for _, mover in ipairs(value) do
+				if mover == "Quarry Elevator" then
+					Tracker:FindObjectForCode("autoQuarryElevator").Active = true
+				elseif mover == "Swamp Long Bridge" then
+					Tracker:FindObjectForCode("autoSwampLongBridge").Active = true
+				elseif mover == "Bunker Elevator" then
+					Tracker:FindObjectForCode("autoBunkerElevator").Active = true
+				elseif mover == "Town Maze Bridge" then
+					Tracker:FindObjectForCode("autoTownMazeBridge").Active = true
+				end
+			end
 		else
 			obj.Active = value
 		end
