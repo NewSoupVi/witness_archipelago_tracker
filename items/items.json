@@ -2594,6 +2594,7 @@
 		"name": "Desert Laser",
 		"type": "toggle",
 		"loop": "true",
+		"img": "images/PuzzleSkip.png",
 		"codes": "Desert Laser"
 	},
 	{

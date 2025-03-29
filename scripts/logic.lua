@@ -214,7 +214,7 @@ function isNormalHardOrVeryHardEggs()
 end
 
 function eggGroupAccess(region, total)
-	if (Tracker:ProviderCountForCode("eggsOff") > 0) then
+	if not isNormalHardOrVeryHardEggs() then
 		return AccessibilityLevel.Cleared
 	end
 	local snipe = false
