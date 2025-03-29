@@ -17,7 +17,6 @@ ITEM_MAPPING = {
 	[158210] = {"ProgressiveSymmetry", "progressive"},
 	[158260] = {"ProgressiveStars", "progressive"},
 
-	[158510] = {"Skip", "consumable"},
 	[158650] = {"Brain", "toggle"},
 
 	[159100] = {"Glass Factory Entry (Panel)", "toggle"},

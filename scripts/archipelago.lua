@@ -361,6 +361,7 @@ function setReply(key, val, old)
 				location.AvailableChestCount = location.AvailableChestCount - 1
 			end
 		end
+		laserCounting()
 
 	elseif(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
 		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
@@ -430,7 +431,6 @@ function setReply(key, val, old)
 			end
 		end
 	end
-	laserCounting()
 end
 
 function onClear(slot_data)
@@ -810,10 +810,7 @@ function laserCounting()
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
-	if (lasers[2] > 0 or laserCount == 11) and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
-		laserCount = laserCount - 1
-	end
-	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
+	handleDesertLaser()
 end
 
 function showGoal()
@@ -822,17 +819,20 @@ function showGoal()
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = Tracker:FindObjectForCode("hiddenLong").AcquiredCount
 end
 
-function laser(num)
-	return (lasers[tonumber(num)] > 0)
-end
-
 function randomizationChanged()
 	ScriptHost:LoadScript(getLogicFile())
 end
 
-function lasersChanged()
+function handleDesertLaser()
+	desert_laser = Tracker:FindObjectForCode("Desert Laser")
 	laserCount = Tracker:FindObjectForCode("lasers").AcquiredCount
-	if (lasers[2] > 0 or laserCount == 11) and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+	if laserCount == 0 then
+		desert_laser.Active = false
+	end
+	if laserCount >= 11 then
+		desert_laser.Active = true
+	end
+	if desert_laser.Active and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
@@ -846,7 +846,7 @@ end
 
 function loc_checked(section)
 	local locID = section.FullID
-	if locID:sub(1, 5) == "Eggs/" and RECEIVED_EGGS then
+	if locID:sub(1, 5) == "Eggs/" and locID:sub(-5) ~= "/Eggs" and RECEIVED_EGGS then
 		local dummy_item = Tracker:FindObjectForCode("Dummy")
 		dummy_item.Active = not dummy_item.Active
 	end
@@ -866,8 +866,9 @@ Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
 
 ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
-ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
-ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
+ScriptHost:AddWatchForCode("LasersChanged", "lasers", handleDesertLaser)
+ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", handleDesertLaser)
+ScriptHost:AddWatchForCode("DesertLaserChanged", "Desert Laser", handleDesertLaser)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
 
 ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)
