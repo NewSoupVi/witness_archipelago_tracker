@@ -608,7 +608,7 @@ function onClear(slot_data)
 			disabledDict = {}
 			for num, id in pairs(value) do
 				disabledDict[id] = true
-				if id >= 974848 and id <= 974967 then
+				if id >= 974848 and id <= 974967 and Tracker:FindObjectForCode("eggHuntDifficulty").CurrentStage ~= 0 then
 					EGG_TOTAL = EGG_TOTAL - 1
 					local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
 					eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
