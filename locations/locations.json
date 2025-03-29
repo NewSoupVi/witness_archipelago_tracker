@@ -1228,7 +1228,7 @@
 				"access_rules": [
 					"$canSolve|158134-158141, @Places/quarryStoneworksUpstairs",
 					"showSnipes, $isNotExpert, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]",
-					"showSnipes, $isNotPanelHunt, Expert, $isNotDeathLink, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
+					"showSnipes, Expert, $isNotDeathLink, $canSolve|158134-158141, @Places/quarryStoneworks, [@Places/quarryStoneworksUpstairs]"
 				]
 			},
 			{
@@ -3763,15 +3763,15 @@
 				"name": "Intro Front",
 				"access_rules": [
 					"$canSolve|158288-158293, @Places/swampEntry",
-					"showSnipes, $isNotPanelHunt, $isNotExpert, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld",
-					"showSnipes, $isNotPanelHunt, Expert, $isNotDeathLink, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld"
+					"showSnipes, $isNotExpert, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld",
+					"showSnipes, Expert, $isNotDeathLink, $canSolve|158288-158293, [@Places/swampEntry], @Places/overworld"
 				]
 			},
 			{
 				"name": "Intro Back",
 				"access_rules": [
 					"$canSolve|158288-158301, @Places/swampEntry",
-					"showSnipes, $isNotPanelHunt, $deathAvoidableOrUnimportant, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
+					"showSnipes, $deathAvoidableOrUnimportant, $canSolve|158288-158301, [@Places/swampEntry], @Places/swampMaze"
 				]
 			}
 		],
@@ -3799,7 +3799,7 @@
 				"name": "Between Bridges Near Row",
 				"access_rules": [
 					"$canSolve|158303-158306, @Places/swampBroken, @Swamp Platform/Platform Set",
-					"showSnipes, $isNotPanelHunt, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform/Platform Set"
+					"showSnipes, $canSolve|158303-158306, [@Places/swampBroken], @Swamp Platform/Platform Set"
 				]
 			},
 			{
