@@ -608,7 +608,7 @@ function onClear(slot_data)
 			disabledDict = {}
 			for num, id in pairs(value) do
 				disabledDict[id] = true
-				if id >= 974848 and id <= 974967 then
+				if id >= 974848 and id <= 974967 and Tracker:FindObjectForCode("eggHuntDifficulty").CurrentStage ~= 0 then
 					EGG_TOTAL = EGG_TOTAL - 1
 					local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
 					eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
@@ -825,16 +825,25 @@ end
 
 function handleDesertLaser()
 	desert_laser = Tracker:FindObjectForCode("Desert Laser")
-	laserCount = Tracker:FindObjectForCode("lasers").AcquiredCount
+	lasers_object = Tracker:FindObjectForCode("lasers")
+	laserCount = lasers_object.AcquiredCount
+	has_desert_laser = lasers[2] == 1 or laserCount >= 11
+
 	if laserCount == 0 then
-		desert_laser.Active = false
+		if has_desert_laser or desert_laser.Active then
+			laserCount = 1
+			lasers_object.AcquiredCount = 1
+		else
+			desert_laser.Active = false
+		end
 	end
-	if laserCount >= 11 then
+	if has_desert_laser then
 		desert_laser.Active = true
 	end
 	if desert_laser.Active and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
+
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
 end
 
@@ -869,6 +878,7 @@ ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", random
 ScriptHost:AddWatchForCode("LasersChanged", "lasers", handleDesertLaser)
 ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", handleDesertLaser)
 ScriptHost:AddWatchForCode("DesertLaserChanged", "Desert Laser", handleDesertLaser)
+ScriptHost:AddWatchForCode("DoorsModeChanged", "doorsSetting", handleDesertLaser)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
 
 ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)

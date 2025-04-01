@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "0.6.0.0",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.6.0.0/witness_archipelago_tracker.zip",
+			"sha256": "1B496C504F0F41DD75280388AE67CFCF7B73D43541CEC87840E3C060F1143CDA",
+			"changelog": [
+				"April + Desert Laser"
+			]
+		},
+		{
 			"package_version": "0.5.1.777",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.5.1.777/witness_archipelago_tracker.zip",
 			"sha256": "8EBC6957E00E2E0833D0311751B365AC97C47153541E1294096D668745187F73",
