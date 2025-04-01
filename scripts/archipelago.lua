@@ -11,6 +11,9 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 disabledDict = {}
+EGG_TOTAL = 120
+EGG_STEP = 4
+RECEIVED_EGGS = false
 
 lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -336,35 +339,7 @@ function dump(o)
 end
 
 function setReply(key, val, old)
-	-- Remove eventually
-	if key:find("-") then
-		separatorIndex, _ = key:find("-")
-		locationID = tonumber(key:sub(separatorIndex + 1))
-	end
-
-	-- Remove eventually
-	if key:sub(1, 12) == "WitnessLaser" and val then
-		locationName = LASER_DATASTORAGE_IDS[locationID][1]
-		locationTable = LASER_DATASTORAGE_IDS[locationID][2]
-
-		lasers[locationTable[1]] = 1
-
-		local location = Tracker:FindObjectForCode(locationName)
-		location.AvailableChestCount = location.AvailableChestCount - 1
-		if locationTable[2] ~= nil then
-			if unrandomizedDisabled() and Tracker:FindObjectForCode("Discarded").Active == false then
-				local location = Tracker:FindObjectForCode(locationTable[2])
-				location.AvailableChestCount = location.AvailableChestCount - 1
-				local location = Tracker:FindObjectForCode(locationTable[3])
-				location.AvailableChestCount = location.AvailableChestCount - 1
-			end
-		end
-		if locationTable[4] ~= nil then
-			local location = Tracker:FindObjectForCode(locationTable[4])
-			location.AvailableChestCount = location.AvailableChestCount - 1
-		end
-
-	elseif(key == "WitnessActivatedLasers" .. Archipelago.PlayerNumber and val) then
+	if(key == "WitnessActivatedLasers" .. Archipelago.PlayerNumber and val) then
 		for laserID, _ in pairs(val) do
 			locationName = LASER_DATASTORAGE_IDS[tonumber(laserID)][1]
 			locationTable = LASER_DATASTORAGE_IDS[tonumber(laserID)][2]
@@ -386,25 +361,16 @@ function setReply(key, val, old)
 				location.AvailableChestCount = location.AvailableChestCount - 1
 			end
 		end
+		laserCounting()
 
 	elseif(key == "WitnessSetting" .. Archipelago.PlayerNumber .. "-Disabled" and val) then
 		Tracker:FindObjectForCode("disabledPanelsEnabled").Active = (val ~= "Prevent Solve")
-
-	-- Remove eventually
-	elseif(key:sub(1, 15) == "WitnessAudioLog" and val) then
-		local location = Tracker:FindObjectForCode(AUDIO_LOG_DATASTORAGE_IDS[locationID][1])
-		location.AvailableChestCount = location.AvailableChestCount - 1
 
 	elseif(key == "WitnessActivatedAudioLogs" .. Archipelago.PlayerNumber and val) then
 		for logID, _ in pairs(val) do
 			local location = Tracker:FindObjectForCode(AUDIO_LOG_DATASTORAGE_IDS[tonumber(logID)][1])
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
-
-	-- Remove eventually
-	elseif(key:sub(1, 9) == "WitnessEP" and val) then
-		local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[locationID][1])
-		location.AvailableChestCount = location.AvailableChestCount - 1
 
 	elseif(key == "WitnessSolvedEPs" .. Archipelago.PlayerNumber and val) then
 		for EPID, _ in pairs(val) do
@@ -439,6 +405,18 @@ function setReply(key, val, old)
 			Tracker:FindObjectForCode("panelHuntCount").AcquiredCount = count
 		end
 
+	elseif(key == "WitnessEasterEggStatus" .. Archipelago.PlayerNumber and val) then
+		for id, _ in pairs(val) do
+			if tonumber(id) ~= 975103 then
+				local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+				eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
+			end
+		end
+		RECEIVED_EGGS = true
+
+		local dummy_item = Tracker:FindObjectForCode("Dummy")
+		dummy_item.Active = not dummy_item.Active
+
 	elseif(key == "WitnessDeadChecks" .. Archipelago.PlayerNumber and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
@@ -453,25 +431,14 @@ function setReply(key, val, old)
 			end
 		end
 	end
-	laserCounting()
 end
 
 function onClear(slot_data)
 	Tracker.BulkUpdate = true
 
+	EGG_TOTAL = 120
+	RECEIVED_EGGS = false
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
-
-	-- Remove eventually
-	for LaserID, _ in pairs(LASER_DATASTORAGE_IDS) do
-		Archipelago:Get({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
-		Archipelago:SetNotify({"WitnessLaser" .. Archipelago.PlayerNumber .. "-" .. LaserID})
-	end
-
-	-- Remove eventually
-	for AudioLogID, _ in pairs(AUDIO_LOG_DATASTORAGE_IDS) do
-		Archipelago:Get({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
-		Archipelago:SetNotify({"WitnessAudioLog" .. Archipelago.PlayerNumber .. "-" .. AudioLogID})
-	end
 
 	Archipelago:Get({"WitnessActivatedLasers" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessActivatedLasers" .. Archipelago.PlayerNumber})
@@ -497,15 +464,8 @@ function onClear(slot_data)
 	Archipelago:Get({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 	Archipelago:SetNotify({"WitnessDeadChecks" .. Archipelago.PlayerNumber})
 
-	-- Remove eventually
-	for epId, _ in pairs(EP_DATASTORAGE_IDS) do
-		local datastorageString = string.format("WitnessEP%d-%d", Archipelago.PlayerNumber, epId)
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("onClear: setting up tracking for EP: " .. datastorageString))
-		end
-		Archipelago:Get({datastorageString})
-		Archipelago:SetNotify({datastorageString})
-	end
+	Archipelago:Get({"WitnessEasterEggStatus" .. Archipelago.PlayerNumber})
+	Archipelago:SetNotify({"WitnessEasterEggStatus" .. Archipelago.PlayerNumber})
 
 	SLOT_DATA = slot_data
 	CUR_INDEX = -1
@@ -625,6 +585,14 @@ function onClear(slot_data)
 		elseif k == "panel_hunt_postgame" then
 			obj.Active = true
 			obj.CurrentStage = value
+		elseif k == "easter_egg_hunt" then
+			obj.Active = true
+			obj.CurrentStage = value
+			if value >= 3 then -- hard/very_hard/expert eggs
+				EGG_STEP = 4
+			elseif value >= 1 then -- easy/normal eggs
+				EGG_STEP = 3
+			end
 		elseif k == "panel_hunt_required_absolute" then
 			obj.AcquiredCount = value
 		elseif k == "puzzle_randomization" then
@@ -640,6 +608,11 @@ function onClear(slot_data)
 			disabledDict = {}
 			for num, id in pairs(value) do
 				disabledDict[id] = true
+				if id >= 974848 and id <= 974967 and Tracker:FindObjectForCode("eggHuntDifficulty").CurrentStage ~= 0 then
+					EGG_TOTAL = EGG_TOTAL - 1
+					local eggLoc = Tracker:FindObjectForCode(EASTER_EGG_DATASTORAGE_IDS[tonumber(id)][1])
+					eggLoc.AvailableChestCount = eggLoc.AvailableChestCount - 1
+				end
 			end
 		elseif k == "shuffle_dog" then
 			obj.CurrentStage = value
@@ -837,10 +810,7 @@ function laserCounting()
 	end
 
 	Tracker:FindObjectForCode("lasers").AcquiredCount = laserCount
-	if (lasers[2] > 0 or laserCount == 11) and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
-		laserCount = laserCount - 1
-	end
-	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
+	handleDesertLaser()
 end
 
 function showGoal()
@@ -849,19 +819,31 @@ function showGoal()
 	Tracker:FindObjectForCode("boxLong").AcquiredCount = Tracker:FindObjectForCode("hiddenLong").AcquiredCount
 end
 
-function laser(num)
-	return (lasers[tonumber(num)] > 0)
-end
-
 function randomizationChanged()
 	ScriptHost:LoadScript(getLogicFile())
 end
 
-function lasersChanged()
-	laserCount = Tracker:FindObjectForCode("lasers").AcquiredCount
-	if (lasers[2] > 0 or laserCount == 11) and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
+function handleDesertLaser()
+	desert_laser = Tracker:FindObjectForCode("Desert Laser")
+	lasers_object = Tracker:FindObjectForCode("lasers")
+	laserCount = lasers_object.AcquiredCount
+	has_desert_laser = lasers[2] == 1 or laserCount >= 11
+
+	if laserCount == 0 then
+		if has_desert_laser or desert_laser.Active then
+			laserCount = 1
+			lasers_object.AcquiredCount = 1
+		else
+			desert_laser.Active = false
+		end
+	end
+	if has_desert_laser then
+		desert_laser.Active = true
+	end
+	if desert_laser.Active and not hasPanel("Town Desert Laser Redirect Control (Panel)") then
 		laserCount = laserCount - 1
 	end
+
 	Tracker:FindObjectForCode("laserLatches").AcquiredCount = laserCount
 end
 
@@ -873,6 +855,10 @@ end
 
 function loc_checked(section)
 	local locID = section.FullID
+	if locID:sub(1, 5) == "Eggs/" and locID:sub(-5) ~= "/Eggs" and RECEIVED_EGGS then
+		local dummy_item = Tracker:FindObjectForCode("Dummy")
+		dummy_item.Active = not dummy_item.Active
+	end
 	if locID:sub(1, 6) ~= "Paths/" then
 		return
 	end
@@ -889,8 +875,10 @@ Archipelago:AddSetReplyHandler("setReply", setReply)
 Archipelago:AddRetrievedHandler("setReply", setReply)
 
 ScriptHost:AddWatchForCode("RandomizationChanged", "puzzleRandomization", randomizationChanged)
-ScriptHost:AddWatchForCode("LasersChanged", "lasers", lasersChanged)
-ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", lasersChanged)
+ScriptHost:AddWatchForCode("LasersChanged", "lasers", handleDesertLaser)
+ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect Control (Panel)", handleDesertLaser)
+ScriptHost:AddWatchForCode("DesertLaserChanged", "Desert Laser", handleDesertLaser)
+ScriptHost:AddWatchForCode("DoorsModeChanged", "doorsSetting", handleDesertLaser)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
 
 ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)

@@ -17,7 +17,6 @@ ITEM_MAPPING = {
 	[158210] = {"ProgressiveSymmetry", "progressive"},
 	[158260] = {"ProgressiveStars", "progressive"},
 
-	[158510] = {"Skip", "consumable"},
 	[158650] = {"Brain", "toggle"},
 
 	[159100] = {"Glass Factory Entry (Panel)", "toggle"},
@@ -297,4 +296,5 @@ SETTINGS_MAPPING = {
 	["disabled_entities"] = "disabledPanels",
 	["death_link"] = "deathLink",
 	["shuffle_dog"] = "shuffleDog",
+	["easter_egg_hunt"] = "eggHuntDifficulty",
 }

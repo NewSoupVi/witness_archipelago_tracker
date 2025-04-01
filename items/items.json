@@ -249,6 +249,39 @@
 		]
 	},
 	{
+		"name": "Easter Egg Hunt Difficulty",
+		"codes": "eggHuntDifficulty",
+		"type": "progressive",
+		"allow_disabled": false,
+		"initial_stage_idx": 0,
+		"stages": [
+			{
+				"codes": "eggsOff",
+				"inherit_codes": false
+			},
+			{
+				"codes": "easyEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "normalEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "hardEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "veryHardEggs",
+				"inherit_codes": false
+			},
+			{
+				"codes": "extremeEggs",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Death Link",
 		"codes": "deathLink",
 		"img": "images/DeathLink.png",
@@ -2561,6 +2594,7 @@
 		"name": "Desert Laser",
 		"type": "toggle",
 		"loop": "true",
+		"img": "images/PuzzleSkip.png",
 		"codes": "Desert Laser"
 	},
 	{
