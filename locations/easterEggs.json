@@ -354,7 +354,10 @@
 					{
 						"name": "Egg 3",
 						"visibility_rules": [ "easyEggs, $isNotDisabled|974886" ],
-						"access_rules": [ "$isNotDisabled|974886, @Places/shadowsFirstSet" ]
+						"access_rules": [
+							"$isNotDisabled|974886, @Places/shadowsFirstSet",
+							"$isNotDisabled|974886, showSnipes, [@Places/shadowsFirstSet], @Places/overworld"
+						]
 					},
 					{
 						"name": "Egg 4",
