@@ -3896,7 +3896,7 @@
 				]
 			},
 			{
-				"name": "Long Bridge Slide EP",
+				"name": "Long Bridge Side EP",
 				"visibility_rules": [ "eps, $isNotDisabled|14129" ],
 				"access_rules": [
 					"$isDisabled|14129",
@@ -3933,9 +3933,9 @@
 				"access_rules": [ "@Swamp Purple Sand/Purple Sand Bottom EP" ]
 			},
 			{
-				"name": "Long Bridge Slide EP (Mountainside Side 4)",
+				"name": "Long Bridge Side EP (Mountainside Side 4)",
 				"visibility_rules": [ "obelisks, $showPartialSidesOrSolvableSide|159733, $isNotDisabled|14129" ],
-				"access_rules": [ "@Swamp Purple Sand/Long Bridge Slide EP" ]
+				"access_rules": [ "@Swamp Purple Sand/Long Bridge Side EP" ]
 			}
 		],
 		"map_locations": [
@@ -6082,7 +6082,7 @@
 			{
 				"name": "Side 4",
 				"visibility_rules": [ "obelisks, $anyIsNotDisabled|5810 14030 210527 14129 15006 14995 15367" ],
-				"access_rules": [ "@Swamp Purple Underwater/Purple Underwater Right EP, @Swamp Rotating Bridge/Rotating Bridge CCW EP, @Swamp Near Boat/Swamp Boat EP, @Swamp Purple Sand/Long Bridge Slide EP, @Swamp Rotating Bridge/Rotating Bridge CW EP, @Mountainside Path/Mountainside Apparent River EP, @Swamp Purple Underwater/Purple Underwater Left EP" ]
+				"access_rules": [ "@Swamp Purple Underwater/Purple Underwater Right EP, @Swamp Rotating Bridge/Rotating Bridge CCW EP, @Swamp Near Boat/Swamp Boat EP, @Swamp Purple Sand/Long Bridge Side EP, @Swamp Rotating Bridge/Rotating Bridge CW EP, @Mountainside Path/Mountainside Apparent River EP, @Swamp Purple Underwater/Purple Underwater Left EP" ]
 			},
 			{
 				"name": "Side 5",
