@@ -950,7 +950,7 @@
 				"name": "Final Hexagonal",
 				"access_rules": [
 					"$canSolve|158111 158113 158114, $hasPanel|Desert Elevator Room Hexagonal Control (Panel), @Places/desertLaser",
-					"showSnipes, $deathAvoidableOrUnimportant, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser",
+					"showSnipes, $deathAvoidableOrUnimportant, [$hasPanel|Desert Elevator Room Hexagonal Control (Panel)], @Places/desertLaser"
 				]
 			},
 			{
