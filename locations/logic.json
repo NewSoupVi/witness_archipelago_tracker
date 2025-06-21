@@ -477,7 +477,8 @@
 					"@Places/swampSlidingBridgeControl",
 					"Swamp Between Bridges First Door, @Places/swampBroken",
 					"Swamp Platform Shortcut (Door), @Places/swampBack",
-					"Swamp Cyan Water Pump (Door), @Places/swampCyan"
+					"Swamp Cyan Water Pump (Door), @Places/swampCyan",
+					"showSnipes, [@Places/swampSlidingBridgeControl], Warps, @Victory!/Final Elevator: Victory!, wonkavator"
 				]
 			},
 			{

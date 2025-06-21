@@ -193,9 +193,6 @@ function eggs(number)
 			end
 		end
 	end
-	if count >= requiredCount then
-		return AccessibilityLevel.Normal
-	end
 	if countWithSnipes >= tonumber(number) then
 		return AccessibilityLevel.SequenceBreak
 	end

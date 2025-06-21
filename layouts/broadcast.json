@@ -13,7 +13,7 @@
 						"type": "itemgrid",
 						"item_margin": "6,1",
 						"h_alignment": "left",
-						"item_size": "50",
+						"item_size": 50,
 						"rows": [
 							[ "BWSquare", "ColoredSquares", "ProgressiveStars", "ProgressiveDots", "Arrows", "Desert Obelisk Key", "Monastery Obelisk Key", "Brain", "Goal" ],
 							[ "ProgressiveSymmetry", "SoundDots", "Triangles", "Boat", "", "Treehouse Obelisk Key", "Mountainside Obelisk Key", "lasers", "boxShort" ],

@@ -2,21 +2,18 @@
 	{
 		"name": "Black/White Squares",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/BWSquare.png",
 		"codes": "BWSquare"
 	},
 	{
 		"name": "Colored Squares",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/ColoredSquares.png",
 		"codes": "ColoredSquares"
 	},
 	{
 		"name": "Dots",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Dots.png",
 		"codes": "Dots"
 	},
@@ -80,35 +77,30 @@
 	{
 		"name": "Colored Dots",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/ColoredDots.png",
 		"codes": "ColoredDots"
 	},
 	{
 		"name": "SoundDots",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/SoundDots.png",
 		"codes": "SoundDots"
 	},
 	{
 		"name": "Shapers",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Shapers.png",
 		"codes": "Shapers"
 	},
 	{
 		"name": "Rotated Shapers",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/RotatedShapers.png",
 		"codes": "RotatedShapers"
 	},
 	{
 		"name": "Negative Shapers",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/NegativeShapers.png",
 		"disabled_img": "images/NegativeGreyed.png",
 		"codes": "NegativeShapers"
@@ -116,63 +108,54 @@
 	{
 		"name": "Stars",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Stars.png",
 		"codes": "Stars"
 	},
 	{
 		"name": "Stars & Same Colored Symbol",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/StarSameColor.png",
 		"codes": "StarSameColor"
 	},
 	{
 		"name": "Eraser",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Eraser.png",
 		"codes": "Eraser"
 	},
 	{
 		"name": "Triangles",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Triangles.png",
 		"codes": "Triangles"
 	},
 	{
 		"name": "Arrows",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Arrows.png",
 		"codes": "Arrows"
 	},
 	{
 		"name": "Symmetry",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Symmetry.png",
 		"codes": "Symmetry"
 	},
 	{
 		"name": "Boat",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Boat.png",
 		"codes": "Boat"
 	},
 	{
 		"name": "Functioning Brain",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Brain.png",
 		"codes": "Brain"
 	},
 	{
 		"name": "Dummy Item",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Dummy"
 	},
 	{
@@ -207,22 +190,19 @@
 	{
 		"name": "Shuffle Unrandomized",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/UnrandomizedText.png",
 		"codes": "Unrandomized"
 	},
 	{
 		"name": "Disabled Panels",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "disabledPanels"
 	},
 	{
 		"name": "Disabled Panels Enabled",
 		"codes": "disabledPanelsEnabled",
 		"img": "images/DisabledPanelsEnabled.png",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Shuffle Dog",
@@ -285,20 +265,17 @@
 		"name": "Death Link",
 		"codes": "deathLink",
 		"img": "images/DeathLink.png",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Shuffle Vaults",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/VaultsText.png",
 		"codes": "Vaults"
 	},
 	{
 		"name": "Shuffle Discarded",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/DiscardedText.png",
 		"codes": "Discarded"
 	},
@@ -329,8 +306,7 @@
 	{
 		"name": "Shuffle Postgame",
 		"codes": "postGame",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Panel Hunt Postgame",
@@ -366,8 +342,7 @@
 		"name": "Shuffle Symbols",
 		"img": "images/SymbolsText.png",
 		"codes": "Symbols",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Victory Condition",
@@ -569,8 +544,7 @@
 		"name": "Shuffle Lasers",
 		"img": "images/lasersText.png",
 		"codes": "shuffleLasers",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "EP Shuffle",
@@ -624,73 +598,63 @@
 		"name": "Obelisk Keys",
 		"img": "images/obeliskKeys.png",
 		"codes": "obeliskKeys",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Automatic Elevators",
 		"img": "images/autoElevators.png",
 		"codes": "autoElevators",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Automatic Quarry Elevator",
 		"img": "images/autoQuarryElevator.png",
 		"codes": "autoQuarryElevator",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Automatic Swamp Long Bridge",
 		"img": "images/autoSwampLongBridge.png",
 		"codes": "autoSwampLongBridge",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Automatic Bunker Elevator",
 		"img": "images/autoBunkerElevator.png",
 		"codes": "autoBunkerElevator",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Automatic Town Maze Bridge",
 		"img": "images/autoTownMazeBridge.png",
 		"codes": "autoTownMazeBridge",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Warps Enabled",
 		"img": "images/warpsEnabled.png",
 		"codes": "Warps",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Show Snipes",
 		"img": "images/showSnipes.png",
 		"codes": "showSnipes",
 		"type": "toggle",
-		"loop": "true",
-		"initial_active_state": "true"
+		"initial_active_state": true
 	},
 	{
 		"name": "Clear Junk",
 		"img": "images/clearJunk.png",
 		"codes": "clearJunk",
-		"type": "toggle",
-		"loop": "true"
+		"type": "toggle"
 	},
 	{
 		"name": "Show Partial Obelisk Sides",
 		"img": "images/partialSides.png",
 		"codes": "partialSides",
 		"type": "toggle",
-		"loop": "true",
-		"initial_active_state": "true"
+		"initial_active_state": true
 	},
 	{
 		"name": "Puzzle Skips",
@@ -743,7 +707,6 @@
 	{
 		"name": "Glass Factory Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Glass Factory Entry (Panel)"
@@ -751,7 +714,6 @@
 	{
 		"name": "Outside Tutorial Outpost Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Entry (Panel)"
@@ -759,7 +721,6 @@
 	{
 		"name": "Outside Tutorial Outpost Exit (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Exit (Panel)"
@@ -767,7 +728,6 @@
 	{
 		"name": "Symmetry Island Lower (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Symmetry Island Lower (Panel)"
@@ -775,7 +735,6 @@
 	{
 		"name": "Symmetry Island Upper (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Symmetry Island Upper (Panel)"
@@ -783,7 +742,6 @@
 	{
 		"name": "Desert Surface 3 Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Surface 3 Control (Panel)"
@@ -791,7 +749,6 @@
 	{
 		"name": "Desert Surface 8 Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Surface 8 Control (Panel)"
@@ -799,7 +756,6 @@
 	{
 		"name": "Desert Light Room Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Light Room Entry (Panel)"
@@ -807,7 +763,6 @@
 	{
 		"name": "Desert Light Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Light Control (Panel)"
@@ -815,7 +770,6 @@
 	{
 		"name": "Desert Flood Room Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Flood Room Entry (Panel)"
@@ -823,7 +777,6 @@
 	{
 		"name": "Desert Elevator Room Hexagonal Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Elevator Room Hexagonal Control (Panel)"
@@ -831,7 +784,6 @@
 	{
 		"name": "Desert Flood Controls (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Flood Controls (Panel)"
@@ -839,7 +791,6 @@
 	{
 		"name": "Quarry Entry 1 (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Entry 1 (Panel)"
@@ -847,7 +798,6 @@
 	{
 		"name": "Quarry Entry 2 (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Entry 2 (Panel)"
@@ -855,7 +805,6 @@
 	{
 		"name": "Quarry Elevator Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Elevator Control (Panel)"
@@ -863,7 +812,6 @@
 	{
 		"name": "Quarry Stoneworks Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Entry (Panel)"
@@ -871,7 +819,6 @@
 	{
 		"name": "Quarry Stoneworks Ramp Controls (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Ramp Controls (Panel)"
@@ -879,7 +826,6 @@
 	{
 		"name": "Quarry Stoneworks Lift Controls (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Lift Controls (Panel)"
@@ -887,7 +833,6 @@
 	{
 		"name": "Quarry Stoneworks Stairs (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Stairs (Panel)"
@@ -895,7 +840,6 @@
 	{
 		"name": "Quarry Boathouse Ramp Height Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Ramp Height Control (Panel)"
@@ -903,7 +847,6 @@
 	{
 		"name": "Quarry Boathouse Ramp Horizontal Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Ramp Horizontal Control (Panel)"
@@ -911,7 +854,6 @@
 	{
 		"name": "Quarry Boathouse Hook Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Hook Control (Panel)"
@@ -919,7 +861,6 @@
 	{
 		"name": "Shadows Door Timer (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Door Timer (Panel)"
@@ -927,7 +868,6 @@
 	{
 		"name": "Keep Hedge Maze 1 (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 1 (Panel)"
@@ -935,7 +875,6 @@
 	{
 		"name": "Keep Hedge Maze 2 (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 2 (Panel)"
@@ -943,7 +882,6 @@
 	{
 		"name": "Keep Hedge Maze 3 (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 3 (Panel)"
@@ -951,7 +889,6 @@
 	{
 		"name": "Keep Hedge Maze 4 (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 4 (Panel)"
@@ -959,7 +896,6 @@
 	{
 		"name": "Monastery Entry Left (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Entry Left (Panel)"
@@ -967,7 +903,6 @@
 	{
 		"name": "Monastery Entry Right (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Entry Right (Panel)"
@@ -975,7 +910,6 @@
 	{
 		"name": "Monastery Shutters Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Shutters Control (Panel)"
@@ -983,7 +917,6 @@
 	{
 		"name": "Town RGB House Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town RGB House Entry (Panel)"
@@ -991,7 +924,6 @@
 	{
 		"name": "Town RGB Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town RGB Control (Panel)"
@@ -999,7 +931,6 @@
 	{
 		"name": "Town Church Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Church Entry (Panel)"
@@ -1007,7 +938,6 @@
 	{
 		"name": "Town Maze Stairs (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Maze Stairs (Panel)"
@@ -1015,7 +945,6 @@
 	{
 		"name": "Town Maze Rooftop Bridge (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Maze Rooftop Bridge (Panel)"
@@ -1023,7 +952,6 @@
 	{
 		"name": "Windmill Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Windmill Entry (Panel)"
@@ -1031,7 +959,6 @@
 	{
 		"name": "Town Cargo Box Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Cargo Box Entry (Panel)"
@@ -1039,7 +966,6 @@
 	{
 		"name": "Town Desert Laser Redirect Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Desert Laser Redirect Control (Panel)"
@@ -1047,7 +973,6 @@
 	{
 		"name": "Windmill Turn Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Windmill Turn Control (Panel)"
@@ -1055,7 +980,6 @@
 	{
 		"name": "Theater Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Theater Entry (Panel)"
@@ -1063,7 +987,6 @@
 	{
 		"name": "Theater Video Input (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Theater Video Input (Panel)"
@@ -1071,7 +994,6 @@
 	{
 		"name": "Theater Exit (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Theater Exit (Panel)"
@@ -1079,7 +1001,6 @@
 	{
 		"name": "Treehouse First & Second Doors (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse First & Second Doors (Panel)"
@@ -1087,7 +1008,6 @@
 	{
 		"name": "Treehouse Third Door (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Third Door (Panel)"
@@ -1095,7 +1015,6 @@
 	{
 		"name": "Treehouse Laser House Door Timer (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Laser House Door Timer (Panel)"
@@ -1103,7 +1022,6 @@
 	{
 		"name": "Treehouse Drawbridge (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Drawbridge (Panel)"
@@ -1111,7 +1029,6 @@
 	{
 		"name": "Jungle Popup Wall (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Popup Wall (Panel)"
@@ -1119,7 +1036,6 @@
 	{
 		"name": "Jungle Monastery Garden Shortcut (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Monastery Garden Shortcut (Panel)"
@@ -1127,7 +1043,6 @@
 	{
 		"name": "Bunker Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Entry (Panel)"
@@ -1135,7 +1050,6 @@
 	{
 		"name": "Bunker Tinted Glass Door (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Tinted Glass Door (Panel)"
@@ -1143,7 +1057,6 @@
 	{
 		"name": "Bunker Drop-Down Door Controls (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Drop-Down Door Controls (Panel)"
@@ -1151,7 +1064,6 @@
 	{
 		"name": "Bunker Elevator Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Elevator Control (Panel)"
@@ -1159,7 +1071,6 @@
 	{
 		"name": "Swamp Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Entry (Panel)"
@@ -1167,7 +1078,6 @@
 	{
 		"name": "Swamp Platform Shortcut (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Platform Shortcut (Panel)"
@@ -1175,7 +1085,6 @@
 	{
 		"name": "Swamp Sliding Bridge (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Sliding Bridge (Panel)"
@@ -1183,7 +1092,6 @@
 	{
 		"name": "Swamp Rotating Bridge (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Rotating Bridge (Panel)"
@@ -1191,7 +1099,6 @@
 	{
 		"name": "Swamp Long Bridge (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Long Bridge (Panel)"
@@ -1199,7 +1106,6 @@
 	{
 		"name": "Swamp Maze Controls (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Maze Controls (Panel)"
@@ -1207,7 +1113,6 @@
 	{
 		"name": "Swamp Laser Shortcut (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Laser Shortcut (Panel)"
@@ -1215,7 +1120,6 @@
 	{
 		"name": "Mountain Floor 1 Light Bridge (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 1 Light Bridge (Panel)"
@@ -1223,7 +1127,6 @@
 	{
 		"name": "Mountain Floor 2 Light Bridge Near (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 2 Light Bridge Near (Panel)"
@@ -1231,7 +1134,6 @@
 	{
 		"name": "Mountain Floor 2 Light Bridge Far (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 2 Light Bridge Far (Panel)"
@@ -1239,7 +1141,6 @@
 	{
 		"name": "Mountain Floor 2 Elevator Control (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 2 Elevator Control (Panel)"
@@ -1247,7 +1148,6 @@
 	{
 		"name": "Caves Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Entry (Panel)"
@@ -1255,7 +1155,6 @@
 	{
 		"name": "Caves Elevator Controls (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Elevator Controls (Panel)"
@@ -1263,7 +1162,6 @@
 	{
 		"name": "Caves Mountain Shortcut (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Mountain Shortcut (Panel)"
@@ -1271,7 +1169,6 @@
 	{
 		"name": "Caves Swamp Shortcut (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Swamp Shortcut (Panel)"
@@ -1279,7 +1176,6 @@
 	{
 		"name": "Challenge Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Challenge Entry (Panel)"
@@ -1287,7 +1183,6 @@
 	{
 		"name": "Tunnels Entry (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Entry (Panel)"
@@ -1295,7 +1190,6 @@
 	{
 		"name": "Tunnels Town Shortcut (Panel)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Town Shortcut (Panel)"
@@ -1303,7 +1197,6 @@
 	{
 		"name": "Desert Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Control Panels"
@@ -1311,7 +1204,6 @@
 	{
 		"name": "Quarry Stoneworks Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Control Panels"
@@ -1319,7 +1211,6 @@
 	{
 		"name": "Quarry Boathouse Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Control Panels"
@@ -1327,7 +1218,6 @@
 	{
 		"name": "Town Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Control Panels"
@@ -1335,7 +1225,6 @@
 	{
 		"name": "Windmill & Theater Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Windmill & Theater Control Panels"
@@ -1343,7 +1232,6 @@
 	{
 		"name": "Bunker Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Control Panels"
@@ -1351,7 +1239,6 @@
 	{
 		"name": "Swamp Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Control Panels"
@@ -1359,7 +1246,6 @@
 	{
 		"name": "Mountain & Caves Control Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain & Caves Control Panels"
@@ -1367,7 +1253,6 @@
 	{
 		"name": "Symmetry Island Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Symmetry Island Panels"
@@ -1375,7 +1260,6 @@
 	{
 		"name": "Outside Tutorial Outpost Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Panels"
@@ -1383,7 +1267,6 @@
 	{
 		"name": "Desert Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Panels"
@@ -1391,7 +1274,6 @@
 	{
 		"name": "Quarry Outside Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Outside Panels"
@@ -1399,7 +1281,6 @@
 	{
 		"name": "Quarry Stoneworks Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Panels"
@@ -1407,7 +1288,6 @@
 	{
 		"name": "Quarry Boathouse Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Panels"
@@ -1415,7 +1295,6 @@
 	{
 		"name": "Keep Hedge Maze Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze Panels"
@@ -1423,7 +1302,6 @@
 	{
 		"name": "Monastery Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Panels"
@@ -1431,7 +1309,6 @@
 	{
 		"name": "Jungle Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Panels"
@@ -1439,7 +1316,6 @@
 	{
 		"name": "Town Church & RGB House Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Church & RGB House Panels"
@@ -1447,7 +1323,6 @@
 	{
 		"name": "Town Maze Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Maze Panels"
@@ -1455,7 +1330,6 @@
 	{
 		"name": "Town Dockside House Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Dockside House Panels"
@@ -1463,7 +1337,6 @@
 	{
 		"name": "Windmill & Theater Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Windmill & Theater Panels"
@@ -1471,7 +1344,6 @@
 	{
 		"name": "Treehouse Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Panels"
@@ -1479,7 +1351,6 @@
 	{
 		"name": "Bunker Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Panels"
@@ -1487,7 +1358,6 @@
 	{
 		"name": "Swamp Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Panels"
@@ -1495,7 +1365,6 @@
 	{
 		"name": "Mountain Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Panels"
@@ -1503,7 +1372,6 @@
 	{
 		"name": "Caves Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Panels"
@@ -1511,7 +1379,6 @@
 	{
 		"name": "Tunnels Panels",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Panels"
@@ -1519,7 +1386,6 @@
 	{
 		"name": "Boat",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Boat"
@@ -1528,7 +1394,6 @@
 	{
 		"name": "Outside Tutorial Outpost Path (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Path (Door)"
@@ -1536,7 +1401,6 @@
 	{
 		"name": "Outside Tutorial Outpost Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Entry (Door)"
@@ -1544,7 +1408,6 @@
 	{
 		"name": "Outside Tutorial Outpost Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Exit (Door)"
@@ -1552,7 +1415,6 @@
 	{
 		"name": "Glass Factory Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Glass Factory Entry (Door)"
@@ -1560,7 +1422,6 @@
 	{
 		"name": "Glass Factory Back Wall (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Glass Factory Back Wall (Door)"
@@ -1568,7 +1429,6 @@
 	{
 		"name": "Symmetry Island Lower (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Symmetry Island Lower (Door)"
@@ -1576,7 +1436,6 @@
 	{
 		"name": "Symmetry Island Upper (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Symmetry Island Upper (Door)"
@@ -1584,7 +1443,6 @@
 	{
 		"name": "Orchard First Gate (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Orchard First Gate (Door)"
@@ -1592,7 +1450,6 @@
 	{
 		"name": "Orchard Second Gate (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Orchard Second Gate (Door)"
@@ -1600,7 +1457,6 @@
 	{
 		"name": "Desert Light Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Light Room Entry (Door)"
@@ -1608,7 +1464,6 @@
 	{
 		"name": "Desert Pond Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Pond Room Entry (Door)"
@@ -1616,7 +1471,6 @@
 	{
 		"name": "Desert Flood Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Flood Room Entry (Door)"
@@ -1624,7 +1478,6 @@
 	{
 		"name": "Desert Elevator Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Elevator Room Entry (Door)"
@@ -1632,7 +1485,6 @@
 	{
 		"name": "Desert Elevator (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Elevator (Door)"
@@ -1640,7 +1492,6 @@
 	{
 		"name": "Quarry Entry 1 (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Entry 1 (Door)"
@@ -1648,7 +1499,6 @@
 	{
 		"name": "Quarry Entry 2 (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Entry 2 (Door)"
@@ -1656,7 +1506,6 @@
 	{
 		"name": "Quarry Stoneworks Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Entry (Door)"
@@ -1664,7 +1513,6 @@
 	{
 		"name": "Quarry Stoneworks Side Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Side Exit (Door)"
@@ -1672,7 +1520,6 @@
 	{
 		"name": "Quarry Stoneworks Roof Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Roof Exit (Door)"
@@ -1680,7 +1527,6 @@
 	{
 		"name": "Quarry Stoneworks Stairs (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Stairs (Door)"
@@ -1688,7 +1534,6 @@
 	{
 		"name": "Quarry Boathouse Dock (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Dock (Door)"
@@ -1696,7 +1541,6 @@
 	{
 		"name": "Quarry Boathouse First Barrier (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse First Barrier (Door)"
@@ -1704,7 +1548,6 @@
 	{
 		"name": "Quarry Boathouse Second Barrier (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Second Barrier (Door)"
@@ -1712,7 +1555,6 @@
 	{
 		"name": "Shadows Timed Door",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Timed Door"
@@ -1720,7 +1562,6 @@
 	{
 		"name": "Shadows Laser Entry Right (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Laser Entry Right (Door)"
@@ -1728,7 +1569,6 @@
 	{
 		"name": "Shadows Laser Entry Left (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Laser Entry Left (Door)"
@@ -1736,7 +1576,6 @@
 	{
 		"name": "Shadows Quarry Barrier (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Quarry Barrier (Door)"
@@ -1744,7 +1583,6 @@
 	{
 		"name": "Shadows Ledge Barrier (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Ledge Barrier (Door)"
@@ -1752,7 +1590,6 @@
 	{
 		"name": "Keep Hedge Maze 1 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 1 Exit (Door)"
@@ -1760,7 +1597,6 @@
 	{
 		"name": "Keep Pressure Plates 1 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Pressure Plates 1 Exit (Door)"
@@ -1768,7 +1604,6 @@
 	{
 		"name": "Keep Hedge Maze 2 Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 2 Shortcut (Door)"
@@ -1776,7 +1611,6 @@
 	{
 		"name": "Keep Hedge Maze 2 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 2 Exit (Door)"
@@ -1784,7 +1618,6 @@
 	{
 		"name": "Keep Hedge Maze 3 Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 3 Shortcut (Door)"
@@ -1792,7 +1625,6 @@
 	{
 		"name": "Keep Hedge Maze 3 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 3 Exit (Door)"
@@ -1800,7 +1632,6 @@
 	{
 		"name": "Keep Hedge Maze 4 Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 4 Shortcut (Door)"
@@ -1808,7 +1639,6 @@
 	{
 		"name": "Keep Hedge Maze 4 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze 4 Exit (Door)"
@@ -1816,7 +1646,6 @@
 	{
 		"name": "Keep Pressure Plates 2 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Pressure Plates 2 Exit (Door)"
@@ -1824,7 +1653,6 @@
 	{
 		"name": "Keep Pressure Plates 3 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Pressure Plates 3 Exit (Door)"
@@ -1832,7 +1660,6 @@
 	{
 		"name": "Keep Pressure Plates 4 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Pressure Plates 4 Exit (Door)"
@@ -1840,7 +1667,6 @@
 	{
 		"name": "Keep Shadows Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Shadows Shortcut (Door)"
@@ -1848,7 +1674,6 @@
 	{
 		"name": "Keep Tower Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Tower Shortcut (Door)"
@@ -1856,7 +1681,6 @@
 	{
 		"name": "Monastery Laser Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Laser Shortcut (Door)"
@@ -1864,7 +1688,6 @@
 	{
 		"name": "Monastery Entry Inner (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Entry Inner (Door)"
@@ -1872,7 +1695,6 @@
 	{
 		"name": "Monastery Entry Outer (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Entry Outer (Door)"
@@ -1880,7 +1702,6 @@
 	{
 		"name": "Monastery Garden Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Garden Entry (Door)"
@@ -1888,7 +1709,6 @@
 	{
 		"name": "Town Cargo Box Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Cargo Box Entry (Door)"
@@ -1896,7 +1716,6 @@
 	{
 		"name": "Town Wooden Roof Stairs (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Wooden Roof Stairs (Door)"
@@ -1904,7 +1723,6 @@
 	{
 		"name": "Town RGB House Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town RGB House Entry (Door)"
@@ -1912,7 +1730,6 @@
 	{
 		"name": "Town Church Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Church Entry (Door)"
@@ -1920,7 +1737,6 @@
 	{
 		"name": "Town Maze Stairs (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Maze Stairs (Door)"
@@ -1928,7 +1744,6 @@
 	{
 		"name": "Windmill Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Windmill Entry (Door)"
@@ -1936,7 +1751,6 @@
 	{
 		"name": "Town RGB House Stairs (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town RGB House Stairs (Door)"
@@ -1944,7 +1758,6 @@
 	{
 		"name": "Town Tower Second (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Tower Second (Door)"
@@ -1952,7 +1765,6 @@
 	{
 		"name": "Town Tower First (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Tower First (Door)"
@@ -1960,7 +1772,6 @@
 	{
 		"name": "Town Tower Fourth (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Tower Fourth (Door)"
@@ -1968,7 +1779,6 @@
 	{
 		"name": "Town Tower Third (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Tower Third (Door)"
@@ -1976,7 +1786,6 @@
 	{
 		"name": "Theater Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Theater Entry (Door)"
@@ -1984,7 +1793,6 @@
 	{
 		"name": "Theater Exit Left (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Theater Exit Left (Door)"
@@ -1992,7 +1800,6 @@
 	{
 		"name": "Theater Exit Right (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Theater Exit Right (Door)"
@@ -2000,7 +1807,6 @@
 	{
 		"name": "Jungle Laser Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Laser Shortcut (Door)"
@@ -2008,7 +1814,6 @@
 	{
 		"name": "Jungle Popup Wall (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Popup Wall (Door)"
@@ -2016,7 +1821,6 @@
 	{
 		"name": "Jungle Monastery Garden Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Monastery Garden Shortcut (Door)"
@@ -2024,7 +1828,6 @@
 	{
 		"name": "Bunker Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Entry (Door)"
@@ -2032,7 +1835,6 @@
 	{
 		"name": "Bunker Tinted Glass Door",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Tinted Glass Door"
@@ -2040,7 +1842,6 @@
 	{
 		"name": "Bunker UV Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker UV Room Entry (Door)"
@@ -2048,7 +1849,6 @@
 	{
 		"name": "Bunker Elevator Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Elevator Room Entry (Door)"
@@ -2056,7 +1856,6 @@
 	{
 		"name": "Swamp Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Entry (Door)"
@@ -2064,7 +1863,6 @@
 	{
 		"name": "Swamp Between Bridges First Door",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Between Bridges First Door"
@@ -2072,7 +1870,6 @@
 	{
 		"name": "Swamp Platform Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Platform Shortcut (Door)"
@@ -2080,7 +1877,6 @@
 	{
 		"name": "Swamp Cyan Water Pump (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Cyan Water Pump (Door)"
@@ -2088,7 +1884,6 @@
 	{
 		"name": "Swamp Between Bridges Second Door",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Between Bridges Second Door"
@@ -2096,7 +1891,6 @@
 	{
 		"name": "Swamp Red Water Pump (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Red Water Pump (Door)"
@@ -2104,7 +1898,6 @@
 	{
 		"name": "Swamp Red Underwater Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Red Underwater Exit (Door)"
@@ -2112,7 +1905,6 @@
 	{
 		"name": "Swamp Blue Water Pump (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Blue Water Pump (Door)"
@@ -2120,7 +1912,6 @@
 	{
 		"name": "Swamp Purple Water Pump (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Purple Water Pump (Door)"
@@ -2128,7 +1919,6 @@
 	{
 		"name": "Swamp Laser Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Laser Shortcut (Door)"
@@ -2136,7 +1926,6 @@
 	{
 		"name": "Treehouse First (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse First (Door)"
@@ -2144,7 +1933,6 @@
 	{
 		"name": "Treehouse Second (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Second (Door)"
@@ -2152,7 +1940,6 @@
 	{
 		"name": "Treehouse Third (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Third (Door)"
@@ -2160,7 +1947,6 @@
 	{
 		"name": "Treehouse Drawbridge (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Drawbridge (Door)"
@@ -2168,7 +1954,6 @@
 	{
 		"name": "Treehouse Laser House Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Laser House Entry (Door)"
@@ -2176,7 +1961,6 @@
 	{
 		"name": "Mountain Floor 1 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 1 Exit (Door)"
@@ -2184,7 +1968,6 @@
 	{
 		"name": "Mountain Floor 2 Staircase Near (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 2 Staircase Near (Door)"
@@ -2192,7 +1975,6 @@
 	{
 		"name": "Mountain Floor 2 Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 2 Exit (Door)"
@@ -2200,7 +1982,6 @@
 	{
 		"name": "Mountain Floor 2 Staircase Far (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 2 Staircase Far (Door)"
@@ -2208,7 +1989,6 @@
 	{
 		"name": "Mountain Bottom Floor Giant Puzzle Exit (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Bottom Floor Giant Puzzle Exit (Door)"
@@ -2216,7 +1996,6 @@
 	{
 		"name": "Mountain Bottom Floor Pillars Room Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Bottom Floor Pillars Room Entry (Door)"
@@ -2224,7 +2003,6 @@
 	{
 		"name": "Mountain Bottom Floor Rock (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Bottom Floor Rock (Door)"
@@ -2232,7 +2010,6 @@
 	{
 		"name": "Caves Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Entry (Door)"
@@ -2240,7 +2017,6 @@
 	{
 		"name": "Caves Pillar Door",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Pillar Door"
@@ -2248,7 +2024,6 @@
 	{
 		"name": "Caves Swamp Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Swamp Shortcut (Door)"
@@ -2256,7 +2031,6 @@
 	{
 		"name": "Caves Mountain Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Mountain Shortcut (Door)"
@@ -2264,7 +2038,6 @@
 	{
 		"name": "Challenge Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Challenge Entry (Door)"
@@ -2272,7 +2045,6 @@
 	{
 		"name": "Tunnels Entry (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Entry (Door)"
@@ -2280,7 +2052,6 @@
 	{
 		"name": "Tunnels Theater Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Theater Shortcut (Door)"
@@ -2288,7 +2059,6 @@
 	{
 		"name": "Tunnels Desert Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Desert Shortcut (Door)"
@@ -2296,7 +2066,6 @@
 	{
 		"name": "Tunnels Town Shortcut (Door)",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Town Shortcut (Door)"
@@ -2305,7 +2074,6 @@
 	{
 		"name": "Outside Tutorial Outpost Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Outside Tutorial Outpost Doors"
@@ -2313,7 +2081,6 @@
 	{
 		"name": "Glass Factory Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Glass Factory Doors"
@@ -2321,7 +2088,6 @@
 	{
 		"name": "Symmetry Island Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Symmetry Island Doors"
@@ -2329,7 +2095,6 @@
 	{
 		"name": "Orchard Gates",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Orchard Gates"
@@ -2337,7 +2102,6 @@
 	{
 		"name": "Desert Doors & Elevator",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Desert Doors & Elevator"
@@ -2345,7 +2109,6 @@
 	{
 		"name": "Quarry Entry Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Entry Doors"
@@ -2353,7 +2116,6 @@
 	{
 		"name": "Quarry Stoneworks Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Stoneworks Doors"
@@ -2361,7 +2123,6 @@
 	{
 		"name": "Quarry Boathouse Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Quarry Boathouse Doors"
@@ -2369,7 +2130,6 @@
 	{
 		"name": "Shadows Laser Room Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Laser Room Doors"
@@ -2377,7 +2137,6 @@
 	{
 		"name": "Shadows Lower Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Shadows Lower Doors"
@@ -2385,7 +2144,6 @@
 	{
 		"name": "Keep Hedge Maze Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Hedge Maze Doors"
@@ -2393,7 +2151,6 @@
 	{
 		"name": "Keep Pressure Plates Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Pressure Plates Doors"
@@ -2401,7 +2158,6 @@
 	{
 		"name": "Keep Shortcuts",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Keep Shortcuts"
@@ -2409,7 +2165,6 @@
 	{
 		"name": "Monastery Entry Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Entry Doors"
@@ -2417,7 +2172,6 @@
 	{
 		"name": "Monastery Shortcuts",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Monastery Shortcuts"
@@ -2425,7 +2179,6 @@
 	{
 		"name": "Town Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Doors"
@@ -2433,7 +2186,6 @@
 	{
 		"name": "Town Tower Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Town Tower Doors"
@@ -2441,7 +2193,6 @@
 	{
 		"name": "Windmill & Theater Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Windmill & Theater Doors"
@@ -2449,7 +2200,6 @@
 	{
 		"name": "Jungle Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Jungle Doors"
@@ -2457,7 +2207,6 @@
 	{
 		"name": "Bunker Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Bunker Doors"
@@ -2465,7 +2214,6 @@
 	{
 		"name": "Swamp Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Doors"
@@ -2473,7 +2221,6 @@
 	{
 		"name": "Swamp Shortcuts",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Shortcuts"
@@ -2481,7 +2228,6 @@
 	{
 		"name": "Swamp Water Pumps",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Swamp Water Pumps"
@@ -2489,7 +2235,6 @@
 	{
 		"name": "Treehouse Entry Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Entry Doors"
@@ -2497,7 +2242,6 @@
 	{
 		"name": "Treehouse Upper Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Treehouse Upper Doors"
@@ -2505,7 +2249,6 @@
 	{
 		"name": "Mountain Floor 1 & 2 Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Floor 1 & 2 Doors"
@@ -2513,7 +2256,6 @@
 	{
 		"name": "Mountain Bottom Floor Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Mountain Bottom Floor Doors"
@@ -2521,7 +2263,6 @@
 	{
 		"name": "Caves Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Doors"
@@ -2529,7 +2270,6 @@
 	{
 		"name": "Caves Shortcuts",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Caves Shortcuts"
@@ -2537,7 +2277,6 @@
 	{
 		"name": "Tunnels Doors",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/Door.png",
 		"disabled_img": "images/disabledDoor.png",
 		"codes": "Tunnels Doors"
@@ -2545,110 +2284,93 @@
 	{
 		"name": "Desert Obelisk Key",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/desertObeliskKey.png",
 		"codes": "Desert Obelisk Key"
 	},
 	{
 		"name": "Monastery Obelisk Key",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/monasteryObeliskKey.png",
 		"codes": "Monastery Obelisk Key"
 	},
 	{
 		"name": "Treehouse Obelisk Key",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/treehouseObeliskKey.png",
 		"codes": "Treehouse Obelisk Key"
 	},
 	{
 		"name": "Mountainside Obelisk Key",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/mountainsideObeliskKey.png",
 		"codes": "Mountainside Obelisk Key"
 	},
 	{
 		"name": "Quarry Obelisk Key",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/quarryObeliskKey.png",
 		"codes": "Quarry Obelisk Key"
 	},
 	{
 		"name": "Town Obelisk Key",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/townObeliskKey.png",
 		"codes": "Town Obelisk Key"
 	},
 	{
 		"name": "Symmetry Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Symmetry Laser"
 	},
 	{
 		"name": "Desert Laser",
 		"type": "toggle",
-		"loop": "true",
 		"img": "images/PuzzleSkip.png",
 		"codes": "Desert Laser"
 	},
 	{
 		"name": "Quarry Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Quarry Laser"
 	},
 	{
 		"name": "Shadows Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Shadows Laser"
 	},
 	{
 		"name": "Keep Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Keep Laser"
 	},
 	{
 		"name": "Monastery Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Monastery Laser"
 	},
 	{
 		"name": "Town Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Town Laser"
 	},
 	{
 		"name": "Jungle Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Jungle Laser"
 	},
 	{
 		"name": "Bunker Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Bunker Laser"
 	},
 	{
 		"name": "Swamp Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Swamp Laser"
 	},
 	{
 		"name": "Treehouse Laser",
 		"type": "toggle",
-		"loop": "true",
 		"codes": "Treehouse Laser"
 	}
 ]
