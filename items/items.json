@@ -447,7 +447,7 @@
 		"name": "Hidden Box Short Requirement",
 		"type": "consumable",
 		"img": "images/laser.png",
-		"max_quantity": 7,
+		"max_quantity": 11,
 		"increment": 1,
 		"decrement": 1,
 		"initial_quantity": 0,
