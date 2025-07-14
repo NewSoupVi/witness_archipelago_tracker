@@ -1679,7 +1679,6 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"Unrandomized, $isNotDoors, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, $canSolve|158703, @Places/overworld",
-					"showSnipes, $isNotDoors, [@Shadows Northern Set/Shadows Far], [@Shadows Southern Set/Shadows Near], $canSolve|158703, @Places/overworld",
 					"Unrandomized, Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), $canSolve|158703, @Places/overworld",
 					"showSnipes, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], $canSolve|158703, @Places/shadowsLaser"
 				]
