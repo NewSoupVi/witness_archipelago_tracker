@@ -509,7 +509,6 @@
 			},
 			{
 				"name": "Entry Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld",
 					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/glassFactory"
@@ -6184,3 +6183,4 @@
 		]
 	}
 ]
+
