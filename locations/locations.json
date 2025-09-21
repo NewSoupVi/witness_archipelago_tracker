@@ -509,7 +509,6 @@
 			},
 			{
 				"name": "Entry Panel",
-				"visibility_rules": [ "doorsDoor", "doorsMix" ],
 				"access_rules": [
 					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/overworld",
 					"$isNotPanelsOnlyOrHasPanel|Glass Factory Entry (Panel), $canSolve|158027, @Places/glassFactory"
@@ -1679,7 +1678,6 @@
 				"visibility_rules": [ "Unrandomized" ],
 				"access_rules": [
 					"Unrandomized, $isNotDoors, @Shadows Northern Set/Shadows Far, @Shadows Southern Set/Shadows Near, $canSolve|158703, @Places/overworld",
-					"showSnipes, $isNotDoors, [@Shadows Northern Set/Shadows Far], [@Shadows Southern Set/Shadows Near], $canSolve|158703, @Places/overworld",
 					"Unrandomized, Shadows Laser Entry Left (Door), Shadows Laser Entry Right (Door), $canSolve|158703, @Places/overworld",
 					"showSnipes, [Shadows Laser Entry Right (Door)], [Shadows Laser Entry Left (Door)], $canSolve|158703, @Places/shadowsLaser"
 				]
@@ -3030,7 +3028,7 @@
 					"@Theater/Tutorial Video, Tunnels Town Shortcut (Door), $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Theater Entry (Door), Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
 					"@Theater/Tutorial Video, Windmill Entry (Door), Tunnels Theater Shortcut (Door), $hasObeliskKey|Town",
-					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Pond Room Entry (Door), Desert Flood Room Entry (Door), Desert Elevator Room Entry (Door), Tunnels Desert Shortcut (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
+					"showSnipes, @Theater/Tutorial Video, Desert Light Room Entry (Door), Desert Pond Room Entry (Door), Desert Flood Room Entry (Door), Desert Elevator Room Entry (Door), Desert Elevator (Door), Tunnels Desert Shortcut (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Swamp Shortcut (Door), Caves Pillar Door, Challenge Entry (Door), Tunnels Entry (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Caves Mountain Shortcut (Door), Caves Pillar Door, Challenge Entry (Door), Tunnels Entry (Door), [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town",
 					"showSnipes, @Theater/Tutorial Video, Warps, @Places/tunnels, [Tunnels Town Shortcut (Door)], $hasObeliskKey|Town"
