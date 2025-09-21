@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "0.6.3.0",
+			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.6.3.0/witness_archipelago_tracker.zip",
+			"sha256": "0C1F65FCEB598A3AD465C6406EDC89EF1C096BF12E3CA4686B03EBE2EA940367",
+			"changelog": [
+				"Bugfixes"
+			]
+		},
+		{
 			"package_version": "0.6.1.0",
 			"download_url": "https://github.com/NewSoupVi/witness_archipelago_tracker/releases/download/v0.6.1.0/witness_archipelago_tracker.zip",
 			"sha256": "59B50429C233B9AA09A081A551B84DC757D0D4ABC6800AA46BBBA75D1845AF13",
