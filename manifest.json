@@ -1,7 +1,7 @@
 {
 	"name": "Witness",
 	"game_name": "The Witness Archipelago Randomizer",
-	"package_version": "0.6.1.0",
+	"package_version": "0.6.3.0",
 	"package_uid": "witness_ap_tracker_newsoupvi",
 	"author": "NewSoupVi, Beaker, Exempt-Medic",
 	"variants": {
@@ -21,3 +21,4 @@
 	"versions_url": "https://raw.githubusercontent.com/NewSoupVi/witness_archipelago_tracker/main/versions.json",
 	"min_poptracker_version": "0.30.2"
 }
+
