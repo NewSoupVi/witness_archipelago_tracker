@@ -420,10 +420,11 @@ function setReply(key, val, old)
 	elseif(key == "WitnessDeadChecks" .. Archipelago.PlayerNumber and val) then
 		if Tracker:FindObjectForCode("clearJunk").Active then
 			for k, _ in pairs(val) do
-				local location = Tracker:FindObjectForCode(LOCATION_MAPPING[tonumber(k)][1])
+                local old_id = NEW_IDS_TO_OLD_IDS[tonumber(k)]
+				local location = Tracker:FindObjectForCode(LOCATION_MAPPING[old_id][1])
 				location.AvailableChestCount = location.AvailableChestCount - 1
-				if tonumber(k) > 159699 and tonumber(k) < 159756 then
-					for _, l in pairs(OBELISK_MAPPING[tonumber(k)]) do
+				if old_id > 159699 and old_id < 159756 then
+					for _, l in pairs(OBELISK_MAPPING[old_id]) do
 						local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(l)][1])
 						location.AvailableChestCount = location.AvailableChestCount - 1
 					end
@@ -760,7 +761,8 @@ function onLocation(location_id, location_name)
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		print(string.format("called onLocation: %s, %s", location_id, location_name))
 	end
-	local v = LOCATION_MAPPING[location_id]
+    local old_id = NEW_IDS_TO_OLD_IDS[tonumber(location_id)]
+	local v = LOCATION_MAPPING[old_id]
 	if not v and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		print(string.format("onLocation: could not find location mapping for id %s", location_id))
 	end
@@ -789,8 +791,8 @@ function onLocation(location_id, location_name)
 		dog_2.AvailableChestCount = dog_2.AvailableChestCount - 1
 	end
 
-	if location_id > 159699 and location_id < 159756 then
-		for _, l in pairs(OBELISK_MAPPING[location_id]) do
+	if old_id > 159699 and old_id < 159756 then
+		for _, l in pairs(OBELISK_MAPPING[old_id]) do
 			local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(l)][1])
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
