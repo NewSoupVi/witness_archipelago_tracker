@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Paths",
-		"chest_opened_img": "images/door.png",
+		"chest_opened_img": "images/Door.png",
 		"chest_unopened_img": "images/disabledDoor.png",
 		"children": [
 			{
