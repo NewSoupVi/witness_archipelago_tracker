@@ -892,7 +892,7 @@ function symbolLogic(symbol)
 			Tracker:FindObjectForCode("NegativeShapers").Active = true
 		end
 
-	elseif symbol == "progressiveDiscardSymbols" then
+	elseif symbol == "progressiveDiscards" then
 		if not Tracker:FindObjectForCode("Triangles").Active then
 			Tracker:FindObjectForCode("Triangles").Active = true
 		else
