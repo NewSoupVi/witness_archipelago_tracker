@@ -12,67 +12,27 @@
 		"codes": "ColoredSquares"
 	},
 	{
+		"name": "Sparse Dots",
+		"type": "toggle",
+		"codes": "SparseDots"
+	},
+	{
 		"name": "Dots",
 		"type": "toggle",
 		"img": "images/Dots.png",
 		"codes": "Dots"
 	},
 	{
-		"name": "Progressive Dots",
-		"codes": "ProgressiveDots",
-		"type": "progressive",
-		"allow_disabled": true,
-		"initial_stage_idx": 0,
-		"stages": [
-			{
-				"img": "images/Dots.png",
-				"codes": "Dots",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/FullDots.png",
-				"codes": "FullDots",
-				"inherit_codes": false
-			}
-		]
+		"name": "Full Dots",
+		"type": "toggle",
+		"img": "images/FullDots.png",
+		"codes": "FullDots"
 	},
 	{
-		"name": "Progressive Stars",
-		"codes": "ProgressiveStars",
-		"type": "progressive",
-		"allow_disabled": true,
-		"initial_stage_idx": 0,
-		"stages": [
-			{
-				"img": "images/Stars.png",
-				"codes": "Stars",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/StarSameColor.png",
-				"codes": "StarSameColor",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Progressive Symmetry",
-		"codes": "ProgressiveSymmetry",
-		"type": "progressive",
-		"allow_disabled": true,
-		"initial_stage_idx": 0,
-		"stages": [
-			{
-				"img": "images/Symmetry.png",
-				"codes": "Symmetry",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/ColoredDots.png",
-				"codes": "ColoredDots",
-				"inherit_codes": false
-			}
-		]
+		"name": "Symmetry",
+		"type": "toggle",
+		"img": "images/Symmetry.png",
+		"codes": "Symmetry"
 	},
 	{
 		"name": "Colored Dots",
@@ -118,6 +78,11 @@
 		"codes": "StarSameColor"
 	},
 	{
+		"name": "Simple Stars",
+		"type": "toggle",
+		"codes": "SimpleStars"
+	},
+	{
 		"name": "Eraser",
 		"type": "toggle",
 		"img": "images/Eraser.png",
@@ -134,12 +99,6 @@
 		"type": "toggle",
 		"img": "images/Arrows.png",
 		"codes": "Arrows"
-	},
-	{
-		"name": "Symmetry",
-		"type": "toggle",
-		"img": "images/Symmetry.png",
-		"codes": "Symmetry"
 	},
 	{
 		"name": "Boat",
@@ -342,6 +301,116 @@
 		"name": "Shuffle Symbols",
 		"img": "images/SymbolsText.png",
 		"codes": "Symbols",
+		"type": "toggle"
+	},
+	{
+		"name": "Progressive Symbols",
+		"codes": "progressiveSymbols",
+		"type": "toggle"
+	},
+	{
+		"name": "Progressive Dots",
+		"type": "consumable",
+		"codes": "progressiveDots"
+	},
+	{
+		"name": "Dots Are Progressive",
+		"type": "toggle",
+		"codes": "dotsAreProgressive"
+	},
+	{
+		"name": "Colored Dots Are Progressive Dots",
+		"type": "toggle",
+		"codes": "coloredDotsAreProgressiveDots"
+	},
+	{
+		"name": "Sound Dots Are Progressive Dots",
+		"type": "toggle",
+		"codes": "soundDotsAreProgressiveDots"
+	},
+	{
+		"name": "Progressive Squares",
+		"type": "consumable",
+		"codes": "progressiveSquares"
+	},
+	{
+		"name": "Squares Are Progressive",
+		"type": "toggle",
+		"codes": "squaresAreProgressive"
+	},
+	{
+		"name": "Progressive Symmetry",
+		"type": "consumable",
+		"codes": "progressiveSymmetry"
+	},
+	{
+		"name": "Symmetry Is Progressive",
+		"type": "toggle",
+		"codes": "symmetryIsProgressive"
+	},
+	{
+		"name": "Progressive Shapers",
+		"type": "consumable",
+		"codes": "progressiveShapers"
+	},
+	{
+		"name": "Shapers Are Progressive",
+		"type": "toggle",
+		"codes": "shapersAreProgressive"
+	},
+	{
+		"name": "Progressive Stars",
+		"type": "consumable",
+		"codes": "progressiveStars"
+	},
+	{
+		"name": "Stars Are Progressive",
+		"type": "toggle",
+		"codes": "starsAreProgressive"
+	},
+	{
+		"name": "Progressive Discards",
+		"type": "consumable",
+		"codes": "progressiveDiscards"
+	},
+	{
+		"name": "Discards Are Progressive",
+		"type": "toggle",
+		"codes": "discardsAreProgressive"
+	},
+	{
+		"name": "Independent Second Stage Symbols",
+		"codes": "independentSecondStageSymbols",
+		"type": "toggle"
+	},
+	{
+		"name": "Independent Full Dots",
+		"codes": "independentFullDots",
+		"type": "toggle"
+	},
+	{
+		"name": "Logical Full Dots",
+		"codes": "logicalFullDots",
+		"type": "toggle"
+	},
+	{
+		"name": "Independent Stars & Same Colored Symbol",
+		"codes": "independentStarSameColor",
+		"type": "toggle"
+	},
+	{
+		"name": "Logical Stars & Same Colored Symbol",
+		"codes": "logicalStarSameColor",
+		"type": "toggle"
+	},
+	{
+		"name": "Independent Colored Dots",
+		"codes": "independentColoredDots",
+		"type": "toggle"
+	},
+	{
+		"name": "Logical Colored Dots",
+		"codes": "logicalColoredDots",
 		"type": "toggle"
 	},
 	{
