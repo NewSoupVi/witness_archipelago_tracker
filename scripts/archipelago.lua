@@ -906,10 +906,10 @@ function symbolLogic(symbol)
 end
 
 function logicalFullDotsChanged()
-    dots = Tracker:FindObjectForCode("Dots").Active
-    full_dots = Tracker:FindObjectForCode("FullDots").Active
-    independent_full_dots = Tracker:FindObjectForCode("independentFullDots").Active
-    if full_dots and (dots or independent_full_dots) then
+	dots = Tracker:FindObjectForCode("Dots").Active
+	full_dots = Tracker:FindObjectForCode("FullDots").Active
+	independent_full_dots = Tracker:FindObjectForCode("independentFullDots").Active
+	if full_dots and (dots or independent_full_dots) then
 		Tracker:FindObjectForCode("logicalFullDots").Active = true
 	else
 		Tracker:FindObjectForCode("logicalFullDots").Active = false
@@ -917,10 +917,10 @@ function logicalFullDotsChanged()
 end
 
 function logicalStars2Changed()
-    stars = Tracker:FindObjectForCode("Stars").Active
-    stars_2 = Tracker:FindObjectForCode("StarSameColor").Active
-    independent_stars_2 = Tracker:FindObjectForCode("independentStarSameColor").Active
-    if stars_2 and (stars or independent_stars_2) then
+	stars = Tracker:FindObjectForCode("Stars").Active
+	stars_2 = Tracker:FindObjectForCode("StarSameColor").Active
+	independent_stars_2 = Tracker:FindObjectForCode("independentStarSameColor").Active
+	if stars_2 and (stars or independent_stars_2) then
 		Tracker:FindObjectForCode("logicalStarSameColor").Active = true
 	else
 		Tracker:FindObjectForCode("logicalStarSameColor").Active = false
@@ -928,10 +928,10 @@ function logicalStars2Changed()
 end
 
 function logicalColoredDotsChanged()
-    symmetry = Tracker:FindObjectForCode("Symmetry").Active
-    colored_dots = Tracker:FindObjectForCode("ColoredDots").Active
-    independent_colored_dots = Tracker:FindObjectForCode("independentColoredDots").Active
-    if colored_dots and (symmetry or independent_colored_dots) then
+	symmetry = Tracker:FindObjectForCode("Symmetry").Active
+	colored_dots = Tracker:FindObjectForCode("ColoredDots").Active
+	independent_colored_dots = Tracker:FindObjectForCode("independentColoredDots").Active
+	if colored_dots and (symmetry or independent_colored_dots) then
 		Tracker:FindObjectForCode("logicalColoredDots").Active = true
 	else
 		Tracker:FindObjectForCode("logicalColoredDots").Active = false
