@@ -826,19 +826,22 @@ function symbolLogic(symbol)
 	if symbol == "SparseDots" then
 		Tracker:FindObjectForCode("Dots").Active = true
 	elseif symbol == "progressiveDots" then
-		dots = Tracker:FindObjectForCode("Dots")
-		colored_dots = Tracker:FindObjectForCode("ColoredDots")
-		progressive_colored_dots = Tracker:FindObjectForCode("coloredDotsAreProgressiveDots").Active
-		sound_dots = Tracker:FindObjectForCode("SoundDots")
-		progressive_sound_dots = Tracker:FindObjectForCode("soundDotsAreProgressiveDots").Active
-		full_dots = Tracker:FindObjectForCode("FullDots")
-		if not dots.Active then
-			dots.Active = true
-		elseif progressive_colored_dots and not colored_dots.Active then
+        local progressive_dots = Tracker:FindObjectForCode("progressiveDots").AcquiredCount
+		local dots = Tracker:FindObjectForCode("Dots")
+		local colored_dots = Tracker:FindObjectForCode("ColoredDots")
+		local progressive_colored_dots = Tracker:FindObjectForCode("coloredDotsAreProgressiveDots").Active
+		local sound_dots = Tracker:FindObjectForCode("SoundDots")
+		local progressive_sound_dots = Tracker:FindObjectForCode("soundDotsAreProgressiveDots").Active
+		local full_dots = Tracker:FindObjectForCode("FullDots")
+
+		dots.Active = true
+		if progressive_colored_dots and progressive_dots >= 2 then
 			colored_dots.Active = true
-		elseif progressive_sound_dots and not sound_dots.Active then
+		end
+		if progressive_sound_dots and (progressive_dots >= 3 or not sound_dots.Active and progressive_dots >= 2) then
 			sound_dots.Active = true
-		else
+		end
+		if progressive_dots >= 4 or (not (progressive_sound_dots and progressive_colored_dots) and progressive_dots >= 3) or (not progressive_sound_dots and not progressive_sound_dots and progressive_dots >= 2) then
 			full_dots.Active = true
 		end
 	elseif symbol == "FullDots" then
@@ -849,9 +852,8 @@ function symbolLogic(symbol)
 	elseif symbol == "SimpleStars" then
 		Tracker:FindObjectForCode("Stars").Active = true
 	elseif symbol == "progressiveStars" then
-		if not Tracker:FindObjectForCode("Stars").Active then
-			Tracker:FindObjectForCode("Stars").Active = true
-		else
+        Tracker:FindObjectForCode("Stars").Active = true
+		if Tracker:FindObjectForCode("progressiveStars").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("StarSameColor").Active = true
 		end
 	elseif symbol == "StarSameColor" then
@@ -860,9 +862,8 @@ function symbolLogic(symbol)
 		end
 
 	elseif symbol == "progressiveSymmetry" then
-		if not Tracker:FindObjectForCode("Symmetry").Active then
-			Tracker:FindObjectForCode("Symmetry").Active = true
-		else
+        Tracker:FindObjectForCode("Symmetry").Active = true
+        if Tracker:FindObjectForCode("progressiveSymmetry").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("ColoredDots").Active = true
 		end
 	elseif symbol == "ColoredDots" then
@@ -871,25 +872,24 @@ function symbolLogic(symbol)
 		end
 
 	elseif symbol == "progressiveSquares" then
-		if not Tracker:FindObjectForCode("BWSquare").Active then
-			Tracker:FindObjectForCode("BWSquare").Active = true
-		else
+        Tracker:FindObjectForCode("BWSquare").Active = true
+        if Tracker:FindObjectForCode("progressiveSquares").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
 		end
 
 	elseif symbol == "progressiveShapers" then
-		if not Tracker:FindObjectForCode("Shapers").Active then
-			Tracker:FindObjectForCode("Shapers").Active = true
-		elseif not Tracker:FindObjectForCode("RotatedShapers").Active then
+        local progressive_shapers = Tracker:FindObjectForCode("progressiveShapers").AcquiredCount
+		Tracker:FindObjectForCode("Shapers").Active = true
+		if progressive_shapers >= 2 then
 			Tracker:FindObjectForCode("RotatedShapers").Active = true
-		else
+		end
+        if progressive_shapers >= 3 then
 			Tracker:FindObjectForCode("NegativeShapers").Active = true
 		end
 
 	elseif symbol == "progressiveDiscards" then
-		if not Tracker:FindObjectForCode("Triangles").Active then
-			Tracker:FindObjectForCode("Triangles").Active = true
-		else
+        Tracker:FindObjectForCode("Triangles").Active = true
+        if Tracker:FindObjectForCode("progressiveDiscards").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("Arrows").Active = true
 		end
 	end
@@ -906,9 +906,9 @@ function symbolLogic(symbol)
 end
 
 function logicalFullDotsChanged()
-	dots = Tracker:FindObjectForCode("Dots").Active
-	full_dots = Tracker:FindObjectForCode("FullDots").Active
-	independent_full_dots = Tracker:FindObjectForCode("independentFullDots").Active
+	local dots = Tracker:FindObjectForCode("Dots").Active
+	local full_dots = Tracker:FindObjectForCode("FullDots").Active
+	local independent_full_dots = Tracker:FindObjectForCode("independentFullDots").Active
 	if full_dots and (dots or independent_full_dots) then
 		Tracker:FindObjectForCode("logicalFullDots").Active = true
 	else
@@ -917,9 +917,9 @@ function logicalFullDotsChanged()
 end
 
 function logicalStars2Changed()
-	stars = Tracker:FindObjectForCode("Stars").Active
-	stars_2 = Tracker:FindObjectForCode("StarSameColor").Active
-	independent_stars_2 = Tracker:FindObjectForCode("independentStarSameColor").Active
+	local stars = Tracker:FindObjectForCode("Stars").Active
+	local stars_2 = Tracker:FindObjectForCode("StarSameColor").Active
+	local independent_stars_2 = Tracker:FindObjectForCode("independentStarSameColor").Active
 	if stars_2 and (stars or independent_stars_2) then
 		Tracker:FindObjectForCode("logicalStarSameColor").Active = true
 	else
@@ -928,9 +928,9 @@ function logicalStars2Changed()
 end
 
 function logicalColoredDotsChanged()
-	symmetry = Tracker:FindObjectForCode("Symmetry").Active
-	colored_dots = Tracker:FindObjectForCode("ColoredDots").Active
-	independent_colored_dots = Tracker:FindObjectForCode("independentColoredDots").Active
+	local symmetry = Tracker:FindObjectForCode("Symmetry").Active
+	local colored_dots = Tracker:FindObjectForCode("ColoredDots").Active
+	local independent_colored_dots = Tracker:FindObjectForCode("independentColoredDots").Active
 	if colored_dots and (symmetry or independent_colored_dots) then
 		Tracker:FindObjectForCode("logicalColoredDots").Active = true
 	else
