@@ -826,7 +826,7 @@ function symbolLogic(symbol)
 	if symbol == "SparseDots" then
 		Tracker:FindObjectForCode("Dots").Active = true
 	elseif symbol == "progressiveDots" then
-        local progressive_dots = Tracker:FindObjectForCode("progressiveDots").AcquiredCount
+		local progressive_dots = Tracker:FindObjectForCode("progressiveDots").AcquiredCount
 		local dots = Tracker:FindObjectForCode("Dots")
 		local colored_dots = Tracker:FindObjectForCode("ColoredDots")
 		local progressive_colored_dots = Tracker:FindObjectForCode("coloredDotsAreProgressiveDots").Active
@@ -852,7 +852,7 @@ function symbolLogic(symbol)
 	elseif symbol == "SimpleStars" then
 		Tracker:FindObjectForCode("Stars").Active = true
 	elseif symbol == "progressiveStars" then
-        Tracker:FindObjectForCode("Stars").Active = true
+		Tracker:FindObjectForCode("Stars").Active = true
 		if Tracker:FindObjectForCode("progressiveStars").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("StarSameColor").Active = true
 		end
@@ -862,8 +862,8 @@ function symbolLogic(symbol)
 		end
 
 	elseif symbol == "progressiveSymmetry" then
-        Tracker:FindObjectForCode("Symmetry").Active = true
-        if Tracker:FindObjectForCode("progressiveSymmetry").AcquiredCount >= 2 then
+		Tracker:FindObjectForCode("Symmetry").Active = true
+		if Tracker:FindObjectForCode("progressiveSymmetry").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("ColoredDots").Active = true
 		end
 	elseif symbol == "ColoredDots" then
@@ -872,24 +872,24 @@ function symbolLogic(symbol)
 		end
 
 	elseif symbol == "progressiveSquares" then
-        Tracker:FindObjectForCode("BWSquare").Active = true
-        if Tracker:FindObjectForCode("progressiveSquares").AcquiredCount >= 2 then
+		Tracker:FindObjectForCode("BWSquare").Active = true
+		if Tracker:FindObjectForCode("progressiveSquares").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
 		end
 
 	elseif symbol == "progressiveShapers" then
-        local progressive_shapers = Tracker:FindObjectForCode("progressiveShapers").AcquiredCount
+		local progressive_shapers = Tracker:FindObjectForCode("progressiveShapers").AcquiredCount
 		Tracker:FindObjectForCode("Shapers").Active = true
 		if progressive_shapers >= 2 then
 			Tracker:FindObjectForCode("RotatedShapers").Active = true
 		end
-        if progressive_shapers >= 3 then
+		if progressive_shapers >= 3 then
 			Tracker:FindObjectForCode("NegativeShapers").Active = true
 		end
 
 	elseif symbol == "progressiveDiscards" then
-        Tracker:FindObjectForCode("Triangles").Active = true
-        if Tracker:FindObjectForCode("progressiveDiscards").AcquiredCount >= 2 then
+		Tracker:FindObjectForCode("Triangles").Active = true
+		if Tracker:FindObjectForCode("progressiveDiscards").AcquiredCount >= 2 then
 			Tracker:FindObjectForCode("Arrows").Active = true
 		end
 	end
