@@ -842,9 +842,7 @@ function symbolLogic(symbol)
 			full_dots.Active = true
 		end
 	elseif symbol == "FullDots" then
-		if Tracker:FindObjectForCode("independentFullDots").Active then
-			Tracker:FindObjectForCode("logicalFullDots").Active = true
-		else
+		if not Tracker:FindObjectForCode("independentFullDots").Active then
 			Tracker:FindObjectForCode("Dots").Active = true
 		end
 
@@ -857,9 +855,7 @@ function symbolLogic(symbol)
 			Tracker:FindObjectForCode("StarSameColor").Active = true
 		end
 	elseif symbol == "StarSameColor" then
-		if Tracker:FindObjectForCode("independentStarSameColor") then
-			Tracker:FindObjectForCode("logicalStarSameColor").Active = true
-		else
+		if not Tracker:FindObjectForCode("independentStarSameColor") then
 			Tracker:FindObjectForCode("Stars").Active = true
 		end
 
@@ -870,9 +866,7 @@ function symbolLogic(symbol)
 			Tracker:FindObjectForCode("ColoredDots").Active = true
 		end
 	elseif symbol == "ColoredDots" then
-		if Tracker:FindObjectForCode("independentColoredDots") then
-			Tracker:FindObjectForCode("logicalColoredDots").Active = true
-		else
+		if not Tracker:FindObjectForCode("independentColoredDots") then
 			Tracker:FindObjectForCode("Symmetry").Active = true
 		end
 
@@ -908,6 +902,39 @@ function symbolLogic(symbol)
 	end
 	if Tracker:FindObjectForCode("Symmetry").Active and Tracker:FindObjectForCode("ColoredDots").Active then
 		Tracker:FindObjectForCode("logicalColoredDots").Active = true
+	end
+end
+
+function logicalFullDotsChanged()
+    dots = Tracker:FindObjectForCode("Dots").Active
+    full_dots = Tracker:FindObjectForCode("FullDots").Active
+    independent_full_dots = Tracker:FindObjectForCode("independentFullDots").Active
+    if full_dots and (dots or independent_full_dots) then
+		Tracker:FindObjectForCode("logicalFullDots").Active = true
+	else
+		Tracker:FindObjectForCode("logicalFullDots").Active = false
+	end
+end
+
+function logicalStars2Changed()
+    stars = Tracker:FindObjectForCode("Stars").Active
+    stars_2 = Tracker:FindObjectForCode("StarSameColor").Active
+    independent_stars_2 = Tracker:FindObjectForCode("independentStarSameColor").Active
+    if stars_2 and (stars or independent_stars_2) then
+		Tracker:FindObjectForCode("logicalStarSameColor").Active = true
+	else
+		Tracker:FindObjectForCode("logicalStarSameColor").Active = false
+	end
+end
+
+function logicalColoredDotsChanged()
+    symmetry = Tracker:FindObjectForCode("Symmetry").Active
+    colored_dots = Tracker:FindObjectForCode("ColoredDots").Active
+    independent_colored_dots = Tracker:FindObjectForCode("independentColoredDots").Active
+    if colored_dots and (symmetry or independent_colored_dots) then
+		Tracker:FindObjectForCode("logicalColoredDots").Active = true
+	else
+		Tracker:FindObjectForCode("logicalColoredDots").Active = false
 	end
 end
 
@@ -994,5 +1021,11 @@ ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect 
 ScriptHost:AddWatchForCode("DesertLaserChanged", "Desert Laser", handleDesertLaser)
 ScriptHost:AddWatchForCode("DoorsModeChanged", "doorsSetting", handleDesertLaser)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
+ScriptHost:AddWatchForCode("StarsChanged", "Stars", logicalStars2Changed)
+ScriptHost:AddWatchForCode("Stars2Changed", "StarSameColor", logicalStars2Changed)
+ScriptHost:AddWatchForCode("DotsChanged", "Dots", logicalFullDotsChanged)
+ScriptHost:AddWatchForCode("Dots2Changed", "FullDots", logicalFullDotsChanged)
+ScriptHost:AddWatchForCode("SymmetryChanged", "Symmetry", logicalColoredDotsChanged)
+ScriptHost:AddWatchForCode("ColoredDotsChanged", "ColoredDots", logicalColoredDotsChanged)
 
 ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)
