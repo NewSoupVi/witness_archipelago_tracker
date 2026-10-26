@@ -238,18 +238,6 @@ function eggGroupAccess(region, total)
 	return AccessibilityLevel.Cleared
 end
 
-function dots(level)
-	return Tracker:FindObjectForCode("ProgressiveDots").CurrentStage >= tonumber(level)
-end
-
-function stars(level)
-	return Tracker:FindObjectForCode("ProgressiveStars").CurrentStage >= tonumber(level)
-end
-
-function symmetry(level)
-	return Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage >= tonumber(level)
-end
-
 function expertPP2()
 	return (
 	Tracker:ProviderCountForCode("Keep Pressure Plates 1 Exit (Door)") == 1 and
@@ -268,6 +256,12 @@ function expertPP2()
 end
 
 symbolCheck = {
+	["Dots"] = "Dots",
+	["Full Dots"] = "logicalFullDots",
+	["Stars"] = "Stars",
+	["Stars + Same Colored Symbol"] = "logicalStarSameColor",
+	["Symmetry"] = "Symmetry",
+	["Colored Dots"] = "logicalColoredDots",
 	["Black/White Squares"] = "BWSquare",
 	["Colored Squares"] = "ColoredSquares",
 	["Sound Dots"] = "SoundDots",
@@ -280,19 +274,7 @@ symbolCheck = {
 }
 
 function hasSymbol(symbol)
-	if symbol == "Dots" then
-		return dots(1)
-	elseif symbol == "Full Dots" then
-		return dots(2)
-	elseif symbol == "Stars" then
-		return stars(1)
-	elseif symbol == "Stars + Same Colored Symbol" then
-		return stars(2)
-	elseif symbol == "Symmetry" then
-		return symmetry(1)
-	elseif symbol == "Colored Dots" then
-		return symmetry(2)
-	elseif symbolCheck[symbol] ~= nil then
+	if symbolCheck[symbol] ~= nil then
 		return Tracker:ProviderCountForCode(symbolCheck[symbol]) == 1
 	elseif symbol == "True" then
 		return true

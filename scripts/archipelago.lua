@@ -510,9 +510,6 @@ function onClear(slot_data)
 			if obj then
 				if v[2] == "toggle" then
 					obj.Active = false
-				elseif v[2] == "progressive" then
-					obj.CurrentStage = 0
-					obj.Active = false
 				elseif v[2] == "consumable" then
 					obj.AcquiredCount = 0
 				elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -540,18 +537,48 @@ function onClear(slot_data)
 		end
 
 		if k == "shuffle_symbols" and value == false then
-			Tracker:FindObjectForCode("ProgressiveDots").CurrentStage = 2
-			Tracker:FindObjectForCode("ProgressiveSymmetry").CurrentStage = 2
+			Tracker:FindObjectForCode("Dots").Active = true
+			Tracker:FindObjectForCode("FullDots").Active = true
+			Tracker:FindObjectForCode("Symmetry").Active = true
+			Tracker:FindObjectForCode("ColoredDots").Active = true
 			Tracker:FindObjectForCode("SoundDots").Active = true
 			Tracker:FindObjectForCode("Triangles").Active = true
 			Tracker:FindObjectForCode("Eraser").Active = true
 			Tracker:FindObjectForCode("Shapers").Active = true
 			Tracker:FindObjectForCode("RotatedShapers").Active = true
 			Tracker:FindObjectForCode("NegativeShapers").Active = true
-			Tracker:FindObjectForCode("ProgressiveStars").CurrentStage = 2
+			Tracker:FindObjectForCode("Stars").Active = true
+			Tracker:FindObjectForCode("StarSameColor").Active = true
 			Tracker:FindObjectForCode("BWSquare").Active = true
 			Tracker:FindObjectForCode("ColoredSquares").Active = true
 			Tracker:FindObjectForCode("Arrows").Active = true
+		-- These aren't needed unless we want to account for plando shenanigans, apparently
+		elseif k == "progressive_symbols" then
+			for _, symbol in ipairs(value) do
+				if symbol == "Progressive Dots" then
+					Tracker:FindObjectForCode("dotsAreProgressive").Active = true
+				elseif symbol == "Progressive Symmetry" then
+					Tracker:FindObjectForCode("symmetryIsProgressive").Active = true
+				elseif symbol == "Progressive Stars" then
+					Tracker:FindObjectForCode("starsAreProgressive").Active = true
+				elseif symbol == "Progressive Squares" then
+					Tracker:FindObjectForCode("squaresAreProgressive").Active = true
+				elseif symbol == "Progressive Shapers" then
+					Tracker:FindObjectForCode("shapersAreProgressive").Active = true
+				elseif symbol == "Progressive Discard Symbols" then
+					Tracker:FindObjectForCode("discardsAreProgressive").Active = true
+				end
+			end
+		elseif k == "second_stage_symbols_act_independently" then
+			for _, symbol in ipairs(value) do
+				if symbol == "Full Dots" then
+					Tracker:FindObjectForCode("independentFullDots").Active = true
+				elseif symbol == "Stars + Same Colored Symbol" then
+					Tracker:FindObjectForCode("independentStarSameColor").Active = true
+				elseif symbol == "Colored Dots" then
+					Tracker:FindObjectForCode("independentColoredDots").Active = true
+				end
+			end
 		elseif k == "obelisk_keys" and value == false then
 			Tracker:FindObjectForCode("Desert Obelisk Key").Active = true
 			Tracker:FindObjectForCode("Monastery Obelisk Key").Active = true
@@ -718,12 +745,6 @@ function onItem(index, item_id, item_name, player_number)
 	if obj then
 		if v[2] == "toggle" then
 			obj.Active = true
-		elseif v[2] == "progressive" then
-			if obj.Active then
-				obj.CurrentStage = obj.CurrentStage + 1
-			else
-				obj.Active = true
-			end
 		elseif v[2] == "consumable" then
 			obj.AcquiredCount = obj.AcquiredCount + obj.Increment
 		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -731,6 +752,10 @@ function onItem(index, item_id, item_name, player_number)
 		end
 	elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		print(string.format("onItem: could not find object for code %s", v[1]))
+	end
+	-- Do this after items are toggled to make it easier
+	if item_id > 157999 and item_id < 158281 then
+		symbolLogic(v[1])
 	end
 	-- track local items via snes interface
 	if is_local then
@@ -794,6 +819,122 @@ function onLocation(location_id, location_name)
 			local location = Tracker:FindObjectForCode(EP_DATASTORAGE_IDS[tonumber(l)][1])
 			location.AvailableChestCount = location.AvailableChestCount - 1
 		end
+	end
+end
+
+function symbolLogic(symbol)
+	if symbol == "SparseDots" then
+		Tracker:FindObjectForCode("Dots").Active = true
+	elseif symbol == "progressiveDots" then
+		local progressive_dots = Tracker:FindObjectForCode("progressiveDots").AcquiredCount
+		local dots = Tracker:FindObjectForCode("Dots")
+		local colored_dots = Tracker:FindObjectForCode("ColoredDots")
+		local progressive_colored_dots = Tracker:FindObjectForCode("coloredDotsAreProgressiveDots").Active
+		local sound_dots = Tracker:FindObjectForCode("SoundDots")
+		local progressive_sound_dots = Tracker:FindObjectForCode("soundDotsAreProgressiveDots").Active
+		local full_dots = Tracker:FindObjectForCode("FullDots")
+
+		dots.Active = true
+		if progressive_colored_dots and progressive_dots >= 2 then
+			colored_dots.Active = true
+		end
+		if progressive_sound_dots and (progressive_dots >= 3 or not sound_dots.Active and progressive_dots >= 2) then
+			sound_dots.Active = true
+		end
+		if progressive_dots >= 4 or (not (progressive_sound_dots and progressive_colored_dots) and progressive_dots >= 3) or (not progressive_sound_dots and not progressive_sound_dots and progressive_dots >= 2) then
+			full_dots.Active = true
+		end
+	elseif symbol == "FullDots" then
+		if not Tracker:FindObjectForCode("independentFullDots").Active then
+			Tracker:FindObjectForCode("Dots").Active = true
+		end
+
+	elseif symbol == "SimpleStars" then
+		Tracker:FindObjectForCode("Stars").Active = true
+	elseif symbol == "progressiveStars" then
+		Tracker:FindObjectForCode("Stars").Active = true
+		if Tracker:FindObjectForCode("progressiveStars").AcquiredCount >= 2 then
+			Tracker:FindObjectForCode("StarSameColor").Active = true
+		end
+	elseif symbol == "StarSameColor" then
+		if not Tracker:FindObjectForCode("independentStarSameColor") then
+			Tracker:FindObjectForCode("Stars").Active = true
+		end
+
+	elseif symbol == "progressiveSymmetry" then
+		Tracker:FindObjectForCode("Symmetry").Active = true
+		if Tracker:FindObjectForCode("progressiveSymmetry").AcquiredCount >= 2 then
+			Tracker:FindObjectForCode("ColoredDots").Active = true
+		end
+	elseif symbol == "ColoredDots" then
+		if not Tracker:FindObjectForCode("independentColoredDots") then
+			Tracker:FindObjectForCode("Symmetry").Active = true
+		end
+
+	elseif symbol == "progressiveSquares" then
+		Tracker:FindObjectForCode("BWSquare").Active = true
+		if Tracker:FindObjectForCode("progressiveSquares").AcquiredCount >= 2 then
+			Tracker:FindObjectForCode("ColoredSquares").Active = true
+		end
+
+	elseif symbol == "progressiveShapers" then
+		local progressive_shapers = Tracker:FindObjectForCode("progressiveShapers").AcquiredCount
+		Tracker:FindObjectForCode("Shapers").Active = true
+		if progressive_shapers >= 2 then
+			Tracker:FindObjectForCode("RotatedShapers").Active = true
+		end
+		if progressive_shapers >= 3 then
+			Tracker:FindObjectForCode("NegativeShapers").Active = true
+		end
+
+	elseif symbol == "progressiveDiscards" then
+		Tracker:FindObjectForCode("Triangles").Active = true
+		if Tracker:FindObjectForCode("progressiveDiscards").AcquiredCount >= 2 then
+			Tracker:FindObjectForCode("Arrows").Active = true
+		end
+	end
+
+	if Tracker:FindObjectForCode("Dots").Active and Tracker:FindObjectForCode("FullDots").Active then
+		Tracker:FindObjectForCode("logicalFullDots").Active = true
+	end
+	if Tracker:FindObjectForCode("Stars").Active and Tracker:FindObjectForCode("StarSameColor").Active then
+		Tracker:FindObjectForCode("logicalStarSameColor").Active = true
+	end
+	if Tracker:FindObjectForCode("Symmetry").Active and Tracker:FindObjectForCode("ColoredDots").Active then
+		Tracker:FindObjectForCode("logicalColoredDots").Active = true
+	end
+end
+
+function logicalFullDotsChanged()
+	local dots = Tracker:FindObjectForCode("Dots").Active
+	local full_dots = Tracker:FindObjectForCode("FullDots").Active
+	local independent_full_dots = Tracker:FindObjectForCode("independentFullDots").Active
+	if full_dots and (dots or independent_full_dots) then
+		Tracker:FindObjectForCode("logicalFullDots").Active = true
+	else
+		Tracker:FindObjectForCode("logicalFullDots").Active = false
+	end
+end
+
+function logicalStars2Changed()
+	local stars = Tracker:FindObjectForCode("Stars").Active
+	local stars_2 = Tracker:FindObjectForCode("StarSameColor").Active
+	local independent_stars_2 = Tracker:FindObjectForCode("independentStarSameColor").Active
+	if stars_2 and (stars or independent_stars_2) then
+		Tracker:FindObjectForCode("logicalStarSameColor").Active = true
+	else
+		Tracker:FindObjectForCode("logicalStarSameColor").Active = false
+	end
+end
+
+function logicalColoredDotsChanged()
+	local symmetry = Tracker:FindObjectForCode("Symmetry").Active
+	local colored_dots = Tracker:FindObjectForCode("ColoredDots").Active
+	local independent_colored_dots = Tracker:FindObjectForCode("independentColoredDots").Active
+	if colored_dots and (symmetry or independent_colored_dots) then
+		Tracker:FindObjectForCode("logicalColoredDots").Active = true
+	else
+		Tracker:FindObjectForCode("logicalColoredDots").Active = false
 	end
 end
 
@@ -880,5 +1021,11 @@ ScriptHost:AddWatchForCode("DesertRedirectChanged", "Town Desert Laser Redirect 
 ScriptHost:AddWatchForCode("DesertLaserChanged", "Desert Laser", handleDesertLaser)
 ScriptHost:AddWatchForCode("DoorsModeChanged", "doorsSetting", handleDesertLaser)
 ScriptHost:AddWatchForCode("ClearJunkChanged", "clearJunk", clearJunkChanged)
+ScriptHost:AddWatchForCode("StarsChanged", "Stars", logicalStars2Changed)
+ScriptHost:AddWatchForCode("Stars2Changed", "StarSameColor", logicalStars2Changed)
+ScriptHost:AddWatchForCode("DotsChanged", "Dots", logicalFullDotsChanged)
+ScriptHost:AddWatchForCode("Dots2Changed", "FullDots", logicalFullDotsChanged)
+ScriptHost:AddWatchForCode("SymmetryChanged", "Symmetry", logicalColoredDotsChanged)
+ScriptHost:AddWatchForCode("ColoredDotsChanged", "ColoredDots", logicalColoredDotsChanged)
 
 ScriptHost:AddOnLocationSectionChangedHandler("loc_checked", loc_checked)
