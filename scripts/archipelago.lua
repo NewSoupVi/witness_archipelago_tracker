@@ -841,7 +841,7 @@ function symbolLogic(symbol)
 		if progressive_sound_dots and (progressive_dots >= 3 or not sound_dots.Active and progressive_dots >= 2) then
 			sound_dots.Active = true
 		end
-		if progressive_dots >= 4 or (not (progressive_sound_dots and progressive_colored_dots) and progressive_dots >= 3) or (not progressive_sound_dots and not progressive_sound_dots and progressive_dots >= 2) then
+		if progressive_dots >= 4 or (not (progressive_sound_dots and progressive_colored_dots) and progressive_dots >= 3) or (not progressive_sound_dots and not progressive_colored_dots and progressive_dots >= 2) then
 			full_dots.Active = true
 		end
 	elseif symbol == "FullDots" then
