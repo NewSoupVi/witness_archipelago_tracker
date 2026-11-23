@@ -437,6 +437,7 @@ function onClear(slot_data)
 	Tracker.BulkUpdate = true
 
 	EGG_TOTAL = 120
+	EGG_STEP = 4
 	RECEIVED_EGGS = false
 	lasers = {0,0,0,0,0,0,0,0,0,0,0}
 
@@ -480,7 +481,16 @@ function onClear(slot_data)
 	Tracker:FindObjectForCode("boxShort").Active = false
 	Tracker:FindObjectForCode("boxLong").Active = false
 	Tracker:FindObjectForCode("Symbols").Active = false
-
+	Tracker:FindObjectForCode("independentFullDots").Active = false
+	Tracker:FindObjectForCode("independentStarSameColor").Active = false
+	Tracker:FindObjectForCode("independentColoredDots").Active = false
+	Tracker:FindObjectForCode("logicalFullDots").Active = false
+	Tracker:FindObjectForCode("logicalStarSameColor").Active = false
+	Tracker:FindObjectForCode("logicalColoredDots").Active = false
+	Tracker:FindObjectForCode("autoQuarryElevator").Active = false
+	Tracker:FindObjectForCode("autoSwampLongBridge").Active = false
+	Tracker:FindObjectForCode("autoBunkerElevator").Active = false
+	Tracker:FindObjectForCode("autoTownMazeBridge").Active = false
 
 	-- reset locations
 	for _, v in pairs(LOCATION_MAPPING) do
@@ -857,7 +867,7 @@ function symbolLogic(symbol)
 			Tracker:FindObjectForCode("StarSameColor").Active = true
 		end
 	elseif symbol == "StarSameColor" then
-		if not Tracker:FindObjectForCode("independentStarSameColor") then
+		if not Tracker:FindObjectForCode("independentStarSameColor").Active then
 			Tracker:FindObjectForCode("Stars").Active = true
 		end
 
@@ -867,7 +877,7 @@ function symbolLogic(symbol)
 			Tracker:FindObjectForCode("ColoredDots").Active = true
 		end
 	elseif symbol == "ColoredDots" then
-		if not Tracker:FindObjectForCode("independentColoredDots") then
+		if not Tracker:FindObjectForCode("independentColoredDots").Active then
 			Tracker:FindObjectForCode("Symmetry").Active = true
 		end
 
